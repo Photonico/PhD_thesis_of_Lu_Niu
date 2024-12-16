@@ -1,0 +1,121 @@
+\chapter{Backgrouond knowledge\label{cha:background}}
+
+Text.
+
+\section{A story starts from Maxwell's equations}
+
+More text.
+
+\subsection{Subsection}
+
+Even more text.
+
+\section{Take the Next Step with Schrödinger's Equation}
+
+\section{Extend Schrödinger's Equation to Many-Body Systems}
+
+\section{A Introduction to Density Functional Theory}
+
+We start with the many-body Hamiltonian. For any system, the first term is the Hamiltonian representing the kinetic energy of electrons:
+
+\begin{equation}
+    -\frac{\hbar^2}{2m_e}\sum_i\nabla_i^2
+    \label{electrons_kinetic}
+\end{equation}
+
+The electrons live in the Coulomb potential that is created by the nuclei, there is also Coulomb interaction between electrons and atomic nuclei. We use $\Vec{r}$ to present the position of electrons, $\Vec{R}$ for the position of the nucleus, and $Z$ for the corresponding charge number of the $I$-th atomic nucleus. Then, we get this Coulomb interaction Hamiltonian between electrons and nucleus:
+
+\begin{equation}
+    -\sum_{i,I}\frac{Z_I e^2}{|\Vec{r}_i-\Vec{R}_I|}
+    \label{electrons_nucleus_Coulomb}
+\end{equation}
+
+This term illustrates how the energy of an electron is influenced by the position of each nucleus. Next, we consider the Coulomb interaction between electrons:
+
+\begin{equation}
+    \frac{1}{2}\sum_{i\neq j}\frac{e^2}{|\Vec{r}_i-\Vec{r}_j|}
+    \label{electrons_Coulomb}
+\end{equation}
+
+Now, focusing on the nuclei, we describe their kinetic energy as:   
+
+\begin{equation}
+    -\sum_I\frac{\hbar^2}{2M_I}\nabla_I^2
+    \label{nucleus_kinetic}
+\end{equation}
+
+There is also an interaction between the nuclei themselves:
+
+\begin{equation}
+    \frac{1}{2}\sum_{I\neq J}\frac{Z_I Z_J e^2}{|\Vec{R}_I-\Vec{R}_J|}
+    \label{nucleus_interaction}
+\end{equation}
+
+Summing these terms, we express the Hamiltonian of a many-body system as:
+
+\begin{equation}
+    \hat{H}=-\frac{\hbar^2}{2m_e}\sum_i\nabla_i^2
+    -\sum_{i,I}\frac{Z_I e^2}{|\Vec{r}_i-\Vec{R}_I|}
+    +\frac{1}{2}\sum_{i\neq j}\frac{e^2}{|\Vec{r}_i-\Vec{r}_j|}
+    -\sum_I\frac{\hbar^2}{2M_I}\nabla_I^2
+    +\frac{1}{2}\sum_{I\neq J}\frac{Z_I Z_J e^2}{|\Vec{R}_I-\Vec{R}_J|}
+    \label{full_many_body_hamiltonian}
+\end{equation}
+
+In principle, this complex coupled term demands careful attention. Fortunately, due to the much greater mass of the nuclei compared to the electrons, we can approximate by neglecting the nuclei’s kinetic energy term and treating their interaction as constant. This reduces the Hamiltonian to:
+
+\begin{equation}
+    \hat{H}=-\frac{\hbar^2}{2m_e}\sum_i\nabla_i^2
+    -\sum_{i,I}\frac{Z_I e^2}{|\Vec{r}_i-\Vec{R}_I|}
+    +\frac{1}{2}\sum_{i\neq j}\frac{e^2}{|\Vec{r}_i-\Vec{r}_j|}
+    +C
+    \label{many_body_hamiltonian}
+\end{equation}
+
+The Coulomb interaction Hamiltonian term between electrons and nuclei represents the sum of all potentials, giving the Hamiltonian:
+
+\begin{equation}
+    \hat{H}=-\frac{\hbar^2}{2m_e}\sum_i\nabla_i^2
+    +\sum_i v_\text{ext}(\Vec{r}_i)
+    +\frac{1}{2}\sum_{i\neq j}\frac{e^2}{|\Vec{r}_i-\Vec{r}_j|}
+    \label{many_body_hamiltonian}
+\end{equation}
+
+Considering the parameters in this Hamiltonian, we observe that the many-body Hamiltonian and wave functions for each state $\lambda$ depend on $3 \times N$ spatial coordinates of the electrons and their spin $\sigma$:
+
+\begin{equation}
+    \hat{H}(\Vec{r}_1,\Vec{r}_2,\dots,\Vec{r}_N)\Psi(x_1,x_2,\dots,x_N)
+    = E_\lambda\Psi_\lambda(x_1,x_2,\dots,x_N)
+    \label{many_body_hamiltonian_argument}
+\end{equation}
+
+where, $x_i:=(\Vec{r_i},\sigma_i)$.
+
+The main challenge arises from the inseparability of these coordinates. When electron interactions are disregarded, the problem simplifies to 
+$N$ independent single-electron problems. If we further overlook the Pauli exclusion principle, the many-body wave function is merely a product of 
+$N$ one-body wave functions:
+
+\begin{equation}
+    \Psi(x_1,x_2,\dots,x_N)=\psi_{n_1}(x_1)\psi_{n_2}(x_2)\dots\psi_{n_N}(x_N)
+    \label{body_function}
+\end{equation}
+
+where, $\lambda={n_1,n_2,\dots,n_N}$.
+
+However, to satisfy the Pauli principle—requiring that electrons with identical spins do not occupy the same state—the many-body wave function must be represented as:
+
+\begin{equation}
+    \Psi = \frac{1}{(N!)^{1/2}}
+    \begin{vmatrix}
+    \psi_1(\Vec{r}_1,\sigma_1) & \psi_1(\Vec{r}_2,\sigma_2) & \psi_1(\Vec{r}_3,\sigma_3) & \dots \\
+    \psi_2(\Vec{r}_1,\sigma_1) & \psi_2(\Vec{r}_2,\sigma_2) & \psi_2(\Vec{r}_3,\sigma_3) & \dots \\
+    \psi_3(\Vec{r}_1,\sigma_1) & \psi_3(\Vec{r}_2,\sigma_2) & \psi_3(\Vec{r}_3,\sigma_3) & \dots \\
+    \vdots & \vdots & \ddots
+    \end{vmatrix}
+\end{equation}
+
+\section{Explore Dielectric Function}
+
+\section{Another story comes from Statistical Physics to Machine Learning (probably)}
+
+\section{Pending section}
