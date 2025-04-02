@@ -1,20 +1,62 @@
-\chapter{Backgrouond knowledge\label{cha:background}}
+\chapter{Theoretical Fundamentals\label{cha:fundamentals}}
 
-Text.
+\section{A story starts from time evolution quantum mechanics}
 
-\section{A story starts from Maxwell's equations}
+Imagine that we are watching a microscopic play, with electrons and atoms as the actors. You blink, and suddenly the stage configuration has shifted. Something has changed. But how do we describe this evolution in physical language?
 
-More text.
+In classical physics, we start with Newton’s laws to describe motion. Later, Lagrangian and Hamiltonian mechanics provided another description of physics from the perspective of degrees of freedom, symmetries, and conservations. Then came the great 20th-century revolution in physics, which developed the consensus of microscopic scale, and quantum mechanics emerged. In this new framework, that role is played by the Schrödinger equation.
 
-\subsection{Subsection}
+\subsection{Time-dependent Schrödinger equation}
 
-Even more text.
+In quantum mechanics, the state of a physical system at any given instant or a wavefunction is represented by a vector $\ket{\psi}$. This state vector encapsulates all the information we can know about the system at time $t$.
 
-\section{Take the Next Step with Schrödinger's Equation}
+But how exactly does this state evolve over time? The evolution is determined by a special operator known as the Hamiltonian $\hat{H}$. Which corresponds physically to the total energy of the conserved systems. This evolution is known as time-dependent Schrödinger equation:
 
-\section{Extend Schrödinger's Equation to Many-Body Systems}
+\begin{equation}
+    i\hbar\frac{\partial}{\partial t}\ket{\psi(t)}=\hat{H}\ket{\psi(t)}
+    \label{tdse}
+\end{equation}
 
-\section{A Introduction to Density Functional Theory}
+Here, the left side describes how quickly and in what manner the quantum state changes over time; And the right side tells us that this rate of change is determined by the Hamiltonian operator, reflecting the total energy configuration of this conserved system. 
+
+If we know the state vector at an initial time $t=0$. This elegant equation provides us with a probability to predict its future states.
+
+\subsection{Time evolution operator}
+
+Suppose that the Hamiltonian is independent of time; for example, the energy configuration does not change explicitly with time. In this specific case, the Schrödinger equation can be solved analytically via a given initial state vector $\ket{\psi(0)}$, we denote a future state vector $\ket{\psi(t)}$ via the expression:
+
+\begin{equation}
+    \ket{\psi(t)}=e^{-\frac{i}{\hbar}\hat{H}t}\ket{\psi(0)}
+    \label{state_vec}
+\end{equation}
+
+Here, we introduce the time evolution operator $\hat{U}(t)$ as:
+
+\begin{equation}
+    \hat{U}(t) = e^{-\frac{i}{\hbar}\hat{H}t}
+    \label{evolution_ope}
+\end{equation}
+
+We can imagine this operator as a predictor, which takes an initial quantum state and moves it forward smoothly and predictably into its future form. A crucial property of this operator is its unitarity:
+
+\begin{equation}
+    \hat{U}^\dagger(t)\hat{U}(t)=\hat{U}(t)\hat{U}^\dagger(t) = \hat{I}
+    \label{evolution_unitarity}
+\end{equation}
+
+\subsection{Generalizing to time-dependent Hamiltonians}
+
+\newpage
+\section{Decoding the density matrix}
+
+\newpage
+\section{Second quantization for fermions}
+
+\newpage
+\section{Exploring the dielectric function and linear optical properties}
+
+\newpage
+\section{A brief approach to density functional theory}
 
 We start with the many-body Hamiltonian. For any system, the first term is the Hamiltonian representing the kinetic energy of electrons:
 
@@ -114,8 +156,6 @@ However, to satisfy the Pauli principle—requiring that electrons with identica
     \end{vmatrix}
 \end{equation}
 
-\section{Explore Dielectric Function}
+\newpage
+\section{An adventure comes from Statistical Physics to Machine Learning (probably)}
 
-\section{Another story comes from Statistical Physics to Machine Learning (probably)}
-
-\section{Pending section}
