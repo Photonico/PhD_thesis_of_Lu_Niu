@@ -4,13 +4,13 @@
 
 Imagine that we are watching a microscopic play, with electrons and atoms as the actors. You blink, and suddenly the stage configuration has shifted. Something has changed. But how do we describe this evolution in physical language?
 
-In classical physics, we start with Newton’s laws to describe motion. Later, Lagrangian and Hamiltonian mechanics provided another description of physics from the perspective of degrees of freedom, symmetries, and conservations. Then came the great 20th-century revolution in physics, which developed the consensus of microscopic scale, and quantum mechanics emerged. In this new framework, that role is played by the Schrödinger equation.
+In classical physics, we started with Newton’s laws to describe the motions. Later, Lagrangian and Hamiltonian mechanics provided another description of physics from the perspective of degrees of freedom, symmetries, and conservations. Then came the great 20th-century revolution in physics, which developed the consensus of the microscopic scale, and quantum mechanics emerged. In this new framework, that role is played by the Schrödinger equation.
 
 \subsection{Time-dependent Schrödinger equation}
 
 In quantum mechanics, the state of a physical system at any given instant or a wavefunction is represented by a vector $\ket{\psi}$. This state vector encapsulates all the information we can know about the system at time $t$.
 
-But how exactly does this state evolve over time? The evolution is determined by a special operator known as the Hamiltonian $\hat{H}$. Which corresponds physically to the total energy of the conserved systems. This evolution is known as time-dependent Schrödinger equation:
+But how exactly does this state evolve over time? The evolution is determined by a special operator known as the Hamiltonian operator $\hat{H}$. Which corresponds physically to the total energy of the conserved systems. This evolution is known as time-dependent Schrödinger equation:
 
 \begin{equation}
     i\hbar\frac{\partial}{\partial t}\ket{\psi(t)}=\hat{H}\ket{\psi(t)}
@@ -44,118 +44,524 @@ We can imagine this operator as a predictor, which takes an initial quantum stat
     \label{evolution_unitarity}
 \end{equation}
 
-\subsection{Generalizing to time-dependent Hamiltonians}
+\subsection{Generalizing to time-dependent hamiltonians}
 
-\newpage
-\section{Decoding the density matrix}
+In more realistic scenarios, especially for condensed matter physics, the Hamiltonian can depend explicitly on time, written as $\hat{H}(t)$.
+For example, external fields like lasers or magnetic fields might cause the energy landscape of the quantum system to vary over time. In these situations, the simple exponential form is no longer sufficient, and the Schrödinger equation must be solved differently.
 
-\newpage
-\section{Second quantization for fermions}
-
-\newpage
-\section{Exploring the dielectric function and linear optical properties}
-
-\newpage
-\section{A brief approach to density functional theory}
-
-We start with the many-body Hamiltonian. For any system, the first term is the Hamiltonian representing the kinetic energy of electrons:
+Firstly, we define a generalized time-evolution operator between two arbitrary times $t_0$ and $t_1$:
 
 \begin{equation}
-    -\frac{\hbar^2}{2m_e}\sum_i\nabla_i^2
-    \label{electrons_kinetic}
+    \ket{\psi(t_1)}=\hat{U}(t_1,t_0)\ket{\psi(t_0)}
+    \label{given_evolution}
 \end{equation}
 
-The electrons live in the Coulomb potential that is created by the nuclei, there is also Coulomb interaction between electrons and atomic nuclei. We use $\Vec{r}$ to present the position of electrons, $\Vec{R}$ for the position of the nucleus, and $Z$ for the corresponding charge number of the $I$-th atomic nucleus. Then, we get this Coulomb interaction Hamiltonian between electrons and nucleus:
+Later, we demonstrate the time evolution operator $\hat{U}(t)$ as a time-ordered exponential:
 
 \begin{equation}
-    -\sum_{i,I}\frac{Z_I e^2}{|\Vec{r}_i-\Vec{R}_I|}
-    \label{electrons_nucleus_Coulomb}
+    \hat{U}(t_1,t_0) = \hat{T}\exp\left({-\frac{i}{\hbar}\int_{t_0}^{t_1}\hat{H}(\tau)\mathrm{d}{\tau}}\right)
+    \label{time-ordering_operator}
 \end{equation}
 
-This term illustrates how the energy of an electron is influenced by the position of each nucleus. Next, we consider the Coulomb interaction between electrons:
+Then, we arrive at $\hat{T}$, which is called the time-ordering operator, instructing us explicitly to apply earlier Hamiltonians first and later Hamiltonians afterward. This ordering ensures causality—the correct physical sequence of events—much like following instructions in the correct order when cooking.
+
+\subsection{Many-body Schrödinger equation}
+
+Up to now, we have mostly described the evolution of a single particle under a potential by the time-dependent Schrödinger equation Eq.~\eqref{tdse}. 
+
+However, nature rarely stages solo performances. In reality, quantum systems typically involve many interacting particles. For instance, electrons in a material undergo complex quantum evolution shaped by their mutual interactions. As a result, our quantum stage must expand to describe a many-body system, incorporating electrons, nuclei, and their interactions.
+
+To describe this larger ensemble, we generalize our single-particle state $\ket{\psi(t)}$ to a many-body state $\ket{\Psi(t)}$, an element of a larger Hilbert space constructed by the tensor product of individual particle spaces:
 
 \begin{equation}
-    \frac{1}{2}\sum_{i\neq j}\frac{e^2}{|\Vec{r}_i-\Vec{r}_j|}
-    \label{electrons_Coulomb}
+    \ket{\Psi(t)}\in \mathbb{H}_1\otimes\mathbb{H}_2\otimes \cdots\otimes\mathbb{H}_N=\mathbb{H}.
+    \label{many-body_state_vector}
 \end{equation}
 
-Now, focusing on the nuclei, we describe their kinetic energy as:   
+For example, in a two-particle system, the total Hilbert space is $\mathbb{H}=\mathbb{H}_1\otimes\mathbb{H}_2$. It is valuable to notice that not every state $\ket{\Psi}$ can be factored as 
+$\ket{\psi_1} \otimes \ket{\psi_2}$, because many physically relevant states are entangled. This means that their correlations cannot be described by individual particle states alone. On a coordinate basis, we denote the wavefunction as:
 
 \begin{equation}
+    \Psi(x_1,x_2,\dots,x_N,t)=\braket{x_1,x_2,\dots,x_N|\Psi(t)},
+    \label{many-body_wavefunction}
+\end{equation}
+
+where each $x_i$ includes both spatial and spin degrees of freedom.
+
+The total dynamics of the system are described by a many-body Hamiltonian $\hat{H}$, and the time evolution remains described by the Schrödinger equation Eq.~\eqref{tdse}. Explicitly, we write down every component of the many-body Hamiltonian by considering each component of energy contribution separately:
+
+\begin{align}
+\text{Electron kinetic energy:}\qquad & -\frac{\hbar^2}{2m_\mathrm{e}}\sum_i\nabla_i^2 \label{electrons_kinetic}\\
+\text{Electron-nucleus Coulomb attraction:}\qquad & -\sum_{i,I}\frac{Z_I e^2}{|\vec{r}_i-\vec{R}_I|} \label{electrons_nucleus_Coulomb}\\
+\text{Electron-electron Coulomb repulsion:}\qquad & \frac{1}{2}\sum_{i\neq j}\frac{e^2}{|\vec{r}_i-\vec{r}_j|} \label{electrons_Coulomb}\\
+\text{Nuclear kinetic energy:}\qquad & -\sum_I\frac{\hbar^2}{2M_I}\nabla_I^2 \label{nucleus_kinetic}\\
+\text{Nucleus-nucleus Coulomb repulsion:}\qquad & \frac{1}{2}\sum_{I\neq J}\frac{Z_I Z_J e^2}{|\vec{R}_I-\vec{R}_J|} \label{nucleus_interaction}
+\end{align}
+
+Summing all these terms, we arrive at the full many-body Hamiltonian:
+
+\begin{equation}
+    \hat{H}=-\frac{\hbar^2}{2m_\mathrm{e}}\sum_i\nabla_i^2
+    -\sum_{i,I}\frac{Z_I e^2}{|\vec{r}_i-\vec{R}_I|}
+    +\frac{1}{2}\sum_{i\neq j}\frac{e^2}{|\vec{r}_i-\vec{r}_j|}
     -\sum_I\frac{\hbar^2}{2M_I}\nabla_I^2
-    \label{nucleus_kinetic}
-\end{equation}
-
-There is also an interaction between the nuclei themselves:
-
-\begin{equation}
-    \frac{1}{2}\sum_{I\neq J}\frac{Z_I Z_J e^2}{|\Vec{R}_I-\Vec{R}_J|}
-    \label{nucleus_interaction}
-\end{equation}
-
-Summing these terms, we express the Hamiltonian of a many-body system as:
-
-\begin{equation}
-    \hat{H}=-\frac{\hbar^2}{2m_e}\sum_i\nabla_i^2
-    -\sum_{i,I}\frac{Z_I e^2}{|\Vec{r}_i-\Vec{R}_I|}
-    +\frac{1}{2}\sum_{i\neq j}\frac{e^2}{|\Vec{r}_i-\Vec{r}_j|}
-    -\sum_I\frac{\hbar^2}{2M_I}\nabla_I^2
-    +\frac{1}{2}\sum_{I\neq J}\frac{Z_I Z_J e^2}{|\Vec{R}_I-\Vec{R}_J|}
+    +\frac{1}{2}\sum_{I\neq J}\frac{Z_I Z_J e^2}{|\vec{R}_I-\vec{R}_J|}.
     \label{full_many_body_hamiltonian}
 \end{equation}
 
-In principle, this complex coupled term demands careful attention. Fortunately, due to the much greater mass of the nuclei compared to the electrons, we can approximate by neglecting the nuclei’s kinetic energy term and treating their interaction as constant. This reduces the Hamiltonian to:
+Considering the parameters in this Hamiltonian, we observe that the many-body wavefunctions for each state $\lambda$ depend explicitly on the $3N$ spatial coordinates of the electrons and their spin $\sigma$:
 
 \begin{equation}
-    \hat{H}=-\frac{\hbar^2}{2m_e}\sum_i\nabla_i^2
-    -\sum_{i,I}\frac{Z_I e^2}{|\Vec{r}_i-\Vec{R}_I|}
-    +\frac{1}{2}\sum_{i\neq j}\frac{e^2}{|\Vec{r}_i-\Vec{r}_j|}
-    +C
-    \label{many_body_hamiltonian}
-\end{equation}
-
-The Coulomb interaction Hamiltonian term between electrons and nuclei represents the sum of all potentials, giving the Hamiltonian:
-
-\begin{equation}
-    \hat{H}=-\frac{\hbar^2}{2m_e}\sum_i\nabla_i^2
-    +\sum_i v_\text{ext}(\Vec{r}_i)
-    +\frac{1}{2}\sum_{i\neq j}\frac{e^2}{|\Vec{r}_i-\Vec{r}_j|}
-    \label{many_body_hamiltonian}
-\end{equation}
-
-Considering the parameters in this Hamiltonian, we observe that the many-body Hamiltonian and wave functions for each state $\lambda$ depend on $3 \times N$ spatial coordinates of the electrons and their spin $\sigma$:
-
-\begin{equation}
-    \hat{H}(\Vec{r}_1,\Vec{r}_2,\dots,\Vec{r}_N)\Psi(x_1,x_2,\dots,x_N)
-    = E_\lambda\Psi_\lambda(x_1,x_2,\dots,x_N)
+    \hat{H}(\vec{r}_1,\vec{r}_2,\dots,\vec{r}_N)\Psi(x_1,x_2,\dots,x_N)
+    = E_\lambda\Psi_\lambda(x_1,x_2,\dots,x_N),
     \label{many_body_hamiltonian_argument}
 \end{equation}
 
-where, $x_i:=(\Vec{r_i},\sigma_i)$.
+where $x_i:=(\vec{r}_i,\sigma_i)$.
 
-The main challenge arises from the inseparability of these coordinates. When electron interactions are disregarded, the problem simplifies to 
-$N$ independent single-electron problems. If we further overlook the Pauli exclusion principle, the many-body wave function is merely a product of 
-$N$ one-body wave functions:
+In practice, due to the significantly greater mass of nuclei compared to electrons, we commonly simplify the problem by neglecting the nuclei’s kinetic energy and treating their mutual interaction as a constant. Thus, the Hamiltonian reduces to:
 
 \begin{equation}
-    \Psi(x_1,x_2,\dots,x_N)=\psi_{n_1}(x_1)\psi_{n_2}(x_2)\dots\psi_{n_N}(x_N)
-    \label{body_function}
+    \hat{H}=-\frac{\hbar^2}{2m_\mathrm{e}}\sum_i\nabla_i^2
+    +\sum_i v_\text{ext}(\vec{r}_i)
+    +\frac{1}{2}\sum_{i\neq j}\frac{e^2}{|\vec{r}_i-\vec{r}_j|}+C.
+    \label{many_body_hamiltonian_simplified}
 \end{equation}
 
-where, $\lambda={n_1,n_2,\dots,n_N}$.
-
-However, to satisfy the Pauli principle—requiring that electrons with identical spins do not occupy the same state—the many-body wave function must be represented as:
+In principle, we can now substitute this simplified Hamiltonian into the Schrödinger equation to solve for $\ket{\Psi(t)}$. However, exact solutions quickly become infeasible for systems beyond a handful of particles due to the exponential growth of the Hilbert space dimension:
 
 \begin{equation}
-    \Psi = \frac{1}{(N!)^{1/2}}
+    \dim(\mathbb{H})=\prod_{i=1}^{N} \dim(\mathbb{H}_i).
+    \label{exponential_growth}
+\end{equation}
+
+This complexity, known as the "curse of dimensionality," motivates powerful approximate methods such as \textit{Hartree--Fock} and \textit{Density Functional Theory}, which we will explore in later sections.
+
+When electron interactions are completely disregarded, the problem simplifies to $N$ independent single-electron problems. If we further overlook the Pauli exclusion principle, the many-body wavefunction reduces simply to a product of $N$ single-particle wavefunctions:
+
+\begin{equation}
+    \Psi(x_1,x_2,\dots,x_N)=\psi_{n_1}(x_1)\psi_{n_2}(x_2)\dots\psi_{n_N}(x_N),
+    \label{independent_body_function}
+\end{equation}
+
+where $\lambda=\{n_1,n_2,\dots,n_N\}$ labels the states.
+
+However, to satisfy the Pauli principle, we must represent the many-body wavefunction as an antisymmetric Slater determinant:
+
+\begin{equation}
+    \Psi = \frac{1}{\sqrt{N!}}
     \begin{vmatrix}
-    \psi_1(\Vec{r}_1,\sigma_1) & \psi_1(\Vec{r}_2,\sigma_2) & \psi_1(\Vec{r}_3,\sigma_3) & \dots \\
-    \psi_2(\Vec{r}_1,\sigma_1) & \psi_2(\Vec{r}_2,\sigma_2) & \psi_2(\Vec{r}_3,\sigma_3) & \dots \\
-    \psi_3(\Vec{r}_1,\sigma_1) & \psi_3(\Vec{r}_2,\sigma_2) & \psi_3(\Vec{r}_3,\sigma_3) & \dots \\
-    \vdots & \vdots & \ddots
-    \end{vmatrix}
+    \psi_1(\vec{r}_1,\sigma_1) & \psi_1(\vec{r}_2,\sigma_2) & \dots & \psi_1(\vec{r}_N,\sigma_N)\\
+    \psi_2(\vec{r}_1,\sigma_1) & \psi_2(\vec{r}_2,\sigma_2) & \dots & \psi_2(\vec{r}_N,\sigma_N)\\
+    \vdots & \vdots & \ddots & \vdots\\
+    \psi_N(\vec{r}_1,\sigma_1) & \psi_N(\vec{r}_2,\sigma_2) & \dots & \psi_N(\vec{r}_N,\sigma_N)
+    \end{vmatrix}.
+    \label{slater_determinant}
 \end{equation}
+
+Finally, we can describe the full time‐evolution of the many‐body wavefunction in coordinate space by the time‐dependent Schrödinger equation (Eq.~\eqref{tdse}), using the simplified Hamiltonian:
+
+\begin{equation}
+    i\hbar\frac{\partial}{\partial t}\Psi(x_1,x_2,\dots,x_N,t)
+    = \hat{H}\Psi(x_1,x_2,\dots,x_N,t).
+    \label{tdse_manybody_coord}
+\end{equation}
+
+\subsection{From Schrödinger picture to Heisenberg picture}
+
+Up to now, we have adopted the Schrödinger picture to describe the time evolution of quantum systems. In this picture, states carry all the time dependence, while operators remain fixed. Specifically, the quantum state $\ket{\psi(t)}$ evolves in time according to the Schrödinger equation Eq.~\eqref{tdse}.
+
+For a given observable represented by a Hermitian (self-adjoint) operator $\hat{\Omega}$, its expectation value is calculated as:
+
+\begin{equation}
+    \braket{\hat{\Omega}} = \braket{\psi|\hat{\Omega}|\psi}.
+    \label{expectation_Hermitian}
+\end{equation}
+
+Since observables correspond to measurable physical quantities, their expectation values must be real numbers. This requirement naturally implies that all observable operators in quantum mechanics are Hermitian, as Hermiticity guarantees real eigenvalues and thus ensures that $\braket{\hat{\Omega}}\in \mathbb{R}$.
+
+However, quantum mechanics allows a different but equivalent viewpoint known as the Heisenberg picture. 
+In this alternative framework, all-time dependence is shifted from the states to the operators themselves.
+
+Firstly, let's return to the Schrödinger picture, the solution of the Schrödinger equation with a time-independent Hamiltonian operator $\hat{H}$ is formally expressed using the time evolution operator $\hat{U}(t)$ and an initial moment $t_0$:
+
+\begin{equation}
+    \ket{\psi(t)}=\hat{U}(t)\ket{\psi(t_0)}
+    \label{given_evolution_s}
+\end{equation}
+
+where, $\hat{U}(t)=e^{-\frac{i}{\hbar}Ht}$.
+
+In the Heisenberg picture, we can keep the state vectors fixed at their initial values:
+
+\begin{equation}
+    \ket{\psi_H}=\ket{\psi(0)}
+    \label{Heisenberg_vec}
+\end{equation}
+
+We do not need to redefine each operator to carry the time evolution. For any Schrödinger picture operator $\hat{\Omega}$, we can define its Heisenberg counterpart $\hat{\Omega}_H(t)$ as:
+
+\begin{equation}
+    \hat\Omega_H(t)
+    =\hat{U}^\dagger(t)\hat{\Omega}\hat{U}(t)
+    =e^{\frac{i}{\hbar}Ht}\hat{\Omega}e^{-\frac{i}{\hbar}Ht}
+    \label{Heisenberg_ope}
+\end{equation}
+
+Physically, this transformation can also encode the full dynamics of the quantum system into the operators themselves.
+
+Now, we are going to prove that changing from the Schrödinger to the Heisenberg picture does not affect the measurable results.
+It means the expectations remain completely unchanged.
+In fact, the equivalence of the two pictures can be seen clearly from the following relation:
+
+\begin{equation}
+    \hat\Omega(t)
+    =\bra{\psi(t)}\hat{\Omega}\ket{\psi(t)}
+    =\bra{\psi(t_0)}\hat{U}^\dagger(t)\hat{\Omega}\hat{U}(t)\ket{\psi(t_0)}
+    =\bra{\psi_H}\hat{\Omega}_H(t)\ket{\psi_H}
+    \label{SH}
+\end{equation}
+
+While the representation changes, the physical observable does not. 
+
+A remarkable consequence of the Heisenberg picture is how naturally it highlights conserved quantities and symmetries. For the equation of motion of operators in this Heisenberg picture, we have Heisenberg's dynamics equation of motion by the differentiation of $\hat{\Omega}_H(t)$:
+
+\begin{equation}
+    \frac{\mathrm{d}}{\mathrm{d}t}\hat{\Omega}_H(t)
+    =\frac{i}{\hbar}\left[\hat{H},\hat{\Omega}_H(t)\right]
+    \label{SD}
+\end{equation}
+
+Thus, the Heisenberg picture deeply reveals the structural similarity between classical and quantum mechanics, relating to symmetries and conservation.
+
+\subsection{From Heisenberg Picture to the Continuity Equation}
+
+Having seen that any local one‐body observable can be written as an integral over a single function, we now introduce that central quantity. The one‐body density contains all the information needed to compute one‐particle expectation values and serves as the fundamental variable in the density functional theory. In what follows, we review its precise definition.
+
+\begin{equation}
+n(\vec{r})
+= \bra{\psi}\,\hat n(\vec{r})\ket{\psi}
+= \bra{\psi}\sum_i\delta\left(\vec{r} - \hat{\vec{r}}_i\right)\ket{\psi}
+\label{one‐body_density}
+\end{equation}
+
+gives the electron density at point $\vec{r}$. Physically, $n(\vec{r})\mathrm{d}^3r$ is the expected number of electrons in the volume element $\mathrm{d}^3r$ around $\vec{r}$. In density functional theory, $n(\vec{r})$ serves as the fundamental variable replacing the full many‐body wavefunction.  
+
+It can be shown that the ground‐state density $n(\vec r)$ uniquely fixes the external potential, which is up to an additive constant, and hence all ground‐state observables can be written as functionals of $n(\vec{r})$. This dramatic reduction comes from a 3$N$‐dimensional wavefunction to a three‐dimensional density, which lies at the heart of density functional theory, making formerly intractable many‐body problems computationally feasible.
+
+The time-dependent density-functional theory depends on the continuity equation in the Heisenberg picture. Firstly, define the Schrödinger‐picture density operator and its Heisenberg‐picture counterpart:
+
+\begin{equation}
+\begin{cases}
+  \hat n(\vec r)
+    = \displaystyle\sum_i \delta\bigl(\vec r - \hat{\vec r}_i\bigr)
+    & \text{(Schrödinger‐picture density operator)}\\
+  \hat n_H(\vec r,t)
+    = \hat U^\dagger(t)\,\hat{n}(\vec r)\,\hat U(t)
+    & \text{(Heisenberg‐picture density operator)}
+\end{cases}
+\label{density_op}
+\end{equation}
+
+Its time derivative follows from the Heisenberg equation of motion,
+
+\begin{equation}
+    \frac{\partial}{\partial t}\hat n_H(\vec{r},t)
+    = \frac{i}{\hbar}\bigl[\hat H,\hat n_H(\vec{r},t)\bigr]
+\label{density_time_derivative}
+\end{equation}
+
+Next, split the Hamiltonian into kinetic and potential parts,
+
+\begin{equation}
+\hat{H} = \hat{T} + \hat{V}_\mathrm{ext} + \hat{V}_\mathrm{ee}
+\label{splitted_hamiltonian}
+\end{equation}
+
+One shows that both $\hat V_\mathrm{ext}$ and $\hat V_\mathrm{ee}$ commute with $\hat{n}(\vec{r})$:
+
+\begin{equation}
+    \left[\hat V_\mathrm{ext}+\hat V_\mathrm{ee},\,\hat n_H(\vec{r},t)\right] = 0
+\label{commuting_potential_density}
+\end{equation}
+
+They are diagonal in the coordinate basis, so only the kinetic term contributes:
+
+\begin{equation}
+    \frac{\partial}{\partial t}\hat{n}_H
+    = \frac{i}{\hbar}\left[\hat{T},\hat{n}_H\right]
+\label{kinetic_term_contribution}
+\end{equation}
+
+Introduce the Heisenberg‐picture current operator:
+
+\begin{equation}
+    \hat{\vec{j}}_H(\vec{r},t)
+    = \frac{1}{2m_\mathrm{e}}\sum_i\left[\hat{\vec{p}}_i\,\delta(\vec{r}-\hat\vec{r}_i)
+    +\delta(\vec{r}-\hat\vec{r}_i)\,\hat\vec{p}_i\right]_H
+\label{Heisenberg‐picture_current_operator}
+\end{equation}
+
+where $\hat\vec{p}_i$ is the momentum operator of particle $i$. A direct commutator calculation then yields
+
+\begin{equation}
+    \frac{i}{\hbar}\left[\hat T,\hat n_H(\vec{r},t)\right]
+    = -\nabla\cdot\hat{\vec{j}}_H(\vec{r},t)
+\label{direct_commutator}
+\end{equation}
+
+Putting these results into Eq.~\eqref{density_time_derivative} gives the operator‐level continuity equation:
+
+\begin{equation}
+\frac{\partial}{\partial t}\,\hat{n}_H(\vec{r},t)+\nabla\cdot\hat{\vec j}_H(\vec r,t)=0
+\label{continuity_operator}
+\end{equation}
+
+Taking expectation values in any Heisenberg‐picture state $\ket{\Psi_H}$ then yields the familiar continuity equation for the physical density $n(\vec{r},t)=\bra{\Psi_H}\hat{n}_H(\vec{r},t)\ket{\Psi_H}$
+and current $\vec{j}(\vec{r},t)=\bra{\Psi_H}\hat{\vec{j}}_H(\vec{r},t)\ket{\Psi_H}$:
+
+\begin{equation}
+    \frac{\partial}{\partial t}\,n(\vec{r},t)+\nabla\cdot\vec{j}(\vec{r},t)=0.
+\label{continuity_expectation}
+\end{equation}
+
+This exact conservation law shows that once the initial density $n(\vec{r},0)$ and the time‐dependent external potential $v_\mathrm{ext}(\vec{r},t)$ are specified, the density and current uniquely evolve according to Eqs.~\eqref{continuity_operator} and \eqref{continuity_expectation}. This observation is the cornerstone of time‐dependent density functional theory, where one seeks to replace the full many‐body wavefunction by the basic variable $n(\vec{r},t)$ together with suitable current functionals.
 
 \newpage
-\section{An adventure comes from Statistical Physics to Machine Learning (probably)}
+\section{Continue to consider the many-body problem}
 
+\subsection{Many‐body wavefunctions and observables}
+
+In fact, a many-body wavefunction explicitly depends on all particle coordinates, making it practically impossible to calculate and store exactly due to the exponential increase in complexity with particle number.
+
+Ultimately, we aim to describe what we measure—certain measurable properties called observables, such as position, momentum, energy, or spin. Quantum mechanics provides a systematic method for calculating these observables directly from the wavefunction as expectation values.
+
+\begin{equation}
+    \braket{\hat\Omega} = \bra{\Psi}\hat\Omega\ket{\Psi}
+    \label{obvious}
+\end{equation}
+
+\subsection{An introduction to grand canonical ensemble}
+
+Before proceeding further, it is essential to introduce the grand canonical ensemble, as it naturally accommodates quantum many-body systems exchanging particles and energy with external reservoirs. This treatment is particularly crucial in Density Functional Theory calculations for realistic materials, where fluctuations in particle number and thermal effects are common.
+
+In the grand canonical ensemble, the expectation value of any observable operator $\hat{\Omega}$ is computed as follows:
+
+\begin{equation}
+\begin{aligned}
+    \braket{\hat{\Omega}} 
+    &= \bra{\Psi}\hat\Omega\ket{\Psi} \\
+    &= e^{-\beta(E_{\alpha}-\mu N_{\alpha})}\bra{\Psi_{\alpha}}\hat{\Omega}\ket{\Psi_{\alpha}},
+\end{aligned}
+\label{grand_canonical}
+\end{equation}
+
+where the summation runs over all quantum states labeled by $\alpha$, here, $\Psi_{\alpha}$ represents the many-body quantum states of the system, characterized by their energies $E_{\alpha}$ and particle numbers $N_{\alpha}$. The inverse temperature $\beta$ is defined as $\beta = 1/(k_B T)$, with $T$ being the temperature and $k_B$ the Boltzmann constant. The chemical potential $\mu$ controls particle exchange between the system and its reservoir. The partition function $Z$ serves as a normalization factor and is defined as:
+
+\begin{equation}
+    Z = \sum_{\alpha} e^{-\beta(E_{\alpha}-\mu N_{\alpha})}.
+\label{partition_function}
+\end{equation}
+
+In quantum many-body theory and calculation, employing the grand canonical ensemble allows systematic inclusion of particle number fluctuations and thermal equilibrium effects, providing a robust and realistic statistical-mechanical description essential for accurate modeling of complex quantum materials.
+
+\subsection{From wavefunction to practical functionals}
+
+Let's stay at zero temperature and fixed particle number $n$. By the operator that stands for the measurement: $\sum_{i,j,\dots}\hat\Omega\left(x_i,x_j,\dots\right)$ and the many-body function of the ground state for the N-body $\Psi(x_1,x_2,\dots,x_N)$ which contains the information about the system. Therefore, we can represent the observables as:
+
+\begin{equation}
+\begin{aligned}
+    \braket{\hat\Omega} 
+    &= \bra{\Psi}\hat\Omega\ket{\Psi} \\
+    &= \iint\cdots\int \mathrm{d}x_1\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\sum_{i,j,\dots}\hat\Omega\left(x_i,x_j,\dots\right)\Psi(x_1,x_2,\dots,x_N)
+\end{aligned}
+\label{observables_N-body}
+\end{equation}
+
+Therefore, we may regard the expectation value of the observable as a functional of the many‐body wavefunction $\Psi$, and write
+
+\begin{equation}
+\Omega[\Psi] = \bra{\Psi}\hat{\Omega}\ket{\Psi}
+\label{observables_functional}
+\end{equation}
+
+Here, the square brackets $[\Psi]$ (rather than parentheses) emphasize that $\Omega$ is a functional, it is a mapping from the entire wavefunction $\Psi$ to a scalar.
+
+A functional simply assigns a number to a function. In our case of Eq.~\eqref{observables_N-body}, its form is a known integral. However, evaluating it requires the exact many-body wavefunction, which we generally cannot compute or store. Moreover, integration acts as an averaging operation that smooths out microscopic fluctuations, so only the coarse‐grained features of the integrand contribute to the result.
+
+Consequently, we can discard irrelevant details of the many‐body wavefunction and work with simplified approximations tailored to specific observables. Normally, we use approximate wavefunctions: Methods such as Hartree–Fock, configuration interaction, and quantum Monte Carlo exploit this idea by retaining the dominant components of the wavefunction while approximating or sampling the rest.
+
+A more radical question is whether we need to work with explicit wavefunctions at all, or if the expectation value in Eq.~\eqref{observables_N-body} can be reformulated entirely in terms of other, more tractable quantities.
+
+In the case of this approximation, for a given Hamiltonian $\bra{\Psi}\hat{H}\ket{\Psi}$, we can regard it as depending on the form of the kinetic energy operator $\bra{\Psi}\hat{K}\ket{\Psi}$, external potential operator $\bra{\Psi}\hat{V}_\mathrm{ext}\ket{\Psi}$, and the interaction operator $\bra{\Psi}\hat{V}_\mathrm{int}\ket{\Psi}$.
+
+To specify the quantum dynamics and interactions of our system, we begin by defining its Hamiltonian. The Hamiltonian encodes all system‐specific information:
+
+\begin{equation}
+    \hat{H}
+    = -\frac{\hbar^2}{2m_\mathrm{e}}\sum_i\nabla_i^2
+    + \sum_i v_{\mathrm{ext}}(\vec r_i)
+    + \frac{1}{2}\sum_{i\neq j}\frac{e^2}{|\vec r_i - \vec r_j|}
+\label{hamiltonian}
+\end{equation}
+
+By the representation of these operators of kinetic energy, external potential, and interaction:
+
+\begin{align}
+\text{kinetic energy operator:\quad} &\hat{K} = -\frac{\hbar^2}{2m_\mathrm{e}}\sum_i\nabla_i^2 \label{kinetic_energy_operator}\\
+\text{external potential operator:\quad} &\hat{V}_\mathrm{ext} = \sum_iv_{\mathrm{ext}}(\vec{r}_i) \label{external_potential_operator}\\
+\text{interaction operator:\quad} &\hat{V}_\mathrm{int} = \frac{1}{2}\sum_{i\neq j}\frac{e^2}{|\vec{r}_i-\vec{r}_j|}\label{interaction_operator}
+\end{align}
+
+We arrive at the expression of this approximation:
+
+\begin{equation}
+\begin{aligned}
+    \bra{\Psi}\hat{H}\ket{\Psi} &= \bra{\Psi}\hat{K}\ket{\Psi} + \bra{\Psi}\hat{V}_\mathrm{ext}\ket{\Psi} + \bra{\Psi}\hat{V}_\mathrm{int}\ket{\Psi} \\
+    &= \bra{\Psi}-\frac{\hbar^2}{2m_\mathrm{e}}\sum_i\nabla_i^2\ket{\Psi}
+    + \bra{\Psi}\sum_iv_{\mathrm{ext}}(\vec{r}_i)\ket{\Psi}
+    + \bra{\Psi}\frac{1}{2}\sum_{i\neq j}\frac{e^2}{|\vec{r}_i-\vec{r}_j|}\ket{\Psi}
+\end{aligned}
+\label{approx}
+\end{equation}
+
+Having treated both the kinetic‐energy operator and the Coulomb interaction as fixed, the external potential alone carries all the information needed to determine any observable. Hence, we may define
+
+\begin{equation}
+E \coloneqq \bra{\Psi}\hat H\ket{\Psi}
+\label{external_potential}
+\end{equation}
+
+which is no longer a functional of the full many‐body wavefunction, but instead a functional of the external potential.  
+
+This object $E$ is nothing but the energy functional of the external potential. In other words, we have introduced the mapping
+
+\begin{equation}
+v_{\mathrm{ext}}(\vec{r}) \longmapsto E[v_{\mathrm{ext}}] = \bra{\Psi[v_{\mathrm{ext}}]}\hat{H}\ket{\Psi[v_{\mathrm{ext}}]},
+\label{external_potential_mapping}
+\end{equation}
+
+where $\Psi[v_{\mathrm{ext}}]$ denotes the ground state wavefunction corresponding to the Hamiltonian with external potential $v_{\mathrm{ext}}$.  Thus $E$ assigns to each admissible potential its total energy, and in the language of density functional theory, $E[v_{\mathrm{ext}}]$ is precisely the Hohenberg–Kohn energy functional.
+
+Now, the three $N$ variables of the many-body wave function have disappeared. Let's analyze the external potential functional, or the Hohenberg–Kohn energy functional $ E[v_{\mathrm{ext}}]$.
+
+Note that the sum over states in Eq.~\eqref{grand_canonical} is nothing but a trace over the many‐body Hilbert space.  By using the cyclic invariance of the trace, we can therefore recast both the expectation value and the partition function in the compact operator form:
+
+\begin{equation}
+\begin{aligned}
+\braket{\hat\Omega}
+&= \bra{\Psi}\hat\Omega\ket{\Psi} \\
+&= \frac{1}{Z}\sum_\alpha e^{-\beta(E_\alpha-\mu N_\alpha)}\bra{\Psi}\hat\Omega\ket{\Psi} \\
+&= \frac{1}{Z}\operatorname{Tr}\left\{e^{-\beta(\hat{H}-\mu\hat{N})}\bra{\Psi}\hat\Omega\ket{\Psi}\right\}
+\end{aligned}
+\label{grand_canonical_trace}
+\end{equation}
+
+In principle, all physical observables derive from the many‐body Schrödinger equation Eq.~\eqref{tdse_manybody_coord}, yet the exponential growth of the Hilbert‐space dimension renders direct diagonalization intractable for realistic systems.
+
+If the kinetic energy operator and Coulomb interaction are fixed, the ground‐state total energy becomes a functional of the external potential we introduced Eq.\eqref{external_potential_mapping}.
+
+A central challenge is that evaluating the grand‐canonical expectation in Eq.~\eqref{grand_canonical_trace} remains highly nontrivial, as the trace involves high‐dimensional integrals and noncommuting operators.
+
+Our aim is to express expectation values—which are, in principle, highly complex functionals—in terms of a single simple function, so that practical approximations become possible.
+
+Next, recall the general expression for an observable in a many‐body system (Eq.~\eqref{observables_N-body}). If the observable is a local one‐body operator, we have
+
+\begin{equation}
+\begin{aligned}
+    \braket{\hat\Omega_1}
+    &= \bra{\Psi}\hat\Omega_1\ket{\Psi} \\
+    &= \iint\cdots\int \mathrm{d}x_1\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\sum_{i}\hat\Omega_1(x_i)\Psi(x_1,x_2,\dots,x_N) \\
+    &= \int\mathrm{d}x_1\Omega_1(x_1)N\int\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\Psi(x_1,x_2,\dots,x_N)
+\end{aligned}
+\label{observables_one-body}
+\end{equation}
+
+We can find that this integral naturally factors into two components: the one‐body operator term
+
+\begin{equation}
+\int\mathrm{d}x_1,\Omega_1(x_1),N
+\label{one-body_operator}
+\end{equation}
+
+and the one‐body density
+
+\begin{equation}
+n(x_1)=N\int\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\Psi(x_1,x_2,\dots,x_N),
+\label{one-body_density}
+\end{equation}
+
+so that the expectation value reduces to
+
+\begin{equation}
+\braket{\hat\Omega_1}=\int\mathrm{d}x_1\Omega_1(x_1)n(x_1)
+\label{observables_one-body_density}
+\end{equation}
+
+Thus, rather than computing the full many‐body integral, we need only determine the one‐body density $n(x_1)$.
+
+Next, consider the electron–electron Coulomb interaction energy:
+
+\begin{equation}
+\begin{aligned}
+    V_\mathrm{ee}
+    &= \iint\cdots\int \mathrm{d}x_1\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\sum_{i,j>i}\frac{e^2}{|\vec{r}_i-\vec{r}_j|}\Psi(x_1,x_2,\dots,x_N) \\
+    &= \int\mathrm{d}x_1\mathrm{d}x_2\frac{e^2}{2|\vec{r}_i-\vec{r}_j|}N(N-1)\int\mathrm{d}x_3\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\Psi(x_1,x_2,\dots,x_N)
+\end{aligned}
+\label{coulomb_interaction_energy}
+\end{equation}
+
+Here, the two-body density naturally appears:
+
+\begin{equation}
+n^{(2)}(x_1,x_2)=N(N-1)\int\mathrm{d}x_3\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\Psi(x_1,x_2,\dots,x_N)
+\label{two-body_density}
+\end{equation}
+
+So that the expectation value of the Coulomb interaction energy reduces to:
+
+\begin{equation}
+V_\mathrm{ee}=\int\mathrm{d}x_1\mathrm{d}x_2\frac{e^2}{2|\vec{r}_i-\vec{r}_j|}n^{(2)}(x_1,x_2)
+\label{observables_two-body_density}
+\end{equation}
+
+Similarly, the kinetic energy expectation value is
+
+\begin{equation}
+\begin{aligned}
+    K&= -\iint\cdots\int \mathrm{d}x_1\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\sum_{i}\frac{\nabla_i^2}{2}\Psi(x_1,x_2,\dots,x_N) \\
+    &= \lim_{x'_1\to x_1}\left( -\int\mathrm{d}x_1\left[\frac{\nabla_i^2}{2}N\int\dots\int\mathrm{d}x_2\dots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\Psi(x'_1,x_2,\dots,x_N) \right]\right)
+\end{aligned}
+\label{kinetic_energy}
+\end{equation}
+
+we can also separate this integral via the matrix of density:
+
+\begin{equation}
+\rho(x_1,x'_1)
+=N\int\dots\int\mathrm{d}x_2\dots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\Psi(x'_1,x_2,\dots,x_N) 
+\label{density_matrix}
+\end{equation}
+
+and get the simplified expectation value of the kinetic energy operator:
+
+\begin{equation}
+K= \lim_{x'_1\to x_1}\left( -\int\mathrm{d}x_1\left[\frac{\nabla_i^2}{2}\rho(x_1,x'_1) \right]\right)
+\label{kinetic_energy_density_matrix}
+\end{equation}
+
+We begin by insisting on a single functional variable $Q$ such that every observable of interest $\hat\Omega_i$ can be written in the form $\hat\Omega_i[Q]$. Having identified $Q$, we then derive the explicit mappings $\hat\Omega_i[Q]$ for each target observable. Finally, we develop a practical algorithm or approximation scheme to compute $Q$ itself, thereby rendering all observables $\hat\Omega_i[Q]$ tractable.  
+\newpage
+\section{An introduction to the functional of density}
+
+\subsection{The Hohenberg-Kohn theorem and density functional}
+
+\subsection{The Hartree–Fock theory and Kohn-Sham equation}
+
+\subsection{The local density approximation and GGA}
+
+\newpage
+\section{The dielectric function and linear optical properties}
+
+\newpage
+\section{Topological bands}

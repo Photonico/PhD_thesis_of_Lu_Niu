@@ -42,7 +42,7 @@
 \usepackage[stable]{style/footmisc}
 
 % times fonts look better
-\usepackage{times}
+% \usepackage{times}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 
