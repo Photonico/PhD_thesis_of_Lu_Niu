@@ -42,11 +42,18 @@
 \usepackage{ccicons}
 \usepackage{csquotes}   % Recommended
 \usepackage{mathtools}
+\usepackage{newunicodechar}
 \usepackage{setspace}
 \usepackage{style/bib}
 \usepackage{pdfpages}   % for hosting full pdf docs as in the appendix
 \usepackage[pdftex,bookmarks=true]{hyperref}
 %\usepackage[xindy]{glossaries} % must be after hyperref
+
+% Roman number
+\newunicodechar{Ⅰ}{\textRoman{1}}
+\newunicodechar{Ⅱ}{\textRoman{2}}
+\newunicodechar{Ⅲ}{\textRoman{3}}
+\newcommand{\textRoman}[1]{\MakeUppercase{\romannumeral #1}}
 
 \hypersetup{
     pdfauthor = {\myname},
@@ -130,7 +137,9 @@
 \setupParagraphs
 
 \input{src/introduction.tex}
-\input{src/fundamentals.tex}
+\input{src/fundamentals_a.tex}
+\input{src/fundamentals_b.tex}
+\input{src/fundamentals_c.tex}
 \input{src/methods.tex}
 \input{src/results.tex}
 \input{src/conclusion.tex}
