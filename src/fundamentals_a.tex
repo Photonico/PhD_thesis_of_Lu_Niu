@@ -552,45 +552,74 @@ K= \lim_{x'_1\to x_1}\left( -\int\mathrm{d}x_1\left[\frac{\nabla_i^2}{2}\rho(x_1
 
 We begin by insisting on a single functional variable $Q$ such that every observable of interest $\hat\Omega_i$ can be written in the form $\hat\Omega_i[Q]$. Having identified $Q$, we then derive the explicit mappings $\hat\Omega_i[Q]$ for each target observable. Finally, we develop a practical algorithm or approximation scheme to compute $Q$ itself, thereby rendering all observables $\hat\Omega_i[Q]$ tractable.
 
-
-\subsection{Spectroscopy}
-
 Suppose a time-dependent many-body wavefunction: $\Psi(x_1,x_2,\dots,x_n;t)$ . We denote the corresponding ground state ($g\coloneqq0$) many-body wavefunction as $\Psi_g(x_1,x_2,\dots,x_n;t)$, and we can also denote the excited state $n$-th ($n\geq1$) many-body wavefunction as $\Psi_n(x_1,x_2,\dots,x_n;t)$.
 
 Then, we can describe the ground-state one-body density:
 
 \begin{equation}
-\rho_g(x_1,t)=\int {\rm d}x_2\dots{\rm d}x_N\Psi_g^*(x_1,x_2,\dots,x_N;t)\Psi_g(x_1,x_2,\dots,x_N;t)
+\rho_g(x_1,t)=\int \mathrm{d}x_2\dots\mathrm{d}x_N\Psi_g^*(x_1,x_2,\dots,x_N;t)\Psi_g(x_1,x_2,\dots,x_N;t)
 \label{ground_one-body_density}
 \end{equation}
 
 When this system makes transitions to excited states, the one-body transition quantity is obtained by integrating out the other coordinates:
 
 \begin{equation}
-f_n^{eh}(x_1,t)=\int {\rm d}x_2\dots{\rm d}x_N\Psi_g^*(x_1,x_2,\dots,x_N;t)\Psi_n(x_1,x_2,\dots,x_N;t)
+f_n^{eh}(x_1,t)=\int \mathrm{d}x_2\dots\mathrm{d}x_N\Psi_g^*(x_1,x_2,\dots,x_N;t)\Psi_n(x_1,x_2,\dots,x_N;t)
 \label{transition_one-body}
 \end{equation}
 
-Equivalently, the reduced (marginal) integral $f_n^{eh}(x_1,t)=\int\Psi_g^*(\vec{x};t)\Psi_n(\vec{x};t)\prod^N_{j=2}{\rm d}x_j$ is the one-body transition density from ground state $g$ to the $n$-th excited state.
+Equivalently, the reduced (marginal) integral $f_n^{eh}(x_1,t)=\int\Psi_g^*(\vec{x};t)\Psi_n(\vec{x};t)\prod^N_{j=2}\mathrm{d}x_j$ is the one-body transition density from ground state $g$ to the $n$-th excited state.
 
-In terms of any electromagnetic field is oscillating, we have to introduce a phase factor of excitation energy $e^{-i(E_n-E_g)t}$. Then, the transition is modified as:
+In the presence of an oscillating electromagnetic field, we introduce the Bohr frequency 
+$\omega_{ng}=(E_n-E_g)/\hbar$ (set $\hbar=1$ if desired). The corresponding phase factor associated with the excitation energy is $e^{-i(E_n-E_g)t}$.
+If one separates the trivial time phases so that $\Psi_{g/n}(\vec{x};t)=\Phi_{g/n}(\vec{x})e^{-iE_{g/n}t/\hbar}$, then the transition density can be written as
 
 \begin{equation}
-f_n^{eh}(x_1,t)=e^{-i(E_n-E_g)t}\int{\rm d}x_2\dots{\rm d}x_N\Psi_g^*(x_1,x_2,\dots,x_N;t)\Psi_n(x_1,x_2,\dots,x_N;t)
+    f_n^{eh}(x_1,t)=e^{-i(E_n-E_g)t}\int\mathrm{d}x_2\dots\mathrm{d}x_N\Psi_g^*(x_1,x_2,\dots,x_N;t)\Psi_n(x_1,x_2,\dots,x_N;t)
 \label{mod_transition_one-body}
 \end{equation}
 
-Here, $\int{\rm d}x_2\dots{\rm d}x_N\Psi_g^*(x_1,x_2,\dots,x_N;t)\Psi_n(x_1,x_2,\dots,x_N;t)$ denotes
-the transition amplitude.
+Here, $\int\mathrm{d}x_2\dots\mathrm{d}x_N\Psi_g^*(x_1,x_2,\dots,x_N;t)\Psi_n(x_1,x_2,\dots,x_N;t)$ denotes the transition amplitude.
 
-Recall the observable $\Omega$, we need a different compact quantity $Q$ for that. Then, we describe its density as $\int{\rm d}x_1\Omega_1(x_1)n(x_1)$. Moreover, we can also describe its one-body density matrix as $-\int{\rm d}x_1\left[ \frac{\nabla^{\prime 2}}{2}\rho(x_1,x^\prime_1)\right]$, and two-body density matrix: $\int{\rm d}x_1{\rm d}x_2\frac{e^2}{|\vec{r}_1-\vec{r}_2|}n^{(2)}(x_1,x_2)$.
-
-Then, we can modify the observable as:
+Recall a one-body operator $\hat{\Omega}^{(1)}$ with kernel $\Omega_1(x_1)$,
+the one-body density $n(x_1)$,
+the one-body density matrix $\rho(x_1,x'_1)$,
+and the pair density $n^{(2)}(x_1,x_2)$ (the spatial parts are contained in $x_1,x_2$):
 
 \begin{equation}
-\Omega_1 =\int{\rm d}x_1\Omega_1(x_1)n(x_1)-\int{\rm d}x_1\left[ \frac{\nabla^{\prime 2}}{2}\rho(x_1,x^\prime_1)\right]+\int{\rm d}x_1{\rm d}x_2\frac{e^2}{|\vec{r}_1-\vec{r}_2|}n^{(2)}(x_1,x_2)
-\label{mod_obs}
+\begin{aligned}
+    \braket{\hat{\Omega}^{(1)}}  &= \int \mathrm{d}x_1\, \Omega_1(x_1)\, n(x_1),\\
+    T &= -\frac{1}{2}\int \mathrm{d}x_1\,
+    \Big[\nabla_{x'_1}^{2}\,\rho(x_1,x'_1)\Big]_{x'_1=x_1},\\
+    V_{ee} &= \frac{1}{2}\int \mathrm{d}x_1\,\mathrm{d}x_2\,
+    \frac{e^2}{|\vec{r}_1-\vec{r}_2|}\, n^{(2)}(x_1,x_2).
+\end{aligned}
+\label{one-body_operator_with_kernel}
 \end{equation}
+
+Hence, a typical energy-like observable can be written as
+\begin{equation}
+\begin{aligned}
+    \braket{\Omega_1}
+    &= \int \mathrm{d}x_1\, \Omega_1(x_1)\, n(x_1) \\
+    &\quad - \frac{1}{2}\int \mathrm{d}x_1\,
+    \Big[\nabla_{x'_1}^{2}\,\rho(x_1,x'_1)\Big]_{x'_1=x_1} \\
+    &\quad + \frac{1}{2}\int \mathrm{d}x_1\,\mathrm{d}x_2\,
+    \frac{e^2}{|\vec{r}_1-\vec{r}_2|}\, n^{(2)}(x_1,x_2).
+\end{aligned}
+\label{mod_obs_1}
+\end{equation}
+
+Up to now, we do not know any solution for these complicated calculations. We introduce a compact quantity $Q$. Rather than calculating different $Q_i$ admissions for every $\Omega_i[Q_i]$. We had better insist to find one $Q$ where $\Omega_i[Q]$ is possible. Then, find $\Omega_i[Q]$ for observables of interest, and find a way to calculate that $Q$.
+
+
+
+
+
+
+
+
+
 
 
 % v1, 26:04
