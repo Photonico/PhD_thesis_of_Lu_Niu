@@ -555,7 +555,43 @@ We begin by insisting on a single functional variable $Q$ such that every observ
 
 \subsection{Spectroscopy}
 
-When a system make transitions to excited states, 
+Suppose a time-dependent many-body wavefunction: $\Psi(x_1,x_2,\dots,x_n;t)$ . We denote the corresponding ground state ($g\coloneqq0$) many-body wavefunction as $\Psi_g(x_1,x_2,\dots,x_n;t)$, and we can also denote the excited state $n$-th ($n\geq1$) many-body wavefunction as $\Psi_n(x_1,x_2,\dots,x_n;t)$.
+
+Then, we can describe the ground-state one-body density:
+
+\begin{equation}
+\rho_g(x_1,t)=\int {\rm d}x_2\dots{\rm d}x_N\Psi_g^*(x_1,x_2,\dots,x_N;t)\Psi_g(x_1,x_2,\dots,x_N;t)
+\label{ground_one-body_density}
+\end{equation}
+
+When this system makes transitions to excited states, the one-body transition quantity is obtained by integrating out the other coordinates:
+
+\begin{equation}
+f_n^{eh}(x_1,t)=\int {\rm d}x_2\dots{\rm d}x_N\Psi_g^*(x_1,x_2,\dots,x_N;t)\Psi_n(x_1,x_2,\dots,x_N;t)
+\label{transition_one-body}
+\end{equation}
+
+Equivalently, the reduced (marginal) integral $f_n^{eh}(x_1,t)=\int\Psi_g^*(\vec{x};t)\Psi_n(\vec{x};t)\prod^N_{j=2}{\rm d}x_j$ is the one-body transition density from ground state $g$ to the $n$-th excited state.
+
+In terms of any electromagnetic field is oscillating, we have to introduce a phase factor of excitation energy $e^{-i(E_n-E_g)t}$. Then, the transition is modified as:
+
+\begin{equation}
+f_n^{eh}(x_1,t)=e^{-i(E_n-E_g)t}\int{\rm d}x_2\dots{\rm d}x_N\Psi_g^*(x_1,x_2,\dots,x_N;t)\Psi_n(x_1,x_2,\dots,x_N;t)
+\label{mod_transition_one-body}
+\end{equation}
+
+Here, $\int{\rm d}x_2\dots{\rm d}x_N\Psi_g^*(x_1,x_2,\dots,x_N;t)\Psi_n(x_1,x_2,\dots,x_N;t)$ denotes
+the transition amplitude.
+
+Recall the observable $\Omega$, we need a different compact quantity $Q$ for that. Then, we describe its density as $\int{\rm d}x_1\Omega_1(x_1)n(x_1)$. Moreover, we can also describe its one-body density matrix as $-\int{\rm d}x_1\left[ \frac{\nabla^{\prime 2}}{2}\rho(x_1,x^\prime_1)\right]$, and two-body density matrix: $\int{\rm d}x_1{\rm d}x_2\frac{e^2}{|\vec{r}_1-\vec{r}_2|}n^{(2)}(x_1,x_2)$.
+
+Then, we can modify the observable as:
+
+\begin{equation}
+\Omega_1 =\int{\rm d}x_1\Omega_1(x_1)n(x_1)-\int{\rm d}x_1\left[ \frac{\nabla^{\prime 2}}{2}\rho(x_1,x^\prime_1)\right]+\int{\rm d}x_1{\rm d}x_2\frac{e^2}{|\vec{r}_1-\vec{r}_2|}n^{(2)}(x_1,x_2)
+\label{mod_obs}
+\end{equation}
+
 
 % v1, 26:04
 
