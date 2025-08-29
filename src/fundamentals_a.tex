@@ -82,7 +82,7 @@ For example, in a two-particle system, the total Hilbert space is $\mathbb{H}=\m
 $\ket{\psi_1} \otimes \ket{\psi_2}$, because many physically relevant states are entangled. This means that their correlations cannot be described by individual particle states alone. On a coordinate basis, we denote the wavefunction as:
 
 \begin{equation}
-    \Psi(x_1,x_2,\dots,x_N,t)=\braket{x_1,x_2,\dots,x_N|\Psi(t)},
+    \Psi(x_1,x_2,\cdots,x_N,t)=\braket{x_1,x_2,\cdots,x_N|\Psi(t)},
     \label{many-body_wavefunction}
 \end{equation}
 
@@ -112,8 +112,8 @@ Summing all these terms, we arrive at the full many-body Hamiltonian:
 Considering the parameters in this Hamiltonian, we observe that the many-body wavefunctions for each state $\lambda$ depend explicitly on the $3N$ spatial coordinates of the electrons and their spin $\sigma$:
 
 \begin{equation}
-    \hat{H}(\vec{r}_1,\vec{r}_2,\dots,\vec{r}_N)\Psi(x_1,x_2,\dots,x_N)
-    = E_\lambda\Psi_\lambda(x_1,x_2,\dots,x_N),
+    \hat{H}(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)\Psi(x_1,x_2,\cdots,x_N)
+    = E_\lambda\Psi_\lambda(x_1,x_2,\cdots,x_N),
     \label{many_body_hamiltonian_argument}
 \end{equation}
 
@@ -140,21 +140,21 @@ This complexity, known as the "curse of dimensionality," motivates powerful appr
 When electron interactions are completely disregarded, the problem simplifies to $N$ independent single-electron problems. If we further overlook the Pauli exclusion principle, the many-body wavefunction reduces simply to a product of $N$ single-particle wavefunctions:
 
 \begin{equation}
-    \Psi(x_1,x_2,\dots,x_N)=\psi_{n_1}(x_1)\psi_{n_2}(x_2)\dots\psi_{n_N}(x_N),
+    \Psi(x_1,x_2,\cdots,x_N)=\psi_{n_1}(x_1)\psi_{n_2}(x_2)\cdots\psi_{n_N}(x_N),
     \label{independent_body_function}
 \end{equation}
 
-where $\lambda=\{n_1,n_2,\dots,n_N\}$ labels the states.
+where $\lambda=\{n_1,n_2,\cdots,n_N\}$ labels the states.
 
 However, to satisfy the Pauli principle, we must represent the many-body wavefunction as an antisymmetric Slater determinant:
 
 \begin{equation}
     \Psi = \frac{1}{\sqrt{N!}}
     \begin{vmatrix}
-    \psi_1(\vec{r}_1,\sigma_1) & \psi_1(\vec{r}_2,\sigma_2) & \dots & \psi_1(\vec{r}_N,\sigma_N)\\
-    \psi_2(\vec{r}_1,\sigma_1) & \psi_2(\vec{r}_2,\sigma_2) & \dots & \psi_2(\vec{r}_N,\sigma_N)\\
+    \psi_1(\vec{r}_1,\sigma_1) & \psi_1(\vec{r}_2,\sigma_2) & \cdots & \psi_1(\vec{r}_N,\sigma_N)\\
+    \psi_2(\vec{r}_1,\sigma_1) & \psi_2(\vec{r}_2,\sigma_2) & \cdots & \psi_2(\vec{r}_N,\sigma_N)\\
     \vdots & \vdots & \ddots & \vdots\\
-    \psi_N(\vec{r}_1,\sigma_1) & \psi_N(\vec{r}_2,\sigma_2) & \dots & \psi_N(\vec{r}_N,\sigma_N)
+    \psi_N(\vec{r}_1,\sigma_1) & \psi_N(\vec{r}_2,\sigma_2) & \cdots & \psi_N(\vec{r}_N,\sigma_N)
     \end{vmatrix}.
     \label{slater_determinant}
 \end{equation}
@@ -162,8 +162,8 @@ However, to satisfy the Pauli principle, we must represent the many-body wavefun
 Finally, we can describe the full time‐evolution of the many‐body wavefunction in coordinate space by the time‐dependent Schrödinger equation (Eq.~\eqref{tdse}), using the simplified Hamiltonian:
 
 \begin{equation}
-    i\hbar\frac{\partial}{\partial t}\Psi(x_1,x_2,\dots,x_N,t)
-    = \hat{H}\Psi(x_1,x_2,\dots,x_N,t).
+    i\hbar\frac{\partial}{\partial t}\Psi(x_1,x_2,\cdots,x_N,t)
+    = \hat{H}\Psi(x_1,x_2,\cdots,x_N,t).
     \label{tdse_manybody_coord}
 \end{equation}
 
@@ -367,13 +367,13 @@ In quantum many-body theory and calculation, employing the grand canonical ensem
 
 \subsection{From wavefunction to practical functionals}
 
-Let's stay at zero temperature and fixed particle number $n$. By the operator that stands for the measurement: $\sum_{i,j,\dots}\hat\Omega\left(x_i,x_j,\dots\right)$ and the many-body function of the ground state for the N-body $\Psi(x_1,x_2,\dots,x_N)$ which contains the information about the system. Therefore, we can represent the observables as:
+Let's stay at zero temperature and fixed particle number $n$. By the operator that stands for the measurement: $\sum_{i,j,\cdots}\hat\Omega\left(x_i,x_j,\cdots\right)$ and the many-body function of the ground state for the N-body $\Psi(x_1,x_2,\cdots,x_N)$ which contains the information about the system. Therefore, we can represent the observables as:
 
 \begin{equation}
 \begin{aligned}
     \braket{\hat\Omega} 
     &= \bra{\Psi}\hat\Omega\ket{\Psi} \\
-    &= \iint\cdots\int \mathrm{d}x_1\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\sum_{i,j,\dots}\hat\Omega\left(x_i,x_j,\dots\right)\Psi(x_1,x_2,\dots,x_N)
+    &= \iint\cdots\int \mathrm{d}x_1\mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi^*(x_1,x_2,\cdots,x_N)\sum_{i,j,\cdots}\hat\Omega\left(x_i,x_j,\cdots\right)\Psi(x_1,x_2,\cdots,x_N)
 \end{aligned}
 \label{observables_N-body}
 \end{equation}
@@ -471,8 +471,8 @@ Next, recall the general expression for an observable in a many‐body system (E
 \begin{aligned}
     \braket{\hat\Omega_1}
     &= \bra{\Psi}\hat\Omega_1\ket{\Psi} \\
-    &= \iint\cdots\int \mathrm{d}x_1\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\sum_{i}\hat\Omega_1(x_i)\Psi(x_1,x_2,\dots,x_N) \\
-    &= \int\mathrm{d}x_1\Omega_1(x_1)N\int\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\Psi(x_1,x_2,\dots,x_N)
+    &= \iint\cdots\int \mathrm{d}x_1\mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi^*(x_1,x_2,\cdots,x_N)\sum_{i}\hat\Omega_1(x_i)\Psi(x_1,x_2,\cdots,x_N) \\
+    &= \int\mathrm{d}x_1\Omega_1(x_1)N\int\mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi^*(x_1,x_2,\cdots,x_N)\Psi(x_1,x_2,\cdots,x_N)
 \end{aligned}
 \label{observables_one-body}
 \end{equation}
@@ -480,21 +480,21 @@ Next, recall the general expression for an observable in a many‐body system (E
 We can find that this integral naturally factors into two components: the one‐body operator term
 
 \begin{equation}
-\int\mathrm{d}x_1,\Omega_1(x_1),N
+\int\mathrm{d}x_1\,\Omega_1(x_1)N
 \label{one-body_operator}
 \end{equation}
 
 and the one‐body density
 
 \begin{equation}
-n(x_1)=N\int\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\Psi(x_1,x_2,\dots,x_N),
+n(x_1)=N\int\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\cdots,x_N)\Psi(x_1,x_2,\cdots,x_N),
 \label{one-body_density}
 \end{equation}
 
 so that the expectation value reduces to
 
 \begin{equation}
-\braket{\hat\Omega_1}=\int\mathrm{d}x_1\Omega_1(x_1)n(x_1)
+\braket{\hat\Omega_1}=\int\mathrm{d}x_1\,\Omega_1(x_1)n(x_1)
 \label{observables_one-body_density}
 \end{equation}
 
@@ -505,8 +505,8 @@ Next, consider the electron–electron Coulomb interaction energy:
 \begin{equation}
 \begin{aligned}
     V_\mathrm{ee}
-    &= \iint\cdots\int \mathrm{d}x_1\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\sum_{i,j>i}\frac{e^2}{|\vec{r}_i-\vec{r}_j|}\Psi(x_1,x_2,\dots,x_N) \\
-    &= \int\mathrm{d}x_1\mathrm{d}x_2\frac{e^2}{2|\vec{r}_i-\vec{r}_j|}N(N-1)\int\mathrm{d}x_3\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\Psi(x_1,x_2,\dots,x_N)
+    &= \iint\cdots\int \mathrm{d}x_1\mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi^*(x_1,x_2,\cdots,x_N)\sum_{i,j>i}\frac{e^2}{|\vec{r}_i-\vec{r}_j|}\Psi(x_1,x_2,\cdots,x_N) \\
+    &= \int\mathrm{d}x_1\mathrm{d}x_2\,\frac{e^2}{2|\vec{r}_i-\vec{r}_j|}N(N-1)\int\mathrm{d}x_3\cdots\mathrm{d}x_N\,\Psi^*(x_1,x_2,\cdots,x_N)\Psi(x_1,x_2,\cdots,x_N)
 \end{aligned}
 \label{coulomb_interaction_energy}
 \end{equation}
@@ -514,14 +514,14 @@ Next, consider the electron–electron Coulomb interaction energy:
 Here, the two-body density naturally appears:
 
 \begin{equation}
-n^{(2)}(x_1,x_2)=N(N-1)\int\mathrm{d}x_3\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\Psi(x_1,x_2,\dots,x_N)
+n^{(2)}(x_1,x_2)=N(N-1)\int\mathrm{d}x_3\cdots\mathrm{d}x_N\,\Psi^*(x_1,x_2,\cdots,x_N)\Psi(x_1,x_2,\cdots,x_N)
 \label{two-body_density}
 \end{equation}
 
 So that the expectation value of the Coulomb interaction energy reduces to:
 
 \begin{equation}
-V_\mathrm{ee}=\int\mathrm{d}x_1\mathrm{d}x_2\frac{e^2}{2|\vec{r}_i-\vec{r}_j|}n^{(2)}(x_1,x_2)
+V_\mathrm{ee}=\int\mathrm{d}x_1\mathrm{d}x_2\,\frac{e^2}{2|\vec{r}_i-\vec{r}_j|}n^{(2)}(x_1,x_2)
 \label{observables_two-body_density}
 \end{equation}
 
@@ -529,8 +529,8 @@ Similarly, the kinetic energy expectation value is
 
 \begin{equation}
 \begin{aligned}
-    K&= -\iint\cdots\int \mathrm{d}x_1\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\sum_{i}\frac{\nabla_i^2}{2}\Psi(x_1,x_2,\dots,x_N) \\
-    &= \lim_{x'_1\to x_1}\left( -\int\mathrm{d}x_1\left[\frac{\nabla_i^2}{2}N\int\dots\int\mathrm{d}x_2\dots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\Psi(x'_1,x_2,\dots,x_N) \right]\right)
+    K&= -\iint\cdots\int \mathrm{d}x_1\mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi^*(x_1,x_2,\cdots,x_N)\sum_{i}\frac{\nabla_i^2}{2}\Psi(x_1,x_2,\cdots,x_N) \\
+    &= \lim_{x'_1\to x_1}\left( -\int\mathrm{d}x_1\left[\frac{\nabla_i^2}{2}N\int\cdots\int\mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi^*(x_1,x_2,\cdots,x_N)\Psi(x'_1,x_2,\cdots,x_N) \right]\right)
 \end{aligned}
 \label{kinetic_energy}
 \end{equation}
@@ -539,7 +539,7 @@ We can also separate this integral via the matrix of density:
 
 \begin{equation}
 \rho(x_1,x'_1)
-=N\int\dots\int\mathrm{d}x_2\dots\mathrm{d}x_N\Psi^*(x_1,x_2,\dots,x_N)\Psi(x'_1,x_2,\dots,x_N) 
+=N\int\cdots\int\mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi^*(x_1,x_2,\cdots,x_N)\Psi(x'_1,x_2,\cdots,x_N) 
 \label{density_matrix}
 \end{equation}
 
@@ -552,19 +552,19 @@ K= \lim_{x'_1\to x_1}\left( -\int\mathrm{d}x_1\left[\frac{\nabla_i^2}{2}\rho(x_1
 
 We begin by insisting on a single functional variable $Q$ such that every observable of interest $\hat\Omega_i$ can be written in the form $\hat\Omega_i[Q]$. Having identified $Q$, we then derive the explicit mappings $\hat\Omega_i[Q]$ for each target observable. Finally, we develop a practical algorithm or approximation scheme to compute $Q$ itself, thereby rendering all observables $\hat\Omega_i[Q]$ tractable.
 
-Suppose a time-dependent many-body wavefunction: $\Psi(x_1,x_2,\dots,x_n;t)$ . We denote the corresponding ground state ($g\coloneqq0$) many-body wavefunction as $\Psi_g(x_1,x_2,\dots,x_n;t)$, and we can also denote the excited state $n$-th ($n\geq1$) many-body wavefunction as $\Psi_n(x_1,x_2,\dots,x_n;t)$.
+Suppose a time-dependent many-body wavefunction: $\Psi(x_1,x_2,\cdots,x_n;t)$ . We denote the corresponding ground state ($g\coloneqq0$) many-body wavefunction as $\Psi_g(x_1,x_2,\cdots,x_n;t)$, and we can also denote the excited state $n$-th ($n\geq1$) many-body wavefunction as $\Psi_n(x_1,x_2,\cdots,x_n;t)$.
 
 Then, we can describe the ground-state one-body density:
 
 \begin{equation}
-\rho_g(x_1,t)=\int \mathrm{d}x_2\dots\mathrm{d}x_N\Psi_g^*(x_1,x_2,\dots,x_N;t)\Psi_g(x_1,x_2,\dots,x_N;t)
+\rho_g(x_1,t)=\int \mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\Psi_g(x_1,x_2,\cdots,x_N;t)
 \label{ground_one-body_density}
 \end{equation}
 
 When this system makes transitions to excited states, the one-body transition quantity is obtained by integrating out the other coordinates:
 
 \begin{equation}
-f_n^{eh}(x_1,t)=\int \mathrm{d}x_2\dots\mathrm{d}x_N\Psi_g^*(x_1,x_2,\dots,x_N;t)\Psi_n(x_1,x_2,\dots,x_N;t)
+f_n^{eh}(x_1,t)=\int \mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\Psi_n(x_1,x_2,\cdots,x_N;t)
 \label{transition_one-body}
 \end{equation}
 
@@ -575,11 +575,11 @@ $\omega_{ng}=(E_n-E_g)/\hbar$ (set $\hbar=1$ if desired). The corresponding phas
 If one separates the trivial time phases so that $\Psi_{g/n}(\vec{x};t)=\Phi_{g/n}(\vec{x})e^{-iE_{g/n}t/\hbar}$, then the transition density can be written as
 
 \begin{equation}
-    f_n^{eh}(x_1,t)=e^{-i(E_n-E_g)t}\int\mathrm{d}x_2\dots\mathrm{d}x_N\Psi_g^*(x_1,x_2,\dots,x_N;t)\Psi_n(x_1,x_2,\dots,x_N;t)
+    f_n^{eh}(x_1,t)=e^{-i(E_n-E_g)t}\int\mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\Psi_n(x_1,x_2,\cdots,x_N;t)
 \label{mod_transition_one-body}
 \end{equation}
 
-Here, $\int\mathrm{d}x_2\dots\mathrm{d}x_N\Psi_g^*(x_1,x_2,\dots,x_N;t)\Psi_n(x_1,x_2,\dots,x_N;t)$ denotes the transition amplitude.
+Here, $\int\mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\Psi_n(x_1,x_2,\cdots,x_N;t)$ denotes the transition amplitude.
 
 Recall a one-body operator $\hat{\Omega}^{(1)}$ with kernel $\Omega_1(x_1)$,
 the one-body density $n(x_1)$,
@@ -610,7 +610,40 @@ Hence, a typical energy-like observable can be written as
 \label{mod_obs_1}
 \end{equation}
 
-Up to now, we do not know any solution for these complicated calculations. We introduce a compact quantity $Q$. Rather than calculating different $Q_i$ admissions for every $\Omega_i[Q_i]$. We had better insist to find one $Q$ where $\Omega_i[Q]$ is possible. Then, find $\Omega_i[Q]$ for observables of interest, and find a way to calculate that $Q$.
+% Compact Q -> lead to density functional
+
+Up to now, we do not have closed-form solutions for these complicated calculations. 
+We therefore introduce a compact descriptor $Q$. 
+Rather than constructing a different $Q_i$ for each observable $\Omega_i[Q_i]$,  we insist on a single descriptor $Q$ such that $\Omega_i[Q]$ exists for all observables of interest. 
+First determine $Q$ under its normalization constraints, and then evaluate $\{\Omega_i[Q]\}$: 
+
+\begin{equation}
+\Psi\mapsto Q \quad \Omega_i[\Psi]\coloneqq \Omega_i[Q] \quad (i=1,2,\ldots).
+\label{Q}
+\end{equation}
+
+Why the density? A minimal yet powerful choice is the particle density $n(x)$. 
+On one hand, it is exact for any local one-body observable: $\braket{\hat{\Omega}^{(1)}}=\int \mathrm{d}x\,\Omega_1(x)\,n(x),$
+On the other hand, extremely compact compared to $\Psi$, and (iii) by the Hohenberg--Kohn mapping (ground states), $n$ determines $v_{\rm ext}$ and thus the state. 
+Hence we seek functionals of the density $\Omega[n]$.
+
+Then, we explore the variational route for $n$. Define the energy-like functional
+
+\begin{equation}
+    E[n;v_{\rm ext}]=T[n]+V_{ee}[n]+\int\mathrm{d}x\,v_{\rm ext}(x)n(x),
+\label{energy-like_functional}
+\end{equation}
+
+and obtain the ground-state density from
+\begin{equation}
+    \frac{\delta}{\delta n}\Big(E[n;v_{\rm ext}] - \mu\,N[n]\Big)=0 \ \Rightarrow\ n_g(x).
+\label{ground-state_density}
+\end{equation}
+
+Once $n_g$ is known, all desired observables are evaluated as $\Omega_i[n_g]$; 
+for nonlocal one-body or two-body quantities, this amounts to adopting controlled approximations for $T[n]$ and $V_{ee}[n]$ such as the Kohn--Sham framework, which we will introduce later.
+
+\subsection{What is functional}
 
 
 
@@ -621,8 +654,7 @@ Up to now, we do not know any solution for these complicated calculations. We in
 
 
 
-
-% v1, 26:04
+% v1, 31:00
 
 
 
