@@ -19,7 +19,7 @@ But how exactly does this state evolve over time? The evolution is determined by
 
 Here, the left side describes how quickly and in what manner the quantum state changes over time; And the right side tells us that this rate of change is determined by the Hamiltonian operator, reflecting the total energy configuration of this conserved system. 
 
-If we know the state vector at an initial time $t=0$. This elegant equation provides us with a probability to predict its future states.
+Suppose we know the state vector at an initial time $t=0$. This elegant equation provides us with a probability to predict its future states.
 
 \subsection{Time evolution operator}
 
@@ -240,7 +240,7 @@ Having seen that any local one‐body observable can be written as an integral o
 
 \begin{equation}
 n(\vec{r})
-= \bra{\psi}\,\hat n(\vec{r})\ket{\psi}
+= \bra{\psi}\,\hat n(\vec{r}\,)\ket{\psi}
 = \bra{\psi}\sum_i\delta\left(\vec{r} - \hat{\vec{r}}_i\right)\ket{\psi}
 \label{one‐body_density}
 \end{equation}
@@ -253,7 +253,7 @@ The time-dependent density-functional theory depends on the continuity equation 
 
 \begin{equation}
 \begin{cases}
-  \hat n(\vec r)
+  \hat n(\vec r\,)
     = \displaystyle\sum_i \delta\bigl(\vec r - \hat{\vec r}_i\bigr)
     & \text{(Schrödinger‐picture density operator)}\\
   \hat n_H(\vec r,t)
@@ -550,7 +550,7 @@ K= \lim_{x'_1\to x_1}\left( -\int\mathrm{d}x_1\left[\frac{\nabla_i^2}{2}\rho(x_1
 \label{kinetic_energy_density_matrix}
 \end{equation}
 
-We begin by insisting on a single functional variable $Q$ such that every observable of interest $\hat\Omega_i$ can be written in the form $\hat\Omega_i[Q]$. Having identified $Q$, we then derive the explicit mappings $\hat\Omega_i[Q]$ for each target observable. Finally, we develop a practical algorithm or approximation scheme to compute $Q$ itself, thereby rendering all observables $\hat\Omega_i[Q]$ tractable.
+We begin by insisting on a single functional variable $Q$ such that every observable of interest $\hat\Omega_i$ can be written in the form $\hat\Omega_i[Q]$. Having identified $Q$, we then derive the explicit mappings $\hat\Omega_i[Q]$ for each target observable. Finally, we develop a practical algorithm or an approximation scheme to compute $Q$ itself, thereby rendering all observables $\hat\Omega_i[Q]$ tractable.
 
 Suppose a time-dependent many-body wavefunction: $\Psi(x_1,x_2,\cdots,x_n;t)$ . We denote the corresponding ground state ($g\coloneqq0$) many-body wavefunction as $\Psi_g(x_1,x_2,\cdots,x_n;t)$, and we can also denote the excited state $n$-th ($n\geq1$) many-body wavefunction as $\Psi_n(x_1,x_2,\cdots,x_n;t)$.
 
@@ -561,7 +561,7 @@ Then, we can describe the ground-state one-body density:
 \label{ground_one-body_density}
 \end{equation}
 
-When this system makes transitions to excited states, the one-body transition quantity is obtained by integrating out the other coordinates:
+When this system makes transitions to excited states, the one-body transition quantity is obtained by integrating other coordinates:
 
 \begin{equation}
 f_n^{eh}(x_1,t)=\int \mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\Psi_n(x_1,x_2,\cdots,x_N;t)
@@ -575,7 +575,10 @@ $\omega_{ng}=(E_n-E_g)/\hbar$ (set $\hbar=1$ if desired). The corresponding phas
 If one separates the trivial time phases so that $\Psi_{g/n}(\vec{x};t)=\Phi_{g/n}(\vec{x})e^{-iE_{g/n}t/\hbar}$, then the transition density can be written as
 
 \begin{equation}
-    f_n^{eh}(x_1,t)=e^{-i(E_n-E_g)t}\int\mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\Psi_n(x_1,x_2,\cdots,x_N;t)
+\begin{aligned}
+    &f_n^{eh}(x_1,t)\\
+    =& e^{-i(E_n-E_g)t}\int\mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\Psi_n(x_1,x_2,\cdots,x_N;t)
+\end{aligned}
 \label{mod_transition_one-body}
 \end{equation}
 
@@ -598,6 +601,7 @@ and the pair density $n^{(2)}(x_1,x_2)$ (the spatial parts are contained in $x_1
 \end{equation}
 
 Hence, a typical energy-like observable can be written as
+
 \begin{equation}
 \begin{aligned}
     \braket{\Omega_1}
@@ -624,10 +628,10 @@ First determine $Q$ under its normalization constraints, and then evaluate $\{\O
 
 Why the density? A minimal yet powerful choice is the particle density $n(x)$. 
 On one hand, it is exact for any local one-body observable: $\braket{\hat{\Omega}^{(1)}}=\int \mathrm{d}x\,\Omega_1(x)\,n(x),$
-On the other hand, extremely compact compared to $\Psi$, and (iii) by the Hohenberg--Kohn mapping (ground states), $n$ determines $v_{\rm ext}$ and thus the state. 
-Hence we seek functionals of the density $\Omega[n]$.
+On the other hand, extremely compact compared to $\Psi$, and (iii) by the Hohenberg-Kohn mapping (ground states), $n$ determines $v_{\rm ext}$ and thus the state. 
+Hence, we seek functionals of the density $\Omega[n]$.
 
-Then, we explore the variational route for $n$. Define the energy-like functional
+Then, we explore the variational route for $n$. Define the energy-like functional:
 
 \begin{equation}
     E[n;v_{\rm ext}]=T[n]+V_{ee}[n]+\int\mathrm{d}x\,v_{\rm ext}(x)n(x),
@@ -641,27 +645,37 @@ and obtain the ground-state density from
 \end{equation}
 
 Once $n_g$ is known, all desired observables are evaluated as $\Omega_i[n_g]$; 
-for nonlocal one-body or two-body quantities, this amounts to adopting controlled approximations for $T[n]$ and $V_{ee}[n]$ such as the Kohn--Sham framework, which we will introduce later.
-
-\subsection{What is functional}
-
-
-
-
-
-
-
-
-
-
-% v1, 31:00
-
-
-
-
+for nonlocal one-body or two-body quantities, this amounts to adopting controlled approximations for $T[n]$ and $V_{ee}[n]$ such as the Kohn-Sham framework, which we will introduce later.
 
 \newpage
 \section{An introduction to the functional of density}
+A functional is a mapping that takes a function as its input and returns a number (or sometimes another function).
+
+The reason we introduce density functional theory (DFT) in condensed matter physics research is that solving the full many-body or many-electron Schrödinger equation scales hopelessly with the number of electrons. DFT reformulates it as a variational problem in terms of the three-dimensional electron density 
+$n(\vec{r})$, making predictive calculations of structures, band structures, magnetism, and reaction energetics feasible.
+
+In condensed matter physics, it often appears as a map from electron density $n(\vec{r})$ to the total energy $E[n]$ given by an external potential:
+
+\begin{equation}
+    E_\mathrm{ext}[n]=\int\mathrm{d}\vec{r}\,n(\vec{r}\,)V_\mathrm{ext}(\vec{r}\,)
+\label{functional_energy_potential}
+\end{equation}
+
+We can also use a non-local functional to describe the classical electrostatic term or the Hartree energy:
+
+\begin{equation}
+    E_\mathrm{H}[n]=\frac{1}{2}\int\mathrm{d}\vec{r}_i\,\mathrm{d}\vec{r}_j\,\frac{n(\vec{r}_i)n(\vec{r}_j)}{|\vec{r}_i-\vec{r}_j|}
+\label{hartree_functional}
+\end{equation}
+
+Next, let us consider the expression for kinetic energy in terms of a functional. Within the Thomas–Fermi approximation, the noninteracting kinetic energy is treated locally as that of a uniform (homogeneous) electron gas whose density equals the actual electron density $n(\vec{r}\,)$ at each point in space. This leads to the Thomas–Fermi kinetic-energy functional:
+
+\begin{equation}
+    T_\mathrm{TF}=C\int\mathrm{d}\vec{r}\,n^{5/3}(\vec{r}\,)
+\label{tf_functional}
+\end{equation}
+
+where $C=\frac{3}{10}(3\pi^2)^{2/3}$ for a spin-degenerate electron gas in atomic units. This form of kinetic energy functional was introduced independently in the seminal works of \cite{thomas1927calculation} and \cite{fermi1927metodo}.
 
 \subsection{The Hohenberg-Kohn theorem and density functional}
 
