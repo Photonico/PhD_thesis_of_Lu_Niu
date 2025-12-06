@@ -335,12 +335,6 @@ Finally, we can describe the full time-evolution of the many-body wavefunction i
     \label{tdse_manybody_coord}
 \end{equation}
 
-% \begin{equation}
-%     i\hbar\frac{\partial}{\partial t}\Psi(x_1,x_2,\cdots,x_N,t)
-%     = \hat{H}\,\Psi(x_1,x_2,\cdots,x_N,t)
-%     \label{tdse_manybody_coord}
-% \end{equation}
-
 \subsection{From Schrödinger picture to Heisenberg picture}
 
 Up to now, we have adopted the Schrödinger picture to describe the time evolution of quantum systems. In this picture, states carry all the time dependence, while operators remain fixed. Specifically, the quantum state $\ket{\psi(t)}$ evolves in time according to the Schrödinger equation~\eqref{time-dependent_Schrodinger_equation}.
@@ -403,7 +397,32 @@ This form is particularly convenient for discussing conserved quantities and sym
 
 \subsection{Field and density operators}
 
-test
+In a many-body system, it is often convenient to describe local observables in an operator language.
+This notation is especially useful for particle densities and currents, and it will be used in the following subsection to derive the continuity equation.
+
+First, we define the fermionic field operators $\hat{\psi}(x)$ and $\hat{\psi}^\dagger(x)$.
+They annihilate and create an electron at the single particle coordinate $x$.
+We write it as $x\coloneqq(\vec{r},\sigma)$, where $\sigma$ denotes the spin degree of freedom.
+In an orthonormal one-particle basis $\{\phi_p(x)\}$, the field operators are expanded as:
+
+\begin{equation}
+\begin{aligned}
+    \hat{\psi}(x)
+    &= \sum_p\phi_p(x)\,\hat{c}_p \\
+    \hat{\psi}^\dagger(x)
+    &= \sum_p\phi_p^{*}(x)\,\hat{c}_p^\dagger
+\end{aligned}
+\label{field_operators_expansion}
+\end{equation}
+
+Here $\hat{c}_p$ and $\hat{c}_p^\dagger$ are the annihilation and creation operators associated with the orbital $\phi_p(x)$.
+In the Heisenberg picture, the corresponding time-dependent field operator follows from \eqref{heisenberg_operator_definition}:
+
+\begin{equation}
+    \hat{\psi}_\mathrm{H}(x,t)
+    =\hat{U}^\dagger(t,t_0)\,\hat{\psi}(x)\,\hat{U}(t,t_0)
+    \label{heisenberg_field_operator}
+\end{equation}
 
 \subsection{From Heisenberg picture to the continuity equation}
 
@@ -416,11 +435,15 @@ n(\vec{r}\,)
 \label{one-body_density}
 \end{equation}
 
-gives the electron density at point $\vec{r}$. Physically, $n(\vec{r}\,)\mathrm{d}^3r$ is the expected number of electrons in the volume element $\mathrm{d}^3r$ around $\vec{r}$. In density functional theory, $n(\vec{r}\,)$ serves as the fundamental variable replacing the full many-body wavefunction.  
+gives the electron density at point $\vec{r}$.
+Physically, $n(\vec{r}\,)\mathrm{d}^3r$ is the expected number of electrons in the volume element $\mathrm{d}^3r$ around $\vec{r}$.
+In density functional theory, $n(\vec{r}\,)$ serves as the fundamental variable replacing the full many-body wavefunction.  
 
-It can be shown that the ground state density $n(\vec{r}\,)$ uniquely fixes the external potential, which is up to an additive constant, and hence all ground state observables can be written as functionals of $n(\vec{r}\,)$. This dramatic reduction comes from a 3$N$-dimensional wavefunction to a three-dimensional density, which lies at the heart of density functional theory, making formerly intractable many-body problems computationally feasible.
+It can be shown that the ground state density $n(\vec{r}\,)$ uniquely fixes the external potential, which is up to an additive constant, and hence all ground state observables can be written as functionals of $n(\vec{r}\,)$.
+This dramatic reduction comes from a 3$N$-dimensional wavefunction to a three-dimensional density, which lies at the heart of density functional theory, making formerly intractable many-body problems computationally feasible.
 
-The time-dependent density-functional theory relies on the continuity equation in the Heisenberg picture. We first define the particle density operator in the Schrödinger-picture as:
+The time-dependent density-functional theory relies on the continuity equation in the Heisenberg picture.
+We first define the particle density operator in the Schrödinger-picture as:
 
 \begin{equation}
     \hat{n}(\vec{r}\,)
@@ -504,7 +527,9 @@ This exact conservation law shows that once the initial density $n(\vec{r},0)$ a
 
 In fact, a many-body wavefunction explicitly depends on all particle coordinates, making it practically impossible to calculate and store exactly due to the exponential increase in complexity with particle number.
 
-Nevertheless, what we ultimately aim to describe are measurable properties---observables such as position, momentum, energy, or spin---which can be extracted from the wavefunction through expectation values:
+Nevertheless, what we ultimately aim to describe are measurable properties.
+These include observables like position, momentum, energy, or spin.
+We can extract them from the wavefunction through expectation values:
 
 \begin{equation}
     \braket{\hat{\Omega}} = \bra{\Psi}\hat{\Omega}\ket{\Psi}
@@ -565,14 +590,6 @@ A more radical question is whether we need to work with explicit wavefunctions a
 In the case of this approximation, for a given hamiltonian $\bra{\Psi}\hat{H}\ket{\Psi}$, we can regard it as depending on the form of the kinetic energy operator $\bra{\Psi}\hat{T}\ket{\Psi}$, external potential operator $\bra{\Psi}\hat{V}_\mathrm{ext}\ket{\Psi}$, and the interaction operator $\bra{\Psi}\hat{V}_\mathrm{int}\ket{\Psi}$.
 
 To specify the quantum dynamics and interactions of our system, we begin by defining its hamiltonian. The hamiltonian encodes all system-specific information:
-
-% \begin{equation}
-%     \hat{H}
-%     = -\frac{\hbar^2}{2m_\mathrm{e}}\sum_i\nabla_i^2
-%     + \sum_i v_{\mathrm{ext}}(\hat{\vec{r}}_i)
-%     + \sum_{i<j}\frac{e^2}{|\vec{r}_i - \vec{r}_j|}
-% \label{hamiltonian}
-% \end{equation}
 
 \begin{equation}
     \hat{H}
@@ -756,7 +773,7 @@ and we work within the set of admissible densities, and equation~\eqref{particle
 
 %%
 
-so that the expectation value reduces to
+so that the expectation value reduces to:
 
 \begin{equation}
 \braket{\hat\Omega_1}=\int\mathrm{d}x_1\,\Omega_1(x_1)n(x_1)
