@@ -151,7 +151,8 @@
     \LARGE\bfseries \centering
     \openup\medskipamount
     \@title\par\vspace{30pt}%
-    \centering\mdseries{\sc \authors}\par\bigskip
+    % \centering\mdseries{\sc \authors}\par\bigskip
+    \centering\mdseries{\authors}\par\bigskip
 %    \centering\@sid{\sid}\par\bigskip
     \centering{\large \mydegrees}\par\bigskip
     \endgroup
@@ -201,7 +202,7 @@
   \end{center}}%
 {\par\vfil\null}
 
-% insert page break after tableofcontents
+% insert page break after table of contents
 \def\tableofcontents{%
   \@starttoc{toc}\contentsname\newpage
 }
@@ -258,11 +259,11 @@
 }
 
 % change the default labels for enumerate
-%\renewcommand{\labelenumi}{\alph{enumi})}
-%\renewcommand{\labelenumii}{(\roman{enumii})}
+% \renewcommand{\labelenumi}{\alph{enumi})}
+% \renewcommand{\labelenumii}{(\roman{enumii})}
 
 % Algorithms should be numbered 'A', 'B', etc.
-%\renewcommand{\thealgorithm}{\Alph{algorithm}}
+% \renewcommand{\thealgorithm}{\Alph{algorithm}}
 
 % Figures should be numbered globally
 \renewcommand{\thefigure}{\thechapter.\arabic{figure}}
@@ -407,6 +408,5 @@
   \fi
 \relax
 }
-
 
 \endinput

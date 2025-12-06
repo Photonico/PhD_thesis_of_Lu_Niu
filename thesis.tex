@@ -1,95 +1,144 @@
 %%%%%%%% Thesis template
+% Academic thesis style by Lu Niu, 2025
+% based on the file by David Symonds
 
 %%%% Commands
-\newcommand{\suptitle}{This is the Title}
+\newcommand{\suptitle}{Exploring Quantum Properties of Light-Element Xenes: DFT Studies of the Electronic Structure and Optical Response for Boron and Beryllium Allotropes}
 \newcommand{\myname}{Lu Niu}
 
-%%% Configuration
-\def\degree{Doctor of Philosophy}
+%%%% Personal configuration
 \def\department{School of Physics}
-% \def\mydegrees{Doctor of Philosophy}
-%\def\sid{200342291}
+\def\degree{Doctor of Philosophy}
+\def\mydegrees{Doctor of Philosophy}
+% \def\sid{200342291}
 \def\supervisor{Catherine Stampfl}
-\def\assocsupervisora{Oliver James Conquest}
+% \def\assocsupervisora{Oliver James Conquest}
 % \def\assocsupervisorc{Marco Fronzi}
 \def\assocsupervisorb{Carla Verdi}
 \documentclass[logo]{style/usydthesis}
 
 % Remove the optional 'logo' argument to remove the logo from the title page
 
-% Uncomment these two lines out of if you want a watermark
-%\usepackage[timestamp]{draftcopy}
-%\draftcopyVersion{Printed\space}
+% Uncomment these two lines if you want a watermark
+% \usepackage[timestamp]{draftcopy}
+% \draftcopyVersion{Printed\space}
 
 % Remove weird spaces in the List of Figures
-\newcommand*{\noaddvspace}{\renewcommand*{\addvspace}[1]{}}
-\addtocontents{lof}{\protect\noaddvspace}
+% \newcommand*{\noaddvspace}{\renewcommand*{\addvspace}[1]{}}
+% \addtocontents{lof}{\protect\noaddvspace}
 
-%%%%
-% Packages
-%\usepackage[dvips]{graphics,color}
+%%%% Packages
+% \usepackage[dvips]{graphics,color}
 \usepackage{amstext,amssymb,amsfonts,latexsym}
-%\usepackage[procnames]{listings2}
-%\usepackage{fancyhdr}
-%\usepackage[nolineno,norules]{lgrind}
-%\usepackage{makeidx}
+% \usepackage[procnames]{listings2}
+\usepackage{fancyhdr}
+% \usepackage[nolineno,norules]{lgrind}
+% \usepackage{makeidx}
 \usepackage[version=4]{mhchem}
-\usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenc}     % comment if you use XeLaTeX or LuaLaTeX
 \usepackage[UKenglish]{babel}
+\usepackage{setspace}
 \usepackage{animate}
 \usepackage{amsmath}
 \usepackage{braket}
 \usepackage{ccicons}
-\usepackage{csquotes}   % Recommended
+\usepackage{csquotes}
 \usepackage{mathtools}
 \usepackage{newunicodechar}
-\usepackage{setspace}
 \usepackage{style/bib}
-\usepackage{pdfpages}   % for hosting full pdf docs as in the appendix
+\usepackage{pdfpages}               % for hosting full PDF docs as in the appendix
 \usepackage[pdftex,bookmarks=true]{hyperref}
-%\usepackage[xindy]{glossaries} % must be after hyperref
+% \usepackage[xindy]{glossaries}      % must be after hyperref
+\usepackage{titlesec}
+% \usepackage{textcase}
+%% font family settings (requires XeLaTeX or LuaLaTeX)
+% \usepackage{fontspec}
+% \setmainfont{TeX Gyre Schola}
+% \usepackage{unicode-math}
+% \setmathfont{TeX Gyre Schola Math}
 
-% Roman number
+%%%% Personal writing settings
+\newcommand{\euler}{\mathrm{e}}     % Euler's number
+\newcommand{\dif}{\mathrm{d}}       % differential operator
+\newcommand{\ii}{\mathrm{i}}        % imaginary unit i
+\newcommand{\jj}{\mathrm{j}}        % imaginary unit j
+\newcommand{\kk}{\mathrm{k}}        % imaginary unit k
+\newcommand{\kB}{k_\mathrm{B}}      % Boltzmann constant
+\newcommand{\me}{m_\mathrm{e}}      % electron mass
+
+%%%% Environment settings
+% Abstract env fallback (this class defines 'summary', not 'abstract') 
+\makeatletter
+\@ifundefined{abstract}{%
+  \newenvironment{abstract}{\begin{summary}}{\end{summary}}%
+}{}
+\makeatother
+
+%%%% Contents settings
+\makeatletter
+% \@dottedtocline{level}{indent}{numwidth}
+\renewcommand{\l@section}{\@dottedtocline{1}{1em}{2em}}
+\renewcommand{\l@subsection}{\@dottedtocline{2}{2em}{3em}}
+\makeatother
+
+%%%% Section/subsection references
+\newcommand{\secref}[1]{section~\ref{#1}}
+\newcommand{\subsecref}[1]{subsection~\ref{#1}}
+\newcommand{\secrefT}[1]{section~\ref{#1}: \nameref{#1}}
+\newcommand{\subsecrefT}[1]{subsection~\ref{#1}: \nameref{#1}}
+
+%%%% Roman number
 \newunicodechar{Ⅰ}{\textRoman{1}}
 \newunicodechar{Ⅱ}{\textRoman{2}}
 \newunicodechar{Ⅲ}{\textRoman{3}}
 \newcommand{\textRoman}[1]{\MakeUppercase{\romannumeral #1}}
 
+%%%% Hyperlink configurations
 \hypersetup{
     pdfauthor = {\myname},
     pdftitle = {\suptitle},
     colorlinks,
-%    linkcolor={blue},
-%    citecolor={blue}
+    linkcolor={black},
+    citecolor={blue}
     linkcolor={black},
     citecolor={black}
     }
 
-%%%%
-% Maths functions
+%%%% Maths functions
 \def\O{\mbox{O}}
 \newcommand{\bsigma}{{\boldsymbol\sigma}}
 \newcommand{\bepsilon}{{\boldsymbol\epsilon}}
 
-%%%%
-% Setup
+%%%% Setup
 \newenvironment{myquote}{\list{}{\leftmargin=2.5cm\rightmargin=2.5cm}\item[]}{\endlist}
-\usepackage[style=authoryear,
-            backend=biber,
-%            firstinits=true,
-%            terseinits=true,
-            uniquename=false,
-            uniquelist=false,
-            maxcitenames=2,
-            hyperref=true]{biblatex}
-\addbibresource{thesis.bib}
-\usepackage{microtype}
-%\setlength{\parskip}{3mm plus0.5mm minus0.5mm}
-%\parindent 0pt
-%\renewcommand{\thepage}{\roman{page}}
-%\makeindex
 
-% Page size:
+%%%% Running head
+\makeatletter
+\renewcommand{\chaptermark}[1]{\markboth{\parbox[t]{0.95\textwidth}{
+    \centering\scriptsize\scshape~#1}}{}
+}
+\renewcommand{\sectionmark}[1]{\markright{\parbox[t]{0.95\textwidth}{
+    \centering\scriptsize\scshape\thesection~#1}}
+}
+\makeatother
+\setlength{\headheight}{1.5em}
+\setlength{\headsep}{1em}
+
+%%%% References
+\usepackage[
+    backend=biber,
+    style=numeric-comp, 
+    sorting=none 
+]{biblatex} 
+\addbibresource{thesis.bib}
+
+\usepackage{microtype}
+% \setlength{\parskip}{3mm plus0.5mm minus0.5mm}
+% \parindent 0pt
+% \renewcommand{\thepage}{\roman{page}}
+% \makeindex
+
+%%%% Page size settings
 \oddsidemargin=0.2in
 \evensidemargin=0.0in
 \textwidth=6.1in
@@ -97,42 +146,63 @@
 %\textheight=22cm
 %\topmargin=-1cm
 
-%%%%
-% Start
-%\input{src/glossary.tex}
-%\makeglossaries
+%%%% Title configuration
+% Chapter
+\titleformat{\chapter}[hang]
+  {\normalfont\bfseries\Large}
+  {Chapter~\thechapter}
+  {0.5em} 
+  {}
+
+% Section
+\titleformat{\section}[hang]
+  {\normalfont\bfseries\large}
+  {\thesection}
+  {0.5em}
+  {}
+
+% Subsection
+\titleformat{\subsection}[hang]
+  {\normalfont\bfseries}
+  {\thesubsection}
+  {0.5em}
+  {}
+
+%%%% Start
+% \input{src/glossary.tex}
+% \makeglossaries
 \begin{document}
 
-% initial page numbers:  i, ii, iii, ...
+% initial page numbers: i, ii, iii, ...
 \renewcommand{\thepage}{\roman{page}}	
 
 %%%%
 % Title page
-\title{{\bf\Huge \suptitle}}
+\title{{\bfseries\LARGE\suptitle}}
 \author{\myname}
 
 \maketitle
-
-\setstretch{1.5}
+\linespread{1.20}\selectfont
+% \onehalfspacing
 % intro pages
 \input{src/abstract.tex}
+\input{src/publications.tex}
 \input{src/thanks.tex}
-%\printglossary
+% \printglossary
 
 \setcounter{tocdepth}{2}
 \newpage
 \addcontentsline{toc}{chapter}{Contents}
 \tableofcontents
-\listoffigures
-%\listoftables
+% \listoffigures
+% \listoftables
 
 %%%%%%%%%%%%
-% Chapters
-
+%% Chapters
 \setcounter{page}{1}
 \setcounter{chapter}{0}
 
-% main page numbers:  1, 2, 3, ...
+%% main page numbers:  1, 2, 3, ...
 \renewcommand{\thepage}{\arabic{page}}	
 \setupParagraphs
 
@@ -140,19 +210,21 @@
 \input{src/fundamentals_a.tex}
 \input{src/fundamentals_b.tex}
 \input{src/fundamentals_c.tex}
-\input{src/methods.tex}
-\input{src/results.tex}
-\input{src/conclusion.tex}
+% \input{src/methods.tex}
+% \input{src/results.tex}
+% \input{src/conclusion.tex}
 
-%%%%%%%%%%%%
-% End
+% \input{src/pub1_G-BC.tex}
+% \input{src/pub2_o-B14.tex}
+% \input{src/pub3_Beryllene.tex}
 
-% Bibliography
-%\bibliographystyle{style/mybibstyle}
-%\bibliography{thesis}
+%% Bibliography
+% \bibliographystyle{style/mybibstyle}
+% \bibliography{thesis}
 \printbibliography
 
-% Appendices
+%% Appendices
 \appendix
 \input{src/appendix.tex}
+
 \end{document}
