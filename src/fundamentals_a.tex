@@ -395,34 +395,62 @@ For a time-independent hamiltonian and an operator without explicit time depende
 
 This form is particularly convenient for discussing conserved quantities and symmetries, since it expresses the dynamics directly at the operator level.
 
-\subsection{Field and density operators}
+% \subsection{Field and density operators}
 
-In a many-body system, it is often convenient to describe local observables in an operator language.
-This notation is especially useful for particle densities and currents, and it will be used in the following subsection to derive the continuity equation.
+% In a many-body system, it is often convenient to describe local observables in an operator language.
+% This notation is especially useful for particle densities and currents, and it will be used in the following subsection to derive the continuity equation.
 
-First, we define the fermionic field operators $\hat{\psi}(x)$ and $\hat{\psi}^\dagger(x)$.
-They annihilate and create an electron at the single particle coordinate $x$.
-We write it as $x\coloneqq(\vec{r},\sigma)$, where $\sigma$ denotes the spin degree of freedom.
-In an orthonormal one-particle basis $\{\phi_p(x)\}$, the field operators are expanded as:
+% First, we define the fermionic field operators $\hat{\psi}(x)$ and $\hat{\psi}^\dagger(x)$.
+% They annihilate and create an electron at the single particle coordinate $x$.
+% We write it as $x\coloneqq(\vec{r},\sigma)$, where $\sigma$ denotes the spin degree of freedom.
+% In an orthonormal one-particle basis $\{\phi_p(x)\}$, the field operators are expanded as:
 
-\begin{equation}
-\begin{aligned}
-    \hat{\psi}(x)
-    &= \sum_p\phi_p(x)\,\hat{c}_p \\
-    \hat{\psi}^\dagger(x)
-    &= \sum_p\phi_p^{*}(x)\,\hat{c}_p^\dagger
-\end{aligned}
-\label{field_operators_expansion}
-\end{equation}
+% \begin{equation}
+% \begin{aligned}
+%     \hat{\psi}(x)
+%     &= \sum_p\phi_p(x)\,\hat{c}_p \\
+%     \hat{\psi}^\dagger(x)
+%     &= \sum_p\phi_p^{*}(x)\,\hat{c}_p^\dagger
+% \end{aligned}
+% \label{field_operators_expansion}
+% \end{equation}
 
-Here $\hat{c}_p$ and $\hat{c}_p^\dagger$ are the annihilation and creation operators associated with the orbital $\phi_p(x)$.
-In the Heisenberg picture, the corresponding time-dependent field operator follows from \eqref{heisenberg_operator_definition}:
+% Here $\hat{c}_p$ and $\hat{c}_p^\dagger$ are the annihilation and creation operators associated with the orbital $\phi_p(x)$.
+% In the Heisenberg picture, the corresponding time-dependent field operator follows from \eqref{heisenberg_operator_definition}:
 
-\begin{equation}
-    \hat{\psi}_\mathrm{H}(x,t)
-    =\hat{U}^\dagger(t,t_0)\,\hat{\psi}(x)\,\hat{U}(t,t_0)
-    \label{heisenberg_field_operator}
-\end{equation}
+% \begin{equation}
+%     \hat{\psi}_\mathrm{H}(x,t)
+%     =\hat{U}^\dagger(t,t_0)\,\hat{\psi}(x)\,\hat{U}(t,t_0)
+%     \label{heisenberg_field_operator}
+% \end{equation}
+
+% The fermionic nature of electrons is encoded in the canonical anticommutation relations.
+% For two single-particle labels $p$ and $q$, the operators $\hat{c}_p$ and $\hat{c}_q^\dagger$ satisfy:
+
+% \begin{equation}
+% \begin{aligned}
+%     \left\{\hat{c}_p,\hat{c}_q^\dagger\right\} &= \delta_{pq} \\
+%     \left\{\hat{c}_p,\hat{c}_q\right\} &= 0 \\
+%     \left\{\hat{c}_p^\dagger,\hat{c}_q^\dagger\right\} &= 0
+% \end{aligned}
+% \label{fermionic_anticommutation_relations}
+% \end{equation}
+
+% These relations ensure the Pauli exclusion principle at the operator level.
+% In particular, $\hat{c}_p^2=0$ implies that no two fermions can occupy the same one-particle state.
+
+% Equivalently, in the coordinate representation, the field operators satisfy:
+
+% \begin{equation}
+% \begin{aligned}
+%     \left\{\hat{\psi}(x),\hat{\psi}^\dagger(x')\right\} &= \delta(x-x') \\
+%     \left\{\hat{\psi}(x),\hat{\psi}(x')\right\} &= 0 \\
+%     \left\{\hat{\psi}^\dagger(x),\hat{\psi}^\dagger(x')\right\} &= 0
+% \end{aligned}
+% \label{field_anticommutation_relations}
+% \end{equation}
+
+% where $\delta(x-x')$ denotes the Dirac delta distribution in space together with a Kronecker delta in spin
 
 \subsection{From Heisenberg picture to the continuity equation}
 
@@ -1628,6 +1656,7 @@ From the Thomas--Fermi approximation, we express the total energy as a density f
     E^{\mathrm{TF}}[n;v_\mathrm{ext}] = T_\mathrm{TF}[n] + E_\mathrm{int}[n] + E_\mathrm{ext}[n]
     \label{TF_total_energy_functional}
 \end{equation}
+
 
 %P1 1:27
 
