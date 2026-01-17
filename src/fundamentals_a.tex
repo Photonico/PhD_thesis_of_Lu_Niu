@@ -668,7 +668,7 @@ A central challenge is that evaluating the grand-canonical expectation in equati
 
 Our aim is to express the expectation values—which are, in principle, highly complex functionals—in terms of a single simple function, so that practical approximations become possible.
 
-Next, recall the general expression for an observable in a many-body system: equation~\eqref{observables_N-body}. If the observable is a local one-body operator, we have
+Next, recall the general expression for an observable in a many-body system: equation~\eqref{observables_N-body}. If the observable is a local one-body operator, we have:
 
 \begin{equation}
 \begin{aligned}
@@ -680,18 +680,18 @@ Next, recall the general expression for an observable in a many-body system: equ
 \label{observables_one-body}
 \end{equation}
 
-We can find that this integral naturally factors into two components: the one-body operator term
-
-\begin{equation}
-\int\mathrm{d}x_1\,\Omega_1(x_1)N
-\label{one-body_operator}
-\end{equation}
-
-and the one-body density
+We can find that this integral naturally factors into two components: the one-body operator kernel $\Omega_1(x_1)$, and the corresponding ground-state one-body density:
 
 \begin{equation}
 n(x_1)=N\int\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\cdots,x_N)\Psi(x_1,x_2,\cdots,x_N),
 \label{one-body_density}
+\end{equation}
+
+Accordingly, the ground state expectation value of the one-body operator can be written as:
+
+\begin{equation}
+\langle\hat{\Omega}_1\rangle=\int\mathrm{d}x_1\,\Omega_1(x_1)\,n(x_1)
+\label{expectation_one_body_operator}
 \end{equation}
 
 here $x$ denotes the one-particle coordinate.
@@ -1921,6 +1921,8 @@ In what follows, we introduce an auxiliary description that retains the density 
 \subsection{Auxiliary system}
 
 There, we need to address a kernel question of density functioanl theory, which is how to calculate the density $n(\vec{r}\,)$.
+
+For a ground-sate density, let us recall the one-body density~\eqref{one-body_density}, which is given as an integral of the many-body ground-state wave function.
 
 
 
