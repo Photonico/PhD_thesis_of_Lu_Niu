@@ -534,7 +534,7 @@ In what follows, we mainly focus on the ground state setting: zero temperature a
 
 Let us stay at zero temperature and fixed particle number $N$.
 Consider the operator for the measurement $\sum_{i,j,\cdots}\hat\Omega\left(x_i,x_j,\cdots\right)$,
-and the ground-state $N$-body wavefunction $\Psi(x_1,x_2,\cdots,x_N)$.
+and the ground state $N$-body wavefunction $\Psi(x_1,x_2,\cdots,x_N)$.
 By inserting resolutions of the identity in the coordinate basis for all particles, $I=\int \mathrm{d}x\,\ket{x}\bra{x}$~\cite{shankar2017quantum},
 we can represent the expectation value as:
 
@@ -729,7 +729,7 @@ For a spin-resolved density $n(x)$, we define the particle number functional as:
     \label{particle_number_functional}
 \end{equation}
 
-and in the ground-state setting with fixed particle number we require:
+and in the ground state setting with fixed particle number we require:
 
 \begin{equation}
     N[n]=N
@@ -1003,7 +1003,7 @@ Given an observable represented by an operator $\hat{\Omega}$, its ground state 
 
 and hence every ground state observable can be regarded, at least formally, as a functional of the many-body wavefunction: $O[\Psi_0]=O$.
 
-However, the kernel idea of density functional theory is here: for the ground-state properties, the wavefunction dependence can be reduced even further. In our statement, if the density of ground state $n(\vec{r}\,)$ uniquely specifies the corresponding wavefunction of ground state $\Psi_0$,
+However, the kernel idea of density functional theory is here: for the ground state properties, the wavefunction dependence can be reduced even further. In our statement, if the density of ground state $n(\vec{r}\,)$ uniquely specifies the corresponding wavefunction of ground state $\Psi_0$,
 the expectation value of any operator $\hat{\Omega}$ in the ground state is uniquely determined by the density function $n(\vec{r}\,)$.
 
 Consequently, every ground state observable can be written as a (unique) density functional:
@@ -1157,7 +1157,7 @@ Whenever the wavefunction $\Psi_0(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)\neq 0$, 
 \end{equation}
 
 The equality above implies that, for any configuration $(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)$ where the wavefunction $\Psi_0(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)\neq 0$, the factor multiplying $\Psi_0$ must be constant.
-Dividing both sides by $\Psi_0$ wherever the ground-state wavefunction $\Psi_0(\vec{r}_1,\ldots,\vec{r}_N)$ is nonzero, we obtain a constraint on the difference between the two external potentials.
+Dividing both sides by $\Psi_0$ wherever the ground state wavefunction $\Psi_0(\vec{r}_1,\ldots,\vec{r}_N)$ is nonzero, we obtain a constraint on the difference between the two external potentials.
 
 To make this explicit, we define the potential shift function:
 
@@ -1667,8 +1667,24 @@ The nucleus--nucleus contribution $E_\mathrm{NN}$ is omitted since it does not d
 
 This expression gives the total energy in the Thomas--Fermi approximation as a functional of the electron density $n(\vec{r}\,)$ for a given external potential $v_\mathrm{ext}(\vec{r}\,)$.
 
+---
 
+To determine the ground state density, we minimize the Thomas--Fermi energy functional under the particle number constraint:
 
+\begin{equation}
+    \int\dif{\vec{r}}\,n(\vec{r}\,)=N
+    \label{constraint_particle_number}
+\end{equation}
+
+Applying the method of Lagrange multipliers, we require the first variation of the constrained functional to vanish:
+
+\begin{equation}
+\begin{aligned}
+    0 &= \delta\left\{E_\mathrm{TF}[n]-\lambda\left(\int\dif{\vec{r}}\,n(\vec{r}\,)-N\right)\right\}\\
+    &= \delta\left\{T_\mathrm{TF}[n]+E_\mathrm{int}[n]+E_\mathrm{ext}[n]-\lambda\left(\int\dif{\vec{r}}\,n(\vec{r}\,)-N\right)\right\}
+\end{aligned}
+\label{total_energy_variation}
+\end{equation}
 
 ---draft---
 
