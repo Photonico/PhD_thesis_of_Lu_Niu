@@ -1609,8 +1609,56 @@ Accordingly, we write the Thomas--Fermi total energy functional:
     \label{TF_total_energy_functional}
 \end{equation}
 
+According to the local form of the external potential energy functional~\eqref{functional_Eext_local_form}, and the external contribution is given by the coupling between $n(\vec{r}\,)$ and $v_\mathrm{ext}(\vec{r}\,)$.
+For fixed nuclear positions, the external potential $v_\mathrm{ext}(\vec{r}\,)$ is a prescribed function of $\vec{r}$ defined in equation~\eqref{one-body_Electron--nucleus}, therefore, the external contribution $E_\mathrm{ext}[n]$ is linear in the electron density $n(\vec{r}\,)$.
 
-%P1 1:27
+We next approximate the interaction term by the classical Coulomb energy associated with the density distribution.
+Using the electron--electron Coulomb repulsion~\eqref{electrons_Coulomb}, we obtain the Hartree interaction energy functional:
+
+\begin{equation}
+    E^\mathrm{H}[n]\coloneqq E_\mathrm{int}[n]=\frac{1}{2}\int\dif^3{r}\int\dif^3{r'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{|\vec{r}-\vec{r}\,'|}
+    \label{functional_EH}
+\end{equation}
+
+We next consider the kinetic energy functional.
+For a homogeneous spin-unpolarized electron gas with density $n$,
+the Fermi wave vector satisfies~\cite{simon2013oxford}:
+
+\begin{equation}
+    k_\mathrm{F} = \left(3\pi^2 n\right)^{\frac{1}{3}}
+    \label{Fermi_wave_vector_homogeneous_gas}
+\end{equation}
+
+and the corresponding kinetic energy density reads:
+
+\begin{equation}
+    t(n) = \frac{3}{10}\,k_\mathrm{F}^2\,n
+    = \frac{3}{10}\left(3\pi^2\right)^{\frac{2}{3}}n^{\frac{5}{3}} .
+    \label{kinetic_energy_density_homogeneous_gas}
+\end{equation}
+
+Within the local density approximation, we apply this homogeneous result locally by replacing $n\to n(\vec{r}\,)$ and integrating over space.
+This leads to the Thomas--Fermi kinetic energy functional:
+
+\begin{equation}
+    T_\mathrm{TF}[n] = C_1\,\int \dif^3{r}\,n(\vec{r}\,)^{\frac{5}{3}}
+    \label{functional_TTF}
+\end{equation}
+
+with the Thomas--Fermi constant:
+
+\begin{equation}
+    C_1 \coloneqq \frac{3}{10}\left(3\pi^2\right)^{\frac{2}{3}} .
+    \label{Thomas_Fermi_constant_C1}
+\end{equation}
+
+This expression holds for a spin-unpolarized system.
+
+---draft---
+
+Therefore, we arrive at the full energy functional of the desnity:
+
+
 
 \newpage
 \section{From density functional to Kohn--Sham theory}
