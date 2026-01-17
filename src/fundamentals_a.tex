@@ -960,8 +960,8 @@ This leads to the Thomas--Fermi kinetic energy functional:
 where $C=\frac{3}{10}(3\pi^2)^{2/3}$ for a spin-degenerate electron gas in atomic units.
 This form of kinetic energy functional was introduced independently in the seminal works by L.~H.~Thomas~\cite{thomas1927calculation} and E.~Fermi~\cite{fermi1927metodo}.
 
-Moreover, to account for inhomogeneity effects beyond the purely local Thomas--Fermi form, one often adds the von Weizs{\"a}cker gradient correction to the kinetic energy functional.
-A detailed discussion can be found in the review by C.~J.~Garc{\i}a-Cervera~\cite{garcia2007efficient}.
+Moreover, to account for inhomogeneity effects beyond the purely local Thomas--Fermi form, one often adds the von Weizsäcker gradient correction to the kinetic energy functional.
+A detailed discussion can be found in the review by C.~J.~García-Cervera~\cite{garcia2007efficient}.
 In atomic units, it is generally written as:
 
 \begin{equation}
@@ -1452,24 +1452,24 @@ E[n]
 \end{equation}
 
 To proceed, we separate the system-specific external potential contribution from the remaining part of the energy.
-This motivates introducing the universal Hohenberg--Kohn functional $F_\mathrm{HK}[n]$, defined by a constrained-search formulation~\cite{levy1979universal,engel2011density}:
+This motivates introducing the universal Hohenberg--Kohn functional $E_\mathrm{HK}[n]$, defined by a constrained-search formulation~\cite{levy1979universal,engel2011density}:
 
 \begin{equation}
 \begin{aligned}
-    F_\mathrm{HK}[n]
+    E_\mathrm{HK}[n]
     &= \min_{\Psi\to n}\bra{\Psi}(\hat{T}+\hat{V}_\mathrm{int})\ket{\Psi} \\
     &= T[n] + E_\mathrm{int}[n]
 \end{aligned}
 \label{functional_HK_definition}
 \end{equation}
 
-For a fixed form of the electron-electron interaction, $F_\mathrm{HK}[n]$ is independent of the external potential $v_\mathrm{ext}(\vec{r}\,)$,
+For a fixed form of the electron-electron interaction, $E_\mathrm{HK}[n]$ is independent of the external potential $v_\mathrm{ext}(\vec{r}\,)$,
 and the system specific information enters only through $v_\mathrm{ext}$.
 
 With this definition, the total energy density functional can be written in the standard form:
 
 \begin{equation}
-    E[n]=F_\mathrm{HK}[n]+\int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
+    E[n]=E_\mathrm{HK}[n]+\int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
     \label{standard_form_energy_functional}
 \end{equation}
 
@@ -1520,27 +1520,27 @@ At the minimum, the first variation vanishes for all admissible $\delta n(\vec{r
 Combining the Euler--Lagrange condition in equation~\eqref{euler_lagrange_density_general} with the standard form of the energy functional in equation~\eqref{standard_form_energy_functional}, we obtain:
 
 \begin{equation}
-    \frac{\delta F_\mathrm{HK}[n]}{\delta n(\vec{r}\,)} + v_\mathrm{ext}(\vec{r}\,) = \mu
+    \frac{\delta E_\mathrm{HK}[n]}{\delta n(\vec{r}\,)} + v_\mathrm{ext}(\vec{r}\,) = \mu
     \label{euler_lagrange_density_functional}
 \end{equation}
 
 evaluated at $n=n_0$.
 
-However, the functional $F_\mathrm{HK}[n]$ (and hence its components such as the kinetic and interaction contributions)
+However, the functional $E_\mathrm{HK}[n]$ (and hence its components such as the kinetic and interaction contributions)
 is not known explicitly as a functional of the density, and must be approximated in practical calculations.
 
 At this point, we return to the standard form of the energy functional in equation~\eqref{standard_form_energy_functional}. By rearranging it, we can formally write the universal Hohenberg--Kohn functional as:
 
 \begin{equation}
-    F_\mathrm{HK}[n] = E[n]-\int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
+    E_\mathrm{HK}[n] = E[n]-\int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
     \label{formal_FHK_as_difference}
 \end{equation}
-This relation may suggest that $F_\mathrm{HK}[n]$ could be obtained once the total energy functional $E[n]$ is known.
+This relation may suggest that $E_\mathrm{HK}[n]$ could be obtained once the total energy functional $E[n]$ is known.
 
 In practice, this is not a constructive route.
 For a given $v_\mathrm{ext}(\vec{r}\,)$, the interacting many-body problem yields only the minimizing density $n_0(\vec{r}\,)$ and the corresponding energy $E[n_0]$.
 To determine a functional over a broad range of densities, we would in principle need to solve the interacting problem for many different external potentials to sample many ground state densities.
-Therefore, the Hohenberg--Kohn theorem should be viewed as an existence and uniqueness statement, rather than an explicit formula for $F_\mathrm{HK}[n]$. 
+Therefore, the Hohenberg--Kohn theorem should be viewed as an existence and uniqueness statement, rather than an explicit formula for $E_\mathrm{HK}[n]$. 
 
 These considerations clarify why density functional theory relies on approximations.
 In what follows, we introduce the Kohn--Sham construction,
@@ -1659,15 +1659,24 @@ Therefore, we arrive at the full Thomas--Fermi energy functional as a functional
 The nucleus--nucleus contribution $E_\mathrm{NN}$ is omitted since it does not depend on $n(\vec{r}\,)$.
 
 \begin{equation}
-    E_\mathrm{TF}=C_1\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{5}{3}}
+\begin{aligned}
+    E_\mathrm{TF}[n]
+    &= C_1\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{5}{3}}
     + \frac{1}{2}\int\dif{\vec{r}}\int\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{|\vec{r}-\vec{r}\,'|}
-    + \int\dif{\vec{r}}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
-    \label{full_energy_functional}
+    + \int\dif{\vec{r}}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,) \\
+    &= C_1\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{5}{3}}
+    + E_\mathrm{H}[n] + \int\dif{\vec{r}}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
+\end{aligned}
+\label{full_energy_functional}
 \end{equation}
 
 This expression gives the total energy in the Thomas--Fermi approximation as a functional of the electron density $n(\vec{r}\,)$ for a given external potential $v_\mathrm{ext}(\vec{r}\,)$.
 
----
+The ground state of the system is characterized by the density that minimizes the total energy under the constraint of a fixed particle number.
+This is the variational principle for the ground-state energy in density functional theory.
+
+At finite temperature, the equilibrium density is obtained by minimizing the Helmholtz free energy functional.
+In the present zero temperature setting, the relevant quantity is the total energy functional $E_\mathrm{TF}[n]$.
 
 To determine the ground state density, we minimize the Thomas--Fermi energy functional under the particle number constraint:
 
@@ -1676,7 +1685,9 @@ To determine the ground state density, we minimize the Thomas--Fermi energy func
     \label{constraint_particle_number}
 \end{equation}
 
-Applying the method of Lagrange multipliers, we require the first variation of the constrained functional to vanish:
+Using the method of Lagrange multipliers, we require the first variation of the constrained functional to vanish.
+
+The Lagrange multiplier $\lambda$ enforces the particle number constraint and can be identified with the chemical potential:
 
 \begin{equation}
 \begin{aligned}
@@ -1686,50 +1697,230 @@ Applying the method of Lagrange multipliers, we require the first variation of t
 \label{total_energy_variation}
 \end{equation}
 
----draft---
+Here $\lambda$ enforces the particle number constraint and plays the role of the chemical potential.
 
-Apply the Lagrange multipliers method, we next minimizes the total energy:
-
-\begin{equation}
-\begin{aligned}
-    0 &= \delta\left\{E_\mathrm{TF}[n]-\lambda\left(\int\dif{\vec{r}}\,n(\vec{r}\,)-N\right)\right\}\\
-    &= \delta\left\{T_\mathrm{TF}[n]+E_\mathrm{int}[n]+E_\mathrm{ext}[n]-\lambda\left(\int\dif{\vec{r}}\,n(\vec{r}\,)-N\right)\right\}
-\end{aligned}
-\label{total_energy_variation}
-\end{equation}
-
-Then, we obtain:
+We define the Hartree potential as:
 
 \begin{equation}
-    \int\dif{\vec{r}}\,\left\{\frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+\int\dif{\vec{r}\,'}\frac{n(\vec{r}\,')}{|\vec{r}-\vec{r}\,'|} +v_\mathrm{ext}(\vec{r}\,)-\lambda\right\}\delta{n(\vec{r}\,)}=0
-\label{total_energy_minimization}
+    v_\mathrm{H}(\vec{r}\,)\coloneqq \int\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,')}{|\vec{r}-\vec{r}\,'|}
+    \label{Hartree_potential_definition}
 \end{equation}
 
-Since the generic density variation $delta{n(\vec{r}\,)}$ has to be zero, the previous expression leads us to the final result the Thomas--Fermi question.
+The corresponding first variations of the three contributions can be evaluated explicitly.
+
+For the Thomas--Fermi kinetic term, we obtain:
 
 \begin{equation}
-    \frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+\int\dif{\vec{r}\,'}\frac{n(\vec{r}\,')}{|\vec{r}-\vec{r}\,'|} +v_\mathrm{ext}(\vec{r}\,)=\lambda
-\label{Thomas--Fermi_question}
+    \delta T_\mathrm{TF}[n]
+    = \int\dif{\vec{r}}\,\frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}\,\delta n(\vec{r}\,)
+    \label{variation_TTF}
 \end{equation}
 
-we introduce the total interaction $V$:
+For the interaction term in the Hartree approximation, the variation introduces the Hartree potential and reads:
 
 \begin{equation}
-    V\coloneqq \frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+\int\dif{\vec{r}\,'}\frac{n(\vec{r}\,')}{|\vec{r}-\vec{r}\,'|} +v_\mathrm{ext}(\vec{r}\,)
-\label{total_interaction}
+    \delta E_\mathrm{int}[n]
+    = \int\dif{\vec{r}}\,v_\mathrm{H}(\vec{r}\,)\,\delta n(\vec{r}\,)
+    \label{variation_Eint}
 \end{equation}
 
-then, we arrive at the differential form of the Thomas-Fermi equation:
+For the external contribution, the variation follows directly from the linear coupling to the external potential:
 
 \begin{equation}
-    \nabla^2{V}=-\frac{32\pi^2}{3h^3}\left[2m(\lambda-V)\right]^{\frac{3}{2}}
-\label{differential_form_Thomas--Fermi_question}
+    \delta E_\mathrm{ext}[n]
+    = \int\dif{\vec{r}}\,v_\mathrm{ext}(\vec{r}\,)\,\delta n(\vec{r}\,)
+    \label{variation_Eext}
 \end{equation}
 
-This process is the Thomas-Fermi method.
+Substituting equations~\eqref{variation_TTF}--\eqref{variation_Eext} into equation~\eqref{total_energy_variation}, we obtain:
+
+\begin{equation}
+    \int\dif{\vec{r}}\,\left\{\frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+v_\mathrm{H}(\vec{r}\,)+v_\mathrm{ext}(\vec{r}\,)-\lambda\right\}\delta n(\vec{r}\,)=0
+    \label{total_energy_minimization}
+\end{equation}
+
+Since the density variation $\delta n(\vec{r}\,)$ is arbitrary, the integrand must vanish pointwise, which yields the Thomas--Fermi equation:
+
+\begin{equation}
+    \frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+v_\mathrm{H}(\vec{r}\,)+v_\mathrm{ext}(\vec{r}\,)=\lambda
+    \label{Thomas_Fermi_equation}
+\end{equation}
+
+It is convenient to introduce the effective potential:
+
+\begin{equation}
+    V(\vec{r}\,)\coloneqq v_\mathrm{ext}(\vec{r}\,)+v_\mathrm{H}(\vec{r}\,)
+    \label{effective_potential_definition}
+\end{equation}
+
+Equation~\eqref{Thomas_Fermi_equation} then becomes:
+
+\begin{equation}
+    \frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+V(\vec{r}\,)=\lambda
+    \label{Thomas_Fermi_equation_compact}
+\end{equation}
+
+Solving for the density, we obtain:
+
+\begin{equation}
+    n(\vec{r}\,)=\frac{1}{3\pi^2}\left[2\left(\lambda-V(\vec{r}\,)\right)\right]^{\frac{3}{2}}
+    \label{density_TF_from_potential}
+\end{equation}
+
+The above expression applies in the region where $\lambda>V(\vec{r}\,)$, and one takes $n(\vec{r}\,)=0$ otherwise.
+
+To derive a differential form, we use the Poisson equation.
+For the nuclear external potential, one has:
+
+\begin{equation}
+    \nabla^2 v_\mathrm{ext}(\vec{r}\,)=4\pi\sum_I Z_I\,\delta\left(\vec{r}-\vec{R}_I\right)
+    \label{Poisson_external_potential}
+\end{equation}
+
+For the Hartree potential, one has:
+
+\begin{equation}
+    \nabla^2 v_\mathrm{H}(\vec{r}\,)=-4\pi n(\vec{r}\,)
+    \label{Poisson_Hartree_potential}
+\end{equation}
+
+Combining equations~\eqref{effective_potential_definition}, \eqref{Poisson_external_potential}, and \eqref{Poisson_Hartree_potential}, we find:
+
+\begin{equation}
+    \nabla^2 V(\vec{r}\,)=4\pi\sum_I Z_I\,\delta\left(\vec{r}-\vec{R}_I\right)-4\pi n(\vec{r}\,)
+    \label{Poisson_effective_potential}
+\end{equation}
+
+Substituting equation~\eqref{density_TF_from_potential} into equation~\eqref{Poisson_effective_potential}, we arrive at the differential form of the Thomas--Fermi equation:
+
+\begin{equation}
+    \nabla^2 V(\vec{r}\,)=4\pi\sum_I Z_I\,\delta\left(\vec{r}-\vec{R}_I\right)-\frac{4}{3\pi}\left[2\left(\lambda-V(\vec{r}\,)\right)\right]^{\frac{3}{2}}
+    \label{differential_form_Thomas_Fermi_equation}
+\end{equation}
+
+This procedure constitutes the Thomas--Fermi method.
+
+\subsection{Limits of Thomas--Fermi approach}
+
+For a many-body system,
+it is instructive to contrast the exact density functional with the Thomas--Fermi approximation.
+In density functional theory, the total energy can be written as a functional of the electron density.
+
+Let us express the exact total energy as a functional of the density:
+
+\begin{equation}
+    E[n]=T[n]+E_\mathrm{H}[n]+E_\mathrm{xc}[n]+\int\dif{\vec{r}}\,n(\vec{r}\,)v_\mathrm{ext}(\vec{r}\,)
+    \label{functional_exact_total_energy}
+\end{equation}
+
+Here $T[n]$ denotes the exact kinetic energy functional and $E_\mathrm{H}[n]$ is the Hartree energy functional.
+The exchange--correlation energy functional $E_\mathrm{xc}[n]$ collects all interaction effects beyond the classical Hartree term.
+It includes the exchange contribution originating from the antisymmetry of the many-electron wave function and the correlation contribution accounting for the remaining many-body correlations.
+
+In view of the definition of the universal Hohenberg--Kohn functional in equation~\eqref{functional_HK_definition}, it is convenient to introduce $E_\mathrm{xc}[n]$ via:
+
+\begin{equation}
+    E_\mathrm{xc}[n]\coloneqq E_\mathrm{int}[n]-E_\mathrm{H}[n]
+    \label{definition_exchange_correlation_energy}
+\end{equation}
+
+Equivalently, the universal Hohenberg--Kohn functional can be decomposed as:
+
+\begin{equation}
+    E_\mathrm{HK}[n]=T[n]+E_\mathrm{H}[n]+E_\mathrm{xc}[n]
+    \label{HK_decomposition_Hartree_xc}
+\end{equation}
+
+Accordingly, the exact total energy functional can be written in the following form:
+
+\begin{equation}
+    E[n]=E_\mathrm{HK}[n]+\int\dif{\vec{r}}\,n(\vec{r}\,)\,v_\mathrm{ext}(\vec{r}\,)
+    \label{functional_exact_total_energy_HK_form}
+\end{equation}
+
+Recall the full Thomas--Fermi energy functional in equation~\eqref{full_energy_functional}.
+Let us compared with the exact decomposition in equation~\eqref{functional_exact_total_energy},
+the Thomas--Fermi functional neglects the exchange correlation energy functional $E_\mathrm{xc}[n]$.
+This omission can lead to sizable errors for total energies even in simple atoms.
+
+A first improvement is to approximate $E_\mathrm{xc}[n]$ by a local exchange functional derived from the homogeneous electron gas.
+This approximation is commonly associated with the Dirac exchange functional:
+
+\begin{equation}
+    E_\mathrm{xc}[n]\approx E_\mathrm{x}^\mathrm{D}[n]
+    \label{Dirac_exchange_approximation}
+\end{equation}
+
+Since the Dirac exchange functional is given by:
+
+\begin{equation}
+    E_\mathrm{x}^\mathrm{D}[n]\coloneqq -C_2\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{4}{3}}
+    \label{Dirac_exchange_functional}
+\end{equation}
+
+here, the corresponding constant reads:
+
+\begin{equation}
+    C_2 \coloneqq \frac{3}{4}\left(\frac{3}{\pi}\right)^{\frac{1}{3}}
+    \label{Dirac_exchange_constant}
+\end{equation}
+
+At this level, correlation effects are not included in $E_\mathrm{x}^\mathrm{D}[n]$.
+
+Including the Dirac exchange term, we obtain the Thomas--Fermi Dirac functional:
+
+\begin{equation}
+    E_\mathrm{TFD}[n]
+    \coloneqq C_1\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{5}{3}}
+    + E_\mathrm{H}[n]
+    - C_2\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{4}{3}}
+    + \int\dif{\vec{r}}\,n(\vec{r}\,)\,v_\mathrm{ext}(\vec{r}\,)
+    \label{TFD_functional}
+\end{equation}
+
+The Thomas--Fermi Dirac approximation improves total energies by incorporating an explicit exchange contribution.
+However, the kinetic energy is still treated at the Thomas--Fermi level, which is often insufficient for molecules and solids.
+
+A systematic correction to the kinetic energy can be introduced through a gradient term proposed by von Weizsäcker.
+The von Weizsäcker kinetic energy functional is defined by:
+
+\begin{equation}
+    T_\mathrm{vW}[n]\coloneqq \frac{1}{2}\int\dif{\vec{r}}\,\left|\nabla\sqrt{n(\vec{r}\,)}\right|^2
+    \label{von_Weizsaecker_kinetic}
+\end{equation}
+
+By adding this gradient correction, we arrive at the Thomas--Fermi Dirac von Weizsäcker model:
+
+\begin{equation}
+    E_\mathrm{TFDW}[n]
+    \coloneqq C_1\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{5}{3}}
+    + T_\mathrm{vW}[n]
+    + E_\mathrm{H}[n]
+    - C_2\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{4}{3}}
+    + \int\dif{\vec{r}}\,n(\vec{r}\,)\,v_\mathrm{ext}(\vec{r}\,)
+    \label{TFDW_functional}
+\end{equation}
+
+These extensions provide early orbital free approximations beyond the Thomas--Fermi approach.
+They also clarify that improving the kinetic energy functional and the exchange correlation functional is essential for a quantitatively reliable description of realistic interacting electron systems.
 
 \newpage
 \section{From density functional to Kohn--Sham theory}
+
+In practical many-body problems, an exact treatment of the hamiltonian is impossible, and approximation is inevitable.
+This motivates a reformulation in terms of a simpler basic variable.
+
+The electron density is an obvious choice.
+It is an observable that depends only on the spatial coordinate $\vec{r}$, and the external potential couples to it in a simple way.
+The Thomas--Fermi approach in the previous subsection provides a first purely density-based model, but its limitations show that improved treatments of the kinetic energy and the exchange correlation effects are necessary.
+
+Working with density functional theory shifts the difficulty from a complicated wave function to an unknown functional of a simple quantity, and in practice both the functional and the density must be approximated.
+
+In what follows, we introduce an auxiliary description that retains the density as the central variable and provides a practical starting point for systematic improvements.
+
+% P2 14:20
+
+\subsection{Auxiliary system}
 
 \newpage
 \section{Approximation and strategies in density functional theory}
