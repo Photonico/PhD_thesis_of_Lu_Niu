@@ -1596,7 +1596,7 @@ We arrive at the Thomas--Fermi equation:
 
 This nonlinear equation determines the potential and the density self-consistently within the Thomas--Fermi approximation.
 
-To connect the Thomas--Fermi construction with density functional theory, we rewrite the total energy in a density functional form, denoted by $E^{\mathrm{TF}}[n;v_\mathrm{ext}]$. In this sense, the Thomas--Fermi model provides an explicit approximation to the universal functional.
+To connect the Thomas--Fermi construction with density functional theory, we rewrite the total energy in a density functional form, denoted by $E_{\mathrm{TF}}[n;v_\mathrm{ext}]$. In this sense, the Thomas--Fermi model provides an explicit approximation to the universal functional.
 
 From the Thomas--Fermi approximation, we express the total energy as a density functional composed of a statistical kinetic term $T_\mathrm{TF}[n]$, an interaction term $E_\mathrm{int}[n]$, and an external contribution $E_\mathrm{ext}[n]$ describing the coupling to the external potential $v_\mathrm{ext}(\vec{r}\,)$.
 
@@ -1605,7 +1605,7 @@ Furthermore, there is also a nuclear-nuclear term $E_\mathrm{NN}$, but it does n
 Accordingly, we write the Thomas--Fermi total energy functional:
 
 \begin{equation}
-    E^{\mathrm{TF}}[n;v_\mathrm{ext}] = T_\mathrm{TF}[n] + E_\mathrm{int}[n] + E_\mathrm{ext}[n]
+    E_{\mathrm{TF}}[n;v_\mathrm{ext}] = T_\mathrm{TF}[n] + E_\mathrm{int}[n] + E_\mathrm{ext}[n]
     \label{TF_total_energy_functional}
 \end{equation}
 
@@ -1616,7 +1616,7 @@ We next approximate the interaction term by the classical Coulomb energy associa
 Using the electron--electron Coulomb repulsion~\eqref{electrons_Coulomb}, we obtain the Hartree interaction energy functional:
 
 \begin{equation}
-    E^\mathrm{H}[n]\coloneqq E_\mathrm{int}[n]=\frac{1}{2}\int\dif^3{r}\int\dif^3{r'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{|\vec{r}-\vec{r}\,'|}
+    E_\mathrm{H}[n]\coloneqq E_\mathrm{int}[n]=\frac{1}{2}\int\dif{\vec{r}}\int\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{|\vec{r}-\vec{r}\,'|}
     \label{functional_EH}
 \end{equation}
 
@@ -1633,32 +1633,84 @@ and the corresponding kinetic energy density reads:
 
 \begin{equation}
     t(n) = \frac{3}{10}\,k_\mathrm{F}^2\,n
-    = \frac{3}{10}\left(3\pi^2\right)^{\frac{2}{3}}n^{\frac{5}{3}} .
+    = \frac{3}{10}\left(3\pi^2\right)^{\frac{2}{3}}n^{\frac{5}{3}}
     \label{kinetic_energy_density_homogeneous_gas}
 \end{equation}
 
-Within the local density approximation, we apply this homogeneous result locally by replacing $n\to n(\vec{r}\,)$ and integrating over space.
+Within the local density approximation,
+we apply this homogeneous result locally by replacing $n$ with $n(\vec{r}\,)$, and integrating over space.
 This leads to the Thomas--Fermi kinetic energy functional:
 
 \begin{equation}
-    T_\mathrm{TF}[n] = C_1\,\int \dif^3{r}\,n(\vec{r}\,)^{\frac{5}{3}}
+    T_\mathrm{TF}[n] = C_1\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{5}{3}}
     \label{functional_TTF}
 \end{equation}
 
 with the Thomas--Fermi constant:
 
 \begin{equation}
-    C_1 \coloneqq \frac{3}{10}\left(3\pi^2\right)^{\frac{2}{3}} .
+    C_1 \coloneqq \frac{3}{10}\left(3\pi^2\right)^{\frac{2}{3}} 
     \label{Thomas_Fermi_constant_C1}
 \end{equation}
 
 This expression holds for a spin-unpolarized system.
 
+Therefore, we arrive at the full Thomas--Fermi energy functional as a functional of the electron density.
+The nucleus--nucleus contribution $E_\mathrm{NN}$ is omitted since it does not depend on $n(\vec{r}\,)$.
+
+\begin{equation}
+    E_\mathrm{TF}=C_1\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{5}{3}}
+    + \frac{1}{2}\int\dif{\vec{r}}\int\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{|\vec{r}-\vec{r}\,'|}
+    + \int\dif{\vec{r}}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
+    \label{full_energy_functional}
+\end{equation}
+
+This expression gives the total energy in the Thomas--Fermi approximation as a functional of the electron density $n(\vec{r}\,)$ for a given external potential $v_\mathrm{ext}(\vec{r}\,)$.
+
+
+
+
 ---draft---
 
-Therefore, we arrive at the full energy functional of the desnity:
+Apply the Lagrange multipliers method, we next minimizes the total energy:
 
+\begin{equation}
+\begin{aligned}
+    0 &= \delta\left\{E_\mathrm{TF}[n]-\lambda\left(\int\dif{\vec{r}}\,n(\vec{r}\,)-N\right)\right\}\\
+    &= \delta\left\{T_\mathrm{TF}[n]+E_\mathrm{int}[n]+E_\mathrm{ext}[n]-\lambda\left(\int\dif{\vec{r}}\,n(\vec{r}\,)-N\right)\right\}
+\end{aligned}
+\label{total_energy_variation}
+\end{equation}
 
+Then, we obtain:
+
+\begin{equation}
+    \int\dif{\vec{r}}\,\left\{\frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+\int\dif{\vec{r}\,'}\frac{n(\vec{r}\,')}{|\vec{r}-\vec{r}\,'|} +v_\mathrm{ext}(\vec{r}\,)-\lambda\right\}\delta{n(\vec{r}\,)}=0
+\label{total_energy_minimization}
+\end{equation}
+
+Since the generic density variation $delta{n(\vec{r}\,)}$ has to be zero, the previous expression leads us to the final result the Thomas--Fermi question.
+
+\begin{equation}
+    \frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+\int\dif{\vec{r}\,'}\frac{n(\vec{r}\,')}{|\vec{r}-\vec{r}\,'|} +v_\mathrm{ext}(\vec{r}\,)=\lambda
+\label{Thomas--Fermi_question}
+\end{equation}
+
+we introduce the total interaction $V$:
+
+\begin{equation}
+    V\coloneqq \frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+\int\dif{\vec{r}\,'}\frac{n(\vec{r}\,')}{|\vec{r}-\vec{r}\,'|} +v_\mathrm{ext}(\vec{r}\,)
+\label{total_interaction}
+\end{equation}
+
+then, we arrive at the differential form of the Thomas-Fermi equation:
+
+\begin{equation}
+    \nabla^2{V}=-\frac{32\pi^2}{3h^3}\left[2m(\lambda-V)\right]^{\frac{3}{2}}
+\label{differential_form_Thomas--Fermi_question}
+\end{equation}
+
+This process is the Thomas-Fermi method.
 
 \newpage
 \section{From density functional to Kohn--Sham theory}
