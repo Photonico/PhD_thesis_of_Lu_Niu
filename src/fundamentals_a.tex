@@ -403,7 +403,7 @@ Having seen that any local one-body observable can be written as an integral ove
 n(\vec{r}\,)
 = \bra{\psi}\,\hat{n}(\vec{r}\,)\ket{\psi}
 = \bra{\psi}\sum_i\delta(\vec{r} - \hat{\vec{r}}_i)\ket{\psi}
-\label{one-body_density}
+\label{particle_density_operator_definition}
 \end{equation}
 
 gives the electron density at point $\vec{r}$.
@@ -680,10 +680,11 @@ Next, recall the general expression for an observable in a many-body system: equ
 \label{observables_one-body}
 \end{equation}
 
-We can find that this integral naturally factors into two components: the one-body operator kernel $\Omega_1(x_1)$, and the corresponding ground-state one-body density:
+We can find that this integral naturally factors into two components: the one-body operator kernel $\Omega_1(x_1)$,
+and the corresponding one-body density:
 
 \begin{equation}
-n(x_1)=N\int\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\cdots,x_N)\Psi(x_1,x_2,\cdots,x_N),
+    n(x_1)=N\int\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\cdots,x_N)\Psi(x_1,x_2,\cdots,x_N)
 \label{one-body_density}
 \end{equation}
 
@@ -1673,7 +1674,7 @@ The nucleus--nucleus contribution $E_\mathrm{NN}$ is omitted since it does not d
 This expression gives the total energy in the Thomas--Fermi approximation as a functional of the electron density $n(\vec{r}\,)$ for a given external potential $v_\mathrm{ext}(\vec{r}\,)$.
 
 The ground state of the system is characterized by the density that minimizes the total energy under the constraint of a fixed particle number.
-This is the variational principle for the ground-state energy in density functional theory.
+This is the variational principle for the ground state energy in density functional theory.
 
 At finite temperature, the equilibrium density is obtained by minimizing the Helmholtz free energy functional.
 In the present zero temperature setting, the relevant quantity is the total energy functional $E_\mathrm{TF}[n]$.
@@ -1920,14 +1921,16 @@ In what follows, we introduce an auxiliary description that retains the density 
 
 \subsection{Auxiliary system}
 
-There, we need to address a kernel question of density functioanl theory, which is how to calculate the density $n(\vec{r}\,)$.
+We now address a central question in density functional theory, namely how to determine the density $n(\vec{r}\,)$ for an interacting many electron system.
+In principle, the ground state density can be obtained from the many body ground state wave function by integrating out $N-1$ coordinates, as shown in equation~\eqref{one-body_density}.
 
-For a ground-sate density, let us recall the one-body density~\eqref{one-body_density}, which is given as an integral of the many-body ground-state wavefunction.
+More generally, any observable can be expressed as an expectation value of an operator with respect to the many body wave function, as summarized in equation~\eqref{observables_N-body}.
+While this formulation is exact, the many body wave function contains far more information than is needed for one body observables.
 
-Generally, we know any observable actually as a functional of the many-body wavefunction. Then, the observable is an integral over this wavefunction~\eqref{observables_N-body}.
+The density $n(\vec{r}\,)$ is obtained by integrating out the remaining degrees of freedom and therefore represents a reduced description.
+This observation motivates the construction of an auxiliary description in which the density remains the central variable, while the many body complexity is encoded in effective ingredients of the theory.
 
-
-% P2 14:20
+% P2 16:00
 
 \newpage
 \section{Approximation and strategies in density functional theory}
