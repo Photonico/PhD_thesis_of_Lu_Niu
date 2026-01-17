@@ -1598,7 +1598,11 @@ This nonlinear equation determines the potential and the density self-consistent
 
 To connect the Thomas--Fermi construction with density functional theory, we rewrite the total energy in a density functional form, denoted by $E^{\mathrm{TF}}[n;v_\mathrm{ext}]$. In this sense, the Thomas--Fermi model provides an explicit approximation to the universal functional.
 
-From the Thomas--Fermi approximation, we express the total energy as a density functional composed of a statistical kinetic term $T_\mathrm{TF}[n]$, an interaction term $E_\mathrm{int}[n]$, and an external contribution $E_\mathrm{ext}[n]$ describing the coupling to $v_\mathrm{ext}(\vec{r}\,)$. Accordingly, we write:
+From the Thomas--Fermi approximation, we express the total energy as a density functional composed of a statistical kinetic term $T_\mathrm{TF}[n]$, an interaction term $E_\mathrm{int}[n]$, and an external contribution $E_\mathrm{ext}[n]$ describing the coupling to the external potential $v_\mathrm{ext}(\vec{r}\,)$.
+
+Furthermore, there is also a nuclear-nuclear term $E_\mathrm{NN}$, but it does not depend on the electron density, therefore, therefore, we do not consider this term at the moment.
+
+Accordingly, we write the Thomas--Fermi total energy functional:
 
 \begin{equation}
     E^{\mathrm{TF}}[n;v_\mathrm{ext}] = T_\mathrm{TF}[n] + E_\mathrm{int}[n] + E_\mathrm{ext}[n]
