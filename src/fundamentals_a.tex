@@ -1466,7 +1466,7 @@ This motivates introducing the universal Hohenberg--Kohn functional $E_\mathrm{H
 \label{functional_HK_definition}
 \end{equation}
 
-For a fixed form of the electron-electron interaction, $E_\mathrm{HK}[n]$ is independent of the external potential $v_\mathrm{ext}(\vec{r}\,)$,
+For a fixed form of the electron--electron interaction, $E_\mathrm{HK}[n]$ is independent of the external potential $v_\mathrm{ext}(\vec{r}\,)$,
 and the system specific information enters only through $v_\mathrm{ext}$.
 
 With this definition, the total energy density functional can be written in the standard form:
@@ -1979,13 +1979,60 @@ In general, interactions entangle the two species and the factorization in equat
 The density of one species must then be constructed from the full many-body wave function by integrating out the other degrees of freedom.
 This illustrates why reduced quantities such as densities are natural objects in many body physics.
 
-Next, suppose that we work at fixed nuclear coordinates $\{\vec{R}_I\}$ and obtain the electronic hamiltonian within the Born--Oppenheimer approximation in equation~\eqref{BO_hamiltonian}.
+Secondly, suppose that we work at fixed nuclear coordinates $\{\vec{R}_I\}$ and obtain the electronic hamiltonian within the Born--Oppenheimer approximation in equation~\eqref{BO_hamiltonian}.
 
 In this situation, the nuclei act as fixed sources of the external potential, and the problem degenerates to an interacting electron system in the prescribed potential $v_\mathrm{ext}(\vec{r}\,)$.
 The many-body wave function therefore depends only on the electronic coordinates, while the ionic positions enter as parameters.
 
+Therefore, the auxiliary system should be viewed as a simpler description that approximates the target interacting system at the level of selected observables.
+In our discussion, the density is the central observable, and the auxiliary system is required to reproduce the same density as the original problem.
+
+Moreover, the choice of observables determines how the auxiliary system must be constructed.
+Suppose that we aim to describe the density, the auxiliary system must have enough flexibility to match the density, but it is not required to reproduce the full many-body wave function.
+
+Accordingly, once an auxiliary system is specified, its predictions should be trusted only for those quantities it is designed to reproduce.
+For questions outside this design target, the auxiliary system provides no guarantee of accuracy.
+
+Subsequently, we consider an interacting many-electron system and its corresponding auxiliary system.
+
+The difficulty comes from the electron--electron interaction.
+In the auxiliary system, we drop this interaction and compensate for it by adjusting a one-body potential.
+
+Therefore, the problem can be stated as follows.
+For a given interacting system with a density $n(\vec{r}\,)$, we seek a noninteracting system with a tuned potential that reproduces exactly the same density.
+Here we ask only for the density and nothing else.
+In what follows, we examine whether there is any obstacle to this construction.
+
+--- draft
+
+Let us build the schrödinger equation which depends the hamiltonian with Born--approximation~\eqref{BO_hamiltonian}:
+
+\begin{equation}
+    \left(-\frac{1}{2}\sum_i\nabla_i^2
+    + \sum_i v_{\mathrm{ext}}(\hat{\vec{r}}_i)
+    + \sum_{i<j}\frac{1}{|\vec{r}_i - \vec{r}_j|}\right)\Psi(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)= E\Psi(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)
+    \label{BO_hamiltonian_SE}
+\end{equation}
+
+and try to build its corresponding auxiliary system by a non interacting schrödinger equation.
+
+\begin{equation}
+    \left(-\frac{1}{2}\sum_i\nabla_i^2
+    + \sum_i v_\mathrm{aux}(\hat{\vec{r}}_i)\right)\Psi_\mathrm{aux}(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)= E_\mathrm{aux}\Psi_\mathrm{aux}(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)
+\label{BO_hamiltonian_aux}
+\end{equation}
+
+This target is the density of our interacting system.
+
+Now, we calculate the density of the auxiliary system.
+
+\begin{equation}
+n(\vec{r}\,)=N\int\int\cdots\int\dif{\vec{r}_2}\dif{\vec{r}_3}\cdots\dif{\vec{r}_N}\,|\Psi_\mathrm{aux}(\vec{r},\vec{r}_2,\cdots,\vec{r}_N)|^2
+\label{density_aux}
+\end{equation}
 
 
+% P2, 26:00.
 
 \newpage
 \section{Approximation and strategies in density functional theory}
