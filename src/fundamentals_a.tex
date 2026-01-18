@@ -1930,6 +1930,35 @@ While this formulation is exact, the many body wave function contains far more i
 The density $n(\vec{r}\,)$ is obtained by integrating out the remaining degrees of freedom and therefore represents a reduced description.
 This observation motivates the construction of an auxiliary description in which the density remains the central variable, while the many body complexity is encoded in effective ingredients of the theory.
 
+---draft---
+
+Let us start from an interrelated two-body system.
+Suppose we want the density of any individual in this system.
+Once we have the corresponding many-body wavefunction:
+$\Psi(x_1,x_2,\cdots,x_N;y_1,y_2,\cdots,y_M)$.
+When this two individuals interact, we cannot separate this wavefunction,
+unless we ignore the interaction:
+
+\begin{equation}
+    \Psi(x_1,x_2,\cdots,x_N;y_1,y_2,\cdots,y_M)
+    =\psi(x_1,x_2,\cdots,x_N)\phi(y_1,y_2,\cdots,y_M)
+    \label{separate_two-body_wavefunction}
+\end{equation}
+
+Under this premise, we can get the expression of the first density by the normalization: $1=\int\int\cdots\int\dif{y_1}\dif{y_2}\cdots\dif{y_M}|\psi(y_1,y_2,\cdots,y_M)|^2$:
+
+\begin{equation}
+\begin{aligned}
+    n(x)
+    =& N\int\int\cdots\int\dif{x_2}\dif{x_3}\cdots\dif{x_N}|\psi(x,x_2,\cdots,x_N)|^2 \\
+    &\cdot\int\int\cdots\int\dif{y_1}\dif{y_2}\cdots\dif{y_M}|\psi(y_1,y_2,\cdots,y_M)|^2 \\
+    =& N\int\int\cdots\int\dif{x_2}\dif{x_3}\cdots\dif{x_N}|\psi(x,x_2,\cdots,x_N)|^2
+\end{aligned}
+\label{two-body_density}
+\end{equation}
+
+But in practical, the particles are interacting, their wavefunction cannot be separated.
+
 % P2 16:00
 
 \newpage
