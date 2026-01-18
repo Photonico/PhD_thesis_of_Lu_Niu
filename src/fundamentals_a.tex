@@ -1801,7 +1801,7 @@ Substituting equation~\eqref{density_TF_from_potential} into equation~\eqref{Poi
 
 This procedure constitutes the Thomas--Fermi method.
 
-\subsection{Limits of Thomas--Fermi approach}
+\subsection{limitations of Thomas--Fermi approach}
 
 For a many-body system,
 it is instructive to contrast the exact density functional with the Thomas--Fermi approximation.
@@ -1912,32 +1912,25 @@ In practical many-body problems, an exact treatment of the hamiltonian is imposs
 This motivates a reformulation in terms of a simpler basic variable.
 
 The electron density is an obvious choice.
-It is an observable that depends only on the spatial coordinate $\vec{r}$, and the external potential couples to it in a simple way.
-The Thomas--Fermi approach in the previous subsection provides a first purely density-based model, but its limitations show that improved treatments of the kinetic energy and the exchange correlation effects are necessary.
-
-Working with density functional theory shifts the difficulty from a complicated wavefunction to an unknown functional of a simple quantity, and in practice both the functional and the density must be approximated.
+The Thomas--Fermi approach in the previous subsection provides a first purely density based model, but its limitations show that improved treatments of the kinetic energy and the exchange correlation effects are necessary.
 
 In what follows, we introduce an auxiliary description that retains the density as the central variable and provides a practical starting point for systematic improvements.
 
 \subsection{Auxiliary system}
 
-We now address a central question in density functional theory, namely how to determine the density $n(\vec{r}\,)$ for an interacting many electron system.
-In principle, the ground state density can be obtained from the many body ground state wave function by integrating out $N-1$ coordinates, as shown in equation~\eqref{one-body_density}.
+As shown in equation~\eqref{one-body_density}, the ground state density can be obtained from the many-body ground state wave function by integrating out $N-1$ coordinates.
 
-More generally, any observable can be expressed as an expectation value of an operator with respect to the many body wave function, as summarized in equation~\eqref{observables_N-body}.
-While this formulation is exact, the many body wave function contains far more information than is needed for one body observables.
+Since one-body observables can be expressed in terms of the density, as summarized in the equation~\eqref{observables_N-body}, the density provides a reduced description that avoids working directly with the full wave function. 
 
-The density $n(\vec{r}\,)$ is obtained by integrating out the remaining degrees of freedom and therefore represents a reduced description.
-This observation motivates the construction of an auxiliary description in which the density remains the central variable, while the many body complexity is encoded in effective ingredients of the theory.
+This approach motivates introducing an auxiliary description that reproduces the same density.
 
----draft---
+Let us start with an interrelated two-body system consisting of two species.
 
-Let us start from an interrelated two-body system.
-Suppose we want the density of any individual in this system.
-Once we have the corresponding many-body wavefunction:
-$\Psi(x_1,x_2,\cdots,x_N;y_1,y_2,\cdots,y_M)$.
-When this two individuals interact, we cannot separate this wavefunction,
-unless we ignore the interaction:
+Firstly, we denote the coordinates of the first species by $x_1,x_2,\cdots,x_N$,
+and those of the second species by $y_1,y_2,\cdots,y_M$.
+The full many-body wave function is then $\Psi(x_1,x_2,\cdots,x_N;y_1,y_2,\cdots,y_M)$.
+
+Next, we suppose that there is no interaction between these two species, the wavefunction factorizes as:
 
 \begin{equation}
     \Psi(x_1,x_2,\cdots,x_N;y_1,y_2,\cdots,y_M)
@@ -1945,19 +1938,35 @@ unless we ignore the interaction:
     \label{separate_two-body_wavefunction}
 \end{equation}
 
-Under this premise, we can get the expression of the first density by the normalization: $1=\int\int\cdots\int\dif{y_1}\dif{y_2}\cdots\dif{y_M}|\psi(y_1,y_2,\cdots,y_M)|^2$:
+---
+
+
+
+---
+
+In this decoupled limit, the density of the first species can be expressed by integrating out the remaining coordinates.
+The factor $\phi$ drops out due to its normalization:
+
+\begin{equation}
+    \int\int\cdots\int\dif{y_1}\dif{y_2}\cdots\dif{y_M}\,|\phi(y_1,y_2,\cdots,y_M)|^2 =1
+\label{phi_normalization}
+\end{equation}
+
+therefore, we get:
 
 \begin{equation}
 \begin{aligned}
     n(x)
-    =& N\int\int\cdots\int\dif{x_2}\dif{x_3}\cdots\dif{x_N}|\psi(x,x_2,\cdots,x_N)|^2 \\
-    &\cdot\int\int\cdots\int\dif{y_1}\dif{y_2}\cdots\dif{y_M}|\psi(y_1,y_2,\cdots,y_M)|^2 \\
-    =& N\int\int\cdots\int\dif{x_2}\dif{x_3}\cdots\dif{x_N}|\psi(x,x_2,\cdots,x_N)|^2
+    =& N\int\int\cdots\int\dif{x_2}\dif{x_3}\cdots\dif{x_N}\,|\psi(x,x_2,\cdots,x_N)|^2 \\
+    &\cdot\int\int\cdots\int\dif{y_1}\dif{y_2}\cdots\dif{y_M}\,|\phi(y_1,y_2,\cdots,y_M)|^2 \\
+    =& N\int\int\cdots\int\dif{x_2}\dif{x_3}\cdots\dif{x_N}\,|\psi(x,x_2,\cdots,x_N)|^2
 \end{aligned}
 \label{two-body_density}
 \end{equation}
 
-But in practical, the particles are interacting, their wavefunction cannot be separated.
+In general, interactions entangle the two species and the factorization in equation~\eqref{separate_two-body_wavefunction} is no longer available.
+The density of one species must then be constructed from the full many body wave function by integrating out the other degrees of freedom.
+This illustrates why reduced quantities such as densities are natural objects in many body physics.
 
 % P2 16:00
 
