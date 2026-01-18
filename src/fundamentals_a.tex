@@ -10,7 +10,7 @@ In classical physics, we started with Newton’s laws to describe the motions. L
 \subsection{Time-dependent Schrödinger equation}
 
 In quantum mechanics, the state of a physical system at a given instant is represented by a vector $\ket{\psi(t)}$.
-In a chosen representation, the same state can be expressed as a wavefunction.
+In a chosen representation, the same state can be expressed as a wave function.
 This state vector encapsulates all information required to predict the statistics of measurement outcomes at time $t$.
 
 The time evolution of the state is determined by the hamiltonian operator $\hat{H}$.
@@ -202,11 +202,11 @@ For identical fermions, the physical many-body states belong to the antisymmetri
 
 For example, in a two-particle system, the total Hilbert space is $\mathbb{H}=\mathbb{H}_1\otimes\mathbb{H}_2$.
 It is worth noting that not every state $\ket{\Psi}$ can be factored as  $\ket{\psi_1} \otimes \ket{\psi_2}$, because many physically relevant states are entangled.
-This means that their correlations cannot be described by individual particle states alone. In the coordinate representation, we express the wavefunction as:
+This means that their correlations cannot be described by individual particle states alone. In the coordinate representation, we express the wave function as:
 
 \begin{equation}
     \Psi(x_1,x_2,\cdots,x_N,t)=\braket{x_1,x_2,\cdots,x_N|\Psi(t)},
-    \label{many-body_wavefunction}
+    \label{many-body_wave function}
 \end{equation}
 
 where each $x_i$ includes both spatial and spin degrees of freedom.
@@ -246,7 +246,7 @@ Summing all these terms, we arrive at the full many-body hamiltonian:
 
 For a given nuclear configuration $\{\vec{R}_I\}$, we regard the hamiltonian as $\hat{H}(\{\vec{r}_i\};\{\vec{R}_I\})$, where the nuclear coordinates enter as external parameters.
 
-Considering the parameters in this hamiltonian, we observe that the many-body wavefunctions for each state $\lambda$ depend explicitly on the $3N$ spatial coordinates of the electrons and their spin degrees of freedom $\sigma_i$.
+Considering the parameters in this hamiltonian, we observe that the many-body wave functions for each state $\lambda$ depend explicitly on the $3N$ spatial coordinates of the electrons and their spin degrees of freedom $\sigma_i$.
 For the fixed nuclear positions, the stationary electronic states satisfy the eigenvalue equation:
 
 \begin{equation}
@@ -305,7 +305,7 @@ After truncating each one-particle space to a finite basis of size $d$, the many
 This complexity, known as the "curse of dimensionality," motivates powerful approximate methods such as Hartree--Fock and Density Functional Theory, which we will explore in later sections.
 
 When electron interactions are completely disregarded, the problem simplifies to $N$ independent single-electron problems.
-If we further ignore fermionic antisymmetry, the many-body wavefunction reduces to a simple product of single-particle wavefunctions:
+If we further ignore fermionic antisymmetry, the many-body wave function reduces to a simple product of single-particle wave functions:
 
 \begin{equation}
     \Psi(x_1,x_2,\cdots,x_N)=\psi_{n_1}(x_1)\psi_{n_2}(x_2)\cdots\psi_{n_N}(x_N)
@@ -314,7 +314,7 @@ If we further ignore fermionic antisymmetry, the many-body wavefunction reduces 
 
 where $\lambda=\{n_1,n_2,\cdots,n_N\}$ labels the states.
 
-In the coordinate representation, we can represent the antisymmetric wavefunction as a Slater determinant:
+In the coordinate representation, we can represent the antisymmetric wave function as a Slater determinant:
 
 \begin{equation}
     \Psi = \frac{1}{\sqrt{N!}}
@@ -327,7 +327,7 @@ In the coordinate representation, we can represent the antisymmetric wavefunctio
     \label{slater_determinant}
 \end{equation}
 
-Finally, we can describe the full time-evolution of the many-body wavefunction in coordinate space by the time-dependent Schrödinger equation~\eqref{time-dependent_Schrodinger_equation}:
+Finally, we can describe the full time-evolution of the many-body wave function in coordinate space by the time-dependent Schrödinger equation~\eqref{time-dependent_Schrodinger_equation}:
 
 \begin{equation}
     i\frac{\partial}{\partial t}\Psi(x_1,x_2,\cdots,x_N,t)
@@ -408,10 +408,10 @@ n(\vec{r}\,)
 
 gives the electron density at point $\vec{r}$.
 Physically, $n(\vec{r}\,)\mathrm{d}^3r$ is the expected number of electrons in the volume element $\mathrm{d}^3r$ around $\vec{r}$.
-In density functional theory, $n(\vec{r}\,)$ serves as the fundamental variable replacing the full many-body wavefunction.  
+In density functional theory, $n(\vec{r}\,)$ serves as the fundamental variable replacing the full many-body wave function.  
 
 It can be shown that the ground state density $n(\vec{r}\,)$ uniquely fixes the external potential, which is up to an additive constant, and hence all ground state observables can be written as functionals of $n(\vec{r}\,)$.
-This dramatic reduction comes from a 3$N$-dimensional wavefunction to a three-dimensional density, which lies at the heart of density functional theory, making formerly intractable many-body problems computationally feasible.
+This dramatic reduction comes from a 3$N$-dimensional wave function to a three-dimensional density, which lies at the heart of density functional theory, making formerly intractable many-body problems computationally feasible.
 
 The time-dependent density-functional theory relies on the continuity equation in the Heisenberg picture.
 We first define the particle density operator in the Schrödinger-picture as:
@@ -491,16 +491,16 @@ and current $\vec{j}(\vec{r},t)=\bra{\Psi_\mathrm{H}}\hat{\vec{j}}_\mathrm{H}(\v
 \label{continuity_expectation}
 \end{equation}
 
-This exact conservation law shows that once the initial density $n(\vec{r},0)$ and the time-dependent external potential $v_\mathrm{ext}(\vec{r},t)$ are specified, the density and current uniquely evolve according to equations \eqref{continuity_operator} and \eqref{continuity_expectation}. This observation is the cornerstone of time-dependent density functional theory, where one seeks to replace the full many-body wavefunction by the basic variable $n(\vec{r},t)$ together with suitable current functionals.
+This exact conservation law shows that once the initial density $n(\vec{r},0)$ and the time-dependent external potential $v_\mathrm{ext}(\vec{r},t)$ are specified, the density and current uniquely evolve according to equations \eqref{continuity_operator} and \eqref{continuity_expectation}. This observation is the cornerstone of time-dependent density functional theory, where one seeks to replace the full many-body wave function by the basic variable $n(\vec{r},t)$ together with suitable current functionals.
 
 \newpage
 \section{Continue to consider the many-body problem}
 
-In fact, a many-body wavefunction explicitly depends on all particle coordinates, making it practically impossible to calculate and store exactly due to the exponential increase in complexity with particle number.
+In fact, a many-body wave function explicitly depends on all particle coordinates, making it practically impossible to calculate and store exactly due to the exponential increase in complexity with particle number.
 
 Nevertheless, what we ultimately aim to describe are measurable properties.
 These include observables like position, momentum, energy, or spin.
-We can extract them from the wavefunction through expectation values:
+We can extract them from the wave function through expectation values:
 
 \begin{equation}
     \braket{\hat{\Omega}} = \bra{\Psi}\hat{\Omega}\ket{\Psi}
@@ -530,11 +530,11 @@ In quantum many-body theory and calculation, employing the grand canonical ensem
 
 In what follows, we mainly focus on the ground state setting: zero temperature and fix particle number; while the grand-canonical form is noted for completeness and later extensions.
 
-\subsection{From wavefunction to practical functionals}
+\subsection{From wave function to practical functionals}
 
 Let us stay at zero temperature and fixed particle number $N$.
 Consider the operator for the measurement $\sum_{i,j,\cdots}\hat\Omega\left(x_i,x_j,\cdots\right)$,
-and the ground state $N$-body wavefunction $\Psi(x_1,x_2,\cdots,x_N)$.
+and the ground state $N$-body wave function $\Psi(x_1,x_2,\cdots,x_N)$.
 By inserting resolutions of the identity in the coordinate basis for all particles, $I=\int \mathrm{d}x\,\ket{x}\bra{x}$~\cite{shankar2017quantum},
 we can represent the expectation value as:
 
@@ -547,34 +547,36 @@ we can represent the expectation value as:
 \label{observables_N-body}
 \end{equation}
 
-Therefore, we may regard the expectation value of the observable as a functional of the many-body wavefunction $\Psi$, and write
+Therefore, we may regard the expectation value of the observable as a functional of the many-body wave function $\Psi$, and write
 
 \begin{equation}
 \Omega[\Psi] = \bra{\Psi}\hat{\Omega}\ket{\Psi}
 \label{observables_functional}
 \end{equation}
 
-here, the square brackets $[\Psi]$ (rather than parentheses) emphasize that $\Omega$ is a functional, it is a mapping from the entire wavefunction $\Psi$ to a scalar.
+here, the square brackets $[\Psi]$ (rather than parentheses) emphasize that $\Omega$ is a functional, it is a mapping from the entire wave function $\Psi$ to a scalar.
 
-A functional simply assigns a number to a function. In our case of equation~\eqref{observables_N-body}, its form is a known integral. However, evaluating it requires the exact many-body wavefunction, which we generally cannot compute or store. Moreover, integration acts as an averaging operation that smooths out microscopic fluctuations, so only the coarse-grained features of the integrand contribute to the result.
+A functional simply assigns a number to a function. In our case of equation~\eqref{observables_N-body}, its form is a known integral. However, evaluating it requires the exact many-body wave function, which we generally cannot compute or store. Moreover, integration acts as an averaging operation that smooths out microscopic fluctuations, so only the coarse-grained features of the integrand contribute to the result.
 
-Consequently, we can discard irrelevant details of the many-body wavefunction and work with simplified approximations tailored to specific observables. Normally, we use approximate wavefunctions: methods such as Hartree--Fock, configuration interaction, and quantum Monte Carlo exploit this idea by retaining the dominant components of the wavefunction while approximating or sampling the rest.
+Consequently, we can discard irrelevant details of the many-body wave function and work with simplified approximations tailored to specific observables. Normally, we use approximate wave functions: methods such as Hartree--Fock, configuration interaction, and quantum Monte Carlo exploit this idea by retaining the dominant components of the wave function while approximating or sampling the rest.
 
-A more radical question is whether we need to work with explicit wavefunctions at all, or if the expectation value in equation~\eqref{observables_N-body} can be reformulated entirely in terms of other, more tractable quantities.
+A more radical question is whether we need to work with explicit wave functions at all, or if the expectation value in equation~\eqref{observables_N-body} can be reformulated entirely in terms of other, more tractable quantities.
 
 In the case of this approximation, for a given hamiltonian $\bra{\Psi}\hat{H}\ket{\Psi}$, we can regard it as depending on the form of the kinetic energy operator $\bra{\Psi}\hat{T}\ket{\Psi}$, external potential operator $\bra{\Psi}\hat{V}_\mathrm{ext}\ket{\Psi}$, and the interaction operator $\bra{\Psi}\hat{V}_\mathrm{int}\ket{\Psi}$.
 
-To specify the quantum dynamics and interactions of our system, we begin by defining its hamiltonian. The hamiltonian encodes all system-specific information:
+To specify the quantum dynamics and interactions of our system within the Born--Oppenheimer approximation,
+we work at the fixed nuclear coordinates $\{\vec{R}_I\}$ and write the clamped nuclei hamiltonian as:
 
 \begin{equation}
-    \hat{H}
+    \hat{H}_\mathrm{BO}(\{\vec{R}_I\})
     = -\frac{1}{2}\sum_i\nabla_i^2
     + \sum_i v_{\mathrm{ext}}(\hat{\vec{r}}_i)
     + \sum_{i<j}\frac{1}{|\vec{r}_i - \vec{r}_j|}
-\label{hamiltonian}
+    + E_\mathrm{NN}(\{\vec{R}_I\})
+    \label{BO_hamiltonian}
 \end{equation}
 
-In the present electronic many-body problem within the Born-Oppenheimer approximation, 
+In the present electronic many-body problem within the Born--Oppenheimer approximation, 
 the nuclear coordinates are clamped, and the nuclear-nuclear repulsion becomes a negligible constant. 
 We can identify the interaction operator as the electron--electron Coulomb repulsion~\eqref{electrons_Coulomb},
 and the external potential acting on the electrons is the attractive Electron--nucleus interaction, which can be written as a sum of one-body terms~\eqref{Electron--nucleus_one-body_form}:
@@ -743,7 +745,7 @@ Equivalently, for the spin-summed spatial density, the same condition takes the 
 This constraint will be enforced explicitly when we later vary an energy functional with respect to $n$.
 
 We also note that not every non-negative function is an admissible density.
-In general, a candidate $n(x)$ must be compatible with an antisymmetric $N$-body wavefunction and the chosen external potential.
+In general, a candidate $n(x)$ must be compatible with an antisymmetric $N$-body wave function and the chosen external potential.
 In what follows, we keep these representability requirements implicit,
 and we work within the set of admissible densities, and equation~\eqref{particle_number_constraint_density} provides the particle number constraint.
 
@@ -813,8 +815,8 @@ We begin by insisting on a single functional variable $Q$ such that every observ
 Having identified $Q$, we then derive the explicit mappings $\hat\Omega_i[Q]$ for each target observable.
 Finally, we develop a practical algorithm or an approximation scheme to compute $Q$ itself, thereby rendering all observables $\hat\Omega_i[Q]$ tractable.
 
-Given a time-dependent many-body wavefunction: $\Psi(x_1,x_2,\cdots,x_N; t)$. 
-We denote the corresponding ground state ($g\coloneqq 0$) many-body wavefunction as 
+Given a time-dependent many-body wave function $\Psi(x_1,x_2,\cdots,x_N; t)$. 
+We denote the corresponding ground state ($g\coloneqq 0$) many-body wave function as 
 $\Psi_g(x_1,x_2,\cdots,x_N; t)$.
 We can also denote the excited states by an index $\alpha$ ($\alpha\geq1$), 
 as $\Psi_{\alpha}(x_1,x_2,\cdots,x_N; t)$.
@@ -882,10 +884,10 @@ Hence, a typical energy-like observable can be written as
 % Compact Q -> lead to density functional
 
 Up to now, we do not have closed-form expressions for the objects appearing in equation~\eqref{mod_obs_1}, and evaluating them still requires many-body information beyond practical reach.
-This motivates the introduction of a compact descriptor: rather than working with the full wavefunction $\Psi(x_1,\cdots,x_N)$, we seek a simpler variable $Q$ that is nevertheless sufficient to determine the observables of interest.
+This motivates the introduction of a compact descriptor: rather than working with the full wave function $\Psi(x_1,\cdots,x_N)$, we seek a simpler variable $Q$ that is nevertheless sufficient to determine the observables of interest.
 
-More precisely, let $\{\hat{\Omega}_i\}_{i=1,2,\cdots}$ denote the operators representing the target physical quantities, and let $\Omega_i[\Psi]$ denote their ground state expectation values regarded as functionals of the wavefunction.
-Our goal is to find a single descriptor $Q$ such that, once $Q$ is known, all these observables can be evaluated without explicit reference to the wavefunction $\Psi$:
+More precisely, let $\{\hat{\Omega}_i\}_{i=1,2,\cdots}$ denote the operators representing the target physical quantities, and let $\Omega_i[\Psi]$ denote their ground state expectation values regarded as functionals of the wave function.
+Our goal is to find a single descriptor $Q$ such that, once $Q$ is known, all these observables can be evaluated without explicit reference to the wave function $\Psi$:
 
 \begin{equation}
     \Psi \mapsto Q,\quad\Omega_i[\Psi] = \Omega_i[Q],\quad(i=1,2,\cdots)
@@ -903,7 +905,7 @@ Firstly, the particle density $n(x)$ yields exactly all local one-body observabl
     \label{one-body_observables}
 \end{equation}
 
-Secondly, the particle density $n(x)$ is extremely compact compared to the wavefunction $\Psi$.
+Secondly, the particle density $n(x)$ is extremely compact compared to the wave function $\Psi$.
 Moreover, in the case of a non-degenerate ground state, the Hohenberg--Kohn theorem implies a bijective correspondence between the ground state density and the external potential.
 As a result, $n(x)$ determines $v_\mathrm{ext}$ up to an additive constant.
 This fixes the hamiltonian and thereby fixes the ground state up to an overall phase.
@@ -976,7 +978,7 @@ For this reason, they are commonly referred to as density functionals.
 
 \subsection{Density functional in quantum mechanics}
 
-In quantum mechanics, it is often convenient to shift the basic variable from the many-body wavefunction to the electron density $n(\vec{r}\,)$.
+In quantum mechanics, it is often convenient to shift the basic variable from the many-body wave function to the electron density $n(\vec{r}\,)$.
 From this point of view, every relevant physical quantity can be expressed as a functional of the density.
 Therefore, we can realize that a functional takes the density function $n(\vec{r}\,)$ as input and returns a quantum-mechanical observable as output.
 
@@ -994,7 +996,7 @@ Next, we can define the electron density of ground state as its expectation valu
 \label{electron_density_definition}
 \end{equation}
 
-here, $\ket{\Psi_0}$ denotes the ground state many-body wavefunction, which encodes the full complexity of the current interacting $N$-electron system.
+here, $\ket{\Psi_0}$ denotes the ground state many-body wave function, which encodes the full complexity of the current interacting $N$-electron system.
 Given an observable represented by an operator $\hat{\Omega}$, its ground state value is evaluated through the expectation value $O$:
 
 \begin{equation}
@@ -1002,9 +1004,9 @@ Given an observable represented by an operator $\hat{\Omega}$, its ground state 
 \label{electron_density_expectation}
 \end{equation}
 
-and hence every ground state observable can be regarded, at least formally, as a functional of the many-body wavefunction: $O[\Psi_0]=O$.
+and hence every ground state observable can be regarded, at least formally, as a functional of the many-body wave function $O[\Psi_0]=O$.
 
-However, the kernel idea of density functional theory is here: for the ground state properties, the wavefunction dependence can be reduced even further. In our statement, if the density of ground state $n(\vec{r}\,)$ uniquely specifies the corresponding wavefunction of ground state $\Psi_0$,
+However, the kernel idea of density functional theory is here: for the ground state properties, the wave function dependence can be reduced even further. In our statement, if the density of ground state $n(\vec{r}\,)$ uniquely specifies the corresponding wave function of ground state $\Psi_0$,
 the expectation value of any operator $\hat{\Omega}$ in the ground state is uniquely determined by the density function $n(\vec{r}\,)$.
 
 Consequently, every ground state observable can be written as a (unique) density functional:
@@ -1027,7 +1029,7 @@ Accordingly, any ground state observable may be written as a functional of the d
 This is not merely a change of notation; it marks the conceptual compression from a function of $3N$ variables, $\Psi_0(\vec{r}_1,\cdots,\vec{r}_N)$, to a function of only three spatial variables, $n(\vec{r}\,)$, which is the cornerstone of the practical formulation of DFT.
 Historically, the density functional formalism was established in the 1960s through the pioneering work of Hohenberg and Kohn, and was later made computationally practical by the Kohn--Sham scheme~\cite{kohn1965self}.
 
-Since the many-body wavefunction $\Psi$ encodes the full complexity of the system, a natural question is the following: what is the ingredient that actually distinguishes one many-electron system from another?
+Since the many-body wave function $\Psi$ encodes the full complexity of the system, a natural question is the following: what is the ingredient that actually distinguishes one many-electron system from another?
 
 To answer this, we recall that the quantum dynamics is specified once the hamiltonian is given.
 
@@ -1054,7 +1056,7 @@ Therefore, the external potential is the system-defining ingredient: it distingu
 
 In fact, once $\hat{V}_\mathrm{ext}$ is given, the hamiltonian is fully specified.
 Conversely, if the hamiltonian is known, then in principle we may solve its eigenvalue problem to obtain the eigenstates and eigenvalues.
-With the wavefunction known, any observable can be evaluated as the expectation value of the corresponding operator.
+With the wave function known, any observable can be evaluated as the expectation value of the corresponding operator.
 
 This viewpoint motivates the search for compact descriptors that retain the essential information of the ground state.
 A central example is the electron density, for an arbitrary state $\ket{\Psi}$, the electron density is defined as the expectation value of the density operator $\hat{n}(\vec{r}\,)$:
@@ -1068,7 +1070,7 @@ A central example is the electron density, for an arbitrary state $\ket{\Psi}$, 
 \end{equation}
 
 Consider a fixed form of interaction, the external potential $v_\mathrm{ext}(\vec{r}\,)$ specifies the corresponding hamiltonian and therefore the ground state structure.
-Here $v_\mathrm{ext}(\vec{r}\,)$ is a scalar potential field in real space, whereas $\hat{V}_\mathrm{ext}$ is the associated many-body operator acting on the $N$-electron wavefunction.
+Here $v_\mathrm{ext}(\vec{r}\,)$ is a scalar potential field in real space, whereas $\hat{V}_\mathrm{ext}$ is the associated many-body operator acting on the $N$-electron wave function.
 
 Given definition of external potential operator~\eqref{reduced_operator_definition}, in coordinate representation, $\hat{V}_\mathrm{ext}$ acts by multiplication with $\sum_i v_\mathrm{ext}(\hat{\vec{r}}_i)$. 
 
@@ -1088,7 +1090,7 @@ equation~\eqref{electron_densit_via_expectation}, we have:
     \label{external_potential_energy_expectation}
 \end{equation}
 
-When the ground state is non-degenerate, $v_\mathrm{ext}(\vec{r}\,)$ stands in a one-to-one correspondence (up to an additive constant) with the ground state wavefunction $\Psi_0$.
+When the ground state is non-degenerate, $v_\mathrm{ext}(\vec{r}\,)$ stands in a one-to-one correspondence (up to an additive constant) with the ground state wave function $\Psi_0$.
 
 Consequently, the ground state expectation value of any observable $\hat{O}$ may be viewed as a unique functional of the external potential:
 
@@ -1097,7 +1099,7 @@ Consequently, the ground state expectation value of any observable $\hat{O}$ may
 \label{functional_from_external_potential}
 \end{equation}
 
-The central move of density functional theory is to further replace the dependence on the wavefunction by a dependence on the electron density $n(\vec{r}\,)$. The key question is whether the map from external potential $v_\mathrm{ext}(\vec{r}\,)$ to the ground state density $n(\vec{r}\,)$ is likewise invertible in an appropriate sense. The first Hohenberg--Kohn theorem answers this in the affirmative for non-degenerate ground states: the ground state density $n(\vec{r}\,)$ uniquely determines $v_\mathrm{ext}(\vec{r}\,)$ (again up to an additive constant), and hence uniquely fixes the hamiltonian and the corresponding ground state. In this sense, all ground state observables can be regarded as functionals of the density:
+The central move of density functional theory is to further replace the dependence on the wave function by a dependence on the electron density $n(\vec{r}\,)$. The key question is whether the map from external potential $v_\mathrm{ext}(\vec{r}\,)$ to the ground state density $n(\vec{r}\,)$ is likewise invertible in an appropriate sense. The first Hohenberg--Kohn theorem answers this in the affirmative for non-degenerate ground states: the ground state density $n(\vec{r}\,)$ uniquely determines $v_\mathrm{ext}(\vec{r}\,)$ (again up to an additive constant), and hence uniquely fixes the hamiltonian and the corresponding ground state. In this sense, all ground state observables can be regarded as functionals of the density:
 
 \begin{equation}
     \braket{\hat{O}}=O[n(\vec{r}\,)]
@@ -1111,9 +1113,9 @@ In the presence of ground state degeneracy, the strict one-to-one correspondence
 
 In this subsection, we focus on the Hohenberg--Kohn theorem, which provides the conceptual foundation of density functional theory: for a fixed form of electron--electron interaction and a non-degenerate ground state, it establishes a one-to-one correspondence between the external potential and the ground state density (up to an additive constant), and it leads to a variational characterization of the ground state.
 
-We begin by proving that, up to an additive constant in the potential, the ground state wavefunction is uniquely determined by the external potential.
+We begin by proving that, up to an additive constant in the potential, the ground state wave function is uniquely determined by the external potential.
 
-We start with assuming for contradiction that two different external potentials lead to the same ground state wavefunction $\ket{\Psi_0}$, while not differing by a mere additive constant:
+We start with assuming for contradiction that two different external potentials lead to the same ground state wave function $\ket{\Psi_0}$, while not differing by a mere additive constant:
 
 \begin{equation}
     v^{(1)}_\mathrm{ext}(\vec{r}\,)\neq v^{(2)}_\mathrm{ext}(\vec{r}\,)+\mathrm{const.}
@@ -1150,15 +1152,15 @@ Therefore, for an $N$-electron system, we have:
 \label{energy_difference}
 \end{equation}
 
-Whenever the wavefunction $\Psi_0(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)\neq 0$, we can divide both sides by $\Psi_0$ and obtain:
+Whenever the wave function $\Psi_0(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)\neq 0$, we can divide both sides by $\Psi_0$ and obtain:
 
 \begin{equation}
     \sum_{i=1}^N\left[v_\mathrm{ext}^{(1)}(\vec{r}_i)-v_\mathrm{ext}^{(2)}(\vec{r}_i)\right]=E_1-E_2
 \label{difference_energy_nowave}
 \end{equation}
 
-The equality above implies that, for any configuration $(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)$ where the wavefunction $\Psi_0(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)\neq 0$, the factor multiplying $\Psi_0$ must be constant.
-Dividing both sides by $\Psi_0$ wherever the ground state wavefunction $\Psi_0(\vec{r}_1,\ldots,\vec{r}_N)$ is nonzero, we obtain a constraint on the difference between the two external potentials.
+The equality above implies that, for any configuration $(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)$ where the wave function $\Psi_0(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)\neq 0$, the factor multiplying $\Psi_0$ must be constant.
+Dividing both sides by $\Psi_0$ wherever the ground state wave function $\Psi_0(\vec{r}_1,\ldots,\vec{r}_N)$ is nonzero, we obtain a constraint on the difference between the two external potentials.
 
 To make this explicit, we define the potential shift function:
 
@@ -1174,9 +1176,9 @@ Then, we can rewrite the previous relation as:
 \label{N-body_shift_potential}
 \end{equation}
 
-for all configurations on which the wavefunction $\Psi_0(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)$ is nonzero.
+for all configurations on which the wave function $\Psi_0(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)$ is nonzero.
 
-Now, we pick any set of coordinates $(\vec{r}_2,\cdots,\vec{r}_N)$ such that the wavefunction does not vanish, and keep them fixed.
+Now, we pick any set of coordinates $(\vec{r}_2,\cdots,\vec{r}_N)$ such that the wave function does not vanish, and keep them fixed.
 With these coordinates held fixed, the sum of the last $N-1$ terms,
 $g(\vec{r}_2)+\cdots+g(\vec{r}_N)$, is just a scalar.
 The equation then reduces to:
@@ -1186,7 +1188,7 @@ The equation then reduces to:
 \label{fixed_N-body_shift_potential}
 \end{equation}
 
-which shows that $g(\vec{r}_1)$ cannot change as $\vec{r}_1$ varies within any region where the wavefunction remains nonzero.
+which shows that $g(\vec{r}_1)$ cannot change as $\vec{r}_1$ varies within any region where the wave function remains nonzero.
 Otherwise the left-hand side would vary with $\vec{r}_1$, while the right-hand side remains fixed.
 
 Since the same argument applies when we vary any other particle coordinate $\vec{r}_j$ with the remaining coordinates fixed,
@@ -1195,22 +1197,22 @@ Thus, we arrive at the following relation:
 
 \begin{equation}
     v_\mathrm{ext}^{(1)}(\vec{r}\,)=v_\mathrm{ext}^{(2)}(\vec{r}\,)+\mathrm{const.}
-\label{parallel_wavefunction}
+\label{parallel_wave function}
 \end{equation}
 
 Hence $(E_1-E_2)/N$ is a constant. This contradicts the assumption in equation~\eqref{V_ext}.
-Therefore, we arrive at a conclusion that two different external potentials cannot lead to the same non-degenerate ground state wavefunction unless they differ only by an additive constant, as stated in equation~\eqref{parallel_wavefunction}.
+Therefore, we arrive at a conclusion that two different external potentials cannot lead to the same non-degenerate ground state wave function unless they differ only by an additive constant, as stated in equation~\eqref{parallel_wave function}.
 
-Equivalently, up to a constant shift in the potential and for a fixed form of interaction, the mapping from the external potential to the non-degenerate ground state wavefunction is one-to-one.
+Equivalently, up to a constant shift in the potential and for a fixed form of interaction, the mapping from the external potential to the non-degenerate ground state wave function is one-to-one.
 
 % \subsection{The Hohenberg--Kohn theorem}
 
-Since any ground state observable follows uniquely from the ground state wavefunction via its expectation value, equation~\eqref{functional_from_external_potential} implies that $\ket{\Psi_0}$ is uniquely determined by $v_\mathrm{ext}$, and hence the ground state observables are unique functionals of $v_\mathrm{ext}$.
+Since any ground state observable follows uniquely from the ground state wave function via its expectation value, equation~\eqref{functional_from_external_potential} implies that $\ket{\Psi_0}$ is uniquely determined by $v_\mathrm{ext}$, and hence the ground state observables are unique functionals of $v_\mathrm{ext}$.
 The external potential is defined to an additive constant shift.
 
 A natural question then is: what is the relation between the external potential $v_\mathrm{ext}(\vec{r}\,)$ and the density of the current system $n(\vec{r}\,)$?
 
-To describe the statements precise, we next define the equivalence class of external potential $v_\mathrm{ext}(\vec{r}\,)$ and the ground state wavefunction $\ket{\Psi_0}$ as:
+To describe the statements precise, we next define the equivalence class of external potential $v_\mathrm{ext}(\vec{r}\,)$ and the ground state wave function $\ket{\Psi_0}$ as:
 
 \begin{equation}
 \begin{aligned}
@@ -1221,17 +1223,17 @@ To describe the statements precise, we next define the equivalence class of exte
 \end{equation}
 
 To address this question, we fix the form of interaction and restrict ourselves to a non-degenerate ground state.
-Under these assumptions, there is a one-to-one correspondence between the equivalence class of external potential $\left[v_\mathrm{ext}(\vec{r}\,)\right]$ and the ground state wavefunction $\left[\ket{\Psi_0}\right]$, 
+Under these assumptions, there is a one-to-one correspondence between the equivalence class of external potential $\left[v_\mathrm{ext}(\vec{r}\,)\right]$ and the ground state wave function $\left[\ket{\Psi_0}\right]$, 
 where $\left[v_\mathrm{ext}(\vec{r}\,)\right]$ is defined up to an additive constant and $\left[\ket{\Psi_0}\right]$ up to an overall phase.
 
 Equivalently, $\left[v_\mathrm{ext}(\vec{r}\,)\right]$ and $\left[\ket{\Psi_0}\right]$ are in bijection:
 
 \begin{equation}
     \left[v_\mathrm{ext}(\vec{r}\,)\right]\,\xleftrightarrow{}\,\left[\ket{\Psi_0}\right]
-    \label{potential_wavefunction_correspondence}
+    \label{potential_wave function_correspondence}
 \end{equation}
 
-Moreover, the wavefunction is directly related to the density through the standard marginalization over the remaining $N-1$ particles. As a result, we obtain a unique ground state density, given by the usual marginalization of the squared modulus of the wavefunction over all but one space variables:
+Moreover, the wave function is directly related to the density through the standard marginalization over the remaining $N-1$ particles. As a result, we obtain a unique ground state density, given by the usual marginalization of the squared modulus of the wave function over all but one space variables:
 
 \begin{equation}
     n(\vec{r}\,)=N\int \mathrm{d}\vec{r}_2\cdots\mathrm{d}\vec{r}_N\,\left|\Psi(\vec{r},\vec{r}_2,\cdots,\vec{r}_N)\right|^2
@@ -1243,11 +1245,11 @@ This means that the external potential $v_\mathrm{ext}$ induces a mapping to the
 
 The strategy to establish this relation is also a reductio ad absurdum argument.
 Suppose there exist two different external potentials $v^{(1)}_\mathrm{ext}(\vec{r}\,)$ and $v^{(2)}_\mathrm{ext}(\vec{r}\,)$ such that $v^{(1)}_\mathrm{ext}(\vec{r}\,)\neq v^{(2)}_\mathrm{ext}(\vec{r}\,)+\mathrm{const.}$
-Let their corresponding non-degenerate ground state wavefunctions be denoted as $\Psi_0^{(1)}$ and $\Psi_0^{(2)}$.
+Let their corresponding non-degenerate ground state wave functions be denoted as $\Psi_0^{(1)}$ and $\Psi_0^{(2)}$.
 
 Recall the Schrödinger equation~\eqref{different_hamiltonians_schrodinger_equation}.
-The external potentials $v^{(1)}_\mathrm{ext}(\vec{r}\,)$ and $v^{(2)}_\mathrm{ext}(\vec{r}\,)$ lead to the eigenvalues $E_1$ and $E_2$, and the corresponding ground state wavefunctions $\ket{\Psi_0^{(1)}}$ and $\ket{\Psi_0^{(2)}}$, respectively.
-Since the ground states are assumed non-degenerate: $\ket{\Psi_0^{(1)}}\neq\ket{\Psi_0^{(2)}}$.
+The external potentials $v^{(1)}_\mathrm{ext}(\vec{r}\,)$ and $v^{(2)}_\mathrm{ext}(\vec{r}\,)$ lead to the eigenvalues $E_1$ and $E_2$, and the corresponding ground state wave functions $\ket{\Psi_0^{(1)}}$ and $\ket{\Psi_0^{(2)}}$, respectively.
+Since the ground states are assumed non-degenerate $\ket{\Psi_0^{(1)}}\neq\ket{\Psi_0^{(2)}}$.
 For each external potential, the total energy can be written as the expectation value of the hamiltonian in its ground state:
 
 \begin{equation}
@@ -1258,9 +1260,9 @@ For each external potential, the total energy can be written as the expectation 
 \label{different_total_energies}
 \end{equation}
 
-We now make the key assumption for contradiction: although the two external potentials, and hence the two ground state wavefunctions, are different, they lead to the same ground state density $n^{(1)}(\vec{r}\,)=n^{(2)}(\vec{r}\,)$, where $n^{(1)}(\vec{r}\,)$ and $n^{(2)}(\vec{r}\,)$ are obtained from $\Psi_0^{(1)}$ and $\Psi_0^{(2)}$, respectively, via equation~\eqref{density_function}
+We now make the key assumption for contradiction: although the two external potentials, and hence the two ground state wave functions, are different, they lead to the same ground state density $n^{(1)}(\vec{r}\,)=n^{(2)}(\vec{r}\,)$, where $n^{(1)}(\vec{r}\,)$ and $n^{(2)}(\vec{r}\,)$ are obtained from $\Psi_0^{(1)}$ and $\Psi_0^{(2)}$, respectively, via equation~\eqref{density_function}
 
-Through the Rayleigh--Ritz variational principle: for the ground state energy $E_0$ of a given hamiltonian $\hat{H}$, the energy expectation value over any normalized trial wavefunction $\Phi$ provides an upper bound to the ground state energy:
+Through the Rayleigh--Ritz variational principle: for the ground state energy $E_0$ of a given hamiltonian $\hat{H}$, the energy expectation value over any normalized trial wave function $\Phi$ provides an upper bound to the ground state energy:
 
 \begin{equation}
     E_0\leq \bra{\Phi}\hat{H}\ket{\Phi}
@@ -1348,17 +1350,17 @@ This demonstrates that, for a fixed form of interaction and a non-degenerate gro
 the ground state density $n(\vec{r}\,)$ uniquely determines the external potential $v_\mathrm{ext}(\vec{r}\,)$ up to an additive constant,
 and hence uniquely determines the hamiltonian and the ground state up to an overall phase.
 
-Let us recollect the definition of the equivalence class of the external potential $v_\mathrm{ext}(\vec{r}\,)$ and the ground state wavefunction $\ket{\Psi_0}$ in equation~\eqref{equivalence_classes_definition},
-as well as the fact that the equivalence classes $\left[v_\mathrm{ext}\right]$ and $\left[\ket{\Psi_0}\right]$ are in bijection in equation~\eqref{potential_wavefunction_correspondence}.
+Let us recollect the definition of the equivalence class of the external potential $v_\mathrm{ext}(\vec{r}\,)$ and the ground state wave function $\ket{\Psi_0}$ in equation~\eqref{equivalence_classes_definition},
+as well as the fact that the equivalence classes $\left[v_\mathrm{ext}\right]$ and $\left[\ket{\Psi_0}\right]$ are in bijection in equation~\eqref{potential_wave function_correspondence}.
 
-Moreover, the ground state wavefunction uniquely determines the ground state density via the standard marginalization:
+Moreover, the ground state wave function uniquely determines the ground state density via the standard marginalization:
 
 \begin{equation}
     \left[\ket{\Psi_0}\right]\longmapsto n(\vec{r}\,)
-    \label{wavefunction_density_map}
+    \label{wave function_density_map}
 \end{equation}
 
-We emphasize that the map in equation~\eqref{wavefunction_density_map} is not injective for any arbitrary many-body wavefunction.
+We emphasize that the map in equation~\eqref{wave function_density_map} is not injective for any arbitrary many-body wave function.
 In the present setting, however, we restrict ourselves to non-degenerate ground states. Within this restricted class, the first Hohenberg--Kohn theorem provides a unique inverse implication, namely that the ground state density uniquely determines the equivalence class of the external potential:
 
 \begin{equation}
@@ -1366,7 +1368,7 @@ In the present setting, however, we restrict ourselves to non-degenerate ground 
     \label{density_potential_map}
 \end{equation}
 
-Combining equations~\eqref{potential_wavefunction_correspondence}, \eqref{wavefunction_density_map},
+Combining equations~\eqref{potential_wave function_correspondence}, \eqref{wave function_density_map},
 and\eqref{density_potential_map}, we finally arrive at a one-to-one correspondence among the basic ground state descriptors:
 
 \begin{equation}
@@ -1376,7 +1378,7 @@ and\eqref{density_potential_map}, we finally arrive at a one-to-one corresponden
 
 The two previous equations~\eqref{density_potential_map} and~\eqref{hk_correspondence_v_n_psi} summarize the content of the Hohenberg--Kohn theorem~\cite{hohenberg1964inhomogeneous}.
 For a fixed form of interaction and a non-degenerate ground state, the ground state density $n(\vec{r}\,)$ is in bijection with the equivalence class of the external potential $\left[v_\mathrm{ext}(\vec{r}\,)\right]$ up to an additive constant. 
-Consequently, the ground state density uniquely determines the hamiltonian and the ground state wavefunction up to an overall phase,
+Consequently, the ground state density uniquely determines the hamiltonian and the ground state wave function up to an overall phase,
 and any ground state observable is, in principle, a unique functional of $n(\vec{r}\,)$.
 
 Therefore, the ground state expectation definition~\eqref{functional_from_external_potential} can be reformulated as:
@@ -1387,7 +1389,7 @@ Therefore, the ground state expectation definition~\eqref{functional_from_extern
 \end{equation}
 
 here, $O[n(\vec{r}\,)]$ denotes the density functional that yields the ground state expectation value of $\hat{O}$.
-This observation forms the central premise of density functional theory and motivates the use of the density, rather than the wavefunction, as the fundamental variable.
+This observation forms the central premise of density functional theory and motivates the use of the density, rather than the wave function, as the fundamental variable.
 
 As described by equation~\eqref{functional_from_density},
 every ground state observable is a unique functional of the electron density.
@@ -1404,7 +1406,7 @@ According to decomposition of the hamiltonian in equation~\eqref{hamiltonian_dec
 \label{groundstate_energy_decomposition}
 \end{equation}
 
-To generalize this variational picture, for a given admissible density $n(\vec{r}\,)$ we consider wavefunctions $\Psi$ that yield $n$, and define
+To generalize this variational picture, for a given admissible density $n(\vec{r}\,)$ we consider wave functions $\Psi$ that yield $n$, and define
 
 \begin{equation}
 \begin{aligned}
@@ -1417,9 +1419,9 @@ To generalize this variational picture, for a given admissible density $n(\vec{r
 
 which reduces to $E_0$ when $n=n_0$.
 
-Here the minimization is taken over all normalized antisymmetric $N$-electron wavefunctions $\ket{\Psi}$ compatible with the fixed interaction.
+Here the minimization is taken over all normalized antisymmetric $N$-electron wave functions $\ket{\Psi}$ compatible with the fixed interaction.
 
-The kinetic energy functional $T[n]$, the interaction energy functional $E_\mathrm{int}[n]$, and the external potential energy functional $E_\mathrm{ext}[n]$ are evaluated on a minimizing wavefunction $\Psi[n]$ that yields the density $n$. We now write their definitions:
+The kinetic energy functional $T[n]$, the interaction energy functional $E_\mathrm{int}[n]$, and the external potential energy functional $E_\mathrm{ext}[n]$ are evaluated on a minimizing wave function $\Psi[n]$ that yields the density $n$. We now write their definitions:
 
 \begin{equation}
 \begin{aligned}
@@ -1816,7 +1818,7 @@ Let us express the exact total energy as a functional of the density:
 
 Here $T[n]$ denotes the exact kinetic energy functional and $E_\mathrm{H}[n]$ is the Hartree energy functional.
 The exchange--correlation energy functional $E_\mathrm{xc}[n]$ collects all interaction effects beyond the classical Hartree term.
-It includes the exchange contribution originating from the antisymmetry of the many-electron wavefunction and the correlation contribution accounting for the remaining many-body correlations.
+It includes the exchange contribution originating from the antisymmetry of the many-electron wave function and the correlation contribution accounting for the remaining many-body correlations.
 
 In view of the definition of the universal Hohenberg--Kohn functional in equation~\eqref{functional_HK_definition}, it is convenient to introduce $E_\mathrm{xc}[n]$ via:
 
@@ -1924,51 +1926,67 @@ Since one-body observables can be expressed in terms of the density, as summariz
 
 This approach motivates introducing an auxiliary description that reproduces the same density.
 
-Let us start with an interrelated two-body system consisting of two species.
+Firstly, let us start with an interrelated two-body system consisting of two species.
 
-Firstly, we denote the coordinates of the first species by $x_1,x_2,\cdots,x_N$,
+We denote the coordinates of the first species by $x_1,x_2,\cdots,x_N$,
 and those of the second species by $y_1,y_2,\cdots,y_M$.
-The full many-body wave function is then $\Psi(x_1,x_2,\cdots,x_N;y_1,y_2,\cdots,y_M)$.
 
-Next, we suppose that there is no interaction between these two species, the wavefunction factorizes as:
+Therefore, the full many-body wave function reads $\Psi(x_1,x_2,\cdots,x_N;y_1,y_2,\cdots,y_M)$.
+
+Here, we suppose that there is no interaction between these two species, the wave function factorizes as:
 
 \begin{equation}
     \Psi(x_1,x_2,\cdots,x_N;y_1,y_2,\cdots,y_M)
-    =\psi(x_1,x_2,\cdots,x_N)\phi(y_1,y_2,\cdots,y_M)
-    \label{separate_two-body_wavefunction}
+    =\psi(x_1,x_2,\cdots,x_N)\varphi(y_1,y_2,\cdots,y_M)
+    \label{separate_two-body_wave function}
 \end{equation}
 
----
-
-
-
----
-
-In this decoupled limit, the density of the first species can be expressed by integrating out the remaining coordinates.
-The factor $\phi$ drops out due to its normalization:
+In this decoupled limit, the density of the first species is obtained by integrating out the remaining coordinates.
+To make the cancellation explicit, we use the normalization of $\varphi$:
 
 \begin{equation}
-    \int\int\cdots\int\dif{y_1}\dif{y_2}\cdots\dif{y_M}\,|\phi(y_1,y_2,\cdots,y_M)|^2 =1
-\label{phi_normalization}
+    \int\int\cdots\int\dif{y_1}\dif{y_2}\cdots\dif{y_M}\,|\varphi(y_1,y_2,\cdots,y_M)|^2 = 1
+    \label{phi_normalization}
 \end{equation}
 
-therefore, we get:
+We define the particle density associated with $\psi$ as:
+
+\begin{equation}
+    n_\psi(x)\coloneqq N\int\int\cdots\int\dif{x_2}\dif{x_3}\cdots\dif{x_N}\,|\psi(x,x_2,\cdots,x_N)|^2
+    \label{density_first_species_psi}
+\end{equation}
+
+With these definitions, we can express the density of the first species as:
+
+\begin{equation}
+    n(x)=n_\psi(x)\int\int\cdots\int\dif{y_1}\dif{y_2}\cdots\dif{y_M}\,|\varphi(y_1,y_2,\cdots,y_M)|^2
+    \label{two_body_density_factorized}
+\end{equation}
+
+Applying the normalization of $\varphi$~\eqref{phi_normalization},
+therefore, we arrive at:
 
 \begin{equation}
 \begin{aligned}
     n(x)
-    =& N\int\int\cdots\int\dif{x_2}\dif{x_3}\cdots\dif{x_N}\,|\psi(x,x_2,\cdots,x_N)|^2 \\
-    &\cdot\int\int\cdots\int\dif{y_1}\dif{y_2}\cdots\dif{y_M}\,|\phi(y_1,y_2,\cdots,y_M)|^2 \\
-    =& N\int\int\cdots\int\dif{x_2}\dif{x_3}\cdots\dif{x_N}\,|\psi(x,x_2,\cdots,x_N)|^2
+    =& \,n_\psi(x) \\
+    =& \,N\int\int\cdots\int\dif{x_2}\dif{x_3}\cdots\dif{x_N}\,|\psi(x,x_2,\cdots,x_N)|^2
 \end{aligned}
 \label{two-body_density}
 \end{equation}
 
-In general, interactions entangle the two species and the factorization in equation~\eqref{separate_two-body_wavefunction} is no longer available.
-The density of one species must then be constructed from the full many body wave function by integrating out the other degrees of freedom.
+In general, interactions entangle the two species and the factorization in equation~\eqref{separate_two-body_wave function} is no longer available.
+The density of one species must then be constructed from the full many-body wave function by integrating out the other degrees of freedom.
 This illustrates why reduced quantities such as densities are natural objects in many body physics.
 
-% P2 16:00
+---draft
+
+Secondly, we work at the fixed nuclear coordinates $\{\vec{R}_I\}$ and get the hamiltonian in Born--Oppenheimer approximation~\eqref{BO_hamiltonian}.
+
+We notice that the ions have not disappeared, they exert influence through the external potential term~\eqref{one-body_Electron--nucleus}.
+
+Since where electrons move in an effective field of ions, that has in turn
+
 
 \newpage
 \section{Approximation and strategies in density functional theory}
