@@ -305,7 +305,7 @@ After truncating each one-particle space to a finite basis of size $d$, the many
 This complexity, known as the "curse of dimensionality," motivates powerful approximate methods such as Hartree--Fock and Density Functional Theory, which we will explore in later sections.
 
 When electron interactions are completely disregarded, the problem simplifies to $N$ independent single-electron problems.
-If we further ignore fermionic antisymmetry, the many-body wave function reduces to a simple product of single-particle wave functions:
+If we further ignore fermionic antisymmetry, the many-body wave function reduces to a simple product of single particle wave functions:
 
 \begin{equation}
     \Psi(x_1,x_2,\cdots,x_N)=\psi_{n_1}(x_1)\psi_{n_2}(x_2)\cdots\psi_{n_N}(x_N)
@@ -824,37 +824,63 @@ as $\Psi_{\alpha}(x_1,x_2,\cdots,x_N; t)$.
 Then, we can describe the ground state one-body density:
 
 \begin{equation}
-\rho_g(x_1,t)=\int \mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\Psi_g(x_1,x_2,\cdots,x_N;t)
+    \rho_g(x_1,t)=\int\int\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\,\Psi_g(x_1,x_2,\cdots,x_N;t)
 \label{ground_one-body_density}
 \end{equation}
 
 When this system makes transitions to excited states, the one-body transition quantity is obtained by integrating other coordinates:
 
 \begin{equation}
-f_n^\mathrm{eh}(x_1,t)=\int \mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\Psi_n(x_1,x_2,\cdots,x_N;t)
+    f_n^\mathrm{eh}(x_1,t)=\int\int\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\,\Psi_n(x_1,x_2,\cdots,x_N;t)
 \label{transition_one-body}
 \end{equation}
 
-Equivalently, the reduced (marginal) integral $f_n^\mathrm{eh}(x_1,t)=\int\Psi_g^*(\vec{x};t)\Psi_n(\vec{x};t)\prod^N_{j=2}\mathrm{d}x_j$ is the one-body transition density from ground state $g$ to the $n$-th excited state.
+Equivalently, the reduced integral reads: 
 
-In the presence of an oscillating electromagnetic field, we introduce the Bohr frequency 
-$\omega_{ng}=(E_n-E_g)/\hbar$ (set $\hbar=1$ if desired). The corresponding phase factor associated with the excitation energy is $\mathrm{e}^{-i(E_n-E_g)t}$.
-If one separates the trivial time phases so that $\Psi_{g/n}(\vec{x};t)=\Phi_{g/n}(\vec{x})\mathrm{e}^{-iE_{g/n}t/\hbar}$, then the transition density can be written as
+\begin{equation}
+f_n^\mathrm{eh}(x_1,t)=\int\Psi_g^*(\vec{x};t)\,\Psi_n(\vec{x};t)\prod^N_{j=2}\dif{x_j}
+\label{transition_one-body}
+\end{equation}
+
+This marginal integral represnts the one-body transition density from ground state $g$ to the $n$-th excited state.
+
+In the presence of an oscillating electromagnetic field, we introduce the Bohr frequency:
+
+\begin{equation}
+\omega_{ng}=(E_n-E_g)/\hbar
+\label{Bohr_frequency}
+\end{equation}
+
+The corresponding phase factor associated with the excitation energy is $\mathrm{e}^{-i(E_n-E_g)t}$.
+If one separates the trivial time phases, we obtain the time-dependent form of the stationary state wave functions for the ground and excited states:
+
+\begin{equation}
+    \Psi_{g/n}(\vec{x};t)=\Phi_{g/n}(\vec{x})\,\mathrm{e}^{-iE_{g/n}t/\hbar}
+\label{time_dep_eigenstate}
+\end{equation}
+
+therefore, the transition density can be demonstrated as:
 
 \begin{equation}
 \begin{aligned}
     & f_n^\mathrm{eh}(x_1,t)\\
-    =& \mathrm{e}^{-i(E_n-E_g)t}\int\mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\Psi_n(x_1,x_2,\cdots,x_N;t)
+    =& \mathrm{e}^{-i(E_n-E_g)t}\int\int\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\,\Psi_n(x_1,x_2,\cdots,x_N;t)
 \end{aligned}
 \label{mod_transition_one-body}
 \end{equation}
 
-here, $\int\mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\Psi_n(x_1,x_2,\cdots,x_N;t)$ denotes the transition amplitude.
+here, the the transition amplitude is denoted as:
 
-Recall a one-body operator $\hat{\Omega}^{(1)}$ with kernel $\Omega_1(x_1)$,
+\begin{equation}
+    \int\int\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\,\Psi_n(x_1,x_2,\cdots,x_N;t)
+\label{transition_amplitude}
+\end{equation}
+
+Subsequently, we recall a one-body operator $\hat{\Omega}^{(1)}$ with kernel $\Omega_1(x_1)$,
 the one-body density $n(x_1)$,
 the one-body density matrix $\rho(x_1,x'_1)$,
-and the pair density $n^{(2)}(x_1,x_2)$ (the spatial parts are contained in $x_1,x_2$):
+and the pair density $n^{(2)}(x_1,x_2)$.
+Here, the spatial parts are contained in $x_1,x_2$:
 
 \begin{equation}
 \begin{aligned}
@@ -952,7 +978,7 @@ It also often appears that we use a non-local functional to describe the classic
 \label{hartree_functional}
 \end{equation}
 
-Next, let us consider the expression for kinetic energy in terms of a functional. Within the Thomas--Fermi approximation, the noninteracting kinetic energy is treated locally as that of a uniform (homogeneous) electron gas whose density equals the actual electron density $n(\vec{r}\,)$ at each point in space.
+Next, let us consider the expression for kinetic energy in terms of a functional. Within the Thomas--Fermi approximation, the non interacting kinetic energy is treated locally as that of a uniform (homogeneous) electron gas whose density equals the actual electron density $n(\vec{r}\,)$ at each point in space.
 This leads to the Thomas--Fermi kinetic energy functional:
 
 \begin{equation}
@@ -1937,7 +1963,7 @@ Here, we suppose that there is no interaction between these two species, the wav
 
 \begin{equation}
     \Psi(x_1,x_2,\cdots,x_N;y_1,y_2,\cdots,y_M)
-    =\psi(x_1,x_2,\cdots,x_N)\varphi(y_1,y_2,\cdots,y_M)
+    =\psi(x_1,x_2,\cdots,x_N)\,\varphi(y_1,y_2,\cdots,y_M)
     \label{separate_two-body_wave function}
 \end{equation}
 
@@ -1945,21 +1971,21 @@ In this decoupled limit, the density of the first species is obtained by integra
 To make the cancellation explicit, we use the normalization of $\varphi$:
 
 \begin{equation}
-    \int\int\cdots\int\dif{y_1}\dif{y_2}\cdots\dif{y_M}\,|\varphi(y_1,y_2,\cdots,y_M)|^2 = 1
+    \int\int\cdots\int\dif{y_1}\,\dif{y_2}\cdots\dif{y_M}\,|\varphi(y_1,y_2,\cdots,y_M)|^2 = 1
     \label{phi_normalization}
 \end{equation}
 
 We define the particle density associated with $\psi$ as:
 
 \begin{equation}
-    n_\psi(x)\coloneqq N\int\int\cdots\int\dif{x_2}\dif{x_3}\cdots\dif{x_N}\,|\psi(x,x_2,\cdots,x_N)|^2
+    n_\psi(x)\coloneqq N\int\int\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,|\psi(x,x_2,\cdots,x_N)|^2
     \label{density_first_species_psi}
 \end{equation}
 
 With these definitions, we can express the density of the first species as:
 
 \begin{equation}
-    n(x)=n_\psi(x)\int\int\cdots\int\dif{y_1}\dif{y_2}\cdots\dif{y_M}\,|\varphi(y_1,y_2,\cdots,y_M)|^2
+    n(x)=n_\psi(x)\int\int\cdots\int\dif{y_1}\,\dif{y_2}\cdots\dif{y_M}\,|\varphi(y_1,y_2,\cdots,y_M)|^2
     \label{two_body_density_factorized}
 \end{equation}
 
@@ -1970,7 +1996,7 @@ therefore, we arrive at:
 \begin{aligned}
     n(x)
     =& \,n_\psi(x) \\
-    =& \,N\int\int\cdots\int\dif{x_2}\dif{x_3}\cdots\dif{x_N}\,|\psi(x,x_2,\cdots,x_N)|^2
+    =& \,N\int\int\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,|\psi(x,x_2,\cdots,x_N)|^2
 \end{aligned}
 \label{two-body_density}
 \end{equation}
@@ -1999,22 +2025,58 @@ The difficulty comes from the electron--electron interaction.
 In the auxiliary system, we drop this interaction and compensate for it by adjusting a one-body potential.
 
 Therefore, the problem can be stated as follows.
-For a given interacting system with a density $n(\vec{r}\,)$, we seek a noninteracting system with a tuned potential that reproduces exactly the same density.
+For a given interacting system with a density $n(\vec{r}\,)$, we seek a non interacting system with a tuned potential that reproduces exactly the same density.
 Here we ask only for the density and nothing else.
 In what follows, we examine whether there is any obstacle to this construction.
 
---- draft
+Next, let us recall the Born--Oppenheimer hamiltonian in equation~\eqref{BO_hamiltonian}, 
+and write the many-electron schrödinger equation for the interacting system.
 
-Let us build the schrödinger equation which depends the hamiltonian with Born--approximation~\eqref{BO_hamiltonian}:
+To make the role of $E_\mathrm{NN}(\{\vec{R}_I\})$ explicit,
+we separate the $\hat{H}_\mathrm{BO}(\{\vec{R}_I\})$ into an electronic operator $\hat{H}_\mathrm{el}(\{\vec{R}_I\})$ and the constant nucleus--nucleus term.
+Then, we write the eigenvalue equation as:
+
+\begin{equation}
+\begin{aligned}
+    \hat{H}_\mathrm{BO}(\{\vec{R}_I\})\Psi
+    &= E_\mathrm{BO}(\{\vec{R}_I\})\Psi \\
+    &= \left(\hat{H}_\mathrm{el}(\{\vec{R}_I\}) + E_\mathrm{NN}(\{\vec{R}_I\})\right)\Psi
+\end{aligned}
+\label{BO_SE_with_ENN}
+\end{equation}
+
+Since $E_\mathrm{NN}(\{\vec{R}_I\})$ is a constant with respect to the electronic degrees of freedom, it only shifts the eigenvalue, and equation~\eqref{BO_SE_with_ENN} is equivalent to:
+
+\begin{equation}
+    \hat{H}_\mathrm{el}(\{\vec{R}_I\})\Psi
+    = \left(E_\mathrm{BO}(\{\vec{R}_I\}) - E_\mathrm{NN}(\{\vec{R}_I\})\right)\Psi
+\label{BO_SE_shift_ENN}
+\end{equation}
+
+In what follows, we absorb this constant shift into the eigenvalue and denote the electronic energy by :
+
+\begin{equation}
+    E\coloneqq E_\mathrm{BO}(\{\vec{R}_I\}) - E_\mathrm{NN}(\{\vec{R}_I\})
+\label{absorbed_electronic_energy}
+\end{equation}
+
+with this convention, the schrödinger equation in the coordinate representation reads:
 
 \begin{equation}
     \left(-\frac{1}{2}\sum_i\nabla_i^2
     + \sum_i v_{\mathrm{ext}}(\hat{\vec{r}}_i)
-    + \sum_{i<j}\frac{1}{|\vec{r}_i - \vec{r}_j|}\right)\Psi(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)= E\Psi(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)
+    + \sum_{i<j}\frac{1}{|\vec{r}_i - \vec{r}_j|}\right)\Psi(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)= E\,\Psi(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)
     \label{BO_hamiltonian_SE}
 \end{equation}
 
-and try to build its corresponding auxiliary system by a non interacting schrödinger equation.
+here, $E$ and $\Psi$ denote the electronic eigenvalue and eigenstate of interest at fixed nuclear coordinates $\{\vec{R}_I\}$,
+where the constant term $E_\mathrm{NN}(\{\vec{R}_I\})$ has been absorbed into $E$.
+In particular, the ground state determines the target density $n(\vec{r}\,)$ through equation~\eqref{one-body_density}.
+
+---
+
+Moreover, we introduce a non interacting auxiliary system by dropping the electron--electron interaction,
+and compensating for its effect through a tuned one-body potential $v_\mathrm{aux}(\vec{r}\,)$:
 
 \begin{equation}
     \left(-\frac{1}{2}\sum_i\nabla_i^2
@@ -2022,17 +2084,88 @@ and try to build its corresponding auxiliary system by a non interacting schröd
 \label{BO_hamiltonian_aux}
 \end{equation}
 
-This target is the density of our interacting system.
+here $\Psi_\mathrm{aux}$ denotes the auxiliary many-body wave function and $E_\mathrm{aux}$ represents the corresponding eigenvalue.
 
-Now, we calculate the density of the auxiliary system.
+We achieve that the density of the auxiliary system is obtained by integrating out $N-1$ coordinates:
 
 \begin{equation}
-n(\vec{r}\,)=N\int\int\cdots\int\dif{\vec{r}_2}\dif{\vec{r}_3}\cdots\dif{\vec{r}_N}\,|\Psi_\mathrm{aux}(\vec{r},\vec{r}_2,\cdots,\vec{r}_N)|^2
+    n_\mathrm{aux}(\vec{r}\,)\coloneqq
+    N\int\int\cdots\int\dif{\vec{r}_2}\,\dif{\vec{r}_3}\cdots\dif{\vec{r}_N}\,
+    \left|\Psi_\mathrm{aux}(\vec{r},\vec{r}_2,\cdots,\vec{r}_N)\right|^2
 \label{density_aux}
 \end{equation}
 
+Hence, we define the auxiliary potential $v_\mathrm{aux}(\vec{r}\,)$ through the density-matching condition:
 
-% P2, 26:00.
+\begin{equation}
+n_\mathrm{aux}(\vec{r}\,) = n(\vec{r}\,)
+\label{aux_density_matching}
+\end{equation}
+
+Consequently, the question becomes whether we can construct a potential $v_\mathrm{aux}(\vec{r}\,)$ that gives the same density and, if we can, whether that potential is unique.
+
+Finally, for a non interacting auxiliary system, the many-body wave function can be constructed from a set of single particle orbitals.
+Accordingly, we introduce orbitals $\varphi^\mathrm{aux}_l(\vec{r}\,)$ that satisfy the one-body schrödinger equation:
+
+\begin{equation}
+    \left(-\frac{\nabla^2}{2}+v_\mathrm{aux}(\vec{r}\,)\right)\varphi^\mathrm{aux}_l(\vec{r}\,)
+    = \varepsilon^\mathrm{aux}_l\,\varphi^\mathrm{aux}_l(\vec{r}\,)
+\label{aux_single_particle_equation}
+\end{equation}
+
+--- draft
+
+The density of the auxiliary system is easy to calculate.
+
+\begin{equation}
+    \left(-\frac{\nabla^2}{2}+v_\mathrm{aux}(\vec{r}\,)\right)\varphi^\mathrm{aux}_l(\vec{r}\,)
+    = \varepsilon^\mathrm{aux}_l\,\varphi^\mathrm{aux}_l(\vec{r}\,)
+\label{?}
+\end{equation}
+
+And we can turn the non interaction problem into a schrödinger equation for a single electron, and calculate its density as sum of our squared wave functions to make the density appear directly in the schrödinger equation.
+
+\begin{equation}
+    n(\vec{r}\,) = \sum^\mathrm{OCC}_l |\varphi^\mathrm{aux}_l(\vec{r}\,)|^2
+\label{?}
+\end{equation}
+
+We next multiply the complex conjugate of the one electron wave function and some overoccupied states:
+
+\begin{equation}
+    \sum^\mathrm{OCC}_l{\varphi^\mathrm{aux}_l}^*(\vec{r}\,)\,\left(-\frac{\nabla^2}{2}\right)\varphi^\mathrm{aux}_l(\vec{r}\,)
+    + v_\mathrm{aux}(\vec{r})\sum^\mathrm{OCC}_l|\varphi^\mathrm{aux}_l(\vec{r}\,)|^2 
+    = \sum^\mathrm{OCC}_l\varepsilon^\mathrm{aux}_l|\varphi^\mathrm{aux}_l(\vec{r}\,)|^2
+\label{?}
+\end{equation}
+
+Now, the density which we are supposed to be given appears, it simply multiplies the auxiliary potential.
+
+And we can now solve the equation for the potential:
+
+\begin{equation}
+    v_\mathrm{aux}(\vec{r}\,)
+    = \frac{1}{n(\vec{r}\,)}\sum^\mathrm{OCC}_l\left(\varepsilon^\mathrm{aux}_l|\varphi^\mathrm{aux}_l(\vec{r}\,)|^2
+    + {\varphi^\mathrm{aux}}^*_l(\vec{r}\,)\frac{\nabla^2}{2}\varphi^\mathrm{aux}_l(\vec{r}\,) \right)
+\label{?}
+\end{equation}
+
+we can find there is no apparent contradiction in the result. so it is highly possible that this auxiliary potential exists.
+
+The right side depends on ionization values $\varepsilon^\mathrm{aux}_l$,
+and ionization function $\varphi^\mathrm{aux}_l$ calculated from the potential.
+
+So the problem is self-consistent, and it is not so obvious that one can find a solution.
+
+The question whether such a potential exists that allows a non interacting system to yield the same density as given interacting.
+
+one is called a question of representability.
+
+The fact it could be a good idea to build a simpler an auxiliary system from which we can get the density that we really need for density function theory.
+
+once we build the auxiliary system to get this interacting density could be a non interacting system with a potential that we have to tune in asuitable way.
+
+% P2, 26:10
 
 \newpage
 \section{Approximation and strategies in density functional theory}
