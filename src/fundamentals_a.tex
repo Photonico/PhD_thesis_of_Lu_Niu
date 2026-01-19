@@ -223,13 +223,13 @@ Subsequently, we explicitly express each physical contribution to the many-body 
 \begin{align}
 \text{Electron kinetic energy:}\qquad & \hat{T}_\mathrm{e} = -\frac{1}{2}\sum_i\nabla_i^2
 \label{electrons_kinetic} \\
-\text{Electron--nucleus Coulomb attraction:}\qquad & \hat{V}_\mathrm{eN}=-\sum_{i,I}\frac{Z_I}{|\vec{r}_i-\vec{R}_I|}
+\text{Electron--nucleus Coulomb attraction:}\qquad & \hat{V}_\mathrm{eN}=-\sum_{i,I}\frac{Z_I}{\left|\vec{r}_i-\vec{R}_I\right|}
 \label{electrons_nucleus_Coulomb} \\
-\text{Electron--electron Coulomb repulsion:}\qquad & \hat{V}_\mathrm{ee}=\sum_{i<j}\frac{1}{|\vec{r}_i-\vec{r}_j|}
+\text{Electron--electron Coulomb repulsion:}\qquad & \hat{V}_\mathrm{ee}=\sum_{i<j}\frac{1}{\left|\vec{r}_i-\vec{r}_j\right|}
 \label{electrons_Coulomb} \\
 \text{Nuclear kinetic energy:}\qquad & \hat{T}_\mathrm{N} = -\sum_I\frac{1}{2M_I}\nabla_I^2
 \label{nucleus_kinetic} \\
-\text{Nucleus--nucleus Coulomb repulsion:}\qquad & \hat{V}_\mathrm{NN} = \sum_{I<J}\frac{Z_I\,Z_J}{|\vec{R}_I-\vec{R}_J|}
+\text{Nucleus--nucleus Coulomb repulsion:}\qquad & \hat{V}_\mathrm{NN} = \sum_{I<J}\frac{Z_I\,Z_J}{\left|\vec{R}_I-\vec{R}_J\right|}
 \label{nucleus_interaction}
 \end{align}
 
@@ -237,10 +237,10 @@ Summing all these terms, we arrive at the full many-body hamiltonian:
 
 \begin{equation}
     \hat{H}=-\frac{1}{2}\sum_i\nabla_i^2
-    -\sum_{i,I}\frac{Z_I}{|\vec{r}_i-\vec{R}_I|}
-    +\sum_{i<j}\frac{1}{|\vec{r}_i-\vec{r}_j|}
+    -\sum_{i,I}\frac{Z_I}{\left|\vec{r}_i-\vec{R}_I\right|}
+    +\sum_{i<j}\frac{1}{\left|\vec{r}_i-\vec{r}_j\right|}
     -\sum_I\frac{\nabla_I^2}{2M_I}
-    +\sum_{I<J}\frac{Z_I\,Z_J}{|\vec{R}_I-\vec{R}_J|}    
+    +\sum_{I<J}\frac{Z_I\,Z_J}{\left|\vec{R}_I-\vec{R}_J\right|}    
     \label{full_many-body_hamiltonian}
 \end{equation}
 
@@ -265,10 +265,10 @@ It is given by $\hat{V}_\mathrm{NN}(\{\vec{R}_I\})$:
 \begin{aligned}
 \hat{H}
 &=-\frac{1}{2}\sum_i\nabla_i^2
-+\sum_{i<j}\frac{1}{|\vec{r}_i-\vec{r}_j|}
++\sum_{i<j}\frac{1}{\left|\vec{r}_i-\vec{r}_j\right|}
 +\sum_i v_\mathrm{ext}(\hat{\vec{r}}_i)+\hat{V}_\mathrm{NN}(\{\vec{R}_I\}) \\
 &=-\frac{1}{2}\sum_i\nabla_i^2
-+\sum_{i<j}\frac{1}{|\vec{r}_i-\vec{r}_j|}
++\sum_{i<j}\frac{1}{\left|\vec{r}_i-\vec{r}_j\right|}
 +\sum_i v_\mathrm{ext}(\hat{\vec{r}}_i)+E_\mathrm{NN}
 \end{aligned}
     \label{atomic_many-body_hamiltonian}
@@ -280,7 +280,7 @@ At this stage, it is convenient to collect all one-body terms acting on the elec
 We define the external potential as:
 
 \begin{equation}
-    v_\mathrm{ext}(\vec{r}\,)\coloneqq -\sum_{I}\frac{Z_I}{|\vec{r}-\vec{R}_I|}
+    v_\mathrm{ext}(\vec{r}\,)\coloneqq -\sum_{I}\frac{Z_I}{\left|\vec{r}-\vec{R}_I\right|}
 \label{one-body_Electron--nucleus}
 \end{equation}
 
@@ -571,7 +571,7 @@ we work at the fixed nuclear coordinates $\{\vec{R}_I\}$ and write the clamped n
     \hat{H}_\mathrm{BO}(\{\vec{R}_I\})
     = -\frac{1}{2}\sum_i\nabla_i^2
     + \sum_i v_{\mathrm{ext}}(\hat{\vec{r}}_i)
-    + \sum_{i<j}\frac{1}{|\vec{r}_i - \vec{r}_j|}
+    + \sum_{i<j}\frac{1}{\left|\vec{r}_i - \vec{r}_j\right|}
     + E_\mathrm{NN}(\{\vec{R}_I\})
     \label{BO_hamiltonian}
 \end{equation}
@@ -598,7 +598,7 @@ Using the expression for the electron kinetic energy operator in equation~\eqref
     \bra{\Psi}\hat{H}\ket{\Psi} &= \bra{\Psi}\hat{T}\ket{\Psi} + \bra{\Psi}\hat{V}_\mathrm{ext}\ket{\Psi} + \bra{\Psi}\hat{V}_\mathrm{int}\ket{\Psi} \\
     &= \bra{\Psi}-\frac{1}{2}\sum_i\nabla_i^2\ket{\Psi}
     + \bra{\Psi}\sum_i v_{\mathrm{ext}}(\vec{r}_i)\ket{\Psi}
-    + \bra{\Psi}\sum_{i<j}\frac{1}{|\vec{r}_i-\vec{r}_j|}\ket{\Psi}
+    + \bra{\Psi}\sum_{i<j}\frac{1}{\left|\vec{r}_i-\vec{r}_j\right|}\ket{\Psi}
 \end{aligned}
 \label{approx}
 \end{equation}
@@ -765,8 +765,8 @@ Next, consider the electron--electron Coulomb interaction energy:
 \begin{equation}
 \begin{aligned}
     \hat{V}_\mathrm{ee}
-    &= \iint\cdots\int \mathrm{d}x_1\mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi^*(x_1,x_2,\cdots,x_N)\sum_{i,j>i}\frac{1}{|\vec{r}_i-\vec{r}_j|}\Psi(x_1,x_2,\cdots,x_N) \\
-    &= \int\mathrm{d}x_1\mathrm{d}x_2\,\frac{1}{2|\vec{r}_1-\vec{r}_2|}N(N-1)\int\mathrm{d}x_3\cdots\mathrm{d}x_N\,\Psi^*(x_1,x_2,\cdots,x_N)\Psi(x_1,x_2,\cdots,x_N)
+    &= \iint\cdots\int \mathrm{d}x_1\mathrm{d}x_2\cdots\mathrm{d}x_N\,\Psi^*(x_1,x_2,\cdots,x_N)\sum_{i,j>i}\frac{1}{\left|\vec{r}_i-\vec{r}_j\right|}\Psi(x_1,x_2,\cdots,x_N) \\
+    &= \int\mathrm{d}x_1\mathrm{d}x_2\,\frac{1}{2\left|\vec{r}_1-\vec{r}_2\right|}N(N-1)\int\mathrm{d}x_3\cdots\mathrm{d}x_N\,\Psi^*(x_1,x_2,\cdots,x_N)\Psi(x_1,x_2,\cdots,x_N)
 \end{aligned}
 \label{coulomb_interaction_energy}
 \end{equation}
@@ -782,7 +782,7 @@ So that the expectation value of the Coulomb interaction energy reduces to:
 
 \begin{equation}
     \braket{\hat{V}_\mathrm{ee}}=\frac{1}{2}\int\mathrm{d}x_1\mathrm{d}x_2\,
-    \frac{n^{(2)}(x_1,x_2)}{|\vec{r}_1-\vec{r}_2|}
+    \frac{n^{(2)}(x_1,x_2)}{\left|\vec{r}_1-\vec{r}_2\right|}
 \label{observables_two-body_density}
 \end{equation}
 
@@ -888,7 +888,7 @@ Here, the spatial parts are contained in $x_1,x_2$:
     T &= -\frac{1}{2}\int \mathrm{d}x_1\,
     \Big[\nabla_{x'_1}^{2}\,\rho(x_1,x'_1)\Big]_{x'_1=x_1}\\
     \braket{\hat{V}_\mathrm{ee}} &= \frac{1}{2}\int \mathrm{d}x_1\,\mathrm{d}x_2\,
-    \frac{n^{(2)}(x_1,x_2)}{|\vec{r}_1-\vec{r}_2|}
+    \frac{n^{(2)}(x_1,x_2)}{\left|\vec{r}_1-\vec{r}_2\right|}
 \end{aligned}
 \label{one-body_operator_with_kernel}
 \end{equation}
@@ -902,7 +902,7 @@ Hence, a typical energy-like observable can be written as
     &\quad - \frac{1}{2}\int \mathrm{d}x_1\,
     \Big[\nabla_{x'_1}^{2}\,\rho(x_1,x'_1)\Big]_{x'_1=x_1} \\
     &\quad + \frac{1}{2}\int \mathrm{d}x_1\,\mathrm{d}x_2\,
-    \frac{n^{(2)}(x_1,x_2)}{|\vec{r}_1-\vec{r}_2|}
+    \frac{n^{(2)}(x_1,x_2)}{\left|\vec{r}_1-\vec{r}_2\right|}
 \end{aligned}
 \label{mod_obs_1}
 \end{equation}
@@ -974,7 +974,7 @@ For example, in condensed matter physics, it often appears as a map from electro
 It also often appears that we use a non-local functional to describe the classical electrostatic term or the Hartree energy:
 
 \begin{equation}
-    E_\mathrm{H}[n]=\frac{1}{2}\int\mathrm{d}\vec{r}_i\,\mathrm{d}\vec{r}_j\,\frac{n(\vec{r}_i)n(\vec{r}_j)}{|\vec{r}_i-\vec{r}_j|}
+    E_\mathrm{H}[n]=\frac{1}{2}\int\mathrm{d}\vec{r}_i\,\mathrm{d}\vec{r}_j\,\frac{n(\vec{r}_i)n(\vec{r}_j)}{\left|\vec{r}_i-\vec{r}_j\right|}
 \label{hartree_functional}
 \end{equation}
 
@@ -1645,7 +1645,7 @@ We next approximate the interaction term by the classical Coulomb energy associa
 Using the electron--electron Coulomb repulsion~\eqref{electrons_Coulomb}, we obtain the Hartree interaction energy functional:
 
 \begin{equation}
-    E_\mathrm{H}[n]\coloneqq E_\mathrm{int}[n]=\frac{1}{2}\int\dif{\vec{r}}\int\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{|\vec{r}-\vec{r}\,'|}
+    E_\mathrm{H}[n]\coloneqq E_\mathrm{int}[n]=\frac{1}{2}\int\dif{\vec{r}}\int\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
     \label{functional_EH}
 \end{equation}
 
@@ -1691,7 +1691,7 @@ The nucleus--nucleus contribution $E_\mathrm{NN}$ is omitted since it does not d
 \begin{aligned}
     E_\mathrm{TF}[n]
     &= C_1\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{5}{3}}
-    + \frac{1}{2}\int\dif{\vec{r}}\int\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{|\vec{r}-\vec{r}\,'|}
+    + \frac{1}{2}\int\dif{\vec{r}}\int\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
     + \int\dif{\vec{r}}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,) \\
     &= C_1\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{5}{3}}
     + E_\mathrm{H}[n] + \int\dif{\vec{r}}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
@@ -1731,7 +1731,7 @@ Here $\lambda$ enforces the particle number constraint and plays the role of the
 We define the Hartree potential as:
 
 \begin{equation}
-    v_\mathrm{H}(\vec{r}\,)\coloneqq \int\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,')}{|\vec{r}-\vec{r}\,'|}
+    v_\mathrm{H}(\vec{r}\,)\coloneqq \int\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
     \label{Hartree_potential_definition}
 \end{equation}
 
@@ -1971,21 +1971,21 @@ In this decoupled limit, the density of the first species is obtained by integra
 To make the cancellation explicit, we use the normalization of $\varphi$:
 
 \begin{equation}
-    \int\int\cdots\int\dif{y_1}\,\dif{y_2}\cdots\dif{y_M}\,|\varphi(y_1,y_2,\cdots,y_M)|^2 = 1
+    \int\int\cdots\int\dif{y_1}\,\dif{y_2}\cdots\dif{y_M}\,\left|\varphi(y_1,y_2,\cdots,y_M)\right|^2 = 1
     \label{phi_normalization}
 \end{equation}
 
 We define the particle density associated with $\psi$ as:
 
 \begin{equation}
-    n_\psi(x)\coloneqq N\int\int\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,|\psi(x,x_2,\cdots,x_N)|^2
+    n_\psi(x)\coloneqq N\int\int\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\left|\psi(x,x_2,\cdots,x_N)\right|^2
     \label{density_first_species_psi}
 \end{equation}
 
 With these definitions, we can express the density of the first species as:
 
 \begin{equation}
-    n(x)=n_\psi(x)\int\int\cdots\int\dif{y_1}\,\dif{y_2}\cdots\dif{y_M}\,|\varphi(y_1,y_2,\cdots,y_M)|^2
+    n(x)=n_\psi(x)\int\int\cdots\int\dif{y_1}\,\dif{y_2}\cdots\dif{y_M}\,\left|\varphi(y_1,y_2,\cdots,y_M)\right|^2
     \label{two_body_density_factorized}
 \end{equation}
 
@@ -1996,7 +1996,7 @@ therefore, we arrive at:
 \begin{aligned}
     n(x)
     =& \,n_\psi(x) \\
-    =& \,N\int\int\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,|\psi(x,x_2,\cdots,x_N)|^2
+    =& \,N\int\int\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\left|\psi(x,x_2,\cdots,x_N)\right|^2
 \end{aligned}
 \label{two-body_density}
 \end{equation}
@@ -2065,7 +2065,7 @@ with this convention, the schrödinger equation in the coordinate representation
 \begin{equation}
     \left(-\frac{1}{2}\sum_i\nabla_i^2
     + \sum_i v_{\mathrm{ext}}(\hat{\vec{r}}_i)
-    + \sum_{i<j}\frac{1}{|\vec{r}_i - \vec{r}_j|}\right)\Psi(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)= E\,\Psi(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)
+    + \sum_{i<j}\frac{1}{\left|\vec{r}_i - \vec{r}_j\right|}\right)\Psi(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)= E\,\Psi(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)
     \label{BO_hamiltonian_SE}
 \end{equation}
 
@@ -2113,59 +2113,39 @@ Accordingly, we introduce orbitals $\varphi^\mathrm{aux}_l(\vec{r}\,)$ that sati
 \label{aux_single_particle_equation}
 \end{equation}
 
---- draft
-
-The density of the auxiliary system is easy to calculate.
+The auxiliary density is then expressed in terms of these orbitals as:
 
 \begin{equation}
-    \left(-\frac{\nabla^2}{2}+v_\mathrm{aux}(\vec{r}\,)\right)\varphi^\mathrm{aux}_l(\vec{r}\,)
-    = \varepsilon^\mathrm{aux}_l\,\varphi^\mathrm{aux}_l(\vec{r}\,)
-\label{?}
+    n_\mathrm{aux}(\vec{r}\,) = \sum_l f_l\left|\varphi^\mathrm{aux}_l(\vec{r}\,)\right|^2
+\label{aux_density_orbitals}
 \end{equation}
 
-And we can turn the non interaction problem into a schrödinger equation for a single electron, and calculate its density as sum of our squared wave functions to make the density appear directly in the schrödinger equation.
+where $f_l$ denotes the occupation number of the orbital $\varphi^\mathrm{aux}_l$.
+
+To this end, the density-matching condition becomes a constraint on the potential $v_\mathrm{aux}(\vec{r}\,)$ through equations~\eqref{aux_single_particle_equation} and~\eqref{aux_density_orbitals}:
 
 \begin{equation}
-    n(\vec{r}\,) = \sum^\mathrm{OCC}_l |\varphi^\mathrm{aux}_l(\vec{r}\,)|^2
-\label{?}
+n_\mathrm{aux}(\vec{r}\,) = n(\vec{r}\,)
+\label{aux_density_constraint}
 \end{equation}
 
-We next multiply the complex conjugate of the one electron wave function and some overoccupied states:
+Therefore, the auxiliary construction is an inverse problem.
+Given a target density $n(\vec{r}\,)$,
+we ask whether there exists a one-body potential $v_\mathrm{aux}(\vec{r}\,)$ such that a non interacting system reproduces this density:
 
 \begin{equation}
-    \sum^\mathrm{OCC}_l{\varphi^\mathrm{aux}_l}^*(\vec{r}\,)\,\left(-\frac{\nabla^2}{2}\right)\varphi^\mathrm{aux}_l(\vec{r}\,)
-    + v_\mathrm{aux}(\vec{r})\sum^\mathrm{OCC}_l|\varphi^\mathrm{aux}_l(\vec{r}\,)|^2 
-    = \sum^\mathrm{OCC}_l\varepsilon^\mathrm{aux}_l|\varphi^\mathrm{aux}_l(\vec{r}\,)|^2
-\label{?}
+\begin{aligned}
+    & \exists\, v_\mathrm{aux}(\vec{r}\,) //
+    \rightarrow n_\mathrm{aux}(\vec{r}\,;v_\mathrm{aux}) = n(\vec{r}\,)
+\end{aligned}
+\label{nonint_v_representability}
 \end{equation}
 
-Now, the density which we are supposed to be given appears, it simply multiplies the auxiliary potential.
+This question is known as non interacting $v$-representability, and it clarifies that the existence of the auxiliary system is not automatic, but must be justified by additional arguments.
 
-And we can now solve the equation for the potential:
+\subsection{The Kohn-Sham equations}
 
-\begin{equation}
-    v_\mathrm{aux}(\vec{r}\,)
-    = \frac{1}{n(\vec{r}\,)}\sum^\mathrm{OCC}_l\left(\varepsilon^\mathrm{aux}_l|\varphi^\mathrm{aux}_l(\vec{r}\,)|^2
-    + {\varphi^\mathrm{aux}}^*_l(\vec{r}\,)\frac{\nabla^2}{2}\varphi^\mathrm{aux}_l(\vec{r}\,) \right)
-\label{?}
-\end{equation}
-
-we can find there is no apparent contradiction in the result. so it is highly possible that this auxiliary potential exists.
-
-The right side depends on ionization values $\varepsilon^\mathrm{aux}_l$,
-and ionization function $\varphi^\mathrm{aux}_l$ calculated from the potential.
-
-So the problem is self-consistent, and it is not so obvious that one can find a solution.
-
-The question whether such a potential exists that allows a non interacting system to yield the same density as given interacting.
-
-one is called a question of representability.
-
-The fact it could be a good idea to build a simpler an auxiliary system from which we can get the density that we really need for density function theory.
-
-once we build the auxiliary system to get this interacting density could be a non interacting system with a potential that we have to tune in asuitable way.
-
-% P2, 26:10
+% P2, 29:10
 
 \newpage
 \section{Approximation and strategies in density functional theory}
