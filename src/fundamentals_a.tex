@@ -2181,7 +2181,7 @@ In other words, we start from a given density $n(\vec{r}\,)$ and ask whether we 
 This is the basic existence question behind the auxiliary construction,
 and it is often referred to as noninteracting $v$-representability.
 
-\subsection{The Kohn-Sham equations}
+\subsection{The framework of Kohn-Sham equations}
 
 Firstly, we introduce a noninteracting reference system that reproduces the density $n(\vec{r}\,)$, and denote its ground state wave function by $\Psi_s[n]$.
 
@@ -2420,13 +2420,75 @@ This auxiliary system is constructed to reproduce the same density:
 
 here, $n_s(\vec{r}\,)$ denotes the ground state density of the auxiliary noninteracting system,
 it is obtained from a set of one-electron orbitals.
-The corresponding one-body potential is denoted by the Kohn–Sham potential $v^\mathrm{eff}(\vec{r}\,)$.
+The corresponding one-body potential is denoted by the Kohn--Sham potential $v^\mathrm{eff}(\vec{r}\,)$.
 It is chosen such that equation~\eqref{KS_same_density_assumption} holds.
 
----
+Consequently, the interacting many-electron problem is mapped to a noninteracting orbital problem with the same density.
+
+\subsection{From variational derivation to Kohn-Sham equations}
+
+To determine the orbitals in the frame of Kohn--Sham equations, we exploit that the density is built from orbitals in equation~\eqref{density_with_occupation_number}.
+We then minimize the total energy functional with respect to the orbitals.
+This is the same variational idea as for the ground state density.
+
+Firstly, the orbitals must satisfy the orthonormality constraints:
+
+\begin{equation}
+    \int \dif{\vec{r}}\,\psi_i^\ast(\vec{r}\,)\,\psi_j(\vec{r}\,)=\delta_{ij}
+    \label{KS_orbital_orthonormality}
+\end{equation}
+
+Next, we introduce Lagrange multipliers $\lambda_{ij}$ again,
+and consider the constrained functional:
+
+\begin{equation}
+    \mathcal{F}[\{\psi_i\}]\coloneqq
+    E[n]-\sum_{i,j}\lambda_{ij}\left(\int \dif{\vec{r}}\,\psi_i^\ast(\vec{r}\,)\psi_j(\vec{r}\,)-\delta_{ij}\right)
+\label{KS_constrained_functional}
+\end{equation}
+
+Accordingly, the stationarity condition reads:
+
+\begin{equation}
+    \frac{\delta \mathcal{F}}{\delta \psi_i^\ast(\vec{r}\,)}=0
+    \label{KS_stationarity_condition}
+\end{equation}
+
+Moreover, the variation generates the Hartree potential $v_\mathrm{H}(\vec{r}\,)$ defined in equation~\eqref{Hartree_potential_definition},
+and defines the exchange-correlation potential as:
+
+\begin{equation}
+    v_\mathrm{xc}(\vec{r}\,)\coloneqq
+    \frac{\delta E_\mathrm{xc}[n]}{\delta n(\vec{r}\,)}
+    \label{xc_potential_definition}
+\end{equation}
+
+Subsequently, it is convenient to introduce the effective potential:
+
+\begin{equation}
+    v^\mathrm{eff}(\vec{r}\,)\coloneqq
+    v_\mathrm{ext}(\vec{r}\,)
+    + v_\mathrm{H}(\vec{r}\,)
+    + v_{xc}(\vec{r}\,)
+    \label{KS_effective_potential_definition}
+\end{equation}
+
+Therefore, the Euler--Lagrange equations become a set of one-particle equations:
+
+\begin{equation}
+    \left[
+    -\frac{1}{2}\nabla^2
+    + v^\mathrm{eff}(\vec{r}\,)
+    \right]\psi_i(\vec{r}\,)
+    =
+    \sum_j \lambda_{ij}\psi_j(\vec{r}\,)
+    \label{KS_equation_general}
+\end{equation}
+
+Here, we may choose a basis where $\lambda_{ij}$ is diagonal.
+Then equation~\eqref{KS_equation_general} reduces to equation~\eqref{KS_equation}
 
 % P2, 40:20
 
 \newpage
 \section{Approximation and strategies in density functional theory}
-    
