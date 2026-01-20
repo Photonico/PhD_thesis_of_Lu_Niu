@@ -973,14 +973,16 @@ For example, in condensed matter physics, it often appears as a map from electro
 \label{functional_energy_potential}
 \end{equation}
 
-It also often appears that we use a non-local functional to describe the classical electrostatic term or the Hartree energy:
+It also often appears that we use a non-local functional to describe the classical electrostatic term or the Hartree term:
 
 \begin{equation}
     E_\mathrm{H}[n]=\frac{1}{2}\int\mathrm{d}\vec{r}_i\,\mathrm{d}\vec{r}_j\,\frac{n(\vec{r}_i)n(\vec{r}_j)}{\left|\vec{r}_i-\vec{r}_j\right|}
 \label{hartree_functional}
 \end{equation}
 
-Next, let us consider the expression for kinetic energy in terms of a functional. Within the Thomas--Fermi approximation, the non interacting kinetic energy is treated locally as that of a uniform (homogeneous) electron gas whose density equals the actual electron density $n(\vec{r}\,)$ at each point in space.
+In this thesis, $E_\mathrm{H}[n]$ denotes the Hartree term.
+
+Next, let us consider the expression for kinetic energy in terms of a functional. Within the Thomas--Fermi approximation, the noninteracting kinetic energy is treated locally as that of a uniform (homogeneous) electron gas whose density equals the actual electron density $n(\vec{r}\,)$ at each point in space.
 This leads to the Thomas--Fermi kinetic energy functional:
 
 \begin{equation}
@@ -1659,13 +1661,35 @@ Accordingly, we write the Thomas--Fermi total energy functional:
 According to the local form of the external potential energy functional~\eqref{functional_Eext_local_form}, and the external contribution is given by the coupling between $n(\vec{r}\,)$ and $v_\mathrm{ext}(\vec{r}\,)$.
 For fixed nuclear positions, the external potential $v_\mathrm{ext}(\vec{r}\,)$ is a prescribed function of $\vec{r}$ defined in equation~\eqref{one-body_Electron--nucleus}, therefore, the external contribution $E_\mathrm{ext}[n]$ is linear in the electron density $n(\vec{r}\,)$.
 
-We next approximate the interaction term by the classical Coulomb energy associated with the density distribution.
-Using the electron--electron Coulomb repulsion~\eqref{electrons_Coulomb}, we obtain the Hartree interaction energy functional:
+We next approximate the interaction energy functional by its classical Coulomb form associated with the density distribution.
+Using the electron--electron Coulomb repulsion~\eqref{electrons_Coulomb}, we introduce the Hartree term:
 
 \begin{equation}
-    E_\mathrm{H}[n]\coloneqq E_\mathrm{int}[n]=\frac{1}{2}\iint\dif{\vec{r}}\,\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
-    \label{functional_EH}
+\begin{aligned}
+    E_\mathrm{H}[n] &\coloneqq E_\mathrm{int}[n]-E_{\Delta\mathrm{int}}[n] \\
+    &= \frac{1}{2}\iint\dif{\vec{r}}\,\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
+    \label{hartree_term_functional}
+\end{aligned}
 \end{equation}
+
+here $E_{\Delta\mathrm{int}}[n]$ collects the nonclassical part of the interaction energy beyond the Hartree term.
+In the Hartree approximation, we set $E_{\Delta\mathrm{int}}[n]=0$.
+
+We next approximate the interaction energy functional by the classical Coulomb energy associated with the density distribution.
+Using the electron--electron Coulomb repulsion~\eqref{electrons_Coulomb}, we introduce the Hartree term:
+
+Therefore, we introduce a Hartree approximation at the level of the interaction energy by replacing $E_\mathrm{int}[n]$ with its classical counterpart $E_\mathrm{H}[n]$:
+
+\begin{equation}
+    E_\mathrm{H}^{\mathrm{int}}[n]
+    \coloneqq T[n]
+    + \int \dif^3{r}\,v_\mathrm{ext}(\vec{r}\,)n(\vec{r}\,)
+    + E_\mathrm{H}[n]
+\label{hartree_interaction_level_energy}
+\end{equation}
+
+here $T[n]$ is the interacting kinetic energy functional evaluated on the minimizing many-body state $\Psi[n]$ that yields the density $n$.
+In other words, this replacement affects only the interaction energy, while the kinetic energy functional remains $T[n]$ at this stage.
 
 We next consider the kinetic energy functional.
 For a homogeneous spin-unpolarized electron gas with density $n$,
@@ -1856,25 +1880,29 @@ In density functional theory, the total energy can be written as a functional of
 Let us express the exact total energy as a functional of the density:
 
 \begin{equation}
-    E[n]=T[n]+E_\mathrm{H}[n]+E_\mathrm{xc}[n]+\int\dif{\vec{r}}\,n(\vec{r}\,)v_\mathrm{ext}(\vec{r}\,)
+    E[n]=T[n]+E_\mathrm{H}[n]+E_\mathrm{xc}^\mathrm{int}[n]+\int\dif{\vec{r}}\,n(\vec{r}\,)v_\mathrm{ext}(\vec{r}\,)
     \label{functional_exact_total_energy}
 \end{equation}
 
 Here $T[n]$ denotes the exact kinetic energy functional and $E_\mathrm{H}[n]$ is the Hartree energy functional.
-The exchange-correlation energy functional $E_\mathrm{xc}[n]$ collects all interaction effects beyond the classical Hartree term.
+The exchange-correlation functional $E_\mathrm{xc}^\mathrm{int}[n]$ collects all nonclassical interaction effects beyond the Hartree term.
 It includes the exchange contribution originating from the antisymmetry of the many-electron wave function and the correlation contribution accounting for the remaining many-body correlations.
 
-In view of the definition of the universal Hohenberg--Kohn functional in equation~\eqref{functional_HK_definition}, it is convenient to introduce $E_\mathrm{xc}[n]$ via:
+In view of the definition of the universal Hohenberg--Kohn functional in equation~\eqref{functional_HK_definition},
+it is convenient to introduce the exchange-correlation part of the interaction energy functional via:
 
 \begin{equation}
-    E_\mathrm{xc}[n]\coloneqq E_\mathrm{int}[n]-E_\mathrm{H}[n]
-    \label{definition_exchange_correlation_energy}
+E_\mathrm{xc}^{\mathrm{int}}[n]\coloneqq E_\mathrm{int}[n]-E_\mathrm{H}[n]
+    \label{Exc_int_definition}
 \end{equation}
 
 Equivalently, the universal Hohenberg--Kohn functional can be decomposed as:
 
 \begin{equation}
-    E_\mathrm{HK}[n]=T[n]+E_\mathrm{H}[n]+E_\mathrm{xc}[n]
+\begin{aligned}
+    E_\mathrm{HK}[n] &= T[n] + E_\mathrm{int}[n] \\
+    &= T[n]+E_\mathrm{H}[n]+E_\mathrm{xc}^\mathrm{int}[n]
+\end{aligned}
     \label{HK_decomposition_Hartree_xc}
 \end{equation}
 
@@ -1887,14 +1915,14 @@ Accordingly, the exact total energy functional can be written in the following f
 
 Recall the full Thomas--Fermi energy functional in equation~\eqref{full_energy_functional}.
 Let us compared with the exact decomposition in equation~\eqref{functional_exact_total_energy},
-the Thomas--Fermi functional neglects the exchange correlation energy functional $E_\mathrm{xc}[n]$.
+the Thomas--Fermi functional neglects the exchange correlation part of the interaction energy functional $E_\mathrm{xc}^\mathrm{int}[n]$.
 This omission can lead to sizable errors for total energies even in simple atoms.
 
-A first improvement is to approximate $E_\mathrm{xc}[n]$ by a local exchange functional derived from the homogeneous electron gas.
+A first improvement is to approximate $E_\mathrm{xc}^\mathrm{int}[n]$ by a local exchange functional derived from the homogeneous electron gas.
 This approximation is commonly associated with the Dirac exchange functional:
 
 \begin{equation}
-    E_\mathrm{xc}[n]\approx E_\mathrm{x}^\mathrm{D}[n]
+    E_\mathrm{xc}^\mathrm{int}[n]\approx E_\mathrm{x}^\mathrm{D}[n]
     \label{Dirac_exchange_approximation}
 \end{equation}
 
@@ -2043,7 +2071,7 @@ The difficulty comes from the electron--electron interaction.
 In the auxiliary system, we drop this interaction and compensate for it by adjusting a one-body potential.
 
 Therefore, the problem can be stated as follows.
-For a given interacting system with a density $n(\vec{r}\,)$, we seek a non interacting system with a tuned potential that reproduces exactly the same density.
+For a given interacting system with a density $n(\vec{r}\,)$, we seek a noninteracting system with a tuned potential that reproduces exactly the same density.
 Here we ask only for the density and nothing else.
 In what follows, we examine whether there is any obstacle to this construction.
 
@@ -2091,9 +2119,7 @@ here, $E$ and $\Psi$ denote the electronic eigenvalue and eigenstate of interest
 where the constant term $E_\mathrm{NN}(\{\vec{R}_I\})$ has been absorbed into $E$.
 In particular, the ground state determines the target density $n(\vec{r}\,)$ through equation~\eqref{one-body_density}.
 
----
-
-Moreover, we introduce a non interacting auxiliary system by dropping the electron--electron interaction,
+Moreover, we introduce a noninteracting auxiliary system by dropping the electron--electron interaction,
 and compensating for its effect through a tuned one-body potential $v_\mathrm{aux}(\vec{r}\,)$:
 
 \begin{equation}
@@ -2122,7 +2148,7 @@ n_\mathrm{aux}(\vec{r}\,) = n(\vec{r}\,)
 
 Consequently, the question becomes whether we can construct a potential $v_\mathrm{aux}(\vec{r}\,)$ that gives the same density and, if we can, whether that potential is unique.
 
-Finally, for a non interacting auxiliary system, the many-body wave function can be constructed from a set of single-particle orbitals.
+Finally, for a noninteracting auxiliary system, the many-body wave function can be constructed from a set of single-particle orbitals.
 Accordingly, we introduce orbitals $\varphi^\mathrm{aux}_l(\vec{r}\,)$ that satisfy the one-body schrödinger equation:
 
 \begin{equation}
@@ -2156,11 +2182,106 @@ and it is often referred to as noninteracting $v$-representability.
 
 \subsection{The Kohn-Sham equations}
 
-Let us review the exact ground-state energy functional~\eqref{energy_density_functional_decomposition}, and universal Hohenberg--Kohn functional~\eqref{functional_HK_definition}.
+Firstly, we introduce a noninteracting reference system that reproduces the density $n(\vec{r}\,)$, and denote its ground state wave function by $\Psi_s[n]$.
 
-Firstly, we denote the kinetic energy functional of independent particle system of density $n(\vec{r}\,)$ as $T_s[n]$.
+The wave function $\Psi[n]$ denotes the minimizing interacting many-body wave function that yields the density $n(\vec{r}\,)$,
+while $\Psi_s[n]$ represents the ground state of a noninteracting reference system constructed to reproduce the same density.
 
-With the expression of the Hartree interaction energy functional~\eqref{functional_EH}, we perform some manipulations with Hohenberg--Kohn functional:
+Accordingly, they share the same one-body density but represent different many-body states:
+
+\begin{equation}
+n(\vec{r}\,) = n_{\Psi}(\vec{r}\,) = n_{\Psi_s}(\vec{r}\,)
+\label{density_equal_Psi_Psis}
+\end{equation}
+
+In other words, $\Psi_s[n]$ is introduced to match the density, rather than to approximate $\Psi[n]$ at the wave function level.
+
+We define the noninteracting kinetic energy functional as:
+
+\begin{equation}
+    T_s[n]\coloneqq\bra{\Psi_s[n]}\hat{T}\ket{\Psi_s[n]}
+\label{Ts_definition}
+\end{equation}
+
+Recall the Slater determinant representation~\eqref{slater_determinant}.
+For the noninteracting reference state $\Psi_s[n]$,
+the expectation value of the kinetic energy operator becomes a sum over orbitals:
+
+\begin{equation}
+    \bra{\Psi_s[n]}\hat{T}\ket{\Psi_s[n]}
+    = -\frac{1}{2}\sum_i f_i\,\bra{\psi_i}\nabla^2\ket{\psi_i} 
+\label{Ts_orbital_sum}
+\end{equation}
+
+here, $f_i$ is the occupation number of the spin-orbital $\psi_i$, satisfying:
+
+\begin{equation}
+\begin{cases}
+    0\le f_i\le 1 \\
+    \sum_i f_i = N
+\end{cases}
+\label{occupation_constraints}
+\end{equation}
+
+For comparison, the kinetic energy functional $T[n]$ appearing in the Hohenberg--Kohn functional $E_\mathrm{HK}[n]$ is evaluated on the minimizing interacting many-body state $\Psi[n]$ that yields the same density.
+In general, $T[n]$ and $T_s[n]$ are not equal, and we write their difference as:
+
+\begin{equation}
+    T[n]=T_s[n]+T_c[n]
+\label{T_decomposition}
+\end{equation}
+
+here, $T_c[n]$ measures the kinetic correlation beyond the noninteracting reference.
+We name it the kinetic-correlation functional.
+
+In equation~\eqref{hartree_interaction_level_energy}, we introduced a Hartree approximation only at the level of the interaction energy by replacing $E_\mathrm{int}[n]$ with $E_\mathrm{H}[n]$.
+
+To obtain a fully orbital-based reference functional,
+we further replace the interacting kinetic energy functional $T[n]$ by $T_s[n]$,
+which amounts to neglecting the kinetic correlation $T_c[n]$ in equation~\eqref{T_decomposition}.
+
+Therefore, the Hartree approximation to the total energy functional reads:
+
+\begin{equation}
+    E_\mathrm{H}^\mathrm{tot}[n]
+    = T_s[n]
+    + \int \dif{\vec{r}}\,v_\mathrm{ext}(\vec{r}\,)n(\vec{r}\,)
+    + E_\mathrm{H}[n]
+\label{hartree_total_energy_functional}
+\end{equation}
+
+Secondly, to go beyond the Hartree approximation,
+we collect the missing contributions into an exchange-correlation functional.
+
+As shown in equation~\eqref{Exc_int_definition},
+the interaction energy functional can be written as a Hartree term plus a remainder $E_\mathrm{xc}^{\mathrm{int}}[n]$.
+
+In the Kohn--Sham construction, there is an additional correction coming from the kinetic energy, since $T[n]$ and $T_s[n]$ not equal, and their difference is measured by $T_c[n]$ in equation~\eqref{T_decomposition}.
+
+Therefore, we define the Kohn--Sham exchange-correlation functional as:
+
+\begin{equation}
+    E_\mathrm{xc}[n]\coloneqq T_c[n]+E_\mathrm{xc}^{\mathrm{int}}[n]
+\label{Exc_KS_sum}
+\end{equation}
+
+According to the definition of universal Hohenberg--Kohn functional~\eqref{functional_HK_definition}, 
+and the exchange-correlation part of the interaction energy functional~\eqref{Exc_int_definition},
+we have:
+
+\begin{equation}
+\begin{aligned}
+    E_\mathrm{xc}[n]
+    &= (T[n]-T_s[n]) + (E_\mathrm{int}-E_\mathrm{H}[n]) \\
+    &= (T[n]-T_s[n]) + (E_\mathrm{HK}-T[n]-E_\mathrm{H}[n]) \\
+    &= E_\mathrm{HK}[n]-T_s[n]-E_\mathrm{H}[n]
+\end{aligned}
+\label{Exc_KS_definition}
+\end{equation}
+
+
+
+Let us perform some manipulations on exact ground state energy functional~\eqref{energy_density_functional_decomposition}:
 
 \begin{equation}
 \begin{aligned}
@@ -2171,12 +2292,14 @@ With the expression of the Hartree interaction energy functional~\eqref{function
     + T_s[n] - T_s[n] + E_\mathrm{H}[n] - E_\mathrm{H}[n] \\
     &= T_s[n] +
     \int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
-    + E_\mathrm{H}[n] + E_\mathrm{HK}[n] - T_s[n] -  E_\mathrm{H}[n]
+    + E_\mathrm{H}[n] + (E_\mathrm{HK}[n]-T_s[n]-E_\mathrm{H}[n])
 \end{aligned}
 \label{energy_density_functional_manipulations}
 \end{equation}
 
-Recall the definition of exchange-correlation energy functional~\eqref{definition_exchange_correlation_energy}, we obtain:
+Recall the Kohn--Sham exchange-correlation functional~\eqref{Exc_KS_definition},
+and the Hartree approximation to the total energy functional~\eqref{hartree_total_energy_functional},
+we obtain:
 
 \begin{equation}
 \begin{aligned}
@@ -2187,10 +2310,9 @@ Recall the definition of exchange-correlation energy functional~\eqref{definitio
     + \int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
     + \frac{1}{2}\iint\dif{\vec{r}}\,\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
     + E_\mathrm{xc}[n] \\
+    &= E_\mathrm{H}^\mathrm{tot}[n] + E_\mathrm{xc}[n]
 \end{aligned}
 \end{equation}
-
-The total Kohn–Sham energy functional is decomposed as $E[n]=T_s[n]+\int v_\mathrm{ext}(\vec{r},)n(\vec{r},)\dif^3{r}+E_\mathrm{H}[n]+E_\mathrm{xc}[n]$
 
 % P2, 29:10
 
