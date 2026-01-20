@@ -185,13 +185,13 @@ Equivalently, the hamiltonian operators evaluated at earlier times act first on 
 
 \subsection{Many-body Schrödinger equation}\label{sec:manybody_schrodinger_equation}
 
-Up to now, we have mostly described the evolution of a single particle in a potential describing the time-dependent Schrödinger equation~\eqref{time-dependent_Schrodinger_equation}.
+Up to now, we have mostly described the evolution of a single-particle in a potential describing the time-dependent Schrödinger equation~\eqref{time-dependent_Schrodinger_equation}.
 
 In realistic situations, quantum systems often involve many interacting particles.
 For instance, electrons in a material evolve under both external fields and their mutual Coulomb interactions.
 We therefore extend the description to a nonrelativistic many-body system including electrons, nuclei, and their interactions.
 
-To describe this larger ensemble, we generalize our single particle state $\ket{\psi(t)}$ to a many-body state $\ket{\Psi(t)}$, an element of a larger Hilbert space constructed by the tensor product of individual particle spaces:
+To describe this larger ensemble, we generalize our single-particle state $\ket{\psi(t)}$ to a many-body state $\ket{\Psi(t)}$, an element of a larger Hilbert space constructed by the tensor product of individual particle spaces:
 
 \begin{equation}
     \ket{\Psi(t)}\in \mathbb{H}_1\otimes\mathbb{H}_2\otimes \cdots\otimes\mathbb{H}_N=\mathbb{H}.
@@ -305,7 +305,7 @@ After truncating each one-particle space to a finite basis of size $d$, the many
 This complexity, known as the "curse of dimensionality," motivates powerful approximate methods such as Hartree--Fock and Density Functional Theory, which we will explore in later sections.
 
 When electron interactions are completely disregarded, the problem simplifies to $N$ independent single-electron problems.
-If we further ignore fermionic antisymmetry, the many-body wave function reduces to a simple product of single particle wave functions:
+If we further ignore fermionic antisymmetry, the many-body wave function reduces to a simple product of single-particle wave functions:
 
 \begin{equation}
     \Psi(x_1,x_2,\cdots,x_N)=\psi_{n_1}(x_1)\psi_{n_2}(x_2)\cdots\psi_{n_N}(x_N)
@@ -326,6 +326,8 @@ In the coordinate representation, we can represent the antisymmetric wave functi
     \end{vmatrix}
     \label{slater_determinant}
 \end{equation}
+
+here, the antisymmetric $N$-electron wave function $\Psi$ is constructed from a set of single-particle spin-orbitals $\{\psi_i(\vec{r},\sigma)\}$.
 
 Finally, we can describe the full time-evolution of the many-body wave function in coordinate space by the time-dependent Schrödinger equation~\eqref{time-dependent_Schrodinger_equation}:
 
@@ -824,14 +826,14 @@ as $\Psi_{\alpha}(x_1,x_2,\cdots,x_N; t)$.
 Then, we can describe the ground state one-body density:
 
 \begin{equation}
-    \rho_g(x_1,t)=\int\int\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\,\Psi_g(x_1,x_2,\cdots,x_N;t)
+    \rho_g(x_1,t)=\iint\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\,\Psi_g(x_1,x_2,\cdots,x_N;t)
 \label{ground_one-body_density}
 \end{equation}
 
 When this system makes transitions to excited states, the one-body transition quantity is obtained by integrating other coordinates:
 
 \begin{equation}
-    f_n^\mathrm{eh}(x_1,t)=\int\int\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\,\Psi_n(x_1,x_2,\cdots,x_N;t)
+    f_n^\mathrm{eh}(x_1,t)=\iint\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\,\Psi_n(x_1,x_2,\cdots,x_N;t)
 \label{transition_one-body}
 \end{equation}
 
@@ -864,7 +866,7 @@ therefore, the transition density can be demonstrated as:
 \begin{equation}
 \begin{aligned}
     & f_n^\mathrm{eh}(x_1,t)\\
-    =& \mathrm{e}^{-i(E_n-E_g)t}\int\int\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\,\Psi_n(x_1,x_2,\cdots,x_N;t)
+    =& \mathrm{e}^{-i(E_n-E_g)t}\iint\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\,\Psi_n(x_1,x_2,\cdots,x_N;t)
 \end{aligned}
 \label{mod_transition_one-body}
 \end{equation}
@@ -872,7 +874,7 @@ therefore, the transition density can be demonstrated as:
 here, the the transition amplitude is denoted as:
 
 \begin{equation}
-    \int\int\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\,\Psi_n(x_1,x_2,\cdots,x_N;t)
+    \iint\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\,\Psi_n(x_1,x_2,\cdots,x_N;t)
 \label{transition_amplitude}
 \end{equation}
 
@@ -1467,7 +1469,7 @@ Using the local form of the external potential operator in equation~\eqref{local
 
 According to the definition of the ground state density in equation~\eqref{electron_density_definition},
 as well as the definitions of the kinetic energy and interaction energy functionals in equation~\eqref{functional_T_Eint_Eext_definition},
-we obtain:
+we obtain the decomposition of exact ground state energy functional:
 
 \begin{equation}
 \begin{aligned}
@@ -1475,9 +1477,25 @@ E[n]
 &= \bra{\Psi[n]}(\hat{T}+\hat{V}_\mathrm{int}+\hat{V}_\mathrm{ext})\ket{\Psi[n]} \\
 &= \bra{\Psi[n]}(\hat{T}+\hat{V}_\mathrm{int})\ket{\Psi[n]}
  + \int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,) \\
-&= T[n]+E_\mathrm{int}[n]+\int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,).
+&= T[n]+E_\mathrm{int}[n]+\int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
 \end{aligned}
-\label{functional_energy_density_decomposition}
+\label{energy_density_functional_decomposition}
+\end{equation}
+
+Recall the Slater determinant representation~\eqref{slater_determinant},
+under this independent-particle form, the expectation value of the kinetic energy operator becomes a sum over orbitals:
+
+\begin{equation}
+\langle\Psi|\hat{T}|\Psi\rangle
+= -\frac{1}{2}\sum_i \langle\psi_i|\nabla_i^2|\psi_i\rangle
+\label{kinetic_energy_slater}
+\end{equation}
+
+Substituting equation~\eqref{kinetic_energy_slater}, we achieve:
+
+\begin{equation}
+E[n]=-\frac{1}{2}\sum_i\bra{\psi_i}\nabla_i^2\ket{\psi_i}+E_\mathrm{int}[n]+\int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
+\label{total_energy_functional_decomposition}
 \end{equation}
 
 To proceed, we separate the system-specific external potential contribution from the remaining part of the energy.
@@ -1495,7 +1513,7 @@ This motivates introducing the universal Hohenberg--Kohn functional $E_\mathrm{H
 For a fixed form of the electron--electron interaction, $E_\mathrm{HK}[n]$ is independent of the external potential $v_\mathrm{ext}(\vec{r}\,)$,
 and the system specific information enters only through $v_\mathrm{ext}$.
 
-With this definition, the total energy density functional can be written in the standard form:
+This allows us to separate out the external potential contribution and write:
 
 \begin{equation}
     E[n]=E_\mathrm{HK}[n]+\int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
@@ -1505,7 +1523,7 @@ With this definition, the total energy density functional can be written in the 
 The Hohenberg--Kohn theorem then allows us to cast the ground state problem as a constrained search over admissible densities:
 
 \begin{equation}
-    E_0 = \min_{n(\vec{r}\,)}\left\{E\,\left[n(\vec{r}\,)\right]\,|\,\int \mathrm{d}\vec{r}\,n(\vec{r}\,)
+    E_0 = \min_{n(\vec{r}\,)}\left\{E\,\left[n(\vec{r}\,)\right]\,\Big|\,\int \mathrm{d}\vec{r}\,n(\vec{r}\,)
     = N\right\}= E\,\left[n_0(\vec{r}\,)\right].
     \label{density_minimization_principle}
 \end{equation}
@@ -1590,7 +1608,7 @@ For a spin-degenerate system, the phase-space counting gives:
     \label{TF_density_pf_intro}
 \end{equation}
 
-and the local Fermi momentum is related to the local single particle energy through:
+and the local Fermi momentum is related to the local single-particle energy through:
 
 \begin{equation}
     \mu = \frac{p_F^2(\vec{r}\,)}{2m}+V(\vec{r}\,)
@@ -1645,7 +1663,7 @@ We next approximate the interaction term by the classical Coulomb energy associa
 Using the electron--electron Coulomb repulsion~\eqref{electrons_Coulomb}, we obtain the Hartree interaction energy functional:
 
 \begin{equation}
-    E_\mathrm{H}[n]\coloneqq E_\mathrm{int}[n]=\frac{1}{2}\int\int\dif{\vec{r}}\,\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
+    E_\mathrm{H}[n]\coloneqq E_\mathrm{int}[n]=\frac{1}{2}\iint\dif{\vec{r}}\,\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
     \label{functional_EH}
 \end{equation}
 
@@ -1691,7 +1709,7 @@ The nucleus--nucleus contribution $E_\mathrm{NN}$ is omitted since it does not d
 \begin{aligned}
     E_\mathrm{TF}[n]
     &= C_1\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{5}{3}}
-    + \frac{1}{2}\int\int\dif{\vec{r}}\,\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
+    + \frac{1}{2}\iint\dif{\vec{r}}\,\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
     + \int\dif{\vec{r}}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,) \\
     &= C_1\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{5}{3}}
     + E_\mathrm{H}[n] + \int\dif{\vec{r}}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
@@ -1843,7 +1861,7 @@ Let us express the exact total energy as a functional of the density:
 \end{equation}
 
 Here $T[n]$ denotes the exact kinetic energy functional and $E_\mathrm{H}[n]$ is the Hartree energy functional.
-The exchange--correlation energy functional $E_\mathrm{xc}[n]$ collects all interaction effects beyond the classical Hartree term.
+The exchange-correlation energy functional $E_\mathrm{xc}[n]$ collects all interaction effects beyond the classical Hartree term.
 It includes the exchange contribution originating from the antisymmetry of the many-electron wave function and the correlation contribution accounting for the remaining many-body correlations.
 
 In view of the definition of the universal Hohenberg--Kohn functional in equation~\eqref{functional_HK_definition}, it is convenient to introduce $E_\mathrm{xc}[n]$ via:
@@ -1971,21 +1989,21 @@ In this decoupled limit, the density of the first species is obtained by integra
 To make the cancellation explicit, we use the normalization of $\varphi$:
 
 \begin{equation}
-    \int\int\cdots\int\dif{y_1}\,\dif{y_2}\cdots\dif{y_M}\,\left|\varphi(y_1,y_2,\cdots,y_M)\right|^2 = 1
+    \iint\cdots\int\dif{y_1}\,\dif{y_2}\cdots\dif{y_M}\,\left|\varphi(y_1,y_2,\cdots,y_M)\right|^2 = 1
     \label{phi_normalization}
 \end{equation}
 
 We define the particle density associated with $\psi$ as:
 
 \begin{equation}
-    n_\psi(x)\coloneqq N\int\int\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\left|\psi(x,x_2,\cdots,x_N)\right|^2
+    n_\psi(x)\coloneqq N\iint\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\left|\psi(x,x_2,\cdots,x_N)\right|^2
     \label{density_first_species_psi}
 \end{equation}
 
 With these definitions, we can express the density of the first species as:
 
 \begin{equation}
-    n(x)=n_\psi(x)\int\int\cdots\int\dif{y_1}\,\dif{y_2}\cdots\dif{y_M}\,\left|\varphi(y_1,y_2,\cdots,y_M)\right|^2
+    n(x)=n_\psi(x)\iint\cdots\int\dif{y_1}\,\dif{y_2}\cdots\dif{y_M}\,\left|\varphi(y_1,y_2,\cdots,y_M)\right|^2
     \label{two_body_density_factorized}
 \end{equation}
 
@@ -1996,7 +2014,7 @@ therefore, we arrive at:
 \begin{aligned}
     n(x)
     =& \,n_\psi(x) \\
-    =& \,N\int\int\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\left|\psi(x,x_2,\cdots,x_N)\right|^2
+    =& \,N\iint\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\left|\psi(x,x_2,\cdots,x_N)\right|^2
 \end{aligned}
 \label{two-body_density}
 \end{equation}
@@ -2090,7 +2108,7 @@ We achieve that the density of the auxiliary system is obtained by integrating o
 
 \begin{equation}
     n_\mathrm{aux}(\vec{r}\,)\coloneqq
-    N\int\int\cdots\int\dif{\vec{r}_2}\,\dif{\vec{r}_3}\cdots\dif{\vec{r}_N}\,
+    N\iint\cdots\int\dif{\vec{r}_2}\,\dif{\vec{r}_3}\cdots\dif{\vec{r}_N}\,
     \left|\Psi_\mathrm{aux}(\vec{r},\vec{r}_2,\cdots,\vec{r}_N)\right|^2
 \label{density_aux}
 \end{equation}
@@ -2104,7 +2122,7 @@ n_\mathrm{aux}(\vec{r}\,) = n(\vec{r}\,)
 
 Consequently, the question becomes whether we can construct a potential $v_\mathrm{aux}(\vec{r}\,)$ that gives the same density and, if we can, whether that potential is unique.
 
-Finally, for a non interacting auxiliary system, the many-body wave function can be constructed from a set of single particle orbitals.
+Finally, for a non interacting auxiliary system, the many-body wave function can be constructed from a set of single-particle orbitals.
 Accordingly, we introduce orbitals $\varphi^\mathrm{aux}_l(\vec{r}\,)$ that satisfy the one-body schrödinger equation:
 
 \begin{equation}
@@ -2138,21 +2156,41 @@ and it is often referred to as noninteracting $v$-representability.
 
 \subsection{The Kohn-Sham equations}
 
-Let us recall the minimization of density functioanl, 
-that would give us the ground state total energy.
+Let us review the exact ground-state energy functional~\eqref{energy_density_functional_decomposition}, and universal Hohenberg--Kohn functional~\eqref{functional_HK_definition}.
 
-we have achieved the decomposition of energy functional~\eqref{functional_energy_density_decomposition}, that if this functionl exists it is unqiue.
+Firstly, we denote the kinetic energy functional of independent particle system of density $n(\vec{r}\,)$ as $T_s[n]$.
 
-But neither the term of kinetic energy functional $T[n]$ nor the electron interaction energy functional $E_\mathrm{int}[n]$.
+With the expression of the Hartree interaction energy functional~\eqref{functional_EH}, we perform some manipulations with Hohenberg--Kohn functional:
 
-We will use ariational approach to address this problem.
-to define a new functinal of the density take an older approach as inspiration.
+\begin{equation}
+\begin{aligned}
+    E[n] &= T[n]+E_\mathrm{int}[n]
+    +\int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,) \\
+    &= E_\mathrm{HK}[n]
+    + \int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
+    + T_s[n] - T_s[n] + E_\mathrm{H}[n] - E_\mathrm{H}[n] \\
+    &= T_s[n] +
+    \int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
+    + E_\mathrm{H}[n] + E_\mathrm{HK}[n] - T_s[n] -  E_\mathrm{H}[n]
+\end{aligned}
+\label{energy_density_functional_manipulations}
+\end{equation}
 
-recall the Thomas-Fermi energy functional~\eqref{full_energy_functional}.
-The unknown kinetic energy functional is approximated by a power of the density~\eqref{functional_energy_potential}.
-while the contribution of electron interaction energy, is also a functional of the density~\eqref{hartree_functional}.
+Recall the definition of exchange-correlation energy functional~\eqref{definition_exchange_correlation_energy}, we obtain:
 
+\begin{equation}
+\begin{aligned}
+    E[n] &= T_s[n]
+    + \int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
+    + E_\mathrm{H}[n] + E_\mathrm{xc}[n] \\
+    &= T_s[n]
+    + \int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
+    + \frac{1}{2}\iint\dif{\vec{r}}\,\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
+    + E_\mathrm{xc}[n] \\
+\end{aligned}
+\end{equation}
 
+The total Kohn–Sham energy functional is decomposed as $E[n]=T_s[n]+\int v_\mathrm{ext}(\vec{r},)n(\vec{r},)\dif^3{r}+E_\mathrm{H}[n]+E_\mathrm{xc}[n]$
 
 % P2, 29:10
 
