@@ -1235,8 +1235,6 @@ Therefore, we arrive at a conclusion that two different external potentials cann
 
 Equivalently, up to a constant shift in the potential and for a fixed form of interaction, the mapping from the external potential to the non-degenerate ground state wave function is one-to-one.
 
-% \subsection{The Hohenberg--Kohn theorem}
-
 Since any ground state observable follows uniquely from the ground state wave function via its expectation value, equation~\eqref{functional_from_external_potential} implies that $\ket{\Psi_0}$ is uniquely determined by $v_\mathrm{ext}$, and hence the ground state observables are unique functionals of $v_\mathrm{ext}$.
 The external potential is defined to an additive constant shift.
 
@@ -1259,7 +1257,7 @@ where $\left[v_\mathrm{ext}(\vec{r}\,)\right]$ is defined up to an additive cons
 Equivalently, $\left[v_\mathrm{ext}(\vec{r}\,)\right]$ and $\left[\ket{\Psi_0}\right]$ are in bijection:
 
 \begin{equation}
-    \left[v_\mathrm{ext}(\vec{r}\,)\right]\,\xleftrightarrow{}\,\left[\ket{\Psi_0}\right]
+    \left[v_\mathrm{ext}(\vec{r}\,)\right]\,\longleftrightarrow\,\left[\ket{\Psi_0}\right]
     \label{potential_wave function_correspondence}
 \end{equation}
 
@@ -1402,7 +1400,7 @@ Combining equations~\eqref{potential_wave function_correspondence}, \eqref{wave 
 and\eqref{density_potential_map}, we finally arrive at a one-to-one correspondence among the basic ground state descriptors:
 
 \begin{equation}
-    \left[v_\mathrm{ext}(\vec{r}\,)\right]\;\xleftrightarrow{}\; n(\vec{r}\,)\;\xleftrightarrow{}\;\left[\ket{\Psi_0}\right]
+    \left[v_\mathrm{ext}(\vec{r}\,)\right]\,\longleftrightarrow\, n(\vec{r}\,)\,\longleftrightarrow\,\left[\ket{\Psi_0}\right]
     \label{hk_correspondence_v_n_psi}
 \end{equation}
 
@@ -2360,9 +2358,52 @@ the stationarity condition can be expressed as the Kohn--Sham equations:
 
 here, equation~\eqref{density_with_occupation_number} gives $n(\vec{r}\,)$ once the orbitals are known at the same time,
 and $v^\mathrm{eff}(\vec{r}\,)$ depends on $n(\vec{r}\,)$ through equation~\eqref{KS_effective_potential_definition}
-therefore, equations~\eqref{KS_effective_potential_definition} and~\eqref{KS_equation} must be solved self-consistently
+therefore, equations~\eqref{KS_effective_potential_definition} and~\eqref{KS_equation} must be solved self-consistently.
+
+Conclusively, in term of that the density functional theory is built on the Hohenberg--Kohn theorem.
+It states that the ground state density uniquely determines the external potential modulo an additive constant.
+Meanwhile, the density and the external potential are in bijective correspondence:
+
+\begin{equation}
+    n(\vec{r}\,)
+    \,\longleftrightarrow\,
+    \left[v_\mathrm{ext}(\vec{r}\,)+\mathrm{const.}\right]
+    \label{HK_density_potential_correspondence}
+\end{equation}
+
+In the Kohn--Sham auxiliary system, the electrons are noninteracting.
+Therefore, the only potential entering the one-body Hamiltonian is the effective potential $v^\mathrm{eff}(\vec{r}\,)$.
+It plays the role of the external potential for the auxiliary system.
+
+Consequently, we may also view the Kohn--Sham potential as being uniquely linked to the density:
+
+\begin{equation}
+    n(\vec{r}\,)
+    \,\longleftrightarrow\,
+    \left[v^\mathrm{eff}(\vec{r}\,)+\mathrm{const.}\right]
+    \label{KS_density_potential_correspondence}
+\end{equation}
+
+This show that once the density $n(\vec{r}\,)$ is given, the effective potential $v^\mathrm{eff}(\vec{r}\,)$ is fixed up to an additive constant.
+
+Therefore, in this noninteracting Kohn--Sham auxiliary system, we process the corresponding total ground state energy as a functional of the density, and denote it by $E_s[n]$.
+
+For noninteracting electrons, this energy is simply the kinetic term plus the one-body potential term:
+
+\begin{equation}
+    E_s[n]=T_s[n]+\int\dif{\vec{r}}\,n(\vec{r}\,)v^\mathrm{eff}(\vec{r}\,)
+    \label{KS_auxiliary_energy_functional}
+\end{equation}
+
+--- draft
+
+Recall the decomposition of exact ground state energy functional~\eqref{energy_density_functional_decomposition}, we have
+$v_ext (r) <-> n(r)$
 
 
+---
+
+can we suppose 
 
 % P2, 37:00
 
