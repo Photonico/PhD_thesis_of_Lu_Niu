@@ -640,7 +640,7 @@ The grand-canonical ensemble admits a compact operator formulation in terms of a
 Invoking the cyclic invariance of the trace, we obtain:
 
 \begin{equation}
-    \left\langle \hat{\Omega}\right\rangle
+    \braket{\hat{\Omega}}
     = \frac{1}{\mathcal{Z}}\,\operatorname{Tr}\,\left[\mathrm{e}^{-\beta\left(\hat{H}-\mu \hat{N}\right)}\,\hat{\Omega}\right],
 \label{grand_canonical_expectation_trace}
 \end{equation}
@@ -1992,6 +1992,9 @@ In what follows, we introduce an auxiliary description that retains the density 
 
 \subsection{Auxiliary system}
 
+We introduce an auxiliary system that reproduces the ground-state density $n(\vec{r}\,)$ of the interacting electrons.
+This maps the many-body problem onto a simpler reference description, with residual interactions captured by the exchange-correlation functional, leading to the Kohn--Sham scheme.
+
 As shown in equation~\eqref{one-body_density}, the ground state density can be obtained from the many-body ground state wave function by integrating out $N-1$ coordinates.
 
 Since one-body observables can be expressed in terms of the density, as summarized in the equation~\eqref{observables_N-body}, the density provides a reduced description that avoids working directly with the full wave function. 
@@ -2223,6 +2226,15 @@ here, $f_i$ is the occupation number of the spin-orbital $\psi_i$, satisfying:
 \label{occupation_constraints}
 \end{equation}
 
+Moreover, we can express the density with $f_i$:
+
+\begin{equation}
+    n(\vec{r}\,)=\sum_i f_i |\psi_i(\vec{r}\,)|^2
+\label{density_with_occupation_number}
+\end{equation}
+
+here, $\psi_i(\vec{r}\,)$ denotes a spin-orbital, and the spin degree of freedom is included implicitly in the index $i$.
+
 For comparison, the kinetic energy functional $T[n]$ appearing in the Hohenberg--Kohn functional $E_\mathrm{HK}[n]$ is evaluated on the minimizing interacting many-body state $\Psi[n]$ that yields the same density.
 In general, $T[n]$ and $T_s[n]$ are not equal, and we write their difference as:
 
@@ -2279,8 +2291,6 @@ we have:
 \label{Exc_KS_definition}
 \end{equation}
 
-
-
 Let us perform some manipulations on exact ground state energy functional~\eqref{energy_density_functional_decomposition}:
 
 \begin{equation}
@@ -2313,6 +2323,9 @@ we obtain:
     &= E_\mathrm{H}^\mathrm{tot}[n] + E_\mathrm{xc}[n]
 \end{aligned}
 \end{equation}
+
+Subsequently, 
+
 
 % P2, 29:10
 
