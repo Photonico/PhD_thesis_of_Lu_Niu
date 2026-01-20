@@ -2356,7 +2356,7 @@ the stationarity condition can be expressed as the Kohn--Sham equations:
     \label{KS_equation}
 \end{equation}
 
-here, equation~\eqref{density_with_occupation_number} gives $n(\vec{r}\,)$ once the orbitals are known at the same time,
+here, the Kohn--Sham density expression~\eqref{density_with_occupation_number} represents $n(\vec{r}\,)$ once the orbitals are known at the same time,
 and $v^\mathrm{eff}(\vec{r}\,)$ depends on $n(\vec{r}\,)$ through equation~\eqref{KS_effective_potential_definition}
 therefore, equations~\eqref{KS_effective_potential_definition} and~\eqref{KS_equation} must be solved self-consistently.
 
@@ -2367,7 +2367,7 @@ Meanwhile, the density and the external potential are in bijective correspondenc
 \begin{equation}
     n(\vec{r}\,)
     \,\longleftrightarrow\,
-    \left[v_\mathrm{ext}(\vec{r}\,)+\mathrm{const.}\right]
+    \left[v_\mathrm{ext}(\vec{r}\,)\right]
     \label{HK_density_potential_correspondence}
 \end{equation}
 
@@ -2380,9 +2380,11 @@ Consequently, we may also view the Kohn--Sham potential as being uniquely linked
 \begin{equation}
     n(\vec{r}\,)
     \,\longleftrightarrow\,
-    \left[v^\mathrm{eff}(\vec{r}\,)+\mathrm{const.}\right]
+    \left[v^\mathrm{eff}(\vec{r}\,)\right]
     \label{KS_density_potential_correspondence}
 \end{equation}
+
+here, $\left[v(\vec{r}\,)\right]$ denotes the equivalence class of potentials that differ only by an additive $\mathrm{const.}$
 
 This show that once the density $n(\vec{r}\,)$ is given, the effective potential $v^\mathrm{eff}(\vec{r}\,)$ is fixed up to an additive constant.
 
@@ -2395,15 +2397,25 @@ For noninteracting electrons, this energy is simply the kinetic term plus the on
     \label{KS_auxiliary_energy_functional}
 \end{equation}
 
---- draft
-
-Recall the decomposition of exact ground state energy functional~\eqref{energy_density_functional_decomposition}, we have
-$v_ext (r) <-> n(r)$
-
-
 ---
 
-can we suppose 
+Moreover, we recall the exact energy decomposition in equation~\eqref{energy_density_functional_decomposition},
+together with the Hohenberg--Kohn correspondence in equation~\eqref{hk_correspondence_v_n_psi}.
+They tell us that the ground state energy can be viewed as a functional of the density.
+
+Hence, we introduce the key idea of Kohn--Sham equations.
+For a given interacting system, we assume the existence of an auxiliary system of noninteracting electrons.
+This auxiliary system is constructed to reproduce the same density:
+
+\begin{equation}
+    n_s(\vec{r}\,)=n(\vec{r}\,)
+    \label{KS_same_density_assumption}
+\end{equation}
+
+here, $n_s(\vec{r}\,)$ denotes the ground state density of the auxiliary noninteracting system,
+it is obtained from a set of one-electron orbitals.
+The corresponding one-body potential is denoted by the Kohn–Sham potential $v^\mathrm{eff}(\vec{r}\,)$.
+It is chosen such that equation~\eqref{KS_same_density_assumption} holds.
 
 % P2, 37:00
 
