@@ -327,7 +327,7 @@ In the coordinate representation, we can represent the antisymmetric wave functi
     \label{slater_determinant}
 \end{equation}
 
-here, the antisymmetric $N$-electron wave function $\Psi$ is constructed from a set of single-particle spin-orbitals $\{\psi_i(\vec{r},\sigma)\}$.
+here, the antisymmetric $N$-electron wave function $\Psi$ is constructed from a set of single-particle spin-orbital wave functions $\{\psi_i(\vec{r},\sigma)\}$.
 
 Finally, we can describe the full time-evolution of the many-body wave function in coordinate space by the time-dependent Schrödinger equation~\eqref{time-dependent_Schrodinger_equation}:
 
@@ -1613,25 +1613,25 @@ For a spin-degenerate system, the phase-space counting gives:
 and the local Fermi momentum is related to the local single-particle energy through:
 
 \begin{equation}
-    \mu = \frac{p_F^2(\vec{r}\,)}{2m}+V(\vec{r}\,)
+    \mu = \frac{p_F^2(\vec{r}\,)}{2m}+v(\vec{r}\,)
     \label{TF_mu_local_intro}
 \end{equation}
 
-Combining these two expressions yields a local relation between $n(\vec{r}\,)$ and $V(\vec{r}\,)$.
+Combining these two expressions yields a local relation between $n(\vec{r}\,)$ and $v(\vec{r}\,)$.
 This relation also leads to an explicit approximation for the kinetic energy functional in terms of $n(\vec{r}\,)$ alone, which we introduce next.
 
-To close the Thomas--Fermi picture, we treat $V(\vec{r}\,)$ as an electrostatic potential generated self-consistently by the electron density.
+To close the Thomas--Fermi picture, we treat $v(\vec{r}\,)$ as an electrostatic potential generated self-consistently by the electron density.
 In atomic units, it satisfies the Poisson equation:
 
 \begin{equation}
-    \nabla^2 V(\vec{r}\,) = -4\pi\,n(\vec{r}\,)
+    \nabla^2 v(\vec{r}\,) = -4\pi\,n(\vec{r}\,)
     \label{TF_poisson_equation}
 \end{equation}
 
 Eliminating $p_F(\vec{r}\,)$ between \eqref{TF_density_pf_intro} and \eqref{TF_mu_local_intro}, we obtain:
 
 \begin{equation}
-    n(\vec{r}\,) = \frac{1}{3\pi^2}\,[2(\mu - V(\vec{r}\,))]^{3/2}
+    n(\vec{r}\,) = \frac{1}{3\pi^2}\,[2(\mu - v(\vec{r}\,))]^{3/2}
     \label{TF_density_muV}
 \end{equation}
 
@@ -1639,7 +1639,7 @@ Substituting this expression into equation~\eqref{TF_poisson_equation},
 We arrive at the Thomas--Fermi equation:
 
 \begin{equation}
-    \nabla^2 V(\vec{r}\,)=-\frac{4}{3\pi}\,[2(\mu-V(\vec{r}\,))]^{3/2}
+    \nabla^2 v(\vec{r}\,)=-\frac{4}{3\pi}\,[2(\mu-v(\vec{r}\,))]^{3/2}
     \label{thomas_fermi_equation}
 \end{equation}
 
@@ -1820,25 +1820,25 @@ Since the density variation $\delta n(\vec{r}\,)$ is arbitrary, the integrand mu
 It is convenient to introduce the effective potential:
 
 \begin{equation}
-    V(\vec{r}\,)\coloneqq v_\mathrm{ext}(\vec{r}\,)+v_\mathrm{H}(\vec{r}\,)
+    v(\vec{r}\,)\coloneqq v_\mathrm{ext}(\vec{r}\,)+v_\mathrm{H}(\vec{r}\,)
     \label{effective_potential_definition}
 \end{equation}
 
 Equation~\eqref{Thomas_Fermi_equation} then becomes:
 
 \begin{equation}
-    \frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+V(\vec{r}\,)=\lambda
+    \frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+v(\vec{r}\,)=\lambda
     \label{Thomas_Fermi_equation_compact}
 \end{equation}
 
 Solving for the density, we obtain:
 
 \begin{equation}
-    n(\vec{r}\,)=\frac{1}{3\pi^2}\left[2\left(\lambda-V(\vec{r}\,)\right)\right]^{\frac{3}{2}}
+    n(\vec{r}\,)=\frac{1}{3\pi^2}\left[2\left(\lambda-v(\vec{r}\,)\right)\right]^{\frac{3}{2}}
     \label{density_TF_from_potential}
 \end{equation}
 
-The above expression applies in the region where $\lambda>V(\vec{r}\,)$, and one takes $n(\vec{r}\,)=0$ otherwise.
+The above expression applies in the region where $\lambda>v(\vec{r}\,)$, and one takes $n(\vec{r}\,)=0$ otherwise.
 
 To derive a differential form, we use the Poisson equation.
 For the nuclear external potential, we have:
@@ -1858,14 +1858,14 @@ For the Hartree potential, we have:
 Combining equations~\eqref{effective_potential_definition}, \eqref{Poisson_external_potential}, and \eqref{Poisson_Hartree_potential}, we find:
 
 \begin{equation}
-    \nabla^2 V(\vec{r}\,)=4\pi\sum_I Z_I\,\delta\left(\vec{r}-\vec{R}_I\right)-4\pi n(\vec{r}\,)
+    \nabla^2 v(\vec{r}\,)=4\pi\sum_I Z_I\,\delta\left(\vec{r}-\vec{R}_I\right)-4\pi n(\vec{r}\,)
     \label{Poisson_effective_potential}
 \end{equation}
 
 Substituting equation~\eqref{density_TF_from_potential} into equation~\eqref{Poisson_effective_potential}, we arrive at the differential form of the Thomas--Fermi equation:
 
 \begin{equation}
-    \nabla^2 V(\vec{r}\,)=4\pi\sum_I Z_I\,\delta\left(\vec{r}-\vec{R}_I\right)-\frac{4}{3\pi}\left[2\left(\lambda-V(\vec{r}\,)\right)\right]^{\frac{3}{2}}
+    \nabla^2 v(\vec{r}\,)=4\pi\sum_I Z_I\,\delta\left(\vec{r}-\vec{R}_I\right)-\frac{4}{3\pi}\left[2\left(\lambda-v(\vec{r}\,)\right)\right]^{\frac{3}{2}}
     \label{differential_form_Thomas_Fermi_equation}
 \end{equation}
 
@@ -2324,8 +2324,45 @@ we obtain:
 \end{aligned}
 \end{equation}
 
-Subsequently, we minimize the energy functional $E[n]$ with respect to the spin-orbitals $\psi_i(\vec{r}\,)$.
+Subsequently, we minimize the energy functional $E[n]$ with respect to the spin-orbital wave functions $\psi_i(\vec{r}\,)$.
 This variational procedure determines the stationary condition of the functional, while enforcing the orthonormality constraints:
+
+Accordingly, we introduce a set of Lagrange multipliers $\{\lambda_{ij}\}$ and consider the constrained variation.
+Varying with respect to $\psi_i^\ast(\vec{r}\,)$ generates a one-body eigenvalue problem.
+
+Moreover, the functional derivative of the Hartree term produces the Hartree potential
+$v_\mathrm{H}(\vec{r}\,)$ defined in equation~\eqref{Hartree_potential_definition},
+while the exchange-correlation contribution defines the exchange-correlation potential:
+
+\begin{equation}
+    v_\mathrm{xc}(\vec{r}\,)\coloneqq \frac{\delta E_\mathrm{xc}[n]}{\delta n(\vec{r}\,)}
+    \label{xc_potential_definition}
+\end{equation}
+
+It is therefore convenient to introduce the effective Kohn--Sham potential:
+
+\begin{equation}
+    v^\mathrm{eff}(\vec{r}\,)
+    \coloneqq v_\mathrm{ext}(\vec{r}\,)
+    + v_\mathrm{H}(\vec{r}\,)
+    + v_\mathrm{xc}(\vec{r}\,)
+    \label{KS_effective_potential_definition}
+\end{equation}
+
+Next, in a basis where the Lagrange-multiplier matrix is diagonal,
+the stationarity condition can be expressed as the Kohn--Sham equations:
+
+\begin{equation}
+    \left[-\frac{1}{2}\nabla^2+v^\mathrm{eff}(\vec{r}\,)\right]\psi_i(\vec{r}\,)
+    =\lambda_i\,\psi_i(\vec{r}\,)
+    \label{KS_equation}
+\end{equation}
+
+here, equation~\eqref{density_with_occupation_number} gives $n(\vec{r}\,)$ once the orbitals are known at the same time,
+and $v^\mathrm{eff}(\vec{r}\,)$ depends on $n(\vec{r}\,)$ through equation~\eqref{KS_effective_potential_definition}
+therefore, equations~\eqref{KS_effective_potential_definition} and~\eqref{KS_equation} must be solved self-consistently
+
+
 
 % P2, 37:00
 
