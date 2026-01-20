@@ -1645,7 +1645,7 @@ We next approximate the interaction term by the classical Coulomb energy associa
 Using the electron--electron Coulomb repulsion~\eqref{electrons_Coulomb}, we obtain the Hartree interaction energy functional:
 
 \begin{equation}
-    E_\mathrm{H}[n]\coloneqq E_\mathrm{int}[n]=\frac{1}{2}\int\dif{\vec{r}}\int\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
+    E_\mathrm{H}[n]\coloneqq E_\mathrm{int}[n]=\frac{1}{2}\int\int\dif{\vec{r}}\,\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
     \label{functional_EH}
 \end{equation}
 
@@ -1691,7 +1691,7 @@ The nucleus--nucleus contribution $E_\mathrm{NN}$ is omitted since it does not d
 \begin{aligned}
     E_\mathrm{TF}[n]
     &= C_1\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{5}{3}}
-    + \frac{1}{2}\int\dif{\vec{r}}\int\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
+    + \frac{1}{2}\int\int\dif{\vec{r}}\,\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
     + \int\dif{\vec{r}}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,) \\
     &= C_1\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{5}{3}}
     + E_\mathrm{H}[n] + \int\dif{\vec{r}}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
@@ -2122,28 +2122,37 @@ The auxiliary density is then expressed in terms of these orbitals as:
 
 where $f_l$ denotes the occupation number of the orbital $\varphi^\mathrm{aux}_l$.
 
-To this end, the density-matching condition becomes a constraint on the potential $v_\mathrm{aux}(\vec{r}\,)$ through equations~\eqref{aux_single_particle_equation} and~\eqref{aux_density_orbitals}:
+Finally, we do not try to reproduce the full many-body wave function of the interacting system.
+
+Instead, we tune the one-body potential $v_\mathrm{aux}(\vec{r}\,)$ in the auxiliary system so that its density matches the target density:
 
 \begin{equation}
-n_\mathrm{aux}(\vec{r}\,) = n(\vec{r}\,)
-\label{aux_density_constraint}
+    n_\mathrm{aux}(\vec{r}\,;v_\mathrm{aux}) = n(\vec{r}\,)
+\label{aux_density_matching}
 \end{equation}
+ 
+In other words, we start from a given density $n(\vec{r}\,)$ and ask whether we can find a potential $v_\mathrm{aux}(\vec{r}\,)$ that makes a noninteracting system reproduce it.
 
-Therefore, the auxiliary construction is an inverse problem.
-Given a target density $n(\vec{r}\,)$,
-we ask whether there exists a one-body potential $v_\mathrm{aux}(\vec{r}\,)$ such that a non interacting system reproduces this density:
-
-\begin{equation}
-\begin{aligned}
-    & \exists\, v_\mathrm{aux}(\vec{r}\,) //
-    \rightarrow n_\mathrm{aux}(\vec{r}\,;v_\mathrm{aux}) = n(\vec{r}\,)
-\end{aligned}
-\label{nonint_v_representability}
-\end{equation}
-
-This question is known as non interacting $v$-representability, and it clarifies that the existence of the auxiliary system is not automatic, but must be justified by additional arguments.
+This is the basic existence question behind the auxiliary construction,
+and it is often referred to as noninteracting $v$-representability.
 
 \subsection{The Kohn-Sham equations}
+
+Let us recall the minimization of density functioanl, 
+that would give us the ground state total energy.
+
+we have achieved the decomposition of energy functional~\eqref{functional_energy_density_decomposition}, that if this functionl exists it is unqiue.
+
+But neither the term of kinetic energy functional $T[n]$ nor the electron interaction energy functional $E_\mathrm{int}[n]$.
+
+We will use ariational approach to address this problem.
+to define a new functinal of the density take an older approach as inspiration.
+
+recall the Thomas-Fermi energy functional~\eqref{full_energy_functional}.
+The unknown kinetic energy functional is approximated by a power of the density~\eqref{functional_energy_potential}.
+while the contribution of electron interaction energy, is also a functional of the density~\eqref{hartree_functional}.
+
+
 
 % P2, 29:10
 
