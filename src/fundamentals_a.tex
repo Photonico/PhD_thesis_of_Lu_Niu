@@ -1010,7 +1010,7 @@ For this reason, they are commonly referred to as density functionals.
 
 In quantum mechanics, it is often convenient to shift the basic variable from the many-body wave function to the electron density $n(\vec{r}\,)$.
 From this point of view, every relevant physical quantity can be expressed as a functional of the density.
-Therefore, we can realize that a functional takes the density function $n(\vec{r}\,)$ as input and returns a quantum-mechanical observable as output.
+Therefore, we can realize that a functional takes the density $n(\vec{r}\,)$ as input and returns a quantum-mechanical observable as output.
 
 To describe this process, we first introduce the density operator:
 
@@ -1037,7 +1037,7 @@ Given an observable represented by an operator $\hat{\Omega}$, its ground state 
 and hence every ground state observable can be regarded, at least formally, as a functional of the many-body wave function $O[\Psi_0]=O$.
 
 However, the kernel idea of density functional theory is here: for the ground state properties, the wave function dependence can be reduced even further. In our statement, if the density of ground state $n(\vec{r}\,)$ uniquely specifies the corresponding wave function of ground state $\Psi_0$,
-the expectation value of any operator $\hat{\Omega}$ in the ground state is uniquely determined by the density function $n(\vec{r}\,)$.
+the expectation value of any operator $\hat{\Omega}$ in the ground state is uniquely determined by the density $n(\vec{r}\,)$.
 
 Consequently, every ground state observable can be written as a (unique) density functional:
 
@@ -2085,9 +2085,9 @@ Then, we write the eigenvalue equation as:
 
 \begin{equation}
 \begin{aligned}
-    \hat{H}_\mathrm{BO}(\{\vec{R}_I\})\Psi
-    &= E_\mathrm{BO}(\{\vec{R}_I\})\Psi \\
-    &= \left(\hat{H}_\mathrm{el}(\{\vec{R}_I\}) + E_\mathrm{NN}(\{\vec{R}_I\})\right)\Psi
+    \hat{H}_\mathrm{BO}(\{\vec{R}_I\})\ket{\Psi}
+    &= E_\mathrm{BO}(\{\vec{R}_I\})\ket{\Psi} \\
+    &= [\hat{H}_\mathrm{el}(\{\vec{R}_I\}) + E_\mathrm{NN}(\{\vec{R}_I\})]\ket{\Psi}
 \end{aligned}
 \label{BO_SE_with_ENN}
 \end{equation}
@@ -2095,8 +2095,8 @@ Then, we write the eigenvalue equation as:
 Since $E_\mathrm{NN}(\{\vec{R}_I\})$ is a constant with respect to the electronic degrees of freedom, it only shifts the eigenvalue, and equation~\eqref{BO_SE_with_ENN} is equivalent to:
 
 \begin{equation}
-    \hat{H}_\mathrm{el}(\{\vec{R}_I\})\Psi
-    = \left(E_\mathrm{BO}(\{\vec{R}_I\}) - E_\mathrm{NN}(\{\vec{R}_I\})\right)\Psi
+    \hat{H}_\mathrm{el}(\{\vec{R}_I\})\ket{\Psi}
+    = [E_\mathrm{BO}(\{\vec{R}_I\}) - E_\mathrm{NN}(\{\vec{R}_I\})]\ket{\Psi}
 \label{BO_SE_shift_ENN}
 \end{equation}
 
@@ -2153,8 +2153,9 @@ Finally, for a noninteracting auxiliary system, the many-body wave function can 
 Accordingly, we introduce orbitals $\varphi^\mathrm{aux}_l(\vec{r}\,)$ that satisfy the one-body schrödinger equation:
 
 \begin{equation}
-    \left(-\frac{\nabla^2}{2}+v_\mathrm{aux}(\vec{r}\,)\right)\varphi^\mathrm{aux}_l(\vec{r}\,)
-    = \varepsilon^\mathrm{aux}_l\,\varphi^\mathrm{aux}_l(\vec{r}\,)
+    \left[-\frac{\nabla^2}{2}+v_\mathrm{aux}(\vec{r}\,)\right]
+    \ket{\varphi^\mathrm{aux}_l(\vec{r}\,)}
+    = \varepsilon^\mathrm{aux}_l\ket{\varphi^\mathrm{aux}_l(\vec{r}\,)}
 \label{aux_single_particle_equation}
 \end{equation}
 
@@ -2231,7 +2232,8 @@ Moreover, we can express the density with $f_i$:
 \label{density_with_occupation_number}
 \end{equation}
 
-here, $\psi_i(\vec{r}\,)$ denotes a spin-orbital, and the spin degree of freedom is included implicitly in the index $i$.
+here, $\psi_i(\vec{r}\,)$ denotes a spin-orbital, and the spin degree of freedom is included implicitly in the index $i$,
+and the density $n(\vec{r}\,)$ can be understood as a functional of the set of spin-orbitals $\{\psi_i(\vec{r}\,)\}$.
 
 For comparison, the kinetic energy functional $T[n]$ appearing in the Hohenberg--Kohn functional $E_\mathrm{HK}[n]$ is evaluated on the minimizing interacting many-body state $\Psi[n]$ that yields the same density.
 In general, $T[n]$ and $T_s[n]$ are not equal, and we write their difference as:
@@ -2330,7 +2332,7 @@ Varying with respect to $\psi_i^\ast(\vec{r}\,)$ generates a one-body eigenvalue
 
 Moreover, the functional derivative of the Hartree term produces the Hartree potential
 $v_\mathrm{H}(\vec{r}\,)$ defined in equation~\eqref{Hartree_potential_definition},
-while the exchange-correlation contribution defines the exchange-correlation potential:
+while the exchange-correlation contribution defines the exchange-correlation potential as its functional derivative:
 
 \begin{equation}
     v_\mathrm{xc}(\vec{r}\,)\coloneqq \frac{\delta E_\mathrm{xc}[n]}{\delta n(\vec{r}\,)}
@@ -2347,12 +2349,14 @@ It is therefore convenient to introduce the effective Kohn--Sham potential:
     \label{KS_effective_potential_definition}
 \end{equation}
 
+here, the corresponding one-body operator is $\hat{v}^\mathrm{eff}\coloneqq v^\mathrm{eff}(\hat{\vec{r}}\,)$.
+
 Next, in a basis where the Lagrange-multiplier matrix is diagonal,
 the stationarity condition can be expressed as the Kohn--Sham equations:
 
 \begin{equation}
-    \left[-\frac{1}{2}\nabla^2+v^\mathrm{eff}(\vec{r}\,)\right]\psi_i(\vec{r}\,)
-    =\lambda_i\,\psi_i(\vec{r}\,)
+    \left[-\frac{1}{2}\nabla^2+v^\mathrm{eff}(\vec{r}\,)\right]\ket{\psi_i(\vec{r}\,)}
+    =\lambda_i\ket{\psi_i(\vec{r}\,)}
     \label{KS_equation}
 \end{equation}
 
@@ -2427,12 +2431,130 @@ Consequently, the interacting many-electron problem is mapped to a noninteractin
 
 \subsection{From variational derivation to Kohn-Sham equations}
 
-To determine the orbitals in the frame of Kohn--Sham equations,
-we exploit that the density is built from orbitals in equation~\eqref{density_with_occupation_number}.
-Let us apply the variational theory to minimize the total energy functional with respect to the orbitals.
+To determine the orbitals in the Kohn--Sham scheme,
+we start from the density built from orbitals in equation~\eqref{density_with_occupation_number}.
+We are going to apply the variational principle and minimize the total energy with respect to the orbitals.
 
-Firstly, we express the energy as an orbital functional once again.
-The noninteracting kinetic energy takes the orbital form:
+Firstly, we introduce the one-body kinetic operator in the single-particle Hilbert space
+
+\begin{equation}
+    \hat{K}\coloneqq
+    -\frac{1}{2}\nabla^2
+    \label{KS_one_body_kinetic_operator_definition}
+\end{equation}
+
+Accordingly, we represent the noninteracting kinetic energy as an orbital functional:
+
+\begin{equation}
+    T_s[\{\psi_i(\vec{r}\,)\}]=
+    \sum_i f_i \bra{\psi_i}\hat{K}\ket{\psi_i}
+    \label{KS_noninteracting_kinetic_energy_orbital_functional}
+\end{equation}
+
+Next, we define the one-body external potential operator:
+
+\begin{equation}
+    \hat{v}_\mathrm{ext}\coloneqq
+    v_\mathrm{ext}(\hat{\vec{r}}\,)
+    \label{KS_one_body_external_operator_definition}
+\end{equation}
+
+Afterwards, we express the external potential energy in the orbital form:
+
+\begin{equation}
+    \int\dif{\vec{r}}\,n(\vec{r}\,)v_\mathrm{ext}(\vec{r}\,)
+    = \sum_{i}f_{i}\bra{\psi_i}\hat{v}_\mathrm{ext}\ket{\psi_i}
+    \label{KS_external_energy_orbital_form}
+\end{equation}
+
+Therefore, we view the total energy as an orbital functional through the density $n(\vec{r}\,)$:
+
+\begin{equation}
+    E[\{\psi_i(\vec{r}\,)\}]\coloneqq
+    \,T_s[\{\psi_i(\vec{r}\,)\}]
+    + \int \dif{\vec{r}}\,
+    n(\vec{r}\,)v_\mathrm{ext}(\vec{r}\,) 
+    \,+ E_\mathrm{H}[n]
+    + E_\mathrm{xc}[n]
+\label{KS_total_energy_orbital_functional}
+\end{equation}
+
+here, we reiterate that the density $n(\vec{r}\,)$ is understood as a functional of the set of spin-orbitals $\{\psi_i(\vec{r}\,)\}$ through equation~\eqref{density_with_occupation_number}.
+
+Secondly, we impose the orthonormality constraints:
+
+\begin{equation}
+    \braket{\psi_i|\psi_j}=\delta_{ij}
+    \label{KS_orbital_orthonormality}
+\end{equation}
+
+Accordingly, we introduce a matrix of Lagrange multipliers $\lambda_{ij}$ and define this constrained functional:
+
+\begin{equation}
+    \mathcal{F}[\{\psi_i(\vec{r}\,)\}]\coloneqq
+    E[\{\psi_i(\vec{r}\,)\}]
+    -\sum_{i,j}\lambda_{ij}\left(\braket{\psi_i|\psi_j}-\delta_{ij}\right)
+    \label{KS_constrained_functional_orbitals}
+\end{equation}
+
+Thirdly, we require stationarity with respect to the orbitals:
+
+\begin{equation}
+    \frac{\delta\mathcal{F}[\{\psi_i(\vec{r}\,)\}]}{\delta\bra{\psi_i}}=0
+    \label{KS_stationarity_condition_orbitals}
+\end{equation}
+
+here, we vary with respect to $\bra{\psi_i}$, treating $\ket{\psi_i}$ and $\bra{\psi_i}$ as independent variables.
+
+Moreover, we use the density dependence on the orbitals.
+In coordinate representation, equation~\eqref{density_with_occupation_number} shows:
+
+\begin{equation}
+    \frac{\delta n(\vec{r}\,)}{\delta \psi_i^\ast(\vec{r}\,)}
+    =f_i\,\psi_i(\vec{r}\,)
+    \label{KS_density_orbital_derivative}
+\end{equation}
+
+Next, we collect the potential terms including
+the Hartree potential $v_\mathrm{H}(\vec{r}\,)$ in equation~\eqref{Hartree_potential_definition}
+and the exchange-correlation potential $v_\mathrm{xc}(\vec{r}\,)$ in equation~\eqref{xc_potential_definition},
+They are together with the external potential form the Kohn--Sham effective potential $v^\mathrm{eff}(\vec{r}\,)$ in
+equation~\eqref{KS_effective_potential_definition}.
+
+Therefore, we define the Kohn--Sham one-body operator as:
+
+\begin{equation}
+    \hat{h}^\mathrm{KS}\coloneqq
+    \hat{K}+\hat{v}^\mathrm{eff}
+    \label{KS_one_body_hamiltonian_definition}
+\end{equation}
+
+Finally, the Euler--Lagrange equations give a set of one-particle equations in Dirac notation:
+
+\begin{equation}
+    \hat{h}^\mathrm{KS}\ket{\psi_i}
+    =
+    \sum_j \lambda_{ij}\ket{\psi_j}
+    \label{KS_equation_general_dirac}
+\end{equation}
+
+Then, $\lambda_{ij}$ can be chosen Hermitian.
+We choose a basis where it is diagonal,
+Then equation~\eqref{KS_equation_general_dirac} reduces to the standard eigenvalue form:
+
+\begin{equation}
+    \hat{h}^\mathrm{KS}\ket{\psi_i}=
+    \lambda_i\ket{\psi_i}
+    \label{KS_equation_diagonal_dirac}
+\end{equation}
+
+In coordinate representation, equation~\eqref{KS_equation_diagonal_dirac} becomes:
+
+\begin{equation}
+    \left[-\frac{1}{2}\nabla^2+v^\mathrm{eff}(\vec{r}\,)\right]\ket{\psi_i(\vec{r}\,)}
+    =\lambda_i\ket{\psi_i(\vec{r}\,)}
+    \label{KS_equation}
+\end{equation}
 
 % P2, 40:20
 

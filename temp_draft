@@ -1,46 +1,21 @@
-Temp draft
+Firstly
 
-To find these wave functions in Kohn--Sham equations.
-we will indeed exploit This functional dependence and apply the variational theorem.
+Secondly
 
-这部分的录音稿件:
-In fact, we already know that the energy functional of the density is stationary around the ground state density. It answers to the question, what is the best density that minimizes the energy functional? 
-We can reformulate the same question here as ... What are the best one particle wave functions that minimize the energy functional? It is exactly the same procedure. The best wave functions will be those that minimize the energy. So in correspondence of the ground state density n0. Let's add here some constraints that will help us in our quest. We want the wave functions describing the non-interacting electrons normalized. 
+Thirdly
 
-然后是公式
-$$
-\frac{\delta[E[n]]}{\delta\psi_i}=0
+Next
 
-$$
-约束?
-$$
-\int\dif{\vec{r}}\,\psi_i^*(\vec{r}\,)\,\psi_i(\vec{r}\,)=1
-$$
+Then
 
+Subsequently
 
+Afterwards
 
-然后的讲稿:
-So the best technique to minimize under constraints is to use the Lagrange multipliers method. Let's proceed then.
+Thereafter
 
-然后出现公式:
-$$
-\frac{\delta[E[n]-\lambda_i(\int\dif{\vec{r}}\,\psi_i^*(\vec{r}\,)\,\psi_i(\vec{r}\,)-1)]}{\delta \psi_i^*}=0 
+In the following
 
-$$
-we can put the full function of the energy and derive term:
-$$
-\delta[E[n]-\lambda_i(\int\dif{\vec{r}}\,\psi_i^*(\vec{r}\,)\,\psi_i(\vec{r}\,)-1)]
-=
-\delta[
-T_s[n]+\int\dif{\vec{r}}\,n(\vec{r}\,)v_\mathrm{ext}(\vec(r)\,)
-+\frac{1}{2}\iint\dif{\vec{r}}\,\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
-+ E_\mathrm{xc}[n]-\lambda_i(\int\dif{\vec{r}}\,\psi_i^*(\vec{r}\,)\,\psi_i(\vec{r}\,)
-]
-$$
-we arrive at, give a set of one particle equations
+Finally
 
-$$
-[-\frac{\nabla^2}{2}+v_\mathrm{ext}(\vec{r}\,)+\int\dif{\vec{r}\,'}\frac{n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
-+\frac{\delta E_\mathrm{xc}[n]}{\delta n(\vec{r}\,)}]\,\psi_i(\vec{r}\,)
-=\lambda_i\,\psi_i(\vec{r}\,)
-$$
+Ultimately
