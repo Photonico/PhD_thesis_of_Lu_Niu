@@ -2164,8 +2164,8 @@ Accordingly, we introduce orbitals $\varphi^\mathrm{aux}_l(\vec{r}\,)$ that sati
 
 \begin{equation}
     \left[-\frac{\nabla^2}{2}+v_\mathrm{aux}(\vec{r}\,)\right]
-    \ket{\varphi^\mathrm{aux}_l(\vec{r}\,)}
-    = \varepsilon^\mathrm{aux}_l\ket{\varphi^\mathrm{aux}_l(\vec{r}\,)}
+    \varphi^\mathrm{aux}_l(\vec{r}\,)
+    = \varepsilon^\mathrm{aux}_l\,\varphi^\mathrm{aux}_l(\vec{r}\,)
 \label{aux_single_particle_equation}
 \end{equation}
 
@@ -2439,7 +2439,7 @@ It is chosen such that equation~\eqref{KS_same_density_assumption} holds.
 
 Consequently, the interacting many-electron problem is mapped to a noninteracting orbital problem with the same density.
 
-\subsection{From variational derivation to Kohn-Sham scheme}
+\subsection{From variational derivation to the Kohn-Sham equations}
 
 To determine the orbitals in the Kohn--Sham scheme,
 we start from the density built from orbitals in equation~\eqref{density_with_occupation_number}.
@@ -2667,16 +2667,40 @@ We will introduce approximations for it later.
 
 \subsection{Remarks on the Kohn--Sham solutions}
 
+In the real world, 
+
+
 --- draft
 
-The next question before obtaining the density, we have to solve these equations
+In practical applications, we need to solve the Kohn--Sham equations in
+equation~\eqref{KS_equations_expansion}.
+If the Kohn--Sham one-body operator is known, we can diagonalize it and obtain the eigenvalues $\lambda_i$
+and the eigenvectors $\ket{\psi_i}$.
+We then construct the electron density through equation~\eqref{density_with_occupation_number}.
+
+However, the density is not only an output of the problem.
+It is also an input.
+To build the Kohn--Sham operator, we need the Hartree potential $v_\mathrm{H}([n];\vec{r}\,)$
+and the exchange-correlation potential $v_\mathrm{xc}([n];\vec{r}\,)$.
+Both depend on the density.
+Therefore, the Kohn--Sham equations form a self-consistent problem.
+
+Consequently, we naturally arrive at an iterative procedure.
+We start from a trial density.
+We construct the potentials and diagonalize the Kohn--Sham operator.
+This gives updated orbitals and a new density.
+We repeat these steps until the density is converged.
+This is the self-consistent field scheme.
+It was first introduced by Hartree for the Hartree equations.
+The Kohn--Sham equations can be solved in the same way.
+We will return to the practical details later.
 
 \subsection{The Hartree equations}
 
 \newpage
 \section{Approximation and strategies in density functional theory}
 
-% P2, 48:40
+% P2, 50:00
 
 % Firstly
 % Secondly
