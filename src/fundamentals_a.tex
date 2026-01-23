@@ -1784,7 +1784,7 @@ Here $\lambda$ enforces the particle number constraint and plays the role of the
 We define the Hartree potential as a funtional of density:
 
 \begin{equation}
-    v_\mathrm{H}([n],\vec{r}\,)\coloneqq\int\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
+    v_\mathrm{H}([n];\vec{r}\,)\coloneqq\int\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
     \label{Hartree_potential_definition}
 \end{equation}
 
@@ -1802,7 +1802,7 @@ For the interaction term in the Hartree approximation, the variation introduces 
 
 \begin{equation}
     \delta E_\mathrm{int}[n]
-    = \int\dif{\vec{r}}\,v_\mathrm{H}([n],\vec{r}\,)\,\delta n(\vec{r}\,)
+    = \int\dif{\vec{r}}\,v_\mathrm{H}([n];\vec{r}\,)\,\delta n(\vec{r}\,)
     \label{variation_Eint}
 \end{equation}
 
@@ -1817,21 +1817,21 @@ For the external contribution, the variation follows directly from the linear co
 Substituting equations~\eqref{variation_TTF}--\eqref{variation_Eext} into equation~\eqref{total_energy_variation}, we obtain:
 
 \begin{equation}
-    \int\dif{\vec{r}}\,\left\{\frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+v_\mathrm{H}([n],\vec{r}\,)+v_\mathrm{ext}(\vec{r}\,)-\lambda\right\}\delta n(\vec{r}\,)=0
+    \int\dif{\vec{r}}\,\left\{\frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+v_\mathrm{H}([n];\vec{r}\,)+v_\mathrm{ext}(\vec{r}\,)-\lambda\right\}\delta n(\vec{r}\,)=0
     \label{total_energy_minimization}
 \end{equation}
 
 Since the density variation $\delta n(\vec{r}\,)$ is arbitrary, the integrand must vanish pointwise, which yields the Thomas--Fermi equation:
 
 \begin{equation}
-    \frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+v_\mathrm{H}([n],\vec{r}\,)+v_\mathrm{ext}(\vec{r}\,)=\lambda
+    \frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+v_\mathrm{H}([n];\vec{r}\,)+v_\mathrm{ext}(\vec{r}\,)=\lambda
     \label{Thomas_Fermi_equation}
 \end{equation}
 
 It is convenient to introduce the effective potential:
 
 \begin{equation}
-    v(\vec{r}\,)\coloneqq v_\mathrm{ext}(\vec{r}\,)+v_\mathrm{H}([n],\vec{r}\,)
+    v(\vec{r}\,)\coloneqq v_\mathrm{ext}(\vec{r}\,)+v_\mathrm{H}([n];\vec{r}\,)
     \label{effective_potential_definition}
 \end{equation}
 
@@ -1862,7 +1862,7 @@ For the nuclear external potential, we have:
 For the Hartree potential, we have:
 
 \begin{equation}
-    \nabla^2 v_\mathrm{H}([n],\vec{r}\,)=-4\pi n(\vec{r}\,)
+    \nabla^2 v_\mathrm{H}([n];\vec{r}\,)=-4\pi n(\vec{r}\,)
     \label{Poisson_Hartree_potential}
 \end{equation}
 
@@ -2344,36 +2344,36 @@ Accordingly, we introduce a set of Lagrange multipliers $\{\lambda_{ij}\}$ and c
 Varying with respect to $\psi_i^\ast(\vec{r}\,)$ generates a one-body eigenvalue problem.
 
 Moreover, the functional derivative of the Hartree term produces the Hartree potential
-$v_\mathrm{H}([n],\vec{r}\,)$ defined in equation~\eqref{Hartree_potential_definition},
+$v_\mathrm{H}([n];\vec{r}\,)$ defined in equation~\eqref{Hartree_potential_definition},
 while the exchange-correlation contribution defines the exchange-correlation potential as its functional derivative:
 
 \begin{equation}
-    v_\mathrm{xc}([n],\vec{r}\,)\coloneqq\frac{\delta E_\mathrm{xc}[n]}{\delta n(\vec{r}\,)}
+    v_\mathrm{xc}([n];\vec{r}\,)\coloneqq\frac{\delta E_\mathrm{xc}[n]}{\delta n(\vec{r}\,)}
     \label{xc_potential_definition}
 \end{equation}
 
 It is therefore convenient to introduce the effective Kohn--Sham potential:
 
 \begin{equation}
-    v^\mathrm{eff}([n],\vec{r}\,)
+    v^\mathrm{eff}([n];\vec{r}\,)
     \coloneqq v_\mathrm{ext}(\vec{r}\,)
-    + v_\mathrm{H}([n],\vec{r}\,)
-    + v_\mathrm{xc}([n],\vec{r}\,)
+    + v_\mathrm{H}([n];\vec{r}\,)
+    + v_\mathrm{xc}([n];\vec{r}\,)
     \label{KS_effective_potential_definition}
 \end{equation}
 
-here, the corresponding one-body operator is $\hat{v}^\mathrm{eff}\coloneqq v^\mathrm{eff}([n],\hat{\vec{r}}\,)$.
+here, the corresponding one-body operator is $\hat{v}^\mathrm{eff}\coloneqq v^\mathrm{eff}([n];\hat{\vec{r}}\,)$.
 
 Next, in a basis where the Lagrange-multiplier matrix is diagonal,
 the stationarity condition can be expressed as the Kohn--Sham equations:
 
 \begin{equation}
-    \left[-\frac{1}{2}\nabla^2+v^\mathrm{eff}([n],\vec{r}\,)\right]\psi_i(\vec{r}\,)
+    \left[-\frac{1}{2}\nabla^2+v^\mathrm{eff}([n];\vec{r}\,)\right]\psi_i(\vec{r}\,)
     =\lambda_i\,\psi_i(\vec{r}\,)
     \label{KS_equation}
 \end{equation}
 
-here, the orbitals are determined by the effective potential $v^\mathrm{eff}([n],\vec{r}\,)$,
+here, the orbitals are determined by the effective potential $v^\mathrm{eff}([n];\vec{r}\,)$,
 therefore, at self-consistency, we may write:
 
 \begin{equation}
@@ -2382,7 +2382,7 @@ therefore, at self-consistency, we may write:
 \end{equation}
 
 Since the Kohn--Sham density expression~\eqref{density_with_occupation_number} gives $n(\vec{r}\,)$ once the orbitals are known.
-Meanwhile, $v^\mathrm{eff}([n],\vec{r}\,)$ depends on $n(\vec{r}\,)$ through equation~\eqref{KS_effective_potential_definition}.
+Meanwhile, $v^\mathrm{eff}([n];\vec{r}\,)$ depends on $n(\vec{r}\,)$ through equation~\eqref{KS_effective_potential_definition}.
 Therefore, equations~\eqref{KS_effective_potential_definition} and~\eqref{KS_equation} are solved self-consistently.
 
 Conclusively, in term of that the density functional theory is built on the Hohenberg--Kohn theorem.
@@ -2397,7 +2397,7 @@ Meanwhile, the density and the external potential are in bijective correspondenc
 \end{equation}
 
 In the Kohn--Sham auxiliary system, the electrons are noninteracting.
-Therefore, the only potential entering the one-body Hamiltonian is the effective potential $v^\mathrm{eff}([n],\vec{r}\,)$.
+Therefore, the only potential entering the one-body Hamiltonian is the effective potential $v^\mathrm{eff}([n];\vec{r}\,)$.
 It plays the role of the external potential for the auxiliary system.
 
 Consequently, we may also view the Kohn--Sham potential as being uniquely linked to the density:
@@ -2405,20 +2405,20 @@ Consequently, we may also view the Kohn--Sham potential as being uniquely linked
 \begin{equation}
     n(\vec{r}\,)
     \,\longleftrightarrow\,
-    \left[v^\mathrm{eff}([n],\vec{r}\,)\right]
+    \left[v^\mathrm{eff}([n];\vec{r}\,)\right]
     \label{KS_density_potential_correspondence}
 \end{equation}
 
 here, $\left[v(\vec{r}\,)\right]$ denotes the equivalence class of potentials that differ only by an additive $\mathrm{const.}$
 
-This show that once the density $n(\vec{r}\,)$ is given, the effective potential $v^\mathrm{eff}([n],\vec{r}\,)$ is fixed up to an additive constant.
+This show that once the density $n(\vec{r}\,)$ is given, the effective potential $v^\mathrm{eff}([n];\vec{r}\,)$ is fixed up to an additive constant.
 
 Therefore, in this noninteracting Kohn--Sham auxiliary system, we process the corresponding total ground state energy as a functional of the density, and denote it by $E_s[n]$.
 
 For the auxiliary noninteracting system, we achieve the Kohn--Sham auxiliary energy functional:
 
 \begin{equation}
-    E_s[n]=T_s[n]+\int\dif{\vec{r}}\,n(\vec{r}\,)v^\mathrm{eff}([n],\vec{r}\,)
+    E_s[n]=T_s[n]+\int\dif{\vec{r}}\,n(\vec{r}\,)v^\mathrm{eff}([n];\vec{r}\,)
     \label{KS_auxiliary_energy_functional}
 \end{equation}
 
@@ -2437,7 +2437,7 @@ This auxiliary system is constructed to reproduce the same density:
 
 here, $n_s(\vec{r}\,)$ denotes the ground state density of the auxiliary noninteracting system,
 it is obtained from a set of one-electron orbitals.
-The corresponding one-body potential is denoted by the Kohn--Sham potential $v^\mathrm{eff}([n],\vec{r}\,)$.
+The corresponding one-body potential is denoted by the Kohn--Sham potential $v^\mathrm{eff}([n];\vec{r}\,)$.
 It is chosen such that equation~\eqref{KS_same_density_assumption} holds.
 
 Consequently, the interacting many-electron problem is mapped to a noninteracting orbital problem with the same density.
@@ -2539,9 +2539,9 @@ In coordinate representation, equation~\eqref{density_with_occupation_number} sh
 \end{equation}
 
 Next, we collect the potential terms including
-the Hartree potential $v_\mathrm{H}([n],\vec{r}\,)$ in equation~\eqref{Hartree_potential_definition},
-and the exchange-correlation potential $v_\mathrm{xc}([n],\vec{r}\,)$ in equation~\eqref{xc_potential_definition}.
-Together with the external potential, they form the Kohn--Sham effective potential $v^\mathrm{eff}([n],\vec{r}\,)$ in equation~\eqref{KS_effective_potential_definition}.
+the Hartree potential $v_\mathrm{H}([n];\vec{r}\,)$ in equation~\eqref{Hartree_potential_definition},
+and the exchange-correlation potential $v_\mathrm{xc}([n];\vec{r}\,)$ in equation~\eqref{xc_potential_definition}.
+Together with the external potential, they form the Kohn--Sham effective potential $v^\mathrm{eff}([n];\vec{r}\,)$ in equation~\eqref{KS_effective_potential_definition}.
 
 Accordingly, we combine the kinetic term and the effective potential into a single one-body operator.
 This allows us to write the Kohn--Sham equations in a compact form.
@@ -2576,7 +2576,7 @@ Then equation~\eqref{KS_equation_general_dirac} reduces to the standard eigenval
 In coordinate representation, using equation~\eqref{KS_equation_diagonal_dirac}, we arrive at the Kohn--Sham equations:
 
 \begin{equation}
-    \left[-\frac{1}{2}\nabla^2+v^\mathrm{eff}([n],\vec{r}\,)\right]\psi_i(\vec{r}\,)
+    \left[-\frac{1}{2}\nabla^2+v^\mathrm{eff}([n];\vec{r}\,)\right]\psi_i(\vec{r}\,)
     =\lambda_i\,\psi_i(\vec{r}\,)
     \label{KS_equation}
 \end{equation}
@@ -2670,45 +2670,65 @@ We will introduce approximations for it later.
 
 \subsection{Remarks on the Kohn--Sham solutions}
 
-In practical applications, we need to solve the Kohn--Sham equations~\eqref{KS_equations_expansion}.
-Once the Kohn--Sham one-body operator is specified, we diagonalize it.
-We then obtain the eigenvalues $\lambda_i$ and the eigenvectors $\ket{\psi_i}$.
-From these orbitals, we construct the electron density through equation~\eqref{density_with_occupation_number}.
+In practical applications, we have to solve the Kohn--Sham equations~\eqref{KS_equations_expansion}.
+Once the Kohn--Sham one-body operator is specified,
+we diagonalize it and obtain the eigenvalues $\lambda_i$ and eigenvectors $\ket{\psi_i}$.
+We then construct the electron density through equation~\eqref{density_with_occupation_number}.
 
-However, the density is not only an output of the problem, but also an input.
+However, the density $n(\vec{r}\,)$ is both an output and an input.
 To build the Kohn--Sham operator, we need the Hartree potential $v_\mathrm{H}([n];\vec{r}\,)$,
 and the exchange-correlation potential $v_\mathrm{xc}([n];\vec{r}\,)$.
 Both of them depend on the density.
-Therefore, the Kohn--Sham equations form a self-consistent problem.
+Therefore, the Kohn--Sham equations are solved self-consistently.
 
-Consequently, we utilize an iterative procedure.
-We start from a trial density,
-and construct the potentials and diagonalize the Kohn--Sham operator.
+Consequently, we utilize an iterative self-consistent field scheme.
+Let us start from a trial density.
+We construct the potentials, and diagonalize the Kohn--Sham operator.
 This generates updated orbitals and a new density.
 We repeat these steps until the density is converged.
-This is the self-consistent field scheme.
-It was first introduced by Hartree for the Hartree equations.
-The Kohn--Sham equations can be solved in the same way.
-We will return to the practical details later.
+This idea goes back to Hartree and his self-consistent treatment.
 
---- draft ---
+Next, we comment on the Kohn--Sham eigenvalues $\lambda_i$.
+They have the dimension of energy,
+but they belong to the auxiliary noninteracting system.
+Therefore, in general, they are not electron removal or addition energies,
+which are defined by total-energy differences.
 
-Let us start from the Kohn--Sham equations~\eqref{KS_equations_expansion}.
-Like the Schrödinger equation, they have the dimension of energies.
-Our question here would be: are these eigen values $\lambda$ the energies of the electrons.
+There is an important exception for finite systems.
+For the exact functional, the highest occupied Kohn--Sham eigenvalue equals the negative ionization energy.
+For extended systems, similar interpretations have been discussed,
+but no general proof is available in the same simple form.
 
-The eigenvalues of Kohn--Sham equations are not removal energies, because...
+In practice, we work with approximate functionals.
+The resulting eigenvalues are widely used in materials science, for instance as a useful reference for band-structure analysis.
+We will return to this point later.
 
-In practice, the case first of all in the specific case of finite system,
-The last occupied eigenvalue has a physical meaning.
-It is the ionization energy,
-the energy required to ionize an atom or molecule by one single charge. There are attempts to extend this definition to solid systems as well.
-But so far no demonstration is given for the general situation.
+Afterwards, we look into the Kohn--Sham potential.
+It consists of the external potential, the Hartree potential, and the exchange-correlation potential:
 
-Then, we extend this definition to solid system, 
-However, approximated eigenvalues are on a different level of theory.
-And as we will see, the Kohn-Sham eigenvalues are well used in material science. We will get back to this point in the following section.
-Now, final question, what is inside the Kohn-Sham potential? The Kohn-Sham hamiltonian contains the kinetic part and three potentials that constitute the Kohn-Sham potential. 
+\begin{equation}
+    v_\mathrm{KS}([n];\vec{r}\,)
+    = v_\mathrm{ext}(\vec{r}\,)
+    + v_\mathrm{H}([n];\vec{r}\,)
+    + v_\mathrm{xc}([n];\vec{r}\,)
+    \label{KS_potential_decomposition}
+\end{equation}
+
+here, the external potential $v_\mathrm{ext}(\vec{r}\,)$ is fixed by the ionic structure.
+The Hartree potential $v_\mathrm{H}([n];\vec{r}\,)$ is a known functional of the density.
+The main difficulty lies in the exchange-correlation potential $v_\mathrm{xc}([n];\vec{r}\,)$.
+
+Moreover, the exchange-correlation potential $v_\mathrm{xc}([n];\vec{r}\,)$ is a static and local potential.
+In coordinate representation, it acts as a multiplicative operator.
+Nevertheless, its functional dependence on the density can be highly nontrivial.
+Therefore, practical density functional theory relies on approximations for the exchange-correlation energy functional $E_\mathrm{xc}[n]$,
+or equivalently for $v_\mathrm{xc}([n];\vec{r}\,)$.
+We will discuss these approximations later.
+
+Finally, we can also approach $v_\mathrm{xc}$ in reverse.
+If an accurate density is available from an exact method,
+we can infer a Kohn--Sham potential that reproduces it.
+This inverse Kohn--Sham idea helps us understand the structure of $v_\mathrm{xc}$ and why it is difficult to approximate.
 
 \subsection{The Hartree equations}
 
