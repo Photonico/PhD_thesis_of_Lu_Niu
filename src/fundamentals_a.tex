@@ -2670,7 +2670,7 @@ We will introduce approximations for it later.
 
 \subsection{Remarks on the Kohn--Sham solutions}
 
-In practical applications, we need to solve the Kohn--Sham equations~\eqref{KS_equation_expansion}.
+In practical applications, we need to solve the Kohn--Sham equations~\eqref{KS_equations_expansion}.
 Once the Kohn--Sham one-body operator is specified, we diagonalize it.
 We then obtain the eigenvalues $\lambda_i$ and the eigenvectors $\ket{\psi_i}$.
 From these orbitals, we construct the electron density through equation~\eqref{density_with_occupation_number}.
@@ -2692,6 +2692,23 @@ The Kohn--Sham equations can be solved in the same way.
 We will return to the practical details later.
 
 --- draft ---
+
+Let us start from the Kohn--Sham equations~\eqref{KS_equations_expansion}.
+Like the Schrödinger equation, they have the dimension of energies.
+Our question here would be: are these eigen values $\lambda$ the energies of the electrons.
+
+The eigenvalues of Kohn--Sham equations are not removal energies, because...
+
+In practice, the case first of all in the specific case of finite system,
+The last occupied eigenvalue has a physical meaning.
+It is the ionization energy,
+the energy required to ionize an atom or molecule by one single charge. There are attempts to extend this definition to solid systems as well.
+But so far no demonstration is given for the general situation.
+
+Then, we extend this definition to solid system, 
+However, approximated eigenvalues are on a different level of theory.
+And as we will see, the Kohn-Sham eigenvalues are well used in material science. We will get back to this point in the following section.
+Now, final question, what is inside the Kohn-Sham potential? The Kohn-Sham hamiltonian contains the kinetic part and three potentials that constitute the Kohn-Sham potential. 
 
 \subsection{The Hartree equations}
 
