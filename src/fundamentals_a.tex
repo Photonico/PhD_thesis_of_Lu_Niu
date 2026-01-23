@@ -1139,7 +1139,10 @@ Consequently, the ground state expectation value of any observable $\hat{O}$ may
 \label{functional_from_external_potential}
 \end{equation}
 
-The central move of density functional theory is to further replace the dependence on the wave function by a dependence on the electron density $n(\vec{r}\,)$. The key question is whether the map from external potential $v_\mathrm{ext}(\vec{r}\,)$ to the ground state density $n(\vec{r}\,)$ is likewise invertible in an appropriate sense. The first Hohenberg--Kohn theorem answers this in the affirmative for non-degenerate ground states: the ground state density $n(\vec{r}\,)$ uniquely determines $v_\mathrm{ext}(\vec{r}\,)$ (again up to an additive constant), and hence uniquely fixes the hamiltonian and the corresponding ground state. In this sense, all ground state observables can be regarded as functionals of the density:
+The central move of density functional theory is to further replace the dependence on the wave function by a dependence on the electron density $n(\vec{r}\,)$.
+The key question is whether the map from external potential $v_\mathrm{ext}(\vec{r}\,)$ to the ground state density $n(\vec{r}\,)$ is likewise invertible in an appropriate sense.
+The first Hohenberg--Kohn theorem answers this in the affirmative for non-degenerate ground states: the ground state density $n(\vec{r}\,)$ uniquely determines $v_\mathrm{ext}(\vec{r}\,)$ (again up to an additive constant), and hence uniquely fixes the hamiltonian and the corresponding ground state.
+In this sense, all ground state observables can be regarded as functionals of the density:
 
 \begin{equation}
     \braket{\hat{O}}=O[n(\vec{r}\,)]
@@ -2667,33 +2670,28 @@ We will introduce approximations for it later.
 
 \subsection{Remarks on the Kohn--Sham solutions}
 
-In the real world, 
+In practical applications, we need to solve the Kohn--Sham equations~\eqref{KS_equation_expansion}.
+Once the Kohn--Sham one-body operator is specified, we diagonalize it.
+We then obtain the eigenvalues $\lambda_i$ and the eigenvectors $\ket{\psi_i}$.
+From these orbitals, we construct the electron density through equation~\eqref{density_with_occupation_number}.
 
-
---- draft
-
-In practical applications, we need to solve the Kohn--Sham equations in
-equation~\eqref{KS_equations_expansion}.
-If the Kohn--Sham one-body operator is known, we can diagonalize it and obtain the eigenvalues $\lambda_i$
-and the eigenvectors $\ket{\psi_i}$.
-We then construct the electron density through equation~\eqref{density_with_occupation_number}.
-
-However, the density is not only an output of the problem.
-It is also an input.
-To build the Kohn--Sham operator, we need the Hartree potential $v_\mathrm{H}([n];\vec{r}\,)$
+However, the density is not only an output of the problem, but also an input.
+To build the Kohn--Sham operator, we need the Hartree potential $v_\mathrm{H}([n];\vec{r}\,)$,
 and the exchange-correlation potential $v_\mathrm{xc}([n];\vec{r}\,)$.
-Both depend on the density.
+Both of them depend on the density.
 Therefore, the Kohn--Sham equations form a self-consistent problem.
 
-Consequently, we naturally arrive at an iterative procedure.
-We start from a trial density.
-We construct the potentials and diagonalize the Kohn--Sham operator.
-This gives updated orbitals and a new density.
+Consequently, we utilize an iterative procedure.
+We start from a trial density,
+and construct the potentials and diagonalize the Kohn--Sham operator.
+This generates updated orbitals and a new density.
 We repeat these steps until the density is converged.
 This is the self-consistent field scheme.
 It was first introduced by Hartree for the Hartree equations.
 The Kohn--Sham equations can be solved in the same way.
 We will return to the practical details later.
+
+--- draft ---
 
 \subsection{The Hartree equations}
 
@@ -2714,3 +2712,6 @@ We will return to the practical details later.
 % Consequently
 % Finally
 % Ultimately
+
+% Since there does not exists the idealized models in the real world,
+% approximations are always inevitable.
