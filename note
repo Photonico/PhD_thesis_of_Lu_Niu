@@ -1,4 +1,14 @@
-# DFT note contents
+# VSCode login
+
+1. Open DevTools (F12) → Network.
+
+2. Go to https://www.overleaf.com (or open a project) and refresh.
+
+3. Click a `/project/...` request in the Network list.
+
+4. In Request Headers, copy the full Cookie: ... value (e.g., overleaf_session2=...; sharelatex.sid=......) and paste it.
+
+# DFT contents
 
 Lecture Ⅰ. From Many-body Quantum Mechanics to Density Functional Theory
 
@@ -38,3 +48,5 @@ For a time-independent hamiltonian $\hat{H}$, the formal solution of the Schröd
     \ket{\psi(t)}=\hat{U}(t,t_0)\ket{\psi(t_0)}
     \label{state_time_evolution}
 \end{equation}
+
+
