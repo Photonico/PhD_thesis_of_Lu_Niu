@@ -10,11 +10,11 @@ In classical physics, we started with Newton’s laws to describe the motions. L
 \subsection{Time-dependent Schrödinger equation}
 
 In quantum mechanics, the state of a physical system at a given instant is represented by a vector $\ket{\psi(t)}$.
-In a chosen representation, the same state can be expressed as a wave function.
+In a chosen representation, the same state can be expressed as a ction.
 This state vector encapsulates all information required to predict the statistics of measurement outcomes at time $t$.
 
 Next, we switch to the coordinate representation.
-We define the wave function as the projection of the state onto the position eigenbasis
+We define the ction as the projection of the state onto the position eigenbasis
 
 \begin{equation}
     \psi(\vec{r}\,,t)\coloneqq \braket{\vec{r}\,|\psi(t)}
@@ -2683,14 +2683,14 @@ Therefore, the Kohn--Sham equations are solved self-consistently.
 
 Consequently, we utilize an iterative self-consistent field scheme.
 Let us start from a trial density.
-We construct the potentials, and diagonalize the Kohn--Sham operator.
+We construct the potentials and diagonalize the Kohn--Sham operator.
 This generates updated orbitals and a new density.
 We repeat these steps until the density is converged.
 This idea goes back to Hartree and his self-consistent treatment.
 
 Next, we comment on the Kohn--Sham eigenvalues $\lambda_i$.
 They have the dimension of energy,
-but they belong to the auxiliary noninteracting system.
+but belong to the auxiliary noninteracting system.
 Therefore, in general, they are not electron removal or addition energies,
 which are defined by total-energy differences.
 
@@ -2699,7 +2699,7 @@ For the exact functional, the highest occupied Kohn--Sham eigenvalue equals the 
 For extended systems, similar interpretations have been discussed,
 but no general proof is available in the same simple form.
 
-In practice, we work with approximate functionals.
+In fact, we work with approximate functionals.
 The resulting eigenvalues are widely used in materials science, for instance as a useful reference for band-structure analysis.
 We will return to this point later.
 
@@ -2729,6 +2729,16 @@ Finally, we can also approach $v_\mathrm{xc}$ in reverse.
 If an accurate density is available from an exact method,
 we can infer a Kohn--Sham potential that reproduces it.
 This inverse Kohn--Sham idea helps us understand the structure of $v_\mathrm{xc}$ and why it is difficult to approximate.
+
+% draft
+
+
+\subsection{The Hartree equations}
+
+% Suppose that if we are able to solve the Kohn--Sham equations,
+% by the expression of density~\eqref{density_with_occupation_number},
+% Once, we have a fine set of eigenvectors $\psi$, with which we can calculate the electron density $n(r)$
+
 
 \subsection{The Hartree equations}
 
