@@ -233,13 +233,13 @@ Subsequently, we explicitly express each physical contribution to the many-body 
 \begin{align}
 \text{Electron kinetic energy:}\qquad & \hat{T}_\mathrm{e} = -\frac{1}{2}\sum_i\nabla_i^2
 \label{electrons_kinetic} \\
-\text{Electron--nucleus Coulomb attraction:}\qquad & \hat{V}_\mathrm{eN}=-\sum_{i,I}\frac{Z_I}{\left|\vec{r}_i-\vec{R}_I\right|}
+\text{Electron-nucleus Coulomb attraction:}\qquad & \hat{V}_\mathrm{eN}=-\sum_{i,I}\frac{Z_I}{\left|\vec{r}_i-\vec{R}_I\right|}
 \label{electrons_nucleus_Coulomb} \\
-\text{Electron--electron Coulomb repulsion:}\qquad & \hat{V}_\mathrm{ee}=\sum_{i<j}\frac{1}{\left|\vec{r}_i-\vec{r}_j\right|}
+\text{Electron-electron Coulomb repulsion:}\qquad & \hat{V}_\mathrm{ee}=\sum_{i<j}\frac{1}{\left|\vec{r}_i-\vec{r}_j\right|}
 \label{electrons_Coulomb} \\
 \text{Nuclear kinetic energy:}\qquad & \hat{T}_\mathrm{N} = -\sum_I\frac{1}{2M_I}\nabla_I^2
 \label{nucleus_kinetic} \\
-\text{Nucleus--nucleus Coulomb repulsion:}\qquad & \hat{V}_\mathrm{NN} = \sum_{I<J}\frac{Z_I\,Z_J}{\left|\vec{R}_I-\vec{R}_J\right|}
+\text{Nucleus-nucleus Coulomb repulsion:}\qquad & \hat{V}_\mathrm{NN} = \sum_{I<J}\frac{Z_I\,Z_J}{\left|\vec{R}_I-\vec{R}_J\right|}
 \label{nucleus_interaction}
 \end{align}
 
@@ -268,7 +268,7 @@ For the fixed nuclear positions, the stationary electronic states satisfy the ei
 where $N$ denotes the number of electrons, and $x_i\coloneqq(\vec{r}_i,\sigma_i)$.
 
 In practice, due to the significantly greater mass of nuclei compared to electrons, we commonly adopt the clamped-nuclei approximation.
-For fixed nuclear positions, the nucleus--nucleus repulsion contributes an additive constant given by $\hat{V}_\mathrm{NN}(\{\vec{R}_I\})$.
+For fixed nuclear positions, the Nucleus-nucleus repulsion contributes an additive constant given by $\hat{V}_\mathrm{NN}(\{\vec{R}_I\})$.
 It is given by $\hat{V}_\mathrm{NN}(\{\vec{R}_I\})$:
 
 \begin{equation}
@@ -291,14 +291,14 @@ We define the external potential as:
 
 \begin{equation}
     v_\mathrm{ext}(\vec{r}\,)\coloneqq -\sum_{I}\frac{Z_I}{\left|\vec{r}-\vec{R}_I\right|}
-\label{one-body_Electron--nucleus}
+\label{one-body_Electron-nucleus}
 \end{equation}
 
-For fixed nuclear positions $\{\vec{R}_I\}$, the Electron--nucleus Coulomb attraction term $\hat{V}_\mathrm{eN}$ can be rewritten in the one-body form:
+For fixed nuclear positions $\{\vec{R}_I\}$, the Electron-nucleus Coulomb attraction term $\hat{V}_\mathrm{eN}$ can be rewritten in the one-body form:
 
 \begin{equation}
     \hat{V}_\mathrm{eN}=\sum_i v_\mathrm{ext}(\hat{\vec{r}}_i)
-\label{Electron--nucleus_one-body_form}
+\label{Electron-nucleus_one-body_form}
 \end{equation}
 
 In what follows, we denote the corresponding operator by $\hat{V}_\mathrm{ext}=\sum_i v_\mathrm{ext}(\hat{\vec{r}}_i)$.
@@ -590,8 +590,8 @@ we work at the fixed nuclear coordinates $\{\vec{R}_I\}$ and write the clamped n
 
 In the present electronic many-body problem within the Born--Oppenheimer approximation, 
 the nuclear coordinates are clamped, and the nuclear-nuclear repulsion becomes a negligible constant. 
-We can identify the interaction operator as the electron--electron Coulomb repulsion~\eqref{electrons_Coulomb},
-and the external potential acting on the electrons is the attractive Electron--nucleus interaction, which can be written as a sum of one-body terms~\eqref{Electron--nucleus_one-body_form}:
+We can identify the interaction operator as the Electron-electron Coulomb repulsion~\eqref{electrons_Coulomb},
+and the external potential acting on the electrons is the attractive Electron-nucleus interaction, which can be written as a sum of one-body terms~\eqref{Electron-nucleus_one-body_form}:
 
 \begin{equation}
 \begin{aligned}
@@ -772,7 +772,7 @@ The expectation value reduces to:
 
 Thus, rather than computing the full many-body integral, we need only determine the one-body density $n(x_1)$.
 
-Next, consider the electron--electron Coulomb interaction energy:
+Next, consider the Electron-electron Coulomb interaction energy:
 
 \begin{equation}
 \begin{aligned}
@@ -1073,7 +1073,7 @@ Since the many-body wave function $\Psi$ encodes the full complexity of the syst
 
 To answer this, we recall that the quantum dynamics is specified once the hamiltonian is given.
 
-For electronic systems, the kinetic energy operator $\hat{T}$ and the interaction operator $\hat{V}_\mathrm{int}$ have fixed forms, and in the present context we identify $\hat{V}_\mathrm{int}$ with the electron--electron interaction $\hat{V}_\mathrm{ee}$ as in equation~\eqref{reduced_operator_definition}.
+For electronic systems, the kinetic energy operator $\hat{T}$ and the interaction operator $\hat{V}_\mathrm{int}$ have fixed forms, and in the present context we identify $\hat{V}_\mathrm{int}$ with the Electron-electron interaction $\hat{V}_\mathrm{ee}$ as in equation~\eqref{reduced_operator_definition}.
 
 Therefore, the system-specific information enters primarily through the external potential $\hat{V}_\mathrm{ext}$, which is generated by the nuclei and any applied fields.
 With this in mind, we review the form of hamiltonian:
@@ -1089,9 +1089,9 @@ Let us return to the reduced expression for the hamiltonian in equation~\eqref{a
 We observe that two terms are universal, in the sense that their operator forms do not depend on the specific system.
 
 These are the electronic kinetic energy~\eqref{electrons_kinetic},
-and the electron--electron Coulomb repulsion~\eqref{electrons_Coulomb}.
+and the Electron-electron Coulomb repulsion~\eqref{electrons_Coulomb}.
 
-Here, we say the external potential $\hat{V}_\mathrm{ext}$ is not universal, because it depends on the specific nuclear configuration and any applied fields. In contrast, the electronic kinetic energy and the electron--electron Coulomb interaction have fixed operator forms.
+Here, we say the external potential $\hat{V}_\mathrm{ext}$ is not universal, because it depends on the specific nuclear configuration and any applied fields. In contrast, the electronic kinetic energy and the Electron-electron Coulomb interaction have fixed operator forms.
 Therefore, the external potential is the system-defining ingredient: it distinguishes one many-electron system from another.
 
 In fact, once $\hat{V}_\mathrm{ext}$ is given, the hamiltonian is fully specified.
@@ -1151,10 +1151,9 @@ In this sense, all ground state observables can be regarded as functionals of th
 
 In the presence of ground state degeneracy, the strict one-to-one correspondence must be understood at the level of the ground state subspace; certain observables may then depend on the particular choice of degenerate ground state. This issue is commonly handled through an ensemble formulation (or via a symmetry-breaking limit) to recover a single-valued density-functional description.
 
-% \subsection{Uniqueness of the ground state with respect to the external potential}
 \subsection{The Hohenberg--Kohn theorem}
 
-In this subsection, we focus on the Hohenberg--Kohn theorem, which provides the conceptual foundation of density functional theory: for a fixed form of electron--electron interaction and a non-degenerate ground state, it establishes a one-to-one correspondence between the external potential and the ground state density (up to an additive constant), and it leads to a variational characterization of the ground state.
+In this subsection, we focus on the Hohenberg--Kohn theorem, which provides the conceptual foundation of density functional theory: for a fixed form of Electron-electron interaction and a non-degenerate ground state, it establishes a one-to-one correspondence between the external potential and the ground state density (up to an additive constant), and it leads to a variational characterization of the ground state.
 
 We begin by proving that, up to an additive constant in the potential, the ground state wave function is uniquely determined by the external potential.
 
@@ -1523,7 +1522,7 @@ This motivates introducing the universal Hohenberg--Kohn functional $E_\mathrm{H
 \label{functional_HK_definition}
 \end{equation}
 
-For a fixed form of the electron--electron interaction, $E_\mathrm{HK}[n]$ is independent of the external potential $v_\mathrm{ext}(\vec{r}\,)$,
+For a fixed form of the Electron-electron interaction, $E_\mathrm{HK}[n]$ is independent of the external potential $v_\mathrm{ext}(\vec{r}\,)$,
 and the system specific information enters only through $v_\mathrm{ext}$.
 
 This allows us to separate out the external potential contribution and write:
@@ -1670,10 +1669,10 @@ Accordingly, we write the Thomas--Fermi total energy functional:
 \end{equation}
 
 According to the local form of the external potential energy functional~\eqref{functional_Eext_local_form}, and the external contribution is given by the coupling between $n(\vec{r}\,)$ and $v_\mathrm{ext}(\vec{r}\,)$.
-For fixed nuclear positions, the external potential $v_\mathrm{ext}(\vec{r}\,)$ is a prescribed function of $\vec{r}$ defined in equation~\eqref{one-body_Electron--nucleus}, therefore, the external contribution $E_\mathrm{ext}[n]$ is linear in the electron density $n(\vec{r}\,)$.
+For fixed nuclear positions, the external potential $v_\mathrm{ext}(\vec{r}\,)$ is a prescribed function of $\vec{r}$ defined in equation~\eqref{one-body_Electron-nucleus}, therefore, the external contribution $E_\mathrm{ext}[n]$ is linear in the electron density $n(\vec{r}\,)$.
 
 We next approximate the interaction energy functional by its classical Coulomb form associated with the density distribution.
-Using the electron--electron Coulomb repulsion~\eqref{electrons_Coulomb}, we introduce the Hartree term:
+Using the Electron-electron Coulomb repulsion~\eqref{electrons_Coulomb}, we introduce the Hartree term:
 
 \begin{equation}
 \begin{aligned}
@@ -1687,7 +1686,7 @@ here $E_{\Delta\mathrm{int}}[n]$ collects the nonclassical part of the interacti
 In the Hartree approximation, we set $E_{\Delta\mathrm{int}}[n]=0$.
 
 We next approximate the interaction energy functional by the classical Coulomb energy associated with the density distribution.
-Using the electron--electron Coulomb repulsion~\eqref{electrons_Coulomb}, we introduce the Hartree term:
+Using the Electron-electron Coulomb repulsion~\eqref{electrons_Coulomb}, we introduce the Hartree term:
 
 Therefore, we introduce a Hartree approximation at the level of the interaction energy by replacing $E_\mathrm{int}[n]$ with its classical counterpart $E_\mathrm{H}[n]$:
 
@@ -1738,7 +1737,7 @@ with the Thomas--Fermi constant:
 This expression holds for a spin-unpolarized system.
 
 Therefore, we arrive at the full Thomas--Fermi energy functional as a functional of the electron density.
-The nucleus--nucleus contribution $E_\mathrm{NN}$ is omitted since it does not depend on $n(\vec{r}\,)$.
+The Nucleus-nucleus contribution $E_\mathrm{NN}$ is omitted since it does not depend on $n(\vec{r}\,)$.
 
 \begin{equation}
 \begin{aligned}
@@ -2081,7 +2080,7 @@ For questions outside this design target, the auxiliary system provides no guara
 
 Subsequently, we consider an interacting many-electron system and its corresponding auxiliary system.
 
-The difficulty comes from the electron--electron interaction.
+The difficulty comes from the Electron-electron interaction.
 In the auxiliary system, we drop this interaction and compensate for it by adjusting a one-body potential.
 
 Therefore, the problem can be stated as follows.
@@ -2093,7 +2092,7 @@ Next, let us recall the Born--Oppenheimer hamiltonian in equation~\eqref{BO_hami
 and write the many-electron schrödinger equation for the interacting system.
 
 To make the role of $E_\mathrm{NN}(\{\vec{R}_I\})$ explicit,
-we separate the $\hat{H}_\mathrm{BO}(\{\vec{R}_I\})$ into an electronic operator $\hat{H}_\mathrm{el}(\{\vec{R}_I\})$ and the constant nucleus--nucleus term.
+we separate the $\hat{H}_\mathrm{BO}(\{\vec{R}_I\})$ into an electronic operator $\hat{H}_\mathrm{el}(\{\vec{R}_I\})$ and the constant Nucleus-nucleus term.
 Then, we write the eigenvalue equation as:
 
 \begin{equation}
@@ -2133,7 +2132,7 @@ here, $E$ and $\Psi$ denote the electronic eigenvalue and eigenstate of interest
 where the constant term $E_\mathrm{NN}(\{\vec{R}_I\})$ has been absorbed into $E$.
 In particular, the ground state determines the target density $n(\vec{r}\,)$ through equation~\eqref{one-body_density}.
 
-Moreover, we introduce a noninteracting auxiliary system by dropping the electron--electron interaction,
+Moreover, we introduce a noninteracting auxiliary system by dropping the Electron-electron interaction,
 and compensating for its effect through a tuned one-body potential $v_\mathrm{aux}(\vec{r}\,)$:
 
 \begin{equation}
@@ -2725,29 +2724,108 @@ Therefore, practical density functional theory relies on approximations for the 
 or equivalently for $v_\mathrm{xc}([n];\vec{r}\,)$.
 We will discuss these approximations later.
 
-Finally, we can also approach $v_\mathrm{xc}$ in reverse.
-If an accurate density is available from an exact method,
-we can infer a Kohn--Sham potential that reproduces it.
-This inverse Kohn--Sham idea helps us understand the structure of $v_\mathrm{xc}$ and why it is difficult to approximate.
+\subsection{Structure and construction of the Kohn--Sham potential}
 
-% draft
+After the general framework of the Kohn--Sham construction has been established through equations~\eqref{density_with_occupation_number},~\eqref{KS_equations_expansion}, and~\eqref{KS_potential_decomposition},
+it allows us to examine several simple exactly solvable model systems.
+These examples demonstrate the exact form that the Kohn–Sham potential can take.
+They also elucidate why its exchange-correlation component can remain highly nontrivial even though it is still a local multiplicative potential.
 
+Firstly, let us consider a one-dimensional harmonic well containing two interacting electrons.
+In atomic units, the interacting problem is defined by the Schrödinger equation:
 
-\subsection{The Hartree equations}
+\begin{equation}
+    \hat{H}\Psi(x_1,x_2)=E\Psi(x_1,x_2)
+    \label{interacting_Schrodinger_equation_1D_two_electrons}
+\end{equation}
 
-% Suppose that if we are able to solve the Kohn--Sham equations,
-% by the expression of density~\eqref{density_with_occupation_number},
-% Once, we have a fine set of eigenvectors $\psi$, with which we can calculate the electron density $n(r)$
+with the many-body hamiltonian:
 
+\begin{equation}
+    \hat{H}
+    = \sum_{i=1}^{2}\left[-\frac{1}{2}\frac{\dif^2}{\dif x_i^2}+v_\mathrm{ext}(x_i)\right]
+    + v_\mathrm{ee}(x_1,x_2)
+    \label{interacting_hamiltonian_1D_two_electrons}
+\end{equation}
+
+here, $v_\mathrm{ee}(x_1,x_2)$ refers to the two-body interaction: $v_\mathrm{ee}(x_1,x_2)=(|x_1-x_2|)^{-1}$.
+and for a harmonic confinement, we have the following form:
+
+\begin{equation}
+    v_\mathrm{ext}(x)=\frac{1}{2}\Omega^2 x^2
+    \label{harmonic_external_potential_1D}
+\end{equation}
+
+here, $\Omega$ refers to the angular frequency of harmonic confinement.
+
+By solving the Schrödinger equation~\eqref{interacting_Schrodinger_equation_1D_two_electrons},
+we get the exact density:
+
+\begin{equation}
+    n(x)=2\int\dif{x_2}\,|\Psi(x,x_2)|^2
+    \label{exact_density_from_interacting_wave_function_1D}
+\end{equation}
+
+Next, we inquire which local Kohn--Sham potential reproduces the exact density given in equation~\eqref{exact_density_from_interacting_wave_function_1D}.
+
+In one dimension, equations~\eqref{KS_equations_expansion} and~\eqref{density_with_occupation_number} may be written schematically as:
+
+\begin{equation}
+    \left[-\frac{1}{2}\frac{\dif^2}{\dif x^2} + v_\mathrm{KS}([n];x)\right]\psi_i(x)
+    = \lambda_i\psi_i(x)
+    \label{KS_equation_1D_schematic}
+\end{equation}
+
+as well as the corresponding density function:
+
+\begin{equation}
+    n_\mathrm{KS}(x)=\sum_i f_i |\psi_i(x)|^2
+    \label{KS_density_1D_schematic}
+\end{equation}
+
+The Kohn--Sham construction requires the construction of a noninteracting auxiliary system.
+This auxiliary system is designed to reproduce exactly the same ground-state electron density as the true interacting system:
+
+\begin{equation}
+    n_\mathrm{KS}(x)=n(x)
+    \label{KS_exact_density_matching_1D}
+\end{equation}
+
+If one starts from the naive choice:
+
+\begin{equation}
+    v_\mathrm{KS}([n];x)=v_\mathrm{ext}(x)
+    \label{naive_KS_choice_external_only_1D}
+\end{equation}
+
+Therefore, the density from equation~\eqref{KS_density_1D_schematic} is concentrated near the center of the well.
+This concentration is generally excessive.
+Therefore, the missing interaction effects are encoded directly in the local Kohn--Sham potential.
+In the exact solution, this potential develops a central bump.
+To isolate the interaction-induced contribution,
+we define the Hartree-exchange-correlation potential:
+
+\begin{equation}
+    v_\mathrm{Hxc}([n];x)\coloneqq
+    v_\mathrm{KS}([n];x)-v_\mathrm{ext}(x).
+    \label{Hxc_potential_definition_1D}
+\end{equation}
+
+Accordingly, we identify the central bump as a feature of $v_\mathrm{Hxc}([n];x)$.
+It suppresses charge accumulation near the origin and enforces equation~\eqref{KS_exact_density_matching_1D}.
+We demonstrate this qualitative structure schematically in figure~\ref{figure_inverse_KS_harmonic_well_schematic}.
 
 \subsection{The Hartree equations}
 
 \newpage
-\section{Approximation and strategies in density functional theory}
 
-\subsection{The local density approximation}
+\section{Exchange-correlation functional}
 
-% P2, 50:00
+% draft
+
+% \section{Approximation and strategies in density functional theory}
+
+% \subsection{The local density approximation}
 
 % Firstly
 % Secondly
