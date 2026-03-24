@@ -2227,13 +2227,16 @@ the expectation value of the kinetic energy operator becomes a sum over orbitals
 \label{Ts_orbital_sum}
 \end{equation}
 
-here, $f_i$ is the occupation number of the spin-orbital $\psi_i$, satisfying:
+here, $f_i$ denotes the occupation number of the spin-orbital $\psi_i$ and satisfies:
 
 \begin{equation}
-\begin{cases}
-    0\le f_i\le 1 \\
-    \sum_i f_i = N
-\end{cases}
+\left\{
+\begin{aligned}
+    \,&0\le f_i\le 1              &&\qquad  \text{Pauli bound} \\
+    \,&\textstyle{\sum_i}f_i = N  &&\qquad  \text{particle-number constraint}
+\end{aligned}
+\right.
+\qquad
 \label{occupation_constraints}
 \end{equation}
 
@@ -2354,25 +2357,25 @@ while the exchange-correlation contribution defines the exchange-correlation pot
 It is therefore convenient to introduce the effective Kohn--Sham potential:
 
 \begin{equation}
-    v^\mathrm{eff}([n];\vec{r}\,)
+    v_\mathrm{eff}([n];\vec{r}\,)
     \coloneqq v_\mathrm{ext}(\vec{r}\,)
     + v_\mathrm{H}([n];\vec{r}\,)
     + v_\mathrm{xc}([n];\vec{r}\,)
     \label{KS_effective_potential_definition}
 \end{equation}
 
-here, the corresponding one-body operator is $\hat{v}^\mathrm{eff}\coloneqq v^\mathrm{eff}([n];\hat{\vec{r}}\,)$.
+here, the corresponding one-body operator is $\hat{v}_\mathrm{eff}\coloneqq v_\mathrm{eff}([n];\hat{\vec{r}}\,)$.
 
 Next, in a basis where the Lagrange-multiplier matrix is diagonal,
 the stationarity condition can be expressed as the Kohn--Sham equations:
 
 \begin{equation}
-    \left[-\frac{1}{2}\nabla^2+v^\mathrm{eff}([n];\vec{r}\,)\right]\psi_i(\vec{r}\,)
+    \left[-\frac{1}{2}\nabla^2+v_\mathrm{eff}([n];\vec{r}\,)\right]\psi_i(\vec{r}\,)
     =\lambda_i\,\psi_i(\vec{r}\,)
     \label{KS_equation}
 \end{equation}
 
-here, the orbitals are determined by the effective potential $v^\mathrm{eff}([n];\vec{r}\,)$,
+here, the orbitals are determined by the effective potential $v_\mathrm{eff}([n];\vec{r}\,)$,
 therefore, at self-consistency, we may write:
 
 \begin{equation}
@@ -2381,7 +2384,7 @@ therefore, at self-consistency, we may write:
 \end{equation}
 
 Since the Kohn--Sham density expression~\eqref{density_with_occupation_number} gives $n(\vec{r}\,)$ once the orbitals are known.
-Meanwhile, $v^\mathrm{eff}([n];\vec{r}\,)$ depends on $n(\vec{r}\,)$ through equation~\eqref{KS_effective_potential_definition}.
+Meanwhile, $v_\mathrm{eff}([n];\vec{r}\,)$ depends on $n(\vec{r}\,)$ through equation~\eqref{KS_effective_potential_definition}.
 Therefore, equations~\eqref{KS_effective_potential_definition} and~\eqref{KS_equation} are solved self-consistently.
 
 Conclusively, in term of that the density functional theory is built on the Hohenberg--Kohn theorem.
@@ -2396,7 +2399,7 @@ Meanwhile, the density and the external potential are in bijective correspondenc
 \end{equation}
 
 In the Kohn--Sham auxiliary system, the electrons are noninteracting.
-Therefore, the only potential entering the one-body Hamiltonian is the effective potential $v^\mathrm{eff}([n];\vec{r}\,)$.
+Therefore, the only potential entering the one-body Hamiltonian is the effective potential $v_\mathrm{eff}([n];\vec{r}\,)$.
 It plays the role of the external potential for the auxiliary system.
 
 Consequently, we may also view the Kohn--Sham potential as being uniquely linked to the density:
@@ -2404,20 +2407,20 @@ Consequently, we may also view the Kohn--Sham potential as being uniquely linked
 \begin{equation}
     n(\vec{r}\,)
     \,\longleftrightarrow\,
-    \left[v^\mathrm{eff}([n];\vec{r}\,)\right]
+    \left[v_\mathrm{eff}([n];\vec{r}\,)\right]
     \label{KS_density_potential_correspondence}
 \end{equation}
 
 here, $\left[v(\vec{r}\,)\right]$ denotes the equivalence class of potentials that differ only by an additive $\mathrm{const.}$
 
-This show that once the density $n(\vec{r}\,)$ is given, the effective potential $v^\mathrm{eff}([n];\vec{r}\,)$ is fixed up to an additive constant.
+This show that once the density $n(\vec{r}\,)$ is given, the effective potential $v_\mathrm{eff}([n];\vec{r}\,)$ is fixed up to an additive constant.
 
 Therefore, in this noninteracting Kohn--Sham auxiliary system, we process the corresponding total ground state energy as a functional of the density, and denote it by $E_s[n]$.
 
 For the auxiliary noninteracting system, we achieve the Kohn--Sham auxiliary energy functional:
 
 \begin{equation}
-    E_s[n]=T_s[n]+\int\dif{\vec{r}}\,n(\vec{r}\,)v^\mathrm{eff}([n];\vec{r}\,)
+    E_s[n]=T_s[n]+\int\dif{\vec{r}}\,n(\vec{r}\,)v_\mathrm{eff}([n];\vec{r}\,)
     \label{KS_auxiliary_energy_functional}
 \end{equation}
 
@@ -2436,7 +2439,7 @@ This auxiliary system is constructed to reproduce the same density:
 
 here, $n_s(\vec{r}\,)$ denotes the ground state density of the auxiliary noninteracting system,
 it is obtained from a set of one-electron orbitals.
-The corresponding one-body potential is denoted by the Kohn--Sham potential $v^\mathrm{eff}([n];\vec{r}\,)$.
+The corresponding one-body potential is denoted by the Kohn--Sham potential $v_\mathrm{eff}([n];\vec{r}\,)$.
 It is chosen such that equation~\eqref{KS_same_density_assumption} holds.
 
 Consequently, the interacting many-electron problem is mapped to a noninteracting orbital problem with the same density.
@@ -2540,15 +2543,15 @@ In coordinate representation, equation~\eqref{density_with_occupation_number} sh
 Next, we collect the potential terms including
 the Hartree potential $v_\mathrm{H}([n];\vec{r}\,)$ in equation~\eqref{Hartree_potential_definition},
 and the exchange-correlation potential $v_\mathrm{xc}([n];\vec{r}\,)$ in equation~\eqref{xc_potential_definition}.
-Together with the external potential, they form the Kohn--Sham effective potential $v^\mathrm{eff}([n];\vec{r}\,)$ in equation~\eqref{KS_effective_potential_definition}.
+Together with the external potential, they form the Kohn--Sham effective potential $v_\mathrm{eff}([n];\vec{r}\,)$ in equation~\eqref{KS_effective_potential_definition}.
 
 Accordingly, we combine the kinetic term and the effective potential into a single one-body operator.
 This allows us to write the Kohn--Sham equations in a compact form.
 Therefore, we define the Kohn--Sham one-body operator as:
 
 \begin{equation}
-    \hat{h}^\mathrm{KS}\coloneqq
-    \hat{K}+\hat{v}^\mathrm{eff}
+    \hat{h}_\mathrm{KS}\coloneqq
+    \hat{K}+\hat{v}_\mathrm{eff}
     \label{KS_one_body_hamiltonian_definition}
 \end{equation}
 
@@ -2556,9 +2559,8 @@ Finally, from the stationarity condition in equation~\eqref{KS_stationarity_cond
 we obtain a set of one-particle equations:
 
 \begin{equation}
-    \hat{h}^\mathrm{KS}\ket{\psi_i}
-    =
-    \sum_j \lambda_{ij}\ket{\psi_j}
+    \hat{h}_\mathrm{KS}\ket{\psi_i} =
+    \sum_j\lambda_{ij}\ket{\psi_j}
     \label{KS_equation_general_dirac}
 \end{equation}
 
@@ -2567,7 +2569,7 @@ We choose a basis where it is diagonal,
 Then equation~\eqref{KS_equation_general_dirac} reduces to the standard eigenvalue form:
 
 \begin{equation}
-    \hat{h}^\mathrm{KS}\ket{\psi_i}=
+    \hat{h}_\mathrm{KS}\ket{\psi_i} =
     \lambda_i\ket{\psi_i}
     \label{KS_equation_diagonal_dirac}
 \end{equation}
@@ -2575,8 +2577,8 @@ Then equation~\eqref{KS_equation_general_dirac} reduces to the standard eigenval
 In coordinate representation, using equation~\eqref{KS_equation_diagonal_dirac}, we arrive at the Kohn--Sham equations:
 
 \begin{equation}
-    \left[-\frac{1}{2}\nabla^2+v^\mathrm{eff}([n];\vec{r}\,)\right]\psi_i(\vec{r}\,)
-    =\lambda_i\,\psi_i(\vec{r}\,)
+    \left[-\frac{1}{2}\nabla^2+v_\mathrm{eff}([n];\vec{r}\,)\right]\psi_i(\vec{r}\,)
+    = \lambda_i\,\psi_i(\vec{r}\,)
     \label{KS_equation}
 \end{equation}
 
@@ -2602,7 +2604,7 @@ For ease of understanding and calculation, we expand the Kohn--Sham equation~\eq
 \end{equation}
 
 Consequently, we have obtained the one-particle equations for the auxiliary noninteracting system,
-which means each electron moves in the effective potential $v^\mathrm{eff}([n];\vec{r}\,)$.
+which means each electron moves in the effective potential $v_\mathrm{eff}([n];\vec{r}\,)$.
 
 Together with equation~\eqref{density_with_occupation_number},
 we can solve the Kohn-Sham equations~\eqref{KS_equations_expansion},
@@ -2625,8 +2627,8 @@ and impose the corresponding positivity and normalization conditions:
 \begin{equation}
 \left\{
 \begin{aligned}
-    n(\vec{r}\,)&\ge 0 \\
-    \int\dif{\vec{r}}\,n(\vec{r}\,)&=N
+    \,&n(\vec{r}\,) \ge 0 \\
+    \,&\int\dif{\vec{r}}\,n(\vec{r}\,) = N
 \end{aligned}\right.
 \label{admissible_density_conditions}
 \end{equation}
@@ -2644,23 +2646,23 @@ Therefore, at the minimizing density $n_0(\vec{r}\,)$,
 we obtain the Euler--Lagrange condition for the auxiliary noninteracting energy functional $E_s[n]$:
 
 \begin{equation}
-    \frac{\delta T_s[n]}{\delta n(\vec{r}\,)}\big|_{n_0}+v^\mathrm{eff}([n_0];\vec{r}\,)=\lambda
+    \frac{\delta T_s[n]}{\delta n(\vec{r}\,)}\big|_{n_0}+v_\mathrm{eff}([n_0];\vec{r}\,)=\lambda
     \label{KS_auxiliary_EL_condition}
 \end{equation}
 
 here, $\lambda$ is treated as a constant.
 
-Therefore, we equivalently express the Euler--Lagrange condition as an explicit expression for the effective potential $v^\mathrm{eff}([n_0];\vec{r}\,)$:
+Therefore, we equivalently express the Euler--Lagrange condition as an explicit expression for the effective potential $v_\mathrm{eff}([n_0];\vec{r}\,)$:
 
 \begin{equation}
-    v^\mathrm{eff}([n_0];\vec{r}\,)
-    =\lambda-\frac{\delta T_s[n]}{\delta n(\vec{r}\,)}\big|_{n_0}
-    =-\frac{\delta T_s[n]}{\delta n(\vec{r}\,)}\big|_{n_0}+\mathrm{const.}
+    v_\mathrm{eff}([n_0];\vec{r}\,)
+    = \lambda-\frac{\delta T_s[n]}{\delta n(\vec{r}\,)}\big|_{n_0}
+    = -\frac{\delta T_s[n]}{\delta n(\vec{r}\,)}\big|_{n_0}+\mathrm{const.}
     \label{KS_auxiliary_v_eff_from_Ts}
 \end{equation}
 
 Consequently, if the functional derivative of the noninteracting kinetic energy functional $T_s[n]$ is well behaved around the ground state density $n_0(\vec{r}\,)$,
-the Kohn--Sham effective potential $v^\mathrm{eff}(\vec{r}\,)$ can be constructed to reproduce $n_0(\vec{r}\,)$.
+the Kohn--Sham effective potential $v_\mathrm{eff}(\vec{r}\,)$ can be constructed to reproduce $n_0(\vec{r}\,)$.
 In this sense, the auxiliary noninteracting system idea is reasonable.
 
 In practice, the Kohn--Sham equations give the exact electron density in principle.
@@ -2724,6 +2726,228 @@ Therefore, practical density functional theory relies on approximations for the 
 or equivalently for $v_\mathrm{xc}([n];\vec{r}\,)$.
 We will discuss these approximations later.
 
+% \subsection{Structure and construction of the Kohn--Sham potential}
+
+% After the general framework of the Kohn--Sham construction has been established through equations~\eqref{density_with_occupation_number},~\eqref{KS_equations_expansion}, and~\eqref{KS_potential_decomposition},
+% it allows us to examine several simple exactly solvable model systems.
+% These examples demonstrate the exact form that the Kohn–Sham potential can take.
+% They also elucidate why its exchange-correlation component can remain highly nontrivial even though it is still a local multiplicative potential.
+
+% Firstly, let us consider a one-dimensional harmonic well containing two interacting electrons.
+% In atomic units, the interacting problem is defined by the Schrödinger equation:
+
+% \begin{equation}
+%     \hat{H}\Psi(x_1,x_2)=E\Psi(x_1,x_2)
+%     \label{interacting_Schrodinger_equation_1D_two_electrons}
+% \end{equation}
+
+% with the many-body hamiltonian:
+
+% \begin{equation}
+%     \hat{H}
+%     = \sum_{i=1}^{2}\left[-\frac{1}{2}\frac{\dif^2}{\dif x_i^2}+v_\mathrm{ext}(x_i)\right]
+%     + v_\mathrm{ee}(x_1,x_2)
+%     \label{interacting_hamiltonian_1D_two_electrons}
+% \end{equation}
+
+% here, $v_\mathrm{ee}(x_1,x_2)$ refers to the two-body interaction: $v_\mathrm{ee}(x_1,x_2)=(|x_1-x_2|)^{-1}$.
+% and for a harmonic confinement, we have the following form:
+
+% \begin{equation}
+%     v_\mathrm{ext}(x)=\frac{1}{2}\Omega^2 x^2
+%     \label{harmonic_external_potential_1D}
+% \end{equation}
+
+% here, $\Omega$ refers to the angular frequency of harmonic confinement.
+
+% By solving the Schrödinger equation~\eqref{interacting_Schrodinger_equation_1D_two_electrons},
+% we get the exact density:
+
+% \begin{equation}
+%     n(x)=2\int\dif{x_2}\,|\Psi(x,x_2)|^2
+%     \label{exact_density_from_interacting_wave_function_1D}
+% \end{equation}
+
+% Secondly, we inquire which local Kohn--Sham potential reproduces the exact density given in equation~\eqref{exact_density_from_interacting_wave_function_1D}.
+
+% In one dimension, equations~\eqref{KS_equations_expansion} and~\eqref{density_with_occupation_number} may be written schematically as:
+
+% \begin{equation}
+%     \left[-\frac{1}{2}\frac{\dif^2}{\dif x^2} + v_\mathrm{KS}([n];x)\right]\psi_i(x)
+%     = \lambda_i\psi_i(x)
+%     \label{KS_equation_1D_schematic}
+% \end{equation}
+
+% as well as the corresponding density function:
+
+% \begin{equation}
+%     n_\mathrm{KS}(x)=\sum_i f_i |\psi_i(x)|^2
+%     \label{KS_density_1D_schematic}
+% \end{equation}
+
+% The Kohn--Sham construction requires the construction of a noninteracting auxiliary system.
+% This auxiliary system is designed to reproduce exactly the same ground-state electron density as the true interacting system:
+
+% \begin{equation}
+%     n_\mathrm{KS}(x)=n(x)
+%     \label{KS_exact_density_matching_1D}
+% \end{equation}
+
+% If one starts from the naive choice:
+
+% \begin{equation}
+%     v_\mathrm{KS}([n];x)=v_\mathrm{ext}(x)
+%     \label{naive_KS_choice_external_only_1D}
+% \end{equation}
+
+% Therefore, the density from equation~\eqref{KS_density_1D_schematic} is concentrated near the center of the well.
+% This concentration is generally excessive.
+% Therefore, the missing interaction effects are encoded directly in the local Kohn--Sham potential.
+% In the exact solution, this potential develops a central bump.
+% To isolate the interaction-induced contribution,
+% we define the Hartree-exchange-correlation potential:
+
+% \begin{equation}
+%     v_\mathrm{Hxc}([n];x)\coloneqq
+%     v_\mathrm{KS}([n];x)-v_\mathrm{ext}(x).
+%     \label{Hxc_potential_definition_1D}
+% \end{equation}
+
+% Accordingly, we can process this central bump as a feature of the Hartree-exchange--correlation potential $v_\mathrm{Hxc}([n];x)$.
+% It works to suppress charge accumulation near the origin and thereby enforce equation~\eqref{KS_exact_density_matching_1D}.
+% Therefore, the exact Kohn--Sham potential $v_\mathrm{KS}([n];x)$ is not merely a shifted harmonic well.
+
+% Instead, both the exact Kohn--Sham potential $v_\mathrm{KS}([n];x)$ and the Hartree-exchange-correlation potential $v_\mathrm{Hxc}([n];x)$ develop a central bump.
+% As a result, the auxiliary density $n_\mathrm{KS}(x)$ is pushed away from the origin and becomes identical to the exact interacting density.
+
+% Next, an asymmetric double-well potential provides an even more instructive example.
+% In this interacting system,
+% the electron-electron repulsion may force the two electrons to occupy different wells.
+% By contrast, in our auxiliary noninteracting system,
+% both electrons would tend to occupy the energetically more favorable well.
+
+% Therefore, the exact Kohn--Sham potential $v_\mathrm{KS}([n];x)$ must develop an additional structure that redistributes the charge correctly.
+% Schematically, it demonstrates as:
+
+% \begin{equation}
+% v_\mathrm{KS}([n];x)\approx\left\{
+% \begin{aligned}
+%     \,&v_L(x)      &&\qquad \text{$x$ in the left well} \\
+%     \,&v_R(x)+C    &&\qquad \text{$x$ in the right well}
+% \end{aligned}
+% \right.
+% \qquad
+% \label{KS_step_structure_schematic}
+% \end{equation}
+
+% here, the approximately constant shift $C$ denotes the offset between the two spatial regions.
+% This step raises one well relative to the other and thereby enforces the correct density distribution.
+
+% Subsequently, we explain the origin of both the central bump and the inter-well step from the Kohn--Sham potential decomposition in equation~\eqref{KS_potential_decomposition}.
+% The external potential has already been fixed, and the Hartree potential $v_\mathrm{H}([n];x)$ has already been defined in equation~\eqref{Hartree_potential_definition}.
+
+% Therefore, the remaining freedom lies mainly in the exchange-correlation potential $v_\mathrm{xc}([n];x)$ defined in equation~\eqref{xc_potential_definition}.
+% To clarify the origin of this structure, we decompose the density as follows:
+
+% \begin{equation}
+%     n(x)=n_1(x)+n_2(x).
+%     \label{density_decomposition_two_electrons_1D}
+% \end{equation}
+
+% here, $n_1(x)$ and $n_2(x)$ denote the density contributions associated with the two electrons.
+% Since the Hartree potential is linear in the density, the corresponding Hartree potential demonstrates as:
+
+% \begin{equation}
+%     v_\mathrm{H}([n];x) = v_\mathrm{H}([n_1];x) + v_\mathrm{H}([n_2];x).
+%     \label{Hartree_potential_density_decomposition_1D}
+% \end{equation}
+
+% For electron $1$, the relevant repulsion should come only from electron $2$.
+% We therefore keep the Hartree potential $v_\mathrm{H}([n_2];x)$ and remove the self-interaction contribution $v_\mathrm{H}([n_1];x)$.
+
+% Since the Kohn--Sham potential must remain a single local multiplicative potential acting on all auxiliary electrons, the exchange-correlation potential $v_\mathrm{xc}([n];x)$ must compensate for this self-interaction contribution within the same local framework.
+
+% Therefore, the exact exchange-correlation potential $v_\mathrm{xc}([n];x)$ may contain bumps, barriers, and steps.
+% In particular, a pronounced step may appear in a low-density region.
+% This makes it difficult to construct accurate approximations to the exchange-correlation potential $v_\mathrm{xc}([n];x)$.
+
+% Consequently, we turn to the inverse point of view.
+% If an accurate density is available from an exact method, we seek a local potential that reproduces it.
+% This defines the inverse Kohn--Sham problem.
+
+% Let us denote the the target density by $n_\mathrm{tar}(x)$.
+% We here require:
+
+% \begin{equation}
+%     n_\mathrm{KS}(x)=n_\mathrm{tar}(x).
+%     \label{inverse_KS_target_density_condition}
+% \end{equation}
+
+% and we take the zeroth-step Kohn--Sham potential as:
+
+% \begin{equation}
+%     v_\mathrm{KS}^{(0)}(x)=v_\mathrm{ext}(x).
+%     \label{inverse_KS_initial_guess}
+% \end{equation}
+
+% We then solve the Kohn--Sham equation, equation~\eqref{KS_equation_1D_schematic}, and obtain the density at the $k$th iteration:
+
+% \begin{equation}
+%     n^{(k)}(x)=\sum_i f_i \lvert\psi_i^{(k)}(x)\rvert^2.
+%     \label{inverse_KS_density_from_kth_iteration}
+% \end{equation}
+
+% here, $f_i$ denotes the occupation number of the $i$th Kohn--Sham orbital $\psi_i^{(k)}(x)$.
+% We update the Kohn--Sham potential according to the density mismatch.
+% A simple schematic iteration is:
+
+% \begin{equation}
+%     v_\mathrm{KS}^{(k+1)}(x) = v_\mathrm{KS}^{(k)}(x)
+%     + \mu \left[\left(n^{(k)}(x)\right)^p - \left(n_\mathrm{tar}(x)\right)^p\right],
+%     \label{inverse_KS_density_update}
+% \end{equation}
+
+% here, $\mu$ denotes a mixing parameter and $p$ denotes an additional stability parameter.
+
+% Accordingly, the Kohn--Sham potential is increased where the density is overestimated and decreased where it is underestimated.
+% At convergence, we obtain:
+
+% \begin{equation}
+% \left\{
+% \begin{aligned}
+%     \,& n^{(k)}(x)              &&\rightarrow n_\mathrm{tar}(x)   \\
+%     \,& v_\mathrm{KS}^{(k)}(x)  &&\rightarrow v_\mathrm{KS}([n_\mathrm{tar}];x)
+% \end{aligned}
+% \right.
+% \qquad
+% \text{as $k\rightarrow\infty$} 
+% \label{inverse_KS_fixed_point_condition}
+% \end{equation}
+
+% ---
+% % draft
+% Finally, after reconstructing the exact Kohn--Sham potential $v_\mathrm{KS}([n];x)$, we can extract its individual contributions.
+% From equation~\eqref{Hxc_potential_definition_1D}, we obtain the Hartree--exchange--correlation potential $v_\mathrm{Hxc}([n];x)$ as:
+
+% \begin{equation}
+%     v_\mathrm{Hxc}([n];x) =
+%     v_\mathrm{KS}([n];x)-v_\mathrm{ext}(x).
+%     \label{inverse_KS_Hxc_extraction_1D}
+% \end{equation}
+
+% Since the target density $n_\mathrm{tar}(x)$ is already known, we can also evaluate the Hartree potential $v_\mathrm{H}([n];x)$ directly from equation~\eqref{Hartree_potential_definition}.
+
+% We then define the exact exchange-correlation potential $v_\mathrm{xc}([n];x)$ as:
+
+% \begin{equation}
+%     v_\mathrm{xc}([n];x) = v_\mathrm{KS}([n];x) - v_\mathrm{ext}(x) - v_\mathrm{H}([n];x)
+%     \label{inverse_KS_xc_extraction_1D}
+% \end{equation}
+
+% here, exactly solvable model systems give direct access to the exact structure of the exchange-correlation potential.
+% They show that even a static local potential may develop sharp and highly nontrivial spatial features.
+% This makes it difficult to construct accurate approximations to the exchange-correlation potential.
+
 \subsection{Structure and construction of the Kohn--Sham potential}
 
 After the general framework of the Kohn--Sham construction has been established through equations~\eqref{density_with_occupation_number},~\eqref{KS_equations_expansion}, and~\eqref{KS_potential_decomposition},
@@ -2766,7 +2990,7 @@ we get the exact density:
     \label{exact_density_from_interacting_wave_function_1D}
 \end{equation}
 
-Next, we inquire which local Kohn--Sham potential reproduces the exact density given in equation~\eqref{exact_density_from_interacting_wave_function_1D}.
+Secondly, we inquire which local Kohn--Sham potential reproduces the exact density given in equation~\eqref{exact_density_from_interacting_wave_function_1D}.
 
 In one dimension, equations~\eqref{KS_equations_expansion} and~\eqref{density_with_occupation_number} may be written schematically as:
 
@@ -2783,8 +3007,7 @@ as well as the corresponding density function:
     \label{KS_density_1D_schematic}
 \end{equation}
 
-The Kohn--Sham construction requires the construction of a noninteracting auxiliary system.
-This auxiliary system is designed to reproduce exactly the same ground-state electron density as the true interacting system:
+The Kohn--Sham auxiliary system is designed to reproduce exactly the same ground-state electron density as the true interacting system:
 
 \begin{equation}
     n_\mathrm{KS}(x)=n(x)
@@ -2811,9 +3034,92 @@ we define the Hartree-exchange-correlation potential:
     \label{Hxc_potential_definition_1D}
 \end{equation}
 
-Accordingly, we identify the central bump as a feature of $v_\mathrm{Hxc}([n];x)$.
-It suppresses charge accumulation near the origin and enforces equation~\eqref{KS_exact_density_matching_1D}.
-We demonstrate this qualitative structure schematically in figure~\ref{figure_inverse_KS_harmonic_well_schematic}.
+Accordingly, we can process this central bump as a feature of the Hartree-exchange--correlation potential $v_\mathrm{Hxc}([n];x)$.
+It works to suppress charge accumulation near the origin and thereby enforce equation~\eqref{KS_exact_density_matching_1D}.
+Therefore, the exact Kohn--Sham potential $v_\mathrm{KS}([n];x)$ is not merely a shifted harmonic well.
+
+Next, an asymmetric double-well potential provides an even more instructive example.
+In this interacting system,
+the electron-electron repulsion may force the two electrons to occupy different wells.
+By contrast, in our auxiliary noninteracting system,
+both electrons would tend to occupy the energetically more favorable well.
+
+Therefore, the exact Kohn--Sham potential $v_\mathrm{KS}([n];x)$ must develop an additional structure that redistributes the charge correctly.
+Schematically, it demonstrates as:
+
+\begin{equation}
+v_\mathrm{KS}([n];x)\approx\left\{
+\begin{aligned}
+    \,&v_L(x)      &&\qquad \text{$x$ in the left well} \\
+    \,&v_R(x)+C    &&\qquad \text{$x$ in the right well}
+\end{aligned}
+\right.
+\qquad
+\label{KS_step_structure_schematic}
+\end{equation}
+
+here, the approximately constant shift $C$ denotes the offset between the two spatial regions.
+This step raises one well relative to the other and thereby enforces the correct density distribution.
+
+Subsequently, from the Kohn--Sham potential decomposition in equation~\eqref{KS_potential_decomposition},
+the external potential has already been fixed, and the Hartree potential $v_\mathrm{H}([n];x)$ has already been defined in equation~\eqref{Hartree_potential_definition}.
+Therefore, the remaining freedom lies mainly in the exchange-correlation potential $v_\mathrm{xc}([n];x)$ defined in equation~\eqref{xc_potential_definition}.
+Hence, the exact exchange-correlation potential $v_\mathrm{xc}([n];x)$ may contain bumps, barriers, and steps.
+In particular, a pronounced step may appear in a low-density region.
+This makes it difficult to construct accurate approximations to the exchange-correlation potential $v_\mathrm{xc}([n];x)$.
+
+Consequently, we turn to the inverse point of view.
+If an accurate density is available from an exact method, we seek a local potential that reproduces it.
+This defines the inverse Kohn--Sham problem.
+
+Let us denote the the target density by $n_\mathrm{tar}(x)$.
+We here require:
+
+\begin{equation}
+    n_\mathrm{KS}(x)=n_\mathrm{tar}(x).
+    \label{inverse_KS_target_density_condition}
+\end{equation}
+
+and we take the zeroth-step Kohn--Sham potential as:
+
+\begin{equation}
+    v_\mathrm{KS}^{(0)}(x)=v_\mathrm{ext}(x).
+    \label{inverse_KS_initial_guess}
+\end{equation}
+
+We then solve the Kohn--Sham equation, equation~\eqref{KS_equation_1D_schematic}, and obtain the density at the $k$th iteration:
+
+\begin{equation}
+    n^{(k)}(x)=\sum_i f_i \lvert\psi_i^{(k)}(x)\rvert^2.
+    \label{inverse_KS_density_from_kth_iteration}
+\end{equation}
+
+here, $f_i$ denotes the occupation number of the $i$th Kohn--Sham orbital $\psi_i^{(k)}(x)$.
+We update the Kohn--Sham potential according to the density mismatch.
+A simple schematic iteration is:
+
+\begin{equation}
+    v_\mathrm{KS}^{(k+1)}(x) = v_\mathrm{KS}^{(k)}(x)
+    + \mu \left[\left(n^{(k)}(x)\right)^p - \left(n_\mathrm{tar}(x)\right)^p\right],
+    \label{inverse_KS_density_update}
+\end{equation}
+
+here, $\mu$ denotes a mixing parameter and $p$ denotes an additional stability parameter.
+
+Accordingly, the Kohn--Sham potential is increased where the density is overestimated and decreased where it is underestimated.
+At convergence, we arrive at:
+
+\begin{equation}
+\left\{
+\begin{aligned}
+    \,& n^{(k)}(x)              &&\rightarrow n_\mathrm{tar}(x)   \\
+    \,& v_\mathrm{KS}^{(k)}(x)  &&\rightarrow v_\mathrm{KS}([n_\mathrm{tar}];x)
+\end{aligned}
+\right.
+\qquad
+\text{as $k\rightarrow\infty$} 
+\label{inverse_KS_fixed_point_condition}
+\end{equation}
 
 \subsection{The Hartree equations}
 
