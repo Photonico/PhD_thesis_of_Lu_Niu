@@ -5,7 +5,8 @@
 
 Imagine that we are watching a microscopic play, with electrons and atoms as the actors. You blink, and suddenly the stage configuration has shifted. Something has changed. But how do we describe this evolution in physical language?
 
-In classical physics, we started with Newton’s laws to describe the motions. Later, lagrangian and hamiltonian mechanics provided another description of physics from the perspective of degrees of freedom, symmetries, and conservation laws. Then came the great 20th-century revolution in physics, which developed the consensus of the microscopic scale, and quantum mechanics emerged. In this new framework, that role is played by the Schrödinger equation.
+In classical physics, we started with Newton's laws to describe the motions.
+Later, lagrangian and hamiltonian mechanics provided another description of physics from the perspective of degrees of freedom, symmetries, and conservation laws. Then came the great 20th-century revolution in physics, which developed the consensus of the microscopic scale, and quantum mechanics emerged. In this new framework, that role is played by the Schrödinger equation.
 
 \subsection{Time-dependent Schrödinger equation}
 
@@ -14,7 +15,7 @@ In a chosen representation, the same state can be expressed as a wave function.
 This state vector encapsulates all information required to predict the statistics of measurement outcomes at time $t$.
 
 Next, we switch to the coordinate representation.
-We define the ction as the projection of the state onto the position eigenbasis
+We define the wave function as the projection of the state onto the position eigenbasis:
 
 \begin{equation}
     \psi(\vec{r}\,,t)\coloneqq \braket{\vec{r}\,|\psi(t)}
@@ -422,7 +423,7 @@ This defines the electron density at point $\vec{r}$.
 Physically, $n(\vec{r}\,)\mathrm{d}^3r$ is the expected number of electrons in the volume element $\mathrm{d}^3r$ around $\vec{r}$.
 In density functional theory, $n(\vec{r}\,)$ serves as the fundamental variable replacing the full many-body wave function.  
 
-It can be shown that the ground state density $n(\vec{r}\,)$ uniquely determines the external potential up to an additive constant, and hence all ground state observables can be written as functionals of $n(\vec{r}\,)$.
+It can be shown that the ground-state density $n(\vec{r}\,)$ uniquely determines the external potential up to an additive constant, and hence all ground-state observables can be written as functionals of $n(\vec{r}\,)$.
 This dramatic reduction comes from a 3$N$-dimensional wave function to a three-dimensional density, which lies at the heart of density functional theory, making formerly intractable many-body problems computationally feasible.
 
 The time-dependent density-functional theory relies on the continuity equation in the Heisenberg picture.
@@ -506,7 +507,7 @@ and current $\vec{j}(\vec{r},t)=\bra{\Psi_\mathrm{H}}\hat{\vec{j}}_\mathrm{H}(\v
 This exact conservation law shows that once the initial density $n(\vec{r},0)$ and the time-dependent external potential $v_\mathrm{ext}(\vec{r},t)$ are specified, the density and current uniquely evolve according to equations \eqref{continuity_operator} and \eqref{continuity_expectation}. This observation is the cornerstone of time-dependent density functional theory, where one seeks to replace the full many-body wave function by the basic variable $n(\vec{r},t)$ together with suitable current functionals.
 
 \newpage
-\section{Continue to consider the many-body problem}
+\section{Toward the many-body problem}
 
 In fact, a many-body wave function explicitly depends on all particle coordinates, making it practically impossible to calculate and store exactly due to the exponential increase in complexity with particle number.
 
@@ -520,6 +521,8 @@ We can extract them from the wave function through expectation values:
 \end{equation}
 
 \subsection{An introduction to grand canonical ensemble}
+
+Although the present chapter mainly focuses on the zero-temperature ground-state formalism, it is useful to briefly record the grand-canonical framework because it provides the natural extension to finite temperature and varying particle number.
 
 Before proceeding further, it is essential to introduce the grand canonical ensemble, as it naturally accommodates quantum many-body systems exchanging particles and energy with external reservoirs. This treatment is particularly crucial in density functional theory calculations for realistic materials, where fluctuations in particle number and thermal effects are common.
 
@@ -540,13 +543,13 @@ where the summation runs over all quantum states labeled by $\alpha$. Here, $\Ps
 
 In quantum many-body theory and calculation, employing the grand canonical ensemble allows systematic inclusion of particle number fluctuations and thermal equilibrium effects, providing a robust and realistic statistical-mechanical description essential for accurate modeling of complex quantum materials.
 
-In what follows, we mainly focus on the ground state setting: zero temperature and fixed particle number; while the grand-canonical form is noted for completeness and later extensions.
+In what follows, we mainly focus on the ground-state setting: zero temperature and fixed particle number; while the grand-canonical form is noted for completeness and later extensions.
 
 \subsection{From wave function to practical functionals}
 
 Let us stay at zero temperature and fixed particle number $N$.
 Consider the operator for the measurement $\sum_{i,j,\cdots}\hat\Omega\left(x_i,x_j,\cdots\right)$,
-and the ground state $N$-body wave function $\Psi(x_1,x_2,\cdots,x_N)$.
+and the ground-state $N$-body wave function $\Psi(x_1,x_2,\cdots,x_N)$.
 By inserting resolutions of the identity in the coordinate basis for all particles, $I=\int \mathrm{d}x\,\ket{x}\bra{x}$~\cite{shankar2017quantum},
 we can represent the expectation value as:
 
@@ -570,9 +573,12 @@ here, the square brackets $[\Psi]$ (rather than parentheses) emphasize that $\Om
 
 A functional simply assigns a number to a function. In our case of equation~\eqref{observables_N-body}, its form is a known integral. However, evaluating it requires the exact many-body wave function, which we generally cannot compute or store. Moreover, integration acts as an averaging operation that smooths out microscopic fluctuations, so only the coarse-grained features of the integrand contribute to the result.
 
-Consequently, we can discard irrelevant details of the many-body wave function and work with simplified approximations tailored to specific observables. Normally, we use approximate wave functions: methods such as Hartree--Fock, configuration interaction, and quantum Monte Carlo exploit this idea by retaining the dominant components of the wave function while approximating or sampling the rest.
+Consequently, we can discard irrelevant details of the many-body wave function and work with simplified approximations tailored to specific observables.
+In practice, we often use approximate wave functions: methods such as Hartree--Fock, configuration interaction, and quantum Monte Carlo follow this strategy by retaining the dominant components of the wave function while approximating or sampling the rest.
 
-A more radical question is whether we need to work with explicit wave functions at all, or if the expectation value in equation~\eqref{observables_N-body} can be reformulated entirely in terms of other, more tractable quantities.
+A more radical question is whether we need to work with explicit wave functions at all, or whether the expectation value in equation~\eqref{observables_N-body} can be reformulated entirely in terms of other, more tractable quantities.
+
+To address this question, it is natural to start from the energy, since the ground-state is determined variationally through the Hamiltonian expectation value.
 
 In the case of this approximation, for a given hamiltonian $\bra{\Psi}\hat{H}\ket{\Psi}$, we can regard it as depending on the form of the kinetic energy operator $\bra{\Psi}\hat{T}\ket{\Psi}$, external potential operator $\bra{\Psi}\hat{V}_\mathrm{ext}\ket{\Psi}$, and the interaction operator $\bra{\Psi}\hat{V}_\mathrm{int}\ket{\Psi}$.
 
@@ -676,7 +682,7 @@ Equivalently, by expanding the trace in the eigenbasis of $\hat{H}$, equation~\e
 
 In principle, all physical observables derive from the many-body Schrödinger equation~\eqref{tdse_manybody_coord}, yet the exponential growth of the Hilbert-space dimension renders direct diagonalization intractable for realistic systems.
 
-If the kinetic energy operator and Coulomb interaction are fixed, the ground state total energy becomes a functional of the external potential we introduced in equation~\eqref{spectrum_mapping_from_external_potential}.
+If the kinetic energy operator and Coulomb interaction are fixed, the ground-state total energy becomes a functional of the external potential we introduced in equation~\eqref{spectrum_mapping_from_external_potential}.
 
 A central challenge is that evaluating the grand-canonical expectation in equation~\eqref{grand_canonical_trace} remains highly nontrivial, as the trace involves high-dimensional integrals and noncommuting operators.
 
@@ -702,7 +708,7 @@ and the corresponding one-body density:
 \label{one-body_density}
 \end{equation}
 
-Accordingly, the ground state expectation value of the one-body operator can be written as:
+Accordingly, the ground-state expectation value of the one-body operator can be written as:
 
 \begin{equation}
 \langle\hat{\Omega}_1\rangle=\int\mathrm{d}x_1\,\Omega_1(x_1)\,n(x_1)
@@ -744,7 +750,7 @@ For a spin-resolved density $n(x)$, we define the particle number functional as:
 \label{particle_number_functional}
 \end{equation}
 
-and in the ground state setting with fixed particle number we require:
+and in the ground-state setting with fixed particle number we require:
 
 \begin{equation}
     N[n]=N
@@ -828,12 +834,12 @@ Having identified $Q$, we then derive the explicit mappings $\hat\Omega_i[Q]$ fo
 Finally, we develop a practical algorithm or an approximation scheme to compute $Q$ itself, thereby rendering all observables $\hat\Omega_i[Q]$ tractable.
 
 Given a time-dependent many-body wave function $\Psi(x_1,x_2,\cdots,x_N; t)$. 
-We denote the corresponding ground state ($g\coloneqq 0$) many-body wave function as 
+We denote the corresponding ground-state ($g\coloneqq 0$) many-body wave function as 
 $\Psi_g(x_1,x_2,\cdots,x_N; t)$.
 We can also denote the excited states by an index $\alpha$ ($\alpha\geq1$), 
 as $\Psi_{\alpha}(x_1,x_2,\cdots,x_N; t)$.
 
-Then, we can describe the ground state one-body density:
+Then, we can describe the ground-state one-body density:
 
 \begin{equation}
     \rho_g(x_1,t)=\iint\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\,\Psi_g(x_1,x_2,\cdots,x_N;t)
@@ -854,7 +860,7 @@ f_n^\mathrm{eh}(x_1,t)=\int\Psi_g^*(\vec{x};t)\,\Psi_n(\vec{x};t)\prod^N_{j=2}\d
 \label{one_body_transition_quantity_compact}
 \end{equation}
 
-This marginal integral represents the one-body transition density from ground state $g$ to the $n$-th excited state.
+This marginal integral represents the one-body transition density from ground-state $g$ to the $n$-th excited state.
 
 In the presence of an oscillating electromagnetic field, we introduce the Bohr frequency:
 
@@ -924,7 +930,7 @@ Hence, a typical energy-like observable can be written as:
 Up to now, we do not have closed-form expressions for the objects appearing in equation~\eqref{mod_obs_1}, and evaluating them still requires many-body information beyond practical reach.
 This motivates the introduction of a compact descriptor: rather than working with the full wave function $\Psi(x_1,\cdots,x_N)$, we seek a simpler variable $Q$ that is nevertheless sufficient to determine the observables of interest.
 
-More precisely, let $\{\hat{\Omega}_i\}_{i=1,2,\cdots}$ denote the operators representing the target physical quantities, and let $\Omega_i[\Psi]$ denote their ground state expectation values regarded as functionals of the wave function.
+More precisely, let $\{\hat{\Omega}_i\}_{i=1,2,\cdots}$ denote the operators representing the target physical quantities, and let $\Omega_i[\Psi]$ denote their ground-state expectation values regarded as functionals of the wave function.
 Our goal is to find a single descriptor $Q$ such that, once $Q$ is known, all these observables can be evaluated without explicit reference to the wave function $\Psi$:
 
 \begin{equation}
@@ -934,7 +940,7 @@ Our goal is to find a single descriptor $Q$ such that, once $Q$ is known, all th
 
 In other words, $Q$ is chosen to retain exactly the information needed for the set $\{\Omega_i\}$, while discarding irrelevant microscopic details.
 
-In particular, we set $Q \coloneqq n(x)$. In the following, we take the particle density $n(x)$ as the basic variable, as it provides a minimal yet powerful descriptor of the ground state. In this statement, $x$ denotes a combined space-spin coordinate, $x=(\vec{r},\sigma)$, so that we can represent the one-body (spin-resolved) density as $n(x)$:
+In particular, we set $Q \coloneqq n(x)$. In the following, we take the particle density $n(x)$ as the basic variable, as it provides a minimal yet powerful descriptor of the ground-state. In this statement, $x$ denotes a combined space-spin coordinate, $x=(\vec{r},\sigma)$, so that we can represent the one-body (spin-resolved) density as $n(x)$:
 
 Firstly, the particle density $n(x)$ yields exactly all local one-body observables. For an operator of the form $\hat{\Omega}^{(1)}=\sum_{j=1}^N \Omega_1(x_j)$, one has:
 
@@ -944,10 +950,10 @@ Firstly, the particle density $n(x)$ yields exactly all local one-body observabl
 \end{equation}
 
 Secondly, the particle density $n(x)$ is extremely compact compared to the wave function $\Psi$.
-Moreover, in the case of a non-degenerate ground state, the Hohenberg--Kohn theorem implies a bijective correspondence between the ground state density and the external potential.
+Moreover, in the case of a non-degenerate ground-state, the Hohenberg--Kohn theorem implies a bijective correspondence between the ground-state density and the external potential.
 As a result, $n(x)$ determines $v_\mathrm{ext}$ up to an additive constant.
-This fixes the hamiltonian and thereby fixes the ground state up to an overall phase.
-Therefore, all ground state observables may be regarded as density functionals, and we seek $\Omega_i[n]$ rather than $\Omega_i[\Psi]$.
+This fixes the hamiltonian and thereby fixes the ground-state up to an overall phase.
+Therefore, all ground-state observables may be regarded as density functionals, and we seek $\Omega_i[n]$ rather than $\Omega_i[\Psi]$.
 
 Therefore, we explore the variational route for $n$. Define the energy-like functional:
 
@@ -956,7 +962,7 @@ Therefore, we explore the variational route for $n$. Define the energy-like func
 \label{energy-like_functional}
 \end{equation}
 
-and obtain the ground state density from
+and obtain the ground-state density from
 \begin{equation}
     \frac{\delta}{\delta n}\left(E[n;v_\mathrm{ext}] - \mu\,N[n]\right)=0 \ \Rightarrow\ n_g(x)
 \label{ground_state_density}
@@ -967,7 +973,7 @@ for non-local one-body or two-body quantities,
 this amounts to adopting controlled approximations for kinetic energy functional $T[n]$ and interaction energy functional $E_\mathrm{int}[n]$ such as the Kohn--Sham framework, which we will introduce later.
 
 \newpage
-\section{An introduction to the functional of density}
+\section{An introduction to density functionals}
 
 \subsection{What is the functional?}
 
@@ -1029,37 +1035,37 @@ To describe this process, we first introduce the density operator:
 \label{density_operator}
 \end{equation}
 
-Next, we can define the electron density of ground state as its expectation value in the ground state:
+Next, we can define the electron density of ground-state as its expectation value in the ground-state:
 
 \begin{equation}
     n(\vec{r}\,)\coloneqq\bra{\Psi_0}\hat{n}(\vec{r}\,)\ket{\Psi_0}
 \label{electron_density_definition}
 \end{equation}
 
-here, $\ket{\Psi_0}$ denotes the ground state many-body wave function, which encodes the full complexity of the current interacting $N$-electron system.
-Given an observable represented by an operator $\hat{\Omega}$, its ground state value is evaluated through the expectation value $O$:
+here, $\ket{\Psi_0}$ denotes the ground-state many-body wave function, which encodes the full complexity of the current interacting $N$-electron system.
+Given an observable represented by an operator $\hat{\Omega}$, its ground-state value is evaluated through the expectation value $O$:
 
 \begin{equation}
     O \coloneqq \bra{\Psi_0}\hat{\Omega}\ket{\Psi_0}
 \label{electron_density_expectation}
 \end{equation}
 
-and hence every ground state observable can be regarded, at least formally, as a functional of the many-body wave function $O[\Psi_0]=O$.
+and hence every ground-state observable can be regarded, at least formally, as a functional of the many-body wave function $O[\Psi_0]=O$.
 
-However, the kernel idea of density functional theory is here: for the ground state properties, the wave function dependence can be reduced even further. In our statement, if the density of ground state $n(\vec{r}\,)$ uniquely specifies the corresponding wave function of ground state $\Psi_0$,
-the expectation value of any operator $\hat{\Omega}$ in the ground state is uniquely determined by the density $n(\vec{r}\,)$.
+However, the kernel idea of density functional theory is here: for the ground-state properties, the wave function dependence can be reduced even further. In our statement, if the density of ground-state $n(\vec{r}\,)$ uniquely specifies the corresponding wave function of ground-state $\Psi_0$,
+the expectation value of any operator $\hat{\Omega}$ in the ground-state is uniquely determined by the density $n(\vec{r}\,)$.
 
-Consequently, every ground state observable can be written as a (unique) density functional:
+Consequently, every ground-state observable can be written as a (unique) density functional:
 
 \begin{equation}
     \bra{\Psi_0}\hat{\Omega}\ket{\Psi_0}=O[n(\vec{r})]
 \label{ground_state_observable_expectation_value}
 \end{equation}
 
-Under the usual Hohenberg--Kohn setting (in particular, for a non-degenerate ground state), the density $n(\vec{r}\,)$ uniquely determines the external potential $v_\mathrm{ext}(\vec{r}\,)$ up to an additive constant.
-Consequently, $n(\vec{r}\,)$ fixes the hamiltonian and hence the ground state $\ket{\Psi_0}$ (up to an overall phase).
-This statement is essentially the central result of the Hohenberg--Kohn theorem~\cite{hohenberg1964inhomogeneous}: in the ground state, all observables are uniquely determined by the electron density.
-Accordingly, any ground state observable may be written as a functional of the density alone:
+Under the usual Hohenberg--Kohn setting (in particular, for a non-degenerate ground-state), the density $n(\vec{r}\,)$ uniquely determines the external potential $v_\mathrm{ext}(\vec{r}\,)$ up to an additive constant.
+Consequently, $n(\vec{r}\,)$ fixes the hamiltonian and hence the ground-state $\ket{\Psi_0}$ (up to an overall phase).
+This statement is essentially the central result of the Hohenberg--Kohn theorem~\cite{hohenberg1964inhomogeneous}: in the ground-state, all observables are uniquely determined by the electron density.
+Accordingly, any ground-state observable may be written as a functional of the density alone:
 
 \begin{equation}
     O = O[n(\vec{r}\,)]
@@ -1098,7 +1104,7 @@ In fact, once $\hat{V}_\mathrm{ext}$ is given, the hamiltonian is fully specifie
 Conversely, if the hamiltonian is known, then in principle we may solve its eigenvalue problem to obtain the eigenstates and eigenvalues.
 With the wave function known, any observable can be evaluated as the expectation value of the corresponding operator.
 
-This viewpoint motivates the search for compact descriptors that retain the essential information of the ground state.
+This viewpoint motivates the search for compact descriptors that retain the essential information of the ground-state.
 A central example is the electron density, for an arbitrary state $\ket{\Psi}$, the electron density is defined as the expectation value of the density operator $\hat{n}(\vec{r}\,)$:
 
 \begin{equation}
@@ -1109,7 +1115,7 @@ A central example is the electron density, for an arbitrary state $\ket{\Psi}$, 
 \label{electron_densit_via_expectation}
 \end{equation}
 
-Consider a fixed form of interaction, the external potential $v_\mathrm{ext}(\vec{r}\,)$ specifies the corresponding hamiltonian and therefore the ground state structure.
+Consider a fixed form of interaction, the external potential $v_\mathrm{ext}(\vec{r}\,)$ specifies the corresponding hamiltonian and therefore the ground-state structure.
 Here $v_\mathrm{ext}(\vec{r}\,)$ is a scalar potential field in real space, whereas $\hat{V}_\mathrm{ext}$ is the associated many-body operator acting on the $N$-electron wave function.
 
 Given definition of external potential operator~\eqref{reduced_operator_definition}, in coordinate representation, $\hat{V}_\mathrm{ext}$ acts by multiplication with $\sum_i v_\mathrm{ext}(\hat{\vec{r}}_i)$. 
@@ -1130,9 +1136,9 @@ equation~\eqref{electron_densit_via_expectation}, we have:
 \label{external_potential_energy_expectation}
 \end{equation}
 
-When the ground state is non-degenerate, $v_\mathrm{ext}(\vec{r}\,)$ stands in a one-to-one correspondence (up to an additive constant) with the ground state wave function $\Psi_0$.
+When the ground-state is non-degenerate, $v_\mathrm{ext}(\vec{r}\,)$ stands in a one-to-one correspondence (up to an additive constant) with the ground-state wave function $\Psi_0$.
 
-Consequently, the ground state expectation value of any observable $\hat{O}$ may be viewed as a unique functional of the external potential:
+Consequently, the ground-state expectation value of any observable $\hat{O}$ may be viewed as a unique functional of the external potential:
 
 \begin{equation}
    \braket{\hat{O}}\coloneqq \bra{\Psi_0}\hat{O}\ket{\Psi_0}=O[v_\mathrm{ext}]
@@ -1140,31 +1146,29 @@ Consequently, the ground state expectation value of any observable $\hat{O}$ may
 \end{equation}
 
 The central move of density functional theory is to further replace the dependence on the wave function by a dependence on the electron density $n(\vec{r}\,)$.
-The key question is whether the map from external potential $v_\mathrm{ext}(\vec{r}\,)$ to the ground state density $n(\vec{r}\,)$ is likewise invertible in an appropriate sense.
-The first Hohenberg--Kohn theorem answers this in the affirmative for non-degenerate ground states: the ground state density $n(\vec{r}\,)$ uniquely determines $v_\mathrm{ext}(\vec{r}\,)$ (again up to an additive constant), and hence uniquely fixes the hamiltonian and the corresponding ground state.
-In this sense, all ground state observables can be regarded as functionals of the density:
+The key question is whether the map from external potential $v_\mathrm{ext}(\vec{r}\,)$ to the ground-state density $n(\vec{r}\,)$ is likewise invertible in an appropriate sense.
+The first Hohenberg--Kohn theorem answers this in the affirmative for non-degenerate ground-states: the ground-state density $n(\vec{r}\,)$ uniquely determines $v_\mathrm{ext}(\vec{r}\,)$ (again up to an additive constant), and hence uniquely fixes the hamiltonian and the corresponding ground-state.
+In this sense, all ground-state observables can be regarded as functionals of the density:
 
 \begin{equation}
     \braket{\hat{O}}=O[n(\vec{r}\,)]
 \label{functional_from_expectation}
 \end{equation}
 
-In the presence of ground state degeneracy, the strict one-to-one correspondence must be understood at the level of the ground state subspace; certain observables may then depend on the particular choice of degenerate ground state. This issue is commonly handled through an ensemble formulation (or via a symmetry-breaking limit) to recover a single-valued density-functional description.
+In the presence of ground-state degeneracy, the strict one-to-one correspondence must be understood at the level of the ground-state subspace; certain observables may then depend on the particular choice of degenerate ground-state. This issue is commonly handled through an ensemble formulation (or via a symmetry-breaking limit) to recover a single-valued density-functional description.
 
 \subsection{The Hohenberg--Kohn theorem}
 
-In this subsection, we focus on the Hohenberg--Kohn theorem, which provides the conceptual foundation of density functional theory: for a fixed form of electron-electron interaction and a non-degenerate ground state, it establishes a one-to-one correspondence between the external potential and the ground state density (up to an additive constant), and it leads to a variational characterization of the ground state.
+In this subsection, we focus on the Hohenberg--Kohn theorem, which provides the conceptual foundation of density functional theory: for a fixed form of electron-electron interaction and a non-degenerate ground-state, it establishes a one-to-one correspondence between the external potential and the ground-state density (up to an additive constant), and it leads to a variational characterization of the ground-state.
 
-We begin by proving that, up to an additive constant in the potential, the ground state wave function is uniquely determined by the external potential.
-
-We start by assuming for contradiction that two different external potentials lead to the same ground state wave function $\ket{\Psi_0}$, while not differing by a mere additive constant:
+We start by assuming for contradiction that two different external potentials lead to the same ground-state wave function $\ket{\Psi_0}$, while not differing by a mere additive constant:
 
 \begin{equation}
     v^{(1)}_\mathrm{ext}(\vec{r}\,)\neq v^{(2)}_\mathrm{ext}(\vec{r}\,)+\mathrm{const.}
 \label{V_ext}
 \end{equation}
 
-Next, consider the corresponding hamiltonians and their ground state eigenvalue equations:
+Next, consider the corresponding hamiltonians and their ground-state eigenvalue equations:
 
 \begin{equation}
 \begin{aligned}
@@ -1202,7 +1206,7 @@ Whenever the wave function $\Psi_0(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)\neq 0$,
 \end{equation}
 
 The equality above implies that, for any configuration $(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)$ where the wave function $\Psi_0(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)\neq 0$, the factor multiplying $\Psi_0$ must be constant.
-Dividing both sides by $\Psi_0$ wherever the ground state wave function $\Psi_0(\vec{r}_1,\ldots,\vec{r}_N)$ is nonzero, we obtain a constraint on the difference between the two external potentials.
+Dividing both sides by $\Psi_0$ wherever the ground-state wave function $\Psi_0(\vec{r}_1,\ldots,\vec{r}_N)$ is nonzero, we obtain a constraint on the difference between the two external potentials.
 
 To make this explicit, we define the potential shift function:
 
@@ -1243,16 +1247,16 @@ Thus, we arrive at the following relation:
 \end{equation}
 
 Hence $(E_1-E_2)/N$ is a constant. This contradicts the assumption in equation~\eqref{V_ext}.
-Therefore, we arrive at the conclusion that two different external potentials cannot lead to the same non-degenerate ground state wave function unless they differ only by an additive constant, as stated in equation~\eqref{parallel_wave_function}.
+Therefore, we arrive at the conclusion that two different external potentials cannot lead to the same non-degenerate ground-state wave function unless they differ only by an additive constant, as stated in equation~\eqref{parallel_wave_function}.
 
-Equivalently, up to a constant shift in the potential and for a fixed form of interaction, the mapping from the external potential to the non-degenerate ground state wave function is one-to-one.
+Equivalently, up to a constant shift in the potential and for a fixed form of interaction, the mapping from the external potential to the non-degenerate ground-state wave function is one-to-one.
 
-Since any ground state observable follows uniquely from the ground state wave function via its expectation value, equation~\eqref{functional_from_external_potential} implies that $\ket{\Psi_0}$ is uniquely determined by $v_\mathrm{ext}$, and hence the ground state observables are unique functionals of $v_\mathrm{ext}$.
+Since any ground-state observable follows uniquely from the ground-state wave function via its expectation value, equation~\eqref{functional_from_external_potential} implies that $\ket{\Psi_0}$ is uniquely determined by $v_\mathrm{ext}$, and hence the ground-state observables are unique functionals of $v_\mathrm{ext}$.
 The external potential is defined to an additive constant shift.
 
 A natural question then is: what is the relation between the external potential $v_\mathrm{ext}(\vec{r}\,)$ and the density of the current system $n(\vec{r}\,)$?
 
-To state this more precisely, we next define the equivalence class of external potential $v_\mathrm{ext}(\vec{r}\,)$ and the ground state wave function $\ket{\Psi_0}$ as:
+To state this more precisely, we next define the equivalence class of external potential $v_\mathrm{ext}(\vec{r}\,)$ and the ground-state wave function $\ket{\Psi_0}$ as:
 
 \begin{equation}
 \begin{aligned}
@@ -1262,8 +1266,8 @@ To state this more precisely, we next define the equivalence class of external p
 \label{equivalence_classes_definition}
 \end{equation}
 
-To address this question, we fix the form of interaction and restrict ourselves to a non-degenerate ground state.
-Under these assumptions, there is a one-to-one correspondence between the equivalence class of external potential $\left[v_\mathrm{ext}(\vec{r}\,)\right]$ and the ground state wave function $\left[\ket{\Psi_0}\right]$, 
+To address this question, we fix the form of interaction and restrict ourselves to a non-degenerate ground-state.
+Under these assumptions, there is a one-to-one correspondence between the equivalence class of external potential $\left[v_\mathrm{ext}(\vec{r}\,)\right]$ and the ground-state wave function $\left[\ket{\Psi_0}\right]$, 
 where $\left[v_\mathrm{ext}(\vec{r}\,)\right]$ is defined up to an additive constant and $\left[\ket{\Psi_0}\right]$ up to an overall phase.
 
 Equivalently, $\left[v_\mathrm{ext}(\vec{r}\,)\right]$ and $\left[\ket{\Psi_0}\right]$ are in bijection:
@@ -1273,7 +1277,7 @@ Equivalently, $\left[v_\mathrm{ext}(\vec{r}\,)\right]$ and $\left[\ket{\Psi_0}\r
 \label{potential_wave_function_correspondence}
 \end{equation}
 
-Moreover, the wave function is directly related to the density through the standard marginalization over the remaining $N-1$ particles. As a result, we obtain a unique ground state density, given by the usual marginalization of the squared modulus of the wave function over all but one space variables:
+Moreover, the wave function is directly related to the density through the standard marginalization over the remaining $N-1$ particles. As a result, we obtain a unique ground-state density, given by the usual marginalization of the squared modulus of the wave function over all but one space variables:
 
 \begin{equation}
     n(\vec{r}\,)=N\int \mathrm{d}\vec{r}_2\cdots\mathrm{d}\vec{r}_N\,\left|\Psi(\vec{r},\vec{r}_2,\cdots,\vec{r}_N)\right|^2
@@ -1281,16 +1285,16 @@ Moreover, the wave function is directly related to the density through the stand
 \end{equation}
 
 where $\Psi$ is normalized and $N$ is the number of particles.
-This means that the external potential $v_\mathrm{ext}$ induces a mapping to the ground state density $n(\vec r\,)$, which this subsection further clarifies the character of this mapping.
+This means that the external potential $v_\mathrm{ext}$ induces a mapping to the ground-state density $n(\vec r\,)$, which this subsection further clarifies the character of this mapping.
 
 The strategy to establish this relation is also a reductio ad absurdum argument.
 Suppose there exist two different external potentials $v^{(1)}_\mathrm{ext}(\vec{r}\,)$ and $v^{(2)}_\mathrm{ext}(\vec{r}\,)$ such that $v^{(1)}_\mathrm{ext}(\vec{r}\,)\neq v^{(2)}_\mathrm{ext}(\vec{r}\,)+\mathrm{const.}$
-Let their corresponding non-degenerate ground state wave functions be denoted as $\Psi_0^{(1)}$ and $\Psi_0^{(2)}$.
+Let their corresponding non-degenerate ground-state wave functions be denoted as $\Psi_0^{(1)}$ and $\Psi_0^{(2)}$.
 
 Recall the Schrödinger equation~\eqref{different_hamiltonians_schrodinger_equation}.
-The external potentials $v^{(1)}_\mathrm{ext}(\vec{r}\,)$ and $v^{(2)}_\mathrm{ext}(\vec{r}\,)$ lead to the eigenvalues $E_1$ and $E_2$, and the corresponding ground state wave functions $\ket{\Psi_0^{(1)}}$ and $\ket{\Psi_0^{(2)}}$, respectively.
-Since the ground states are assumed non-degenerate $\ket{\Psi_0^{(1)}}\neq\ket{\Psi_0^{(2)}}$.
-For each external potential, the total energy can be written as the expectation value of the hamiltonian in its ground state:
+The external potentials $v^{(1)}_\mathrm{ext}(\vec{r}\,)$ and $v^{(2)}_\mathrm{ext}(\vec{r}\,)$ lead to the eigenvalues $E_1$ and $E_2$, and the corresponding ground-state wave functions $\ket{\Psi_0^{(1)}}$ and $\ket{\Psi_0^{(2)}}$, respectively.
+Since the ground-states are assumed non-degenerate $\ket{\Psi_0^{(1)}}\neq\ket{\Psi_0^{(2)}}$.
+For each external potential, the total energy can be written as the expectation value of the hamiltonian in its ground-state:
 
 \begin{equation}
 \begin{aligned}
@@ -1300,9 +1304,9 @@ For each external potential, the total energy can be written as the expectation 
 \label{different_total_energies}
 \end{equation}
 
-We now make the key assumption for contradiction: although the two external potentials, and hence the two ground state wave functions, are different, they lead to the same ground state density $n^{(1)}(\vec{r}\,)=n^{(2)}(\vec{r}\,)$, where $n^{(1)}(\vec{r}\,)$ and $n^{(2)}(\vec{r}\,)$ are obtained from $\Psi_0^{(1)}$ and $\Psi_0^{(2)}$, respectively, via equation~\eqref{density_function}
+We now make the key assumption for contradiction: although the two external potentials, and hence the two ground-state wave functions, are different, they lead to the same ground-state density $n^{(1)}(\vec{r}\,)=n^{(2)}(\vec{r}\,)$, where $n^{(1)}(\vec{r}\,)$ and $n^{(2)}(\vec{r}\,)$ are obtained from $\Psi_0^{(1)}$ and $\Psi_0^{(2)}$, respectively, via equation~\eqref{density_function}
 
-Through the Rayleigh--Ritz variational principle: for the ground state energy $E_0$ of a given hamiltonian $\hat{H}$, the energy expectation value over any normalized trial wave function $\Phi$ provides an upper bound to the ground state energy:
+Through the Rayleigh--Ritz variational principle: for the ground-state energy $E_0$ of a given hamiltonian $\hat{H}$, the energy expectation value over any normalized trial wave function $\Phi$ provides an upper bound to the ground-state energy:
 
 \begin{equation}
     E_0\leq \bra{\Phi}\hat{H}\ket{\Phi}
@@ -1319,7 +1323,7 @@ Therefore, using $\ket{\Psi_0^{(2)}}$ as a trial state for $\hat{H}_1$ and using
 \label{Rayleigh-Ritz_principle_application}
 \end{equation}
 
-where the strict inequalities follow from the assumption that the ground state is non-degenerate and that $\ket{\Psi_0^{(1)}}\neq\ket{\Psi_0^{(2)}}$.
+where the strict inequalities follow from the assumption that the ground-state is non-degenerate and that $\ket{\Psi_0^{(1)}}\neq\ket{\Psi_0^{(2)}}$.
 
 Let us rewrite the variational bound for $E_1$.
 Recall the eigenvalue equation~\eqref{difference_eigen} and the definition of the hamiltonian difference in equation~\eqref{energy_difference}.
@@ -1360,7 +1364,7 @@ As a result, the total energy of the first system satisfies the following inequa
     E_1<E_2+\bra{\Psi_0^{(2)}}\left(\hat{V}_\mathrm{ext}^{(1)}-\hat{V}_\mathrm{ext}^{(2)}\right)\ket{\Psi_0^{(2)}}
 \end{equation}
 
-Therefore, we arrive at the following inequality for the ground state energies:
+Therefore, we arrive at the following inequality for the ground-state energies:
 
 \begin{equation}
     E_1<E_2+\int \mathrm{d}\vec{r}\,\left[v_\mathrm{ext}^{(1)}(\vec{r}\,)-v_\mathrm{ext}^{(2)}(\vec{r}\,)\right]\,\,n^{(2)}(\vec{r}\,)
@@ -1375,7 +1379,7 @@ Vice versa, upon interchanging the roles of the two systems, we analogously obta
 \end{equation}
 
 We are now ready to complete the reductio ad absurdum argument.
-Revisit our assumption that two distinct external potentials $v_\mathrm{ext}^{(1)}(\vec{r}\,)\neq v_\mathrm{ext}^{(2)}(\vec{r}\,)$ yield the same ground state density $n(\vec{r}\,)=n^{(1)}(\vec{r}\,)=n^{(2)}(\vec{r}\,)$, the Rayleigh--Ritz variational principle leads to the previous ground state energy inequalities.
+Revisit our assumption that two distinct external potentials $v_\mathrm{ext}^{(1)}(\vec{r}\,)\neq v_\mathrm{ext}^{(2)}(\vec{r}\,)$ yield the same ground-state density $n(\vec{r}\,)=n^{(1)}(\vec{r}\,)=n^{(2)}(\vec{r}\,)$, the Rayleigh--Ritz variational principle leads to the previous ground-state energy inequalities.
 
 Using $n(\vec{r}\,)=n^{(1)}(\vec{r}\,) = n^{(2)}(\vec{r}\,)$ and adding equations~\eqref{total_energy_inequality_E1}
 and~\eqref{total_energy_inequality_E2}, the integral terms cancel identically, which leads to:
@@ -1386,14 +1390,14 @@ and~\eqref{total_energy_inequality_E2}, the integral terms cancel identically, w
 \end{equation}
 
 It is obviously a contradiction.
-This demonstrates that, for a fixed form of interaction and a non-degenerate ground state,
-the ground state density $n(\vec{r}\,)$ uniquely determines the external potential $v_\mathrm{ext}(\vec{r}\,)$ up to an additive constant,
-and hence uniquely determines the hamiltonian and the ground state up to an overall phase.
+This demonstrates that, for a fixed form of interaction and a non-degenerate ground-state,
+the ground-state density $n(\vec{r}\,)$ uniquely determines the external potential $v_\mathrm{ext}(\vec{r}\,)$ up to an additive constant,
+and hence uniquely determines the hamiltonian and the ground-state up to an overall phase.
 
-Let us recollect the definition of the equivalence class of the external potential $v_\mathrm{ext}(\vec{r}\,)$ and the ground state wave function $\ket{\Psi_0}$ in equation~\eqref{equivalence_classes_definition},
+Let us recollect the definition of the equivalence class of the external potential $v_\mathrm{ext}(\vec{r}\,)$ and the ground-state wave function $\ket{\Psi_0}$ in equation~\eqref{equivalence_classes_definition},
 as well as the fact that the equivalence classes $\left[v_\mathrm{ext}\right]$ and $\left[\ket{\Psi_0}\right]$ are in bijection in equation~\eqref{potential_wave_function_correspondence}.
 
-Moreover, the ground state wave function uniquely determines the ground state density via the standard marginalization:
+Moreover, the ground-state wave function uniquely determines the ground-state density via the standard marginalization:
 
 \begin{equation}
     \left[\ket{\Psi_0}\right]\longmapsto n(\vec{r}\,)
@@ -1401,15 +1405,15 @@ Moreover, the ground state wave function uniquely determines the ground state de
 \end{equation}
 
 We emphasize that the map in equation~\eqref{wave_function_density_map} is not injective for any arbitrary many-body wave function.
-In the present setting, however, we restrict ourselves to non-degenerate ground states. Within this restricted class, the first Hohenberg--Kohn theorem provides a unique inverse implication, namely that the ground state density uniquely determines the equivalence class of the external potential:
+In the present setting, however, we restrict ourselves to non-degenerate ground-states. Within this restricted class, the first Hohenberg--Kohn theorem provides a unique inverse implication, namely that the ground-state density uniquely determines the equivalence class of the external potential:
 
 \begin{equation}
     n(\vec{r}\,)\longmapsto\left[v_\mathrm{ext}(\vec{r}\,)\right]
 \label{density_potential_map}
 \end{equation}
 
-Combining equations~\eqref{potential_wave function_correspondence}, \eqref{wave_function_density_map},
-and\eqref{density_potential_map}, we finally arrive at a one-to-one correspondence among the basic ground state descriptors:
+Combining equations~\eqref{potential_wave_function_correspondence}, \eqref{wave_function_density_map},
+and\eqref{density_potential_map}, we finally arrive at a one-to-one correspondence among the basic ground-state descriptors:
 
 \begin{equation}
     \left[v_\mathrm{ext}(\vec{r}\,)\right]\,\longleftrightarrow\, n(\vec{r}\,)\,\longleftrightarrow\,\left[\ket{\Psi_0}\right]
@@ -1417,24 +1421,24 @@ and\eqref{density_potential_map}, we finally arrive at a one-to-one corresponden
 \end{equation}
 
 The two previous equations~\eqref{density_potential_map} and~\eqref{hk_correspondence_v_n_psi} summarize the content of the Hohenberg--Kohn theorem~\cite{hohenberg1964inhomogeneous}.
-For a fixed form of interaction and a non-degenerate ground state, the ground state density $n(\vec{r}\,)$ is in bijection with the equivalence class of the external potential $\left[v_\mathrm{ext}(\vec{r}\,)\right]$ up to an additive constant. 
-Consequently, the ground state density uniquely determines the hamiltonian and the ground state wave function up to an overall phase,
-and any ground state observable is, in principle, a unique functional of $n(\vec{r}\,)$.
+For a fixed form of interaction and a non-degenerate ground-state, the ground-state density $n(\vec{r}\,)$ is in bijection with the equivalence class of the external potential $\left[v_\mathrm{ext}(\vec{r}\,)\right]$ up to an additive constant. 
+Consequently, the ground-state density uniquely determines the hamiltonian and the ground-state wave function up to an overall phase,
+and any ground-state observable is, in principle, a unique functional of $n(\vec{r}\,)$.
 
-Therefore, the ground state expectation definition~\eqref{functional_from_external_potential} can be reformulated as:
+Therefore, the ground-state expectation definition~\eqref{functional_from_external_potential} can be reformulated as:
 
 \begin{equation}
    \braket{\hat{O}}= \bra{\Psi_0}\hat{O}\ket{\Psi_0}=O[n(\vec{r}\,)]
 \label{functional_from_density}
 \end{equation}
 
-here, $O[n(\vec{r}\,)]$ denotes the density functional that yields the ground state expectation value of $\hat{O}$.
+here, $O[n(\vec{r}\,)]$ denotes the density functional that yields the ground-state expectation value of $\hat{O}$.
 This observation forms the central premise of density functional theory and motivates the use of the density, rather than the wave function, as the fundamental variable.
 
 As described by equation~\eqref{functional_from_density},
-every ground state observable is a unique functional of the electron density.
+every ground-state observable is a unique functional of the electron density.
 
-Recall equation~\eqref{eigenenergy_as_expectation_value}, which expresses the ground state energy as the expectation value of the hamiltonian.
+Recall equation~\eqref{eigenenergy_as_expectation_value}, which expresses the ground-state energy as the expectation value of the hamiltonian.
 According to decomposition of the hamiltonian in equation~\eqref{hamiltonian_decomposition}, we write:
 
 \begin{equation}
@@ -1479,9 +1483,9 @@ Using the local form of the external potential operator in equation~\eqref{local
 \label{functional_Eext_local_form}
 \end{equation}
 
-According to the definition of the ground state density in equation~\eqref{electron_density_definition},
+According to the definition of the ground-state density in equation~\eqref{electron_density_definition},
 as well as the definitions of the kinetic energy and interaction energy functionals in equation~\eqref{functional_T_Eint_Eext_definition},
-we obtain the decomposition of exact ground state energy functional:
+we obtain the decomposition of exact ground-state energy functional:
 
 \begin{equation}
 \begin{aligned}
@@ -1532,7 +1536,7 @@ This allows us to separate out the external potential contribution and write:
 \label{standard_form_energy_functional}
 \end{equation}
 
-The Hohenberg--Kohn theorem then allows us to cast the ground state problem as a constrained search over admissible densities:
+The Hohenberg--Kohn theorem then allows us to cast the ground-state problem as a constrained search over admissible densities:
 
 \begin{equation}
     E_0 = \min_{n(\vec{r}\,)}\left\{E\,\left[n(\vec{r}\,)\right]\,\middle|\,\int \mathrm{d}\vec{r}\,n(\vec{r}\,)
@@ -1598,7 +1602,7 @@ This relation may suggest that $E_\mathrm{HK}[n]$ could be obtained once the tot
 
 In practice, this is not a constructive route.
 For a given $v_\mathrm{ext}(\vec{r}\,)$, the interacting many-body problem yields only the minimizing density $n_0(\vec{r}\,)$ and the corresponding energy $E[n_0]$.
-To determine a functional over a broad range of densities, we would in principle need to solve the interacting problem for many different external potentials to sample many ground state densities.
+To determine a functional over a broad range of densities, we would in principle need to solve the interacting problem for many different external potentials to sample many ground-state densities.
 Therefore, the Hohenberg--Kohn theorem should be viewed as an existence and uniqueness statement, rather than an explicit formula for $E_\mathrm{HK}[n]$. 
 
 These considerations clarify why density functional theory relies on approximations.
@@ -1659,7 +1663,7 @@ To connect the Thomas--Fermi construction with density functional theory, we rew
 
 From the Thomas--Fermi approximation, we express the total energy as a density functional composed of a statistical kinetic term $T_\mathrm{TF}[n]$, an interaction term $E_\mathrm{int}[n]$, and an external contribution $E_\mathrm{ext}[n]$ describing the coupling to the external potential $v_\mathrm{ext}(\vec{r}\,)$.
 
-Furthermore, there is also a nuclear-nuclear term $E_\mathrm{NN}$, but it does not depend on the electron density, therefore, therefore, we do not consider this term at the moment.
+Furthermore, there is also a nucleus-nucleus term $E_\mathrm{NN}$, but it does not depend on the electron density. Therefore, we do not consider this term at the moment.
 
 Accordingly, we write the Thomas--Fermi total energy functional:
 
@@ -1669,7 +1673,7 @@ Accordingly, we write the Thomas--Fermi total energy functional:
 \end{equation}
 
 According to the local form of the external potential energy functional~\eqref{functional_Eext_local_form}, and the external contribution is given by the coupling between $n(\vec{r}\,)$ and $v_\mathrm{ext}(\vec{r}\,)$.
-For fixed nuclear positions, the external potential $v_\mathrm{ext}(\vec{r}\,)$ is a prescribed function of $\vec{r}$ defined in equation~\eqref{one-body_Electron-nucleus}, therefore, the external contribution $E_\mathrm{ext}[n]$ is linear in the electron density $n(\vec{r}\,)$.
+For fixed nuclear positions, the external potential $v_\mathrm{ext}(\vec{r}\,)$ is a prescribed function of $\vec{r}$ defined in equation~\eqref{one-body_Electron-nucleus}. Therefore, the external contribution $E_\mathrm{ext}[n]$ is linear in the electron density $n(\vec{r}\,)$.
 
 We next approximate the interaction energy functional by its classical Coulomb form associated with the density distribution.
 Using the electron-electron Coulomb repulsion~\eqref{electrons_Coulomb}, we introduce the Hartree term:
@@ -1753,13 +1757,13 @@ The nucleus-nucleus contribution $E_\mathrm{NN}$ is omitted since it does not de
 
 This expression gives the total energy in the Thomas--Fermi approximation as a functional of the electron density $n(\vec{r}\,)$ for a given external potential $v_\mathrm{ext}(\vec{r}\,)$.
 
-The ground state of the system is characterized by the density that minimizes the total energy under the constraint of a fixed particle number.
-This is the variational principle for the ground state energy in density functional theory.
+The ground-state of the system is characterized by the density that minimizes the total energy under the constraint of a fixed particle number.
+This is the variational principle for the ground-state energy in density functional theory.
 
 At finite temperature, the equilibrium density is obtained by minimizing the Helmholtz free energy functional.
 In the present zero temperature setting, the relevant quantity is the total energy functional $E_\mathrm{TF}[n]$.
 
-To determine the ground state density, we minimize the Thomas--Fermi energy functional under the particle number constraint:
+To determine the ground-state density, we minimize the Thomas--Fermi energy functional under the particle number constraint:
 
 \begin{equation}
     \int\dif{\vec{r}}\,n(\vec{r}\,)=N
@@ -1881,7 +1885,7 @@ Substituting equation~\eqref{density_TF_from_potential} into equation~\eqref{Poi
 
 This procedure constitutes the Thomas--Fermi method.
 
-\subsection{limitations of Thomas--Fermi approach}
+\subsection{Limitations of the Thomas--Fermi approach}
 
 For a many-body system,
 it is instructive to contrast the exact density functional with the Thomas--Fermi approximation.
@@ -2005,7 +2009,7 @@ In what follows, we introduce an auxiliary description that retains the density 
 We introduce an auxiliary system that reproduces the ground-state density $n(\vec{r}\,)$ of the interacting electrons.
 This maps the many-body problem onto a simpler reference description, with residual interactions captured by the exchange-correlation functional, leading to the Kohn--Sham scheme.
 
-As shown in equation~\eqref{one-body_density}, the ground state density can be obtained from the many-body ground state wave function by integrating out $N-1$ coordinates.
+As shown in equation~\eqref{one-body_density}, the ground-state density can be obtained from the many-body ground-state wave function by integrating out $N-1$ coordinates.
 
 Since one-body observables can be expressed in terms of the density, as summarized in the equation~\eqref{observables_N-body}, the density provides a reduced description that avoids working directly with the full wave function. 
 
@@ -2130,7 +2134,7 @@ with this convention, the Schrödinger equation in the coordinate representation
 
 here, $E$ and $\Psi$ denote the electronic eigenvalue and eigenstate of interest at fixed nuclear coordinates $\{\vec{R}_I\}$,
 where the constant term $E_\mathrm{NN}(\{\vec{R}_I\})$ has been absorbed into $E$.
-In particular, the ground state determines the target density $n(\vec{r}\,)$ through equation~\eqref{one-body_density}.
+In particular, the ground-state determines the target density $n(\vec{r}\,)$ through equation~\eqref{one-body_density}.
 
 Moreover, we introduce a noninteracting auxiliary system by dropping the electron-electron interaction,
 and compensating for its effect through a tuned one-body potential $v_\mathrm{aux}(\vec{r}\,)$:
@@ -2194,12 +2198,12 @@ In other words, we start from a given density $n(\vec{r}\,)$ and ask whether we 
 This is the basic existence question behind the auxiliary construction,
 and it is often referred to as noninteracting $v$-representability.
 
-\subsection{The framework of Kohn--Sham equations}
+\subsection{The framework of the Kohn--Sham equations}
 
-Firstly, we introduce a noninteracting reference system that reproduces the density $n(\vec{r}\,)$, and denote its ground state wave function by $\Psi_s[n]$.
+Firstly, we introduce a noninteracting reference system that reproduces the density $n(\vec{r}\,)$, and denote its ground-state wave function by $\Psi_s[n]$.
 
 The wave function $\Psi[n]$ denotes the minimizing interacting many-body wave function that yields the density $n(\vec{r}\,)$,
-while $\Psi_s[n]$ represents the ground state of a noninteracting reference system constructed to reproduce the same density.
+while $\Psi_s[n]$ represents the ground-state of a noninteracting reference system constructed to reproduce the same density.
 
 Accordingly, they share the same one-body density but represent different many-body states:
 
@@ -2306,7 +2310,7 @@ we have:
 \label{Exc_KS_definition}
 \end{equation}
 
-Let us perform some manipulations on exact ground state energy functional~\eqref{energy_density_functional_decomposition}:
+Let us perform some manipulations on exact ground-state energy functional~\eqref{energy_density_functional_decomposition}:
 
 \begin{equation}
 \begin{aligned}
@@ -2388,7 +2392,7 @@ Meanwhile, $v_\mathrm{eff}([n];\vec{r}\,)$ depends on $n(\vec{r}\,)$ through equ
 Therefore, equations~\eqref{KS_effective_potential_definition} and~\eqref{KS_equation} are solved self-consistently.
 
 In this sense, density functional theory is built on the Hohenberg--Kohn theorem.
-It states that the ground state density uniquely determines the external potential modulo an additive constant.
+It states that the ground-state density uniquely determines the external potential modulo an additive constant.
 Meanwhile, the density and the external potential are in bijective correspondence:
 
 \begin{equation}
@@ -2415,7 +2419,7 @@ here, $\left[v(\vec{r}\,)\right]$ denotes the equivalence class of potentials th
 
 This show that once the density $n(\vec{r}\,)$ is given, the effective potential $v_\mathrm{eff}([n];\vec{r}\,)$ is fixed up to an additive constant.
 
-Therefore, in this noninteracting Kohn--Sham auxiliary system, we process the corresponding total ground state energy as a functional of the density, and denote it by $E_s[n]$.
+Therefore, in this noninteracting Kohn--Sham auxiliary system, we process the corresponding total ground-state energy as a functional of the density, and denote it by $E_s[n]$.
 
 For the auxiliary noninteracting system, we achieve the Kohn--Sham auxiliary energy functional:
 
@@ -2426,7 +2430,7 @@ For the auxiliary noninteracting system, we achieve the Kohn--Sham auxiliary ene
 
 Moreover, we recall the exact energy decomposition in equation~\eqref{energy_density_functional_decomposition},
 together with the Hohenberg--Kohn correspondence in equation~\eqref{hk_correspondence_v_n_psi}.
-They tell us that the ground state energy can be viewed as a functional of the density.
+They tell us that the ground-state energy can be viewed as a functional of the density.
 
 Hence, we introduce the key idea of Kohn--Sham equations.
 For a given interacting system, we assume the existence of an auxiliary system of noninteracting electrons.
@@ -2437,7 +2441,7 @@ This auxiliary system is constructed to reproduce the same density:
 \label{KS_same_density_assumption}
 \end{equation}
 
-here, $n_s(\vec{r}\,)$ denotes the ground state density of the auxiliary noninteracting system,
+here, $n_s(\vec{r}\,)$ denotes the ground-state density of the auxiliary noninteracting system,
 it is obtained from a set of one-electron orbitals.
 The corresponding one-body potential is denoted by the Kohn--Sham potential $v_\mathrm{eff}([n];\vec{r}\,)$.
 It is chosen such that equation~\eqref{KS_same_density_assumption} holds.
@@ -2601,16 +2605,16 @@ which means each electron moves in the effective potential $v_\mathrm{eff}([n];\
 
 Together with equation~\eqref{density_with_occupation_number},
 we can solve the Kohn--Sham equations~\eqref{KS_equations_expansion},
-and achieve the exact ground state density of the interacting system.
+and achieve the exact ground-state density of the interacting system.
 
 \subsection{Variational construction of the Kohn--Sham scheme}
 
-Here, we are going to justify the Kohn--Sham construction by a variational argument.
-We start from the interacting ground state density $n_0(\vec{r}\,)$,
-which makes the exact energy functional stationary.
+The previous subsection derived the Kohn--Sham equations by varying the orbitals directly. Here we complement that derivation by showing, at the density-functional level, why the auxiliary noninteracting construction is variationally consistent.
+
+We start from the interacting ground-state density $n_0(\vec{r}\,)$, which makes the exact energy functional stationary.
 
 However, we introduce an auxiliary noninteracting energy functional and require that it is minimized by $n_0(\vec{r}\,)$.
-This gives an auxiliary independent-particle system with the same ground state density.
+This gives an auxiliary independent-particle system with the same ground-state density.
 Then an effective potential exists, and the Kohn--Sham equations follow.
 
 Let us start from the Kohn--Sham auxiliary energy functional in equation~\eqref{KS_auxiliary_energy_functional}.
@@ -2654,7 +2658,7 @@ Therefore, we equivalently express the Euler--Lagrange condition as an explicit 
 \label{KS_auxiliary_v_eff_from_Ts}
 \end{equation}
 
-Consequently, if the functional derivative of the noninteracting kinetic energy functional $T_s[n]$ is well behaved around the ground state density $n_0(\vec{r}\,)$,
+Consequently, if the functional derivative of the noninteracting kinetic energy functional $T_s[n]$ is well behaved around the ground-state density $n_0(\vec{r}\,)$,
 the Kohn--Sham effective potential $v_\mathrm{eff}(\vec{r}\,)$ can be constructed to reproduce $n_0(\vec{r}\,)$.
 In this sense, the auxiliary noninteracting system idea is reasonable.
 
@@ -2743,8 +2747,7 @@ with the many-body hamiltonian:
 \label{interacting_hamiltonian_1D_two_electrons}
 \end{equation}
 
-here, $v_\mathrm{ee}(x_1,x_2)$ refers to the two-body interaction: $v_\mathrm{ee}(x_1,x_2)=(|x_1-x_2|)^{-1}$.
-and for a harmonic confinement, we have the following form:
+here, $v_\mathrm{ee}(x_1,x_2)$ denotes the two-body interaction, $v_\mathrm{ee}(x_1,x_2)=|x_1-x_2|^{-1}$. For a harmonic confinement, the external potential takes the form:
 
 \begin{equation}
     v_\mathrm{ext}(x)=\frac{1}{2}\Omega^2 x^2
@@ -2770,7 +2773,7 @@ In one dimension, equations~\eqref{KS_equations_expansion} and~\eqref{density_wi
 \label{KS_equation_1D_schematic}
 \end{equation}
 
-as well as, we denote the corresponding density function as:
+We denote the corresponding density function as:
 
 \begin{equation}
     n_\mathrm{KS}(x)=\sum_i f_i |\psi_i(x)|^2
@@ -2841,8 +2844,8 @@ Consequently, we turn to the inverse point of view.
 If an accurate density is available from an exact method, we seek a local potential that reproduces it.
 This defines the inverse Kohn--Sham problem.
 
-Let us denote the the target density by $n_\mathrm{tar}(x)$.
-We here require:
+Let us denote the target density by $n_\mathrm{tar}(x)$.
+We require:
 
 \begin{equation}
     n_\mathrm{KS}(x)=n_\mathrm{tar}(x)
@@ -2891,11 +2894,7 @@ At convergence, we arrive at:
 
 \subsection{The Hartree equations}
 
-Firstly, before proceeding to practical approximations for the exchange-correlation functional,
-it is instructive to consider a simpler self-consistent one-particle scheme.
-If we retain the external potential $v_\mathrm{ext}(\vec{r}\,)$ and the classical electrostatic interaction generated by the density $n(\vec{r}\,)$,
-but neglect exchange and correlation effects,
-then we arrive at the Hartree equations:
+Before turning to practical approximations to $E_\mathrm{xc}$, it is useful to consider the simpler self-consistent scheme that remains when exchange and correlation are omitted. If we retain the external potential $v_\mathrm{ext}(\vec{r}\,)$ and the classical electrostatic interaction generated by the density $n(\vec{r}\,)$, then we arrive at the Hartree equations:
 
 \begin{equation}
     \left[-\frac{1}{2}\nabla^2
@@ -2906,12 +2905,10 @@ then we arrive at the Hartree equations:
 \label{Hartree_equations_expansion}
 \end{equation}
 
-here, $\lambda_i$ refers to the Hartree eigenvalue associated with the one-particle orbital $\psi_i(\vec{r}\,)$.
-In terms of that we have defined the Hartree potential in equation~\eqref{Hartree_potential_definition}
-
-The Hartree potential $v_\mathrm{H}([n];\vec{r}\,)$ refers to the classical electrostatic potential generated by the electron density.
-The density $n(\vec{r}\,)$ is still constructed from the occupied one-particle orbitals through equation~\eqref{density_with_occupation_number}.
-Therefore, the Hartree equations~\eqref{Hartree_equations_expansion} must also be solved self-consistently.
+here, $\lambda_i$ denotes the Hartree eigenvalue associated with the one-particle orbital $\psi_i(\vec{r}\,)$.
+The Hartree potential $v_\mathrm{H}([n];\vec{r}\,)$, introduced in equation~\eqref{Hartree_potential_definition}, is the classical electrostatic potential generated by the electron density $n(\vec{r}\,)$.
+Since the density is still constructed from the occupied one-particle orbitals through equation~\eqref{density_with_occupation_number},
+the Hartree equations~\eqref{Hartree_equations_expansion} must be solved self-consistently.
 
 Next, the Hartree equations already demonstrate the basic one-particle structure of a self-consistent field theory.
 We start from a trial density,
