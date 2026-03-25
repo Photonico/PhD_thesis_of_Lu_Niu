@@ -1,16 +1,16 @@
 \chapter{Fundamentals Ⅰ: Many-Body Quantum Mechanics and Density Functional Theory}
 \label{cha:fundamentals_a}
 
-\section{A story starts from time evolution quantum mechanics}
+\section{A story starts with time evolution quantum mechanics}
 
 Imagine that we are watching a microscopic play, with electrons and atoms as the actors. You blink, and suddenly the stage configuration has shifted. Something has changed. But how do we describe this evolution in physical language?
 
-In classical physics, we started with Newton’s laws to describe the motions. Later, lagrangian and hamiltonian mechanics provided another description of physics from the perspective of degrees of freedom, symmetries, and conservations. Then came the great 20th-century revolution in physics, which developed the consensus of the microscopic scale, and quantum mechanics emerged. In this new framework, that role is played by the Schrödinger equation.
+In classical physics, we started with Newton’s laws to describe the motions. Later, lagrangian and hamiltonian mechanics provided another description of physics from the perspective of degrees of freedom, symmetries, and conservation laws. Then came the great 20th-century revolution in physics, which developed the consensus of the microscopic scale, and quantum mechanics emerged. In this new framework, that role is played by the Schrödinger equation.
 
 \subsection{Time-dependent Schrödinger equation}
 
 In quantum mechanics, the state of a physical system at a given instant is represented by a vector $\ket{\psi(t)}$.
-In a chosen representation, the same state can be expressed as a ction.
+In a chosen representation, the same state can be expressed as a wave function.
 This state vector encapsulates all information required to predict the statistics of measurement outcomes at time $t$.
 
 Next, we switch to the coordinate representation.
@@ -18,7 +18,7 @@ We define the ction as the projection of the state onto the position eigenbasis
 
 \begin{equation}
     \psi(\vec{r}\,,t)\coloneqq \braket{\vec{r}\,|\psi(t)}
-    \label{coordinate_representation_definition}
+\label{coordinate_representation_definition}
 \end{equation}
 
 here, $\ket{\vec{r}\,}$ is an eigenstate of the position operator $\hat{\vec{r}}$.
@@ -29,7 +29,7 @@ For a closed system with a time-independent hamiltonian, the expectation value o
 
 \begin{equation}
     i\hbar\frac{\partial}{\partial t}\ket{\psi(t)}=\hat{H}\ket{\psi(t)}
-    \label{time-dependent_Schrodinger_equation}
+\label{time-dependent_Schrodinger_equation}
 \end{equation}
 
 here, the left-hand side gives the time derivative of the state vector;
@@ -46,28 +46,28 @@ the state at time $t$ can be expressed with the time-evolution operator $\hat{U}
 
 \begin{equation}
     \ket{\psi(t)}=\hat{U}(t,t_0)\ket{\psi(t_0)}
-    \label{state_time_evolution}
+\label{state_time_evolution}
 \end{equation}
 
 Subsequently, we introduce the explicit exponential representation of the time-evolution operator:
 
 \begin{equation}
     \hat{U}(t,t_0)=\mathrm{e}^{-\frac{\mathrm{i}}{\hbar}\hat{H}(t-t_0)}
-    \label{time_evolution_operator}
+\label{time_evolution_operator}
 \end{equation}
 
 With the time difference $\tau=t-t_0$, we can express the time-evolution as a single-parameter family $\hat{U}(\tau)$:
 
 \begin{equation}
     \hat{U}(\tau)=\mathrm{e}^{-\frac{\mathrm{i}}{\hbar}\hat{H}\tau}
-    \label{time_evolution_operator_tau}
+\label{time_evolution_operator_tau}
 \end{equation}
 
 If we stipulate $t_0=0$, this expression becomes:
 
 \begin{equation}
     \hat{U}(t)=\mathrm{e}^{-\frac{\mathrm{i}}{\hbar}\hat{H}t}
-    \label{time_evolution_operator_degeneration}
+\label{time_evolution_operator_degeneration}
 \end{equation}
 
 We use $\hat{U}(t,t_0)$ to propagate the state forward in time while preserving its norm.
@@ -76,7 +76,7 @@ This property can be described as:
 
 \begin{equation}
     \hat{U}^\dagger(t,t_0)\,\hat{U}(t,t_0)=\hat{U}(t,t_0)\,\hat{U}^\dagger(t,t_0) = \hat{I}
-    \label{evolution_unitarity}
+\label{evolution_unitarity}
 \end{equation}
 
 Starting from the unitarity of $\hat{U}(t,t_0)$, quantum time evolution is reversible.
@@ -109,7 +109,7 @@ This requirement leads to the composition law:
 
 \begin{equation}
     \hat{U}(t_2,t_0)=\hat{U}(t_2,t_1)\hat{U}(t_1,t_0)
-    \label{composition_law_time_evolution}
+\label{composition_law_time_evolution}
 \end{equation}
 
 In the time-independent case, $\hat{U}(t,t_0)$ depends only on the time difference $\tau=t-t_0$.
@@ -117,21 +117,21 @@ The operators $\hat{U}(\tau)$ therefore forms a one-parameter unitary group:
 
 \begin{equation}
     \hat{U}(\tau_2)\,\hat{U}(\tau_1)=\hat{U}(\tau_2+\tau_1)
-    \label{time_evolution_group_property_tau}
+\label{time_evolution_group_property_tau}
 \end{equation}
 
 In particular, when we choose $t_0=0$, the one-parameter composition law becomes:
 
 \begin{equation}
     \hat{U}(t_1+t_2)=\hat{U}(t_1)\,\hat{U}(t_2)
-    \label{time_evolution_group_property}
+\label{time_evolution_group_property}
 \end{equation}
 
 For the one-parameter family $\hat{U}(\tau)$, the identity element, $\hat{I}$, corresponds to $\tau=0$:
 
 \begin{equation}
     \hat{U}(0)=\hat{I}
-    \label{time_evolution_identity}
+\label{time_evolution_identity}
 \end{equation}
 
 In this sense, these relations mean that time translation can be composed consistently, and that the evolution can always be undone by evolving backward.
@@ -158,14 +158,14 @@ Finally, for a small time step $\Delta t$, we return to the exponential form:
 
 \begin{equation}
     \hat{U}(\Delta t)=\mathrm{e}^{-\frac{\mathrm{i}}{\hbar}\hat{H}\Delta t}
-    \label{time_evolution_short_time_exact}
+\label{time_evolution_short_time_exact}
 \end{equation}
 
 and obtain the short-time expansion:
 
 \begin{equation}
     \hat{U}(\Delta t)\approx \hat{I}-\frac{\mathrm{i}}{\hbar}\hat{H}\Delta t+\mathcal{O}(\Delta t^2)
-    \label{time_evolution_short_time_series}
+\label{time_evolution_short_time_series}
 \end{equation}
 
 Acting on $\ket{\psi(t)}$ and taking the limit $\Delta t\to 0$ then recovers the differential form of the time-dependent Schrödinger equation.
@@ -173,13 +173,13 @@ Acting on $\ket{\psi(t)}$ and taking the limit $\Delta t\to 0$ then recovers the
 % \subsection{Generalizing to time-dependent hamiltonians}
 
 We now consider the more general case in which the hamiltonian depends explicitly on time and is denoted by $\hat{H}(t)$.
-The state is still propagated by the evolution operator $\hat{U}(t_1,t_0)$ as in equationon~\eqref{state_time_evolution}.
+The state is still propagated by the evolution operator $\hat{U}(t_1,t_0)$ as in equation~\eqref{state_time_evolution}.
 
 In this case, its corresponding time-evolution operator can be written as a time-ordered exponential~\cite{sakurai2020modern}:
 
 \begin{equation}
     \hat{U}(t_1,t_0)=\hat{T}\exp\left(-\frac{\mathrm{i}}{\hbar}\int_{t_0}^{t_1}\hat{H}(t)\mathrm{d}t\right)
-    \label{time-ordering_operator}
+\label{time-ordering_operator}
 \end{equation}
 
 here $\hat{T}$ denotes the time-ordering operator.
@@ -188,7 +188,7 @@ This is required when the hamiltonians at different times do not commute:
 
 \begin{equation}
     [\hat{H}(t),\hat{H}(t')]\neq 0
-    \label{hamiltonian_noncommutativity}
+\label{hamiltonian_noncommutativity}
 \end{equation}
 
 Equivalently, the hamiltonian operators evaluated at earlier times act first on the state vector.
@@ -204,8 +204,8 @@ We therefore extend the description to a nonrelativistic many-body system includ
 To describe this larger ensemble, we generalize our single-particle state $\ket{\psi(t)}$ to a many-body state $\ket{\Psi(t)}$, an element of a larger Hilbert space constructed by the tensor product of individual particle spaces:
 
 \begin{equation}
-    \ket{\Psi(t)}\in \mathbb{H}_1\otimes\mathbb{H}_2\otimes \cdots\otimes\mathbb{H}_N=\mathbb{H}.
-    \label{many-body_state_vector}
+    \ket{\Psi(t)}\in \mathbb{H}_1\otimes\mathbb{H}_2\otimes \cdots\otimes\mathbb{H}_N=\mathbb{H}
+\label{many-body_state_vector}
 \end{equation}
 
 For identical fermions, the physical many-body states belong to the antisymmetric subspace of $\mathbb{H}$.
@@ -215,8 +215,8 @@ It is worth noting that not every state $\ket{\Psi}$ can be factored as  $\ket{\
 This means that their correlations cannot be described by individual particle states alone. In the coordinate representation, we express the wave function as:
 
 \begin{equation}
-    \Psi(x_1,x_2,\cdots,x_N,t)=\braket{x_1,x_2,\cdots,x_N|\Psi(t)},
-    \label{many-body_wave function}
+    \Psi(x_1,x_2,\cdots,x_N,t)=\braket{x_1,x_2,\cdots,x_N|\Psi(t)}
+\label{many-body_wave_function}
 \end{equation}
 
 where each $x_i$ includes both spatial and spin degrees of freedom.
@@ -251,7 +251,7 @@ Summing all these terms, we arrive at the full many-body hamiltonian:
     +\sum_{i<j}\frac{1}{\left|\vec{r}_i-\vec{r}_j\right|}
     -\sum_I\frac{\nabla_I^2}{2M_I}
     +\sum_{I<J}\frac{Z_I\,Z_J}{\left|\vec{R}_I-\vec{R}_J\right|}    
-    \label{full_many-body_hamiltonian}
+\label{full_many-body_hamiltonian}
 \end{equation}
 
 For a given nuclear configuration $\{\vec{R}_I\}$, we regard the hamiltonian as $\hat{H}(\{\vec{r}_i\};\{\vec{R}_I\})$, where the nuclear coordinates enter as external parameters.
@@ -262,13 +262,13 @@ For the fixed nuclear positions, the stationary electronic states satisfy the ei
 \begin{equation}
     \hat{H}\Psi_\lambda(x_1,x_2,\cdots,x_N)
     = E_\lambda\Psi_\lambda(x_1,x_2,\cdots,x_N)
-    \label{many-body_hamiltonian_argument}
+\label{many-body_hamiltonian_argument}
 \end{equation}
 
 where $N$ denotes the number of electrons, and $x_i\coloneqq(\vec{r}_i,\sigma_i)$.
 
 In practice, due to the significantly greater mass of nuclei compared to electrons, we commonly adopt the clamped-nuclei approximation.
-For fixed nuclear positions, the Nucleus-nucleus repulsion contributes an additive constant given by $\hat{V}_\mathrm{NN}(\{\vec{R}_I\})$.
+For fixed nuclear positions, the nucleus-nucleus repulsion contributes an additive constant given by $\hat{V}_\mathrm{NN}(\{\vec{R}_I\})$.
 It is given by $\hat{V}_\mathrm{NN}(\{\vec{R}_I\})$:
 
 \begin{equation}
@@ -281,7 +281,7 @@ It is given by $\hat{V}_\mathrm{NN}(\{\vec{R}_I\})$:
 +\sum_{i<j}\frac{1}{\left|\vec{r}_i-\vec{r}_j\right|}
 +\sum_i v_\mathrm{ext}(\hat{\vec{r}}_i)+E_\mathrm{NN}
 \end{aligned}
-    \label{atomic_many-body_hamiltonian}
+\label{atomic_many-body_hamiltonian}
 \end{equation}
 
 where $E_\mathrm{NN}\coloneqq \hat{V}_\mathrm{NN}(\{\vec{R}_I\})$.
@@ -294,7 +294,7 @@ We define the external potential as:
 \label{one-body_Electron-nucleus}
 \end{equation}
 
-For fixed nuclear positions $\{\vec{R}_I\}$, the Electron-nucleus Coulomb attraction term $\hat{V}_\mathrm{eN}$ can be rewritten in the one-body form:
+For fixed nuclear positions $\{\vec{R}_I\}$, the electron-nucleus Coulomb attraction term $\hat{V}_\mathrm{eN}$ can be rewritten in the one-body form:
 
 \begin{equation}
     \hat{V}_\mathrm{eN}=\sum_i v_\mathrm{ext}(\hat{\vec{r}}_i)
@@ -309,7 +309,7 @@ After truncating each one-particle space to a finite basis of size $d$, the many
 
 \begin{equation}
     \dim(\mathbb{H})\sim d^{N}
-    \label{exponential_growth}
+\label{exponential_growth}
 \end{equation}
 
 This complexity, known as the "curse of dimensionality," motivates powerful approximate methods such as Hartree--Fock and Density Functional Theory, which we will explore in later sections.
@@ -319,7 +319,7 @@ If we further ignore fermionic antisymmetry, the many-body wave function reduces
 
 \begin{equation}
     \Psi(x_1,x_2,\cdots,x_N)=\psi_{n_1}(x_1)\psi_{n_2}(x_2)\cdots\psi_{n_N}(x_N)
-    \label{independent_body_function}
+\label{independent_body_function}
 \end{equation}
 
 where $\lambda=\{n_1,n_2,\cdots,n_N\}$ labels the states.
@@ -334,7 +334,7 @@ In the coordinate representation, we can represent the antisymmetric wave functi
     \vdots & \vdots & \ddots & \vdots\\
     \psi_N(\vec{r}_1,\sigma_1) & \psi_N(\vec{r}_2,\sigma_2) & \cdots & \psi_N(\vec{r}_N,\sigma_N)
     \end{vmatrix}
-    \label{slater_determinant}
+\label{slater_determinant}
 \end{equation}
 
 here, the antisymmetric $N$-electron wave function $\Psi$ is constructed from a set of single-particle spin-orbital wave functions $\{\psi_i(\vec{r},\sigma)\}$.
@@ -344,7 +344,7 @@ Finally, we can describe the full time-evolution of the many-body wave function 
 \begin{equation}
     i\frac{\partial}{\partial t}\Psi(x_1,x_2,\cdots,x_N,t)
     = \hat{H}\,\Psi(x_1,x_2,\cdots,x_N,t)
-    \label{tdse_manybody_coord}
+\label{tdse_manybody_coord}
 \end{equation}
 
 \subsection{From Schrödinger picture to Heisenberg picture}
@@ -355,7 +355,7 @@ For a given observable represented by a Hermitian (self-adjoint) operator $\hat{
 
 \begin{equation}
     \braket{\hat{\Omega}} = \braket{\psi(t)|\hat{\Omega}|\psi(t)}
-    \label{expectation_Hermitian}
+\label{expectation_Hermitian}
 \end{equation}
 
 In the standard formulation of quantum mechanics, observables represent measurable physical quantities, so their expectation values are real.
@@ -369,7 +369,7 @@ In the Heisenberg picture, the state at the reference time $t_0$ is taken to be 
 
 \begin{equation}
     \ket{\psi_\mathrm{H}}=\ket{\psi(t_0)}
-    \label{heisenberg_state_definition}
+\label{heisenberg_state_definition}
 \end{equation}
 
 We keep the state fixed and shift the time dependence to the operators.
@@ -379,7 +379,7 @@ For any Schrödinger picture operator $\hat{\Omega}$, we can define its Heisenbe
     \hat\Omega_\mathrm{H}(t)
     =\hat{U}^\dagger(t,t_0)\,\hat{\Omega}\,\hat{U}(t,t_0)
     =\mathrm{e}^{\frac{\mathrm{i}}{\hbar}\hat{H}(t-t_0)}\,\hat{\Omega}\,\mathrm{e}^{-\frac{\mathrm{i}}{\hbar}\hat{H}(t-t_0)}
-    \label{heisenberg_operator_definition}
+\label{heisenberg_operator_definition}
 \end{equation}
 
 This definition transfers the time dependence from the state to the operator.
@@ -402,27 +402,27 @@ For a time-independent hamiltonian and an operator without explicit time depende
 \begin{equation}
     \frac{\mathrm{d}}{\mathrm{d}t}\hat{\Omega}_\mathrm{H}(t)
     =\frac{\mathrm{i}}{\hbar}\left[\hat{H},\hat{\Omega}_\mathrm{H}(t)\right]
-    \label{heisenberg_equation_of_motion}
+\label{heisenberg_equation_of_motion}
 \end{equation}
 
 This form is particularly convenient for discussing conserved quantities and symmetries, since it expresses the dynamics directly at the operator level.
 
 \subsection{From Heisenberg picture to the continuity equation}
 
-Having seen that any local one-body observable can be written as an integral over a single function, we now introduce that central quantity. The one-body density contains all the information needed to compute one-particle expectation values and serves as the fundamental variable in the density functional theory~\cite{sholl2022density}. In what follows, we review its precise definition.
+Having seen that any local one-body observable can be written as an integral over a single function, we now introduce that central quantity. The one-body density contains all the information needed to compute one-particle expectation values and serves as the fundamental variable in density functional theory~\cite{sholl2022density}. In what follows, we review its precise definition.
 
 \begin{equation}
-n(\vec{r}\,)
-= \bra{\psi}\,\hat{n}(\vec{r}\,)\ket{\psi}
-= \bra{\psi}\sum_i\delta(\vec{r} - \hat{\vec{r}}_i)\ket{\psi}
+    n(\vec{r}\,)
+    = \bra{\psi}\,\hat{n}(\vec{r}\,)\ket{\psi}
+    = \bra{\psi}\sum_i\delta(\vec{r} - \hat{\vec{r}}_i)\ket{\psi}
 \label{particle_density_operator_definition}
 \end{equation}
 
-gives the electron density at point $\vec{r}$.
+This defines the electron density at point $\vec{r}$.
 Physically, $n(\vec{r}\,)\mathrm{d}^3r$ is the expected number of electrons in the volume element $\mathrm{d}^3r$ around $\vec{r}$.
 In density functional theory, $n(\vec{r}\,)$ serves as the fundamental variable replacing the full many-body wave function.  
 
-It can be shown that the ground state density $n(\vec{r}\,)$ uniquely fixes the external potential, which is up to an additive constant, and hence all ground state observables can be written as functionals of $n(\vec{r}\,)$.
+It can be shown that the ground state density $n(\vec{r}\,)$ uniquely determines the external potential up to an additive constant, and hence all ground state observables can be written as functionals of $n(\vec{r}\,)$.
 This dramatic reduction comes from a 3$N$-dimensional wave function to a three-dimensional density, which lies at the heart of density functional theory, making formerly intractable many-body problems computationally feasible.
 
 The time-dependent density-functional theory relies on the continuity equation in the Heisenberg picture.
@@ -431,7 +431,7 @@ We first define the particle density operator in the Schrödinger-picture as:
 \begin{equation}
     \hat{n}(\vec{r}\,)
     = \sum_i \delta(\vec{r}-\hat{\vec{r}}_i)
-    \label{Schrodinger-picture_density_operator}
+\label{Schrodinger-picture_density_operator}
 \end{equation}
 
 and its corresponding Heisenberg-picture counterpart is defined by the unitary time evolution as:
@@ -439,7 +439,7 @@ and its corresponding Heisenberg-picture counterpart is defined by the unitary t
 \begin{equation}
     \hat{n}_\mathrm{H}(\vec{r},t)
     = \hat U^\dagger(t)\,\hat{n}(\vec{r}\,)\,\hat{U}(t)
-    \label{Heisenberg-picture_density_operator}
+\label{Heisenberg-picture_density_operator}
 \end{equation}
 
 Its time derivative follows from the Heisenberg equation of motion,
@@ -499,7 +499,7 @@ Taking expectation values in any Heisenberg-picture state $\ket{\Psi_\mathrm{H}}
 and current $\vec{j}(\vec{r},t)=\bra{\Psi_\mathrm{H}}\hat{\vec{j}}_\mathrm{H}(\vec{r},t)\ket{\Psi_\mathrm{H}}$:
 
 \begin{equation}
-    \frac{\partial}{\partial t}\,n(\vec{r},t)+\nabla\cdot\vec{j}(\vec{r},t)=0.
+    \frac{\partial}{\partial t}\,n(\vec{r},t)+\nabla\cdot\vec{j}(\vec{r},t)=0
 \label{continuity_expectation}
 \end{equation}
 
@@ -516,12 +516,12 @@ We can extract them from the wave function through expectation values:
 
 \begin{equation}
     \braket{\hat{\Omega}} = \bra{\Psi}\hat{\Omega}\ket{\Psi}
-    \label{obvious}
+\label{obvious}
 \end{equation}
 
 \subsection{An introduction to grand canonical ensemble}
 
-Before proceeding further, it is essential to introduce the grand canonical ensemble, as it naturally accommodates quantum many-body systems exchanging particles and energy with external reservoirs. This treatment is particularly crucial in Density Functional Theory calculations for realistic materials, where fluctuations in particle number and thermal effects are common.
+Before proceeding further, it is essential to introduce the grand canonical ensemble, as it naturally accommodates quantum many-body systems exchanging particles and energy with external reservoirs. This treatment is particularly crucial in density functional theory calculations for realistic materials, where fluctuations in particle number and thermal effects are common.
 
 In the grand canonical ensemble, the expectation value of any observable operator $\hat{\Omega}$ is computed as follows:
 
@@ -540,7 +540,7 @@ where the summation runs over all quantum states labeled by $\alpha$. Here, $\Ps
 
 In quantum many-body theory and calculation, employing the grand canonical ensemble allows systematic inclusion of particle number fluctuations and thermal equilibrium effects, providing a robust and realistic statistical-mechanical description essential for accurate modeling of complex quantum materials.
 
-In what follows, we mainly focus on the ground state setting: zero temperature and fix particle number; while the grand-canonical form is noted for completeness and later extensions.
+In what follows, we mainly focus on the ground state setting: zero temperature and fixed particle number; while the grand-canonical form is noted for completeness and later extensions.
 
 \subsection{From wave function to practical functionals}
 
@@ -566,7 +566,7 @@ Therefore, we may regard the expectation value of the observable as a functional
 \label{observables_functional}
 \end{equation}
 
-here, the square brackets $[\Psi]$ (rather than parentheses) emphasize that $\Omega$ is a functional, it is a mapping from the entire wave function $\Psi$ to a scalar.
+here, the square brackets $[\Psi]$ (rather than parentheses) emphasize that $\Omega$ is a functional; it is a mapping from the entire wave function $\Psi$ to a scalar.
 
 A functional simply assigns a number to a function. In our case of equation~\eqref{observables_N-body}, its form is a known integral. However, evaluating it requires the exact many-body wave function, which we generally cannot compute or store. Moreover, integration acts as an averaging operation that smooths out microscopic fluctuations, so only the coarse-grained features of the integrand contribute to the result.
 
@@ -585,13 +585,13 @@ we work at the fixed nuclear coordinates $\{\vec{R}_I\}$ and write the clamped n
     + \sum_i v_{\mathrm{ext}}(\hat{\vec{r}}_i)
     + \sum_{i<j}\frac{1}{\left|\vec{r}_i - \vec{r}_j\right|}
     + E_\mathrm{NN}(\{\vec{R}_I\})
-    \label{BO_hamiltonian}
+\label{BO_hamiltonian}
 \end{equation}
 
 In the present electronic many-body problem within the Born--Oppenheimer approximation, 
 the nuclear coordinates are clamped, and the nuclear-nuclear repulsion becomes a negligible constant. 
-We can identify the interaction operator as the Electron-electron Coulomb repulsion~\eqref{electrons_Coulomb},
-and the external potential acting on the electrons is the attractive Electron-nucleus interaction, which can be written as a sum of one-body terms~\eqref{Electron-nucleus_one-body_form}:
+We can identify the interaction operator as the electron-electron Coulomb repulsion~\eqref{electrons_Coulomb},
+and the external potential acting on the electrons is the attractive electron-nucleus interaction, which can be written as a sum of one-body terms~\eqref{Electron-nucleus_one-body_form}:
 
 \begin{equation}
 \begin{aligned}
@@ -634,7 +634,7 @@ the corresponding eigenvalue $E_n$ and eigenstate are determined by the Schrödi
 Accordingly, one may view the spectrum and the eigenstates as depending on the external potential through the hamiltonian:
 
 \begin{equation}
-    v_\mathrm{ext}(\vec{r}\,) \longmapsto \left\{\ket{\Psi_n\left[v_\mathrm{ext}(\vec{r}\,)\right]}, E_n\left[v_\mathrm{ext}(\vec{r}\,)\right]\right\}_{n}.
+    v_\mathrm{ext}(\vec{r}\,) \longmapsto \left\{\ket{\Psi_n\left[v_\mathrm{ext}(\vec{r}\,)\right]}, E_n\left[v_\mathrm{ext}(\vec{r}\,)\right]\right\}_{n}
 \label{spectrum_mapping_from_external_potential}
 \end{equation}
 
@@ -642,7 +642,7 @@ where $E_n\left[v_\mathrm{ext}\right]$ denotes the energy eigenvalue associated 
 
 \begin{equation}
     E_n\left[v_\mathrm{ext}(\vec{r}\,)\right] \coloneqq
-    \bra{\Psi_n\left[v_\mathrm{ext}(\vec{r}\,)\right]}\hat{H}\ket{\Psi_n\left[v_\mathrm{ext}(\vec{r}\,)\right]}.
+    \bra{\Psi_n\left[v_\mathrm{ext}(\vec{r}\,)\right]}\hat{H}\ket{\Psi_n\left[v_\mathrm{ext}(\vec{r}\,)\right]}
 \label{eigenenergy_as_expectation_value}
 \end{equation}
 
@@ -651,7 +651,7 @@ Invoking the cyclic invariance of the trace, we obtain:
 
 \begin{equation}
     \braket{\hat{\Omega}}
-    = \frac{1}{\mathcal{Z}}\,\operatorname{Tr}\,\left[\mathrm{e}^{-\beta\left(\hat{H}-\mu \hat{N}\right)}\,\hat{\Omega}\right],
+    = \frac{1}{\mathcal{Z}}\,\operatorname{Tr}\,\left[\mathrm{e}^{-\beta\left(\hat{H}-\mu \hat{N}\right)}\,\hat{\Omega}\right]
 \label{grand_canonical_expectation_trace}
 \end{equation}
 
@@ -660,7 +660,7 @@ with the grand-canonical partition function:
 \begin{equation}
     \mathcal{Z}
     =\sum_{\alpha}\mathrm{e}^{-\beta\left(E_{\alpha}-\mu N_{\alpha}\right)} 
-    =\operatorname{Tr}\,\left[\mathrm{e}^{-\beta\left(\hat{H}-\mu \hat{N}\right)}\right].
+    =\operatorname{Tr}\,\left[\mathrm{e}^{-\beta\left(\hat{H}-\mu \hat{N}\right)}\right]
 \label{grand_partition_function_trace}
 \end{equation}
 
@@ -674,9 +674,9 @@ Note that the sum over states in equation~\eqref{grand_canonical} is nothing but
 
 Equivalently, by expanding the trace in the eigenbasis of $\hat{H}$, equation~\eqref{grand_canonical_expectation_trace} reduces to the sum representation in equation~\eqref{grand_canonical_trace}.
 
-In principle, all physical observables derive from the many-body Schrödinger equation equation~\eqref{tdse_manybody_coord}, yet the exponential growth of the Hilbert-space dimension renders direct diagonalization intractable for realistic systems.
+In principle, all physical observables derive from the many-body Schrödinger equation~\eqref{tdse_manybody_coord}, yet the exponential growth of the Hilbert-space dimension renders direct diagonalization intractable for realistic systems.
 
-If the kinetic energy operator and Coulomb interaction are fixed, the ground state total energy becomes a functional of the external potential we introduced equation~\eqref{spectrum_mapping_from_external_potential}.
+If the kinetic energy operator and Coulomb interaction are fixed, the ground state total energy becomes a functional of the external potential we introduced in equation~\eqref{spectrum_mapping_from_external_potential}.
 
 A central challenge is that evaluating the grand-canonical expectation in equation~\eqref{grand_canonical_trace} remains highly nontrivial, as the trace involves high-dimensional integrals and noncommuting operators.
 
@@ -741,14 +741,14 @@ For a spin-resolved density $n(x)$, we define the particle number functional as:
 
 \begin{equation}
     N[n]\coloneqq\int\mathrm{d}x\,n(x)
-    \label{particle_number_functional}
+\label{particle_number_functional}
 \end{equation}
 
 and in the ground state setting with fixed particle number we require:
 
 \begin{equation}
     N[n]=N
-    \label{particle_number_constraint_density}
+\label{particle_number_constraint_density}
 \end{equation}
 
 % Equivalently, for the spin-summed spatial density, the same condition reads
@@ -766,13 +766,13 @@ and we work within the set of admissible densities, and equation~\eqref{particle
 The expectation value reduces to:
 
 \begin{equation}
-\braket{\hat\Omega_1}=\int\mathrm{d}x_1\,\Omega_1(x_1)n(x_1)
+    \braket{\hat\Omega_1}=\int\mathrm{d}x_1\,\Omega_1(x_1)n(x_1)
 \label{observables_one-body_density}
 \end{equation}
 
 Thus, rather than computing the full many-body integral, we need only determine the one-body density $n(x_1)$.
 
-Next, consider the Electron-electron Coulomb interaction energy:
+Next, consider the electron-electron Coulomb interaction energy:
 
 \begin{equation}
 \begin{aligned}
@@ -798,7 +798,7 @@ So that the expectation value of the Coulomb interaction energy reduces to:
 \label{observables_two-body_density}
 \end{equation}
 
-Similarly, the kinetic energy expectation value is
+Similarly, the kinetic energy expectation value is:
 
 \begin{equation}
 \begin{aligned}
@@ -851,10 +851,10 @@ Equivalently, the reduced integral reads:
 
 \begin{equation}
 f_n^\mathrm{eh}(x_1,t)=\int\Psi_g^*(\vec{x};t)\,\Psi_n(\vec{x};t)\prod^N_{j=2}\dif{x_j}
-\label{transition_one-body}
+\label{one_body_transition_quantity_compact}
 \end{equation}
 
-This marginal integral represnts the one-body transition density from ground state $g$ to the $n$-th excited state.
+This marginal integral represents the one-body transition density from ground state $g$ to the $n$-th excited state.
 
 In the presence of an oscillating electromagnetic field, we introduce the Bohr frequency:
 
@@ -881,7 +881,7 @@ therefore, the transition density can be demonstrated as:
 \label{mod_transition_one-body}
 \end{equation}
 
-here, the the transition amplitude is denoted as:
+here, the transition amplitude is denoted as:
 
 \begin{equation}
     \iint\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\Psi_g^*(x_1,x_2,\cdots,x_N;t)\,\Psi_n(x_1,x_2,\cdots,x_N;t)
@@ -898,21 +898,21 @@ Here, the spatial parts are contained in $x_1,x_2$:
 \begin{aligned}
     \braket{\hat{\Omega}^{(1)}} &= \int \mathrm{d}x_1\,\Omega_1(x_1)\,n(x_1)\\
     T &= -\frac{1}{2}\int \mathrm{d}x_1\,
-    \Big[\nabla_{x'_1}^{2}\,\rho(x_1,x'_1)\Big]_{x'_1=x_1}\\
+    \left[\nabla_{x'_1}^{2}\,\rho(x_1,x'_1)\right]_{x'_1=x_1}\\
     \braket{\hat{V}_\mathrm{ee}} &= \frac{1}{2}\int \mathrm{d}x_1\,\mathrm{d}x_2\,
     \frac{n^{(2)}(x_1,x_2)}{\left|\vec{r}_1-\vec{r}_2\right|}
 \end{aligned}
 \label{one-body_operator_with_kernel}
 \end{equation}
 
-Hence, a typical energy-like observable can be written as
+Hence, a typical energy-like observable can be written as:
 
 \begin{equation}
 \begin{aligned}
     \braket{\Omega_1}
     &= \int \mathrm{d}x_1\, \Omega_1(x_1)\, n(x_1) \\
     &\quad - \frac{1}{2}\int \mathrm{d}x_1\,
-    \Big[\nabla_{x'_1}^{2}\,\rho(x_1,x'_1)\Big]_{x'_1=x_1} \\
+    \left[\nabla_{x'_1}^{2}\,\rho(x_1,x'_1)\right]_{x'_1=x_1} \\
     &\quad + \frac{1}{2}\int \mathrm{d}x_1\,\mathrm{d}x_2\,
     \frac{n^{(2)}(x_1,x_2)}{\left|\vec{r}_1-\vec{r}_2\right|}
 \end{aligned}
@@ -929,7 +929,7 @@ Our goal is to find a single descriptor $Q$ such that, once $Q$ is known, all th
 
 \begin{equation}
     \Psi \mapsto Q,\quad\Omega_i[\Psi] = \Omega_i[Q],\quad(i=1,2,\cdots)
-    \label{descriptor_Q_mapping}
+\label{descriptor_Q_mapping}
 \end{equation}
 
 In other words, $Q$ is chosen to retain exactly the information needed for the set $\{\Omega_i\}$, while discarding irrelevant microscopic details.
@@ -940,7 +940,7 @@ Firstly, the particle density $n(x)$ yields exactly all local one-body observabl
 
 \begin{equation}
     \braket{\hat{\Omega}^{(1)}}=\int \mathrm{d}x\,\Omega_1(x)\,n(x)
-    \label{one-body_observables}
+\label{one-body_observables}
 \end{equation}
 
 Secondly, the particle density $n(x)$ is extremely compact compared to the wave function $\Psi$.
@@ -959,12 +959,12 @@ Therefore, we explore the variational route for $n$. Define the energy-like func
 and obtain the ground state density from
 \begin{equation}
     \frac{\delta}{\delta n}\left(E[n;v_\mathrm{ext}] - \mu\,N[n]\right)=0 \ \Rightarrow\ n_g(x)
-\label{ground state_density}
+\label{ground_state_density}
 \end{equation}
 
 Once $n_g$ is known, all desired observables are evaluated as $\Omega_i[n_g]$; 
 for non-local one-body or two-body quantities,
-this amounts to adopting controlled approximations for kinetic energy functional $T[n]$ and interaction energy functional $E_\mathrm{int}[n]$ such as the Kohn-Sham framework, which we will introduce later.
+this amounts to adopting controlled approximations for kinetic energy functional $T[n]$ and interaction energy functional $E_\mathrm{int}[n]$ such as the Kohn--Sham framework, which we will introduce later.
 
 \newpage
 \section{An introduction to the functional of density}
@@ -1008,7 +1008,7 @@ A detailed discussion can be found in the review by C.~J.~García-Cervera~\cite{
 In atomic units, it is generally written as:
 
 \begin{equation}
-    T_\mathrm{vW}[n] = \frac{1}{8}\int \mathrm{d}\vec{r}\,\frac{\nabla n(\vec{r}\,)\cdot\nabla n(\vec{r}\,)}{n(\vec{r}\,)},
+    T_\mathrm{vW}[n] = \frac{1}{8}\int \mathrm{d}\vec{r}\,\frac{\nabla n(\vec{r}\,)\cdot\nabla n(\vec{r}\,)}{n(\vec{r}\,)}
 \label{vw_functional}
 \end{equation}
 
@@ -1040,7 +1040,7 @@ here, $\ket{\Psi_0}$ denotes the ground state many-body wave function, which enc
 Given an observable represented by an operator $\hat{\Omega}$, its ground state value is evaluated through the expectation value $O$:
 
 \begin{equation}
-    O \coloneqq \bra{\Psi_0}\hat{\Omega}\ket{\Psi_0},
+    O \coloneqq \bra{\Psi_0}\hat{\Omega}\ket{\Psi_0}
 \label{electron_density_expectation}
 \end{equation}
 
@@ -1053,7 +1053,7 @@ Consequently, every ground state observable can be written as a (unique) density
 
 \begin{equation}
     \bra{\Psi_0}\hat{\Omega}\ket{\Psi_0}=O[n(\vec{r})]
-\label{ground state_observable}
+\label{ground_state_observable_expectation_value}
 \end{equation}
 
 Under the usual Hohenberg--Kohn setting (in particular, for a non-degenerate ground state), the density $n(\vec{r}\,)$ uniquely determines the external potential $v_\mathrm{ext}(\vec{r}\,)$ up to an additive constant.
@@ -1063,7 +1063,7 @@ Accordingly, any ground state observable may be written as a functional of the d
 
 \begin{equation}
     O = O[n(\vec{r}\,)]
-\label{ground state_observable}
+\label{ground_state_observable_density_functional}
 \end{equation}
 
 This is not merely a change of notation; it marks the conceptual compression from a function of $3N$ variables, $\Psi_0(\vec{r}_1,\cdots,\vec{r}_N)$, to a function of only three spatial variables, $n(\vec{r}\,)$, which is the cornerstone of the practical formulation of DFT.
@@ -1073,7 +1073,7 @@ Since the many-body wave function $\Psi$ encodes the full complexity of the syst
 
 To answer this, we recall that the quantum dynamics is specified once the hamiltonian is given.
 
-For electronic systems, the kinetic energy operator $\hat{T}$ and the interaction operator $\hat{V}_\mathrm{int}$ have fixed forms, and in the present context we identify $\hat{V}_\mathrm{int}$ with the Electron-electron interaction $\hat{V}_\mathrm{ee}$ as in equation~\eqref{reduced_operator_definition}.
+For electronic systems, the kinetic energy operator $\hat{T}$ and the interaction operator $\hat{V}_\mathrm{int}$ have fixed forms, and in the present context we identify $\hat{V}_\mathrm{int}$ with the electron-electron interaction $\hat{V}_\mathrm{ee}$ as in equation~\eqref{reduced_operator_definition}.
 
 Therefore, the system-specific information enters primarily through the external potential $\hat{V}_\mathrm{ext}$, which is generated by the nuclei and any applied fields.
 With this in mind, we review the form of hamiltonian:
@@ -1089,9 +1089,9 @@ Let us return to the reduced expression for the hamiltonian in equation~\eqref{a
 We observe that two terms are universal, in the sense that their operator forms do not depend on the specific system.
 
 These are the electronic kinetic energy~\eqref{electrons_kinetic},
-and the Electron-electron Coulomb repulsion~\eqref{electrons_Coulomb}.
+and the electron-electron Coulomb repulsion~\eqref{electrons_Coulomb}.
 
-Here, we say the external potential $\hat{V}_\mathrm{ext}$ is not universal, because it depends on the specific nuclear configuration and any applied fields. In contrast, the electronic kinetic energy and the Electron-electron Coulomb interaction have fixed operator forms.
+Here, we say the external potential $\hat{V}_\mathrm{ext}$ is not universal, because it depends on the specific nuclear configuration and any applied fields. In contrast, the electronic kinetic energy and the electron-electron Coulomb interaction have fixed operator forms.
 Therefore, the external potential is the system-defining ingredient: it distinguishes one many-electron system from another.
 
 In fact, once $\hat{V}_\mathrm{ext}$ is given, the hamiltonian is fully specified.
@@ -1127,7 +1127,7 @@ equation~\eqref{electron_densit_via_expectation}, we have:
 
 \begin{equation}
     \braket{\hat{V}_\mathrm{ext}}=\int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
-    \label{external_potential_energy_expectation}
+\label{external_potential_energy_expectation}
 \end{equation}
 
 When the ground state is non-degenerate, $v_\mathrm{ext}(\vec{r}\,)$ stands in a one-to-one correspondence (up to an additive constant) with the ground state wave function $\Psi_0$.
@@ -1153,11 +1153,11 @@ In the presence of ground state degeneracy, the strict one-to-one correspondence
 
 \subsection{The Hohenberg--Kohn theorem}
 
-In this subsection, we focus on the Hohenberg--Kohn theorem, which provides the conceptual foundation of density functional theory: for a fixed form of Electron-electron interaction and a non-degenerate ground state, it establishes a one-to-one correspondence between the external potential and the ground state density (up to an additive constant), and it leads to a variational characterization of the ground state.
+In this subsection, we focus on the Hohenberg--Kohn theorem, which provides the conceptual foundation of density functional theory: for a fixed form of electron-electron interaction and a non-degenerate ground state, it establishes a one-to-one correspondence between the external potential and the ground state density (up to an additive constant), and it leads to a variational characterization of the ground state.
 
 We begin by proving that, up to an additive constant in the potential, the ground state wave function is uniquely determined by the external potential.
 
-We start with assuming for contradiction that two different external potentials lead to the same ground state wave function $\ket{\Psi_0}$, while not differing by a mere additive constant:
+We start by assuming for contradiction that two different external potentials lead to the same ground state wave function $\ket{\Psi_0}$, while not differing by a mere additive constant:
 
 \begin{equation}
     v^{(1)}_\mathrm{ext}(\vec{r}\,)\neq v^{(2)}_\mathrm{ext}(\vec{r}\,)+\mathrm{const.}
@@ -1239,11 +1239,11 @@ Thus, we arrive at the following relation:
 
 \begin{equation}
     v_\mathrm{ext}^{(1)}(\vec{r}\,)=v_\mathrm{ext}^{(2)}(\vec{r}\,)+\mathrm{const.}
-\label{parallel_wave function}
+\label{parallel_wave_function}
 \end{equation}
 
 Hence $(E_1-E_2)/N$ is a constant. This contradicts the assumption in equation~\eqref{V_ext}.
-Therefore, we arrive at a conclusion that two different external potentials cannot lead to the same non-degenerate ground state wave function unless they differ only by an additive constant, as stated in equation~\eqref{parallel_wave function}.
+Therefore, we arrive at the conclusion that two different external potentials cannot lead to the same non-degenerate ground state wave function unless they differ only by an additive constant, as stated in equation~\eqref{parallel_wave_function}.
 
 Equivalently, up to a constant shift in the potential and for a fixed form of interaction, the mapping from the external potential to the non-degenerate ground state wave function is one-to-one.
 
@@ -1252,7 +1252,7 @@ The external potential is defined to an additive constant shift.
 
 A natural question then is: what is the relation between the external potential $v_\mathrm{ext}(\vec{r}\,)$ and the density of the current system $n(\vec{r}\,)$?
 
-To describe the statements precise, we next define the equivalence class of external potential $v_\mathrm{ext}(\vec{r}\,)$ and the ground state wave function $\ket{\Psi_0}$ as:
+To state this more precisely, we next define the equivalence class of external potential $v_\mathrm{ext}(\vec{r}\,)$ and the ground state wave function $\ket{\Psi_0}$ as:
 
 \begin{equation}
 \begin{aligned}
@@ -1270,7 +1270,7 @@ Equivalently, $\left[v_\mathrm{ext}(\vec{r}\,)\right]$ and $\left[\ket{\Psi_0}\r
 
 \begin{equation}
     \left[v_\mathrm{ext}(\vec{r}\,)\right]\,\longleftrightarrow\,\left[\ket{\Psi_0}\right]
-    \label{potential_wave function_correspondence}
+\label{potential_wave_function_correspondence}
 \end{equation}
 
 Moreover, the wave function is directly related to the density through the standard marginalization over the remaining $N-1$ particles. As a result, we obtain a unique ground state density, given by the usual marginalization of the squared modulus of the wave function over all but one space variables:
@@ -1357,7 +1357,7 @@ Then, we apply the definition of the operator for external potential~\eqref{loca
 
 As a result, the total energy of the first system satisfies the following inequality:
 \begin{equation}
-    E_1<E_2+\bra{\Psi_0^{(2)}}\big(\hat{V}_\mathrm{ext}^{(1)}-\hat{V}_\mathrm{ext}^{(2)}\big)\ket{\Psi_0^{(2)}}
+    E_1<E_2+\bra{\Psi_0^{(2)}}\left(\hat{V}_\mathrm{ext}^{(1)}-\hat{V}_\mathrm{ext}^{(2)}\right)\ket{\Psi_0^{(2)}}
 \end{equation}
 
 Therefore, we arrive at the following inequality for the ground state energies:
@@ -1391,29 +1391,29 @@ the ground state density $n(\vec{r}\,)$ uniquely determines the external potenti
 and hence uniquely determines the hamiltonian and the ground state up to an overall phase.
 
 Let us recollect the definition of the equivalence class of the external potential $v_\mathrm{ext}(\vec{r}\,)$ and the ground state wave function $\ket{\Psi_0}$ in equation~\eqref{equivalence_classes_definition},
-as well as the fact that the equivalence classes $\left[v_\mathrm{ext}\right]$ and $\left[\ket{\Psi_0}\right]$ are in bijection in equation~\eqref{potential_wave function_correspondence}.
+as well as the fact that the equivalence classes $\left[v_\mathrm{ext}\right]$ and $\left[\ket{\Psi_0}\right]$ are in bijection in equation~\eqref{potential_wave_function_correspondence}.
 
 Moreover, the ground state wave function uniquely determines the ground state density via the standard marginalization:
 
 \begin{equation}
     \left[\ket{\Psi_0}\right]\longmapsto n(\vec{r}\,)
-    \label{wave function_density_map}
+\label{wave_function_density_map}
 \end{equation}
 
-We emphasize that the map in equation~\eqref{wave function_density_map} is not injective for any arbitrary many-body wave function.
+We emphasize that the map in equation~\eqref{wave_function_density_map} is not injective for any arbitrary many-body wave function.
 In the present setting, however, we restrict ourselves to non-degenerate ground states. Within this restricted class, the first Hohenberg--Kohn theorem provides a unique inverse implication, namely that the ground state density uniquely determines the equivalence class of the external potential:
 
 \begin{equation}
     n(\vec{r}\,)\longmapsto\left[v_\mathrm{ext}(\vec{r}\,)\right]
-    \label{density_potential_map}
+\label{density_potential_map}
 \end{equation}
 
-Combining equations~\eqref{potential_wave function_correspondence}, \eqref{wave function_density_map},
+Combining equations~\eqref{potential_wave function_correspondence}, \eqref{wave_function_density_map},
 and\eqref{density_potential_map}, we finally arrive at a one-to-one correspondence among the basic ground state descriptors:
 
 \begin{equation}
     \left[v_\mathrm{ext}(\vec{r}\,)\right]\,\longleftrightarrow\, n(\vec{r}\,)\,\longleftrightarrow\,\left[\ket{\Psi_0}\right]
-    \label{hk_correspondence_v_n_psi}
+\label{hk_correspondence_v_n_psi}
 \end{equation}
 
 The two previous equations~\eqref{density_potential_map} and~\eqref{hk_correspondence_v_n_psi} summarize the content of the Hohenberg--Kohn theorem~\cite{hohenberg1964inhomogeneous}.
@@ -1476,7 +1476,7 @@ Using the local form of the external potential operator in equation~\eqref{local
 
 \begin{equation}
     E_\mathrm{ext}[n]=\int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
-    \label{functional_Eext_local_form}
+\label{functional_Eext_local_form}
 \end{equation}
 
 According to the definition of the ground state density in equation~\eqref{electron_density_definition},
@@ -1522,22 +1522,22 @@ This motivates introducing the universal Hohenberg--Kohn functional $E_\mathrm{H
 \label{functional_HK_definition}
 \end{equation}
 
-For a fixed form of the Electron-electron interaction, $E_\mathrm{HK}[n]$ is independent of the external potential $v_\mathrm{ext}(\vec{r}\,)$,
+For a fixed form of the electron-electron interaction, $E_\mathrm{HK}[n]$ is independent of the external potential $v_\mathrm{ext}(\vec{r}\,)$,
 and the system specific information enters only through $v_\mathrm{ext}$.
 
 This allows us to separate out the external potential contribution and write:
 
 \begin{equation}
     E[n]=E_\mathrm{HK}[n]+\int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
-    \label{standard_form_energy_functional}
+\label{standard_form_energy_functional}
 \end{equation}
 
 The Hohenberg--Kohn theorem then allows us to cast the ground state problem as a constrained search over admissible densities:
 
 \begin{equation}
-    E_0 = \min_{n(\vec{r}\,)}\left\{E\,\left[n(\vec{r}\,)\right]\,\Big|\,\int \mathrm{d}\vec{r}\,n(\vec{r}\,)
-    = N\right\}= E\,\left[n_0(\vec{r}\,)\right].
-    \label{density_minimization_principle}
+    E_0 = \min_{n(\vec{r}\,)}\left\{E\,\left[n(\vec{r}\,)\right]\,\middle|\,\int \mathrm{d}\vec{r}\,n(\vec{r}\,)
+    = N\right\}= E\,\left[n_0(\vec{r}\,)\right]
+\label{density_minimization_principle}
 \end{equation}
 
 Conceptually, equation~\eqref{density_minimization_principle} defines an underlying energy surface over the space of admissible densities; figure~\ref{figure_HK_variational} provides a two-dimensional schematic slice of such a high-dimensional landscape.
@@ -1559,28 +1559,28 @@ To this goal, we impose the particle number condition:
 
 \begin{equation}
     \int \mathrm{d}\vec{r}\, n(\vec{r}\,) = N
-    \label{particle_number_constraint}
+\label{particle_number_constraint}
 \end{equation}
 
 by introducing a Lagrange multiplier $\mu$ and defining the auxiliary functional:
 
 \begin{equation}
     \widetilde{E}[n]\coloneqq E[n]-\mu\left(\int\mathrm{d}\vec{r}\,n(\vec{r}\,)-N\right)
-    \label{lagrangian_functional_density}
+\label{lagrangian_functional_density}
 \end{equation}
 
 At the minimum, the first variation vanishes for all admissible $\delta n(\vec{r}\,)$, which gives the Euler--Lagrange condition:
 
 \begin{equation}
     \frac{\delta E[n]}{\delta n(\vec{r}\,)} = \mu
-    \label{euler_lagrange_density_general}
+\label{euler_lagrange_density_general}
 \end{equation}
 
 Combining the Euler--Lagrange condition in equation~\eqref{euler_lagrange_density_general} with the standard form of the energy functional in equation~\eqref{standard_form_energy_functional}, we obtain:
 
 \begin{equation}
     \frac{\delta E_\mathrm{HK}[n]}{\delta n(\vec{r}\,)} + v_\mathrm{ext}(\vec{r}\,) = \mu
-    \label{euler_lagrange_density_functional}
+\label{euler_lagrange_density_functional}
 \end{equation}
 
 evaluated at $n=n_0$.
@@ -1592,7 +1592,7 @@ At this point, we return to the standard form of the energy functional in equati
 
 \begin{equation}
     E_\mathrm{HK}[n] = E[n]-\int\mathrm{d}\vec{r}\,v_\mathrm{ext}(\vec{r}\,)\,n(\vec{r}\,)
-    \label{formal_FHK_as_difference}
+\label{formal_FHK_as_difference}
 \end{equation}
 This relation may suggest that $E_\mathrm{HK}[n]$ could be obtained once the total energy functional $E[n]$ is known.
 
@@ -1617,14 +1617,14 @@ For a spin-degenerate system, the phase-space counting gives:
 
 \begin{equation}
     n(\vec{r}\,) = \frac{2}{h^3}\frac{4\pi}{3}\,p_F^3(\vec{r}\,)
-    \label{TF_density_pf_intro}
+\label{TF_density_pf_intro}
 \end{equation}
 
 and the local Fermi momentum is related to the local single-particle energy through:
 
 \begin{equation}
     \mu = \frac{p_F^2(\vec{r}\,)}{2m}+v(\vec{r}\,)
-    \label{TF_mu_local_intro}
+\label{TF_mu_local_intro}
 \end{equation}
 
 Combining these two expressions yields a local relation between $n(\vec{r}\,)$ and $v(\vec{r}\,)$.
@@ -1635,14 +1635,14 @@ In atomic units, it satisfies the Poisson equation:
 
 \begin{equation}
     \nabla^2 v(\vec{r}\,) = -4\pi\,n(\vec{r}\,)
-    \label{TF_poisson_equation}
+\label{TF_poisson_equation}
 \end{equation}
 
 Eliminating $p_F(\vec{r}\,)$ between \eqref{TF_density_pf_intro} and \eqref{TF_mu_local_intro}, we obtain:
 
 \begin{equation}
     n(\vec{r}\,) = \frac{1}{3\pi^2}\,[2(\mu - v(\vec{r}\,))]^{3/2}
-    \label{TF_density_muV}
+\label{TF_density_muV}
 \end{equation}
 
 Substituting this expression into equation~\eqref{TF_poisson_equation},
@@ -1650,7 +1650,7 @@ We arrive at the Thomas--Fermi equation:
 
 \begin{equation}
     \nabla^2 v(\vec{r}\,)=-\frac{4}{3\pi}\,[2(\mu-v(\vec{r}\,))]^{3/2}
-    \label{thomas_fermi_equation}
+\label{thomas_fermi_equation}
 \end{equation}
 
 This nonlinear equation determines the potential and the density self-consistently within the Thomas--Fermi approximation.
@@ -1665,20 +1665,20 @@ Accordingly, we write the Thomas--Fermi total energy functional:
 
 \begin{equation}
     E_{\mathrm{TF}}[n;v_\mathrm{ext}] = T_\mathrm{TF}[n] + E_\mathrm{int}[n] + E_\mathrm{ext}[n]
-    \label{TF_total_energy_functional}
+\label{TF_total_energy_functional}
 \end{equation}
 
 According to the local form of the external potential energy functional~\eqref{functional_Eext_local_form}, and the external contribution is given by the coupling between $n(\vec{r}\,)$ and $v_\mathrm{ext}(\vec{r}\,)$.
 For fixed nuclear positions, the external potential $v_\mathrm{ext}(\vec{r}\,)$ is a prescribed function of $\vec{r}$ defined in equation~\eqref{one-body_Electron-nucleus}, therefore, the external contribution $E_\mathrm{ext}[n]$ is linear in the electron density $n(\vec{r}\,)$.
 
 We next approximate the interaction energy functional by its classical Coulomb form associated with the density distribution.
-Using the Electron-electron Coulomb repulsion~\eqref{electrons_Coulomb}, we introduce the Hartree term:
+Using the electron-electron Coulomb repulsion~\eqref{electrons_Coulomb}, we introduce the Hartree term:
 
 \begin{equation}
 \begin{aligned}
     E_\mathrm{H}[n] &\coloneqq E_\mathrm{int}[n]-E_{\Delta\mathrm{int}}[n] \\
     &= \frac{1}{2}\iint\dif{\vec{r}}\,\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,)n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
-    \label{hartree_term_functional}
+\label{hartree_term_functional}
 \end{aligned}
 \end{equation}
 
@@ -1686,7 +1686,7 @@ here $E_{\Delta\mathrm{int}}[n]$ collects the nonclassical part of the interacti
 In the Hartree approximation, we set $E_{\Delta\mathrm{int}}[n]=0$.
 
 We next approximate the interaction energy functional by the classical Coulomb energy associated with the density distribution.
-Using the Electron-electron Coulomb repulsion~\eqref{electrons_Coulomb}, we introduce the Hartree term:
+Using the electron-electron Coulomb repulsion~\eqref{electrons_Coulomb}, we introduce the Hartree term:
 
 Therefore, we introduce a Hartree approximation at the level of the interaction energy by replacing $E_\mathrm{int}[n]$ with its classical counterpart $E_\mathrm{H}[n]$:
 
@@ -1707,7 +1707,7 @@ the Fermi wave vector satisfies~\cite{simon2013oxford}:
 
 \begin{equation}
     k_\mathrm{F} = \left(3\pi^2 n\right)^{\frac{1}{3}}
-    \label{Fermi_wave_vector_homogeneous_gas}
+\label{Fermi_wave_vector_homogeneous_gas}
 \end{equation}
 
 and the corresponding kinetic energy density reads:
@@ -1715,7 +1715,7 @@ and the corresponding kinetic energy density reads:
 \begin{equation}
     t(n) = \frac{3}{10}\,k_\mathrm{F}^2\,n
     = \frac{3}{10}\left(3\pi^2\right)^{\frac{2}{3}}n^{\frac{5}{3}}
-    \label{kinetic_energy_density_homogeneous_gas}
+\label{kinetic_energy_density_homogeneous_gas}
 \end{equation}
 
 Within the local density approximation,
@@ -1724,20 +1724,20 @@ This leads to the Thomas--Fermi kinetic energy functional:
 
 \begin{equation}
     T_\mathrm{TF}[n] = C_1\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{5}{3}}
-    \label{functional_TTF}
+\label{functional_TTF}
 \end{equation}
 
 with the Thomas--Fermi constant:
 
 \begin{equation}
     C_1 \coloneqq \frac{3}{10}\left(3\pi^2\right)^{\frac{2}{3}} 
-    \label{Thomas_Fermi_constant_C1}
+\label{Thomas_Fermi_constant_C1}
 \end{equation}
 
 This expression holds for a spin-unpolarized system.
 
 Therefore, we arrive at the full Thomas--Fermi energy functional as a functional of the electron density.
-The Nucleus-nucleus contribution $E_\mathrm{NN}$ is omitted since it does not depend on $n(\vec{r}\,)$.
+The nucleus-nucleus contribution $E_\mathrm{NN}$ is omitted since it does not depend on $n(\vec{r}\,)$.
 
 \begin{equation}
 \begin{aligned}
@@ -1763,7 +1763,7 @@ To determine the ground state density, we minimize the Thomas--Fermi energy func
 
 \begin{equation}
     \int\dif{\vec{r}}\,n(\vec{r}\,)=N
-    \label{constraint_particle_number}
+\label{constraint_particle_number}
 \end{equation}
 
 Using the method of Lagrange multipliers, we require the first variation of the constrained functional to vanish.
@@ -1780,11 +1780,11 @@ The Lagrange multiplier $\lambda$ enforces the particle number constraint and ca
 
 Here $\lambda$ enforces the particle number constraint and plays the role of the chemical potential.
 
-We define the Hartree potential as a funtional of density:
+We define the Hartree potential as a functional of density:
 
 \begin{equation}
     v_\mathrm{H}([n];\vec{r}\,)\coloneqq\int\dif{\vec{r}\,'}\,\frac{n(\vec{r}\,')}{\left|\vec{r}-\vec{r}\,'\right|}
-    \label{Hartree_potential_definition}
+\label{Hartree_potential_definition}
 \end{equation}
 
 The corresponding first variations of the three contributions can be evaluated explicitly.
@@ -1794,7 +1794,7 @@ For the Thomas--Fermi kinetic term, we obtain:
 \begin{equation}
     \delta T_\mathrm{TF}[n]
     = \int\dif{\vec{r}}\,\frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}\,\delta n(\vec{r}\,)
-    \label{variation_TTF}
+\label{variation_TTF}
 \end{equation}
 
 For the interaction term in the Hartree approximation, the variation introduces the Hartree potential and reads:
@@ -1802,7 +1802,7 @@ For the interaction term in the Hartree approximation, the variation introduces 
 \begin{equation}
     \delta E_\mathrm{int}[n]
     = \int\dif{\vec{r}}\,v_\mathrm{H}([n];\vec{r}\,)\,\delta n(\vec{r}\,)
-    \label{variation_Eint}
+\label{variation_Eint}
 \end{equation}
 
 For the external contribution, the variation follows directly from the linear coupling to the external potential:
@@ -1810,42 +1810,42 @@ For the external contribution, the variation follows directly from the linear co
 \begin{equation}
     \delta E_\mathrm{ext}[n]
     = \int\dif{\vec{r}}\,v_\mathrm{ext}(\vec{r}\,)\,\delta n(\vec{r}\,)
-    \label{variation_Eext}
+\label{variation_Eext}
 \end{equation}
 
 Substituting equations~\eqref{variation_TTF}--\eqref{variation_Eext} into equation~\eqref{total_energy_variation}, we obtain:
 
 \begin{equation}
     \int\dif{\vec{r}}\,\left\{\frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+v_\mathrm{H}([n];\vec{r}\,)+v_\mathrm{ext}(\vec{r}\,)-\lambda\right\}\delta n(\vec{r}\,)=0
-    \label{total_energy_minimization}
+\label{total_energy_minimization}
 \end{equation}
 
 Since the density variation $\delta n(\vec{r}\,)$ is arbitrary, the integrand must vanish pointwise, which yields the Thomas--Fermi equation:
 
 \begin{equation}
     \frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+v_\mathrm{H}([n];\vec{r}\,)+v_\mathrm{ext}(\vec{r}\,)=\lambda
-    \label{Thomas_Fermi_equation}
+\label{Thomas_Fermi_equation}
 \end{equation}
 
 This is convenient to introduce the effective potential:
 
 \begin{equation}
     v(\vec{r}\,)\coloneqq v_\mathrm{ext}(\vec{r}\,)+v_\mathrm{H}([n];\vec{r}\,)
-    \label{effective_potential_definition}
+\label{effective_potential_definition}
 \end{equation}
 
 Equation~\eqref{Thomas_Fermi_equation} then becomes:
 
 \begin{equation}
     \frac{5}{3}C_1\,n(\vec{r}\,)^{\frac{2}{3}}+v(\vec{r}\,)=\lambda
-    \label{Thomas_Fermi_equation_compact}
+\label{Thomas_Fermi_equation_compact}
 \end{equation}
 
 Solving for the density, we obtain:
 
 \begin{equation}
     n(\vec{r}\,)=\frac{1}{3\pi^2}\left[2\left(\lambda-v(\vec{r}\,)\right)\right]^{\frac{3}{2}}
-    \label{density_TF_from_potential}
+\label{density_TF_from_potential}
 \end{equation}
 
 The above expression applies in the region where $\lambda>v(\vec{r}\,)$, and one takes $n(\vec{r}\,)=0$ otherwise.
@@ -1855,28 +1855,28 @@ For the nuclear external potential, we have:
 
 \begin{equation}
     \nabla^2 v_\mathrm{ext}(\vec{r}\,)=4\pi\sum_I Z_I\,\delta\left(\vec{r}-\vec{R}_I\right)
-    \label{Poisson_external_potential}
+\label{Poisson_external_potential}
 \end{equation}
 
 For the Hartree potential, we have:
 
 \begin{equation}
     \nabla^2 v_\mathrm{H}([n];\vec{r}\,)=-4\pi n(\vec{r}\,)
-    \label{Poisson_Hartree_potential}
+\label{Poisson_Hartree_potential}
 \end{equation}
 
 Combining equations~\eqref{effective_potential_definition}, \eqref{Poisson_external_potential}, and \eqref{Poisson_Hartree_potential}, we find:
 
 \begin{equation}
     \nabla^2 v(\vec{r}\,)=4\pi\sum_I Z_I\,\delta\left(\vec{r}-\vec{R}_I\right)-4\pi n(\vec{r}\,)
-    \label{Poisson_effective_potential}
+\label{Poisson_effective_potential}
 \end{equation}
 
 Substituting equation~\eqref{density_TF_from_potential} into equation~\eqref{Poisson_effective_potential}, we arrive at the differential form of the Thomas--Fermi equation:
 
 \begin{equation}
     \nabla^2 v(\vec{r}\,)=4\pi\sum_I Z_I\,\delta\left(\vec{r}-\vec{R}_I\right)-\frac{4}{3\pi}\left[2\left(\lambda-v(\vec{r}\,)\right)\right]^{\frac{3}{2}}
-    \label{differential_form_Thomas_Fermi_equation}
+\label{differential_form_Thomas_Fermi_equation}
 \end{equation}
 
 This procedure constitutes the Thomas--Fermi method.
@@ -1891,7 +1891,7 @@ Let us express the exact total energy as a functional of the density:
 
 \begin{equation}
     E[n]=T[n]+E_\mathrm{H}[n]+E_\mathrm{xc}^\mathrm{int}[n]+\int\dif{\vec{r}}\,n(\vec{r}\,)v_\mathrm{ext}(\vec{r}\,)
-    \label{functional_exact_total_energy}
+\label{functional_exact_total_energy}
 \end{equation}
 
 Here $T[n]$ denotes the exact kinetic energy functional and $E_\mathrm{H}[n]$ is the Hartree energy functional.
@@ -1903,7 +1903,7 @@ it is convenient to introduce the exchange-correlation part of the interaction e
 
 \begin{equation}
 E_\mathrm{xc}^{\mathrm{int}}[n]\coloneqq E_\mathrm{int}[n]-E_\mathrm{H}[n]
-    \label{Exc_int_definition}
+\label{Exc_int_definition}
 \end{equation}
 
 Equivalently, the universal Hohenberg--Kohn functional can be decomposed as:
@@ -1913,14 +1913,14 @@ Equivalently, the universal Hohenberg--Kohn functional can be decomposed as:
     E_\mathrm{HK}[n] &= T[n] + E_\mathrm{int}[n] \\
     &= T[n]+E_\mathrm{H}[n]+E_\mathrm{xc}^\mathrm{int}[n]
 \end{aligned}
-    \label{HK_decomposition_Hartree_xc}
+\label{HK_decomposition_Hartree_xc}
 \end{equation}
 
 Accordingly, the exact total energy functional can be written in the following form:
 
 \begin{equation}
     E[n]=E_\mathrm{HK}[n]+\int\dif{\vec{r}}\,n(\vec{r}\,)\,v_\mathrm{ext}(\vec{r}\,)
-    \label{functional_exact_total_energy_HK_form}
+\label{functional_exact_total_energy_HK_form}
 \end{equation}
 
 Recall the full Thomas--Fermi energy functional in equation~\eqref{full_energy_functional}.
@@ -1933,21 +1933,21 @@ This approximation is commonly associated with the Dirac exchange functional:
 
 \begin{equation}
     E_\mathrm{xc}^\mathrm{int}[n]\approx E_\mathrm{x}^\mathrm{D}[n]
-    \label{Dirac_exchange_approximation}
+\label{Dirac_exchange_approximation}
 \end{equation}
 
 Since the Dirac exchange functional is given by:
 
 \begin{equation}
     E_\mathrm{x}^\mathrm{D}[n]\coloneqq -C_2\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{4}{3}}
-    \label{Dirac_exchange_functional}
+\label{Dirac_exchange_functional}
 \end{equation}
 
 here, the corresponding constant reads:
 
 \begin{equation}
     C_2 \coloneqq \frac{3}{4}\left(\frac{3}{\pi}\right)^{\frac{1}{3}}
-    \label{Dirac_exchange_constant}
+\label{Dirac_exchange_constant}
 \end{equation}
 
 At this level, correlation effects are not included in $E_\mathrm{x}^\mathrm{D}[n]$.
@@ -1960,7 +1960,7 @@ Including the Dirac exchange term, we obtain the Thomas--Fermi Dirac functional:
     + E_\mathrm{H}[n]
     - C_2\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{4}{3}}
     + \int\dif{\vec{r}}\,n(\vec{r}\,)\,v_\mathrm{ext}(\vec{r}\,)
-    \label{TFD_functional}
+\label{TFD_functional}
 \end{equation}
 
 The Thomas--Fermi Dirac approximation improves total energies by incorporating an explicit exchange contribution.
@@ -1971,7 +1971,7 @@ The von Weizsäcker kinetic energy functional is defined by:
 
 \begin{equation}
     T_\mathrm{vW}[n]\coloneqq \frac{1}{2}\int\dif{\vec{r}}\,\left|\nabla\sqrt{n(\vec{r}\,)}\right|^2
-    \label{von_Weizsaecker_kinetic}
+\label{von_Weizsaecker_kinetic}
 \end{equation}
 
 By adding this gradient correction, we arrive at the Thomas--Fermi Dirac von Weizsäcker model:
@@ -1983,7 +1983,7 @@ By adding this gradient correction, we arrive at the Thomas--Fermi Dirac von Wei
     + E_\mathrm{H}[n]
     - C_2\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{4}{3}}
     + \int\dif{\vec{r}}\,n(\vec{r}\,)\,v_\mathrm{ext}(\vec{r}\,)
-    \label{TFDW_functional}
+\label{TFDW_functional}
 \end{equation}
 
 These extensions provide early orbital free approximations beyond the Thomas--Fermi approach.
@@ -2023,7 +2023,7 @@ Here, we suppose that there is no interaction between these two species, the wav
 \begin{equation}
     \Psi(x_1,x_2,\cdots,x_N;y_1,y_2,\cdots,y_M)
     =\psi(x_1,x_2,\cdots,x_N)\,\varphi(y_1,y_2,\cdots,y_M)
-    \label{separate_two-body_wave function}
+\label{separate_two-body_wave_function}
 \end{equation}
 
 In this decoupled limit, the density of the first species is obtained by integrating out the remaining coordinates.
@@ -2031,21 +2031,21 @@ To make the cancellation explicit, we use the normalization of $\varphi$:
 
 \begin{equation}
     \iint\cdots\int\dif{y_1}\,\dif{y_2}\cdots\dif{y_M}\,\left|\varphi(y_1,y_2,\cdots,y_M)\right|^2 = 1
-    \label{phi_normalization}
+\label{phi_normalization}
 \end{equation}
 
 We define the particle density associated with $\psi$ as:
 
 \begin{equation}
     n_\psi(x)\coloneqq N\iint\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\left|\psi(x,x_2,\cdots,x_N)\right|^2
-    \label{density_first_species_psi}
+\label{density_first_species_psi}
 \end{equation}
 
 With these definitions, we can express the density of the first species as:
 
 \begin{equation}
     n(x)=n_\psi(x)\iint\cdots\int\dif{y_1}\,\dif{y_2}\cdots\dif{y_M}\,\left|\varphi(y_1,y_2,\cdots,y_M)\right|^2
-    \label{two_body_density_factorized}
+\label{two_body_density_factorized}
 \end{equation}
 
 Applying the normalization of $\varphi$~\eqref{phi_normalization},
@@ -2057,10 +2057,10 @@ therefore, we arrive at:
     =& \,n_\psi(x) \\
     =& \,N\iint\cdots\int\dif{x_2}\,\dif{x_3}\cdots\dif{x_N}\,\left|\psi(x,x_2,\cdots,x_N)\right|^2
 \end{aligned}
-\label{two-body_density}
+\label{one_body_density_from_many_body_wave_function}
 \end{equation}
 
-In general, interactions entangle the two species and the factorization in equation~\eqref{separate_two-body_wave function} is no longer available.
+In general, interactions entangle the two species and the factorization in equation~\eqref{separate_two-body_wave_function} is no longer available.
 The density of one species must then be constructed from the full many-body wave function by integrating out the other degrees of freedom.
 This illustrates why reduced quantities such as densities are natural objects in many body physics.
 
@@ -2080,7 +2080,7 @@ For questions outside this design target, the auxiliary system provides no guara
 
 Subsequently, we consider an interacting many-electron system and its corresponding auxiliary system.
 
-The difficulty comes from the Electron-electron interaction.
+The difficulty comes from the electron-electron interaction.
 In the auxiliary system, we drop this interaction and compensate for it by adjusting a one-body potential.
 
 Therefore, the problem can be stated as follows.
@@ -2089,10 +2089,10 @@ Here we ask only for the density and nothing else.
 In what follows, we examine whether there is any obstacle to this construction.
 
 Next, let us recall the Born--Oppenheimer hamiltonian in equation~\eqref{BO_hamiltonian}, 
-and write the many-electron schrödinger equation for the interacting system.
+and write the many-electron Schrödinger equation for the interacting system.
 
 To make the role of $E_\mathrm{NN}(\{\vec{R}_I\})$ explicit,
-we separate the $\hat{H}_\mathrm{BO}(\{\vec{R}_I\})$ into an electronic operator $\hat{H}_\mathrm{el}(\{\vec{R}_I\})$ and the constant Nucleus-nucleus term.
+we separate the $\hat{H}_\mathrm{BO}(\{\vec{R}_I\})$ into an electronic operator $\hat{H}_\mathrm{el}(\{\vec{R}_I\})$ and the constant nucleus-nucleus term.
 Then, we write the eigenvalue equation as:
 
 \begin{equation}
@@ -2112,27 +2112,27 @@ Since $E_\mathrm{NN}(\{\vec{R}_I\})$ is a constant with respect to the electroni
 \label{BO_SE_shift_ENN}
 \end{equation}
 
-In what follows, we absorb this constant shift into the eigenvalue and denote the electronic energy by :
+In what follows, we absorb this constant shift into the eigenvalue and denote the electronic energy by:
 
 \begin{equation}
-    E\coloneqq E_\mathrm{BO}(\{\vec{R}_I\}) - E_\mathrm{NN}(\{\vec{R}_I\})
+    E\coloneqq E_\mathrm{BO}(\{\vec{R}_I\})-E_\mathrm{NN}(\{\vec{R}_I\})
 \label{absorbed_electronic_energy}
 \end{equation}
 
-with this convention, the schrödinger equation in the coordinate representation reads:
+with this convention, the Schrödinger equation in the coordinate representation reads:
 
 \begin{equation}
     \left(-\frac{1}{2}\sum_i\nabla_i^2
     + \sum_i v_{\mathrm{ext}}(\hat{\vec{r}}_i)
     + \sum_{i<j}\frac{1}{\left|\vec{r}_i - \vec{r}_j\right|}\right)\Psi(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)= E\,\Psi(\vec{r}_1,\vec{r}_2,\cdots,\vec{r}_N)
-    \label{BO_hamiltonian_SE}
+\label{BO_hamiltonian_SE}
 \end{equation}
 
 here, $E$ and $\Psi$ denote the electronic eigenvalue and eigenstate of interest at fixed nuclear coordinates $\{\vec{R}_I\}$,
 where the constant term $E_\mathrm{NN}(\{\vec{R}_I\})$ has been absorbed into $E$.
 In particular, the ground state determines the target density $n(\vec{r}\,)$ through equation~\eqref{one-body_density}.
 
-Moreover, we introduce a noninteracting auxiliary system by dropping the Electron-electron interaction,
+Moreover, we introduce a noninteracting auxiliary system by dropping the electron-electron interaction,
 and compensating for its effect through a tuned one-body potential $v_\mathrm{aux}(\vec{r}\,)$:
 
 \begin{equation}
@@ -2143,7 +2143,7 @@ and compensating for its effect through a tuned one-body potential $v_\mathrm{au
 
 here $\Psi_\mathrm{aux}$ denotes the auxiliary many-body wave function and $E_\mathrm{aux}$ represents the corresponding eigenvalue.
 
-We achieve that the density of the auxiliary system is obtained by integrating out $N-1$ coordinates:
+The density of the auxiliary system is obtained by integrating out $N-1$ coordinates:
 
 \begin{equation}
     n_\mathrm{aux}(\vec{r}\,)\coloneqq
@@ -2156,13 +2156,13 @@ Hence, we define the auxiliary potential $v_\mathrm{aux}(\vec{r}\,)$ through the
 
 \begin{equation}
 n_\mathrm{aux}(\vec{r}\,) = n(\vec{r}\,)
-\label{aux_density_matching}
+\label{auxiliary_density_matching_condition}
 \end{equation}
 
 Consequently, the question becomes whether we can construct a potential $v_\mathrm{aux}(\vec{r}\,)$ that gives the same density and, if we can, whether that potential is unique.
 
 Finally, for a noninteracting auxiliary system, the many-body wave function can be constructed from a set of single-particle orbitals.
-Accordingly, we introduce orbitals $\varphi^\mathrm{aux}_l(\vec{r}\,)$ that satisfy the one-body schrödinger equation:
+Accordingly, we introduce orbitals $\varphi^\mathrm{aux}_l(\vec{r}\,)$ that satisfy the one-body Schrödinger equation:
 
 \begin{equation}
     \left[-\frac{\nabla^2}{2}+v_\mathrm{aux}(\vec{r}\,)\right]
@@ -2186,7 +2186,7 @@ Instead, we tune the one-body potential $v_\mathrm{aux}(\vec{r}\,)$ in the auxil
 
 \begin{equation}
     n_\mathrm{aux}(\vec{r}\,;v_\mathrm{aux}) = n(\vec{r}\,)
-\label{aux_density_matching}
+\label{auxiliary_density_matching_condition_with_potential}
 \end{equation}
  
 In other words, we start from a given density $n(\vec{r}\,)$ and ask whether we can find a potential $v_\mathrm{aux}(\vec{r}\,)$ that makes a noninteracting system reproduce it.
@@ -2194,7 +2194,7 @@ In other words, we start from a given density $n(\vec{r}\,)$ and ask whether we 
 This is the basic existence question behind the auxiliary construction,
 and it is often referred to as noninteracting $v$-representability.
 
-\subsection{The framework of Kohn-Sham equations}
+\subsection{The framework of Kohn--Sham equations}
 
 Firstly, we introduce a noninteracting reference system that reproduces the density $n(\vec{r}\,)$, and denote its ground state wave function by $\Psi_s[n]$.
 
@@ -2351,7 +2351,7 @@ while the exchange-correlation contribution defines the exchange-correlation pot
 
 \begin{equation}
     v_\mathrm{xc}([n];\vec{r}\,)\coloneqq\frac{\delta E_\mathrm{xc}[n]}{\delta n(\vec{r}\,)}
-    \label{xc_potential_definition}
+\label{xc_potential_definition}
 \end{equation}
 
 It is therefore convenient to introduce the effective Kohn--Sham potential:
@@ -2361,7 +2361,7 @@ It is therefore convenient to introduce the effective Kohn--Sham potential:
     \coloneqq v_\mathrm{ext}(\vec{r}\,)
     + v_\mathrm{H}([n];\vec{r}\,)
     + v_\mathrm{xc}([n];\vec{r}\,)
-    \label{KS_effective_potential_definition}
+\label{KS_effective_potential_definition}
 \end{equation}
 
 here, the corresponding one-body operator is $\hat{v}_\mathrm{eff}\coloneqq v_\mathrm{eff}([n];\hat{\vec{r}}\,)$.
@@ -2371,8 +2371,8 @@ the stationarity condition can be expressed as the Kohn--Sham equations:
 
 \begin{equation}
     \left[-\frac{1}{2}\nabla^2+v_\mathrm{eff}([n];\vec{r}\,)\right]\psi_i(\vec{r}\,)
-    =\lambda_i\,\psi_i(\vec{r}\,)
-    \label{KS_equation}
+    = \lambda_i\,\psi_i(\vec{r}\,)
+\label{KS_equation}
 \end{equation}
 
 here, the orbitals are determined by the effective potential $v_\mathrm{eff}([n];\vec{r}\,)$,
@@ -2380,14 +2380,14 @@ therefore, at self-consistency, we may write:
 
 \begin{equation}
     \psi_i(\vec{r}\,)=\psi_i([n];\vec{r}\,)
-    \label{KS_orbitals_as_density_functionals}
+\label{KS_orbitals_as_density_functionals}
 \end{equation}
 
 Since the Kohn--Sham density expression~\eqref{density_with_occupation_number} gives $n(\vec{r}\,)$ once the orbitals are known.
 Meanwhile, $v_\mathrm{eff}([n];\vec{r}\,)$ depends on $n(\vec{r}\,)$ through equation~\eqref{KS_effective_potential_definition}.
 Therefore, equations~\eqref{KS_effective_potential_definition} and~\eqref{KS_equation} are solved self-consistently.
 
-Conclusively, in term of that the density functional theory is built on the Hohenberg--Kohn theorem.
+In this sense, density functional theory is built on the Hohenberg--Kohn theorem.
 It states that the ground state density uniquely determines the external potential modulo an additive constant.
 Meanwhile, the density and the external potential are in bijective correspondence:
 
@@ -2395,7 +2395,7 @@ Meanwhile, the density and the external potential are in bijective correspondenc
     n(\vec{r}\,)
     \,\longleftrightarrow\,
     \left[v_\mathrm{ext}(\vec{r}\,)\right]
-    \label{HK_density_potential_correspondence}
+\label{HK_density_potential_correspondence}
 \end{equation}
 
 In the Kohn--Sham auxiliary system, the electrons are noninteracting.
@@ -2408,7 +2408,7 @@ Consequently, we may also view the Kohn--Sham potential as being uniquely linked
     n(\vec{r}\,)
     \,\longleftrightarrow\,
     \left[v_\mathrm{eff}([n];\vec{r}\,)\right]
-    \label{KS_density_potential_correspondence}
+\label{KS_density_potential_correspondence}
 \end{equation}
 
 here, $\left[v(\vec{r}\,)\right]$ denotes the equivalence class of potentials that differ only by an additive $\mathrm{const.}$
@@ -2421,7 +2421,7 @@ For the auxiliary noninteracting system, we achieve the Kohn--Sham auxiliary ene
 
 \begin{equation}
     E_s[n]=T_s[n]+\int\dif{\vec{r}}\,n(\vec{r}\,)v_\mathrm{eff}([n];\vec{r}\,)
-    \label{KS_auxiliary_energy_functional}
+\label{KS_auxiliary_energy_functional}
 \end{equation}
 
 Moreover, we recall the exact energy decomposition in equation~\eqref{energy_density_functional_decomposition},
@@ -2434,7 +2434,7 @@ This auxiliary system is constructed to reproduce the same density:
 
 \begin{equation}
     n_s(\vec{r}\,)=n(\vec{r}\,)
-    \label{KS_same_density_assumption}
+\label{KS_same_density_assumption}
 \end{equation}
 
 here, $n_s(\vec{r}\,)$ denotes the ground state density of the auxiliary noninteracting system,
@@ -2444,7 +2444,7 @@ It is chosen such that equation~\eqref{KS_same_density_assumption} holds.
 
 Consequently, the interacting many-electron problem is mapped to a noninteracting orbital problem with the same density.
 
-\subsection{From variational derivation to the Kohn-Sham equations}
+\subsection{From variational derivation to the Kohn--Sham equations}
 
 To determine the orbitals in the Kohn--Sham scheme,
 we start from the density built from orbitals in equation~\eqref{density_with_occupation_number}.
@@ -2455,7 +2455,7 @@ Firstly, we introduce the one-body kinetic operator in the single-particle Hilbe
 \begin{equation}
     \hat{K}\coloneqq
     -\frac{1}{2}\nabla^2
-    \label{KS_one_body_kinetic_operator_definition}
+\label{KS_one_body_kinetic_operator_definition}
 \end{equation}
 
 Accordingly, we represent the noninteracting kinetic energy as an orbital functional:
@@ -2463,7 +2463,7 @@ Accordingly, we represent the noninteracting kinetic energy as an orbital functi
 \begin{equation}
     T_s[\{\psi_i(\vec{r}\,)\}]=
     \sum_i f_i \bra{\psi_i}\hat{K}\ket{\psi_i}
-    \label{KS_noninteracting_kinetic_energy_orbital_functional}
+\label{KS_noninteracting_kinetic_energy_orbital_functional}
 \end{equation}
 
 Next, we define the one-body external potential operator:
@@ -2471,7 +2471,7 @@ Next, we define the one-body external potential operator:
 \begin{equation}
     \hat{v}_\mathrm{ext}\coloneqq
     v_\mathrm{ext}(\hat{\vec{r}}\,)
-    \label{KS_one_body_external_operator_definition}
+\label{KS_one_body_external_operator_definition}
 \end{equation}
 
 In coordinate representation, the corresponding orbital expectation value reads:
@@ -2480,7 +2480,7 @@ In coordinate representation, the corresponding orbital expectation value reads:
     \bra{\psi_i}\hat{v}_\mathrm{ext}\ket{\psi_i}=
     \int\dif{\vec{r}}\,
     \psi_i^\ast(\vec{r}\,)v_\mathrm{ext}(\vec{r}\,)\psi_i(\vec{r}\,)
-    \label{KS_external_operator_expectation_coordinate}
+\label{KS_external_operator_expectation_coordinate}
 \end{equation}
 
 Afterwards, using the Kohn--Sham density expression in equation~\eqref{density_with_occupation_number},
@@ -2489,7 +2489,7 @@ we express the external potential energy in the orbital form:
 \begin{equation}
     \int\dif{\vec{r}}\,n(\vec{r}\,)v_\mathrm{ext}(\vec{r}\,)
     = \sum_{i}f_{i}\bra{\psi_i}\hat{v}_\mathrm{ext}\ket{\psi_i}
-    \label{KS_external_energy_orbital_form}
+\label{KS_external_energy_orbital_form}
 \end{equation}
 
 Therefore, we view the total energy as an orbital functional through the density $n(\vec{r}\,)$:
@@ -2510,7 +2510,7 @@ Secondly, we impose the orthonormality constraints:
 
 \begin{equation}
     \braket{\psi_i|\psi_j}=\delta_{ij}
-    \label{KS_orbital_orthonormality}
+\label{KS_orbital_orthonormality}
 \end{equation}
 
 Accordingly, we introduce a matrix of Lagrange multipliers $\lambda_{ij}$ and define this constrained functional:
@@ -2519,14 +2519,14 @@ Accordingly, we introduce a matrix of Lagrange multipliers $\lambda_{ij}$ and de
     \mathcal{F}[\{\psi_i(\vec{r}\,)\}]\coloneqq
     E[\{\psi_i(\vec{r}\,)\}]
     -\sum_{i,j}\lambda_{ij}\left(\braket{\psi_i|\psi_j}-\delta_{ij}\right)
-    \label{KS_constrained_functional_orbitals}
+\label{KS_constrained_functional_orbitals}
 \end{equation}
 
 Thirdly, we require stationarity with respect to the orbitals:
 
 \begin{equation}
     \frac{\delta\mathcal{F}[\{\psi_i(\vec{r}\,)\}]}{\delta\bra{\psi_i}}=0
-    \label{KS_stationarity_condition_orbitals}
+\label{KS_stationarity_condition_orbitals}
 \end{equation}
 
 here, we vary with respect to $\bra{\psi_i}$, treating $\ket{\psi_i}$ and $\bra{\psi_i}$ as independent variables.
@@ -2537,7 +2537,7 @@ In coordinate representation, equation~\eqref{density_with_occupation_number} sh
 \begin{equation}
     \frac{\delta n(\vec{r}\,)}{\delta \psi_i^\ast(\vec{r}\,)}
     =f_i\,\psi_i(\vec{r}\,)
-    \label{KS_density_orbital_derivative}
+\label{KS_density_orbital_derivative}
 \end{equation}
 
 Next, we collect the potential terms including
@@ -2552,7 +2552,7 @@ Therefore, we define the Kohn--Sham one-body operator as:
 \begin{equation}
     \hat{h}_\mathrm{KS}\coloneqq
     \hat{K}+\hat{v}_\mathrm{eff}
-    \label{KS_one_body_hamiltonian_definition}
+\label{KS_one_body_hamiltonian_definition}
 \end{equation}
 
 Finally, from the stationarity condition in equation~\eqref{KS_stationarity_condition_orbitals},
@@ -2561,7 +2561,7 @@ we obtain a set of one-particle equations:
 \begin{equation}
     \hat{h}_\mathrm{KS}\ket{\psi_i} =
     \sum_j\lambda_{ij}\ket{\psi_j}
-    \label{KS_equation_general_dirac}
+\label{KS_equation_general_dirac}
 \end{equation}
 
 Then, $\lambda_{ij}$ can be chosen Hermitian.
@@ -2571,18 +2571,11 @@ Then equation~\eqref{KS_equation_general_dirac} reduces to the standard eigenval
 \begin{equation}
     \hat{h}_\mathrm{KS}\ket{\psi_i} =
     \lambda_i\ket{\psi_i}
-    \label{KS_equation_diagonal_dirac}
+\label{KS_equation_diagonal_dirac}
 \end{equation}
 
-In coordinate representation, using equation~\eqref{KS_equation_diagonal_dirac}, we arrive at the Kohn--Sham equations:
-
-\begin{equation}
-    \left[-\frac{1}{2}\nabla^2+v_\mathrm{eff}([n];\vec{r}\,)\right]\psi_i(\vec{r}\,)
-    = \lambda_i\,\psi_i(\vec{r}\,)
-    \label{KS_equation}
-\end{equation}
-
-For ease of understanding and calculation, we expand the Kohn--Sham equation~\eqref{KS_equation} as
+In coordinate representation, using equation~\eqref{KS_equation_diagonal_dirac}, we get the Kohn--Sham equations~\eqref{KS_equation}.
+For ease of understanding and calculation, we expand the Kohn--Sham equation~\eqref{KS_equation} as:
 
 \begin{equation}
 \begin{aligned}
@@ -2607,7 +2600,7 @@ Consequently, we have obtained the one-particle equations for the auxiliary noni
 which means each electron moves in the effective potential $v_\mathrm{eff}([n];\vec{r}\,)$.
 
 Together with equation~\eqref{density_with_occupation_number},
-we can solve the Kohn-Sham equations~\eqref{KS_equations_expansion},
+we can solve the Kohn--Sham equations~\eqref{KS_equations_expansion},
 and achieve the exact ground state density of the interacting system.
 
 \subsection{Variational construction of the Kohn--Sham scheme}
@@ -2639,15 +2632,15 @@ Accordingly, we impose the normalization constraint by a Lagrange multiplier $\l
     \frac{\delta}{\delta n(\vec{r}\,)}\,\left[
         E_s[n]-\lambda\int\dif{\vec{r}\,'}\,n(\vec{r}\,')
     \right]=0
-    \label{KS_auxiliary_density_stationarity}
+\label{KS_auxiliary_density_stationarity}
 \end{equation}
 
 Therefore, at the minimizing density $n_0(\vec{r}\,)$,
 we obtain the Euler--Lagrange condition for the auxiliary noninteracting energy functional $E_s[n]$:
 
 \begin{equation}
-    \frac{\delta T_s[n]}{\delta n(\vec{r}\,)}\big|_{n_0}+v_\mathrm{eff}([n_0];\vec{r}\,)=\lambda
-    \label{KS_auxiliary_EL_condition}
+    \left.\frac{\delta T_s[n]}{\delta n(\vec{r}\,)}\right|_{n_0}+v_\mathrm{eff}([n_0];\vec{r}\,)=\lambda
+\label{KS_auxiliary_EL_condition}
 \end{equation}
 
 here, $\lambda$ is treated as a constant.
@@ -2656,9 +2649,9 @@ Therefore, we equivalently express the Euler--Lagrange condition as an explicit 
 
 \begin{equation}
     v_\mathrm{eff}([n_0];\vec{r}\,)
-    = \lambda-\frac{\delta T_s[n]}{\delta n(\vec{r}\,)}\big|_{n_0}
-    = -\frac{\delta T_s[n]}{\delta n(\vec{r}\,)}\big|_{n_0}+\mathrm{const.}
-    \label{KS_auxiliary_v_eff_from_Ts}
+    = \lambda-\left.\frac{\delta T_s[n]}{\delta n(\vec{r}\,)}\right|_{n_0}
+    = -\left.\frac{\delta T_s[n]}{\delta n(\vec{r}\,)}\right|_{n_0}+\mathrm{const.}
+\label{KS_auxiliary_v_eff_from_Ts}
 \end{equation}
 
 Consequently, if the functional derivative of the noninteracting kinetic energy functional $T_s[n]$ is well behaved around the ground state density $n_0(\vec{r}\,)$,
@@ -2712,7 +2705,7 @@ It consists of the external potential, the Hartree potential, and the exchange-c
     = v_\mathrm{ext}(\vec{r}\,)
     + v_\mathrm{H}([n];\vec{r}\,)
     + v_\mathrm{xc}([n];\vec{r}\,)
-    \label{KS_potential_decomposition}
+\label{KS_potential_decomposition}
 \end{equation}
 
 here, the external potential $v_\mathrm{ext}(\vec{r}\,)$ is fixed by the ionic structure.
@@ -2738,7 +2731,7 @@ In atomic units, the interacting problem is defined by the Schrödinger equation
 
 \begin{equation}
     \hat{H}\Psi(x_1,x_2)=E\Psi(x_1,x_2)
-    \label{interacting_Schrodinger_equation_1D_two_electrons}
+\label{interacting_Schrodinger_equation_1D_two_electrons}
 \end{equation}
 
 with the many-body hamiltonian:
@@ -2747,7 +2740,7 @@ with the many-body hamiltonian:
     \hat{H}
     = \sum_{i=1}^{2}\left[-\frac{1}{2}\frac{\dif^2}{\dif x_i^2}+v_\mathrm{ext}(x_i)\right]
     + v_\mathrm{ee}(x_1,x_2)
-    \label{interacting_hamiltonian_1D_two_electrons}
+\label{interacting_hamiltonian_1D_two_electrons}
 \end{equation}
 
 here, $v_\mathrm{ee}(x_1,x_2)$ refers to the two-body interaction: $v_\mathrm{ee}(x_1,x_2)=(|x_1-x_2|)^{-1}$.
@@ -2755,7 +2748,7 @@ and for a harmonic confinement, we have the following form:
 
 \begin{equation}
     v_\mathrm{ext}(x)=\frac{1}{2}\Omega^2 x^2
-    \label{harmonic_external_potential_1D}
+\label{harmonic_external_potential_1D}
 \end{equation}
 
 here, $\Omega$ refers to the angular frequency of harmonic confinement.
@@ -2765,7 +2758,7 @@ we get the exact density:
 
 \begin{equation}
     n(x)=2\int\dif{x_2}\,|\Psi(x,x_2)|^2
-    \label{exact_density_from_interacting_wave_function_1D}
+\label{exact_density_from_interacting_wave_function_1D}
 \end{equation}
 
 Secondly, we inquire which local Kohn--Sham potential reproduces the exact density given in equation~\eqref{exact_density_from_interacting_wave_function_1D}.
@@ -2773,30 +2766,29 @@ Secondly, we inquire which local Kohn--Sham potential reproduces the exact densi
 In one dimension, equations~\eqref{KS_equations_expansion} and~\eqref{density_with_occupation_number} may be written schematically as:
 
 \begin{equation}
-    \left[-\frac{1}{2}\frac{\dif^2}{\dif x^2} + v_\mathrm{KS}([n];x)\right]\psi_i(x)
-    = \lambda_i\psi_i(x)
-    \label{KS_equation_1D_schematic}
+    \left[-\frac{1}{2}\frac{\dif^2}{\dif x^2} + v_\mathrm{KS}([n];x)\right]\psi_i(x) = \lambda_i\psi_i(x)
+\label{KS_equation_1D_schematic}
 \end{equation}
 
 as well as, we denote the corresponding density function as:
 
 \begin{equation}
     n_\mathrm{KS}(x)=\sum_i f_i |\psi_i(x)|^2
-    \label{KS_density_1D_schematic}
+\label{KS_density_1D_schematic}
 \end{equation}
 
 The Kohn--Sham auxiliary system is designed to reproduce exactly the same ground-state electron density as the true interacting system:
 
 \begin{equation}
     n_\mathrm{KS}(x)=n(x)
-    \label{KS_exact_density_matching_1D}
+\label{KS_exact_density_matching_1D}
 \end{equation}
 
 If one starts from the naive choice:
 
 \begin{equation}
     v_\mathrm{KS}([n];x)=v_\mathrm{ext}(x)
-    \label{naive_KS_choice_external_only_1D}
+\label{naive_KS_choice_external_only_1D}
 \end{equation}
 
 Therefore, the density from equation~\eqref{KS_density_1D_schematic} is concentrated near the center of the well.
@@ -2808,8 +2800,8 @@ we define the Hartree-exchange-correlation potential:
 
 \begin{equation}
     v_\mathrm{Hxc}([n];x)\coloneqq
-    v_\mathrm{KS}([n];x)-v_\mathrm{ext}(x).
-    \label{Hxc_potential_definition_1D}
+    v_\mathrm{KS}([n];x)-v_\mathrm{ext}(x)
+\label{Hxc_potential_definition_1D}
 \end{equation}
 
 Accordingly, we can process this central bump as a feature of the Hartree-exchange--correlation potential $v_\mathrm{Hxc}([n];x)$.
@@ -2853,22 +2845,22 @@ Let us denote the the target density by $n_\mathrm{tar}(x)$.
 We here require:
 
 \begin{equation}
-    n_\mathrm{KS}(x)=n_\mathrm{tar}(x).
-    \label{inverse_KS_target_density_condition}
+    n_\mathrm{KS}(x)=n_\mathrm{tar}(x)
+\label{inverse_KS_target_density_condition}
 \end{equation}
 
 and we take the zeroth-step Kohn--Sham potential as:
 
 \begin{equation}
-    v_\mathrm{KS}^{(0)}(x)=v_\mathrm{ext}(x).
-    \label{inverse_KS_initial_guess}
+    v_\mathrm{KS}^{(0)}(x)=v_\mathrm{ext}(x)
+\label{inverse_KS_initial_guess}
 \end{equation}
 
 We then solve the Kohn--Sham equation, equation~\eqref{KS_equation_1D_schematic}, and obtain the density at the $k$th iteration:
 
 \begin{equation}
-    n^{(k)}(x)=\sum_i f_i \lvert\psi_i^{(k)}(x)\rvert^2.
-    \label{inverse_KS_density_from_kth_iteration}
+    n^{(k)}(x)=\sum_i f_i \lvert\psi_i^{(k)}(x)\rvert^2
+\label{inverse_KS_density_from_kth_iteration}
 \end{equation}
 
 here, $f_i$ denotes the occupation number of the $i$th Kohn--Sham orbital $\psi_i^{(k)}(x)$.
@@ -2877,8 +2869,8 @@ A simple schematic iteration is:
 
 \begin{equation}
     v_\mathrm{KS}^{(k+1)}(x) = v_\mathrm{KS}^{(k)}(x)
-    + \mu \left[\left(n^{(k)}(x)\right)^p - \left(n_\mathrm{tar}(x)\right)^p\right],
-    \label{inverse_KS_density_update}
+    + \mu \left[\left(n^{(k)}(x)\right)^p - \left(n_\mathrm{tar}(x)\right)^p\right]
+\label{inverse_KS_density_update}
 \end{equation}
 
 here, $\mu$ denotes a mixing parameter and $p$ denotes an additional stability parameter.
@@ -2899,15 +2891,205 @@ At convergence, we arrive at:
 
 \subsection{The Hartree equations}
 
+Firstly, before proceeding to practical approximations for the exchange-correlation functional,
+it is instructive to consider a simpler self-consistent one-particle scheme.
+If we retain the external potential $v_\mathrm{ext}(\vec{r}\,)$ and the classical electrostatic interaction generated by the density $n(\vec{r}\,)$,
+but neglect exchange and correlation effects,
+then we arrive at the Hartree equations:
+
+\begin{equation}
+    \left[-\frac{1}{2}\nabla^2
+        + v_\mathrm{ext}(\vec{r}\,)
+        + v_\mathrm{H}([n];\vec{r}\,)\right]
+    \psi_i(\vec{r}\,)
+    = \lambda_i \psi_i(\vec{r}\,)
+\label{Hartree_equations_expansion}
+\end{equation}
+
+here, $\lambda_i$ refers to the Hartree eigenvalue associated with the one-particle orbital $\psi_i(\vec{r}\,)$.
+In terms of that we have defined the Hartree potential in equation~\eqref{Hartree_potential_definition}
+
+The Hartree potential $v_\mathrm{H}([n];\vec{r}\,)$ refers to the classical electrostatic potential generated by the electron density.
+The density $n(\vec{r}\,)$ is still constructed from the occupied one-particle orbitals through equation~\eqref{density_with_occupation_number}.
+Therefore, the Hartree equations~\eqref{Hartree_equations_expansion} must also be solved self-consistently.
+
+Next, the Hartree equations already demonstrate the basic one-particle structure of a self-consistent field theory.
+We start from a trial density,
+construct the Hartree potential $v_\mathrm{H}([n];\vec{r}\,)$,
+solve equation~\eqref{Hartree_equations_expansion},
+update the density through equation~\eqref{density_with_occupation_number},
+and repeat these steps until convergence is reached.
+In this sense, the Hartree equations already anticipate the later structure of the Kohn--Sham equations~\eqref{KS_equations_expansion}.
+
+However, the Hartree equations remain incomplete.
+The Hartree potential $v_\mathrm{H}([n];\vec{r}\,)$ contains only the classical electrostatic contribution.
+It does not incorporate exchange effects or correlation effects.
+Moreover, since $v_\mathrm{H}([n];\vec{r}\,)$ is generated by the total density $n(\vec{r}\,)$,
+it also contains an unphysical self-interaction contribution.
+Therefore, the Hartree equations do not yet provide an accurate description of interacting electrons.
+
+Consequently, one must go beyond the Hartree approximation.
+In the Kohn--Sham framework, this missing physics is collected into the exchange-correlation potential $v_\mathrm{xc}([n];\vec{r}\,)$ appearing in equation~\eqref{KS_potential_decomposition}.
+Equivalently, it is described by the exchange-correlation energy functional $E_\mathrm{xc}[n]$.
+As we have already emphasized in the previous subsection,
+the main difficulty does not lie in the external potential $v_\mathrm{ext}(\vec{r}\,)$ or the Hartree potential $v_\mathrm{H}([n];\vec{r}\,)$,
+but in the construction of the exchange-correlation functional itself.
+Therefore, the next step is to introduce practical approximations for $E_\mathrm{xc}[n]$ and $v_\mathrm{xc}([n];\vec{r}\,)$.
+
 \newpage
 
 \section{Exchange-correlation functional}
 
+As we have already discussed in equation~\eqref{xc_potential_definition},
+the exchange-correlation potential $v_\mathrm{xc}([n];\vec{r}\,)$ is obtained from the exchange-correlation energy functional $E_\mathrm{xc}[n]$.
+Moreover, from equation~\eqref{KS_potential_decomposition},
+we have already seen that the external potential $v_\mathrm{ext}(\vec{r}\,)$ is fixed by the ionic structure,
+and the Hartree potential $v_\mathrm{H}([n];\vec{r}\,)$ is a known functional of the density.
+Therefore, in practical density functional theory,
+the main difficulty lies in the construction of the exchange-correlation functional itself.
+
+Next, we introduce several widely used approximations for the exchange-correlation energy functional $E_\mathrm{xc}[n]$.
+They differ in how much information about the density is retained.
+The simplest approximation depends only on the local value of the density.
+More accurate semilocal approximations also include the density gradient.
+Beyond them, hybrid functionals incorporate a fraction of exact exchange.
+
+\subsection{The local density approximation and the generalized gradient approximation}
+
+Firstly, we consider the local density approximation.
+Its basic idea is to approximate the exchange-correlation energy locally by that of a homogeneous electron gas with the same density.
+Accordingly, the exchange-correlation functional is written as:
+
+\begin{equation}
+    E_\mathrm{xc}^\mathrm{LDA}[n]
+    = \int\dif{\vec{r}}\,n(\vec{r}\,)\,\varepsilon_\mathrm{xc}^\mathrm{HEG}(n(\vec{r}\,))
+\label{LDA_exchange_correlation_functional}
+\end{equation}
+
+here, $\varepsilon_\mathrm{xc}^\mathrm{HEG}(n)$ refers to the exchange-correlation energy per electron of the homogeneous electron gas at density $n$.
+
+The local density approximation is simple and computationally efficient.
+For many bulk solids, it already gives a reasonable description.
+However, it neglects the inhomogeneity of the density.
+Therefore, it may become insufficient in systems where the density varies strongly in space,
+for instance in molecules, surfaces, and low-dimensional systems.
+
+Next, to improve upon the local density approximation,
+we include the gradient of the density.
+This leads to the generalized gradient approximation.
+In this case, the exchange-correlation functional depends on both the density and its gradient:
+
+\begin{equation}
+    E_\mathrm{xc}^\mathrm{GGA}[n]
+    = \int\dif{\vec{r}}\,f(n(\vec{r}\,),\nabla n(\vec{r}\,))
+\label{GGA_exchange_correlation_functional}
+\end{equation}
+
+here, $f(n(\vec{r}\,),\nabla n(\vec{r}\,))$ refers to a semilocal exchange-correlation energy density.
+
+In practical constructions of the exchange part,
+it is convenient to introduce the reduced density gradient:
+
+\begin{equation}
+\left\{
+\begin{aligned}
+    s(\vec{r}\,)&\coloneqq\frac{\left|\nabla n(\vec{r}\,)\right|}{2k_\mathrm{F}(\vec{r}\,)n(\vec{r}\,)}   \\
+    k_\mathrm{F}(\vec{r}\,)&\coloneqq\left(3\pi^2 n(\vec{r}\,)\right)^{1/3}
+\end{aligned}\right.
+\label{reduced_density_gradient_definition}
+\end{equation}
+
+here, $k_\mathrm{F}(\vec{r}\,)$ refers to the local Fermi wave vector corresponding to the density $n(\vec{r}\,)$,
+and $s(\vec{r}\,)$ measures the local inhomogeneity of the density.
+
+Accordingly, the exchange part of a generalized gradient approximation is often written as:
+
+\begin{equation}
+    E_x^\mathrm{GGA}[n]
+    = \int\dif{\vec{r}}\,n(\vec{r}\,)\,\varepsilon_x^\mathrm{LDA}(n(\vec{r}\,))\,F_x(s(\vec{r}\,))
+\label{GGA_exchange_functional_enhancement_factor_form}
+\end{equation}
+
+here, $\varepsilon_x^\mathrm{LDA}(n)$ refers to the local-density exchange energy per electron,
+and $F_x(s)$ refers to the exchange enhancement factor.
+It accounts for the effect of density gradients on the exchange energy.
+
+Subsequently, different generalized gradient approximations correspond to different choices of the enhancement factor $F_x(s)$ and of the correlation functional.
+Prominent examples include the Perdew--Wang functional and the Perdew--Burke--Ernzerhof functional.
+Among them, the Perdew--Burke--Ernzerhof functional is one of the most widely used generalized gradient approximations in first-principles calculations of condensed-matter systems.
+
+Compared with the local density approximation,
+generalized gradient approximations usually improve equilibrium geometries,
+atomization energies,
+and surface properties.
+However, they may still slightly overestimate lattice constants and underestimate band gaps.
+Nevertheless, because they provide a good balance between computational efficiency and accuracy,
+generalized gradient approximations have become standard exchange-correlation approximations in many practical calculations.
+
+\subsection{Hybrid functionals and the Heyd--Scuseria--Ernzerhof functional}
+
+Finally, besides local and semilocal approximations,
+one may further improve the exchange-correlation functional by incorporating a fraction of exact exchange.
+This leads to the class of hybrid functionals.
+Their motivation is that the inclusion of exact Hartree--Fock exchange can partially reduce the self-interaction error and often improves the description of band gaps, reaction barriers, and localized electronic states.
+
+However, in periodic solids,
+the direct use of long-range Hartree--Fock exchange is computationally expensive.
+Therefore, screened hybrid functionals are introduced.
+Here, a widely used example is the Heyd--Scuseria--Ernzerhof functional.
+
+In the Heyd--Scuseria--Ernzerhof construction,
+the Coulomb interaction is separated into short-range and long-range parts as follows:
+
+\begin{equation}
+    \frac{1}{|\vec{r}-\vec{r}\,'|}
+    = \frac{\mathrm{erfc}\left(\omega |\vec{r}-\vec{r}\,'|\right)}{|\vec{r}-\vec{r}\,'|}
+    + \frac{\mathrm{erf}\left(\omega |\vec{r}-\vec{r}\,'|\right)}{|\vec{r}-\vec{r}\,'|}
+\label{HSE_range_separation_of_Coulomb_interaction}
+\end{equation}
+
+here, $\omega$ refers to the screening parameter that controls the range separation.
+
+Accordingly, the exchange-correlation functional of the Heyd--Scuseria--Ernzerhof scheme is written as:
+
+\begin{equation}
+    E_\mathrm{xc}^\mathrm{HSE}[n]
+    = aE_x^{\mathrm{HF},\mathrm{SR}}[n;\omega]
+    + (1-a)E_x^{\mathrm{PBE},\mathrm{SR}}[n;\omega]
+    + E_x^{\mathrm{PBE},\mathrm{LR}}[n;\omega]
+    + E_c^\mathrm{PBE}[n]
+\label{HSE_exchange_correlation_functional}
+\end{equation}
+
+here, $E_x^{\mathrm{HF},\mathrm{SR}}[n;\omega]$ refers to the short-range Hartree--Fock exchange energy,
+$E_x^{\mathrm{PBE},\mathrm{SR}}[n;\omega]$ and $E_x^{\mathrm{PBE},\mathrm{LR}}[n;\omega]$ refer to the short-range and long-range parts of the PBE exchange functional,
+and $E_c^\mathrm{PBE}[n]$ refers to the PBE correlation functional.
+Moreover, $a$ refers to the mixing parameter that determines the fraction of exact exchange.
+
+In the standard HSE06 functional,
+one usually takes $a=0.25$.
+The screening parameter is typically chosen as $\omega=0.11\,\mathrm{bohr}^{-1}$.
+Therefore, only the short-range part of the exchange interaction contains exact Hartree--Fock exchange,
+while the long-range part is still described by a semilocal approximation.
+
+By restricting exact exchange to the short-range part,
+the Heyd--Scuseria--Ernzerhof functional significantly reduces the computational cost compared with global hybrid functionals.
+At the same time, it usually gives improved band gaps,
+better defect-level positions,
+and a more reliable description of localized states in semiconductors and insulators.
+Therefore, it has become one of the most widely used hybrid functionals in first-principles calculations of condensed-matter systems.
+
+Consequently, through the local density approximation,
+the generalized gradient approximation,
+and hybrid functionals such as the Heyd--Scuseria--Ernzerhof functional,
+we arrive at a practical hierarchy of exchange-correlation approximations in density functional theory.
+The local density approximation provides the simplest local description.
+The generalized gradient approximation improves it by incorporating the inhomogeneity of the density through its gradient.
+Hybrid functionals go one step further by mixing in a fraction of exact exchange.
+Therefore, for the density functional theory framework used in the present work,
+we arrive at the essential exchange-correlation approximations required in practical first-principles calculations.
+
 % draft
-
-% \section{Approximation and strategies in density functional theory}
-
-% \subsection{The local density approximation}
 
 % Firstly
 % Secondly
