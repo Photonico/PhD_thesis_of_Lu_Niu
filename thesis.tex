@@ -51,12 +51,30 @@
 \usepackage[pdftex,bookmarks=true]{hyperref}
 % \usepackage[xindy]{glossaries}      % must be after hyperref
 \usepackage{titlesec}
+\usepackage{etoolbox}
 % \usepackage{textcase}
 %% font family settings (requires XeLaTeX or LuaLaTeX)
 % \usepackage{fontspec}
 % \setmainfont{TeX Gyre Schola}
 % \usepackage{unicode-math}
 % \setmathfont{TeX Gyre Schola Math}
+
+%%%% Avoid starting a page with a displayed equation
+\newcommand{\nobreakbeforedisplay}{\par\nobreak}
+\AtBeginEnvironment{equation}{\nobreakbeforedisplay}
+\AtBeginEnvironment{equation*}{\nobreakbeforedisplay}
+\AtBeginEnvironment{align}{\nobreakbeforedisplay}
+\AtBeginEnvironment{align*}{\nobreakbeforedisplay}
+\AtBeginEnvironment{gather}{\nobreakbeforedisplay}
+\AtBeginEnvironment{gather*}{\nobreakbeforedisplay}
+\AtBeginEnvironment{multline}{\nobreakbeforedisplay}
+\AtBeginEnvironment{multline*}{\nobreakbeforedisplay}
+\AtBeginEnvironment{flalign}{\nobreakbeforedisplay}
+\AtBeginEnvironment{flalign*}{\nobreakbeforedisplay}
+\AtBeginEnvironment{alignat}{\nobreakbeforedisplay}
+\AtBeginEnvironment{alignat*}{\nobreakbeforedisplay}
+\AtBeginEnvironment{eqnarray}{\nobreakbeforedisplay}
+\AtBeginEnvironment{eqnarray*}{\nobreakbeforedisplay}
 
 %%%% Personal writing settings
 \newcommand{\euler}{\mathrm{e}}     % Euler's number

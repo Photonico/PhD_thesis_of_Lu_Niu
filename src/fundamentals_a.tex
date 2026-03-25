@@ -1546,20 +1546,16 @@ The Hohenberg--Kohn theorem then allows us to cast the ground-state problem as a
 
 Conceptually, equation~\eqref{density_minimization_principle} defines an underlying energy surface over the space of admissible densities; figure~\ref{figure_HK_variational} provides a two-dimensional schematic slice of such a high-dimensional landscape.
 
-\begin{figure}[t]
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\textwidth]{figures_ch2/HK_variational.pdf}
   \caption{Schematic illustration of the Hohenberg--Kohn variational picture}
   \label{figure_HK_variational}
 \end{figure}
 
-This is not exactly how density functional theory works in practice,
-or at least in the majority of applications,
-but it provides a clear variational picture of the underlying idea.
+Although density functional theory is not usually implemented in this form in practical calculations, this formulation provides a clear variational picture of the underlying idea.
 
-We now enforce the particle number constraint to carry out the constrained minimization in equation~\eqref{density_minimization_principle}.
-
-To this goal, we impose the particle number condition:
+We now turn to the constrained minimization in equation~\eqref{density_minimization_principle}. To enforce the fixed particle number, we impose the condition:
 
 \begin{equation}
     \int \mathrm{d}\vec{r}\, n(\vec{r}\,) = N
@@ -2945,7 +2941,7 @@ and the Hartree potential $v_\mathrm{H}([n];\vec{r}\,)$ is a known functional of
 Therefore, in practical density functional theory,
 the main difficulty lies in the construction of the exchange-correlation functional itself.
 
-Next, we introduce several widely used approximations for the exchange-correlation energy functional $E_\mathrm{xc}[n]$.
+Thereafter, we introduce several widely used approximations for the exchange-correlation energy functional $E_\mathrm{xc}[n]$.
 They differ in how much information about the density is retained.
 The simplest approximation depends only on the local value of the density.
 More accurate semilocal approximations also include the density gradient.
@@ -3103,3 +3099,4 @@ we arrive at the essential exchange-correlation approximations required in pract
 
 % Since there do not exist idealized models in the real world,
 % Approximations are always inevitable.
+%
