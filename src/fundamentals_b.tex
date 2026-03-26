@@ -123,17 +123,91 @@ It describes how the medium rearranges its internal charges under the applied el
 Once $\vec{P}(\vec{r},t)$ is known, equation~\eqref{electric_displacement_field_definition} immediately gives the electric displacement field $\vec{D}(\vec{r},t)$.
 Therefore, instead of treating $\vec{D}(\vec{r},t)$ as an independent quantity, we may regard it as a convenient way to encode the electric response of matter.
 
-Firstly, let us stay at the most general level compatible with linear response.
-In principle, the polarization at time $t$ may depend on the electric field at earlier times, and may also depend on the field in a surrounding spatial region.
-Therefore, the constitutive relation generally takes a nonlocal form in both space and time~\cite{royo2019first}:
+Firstly, we start from the most general linear-response form.
+For any time $t$, the polarization may depend not only on the electric field at the same point,
+but also on fields acting earlier and in a surrounding spatial region.
+Therefore, before introducing the simplified form used in the present work,
+we write the constitutive relation in its general nonlocal form in space and time~\cite{royo2019first}:
 
 \begin{equation}
     P_\alpha(\vec{r},t) =
     \varepsilon_0\sum_\beta\int\dif^3{r'}
     \int_{-\infty}^{t}\dif{t'}
-    \,\chi_{\alpha\beta}(\vec{r},t;\vec{r}',t')E_\beta(\vec{r}',t')
+    \,\chi_{\alpha\beta}(\vec{r},t;\vec{r}\,',t')\,E_\beta(\vec{r}\,',t')
 \label{general_nonlocal_constitutive_relation}
 \end{equation}
+
+here, $\chi_{\alpha\beta}(\vec{r},t;\vec{r}\,',t')$ describes the contribution of the electric field acting at $(\vec{r}',t')$ to the polarization that develops later at $(\vec{r},t)$.
+In this sense, the medium does not have to respond only at one point and one instant.
+Instead, it may spread the response over space and retain memory in time.
+At the same time, the upper limit $t$ in equation~\eqref{general_nonlocal_constitutive_relation} keeps the causal order explicit: the perturbation acts first, and the response follows.
+
+For the present work, we focus on the linear response in the long-wavelength regime.
+Under this approximation, spatial nonlocality drops out, and the constitutive relation retains only the memory of the earlier perturbation.
+Therefore, it reduces to the time-domain constitutive relation:
+
+\begin{equation}
+    P_\alpha(\vec{r},t)=
+    \varepsilon_0\sum_\beta\int_{-\infty}^{t}\dif{t'}\,\chi_{\alpha\beta}(t-t')\,E_\beta(\vec{r},t')
+\label{time_domain_constitutive_relation}
+\end{equation}
+
+here, $\chi_{\alpha\beta}(t-t')$ denotes the time-dependent susceptibility tensor.
+This expression demonstrates that the polarization does not follow the electric field instantaneously.
+Instead, the medium retains a memory of the earlier perturbation.
+
+Secondly, we transform equation~\eqref{time_domain_constitutive_relation} to the frequency domain, and arrive at:
+
+\begin{equation}
+    P_\alpha(\vec{r},\omega)=\varepsilon_0\sum_\beta\chi_{\alpha\beta}(\omega)\,E_\beta(\vec{r},\omega)
+\label{frequency_domain_polarization_susceptibility_relation}
+\end{equation}
+
+here, $\chi_{\alpha\beta}(\omega)$ denotes the frequency-dependent electric susceptibility tensor.
+This equation already demonstrates that the susceptibility already determines the linear electric response of the medium.
+Substituting equation~\eqref{frequency_domain_polarization_susceptibility_relation} into equation~\eqref{electric_displacement_field_definition}, we then obtain:
+
+\begin{equation}
+\begin{aligned}
+    D_\alpha(\vec{r},\omega)
+    &=\varepsilon_0 E_\alpha(\vec{r},\omega)+P_\alpha(\vec{r},\omega) \\
+    &=\varepsilon_0\sum_\beta\left[\delta_{\alpha\beta}+\chi_{\alpha\beta}(\omega)\right]E_\beta(\vec{r},\omega)
+\end{aligned}
+\label{electric_displacement_from_susceptibility}
+\end{equation}
+
+This result motivates the definition of the dielectric tensor:
+
+\begin{equation}
+    \varepsilon_{\alpha\beta}(\omega)
+    \coloneqq\delta_{\alpha\beta}
+    + \chi_{\alpha\beta}(\omega)
+\label{dielectric_tensor_definition}
+\end{equation}
+
+so that equation~\eqref{electric_displacement_from_susceptibility} can be rewritten as
+
+\begin{equation}
+    D_\alpha(\vec{r},\omega)
+    =
+    \varepsilon_0
+    \sum_\beta
+    \varepsilon_{\alpha\beta}(\omega)
+    E_\beta(\vec{r},\omega)
+\label{frequency_domain_constitutive_relation_with_dielectric_tensor}
+\end{equation}
+
+Consequently, the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ provides the most compact description of the linear electric response.
+For an isotropic medium, equation~\eqref{frequency_domain_constitutive_relation_with_dielectric_tensor} reduces to a scalar dielectric function $\varepsilon(\omega)$.
+For crystalline materials, however, anisotropy generally survives, so the tensor form remains the more natural choice.
+This point becomes particularly important when we compare different directions of the optical response in the later calculations~\cite{han2023temperature,lima2022optical}.
+
+Finally, the logical route has now become clear.
+We started from the polarization field, introduced the susceptibility tensor, and then arrived at the dielectric tensor.
+Therefore, the dielectric function does not enter as an isolated definition.
+Instead, it emerges naturally from the constitutive relation that closes Maxwell electrodynamics in matter.
+This route also prepares the ground for the next subsection, where we discuss the dielectric function itself in a more explicit form.
+
 
 \subsection{Linear response in the frequency domain}
 
