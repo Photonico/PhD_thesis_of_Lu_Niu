@@ -113,6 +113,20 @@ and it also provides the starting point for introducing the dielectric function\
 
 \subsection{Polarization, electric displacement, and constitutive relations}
 
+We have established the universal field equations in the previous subsection.
+However, those equations do not explore how matter responds to the applied field.
+To close the problem, we still need a relation that connects the induced polarization to the electric field.
+This relation is the constitutive relation, and it is here that the material-specific information enters~\cite{lima2022usefulness}.
+
+Here, the kernel object is the polarization field $\vec{P}(\vec{r},t)$.
+It describes how the medium rearranges its internal charges under the applied electric field.
+Once $\vec{P}(\vec{r},t)$ is known, equation~\eqref{electric_displacement_field_definition} immediately gives the electric displacement field $\vec{D}(\vec{r},t)$.
+Therefore, instead of treating $\vec{D}(\vec{r},t)$ as an independent quantity, we may regard it as a convenient way to encode the electric response of matter.
+
+Firstly, let us stay at the most general level compatible with linear response.
+In principle, the polarization at time $t$ may depend on the electric field at earlier times, and may also depend on the field in a surrounding spatial region.
+Therefore, the constitutive relation generally takes a nonlocal form in both space and time~\cite{royo2019spatial}:
+
 \subsection{Linear response in the frequency domain}
 
 \subsection{Anisotropy and the dielectric tensor}
