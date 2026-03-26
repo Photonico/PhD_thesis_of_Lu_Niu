@@ -31,14 +31,14 @@ Firstly, we write the macroscopic Maxwell equations for the electric field $\vec
 
 \begin{equation}
 \left\{\begin{aligned}
-    \,\nabla\cdot\vec{E}(\vec{r},t) &= \frac{\rho(\vec{r},t)}{\varepsilon_0} 
-    &&\quad \text{Gauss's law for electric field}\\
-    \,\nabla\cdot\vec{B}(\vec{r},t) &= 0 
-    &&\quad \text{Gauss's law for magnetic field}\\
-    \,\nabla\times\vec{E}(\vec{r},t) &= -\frac{\partial}{\partial t}\vec{B}(\vec{r},t) 
-    &&\quad \text{Faraday's law}\\
-    \,\nabla\times\vec{B}(\vec{r},t) &= \mu_0\vec{J}(\vec{r},t)+\mu_0\varepsilon_0\frac{\partial}{\partial t}\vec{E}(\vec{r},t)
-    &&\quad \text{Ampère--Maxwell law}
+    \nabla\cdot\vec{E}(\vec{r},t) &= \frac{\rho(\vec{r},t)}{\varepsilon_0} 
+    &&\enspace \text{Gauss's law for electric field}\\
+    \nabla\cdot\vec{B}(\vec{r},t) &= 0 
+    &&\enspace \text{Gauss's law for magnetic field}\\
+    \nabla\times\vec{E}(\vec{r},t) &= -\frac{\partial}{\partial t}\vec{B}(\vec{r},t) 
+    &&\enspace \text{Faraday's law}\\
+    \nabla\times\vec{B}(\vec{r},t) &= \mu_0\vec{J}(\vec{r},t)+\mu_0\varepsilon_0\frac{\partial}{\partial t}\vec{E}(\vec{r},t)
+    &&\enspace \text{Ampère--Maxwell law}
 \end{aligned}\right.
 \label{maxwell_equations_with_total_sources}
 \end{equation}
@@ -47,31 +47,29 @@ here, $\rho(\vec{r},t)$ and $\vec{J}(\vec{r},t)$ denote the total charge density
 
 These equations already imply a local conservation law.
 More specifically, we take the divergence of the Ampère--Maxwell law,
-and use Gauss's law for the electric field,
-we obtain the charge continuity equation:
+and use Gauss's law for the electric field to obtain the continuity equation for charge at the macroscopic level:
 
 \begin{equation}
     \frac{\partial}{\partial t}\rho(\vec{r},t)+\nabla\cdot\vec{J}(\vec{r},t)=0
 \label{macroscopic_charge_continuity_equation}
 \end{equation}
 
-% draft
-This is the continuity equation for charge at the macroscopic level.
-In this sense, the conservation principle encountered in the previous chapter reappears here in electrodynamic language.
+here, the conservation principle encountered in the previous chapter reappears in electrodynamic language.
 
-Next, in a material it is useful to separate the sources into free and bound parts:
+Secondly, for materials, it proves useful to decompose the sources into free and bound contributions:
+
 \begin{equation}
 \begin{aligned}
-    \rho(\vec{r},t)
-    &= \rho_\mathrm{free}(\vec{r},t)+\rho_\mathrm{bound}(\vec{r},t) \\
-    \vec{J}(\vec{r},t)
-    &= \vec{J}_\mathrm{free}(\vec{r},t)+\vec{J}_\mathrm{bound}(\vec{r},t)
+    \rho(\vec{r},t) &= \rho_\mathrm{free}(\vec{r},t)+\rho_\mathrm{bound}(\vec{r},t) \\
+    \vec{J}(\vec{r},t) &= \vec{J}_\mathrm{free}(\vec{r},t)+\vec{J}_\mathrm{bound}(\vec{r},t)
 \end{aligned}
 \label{free_and_bound_source_decomposition}
 \end{equation}
 
-The free part describes externally supplied or mobile macroscopic sources, while the bound part describes the response generated internally by the medium.
-To encode the bound electric response, we introduce the polarization field $\vec{P}(\vec{r},t)$ through~\cite{jackson1999classical,ashcroft1976solid}
+here, the free part describes externally supplied or mobile macroscopic sources,
+while the bound part describes the response generated internally by the medium.
+
+For discussing the bound electric response, we introduce the polarization field $\vec{P}(\vec{r},t)$ as:
 
 \begin{equation}
     \rho_\mathrm{bound}(\vec{r},t)\coloneqq -\nabla\cdot\vec{P}(\vec{r},t)
@@ -86,29 +84,32 @@ Accordingly, we define the electric displacement field as:
 \end{equation}
 
 For the nonmagnetic materials considered in the present work, the electric response is the central object.
-Therefore, it is sufficient here to keep the Maxwell equations in the form
+Therefore, it is sufficient here to keep the Maxwell equations in the form:
 
 \begin{equation}
-\left\{
-\begin{aligned}
-    \nabla\cdot\vec{D}(\vec{r},t) &= \rho_\mathrm{free}(\vec{r},t) \\
-    \nabla\cdot\vec{B}(\vec{r},t) &= 0 \\
-    \nabla\times\vec{E}(\vec{r},t) &= -\frac{\partial}{\partial t}\vec{B}(\vec{r},t) \\
+\left\{\begin{aligned}
+    \nabla\cdot\vec{D}(\vec{r},t) &= \rho_\mathrm{free}(\vec{r},t) 
+    &&\enspace \text{Gauss's law in matter}\\
+    \nabla\cdot\vec{B}(\vec{r},t) &= 0 
+    &&\enspace \text{Gauss's law for magnetic field}\\
+    \nabla\times\vec{E}(\vec{r},t) &= -\frac{\partial}{\partial t}\vec{B}(\vec{r},t) 
+    &&\enspace \text{Faraday's law}\\
     \frac{1}{\mu_0}\nabla\times\vec{B}(\vec{r},t) &= \vec{J}_\mathrm{free}(\vec{r},t)+\frac{\partial}{\partial t}\vec{D}(\vec{r},t)
-\end{aligned}
-\right.
+    &&\enspace \text{Amp\`ere--Maxwell law in matter}
+\end{aligned}\right.
 \label{maxwell_equations_in_matter}
 \end{equation}
 
-Consequently, the structure of the problem becomes clear.
-The Maxwell equations themselves are universal, while the material dependence is carried by the induced response hidden in $\vec{P}(\vec{r},t)$, and therefore in $\vec{D}(\vec{r},t)$.
+Consequently, we elucidate the structure of the problem.
+The Maxwell equations themselves are universal,
+while the material dependence enters through the induced polarization $\vec{P}(\vec{r},t)$, and therefore through the electric displacement field $\vec{D}(\vec{r},t)$.
 
-In many optical problems for bulk solids, one considers the response to an external electromagnetic perturbation in the absence of free charges and free currents inside the medium.
-Under this condition, equation~\eqref{maxwell_equations_in_matter} shows that the central issue is no longer the field equations themselves, but rather how the medium builds up polarization under the applied electric field.
-
-Finally, this observation already points to the route that we need.
-Once the relation between $\vec{P}(\vec{r},t)$ and $\vec{E}(\vec{r},t)$ is specified, the electromagnetic response of the medium becomes well defined.
-This is precisely the point where macroscopic electrodynamics meets microscopic electronic structure, and it also provides the starting point for introducing the dielectric function.
+In many optical problems, one considers the response to an external electromagnetic perturbation in the absence of free charges and free currents inside the medium.
+Under this condition, equation~\eqref{maxwell_equations_in_matter} shows that the central issue is no longer the field equations themselves,
+but how the medium develops polarization under the applied electric field.
+Once the relation between $\vec{P}(\vec{r},t)$ and $\vec{E}(\vec{r},t)$ is specified, the electromagnetic response becomes well defined.
+This is precisely the point where macroscopic electrodynamics meets microscopic electronic structure,
+and it also provides the starting point for introducing the dielectric function\cite{onida2002electronic}.
 
 \subsection{Polarization, electric displacement, and constitutive relations}
 
