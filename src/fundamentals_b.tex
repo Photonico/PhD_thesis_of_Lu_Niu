@@ -32,13 +32,13 @@ Firstly, we write the macroscopic Maxwell equations for the electric field $\vec
 \begin{equation}
 \left\{\begin{aligned}
     \nabla\cdot\vec{E}(\vec{r},t) &= \frac{\rho(\vec{r},t)}{\varepsilon_0} 
-    &&\enspace \text{Gauss's law for electric field}\\
+    &&\space \text{Gauss's law for electric field} \\
     \nabla\cdot\vec{B}(\vec{r},t) &= 0 
-    &&\enspace \text{Gauss's law for magnetic field}\\
+    &&\space \text{Gauss's law for magnetic field} \\
     \nabla\times\vec{E}(\vec{r},t) &= -\frac{\partial}{\partial t}\vec{B}(\vec{r},t) 
-    &&\enspace \text{Faraday's law}\\
+    &&\space \text{Faraday's law} \\
     \nabla\times\vec{B}(\vec{r},t) &= \mu_0\vec{J}(\vec{r},t)+\mu_0\varepsilon_0\frac{\partial}{\partial t}\vec{E}(\vec{r},t)
-    &&\enspace \text{Ampère--Maxwell law}
+    &&\space \text{Ampère--Maxwell law}
 \end{aligned}\right.
 \label{maxwell_equations_with_total_sources}
 \end{equation}
@@ -89,13 +89,13 @@ Therefore, it is sufficient here to keep the Maxwell equations in the form:
 \begin{equation}
 \left\{\begin{aligned}
     \nabla\cdot\vec{D}(\vec{r},t) &= \rho_\mathrm{free}(\vec{r},t) 
-    &&\enspace \text{Gauss's law in matter}\\
+    &&\space \text{Gauss's law for electric displacement} \\
     \nabla\cdot\vec{B}(\vec{r},t) &= 0 
-    &&\enspace \text{Gauss's law for magnetic field}\\
+    &&\space \text{Gauss's law for magnetic field} \\
     \nabla\times\vec{E}(\vec{r},t) &= -\frac{\partial}{\partial t}\vec{B}(\vec{r},t) 
-    &&\enspace \text{Faraday's law}\\
+    &&\space \text{Faraday's law} \\
     \frac{1}{\mu_0}\nabla\times\vec{B}(\vec{r},t) &= \vec{J}_\mathrm{free}(\vec{r},t)+\frac{\partial}{\partial t}\vec{D}(\vec{r},t)
-    &&\enspace \text{Amp\`ere--Maxwell law in matter}
+    &&\space \text{Amp\`ere--Maxwell law in matter}
 \end{aligned}\right.
 \label{maxwell_equations_in_matter}
 \end{equation}
@@ -156,7 +156,7 @@ here, $\chi_{\alpha\beta}(t-t')$ denotes the time-dependent susceptibility tenso
 This expression demonstrates that the polarization does not follow the electric field instantaneously.
 Instead, the medium retains a memory of the earlier perturbation.
 
-Secondly, we transform equation~\eqref{time_domain_constitutive_relation} to the frequency domain, and arrive at:
+Next, we transform equation~\eqref{time_domain_constitutive_relation} to the frequency domain, and arrive at:
 
 \begin{equation}
     P_\alpha(\vec{r},\omega)=\varepsilon_0\sum_\beta\chi_{\alpha\beta}(\omega)\,E_\beta(\vec{r},\omega)
@@ -178,7 +178,8 @@ we then express the electric displacement field in terms of the electric suscept
 \label{electric_displacement_from_susceptibility}
 \end{equation}
 
-This equation directly suggests that the combination $\delta_{\alpha\beta}+\chi_{\alpha\beta}(\omega)$ naturally enters the linear electric response.
+It now shows that the combination $\delta_{\alpha\beta}+\chi_{\alpha\beta}(\omega)$ naturally enters the linear electric response.
+
 This observation directly motivates the definition of the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$:
 
 \begin{equation}
@@ -195,7 +196,7 @@ Then, the frequency-domain constitutive relation takes the compact form:
 \label{frequency_domain_constitutive_relation_with_dielectric_tensor}
 \end{equation}
 
-This equation describes that the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ provides a compact description of the linear electric response.
+This equation reveals that the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ provides a compact description of the linear electric response.
 For an isotropic medium, it reduces to a scalar dielectric function $\varepsilon(\omega)$.
 For crystalline materials, however, anisotropy often survives, so we keep the tensor form and later compare the optical response along different directions~\cite{han2023temperature}.
 Thus, starting from the polarization field $\vec{P}(\vec{r},t)$,
