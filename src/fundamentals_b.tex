@@ -125,7 +125,15 @@ Therefore, instead of treating $\vec{D}(\vec{r},t)$ as an independent quantity, 
 
 Firstly, let us stay at the most general level compatible with linear response.
 In principle, the polarization at time $t$ may depend on the electric field at earlier times, and may also depend on the field in a surrounding spatial region.
-Therefore, the constitutive relation generally takes a nonlocal form in both space and time~\cite{royo2019spatial}:
+Therefore, the constitutive relation generally takes a nonlocal form in both space and time~\cite{royo2019first}:
+
+\begin{equation}
+    P_\alpha(\vec{r},t) =
+    \varepsilon_0\sum_\beta\int\dif^3{r'}
+    \int_{-\infty}^{t}\dif{t'}
+    \,\chi_{\alpha\beta}(\vec{r},t;\vec{r}',t')E_\beta(\vec{r}',t')
+\label{general_nonlocal_constitutive_relation}
+\end{equation}
 
 \subsection{Linear response in the frequency domain}
 
