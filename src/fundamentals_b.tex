@@ -164,8 +164,9 @@ Secondly, we transform equation~\eqref{time_domain_constitutive_relation} to the
 \end{equation}
 
 here, $\chi_{\alpha\beta}(\omega)$ denotes the frequency-dependent electric susceptibility tensor.
-This equation already demonstrates that the susceptibility already determines the linear electric response of the medium.
-Substituting equation~\eqref{frequency_domain_polarization_susceptibility_relation} into equation~\eqref{electric_displacement_field_definition}, we then obtain:
+This equation already describes that the susceptibility already determines the linear electric response of the medium.
+Substituting equation~\eqref{frequency_domain_polarization_susceptibility_relation} into equation~\eqref{electric_displacement_field_definition},
+We then get the expression the electric displacement field via the electric susceptibility tensor:
 
 \begin{equation}
 \begin{aligned}
@@ -176,37 +177,33 @@ Substituting equation~\eqref{frequency_domain_polarization_susceptibility_relati
 \label{electric_displacement_from_susceptibility}
 \end{equation}
 
-This result motivates the definition of the dielectric tensor:
+This equation directly suggests the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$:
 
 \begin{equation}
     \varepsilon_{\alpha\beta}(\omega)
-    \coloneqq\delta_{\alpha\beta}
-    + \chi_{\alpha\beta}(\omega)
+    \coloneqq\delta_{\alpha\beta}+\chi_{\alpha\beta}(\omega)
 \label{dielectric_tensor_definition}
 \end{equation}
 
-so that equation~\eqref{electric_displacement_from_susceptibility} can be rewritten as
+Using this dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$,
+we can rewrite equation~\eqref{electric_displacement_from_susceptibility} as the frequency-domain constitutive relation:
 
 \begin{equation}
     D_\alpha(\vec{r},\omega)
-    =
-    \varepsilon_0
-    \sum_\beta
-    \varepsilon_{\alpha\beta}(\omega)
-    E_\beta(\vec{r},\omega)
+    = \varepsilon_0\sum_\beta\varepsilon_{\alpha\beta}(\omega)E_\beta(\vec{r},\omega)
 \label{frequency_domain_constitutive_relation_with_dielectric_tensor}
 \end{equation}
 
-Consequently, the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ provides the most compact description of the linear electric response.
-For an isotropic medium, equation~\eqref{frequency_domain_constitutive_relation_with_dielectric_tensor} reduces to a scalar dielectric function $\varepsilon(\omega)$.
-For crystalline materials, however, anisotropy generally survives, so the tensor form remains the more natural choice.
-This point becomes particularly important when we compare different directions of the optical response in the later calculations~\cite{han2023temperature,lima2022optical}.
+This equation describes that the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ gives a compact description of the linear electric response.
+For an isotropic medium, the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ degenerates to a scalar dielectric function $\varepsilon(\omega)$.
+For crystalline materials, however, anisotropy often survives, so we keep the tensor form.
+This choice will later allow us to compare the optical response along different directions~\cite{han2023temperature}.
 
-Finally, the logical route has now become clear.
-We started from the polarization field, introduced the susceptibility tensor, and then arrived at the dielectric tensor.
-Therefore, the dielectric function does not enter as an isolated definition.
-Instead, it emerges naturally from the constitutive relation that closes Maxwell electrodynamics in matter.
-This route also prepares the ground for the next subsection, where we discuss the dielectric function itself in a more explicit form.
+We have now completed the route needed in this subsection.
+We started from the polarization field $\vec{P}(\vec{r},t)$, introduced the electric susceptibility tensor $\chi_{\alpha\beta}(\omega)$, and arrived at the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$.
+In this sense, the dielectric function does not enter as an isolated definition.
+Instead, it emerges from the constitutive relation that closes Maxwell electrodynamics in matter.
+With this preparation, we can now move to the dielectric function itself.
 
 
 \subsection{Linear response in the frequency domain}
