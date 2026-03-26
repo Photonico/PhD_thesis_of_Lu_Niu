@@ -100,7 +100,7 @@ Therefore, it is sufficient here to keep the Maxwell equations in the form:
 \label{maxwell_equations_in_matter}
 \end{equation}
 
-Consequently, we elucidate the structure of the problem.
+Consequently, we can now characterize the structure of the problem.
 The Maxwell equations themselves are universal,
 while the material dependence enters through the induced polarization $\vec{P}(\vec{r},t)$, and therefore through the electric displacement field $\vec{D}(\vec{r},t)$.
 
@@ -118,7 +118,7 @@ However, those equations do not explore how matter responds to the applied field
 To close the problem, we still need a relation that connects the induced polarization to the electric field.
 This relation is the constitutive relation, and it is here that the material-specific information enters~\cite{lima2022usefulness}.
 
-Here, the kernel object is the polarization field $\vec{P}(\vec{r},t)$.
+Here, the central object is the polarization field $\vec{P}(\vec{r},t)$.
 It describes how the medium rearranges its internal charges under the applied electric field.
 Once $\vec{P}(\vec{r},t)$ is known, equation~\eqref{electric_displacement_field_definition} immediately gives the electric displacement field $\vec{D}(\vec{r},t)$.
 Therefore, instead of treating $\vec{D}(\vec{r},t)$ as an independent quantity, we may regard it as a convenient way to encode the electric response of matter.
@@ -164,9 +164,10 @@ Secondly, we transform equation~\eqref{time_domain_constitutive_relation} to the
 \end{equation}
 
 here, $\chi_{\alpha\beta}(\omega)$ denotes the frequency-dependent electric susceptibility tensor.
-This equation already describes that the susceptibility already determines the linear electric response of the medium.
+This equation already shows that the susceptibility determines the linear electric response of the medium.
+
 Substituting equation~\eqref{frequency_domain_polarization_susceptibility_relation} into equation~\eqref{electric_displacement_field_definition},
-We then get the expression the electric displacement field via the electric susceptibility tensor:
+we then express the electric displacement field in terms of the electric susceptibility tensor:
 
 \begin{equation}
 \begin{aligned}
@@ -177,7 +178,8 @@ We then get the expression the electric displacement field via the electric susc
 \label{electric_displacement_from_susceptibility}
 \end{equation}
 
-This equation directly suggests the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$:
+This equation directly suggests that the combination $\delta_{\alpha\beta}+\chi_{\alpha\beta}(\omega)$ naturally enters the linear electric response.
+This observation directly motivates the definition of the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$:
 
 \begin{equation}
     \varepsilon_{\alpha\beta}(\omega)
@@ -185,8 +187,7 @@ This equation directly suggests the dielectric tensor $\varepsilon_{\alpha\beta}
 \label{dielectric_tensor_definition}
 \end{equation}
 
-Using this dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$,
-we can rewrite equation~\eqref{electric_displacement_from_susceptibility} as the frequency-domain constitutive relation:
+Then, the frequency-domain constitutive relation takes the compact form:
 
 \begin{equation}
     D_\alpha(\vec{r},\omega)
