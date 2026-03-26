@@ -5,23 +5,110 @@
 
 The previous chapter focused on the ground-state electronic problem.
 There, the central question was how electrons arrange themselves under a given external potential.
-However, optical properties are not determined by the ground-state alone.
-When an electromagnetic field is applied, the electrons are driven away from their static equilibrium, and the system demonstrates a series of responses.
+However, optical properties do not follow from the ground-state alone.
+When an electromagnetic field is applied, it drives the electrons away from their static equilibrium and triggers a series of responses.
 
 Therefore, before introducing the dielectric function, we need a language that describes both the applied field and the feedback of matter to that field.
 That language is electrodynamics.
-It tells us which structures are universal, and which parts depend on the specific material.
-
-The present section does not review a complete lecture of electrodynamics.
+The present section does not aim to review a complete lecture of electrodynamics.
 Instead, we only extract the ingredients required for the later discussion of the dielectric function, the Kramers--Kronig relations, and the optical properties.
-We will start from electromagnetic fields in matter, and gradually move toward a frequency-dependent response function that can be connected to the electronic structure.
+We begin with electromagnetic fields in matter, and then gradually move toward a frequency-dependent response function that can be connected to the electronic structure.
+
+In the present section, we mainly use SI units for the macroscopic electrodynamic equations.
+This choice keeps the structure of the Maxwell equations explicit.
 
 \subsection{Maxwell equations in matter}
 
-Let us start with the universal part of the problem.
-When an electromagnetic field enters a material, it induces charge redistribution inside the medium, and the induced charges further modify the field.
-Therefore, the optical response of matter should be described within the framework of macroscopic electrodynamics~\cite{griffiths2023introduction}.
+Let us start with the universal structure of the problem.
+When an electromagnetic field enters a material, it drives charge redistribution and induces currents inside the medium, while these induced sources further modify the field itself.
+Therefore, the optical response of matter should be described within the framework of electrodynamics~\cite{griffiths2023introduction}.
 
+At this stage, we do not explore how a specific material responds.
+Instead, we first identify the general field equations that govern electromagnetic dynamics in matter.
+They provide the universal backbone of the problem, while the constitutive relations later encode the material-specific information.
+
+Firstly, we write the macroscopic Maxwell equations for the electric field $\vec{E}(\vec{r},t)$ and magnetic field $\vec{B}(\vec{r},t)$ as:
+
+\begin{equation}
+\left\{\begin{aligned}
+    \,\nabla\cdot\vec{E}(\vec{r},t) &= \frac{\rho(\vec{r},t)}{\varepsilon_0} 
+    &&\quad \text{Gauss's law for electric field}\\
+    \,\nabla\cdot\vec{B}(\vec{r},t) &= 0 
+    &&\quad \text{Gauss's law for magnetic field}\\
+    \,\nabla\times\vec{E}(\vec{r},t) &= -\frac{\partial}{\partial t}\vec{B}(\vec{r},t) 
+    &&\quad \text{Faraday's law}\\
+    \,\nabla\times\vec{B}(\vec{r},t) &= \mu_0\vec{J}(\vec{r},t)+\mu_0\varepsilon_0\frac{\partial}{\partial t}\vec{E}(\vec{r},t)
+    &&\quad \text{Ampère--Maxwell law}
+\end{aligned}\right.
+\label{maxwell_equations_with_total_sources}
+\end{equation}
+
+here, $\rho(\vec{r},t)$ and $\vec{J}(\vec{r},t)$ denote the total charge density and total current density, respectively.
+
+These equations already imply a local conservation law.
+More specifically, we take the divergence of the Ampère--Maxwell law,
+and use Gauss's law for the electric field,
+we obtain the charge continuity equation:
+
+\begin{equation}
+    \frac{\partial}{\partial t}\rho(\vec{r},t)+\nabla\cdot\vec{J}(\vec{r},t)=0
+\label{macroscopic_charge_continuity_equation}
+\end{equation}
+
+% draft
+This is the continuity equation for charge at the macroscopic level.
+In this sense, the conservation principle encountered in the previous chapter reappears here in electrodynamic language.
+
+Next, in a material it is useful to separate the sources into free and bound parts:
+\begin{equation}
+\begin{aligned}
+    \rho(\vec{r},t)
+    &= \rho_\mathrm{free}(\vec{r},t)+\rho_\mathrm{bound}(\vec{r},t) \\
+    \vec{J}(\vec{r},t)
+    &= \vec{J}_\mathrm{free}(\vec{r},t)+\vec{J}_\mathrm{bound}(\vec{r},t)
+\end{aligned}
+\label{free_and_bound_source_decomposition}
+\end{equation}
+
+The free part describes externally supplied or mobile macroscopic sources, while the bound part describes the response generated internally by the medium.
+To encode the bound electric response, we introduce the polarization field $\vec{P}(\vec{r},t)$ through~\cite{jackson1999classical,ashcroft1976solid}
+
+\begin{equation}
+    \rho_\mathrm{bound}(\vec{r},t)\coloneqq -\nabla\cdot\vec{P}(\vec{r},t)
+\label{bound_charge_from_polarization}
+\end{equation}
+
+Accordingly, we define the electric displacement field as:
+
+\begin{equation}
+    \vec{D}(\vec{r},t)\coloneqq \varepsilon_0\vec{E}(\vec{r},t)+\vec{P}(\vec{r},t)
+\label{electric_displacement_field_definition}
+\end{equation}
+
+For the nonmagnetic materials considered in the present work, the electric response is the central object.
+Therefore, it is sufficient here to keep the Maxwell equations in the form
+
+\begin{equation}
+\left\{
+\begin{aligned}
+    \nabla\cdot\vec{D}(\vec{r},t) &= \rho_\mathrm{free}(\vec{r},t) \\
+    \nabla\cdot\vec{B}(\vec{r},t) &= 0 \\
+    \nabla\times\vec{E}(\vec{r},t) &= -\frac{\partial}{\partial t}\vec{B}(\vec{r},t) \\
+    \frac{1}{\mu_0}\nabla\times\vec{B}(\vec{r},t) &= \vec{J}_\mathrm{free}(\vec{r},t)+\frac{\partial}{\partial t}\vec{D}(\vec{r},t)
+\end{aligned}
+\right.
+\label{maxwell_equations_in_matter}
+\end{equation}
+
+Consequently, the structure of the problem becomes clear.
+The Maxwell equations themselves are universal, while the material dependence is carried by the induced response hidden in $\vec{P}(\vec{r},t)$, and therefore in $\vec{D}(\vec{r},t)$.
+
+In many optical problems for bulk solids, one considers the response to an external electromagnetic perturbation in the absence of free charges and free currents inside the medium.
+Under this condition, equation~\eqref{maxwell_equations_in_matter} shows that the central issue is no longer the field equations themselves, but rather how the medium builds up polarization under the applied electric field.
+
+Finally, this observation already points to the route that we need.
+Once the relation between $\vec{P}(\vec{r},t)$ and $\vec{E}(\vec{r},t)$ is specified, the electromagnetic response of the medium becomes well defined.
+This is precisely the point where macroscopic electrodynamics meets microscopic electronic structure, and it also provides the starting point for introducing the dielectric function.
 
 \subsection{Polarization, electric displacement, and constitutive relations}
 
