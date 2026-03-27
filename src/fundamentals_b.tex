@@ -225,8 +225,7 @@ In that case, anisotropy survives, and we must retain the full tensor form.
 When we choose the Cartesian axes along the principal directions of the crystal, the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ takes the principal-axis form:
 
 \begin{equation}
-    \varepsilon(\omega)=
-    \begin{pmatrix}
+    \varepsilon(\omega) = \begin{pmatrix}
         \varepsilon_{xx}(\omega) & 0 & 0 \\
         0 & \varepsilon_{yy}(\omega) & 0 \\
         0 & 0 & \varepsilon_{zz}(\omega)
@@ -234,8 +233,21 @@ When we choose the Cartesian axes along the principal directions of the crystal,
 \label{principal_axis_dielectric_tensor}
 \end{equation}
 
-This form makes the directional response explicit.
-Each diagonal component describes the dielectric response along one principal axis, and anisotropy enters through the difference among these components.
+here, each diagonal component describes the dielectric response along one principal axis,
+and anisotropy enters through the difference among these components.
+
+For the present work, this directional dependence plays a central role.
+We later compare the optical response within the structural plane and perpendicular to that plane.
+Therefore, it is convenient to introduce the in-plane dielectric function $\varepsilon_{\varparallel}(\omega)$ and the out-of-plane dielectric function $\varepsilon_{\perp}(\omega)$:
+
+\begin{equation}
+    \varepsilon(\omega) = \begin{pmatrix}
+        \varepsilon_{\varparallel}(\omega) & 0 & 0 \\
+        0 & \varepsilon_{\varparallel}(\omega) & 0 \\
+        0 & 0 & \varepsilon_{\perp}(\omega)
+    \end{pmatrix}
+\label{inplane_outofplane_dielectric_tensor}
+\end{equation}
 
 \newpage
 \section{From electronic response to the dielectric function}
