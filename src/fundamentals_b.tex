@@ -204,12 +204,13 @@ With this preparation, we next discuss the anisotropy of the dielectric tensor.
 
 \subsection{Anisotropy and the dielectric tensor}
 
-In the previous subsection, we presented the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ as the compact description of the linear electric response.
+In the previous subsection, we presented the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ as a compact description of the linear electric response.
 We now examine how symmetry constrains its form.
 When the medium responds identically along all directions, the dielectric tensor reduces to a scalar form.
 If the response changes with direction, the full tensor form must be retained.
 
-Firstly, for an isotropic medium, the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ reduces to a scalar dielectric function $\varepsilon(\omega)$:
+Firstly, for an isotropic medium,
+the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ reduces to a scalar dielectric function $\varepsilon(\omega)$:
 
 \begin{equation}
     \varepsilon_{\alpha\beta}(\omega)
@@ -217,12 +218,14 @@ Firstly, for an isotropic medium, the dielectric tensor $\varepsilon_{\alpha\bet
 \label{isotropic_dielectric_tensor}
 \end{equation}
 
-here, the scalar dielectric function $\varepsilon(\omega)$ already determines the full linear electric response.
-The isotropic medium does not distinguish one Cartesian direction from another, so the tensor structure no longer carries additional directional information.
+here, the scalar dielectric function $\varepsilon(\omega)$ already determines the full linear electric response,
+since the isotropic medium does not distinguish one Cartesian direction from another.
+The tensor structure therefore no longer carries additional directional information.
 
 Secondly, crystalline materials usually do distinguish directions.
 In that case, anisotropy survives, and we must retain the full tensor form.
-When we choose the Cartesian axes along the principal directions of the crystal, the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ takes the principal-axis form:
+When we choose the Cartesian axes along the principal directions of the crystal,
+the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ takes the principal-axis form:
 
 \begin{equation}
     \varepsilon(\omega) = \begin{pmatrix}
@@ -236,7 +239,7 @@ When we choose the Cartesian axes along the principal directions of the crystal,
 here, each diagonal component describes the dielectric response along one principal axis,
 and anisotropy enters through the difference among these components.
 
-For the present work, this directional dependence plays a central role.
+For the present work, this directional dependence plays a central role~\cite{slavich2024exploring}.
 We later compare the optical response within the structural plane and perpendicular to that plane.
 Therefore, it is convenient to introduce the in-plane dielectric function $\varepsilon_{\varparallel}(\omega)$ and the out-of-plane dielectric function $\varepsilon_{\perp}(\omega)$:
 
@@ -248,6 +251,20 @@ Therefore, it is convenient to introduce the in-plane dielectric function $\vare
     \end{pmatrix}
 \label{inplane_outofplane_dielectric_tensor}
 \end{equation}
+
+here, the in-plane dielectric function $\varepsilon_{\varparallel}(\omega)$ describes the response to an electric field within the structural plane,
+while the out-of-plane dielectric function $\varepsilon_{\perp}(\omega)$ describes the response to an electric field normal to that plane.
+This notation directly prepares the comparison between the in-plane and out-of-plane dielectric spectra and optical properties.
+
+This anisotropy also propagates to other optical quantities derived from the dielectric tensor.
+Once the dielectric response changes with direction, the refractive index, the extinction coefficient, the reflectivity, and the energy-loss spectrum also inherit that directional dependence.
+Therefore, the tensor structure does not only refine the notation.
+It also determines how we organize and interpret the later optical results.
+
+Starting from the polarization field $\vec{P}(\vec{r},t)$, we introduced the electric susceptibility tensor $\chi_{\alpha\beta}(\omega)$ and then arrived at the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$.
+The dielectric function therefore emerges naturally from the constitutive relation that closes Maxwell electrodynamics in matter.
+At the same time, anisotropy makes the directional dependence of this response explicit.
+With this preparation, we next introduce the dielectric function in a more explicit form.
 
 \newpage
 \section{From electronic response to the dielectric function}
