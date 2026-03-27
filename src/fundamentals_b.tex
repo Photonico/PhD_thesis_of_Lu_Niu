@@ -209,13 +209,30 @@ We now examine how symmetry constrains its form.
 When the medium responds identically along all directions, the dielectric tensor reduces to a scalar form.
 If the response changes with direction, the full tensor form must be retained.
 
-Firstly, for an isotropic medium, all directions are equivalent.
-For this condition, the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ reduces to a scalar dielectric function $\varepsilon(\omega)$:
+Firstly, for an isotropic medium, the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ reduces to a scalar dielectric function $\varepsilon(\omega)$:
 
 \begin{equation}
     \varepsilon_{\alpha\beta}(\omega)
     = \varepsilon(\omega)\delta_{\alpha\beta}
 \label{isotropic_dielectric_tensor}
+\end{equation}
+
+here, the scalar dielectric function $\varepsilon(\omega)$ already determines the full linear electric response.
+The isotropic medium does not distinguish one Cartesian direction from another, so the tensor structure no longer carries additional directional information.
+
+Secondly, crystalline materials usually do distinguish directions.
+In that case, anisotropy survives, and we must retain the full tensor form.
+When we choose the Cartesian axes along the principal directions of the crystal, the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ takes the principal-axis form:
+
+\begin{equation}
+    \varepsilon(\omega)
+    =
+    \begin{pmatrix}
+        \varepsilon_{xx}(\omega) & 0 & 0 \\
+        0 & \varepsilon_{yy}(\omega) & 0 \\
+        0 & 0 & \varepsilon_{zz}(\omega)
+    \end{pmatrix}
+\label{principal_axis_dielectric_tensor}
 \end{equation}
 
 \newpage
