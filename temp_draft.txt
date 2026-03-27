@@ -1,10 +1,22 @@
 # Temporary space
 
-% This equation reveals that the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ provides a compact description of the linear electric response.
-% For an isotropic medium, it reduces to a scalar dielectric function $\varepsilon(\omega)$.
-% In crystalline materials, however, anisotropy often survives, so we retain the tensor form and later compare the optical response along different directions.
-% Thus, starting from the polarization field $\vec{P}(\vec{r},t)$,
-% we introduce the electric susceptibility tensor $\chi_{\alpha\beta}(\omega)$ and then arrive at the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$.
-% The dielectric function therefore emerges naturally from the constitutive relation that closes Maxwell electrodynamics in matter.
-% With this preparation, we next discuss the anisotropy of the dielectric tensor.
+PerdewWang1992
+John P. Perdew and Yue Wang, “Accurate and simple analytic representation of the electron-gas correlation energy”, Physical Review B 45, 13244 (1992). DOI: 10.1103/PhysRevB.45.13244.
 
+PerdewBurkeErnzerhof1996
+John P. Perdew, Kieron Burke, and Matthias Ernzerhof, “Generalized Gradient Approximation Made Simple”, Physical Review Letters 77, 3865 (1996). DOI: 10.1103/PhysRevLett.77.3865.
+
+PerdewBurkeErnzerhof1997
+John P. Perdew, Kieron Burke, and Matthias Ernzerhof, “Generalized Gradient Approximation Made Simple [Phys. Rev. Lett. 77, 3865 (1996)]”, Physical Review Letters 78, 1396 (1997). 这篇本质上是 erratum。DOI: 10.1103/PhysRevLett.78.1396.
+
+Martin2004
+Richard M. Martin, Electronic Structure: Basic Theory and Practical Methods, Cambridge University Press (2004).
+
+HeydScuseriaErnzerhof2003
+Jochen Heyd, Gustavo E. Scuseria, and Matthias Ernzerhof, “Hybrid functionals based on a screened Coulomb potential”, The Journal of Chemical Physics 118, 8207 (2003). DOI: 10.1063/1.1564060.
+
+HeydScuseriaErnzerhof2006
+Jochen Heyd, Gustavo E. Scuseria, and Matthias Ernzerhof, “Erratum: ‘Hybrid functionals based on a screened Coulomb potential’ [J. Chem. Phys. 118, 8207 (2003)]”, The Journal of Chemical Physics 124, 219906 (2006). DOI: 10.1063/1.2204597.
+
+Krukau2006
+Aliaksandr V. Krukau, Oleg A. Vydrov, Artur F. Izmaylov, and Gustavo E. Scuseria, “Influence of the exchange screening parameter on the performance of screened hybrid functionals”, The Journal of Chemical Physics 125, 224106 (2006). DOI: 10.1063/1.2404663.
