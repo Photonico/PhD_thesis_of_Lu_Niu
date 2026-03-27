@@ -93,6 +93,9 @@
   \newenvironment{abstract}{\begin{summary}}{\end{summary}}%
 }{}
 \makeatother
+\makeatletter
+\providecommand\@dotsep{4.5}
+\makeatother
 
 %%%% Contents settings
 \makeatletter
@@ -112,6 +115,9 @@
 \newunicodechar{Ⅱ}{\textRoman{2}}
 \newunicodechar{Ⅲ}{\textRoman{3}}
 \newcommand{\textRoman}[1]{\MakeUppercase{\romannumeral #1}}
+\newcommand{\PartRoman}[1]{%
+  \ifcase#1\or I\or II\or III\else #1\fi
+}
 
 %%%% Hyperlink configurations
 \hypersetup{
