@@ -275,12 +275,12 @@ It is given by $\hat{V}_\mathrm{NN}(\{\vec{R}_I\})$:
 \begin{equation}
 \begin{aligned}
 \hat{H}
-&=-\frac{1}{2}\sum_i\nabla_i^2
-+\sum_{i<j}\frac{1}{\left|\vec{r}_i-\vec{r}_j\right|}
-+\sum_i v_\mathrm{ext}(\hat{\vec{r}}_i)+\hat{V}_\mathrm{NN}(\{\vec{R}_I\}) \\
-&=-\frac{1}{2}\sum_i\nabla_i^2
-+\sum_{i<j}\frac{1}{\left|\vec{r}_i-\vec{r}_j\right|}
-+\sum_i v_\mathrm{ext}(\hat{\vec{r}}_i)+E_\mathrm{NN}
+    &=-\frac{1}{2}\sum_i\nabla_i^2
+    +\sum_{i<j}\frac{1}{\left|\vec{r}_i-\vec{r}_j\right|}
+    +\sum_i v_\mathrm{ext}(\hat{\vec{r}}_i)+\hat{V}_\mathrm{NN}(\{\vec{R}_I\}) \\
+    &=-\frac{1}{2}\sum_i\nabla_i^2
+    +\sum_{i<j}\frac{1}{\left|\vec{r}_i-\vec{r}_j\right|}
+    +\sum_i v_\mathrm{ext}(\hat{\vec{r}}_i)+E_\mathrm{NN}
 \end{aligned}
 \label{atomic_many-body_hamiltonian}
 \end{equation}
@@ -313,7 +313,9 @@ After truncating each one-particle space to a finite basis of size $d$, the many
 \label{exponential_growth}
 \end{equation}
 
-This complexity, known as the "curse of dimensionality," motivates powerful approximate methods such as Hartree--Fock and Density Functional Theory, which we will explore in later sections.
+This complexity is often called the curse of dimensionality~\cite{alhambra2023quantum}.
+It motivates approximate methods such as Hartree--Fock theory and density functional theory~\cite{ pribram2015dft}.
+We will return to these methods in later sections.
 
 When electron interactions are completely disregarded, the problem simplifies to $N$ independent single-electron problems.
 If we further ignore fermionic antisymmetry, the many-body wave function reduces to a simple product of single-particle wave functions:
@@ -410,7 +412,10 @@ This form is particularly convenient for discussing conserved quantities and sym
 
 \subsection{From Heisenberg picture to the continuity equation}
 
-Having seen that any local one-body observable can be written as an integral over a single function, we now introduce that central quantity. The one-body density contains all the information needed to compute one-particle expectation values and serves as the fundamental variable in density functional theory~\cite{sholl2022density}. In what follows, we review its precise definition.
+Having seen that any local one-body observable can be written as an integral over a single function,
+we now introduce that central quantity.
+The one-body density contains all the information needed to compute one-particle expectation values and serves as the fundamental variable in density functional theory~\cite{maitra2016perspective}.
+In what follows, we review its precise definition:
 
 \begin{equation}
     n(\vec{r}\,)
@@ -522,9 +527,11 @@ We can extract them from the wave function through expectation values:
 
 \subsection{An introduction to grand canonical ensemble}
 
-Although the present chapter mainly focuses on the zero-temperature ground-state formalism, it is useful to briefly record the grand-canonical framework because it provides the natural extension to finite temperature and varying particle number.
+Although the present chapter mainly focuses on the zero-temperature ground-state formalism,
+it is useful to briefly record the grand-canonical framework because it provides the natural extension to finite temperature and varying particle number~\cite{gould2026ensemblization}.
 
-Before proceeding further, it is essential to introduce the grand canonical ensemble, as it naturally accommodates quantum many-body systems exchanging particles and energy with external reservoirs. This treatment is particularly crucial in density functional theory calculations for realistic materials, where fluctuations in particle number and thermal effects are common.
+Before proceeding further, it is essential to introduce the grand canonical ensemble, as it naturally accommodates quantum many-body systems exchanging particles and energy with external reservoirs.
+This treatment is particularly crucial in density functional theory calculations for realistic materials, where fluctuations in particle number and thermal effects are common.
 
 In the grand canonical ensemble, the expectation value of any observable operator $\hat{\Omega}$ is computed as follows:
 
@@ -701,7 +708,7 @@ Next, recall the general expression for an observable in a many-body system: equ
 \end{equation}
 
 We can find that this integral naturally factors into two components: the one-body operator kernel $\Omega_1(x_1)$,
-and the corresponding one-body density:
+and the corresponding one-body density~\cite{mazziotti2012two}:
 
 \begin{equation}
     n(x_1)=N\int\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\cdots,x_N)\Psi(x_1,x_2,\cdots,x_N)
@@ -979,7 +986,8 @@ this amounts to adopting controlled approximations for kinetic energy functional
 
 A functional is a mapping that takes a function as its input and returns a number (or sometimes another function).
 
-The reason we introduce density functional theory in condensed matter physics research is that solving the full many-body or many-electron Schrödinger equation scales hopelessly with the number of electrons~\cite{sholl2022density}. DFT reformulates it as a variational problem in terms of the three-dimensional electron density 
+The reason we introduce density functional theory in condensed matter physics research is that solving the full many-body or many-electron Schrödinger equation scales hopelessly with the number of electrons~\cite{becke2014perspective}.
+DFT reformulates it as a variational problem in terms of the three-dimensional electron density 
 $n(\vec{r}\,)$, making predictive calculations of structures, band structures, magnetism, and reaction energetics feasible.
 
 For example, in condensed matter physics, it often appears as a map from electron density $n(\vec{r}\,)$ to the total energy $E[n]$ given by an external potential:
@@ -998,7 +1006,8 @@ It also often appears that we use a non-local functional to describe the classic
 
 In this thesis, $E_\mathrm{H}[n]$ denotes the Hartree term.
 
-Next, let us consider the expression for kinetic energy in terms of a functional. Within the Thomas--Fermi approximation, the noninteracting kinetic energy is treated locally as that of a uniform (homogeneous) electron gas whose density equals the actual electron density $n(\vec{r}\,)$ at each point in space.
+Next, let us consider the expression for kinetic energy in terms of a functional. Within the Thomas--Fermi approximation,
+the noninteracting kinetic energy is treated locally as that of a uniform (homogeneous) electron gas whose density equals the actual electron density $n(\vec{r}\,)$ at each point in space.
 This leads to the Thomas--Fermi kinetic energy functional:
 
 \begin{equation}
@@ -1064,7 +1073,7 @@ Consequently, every ground-state observable can be written as a (unique) density
 
 Under the usual Hohenberg--Kohn setting (in particular, for a non-degenerate ground-state), the density $n(\vec{r}\,)$ uniquely determines the external potential $v_\mathrm{ext}(\vec{r}\,)$ up to an additive constant.
 Consequently, $n(\vec{r}\,)$ fixes the hamiltonian and hence the ground-state $\ket{\Psi_0}$ (up to an overall phase).
-This statement is essentially the central result of the Hohenberg--Kohn theorem~\cite{hohenberg1964inhomogeneous}: in the ground-state, all observables are uniquely determined by the electron density.
+This statement is essentially the central result of the Hohenberg--Kohn theorem~\cite{hohenberg1964inhomogeneous}, namely that in the ground state all observables are uniquely determined by the electron density.
 Accordingly, any ground-state observable may be written as a functional of the density alone:
 
 \begin{equation}
@@ -1420,7 +1429,7 @@ and\eqref{density_potential_map}, we finally arrive at a one-to-one corresponden
 \label{hk_correspondence_v_n_psi}
 \end{equation}
 
-The two previous equations~\eqref{density_potential_map} and~\eqref{hk_correspondence_v_n_psi} summarize the content of the Hohenberg--Kohn theorem~\cite{hohenberg1964inhomogeneous}.
+The two previous equations~\eqref{density_potential_map} and~\eqref{hk_correspondence_v_n_psi} summarize the content of the Hohenberg--Kohn theorem~\cite{burke2012perspective}.
 For a fixed form of interaction and a non-degenerate ground-state, the ground-state density $n(\vec{r}\,)$ is in bijection with the equivalence class of the external potential $\left[v_\mathrm{ext}(\vec{r}\,)\right]$ up to an additive constant. 
 Consequently, the ground-state density uniquely determines the hamiltonian and the ground-state wave function up to an overall phase,
 and any ground-state observable is, in principle, a unique functional of $n(\vec{r}\,)$.
@@ -1719,8 +1728,8 @@ and the corresponding kinetic energy density reads:
 \end{equation}
 
 Within the local density approximation,
-we apply this homogeneous result locally by replacing $n$ with $n(\vec{r}\,)$, and integrating over space.
-This leads to the Thomas--Fermi kinetic energy functional:
+we apply this homogeneous result locally by replacing $n$ with $n(\vec{r}\,)$ and integrating over space.
+Accordingly, this yields the Thomas--Fermi kinetic energy functional~\cite{mi2023orbital}:
 
 \begin{equation}
     T_\mathrm{TF}[n] = C_1\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{5}{3}}
@@ -1736,7 +1745,7 @@ with the Thomas--Fermi constant:
 
 This expression holds for a spin-unpolarized system.
 
-Therefore, we arrive at the full Thomas--Fermi energy functional as a functional of the electron density.
+Therefore, we arrive at the full Thomas--Fermi energy functional as a functional of the electron density~\cite{xu2024recent}.
 The nucleus-nucleus contribution $E_\mathrm{NN}$ is omitted since it does not depend on $n(\vec{r}\,)$.
 
 \begin{equation}
@@ -1756,7 +1765,7 @@ This expression gives the total energy in the Thomas--Fermi approximation as a f
 The ground-state of the system is characterized by the density that minimizes the total energy under the constraint of a fixed particle number.
 This is the variational principle for the ground-state energy in density functional theory.
 
-At finite temperature, the equilibrium density is obtained by minimizing the Helmholtz free energy functional.
+At finite temperature, the equilibrium density is obtained by minimizing the Helmholtz free energy functional~\cite{mermin1965thermal}.
 In the present zero temperature setting, the relevant quantity is the total energy functional $E_\mathrm{TF}[n]$.
 
 To determine the ground-state density, we minimize the Thomas--Fermi energy functional under the particle number constraint:
@@ -1885,7 +1894,7 @@ This procedure constitutes the Thomas--Fermi method.
 
 For a many-body system,
 it is instructive to contrast the exact density functional with the Thomas--Fermi approximation.
-In density functional theory, the total energy can be written as a functional of the electron density.
+In density functional theory, the total energy can be written as a functional of the electron density~\cite{jones2015density}.
 
 Let us express the exact total energy as a functional of the density:
 
@@ -1926,10 +1935,10 @@ Accordingly, the exact total energy functional can be written in the following f
 Recall the full Thomas--Fermi energy functional in equation~\eqref{full_energy_functional}.
 Let us compared with the exact decomposition in equation~\eqref{functional_exact_total_energy},
 the Thomas--Fermi functional neglects the exchange correlation part of the interaction energy functional $E_\mathrm{xc}^\mathrm{int}[n]$.
-This omission can lead to sizable errors for total energies even in simple atoms.
+This omission can lead to sizable errors for total energies even in simple atoms~\cite{schwinger1980thomas, schwinger1981thomas}.
 
 A first improvement is to approximate $E_\mathrm{xc}^\mathrm{int}[n]$ by a local exchange functional derived from the homogeneous electron gas.
-This approximation is commonly associated with the Dirac exchange functional:
+This approximation is commonly associated with the Dirac exchange functional~\cite{dirac1930note}:
 
 \begin{equation}
     E_\mathrm{xc}^\mathrm{int}[n]\approx E_\mathrm{x}^\mathrm{D}[n]
@@ -1966,7 +1975,7 @@ Including the Dirac exchange term, we obtain the Thomas--Fermi Dirac functional:
 The Thomas--Fermi Dirac approximation improves total energies by incorporating an explicit exchange contribution.
 However, the kinetic energy is still treated at the Thomas--Fermi level, which is often insufficient for molecules and solids.
 
-A systematic correction to the kinetic energy can be introduced through a gradient term proposed by von Weizsäcker.
+A systematic correction to the kinetic energy can be introduced through a gradient term proposed by von Weizsäcker~\cite{yang1986gradient}.
 The von Weizsäcker kinetic energy functional is defined by:
 
 \begin{equation}
@@ -1986,7 +1995,7 @@ By adding this gradient correction, we arrive at the Thomas--Fermi Dirac von Wei
 \label{TFDW_functional}
 \end{equation}
 
-These extensions provide early orbital free approximations beyond the Thomas--Fermi approach.
+These extensions provide early orbital free approximations beyond the Thomas--Fermi approach~\cite{lieb1981thomas}.
 They also clarify that improving the kinetic energy functional and the exchange correlation functional is essential for a quantitatively reliable description of realistic interacting electron systems.
 
 \newpage
@@ -2192,7 +2201,7 @@ Instead, we tune the one-body potential $v_\mathrm{aux}(\vec{r}\,)$ in the auxil
 In other words, we start from a given density $n(\vec{r}\,)$ and ask whether we can find a potential $v_\mathrm{aux}(\vec{r}\,)$ that makes a noninteracting system reproduce it.
 
 This is the basic existence question behind the auxiliary construction,
-and it is often referred to as noninteracting $v$-representability.
+and it is often referred to as noninteracting $v$-representability~\cite{de2012pure}.
 
 \subsection{The framework of the Kohn--Sham equations}
 
@@ -2367,7 +2376,7 @@ It is therefore convenient to introduce the effective Kohn--Sham potential:
 here, the corresponding one-body operator is $\hat{v}_\mathrm{eff}\coloneqq v_\mathrm{eff}([n];\hat{\vec{r}}\,)$.
 
 Next, in a basis where the Lagrange-multiplier matrix is diagonal,
-the stationarity condition can be expressed as the Kohn--Sham equations:
+the stationarity condition can be expressed as the Kohn--Sham equations~\cite{kohn1965self}:
 
 \begin{equation}
     \left[-\frac{1}{2}\nabla^2+v_\mathrm{eff}([n];\vec{r}\,)\right]\psi_i(\vec{r}\,)
@@ -2388,7 +2397,7 @@ Meanwhile, $v_\mathrm{eff}([n];\vec{r}\,)$ depends on $n(\vec{r}\,)$ through equ
 Therefore, equations~\eqref{KS_effective_potential_definition} and~\eqref{KS_equation} are solved self-consistently.
 
 In this sense, density functional theory is built on the Hohenberg--Kohn theorem.
-It states that the ground-state density uniquely determines the external potential modulo an additive constant.
+It states that the ground-state density uniquely determines the external potential modulo an additive constant~\cite{kohn1999nobel}.
 Meanwhile, the density and the external potential are in bijective correspondence:
 
 \begin{equation}
@@ -2658,7 +2667,7 @@ Consequently, if the functional derivative of the noninteracting kinetic energy 
 the Kohn--Sham effective potential $v_\mathrm{eff}(\vec{r}\,)$ can be constructed to reproduce $n_0(\vec{r}\,)$.
 In this sense, the auxiliary noninteracting system idea is reasonable.
 
-In practice, the Kohn--Sham equations give the exact electron density in principle.
+In practice, the Kohn--Sham equations give the exact electron density in principle~\cite{wagner2014kohn}.
 The only missing piece is the exchange-correlation energy functional $E_\mathrm{xc}[n]$, or equivalently the exchange-correlation potential $v_\mathrm{xc}([n];\vec{r}\,)$.
 We will introduce approximations for it later.
 
@@ -2680,7 +2689,7 @@ Let us start from a trial density.
 We construct the potentials and diagonalize the Kohn--Sham operator.
 This generates updated orbitals and a new density.
 We repeat these steps until the density is converged.
-This idea goes back to Hartree and his self-consistent treatment.
+This idea goes back to Hartree and his self-consistent treatment~\cite{hartree1928wave}.
 
 Next, we comment on the Kohn--Sham eigenvalues $\lambda_i$.
 They have the dimension of energy,
@@ -2689,8 +2698,8 @@ Therefore, in general, they are not electron removal or addition energies,
 which are defined by total-energy differences.
 
 There is an important exception for finite systems.
-For the exact functional, the highest occupied Kohn--Sham eigenvalue equals the negative ionization energy.
-For extended systems, similar interpretations have been discussed,
+For the exact functional, the highest occupied Kohn--Sham eigenvalue equals the negative ionization energy~\cite{perdew1997comment, harbola1999relationship}.
+For extended systems, similar interpretations have been discussed~\cite{mundt2006photoelectron},
 but no general proof is available in the same simple form.
 
 In fact, we work with approximate functionals.
@@ -2793,7 +2802,7 @@ If one starts from the naive choice:
 Therefore, the density from equation~\eqref{KS_density_1D_schematic} is concentrated near the center of the well.
 This concentration is generally excessive.
 Therefore, the missing interaction effects are encoded directly in the local Kohn--Sham potential.
-In the exact solution, this potential develops a central bump.
+In the exact solution, this potential develops a central bump~\cite{helbig2009exact}.
 To isolate the interaction-induced contribution,
 we define the Hartree-exchange-correlation potential:
 
@@ -2827,18 +2836,18 @@ v_\mathrm{KS}([n];x)\approx\left\{
 \end{equation}
 
 here, the approximately constant shift $C$ denotes the offset between the two spatial regions.
-This step raises one well relative to the other and thereby enforces the correct density distribution.
+This step raises one well relative to the other and thereby enforces the correct density distribution~\cite{makmal2011dissociation}.
 
 Subsequently, from the Kohn--Sham potential decomposition in equation~\eqref{KS_potential_decomposition},
 the external potential has already been fixed, and the Hartree potential $v_\mathrm{H}([n];x)$ has already been defined in equation~\eqref{Hartree_potential_definition}.
 Therefore, the remaining freedom lies mainly in the exchange-correlation potential $v_\mathrm{xc}([n];x)$ defined in equation~\eqref{xc_potential_definition}.
-Hence, the exact exchange-correlation potential $v_\mathrm{xc}([n];x)$ may contain bumps, barriers, and steps.
+Hence, the exact exchange-correlation potential $v_\mathrm{xc}([n];x)$ may contain bumps, barriers, and steps~\cite{hodgson2016origin}.
 In particular, a pronounced step may appear in a low-density region.
 This makes it difficult to construct accurate approximations to the exchange-correlation potential $v_\mathrm{xc}([n];x)$.
 
 Consequently, we turn to the inverse point of view.
 If an accurate density is available from an exact method, we seek a local potential that reproduces it.
-This defines the inverse Kohn--Sham problem.
+This defines the inverse Kohn--Sham problem~\cite{wang1993construction, astala2006kohn}.
 
 Let us denote the target density by $n_\mathrm{tar}(x)$.
 We require:
@@ -2918,7 +2927,7 @@ However, the Hartree equations remain incomplete.
 The Hartree potential $v_\mathrm{H}([n];\vec{r}\,)$ contains only the classical electrostatic contribution.
 It does not incorporate exchange effects or correlation effects.
 Moreover, since $v_\mathrm{H}([n];\vec{r}\,)$ is generated by the total density $n(\vec{r}\,)$,
-it also contains an unphysical self-interaction contribution.
+it also contains an unphysical self-interaction contribution~\cite{perdew1981self}.
 Therefore, the Hartree equations do not yet provide an accurate description of interacting electrons.
 
 Consequently, one must go beyond the Hartree approximation.
@@ -2930,7 +2939,6 @@ but in the construction of the exchange-correlation functional itself.
 Therefore, the next step is to introduce practical approximations for $E_\mathrm{xc}[n]$ and $v_\mathrm{xc}([n];\vec{r}\,)$.
 
 \newpage
-
 \section{Exchange-correlation functional}
 
 As we have already discussed in equation~\eqref{xc_potential_definition},
@@ -2941,7 +2949,7 @@ and the Hartree potential $v_\mathrm{H}([n];\vec{r}\,)$ is a known functional of
 Therefore, in practical density functional theory,
 the main difficulty lies in the construction of the exchange-correlation functional itself.
 
-Thereafter, we introduce several widely used approximations for the exchange-correlation energy functional $E_\mathrm{xc}[n]$.
+Thereafter, we introduce several widely used approximations for the exchange-correlation energy functional $E_\mathrm{xc}[n]$~\cite{martin2020electronic}.
 They differ in how much information about the density is retained.
 The simplest approximation depends only on the local value of the density.
 More accurate semilocal approximations also include the density gradient.
@@ -2961,11 +2969,11 @@ Accordingly, the exchange-correlation functional is written as:
 
 here, $\varepsilon_\mathrm{xc}^\mathrm{HEG}(n)$ refers to the exchange-correlation energy per electron of the homogeneous electron gas at density $n$~\cite{perdew1992accurate}.
 
-The local density approximation is simple and computationally efficient.
+The local density approximation is simple and computationally efficient~\cite{stampfl1999density}.
 For many bulk solids, it already gives a reasonable description.
 However, it neglects the inhomogeneity of the density.
 Therefore, it may become insufficient in systems where the density varies strongly in space,
-for instance in molecules, surfaces, and low-dimensional systems.
+for instance in molecules, surfaces, and low-dimensional systems~\cite{li2003insights}.
 
 Next, to improve upon the local density approximation,
 we include the gradient of the density.
@@ -3008,7 +3016,7 @@ It accounts for the effect of density gradients on the exchange energy.
 
 Subsequently, different generalized gradient approximations correspond to different choices of the enhancement factor $F_x(s)$ and of the correlation functional.
 Prominent examples include the Perdew--Wang functional and the Perdew--Burke--Ernzerhof functional.
-These functionals are constructed to satisfy several known exact constraints on the exchange-correlation energy.
+These generalized gradient approximations are constructed to satisfy several known exact constraints on the exchange-correlation energy~\cite{perdew1992atoms, perdew1996generalized}.
 Among them, the Perdew--Burke--Ernzerhof functional is one of the most widely used generalized gradient approximations in first-principles calculations of condensed-matter systems.
 
 Compared with the local density approximation,
@@ -3029,7 +3037,7 @@ Their motivation is that the inclusion of exact Hartree--Fock exchange can parti
 However, in periodic solids,
 the direct use of long-range Hartree--Fock exchange is computationally expensive.
 Therefore, screened hybrid functionals are introduced.
-Here, a widely used example is the Heyd--Scuseria--Ernzerhof functional.
+Here, a widely used example is the Heyd--Scuseria--Ernzerhof functional~\cite{heyd2003hybrid}.
 
 In the Heyd--Scuseria--Ernzerhof construction,
 the Coulomb interaction is separated into short-range and long-range parts as follows:
@@ -3062,7 +3070,7 @@ Moreover, $a$ refers to the mixing parameter that determines the fraction of exa
 
 In the standard HSE06 functional,
 one usually takes $a=0.25$.
-The screening parameter is typically chosen as $\omega=0.11\,\mathrm{bohr}^{-1}$.
+The screening parameter is typically chosen as $\omega=0.11\,\mathrm{bohr}^{-1}$~\cite{krukau2006influence}.
 Therefore, only the short-range part of the exchange interaction contains exact Hartree--Fock exchange,
 while the long-range part is still described by a semilocal approximation.
 

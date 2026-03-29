@@ -15,7 +15,6 @@
 * 行间公式前用冒号, 行间公式末尾不加标点.
 * 公式尽量命名, 并使用 descriptive labels.
 
-
 # Horizontal spacing
 
 * \!       -3 mu = -1/6 em

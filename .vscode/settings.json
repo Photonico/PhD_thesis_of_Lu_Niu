@@ -1,0 +1,41 @@
+{
+  "latex-workshop.latex.outDir": ".output",
+  "latex-workshop.latex.recipe.default": "first",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk-pdflatex",
+      "tools": ["latexmk-pdflatex"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk-pdflatex",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {
+        "PATH": "/Library/TeX/texbin:/usr/bin:/bin:/usr/sbin:/sbin"
+      }
+    }
+  ],
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.bcf",
+    "*.blg",
+    "*.fdb_latexmk",
+    "*.fls",
+    "*.log",
+    "*.out",
+    "*.run.xml",
+    "*.synctex.gz",
+    "*.toc"
+  ]
+}
