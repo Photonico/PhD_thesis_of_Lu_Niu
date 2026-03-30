@@ -19,7 +19,7 @@ This choice keeps the structure of the Maxwell equations explicit.
 
 \subsection{Maxwell equations in matter}
 
-Let us start with the universal structure of the problem.
+Let us start by the universal structure of the problem.
 When an electromagnetic field enters a material, it drives charge redistribution and induces currents inside the medium, while these induced sources further modify the field itself.
 Therefore, the optical response of matter should be described within the framework of electrodynamics~\cite{griffiths2023introduction}.
 
@@ -109,7 +109,7 @@ Under this condition, equation~\eqref{maxwell_equations_in_matter} shows that th
 but how the medium develops polarization under the applied electric field.
 Once the relation between $\vec{P}(\vec{r},t)$ and $\vec{E}(\vec{r},t)$ is specified, the electromagnetic response becomes well defined.
 This is precisely the point where macroscopic electrodynamics meets microscopic electronic structure,
-and it also provides the starting point for introducing the dielectric function\cite{onida2002electronic}.
+and it also provides the starting point for introducing the dielectric function\cite{bernasconi2011first}.
 
 \subsection{Polarization, electric displacement, and constitutive relations}
 
@@ -204,7 +204,7 @@ With this preparation, we next discuss the anisotropy of the dielectric tensor.
 
 \subsection{Anisotropy and the dielectric tensor}
 
-In the previous subsection, we presented the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ as a compact description of the linear electric response.
+The previous subsection presented the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ as a compact description of the linear electric response.
 We now examine how symmetry constrains its form~\cite{capper2019optical}.
 When the medium responds identically along all directions, the dielectric tensor reduces to a scalar form.
 If the response changes with direction, the full tensor form must be retained.
@@ -220,7 +220,7 @@ the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ reduces to a scalar di
 
 here, the scalar dielectric function $\varepsilon(\omega)$ already determines the full linear electric response,
 since the isotropic medium does not distinguish one Cartesian direction from another.
-The tensor structure therefore no longer carries additional directional information.
+The tensor structure, therefore, no longer carries additional directional information.
 
 Secondly, crystalline materials usually do distinguish directions.
 In that case, anisotropy survives, and we must retain the full tensor form.
@@ -262,7 +262,7 @@ Therefore, the tensor structure does not only refine the notation.
 It also determines how we organize and interpret the later optical results.
 
 Starting from the polarization field $\vec{P}(\vec{r},t)$, we introduced the electric susceptibility tensor $\chi_{\alpha\beta}(\omega)$ and then arrived at the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$.
-The dielectric function therefore emerges naturally from the constitutive relation that closes Maxwell electrodynamics in matter.
+The dielectric function, therefore, emerges naturally from the constitutive relation that closes Maxwell electrodynamics in matter.
 At the same time, anisotropy makes the directional dependence of this response explicit.
 With this preparation, we next introduce the dielectric function in a more explicit form.
 
@@ -277,13 +277,88 @@ These quantities complete Maxwell electrodynamics in matter.
 We now recover the response function that electronic structure calculations actually provide,
 which is the frequency-dependent dielectric function~\cite{onida2002electronic}.
 
-In this section, we start with expressing the polarization response in the language of electric susceptibility and the complex dielectric function.
+In this section, we start by expressing the polarization response in the language of electric susceptibility and the complex dielectric function.
 We then identify the microscopic electronic processes that generate its imaginary part.
 Next, we formulate this response for anisotropic systems,
 since the present work compares the in-plane and out-of-plane optical channels explicitly.
 Therefore, we advance from the general constitutive picture to a response function that can be calculated, interpreted, and subsequently converted into optical observables.
 
 \subsection{From polarization response to electric susceptibility and complex dielectric function}
+
+The previous section established the constitutive chain from the polarization field $\vec{P}(\vec{r},t)$ to the electric susceptibility tensor $\chi_{\alpha\beta}(\omega)$ 
+and the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ through equations~\eqref{frequency_domain_polarization_susceptibility_relation} and~\eqref{dielectric_tensor_definition}.
+
+We now turn to the dielectric function, which serves as the central quantity in optical response.
+A time-dependent electric field drives the electrons away from equilibrium and induces a polarization response.
+In linear optics, incident light provides this driving field.
+We describe this response in terms of the electric susceptibility and the dielectric function.
+
+The electric susceptibility tensor $\chi_{\alpha\beta}(\omega)$ measures how strongly the polarization component $P_\alpha$ responds to the field component $E_\beta$, while the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ collects this response into the form most directly used in optical analysis~\cite{gajdovs2006linear}.
+
+At this point, we have clarified that the dielectric function describes how internal charges polarize under an external electric field and how that response changes with frequency.
+
+% Draft
+
+
+
+Once we enter the frequency domain, the optical response no longer appears as a static redistribution of charge.
+Instead, the field drives the electrons continuously, and the medium answers with a frequency-dependent polarization.
+For this reason, the dielectric function becomes the central response quantity for discussing optical performance.
+
+For a monochromatic perturbation, the induced polarization does not, in general, follow the applied field instantaneously.
+One part of the response stays in phase with the driving field, while another part lags behind it.
+We therefore write the dielectric tensor in complex form as:
+
+\begin{equation}
+    \varepsilon_{\alpha\beta}(\omega)
+    =
+    \varepsilon_{1,\alpha\beta}(\omega)
+    +
+    \mathrm{i}\,\varepsilon_{2,\alpha\beta}(\omega)
+\label{complex_dielectric_tensor_definition}
+\end{equation}
+
+here, $\varepsilon_{1,\alpha\beta}(\omega)$ is the real part of the dielectric tensor, and $\varepsilon_{2,\alpha\beta}(\omega)$ is the imaginary part of the dielectric tensor.
+The real part describes the dispersive part of the response.
+In physical terms, it records how the medium builds reversible polarization under the applied field, and therefore how it stores electric-field energy.
+The imaginary part describes the absorptive part of the response.
+In physical terms, it records how the field opens excitation channels in the electronic system and transfers energy into the medium~\cite{onida2002electronic}.
+
+For the later discussion of optical observables, it proves convenient to suppress the tensor indices once the field polarization has been fixed, or once we work along a principal direction of the dielectric tensor.
+The corresponding complex dielectric function then reads:
+
+\begin{equation}
+    \varepsilon(\omega)
+    =
+    \varepsilon_1(\omega)
+    +
+    \mathrm{i}\,\varepsilon_2(\omega)
+\label{complex_dielectric_function_definition}
+\end{equation}
+
+here, $\varepsilon_1(\omega)$ is the real part of the dielectric function, and $\varepsilon_2(\omega)$ is the imaginary part of the dielectric function.
+This scalar notation does not discard the tensor character of the response.
+Instead, it isolates one resolved channel of that response and prepares the form used in the later derivation of optical quantities.
+
+The complex dielectric function is central not only because it describes the electric response itself, but also because it provides the common starting point for the later optical analysis.
+Once $\varepsilon(\omega)$ is known, we can derive the absorption coefficient $\alpha(\omega)$, the complex refractive index $N(\omega)$ together with the refractive index $n(\omega)$ and the extinction coefficient $k(\omega)$, the reflectivity $R(\omega)$, and the energy-loss function $L(\omega)$ from the same response function.
+In this sense, the dielectric function does not represent only one observable among many.
+It organizes the whole chain of linear optical properties into a unified framework~\cite{gajdos2006linear}.
+
+At the same time, the two parts of the dielectric function do not play independent roles.
+In practical first-principles calculations, the imaginary part $\varepsilon_2(\omega)$ is directly tied to electronic excitations, while the real part $\varepsilon_1(\omega)$ follows from the causality structure of the response.
+Therefore, once we determine the complex dielectric function, we do not merely obtain a numerical spectrum.
+We also recover the physical route by which the applied field drives polarization, transfers energy, and finally shapes the measurable optical response~\cite{onida2002electronic,gajdos2006linear}.
+
+For the layered systems considered in the present work, directional dependence remains essential.
+We therefore later resolve the dielectric response into the in-plane and out-of-plane channels and compare them separately.
+This directional decomposition is particularly important for anisotropic layered materials, where the dielectric response along the structural plane can differ substantially from that along the perpendicular direction~\cite{marinopoulos2002anisotropy}.
+At the present stage, however, the key point is already clear.
+The applied field drives a polarization response, the electric susceptibility tensor quantifies that response, and the complex dielectric function collects it into the form most useful for first-principles optical analysis.
+
+Therefore, we arrive at the complex dielectric function as the central response quantity of the present chapter.
+What remains is to identify which microscopic electronic processes generate the imaginary part $\varepsilon_2(\omega)$, and how the real part $\varepsilon_1(\omega)$ follows from it.
+We now turn to the first of these two questions.
 
 \subsection{Microscopic origin of the imaginary part}
 
