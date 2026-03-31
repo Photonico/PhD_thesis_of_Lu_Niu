@@ -359,7 +359,91 @@ We now turn to the microscopic origin of the imaginary part $\varepsilon_2(\omeg
 
 \subsection{Microscopic origin of the imaginary part}
 
-test
+For the complex dielectric function,
+the previous subsection discussed that the imaginary part $\varepsilon_2(\omega)$ characterizes the absorptive response of the medium.
+We now connect this quantity to the microscopic electronic transitions in the crystal.
+
+When a monochromatic electric field acts on a crystal,
+it drives electrons from occupied states to empty states,
+and therefore induces interband transitions.
+In this process, the external field transfers the energy $\hbar\omega$ to the electronic system,
+and the medium absorbs this energy through a dissipative response~\cite{toudert2017interband}.
+To describe this dissipative response quantitatively,
+we now introduce the optical conductivity tensor $\sigma_{\alpha\beta}(\omega)$ within linear response theory~\cite{kubo1957statistical}.
+
+Firstly, we express the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ through the optical conductivity tensor $\sigma_{\alpha\beta}(\omega)$ as:
+
+\begin{equation}
+    \varepsilon_{\alpha\beta}(\omega)
+    = \delta_{\alpha\beta} + \frac{\mathrm{i}}{\varepsilon_0\omega}\,
+    \sigma_{\alpha\beta}(\omega)
+\label{dielectric_tensor_from_optical_conductivity}
+\end{equation}
+
+Once we decompose this optical conductivity tensor into its real part $\sigma_{1,\alpha\beta}(\omega)$ and imaginary part $\sigma_{2,\alpha\beta}(\omega)$, 
+the previous equation immediately gives:
+
+\begin{equation}
+    \varepsilon_{2,\alpha\beta}(\omega)
+    = \frac{\sigma_{1,\alpha\beta}(\omega)}{\varepsilon_0\omega}
+\label{imaginary_dielectric_from_real_conductivity}
+\end{equation}
+
+This relation demonstrates that the imaginary part of the dielectric response directly describes the energy-absorbing part of the induced current,
+which leads to dissipation under the external field.
+
+Draft % Draft
+
+% Next, we rewrite this macroscopic picture in the language of crystal states.
+% In a periodic solid, the relevant microscopic process is an interband transition from an occupied valence state $\ket{\psi_{v\vec{k}}}$ to an empty conduction state $\ket{\psi_{c\vec{k}}}$.
+% Here, $\vec{k}$ denotes the crystal momentum in the first Brillouin zone.
+% In the optical regime, the photon momentum is negligible on the scale of the Brillouin zone.
+% Therefore, the transition is effectively vertical in $\vec{k}$-space.
+% At the same time, the transition strength depends on the velocity operator $\hat{v}_\alpha$, because the electric field drives electronic motion rather than the band energies alone~\cite{adler1962quantum,wiser1963dielectric}.
+
+% For the independent-particle picture adopted in the present work, the imaginary part of the dielectric tensor therefore takes the standard interband form:
+
+% \begin{equation}
+%     \varepsilon_{2,\alpha\beta}(\omega)
+%     \propto
+%     \sum_{v,c}
+%     \int_{\mathrm{BZ}}\frac{\dif^3{k}}{(2\pi)^3}\,
+%     \mel{\psi_{c\vec{k}}}{\hat{v}_\alpha}{\psi_{v\vec{k}}}
+%     \mel{\psi_{v\vec{k}}}{\hat{v}_\beta}{\psi_{c\vec{k}}}
+%     \delta\!\left(E_{c\vec{k}}-E_{v\vec{k}}-\hbar\omega\right)
+% \label{independent_particle_imaginary_dielectric_tensor}
+% \end{equation}
+
+% Here, $v$ and $c$ label the valence bands and conduction bands, respectively.
+% $E_{v\vec{k}}$ and $E_{c\vec{k}}$ denote the corresponding band energies.
+% $\hat{v}_\alpha$ denotes the velocity operator along the $\alpha$ direction.
+% The Dirac delta function $\delta\!\left(E_{c\vec{k}}-E_{v\vec{k}}-\hbar\omega\right)$ enforces energy conservation.
+
+% Equation~\eqref{independent_particle_imaginary_dielectric_tensor} shows the microscopic action in a transparent way.
+% Firstly, an electronic state can contribute only when the initial state is occupied and the final state is empty.
+% Secondly, the transition matrix elements
+% $\mel{\psi_{c\vec{k}}}{\hat{v}_\alpha}{\psi_{v\vec{k}}}$
+% and
+% $\mel{\psi_{v\vec{k}}}{\hat{v}_\beta}{\psi_{c\vec{k}}}$
+% must remain finite, which imposes the optical selection rule.
+% Thirdly, the transition energy $E_{c\vec{k}}-E_{v\vec{k}}$ must match the photon energy $\hbar\omega$.
+% Therefore, a peak in $\varepsilon_2(\omega)$ appears when many allowed transitions accumulate at the same excitation energy and carry large transition strength.
+
+% This point also clarifies the practical meaning of the calculated spectra.
+% The imaginary part $\varepsilon_2(\omega)$ does not merely reflect the band gap.
+% Instead, it collects the combined action of the band dispersion, the occupation pattern, and the direction-resolved transition matrix elements.
+% In this sense, $\varepsilon_2(\omega)$ provides a direct bridge between the electronic structure and the optical absorption channel.
+
+% For the present work, we further adopt the long-wavelength limit and evaluate the response within the independent-particle picture built from the ground-state electronic structure.
+% Under this approximation, the calculated $\varepsilon_2(\omega)$ describes single-particle interband absorption and resolves the main transition channels that dominate the optical spectra.
+% This level of description already captures the principal onset energies, the major absorption peaks, and the directional contrast relevant to the systems studied here.
+
+% Most importantly, the tensor indices $\alpha$ and $\beta$ enter directly through the velocity matrix elements.
+% Therefore, the microscopic transition strength already knows the field polarization and the crystal orientation.
+% Once the crystal responds differently along different directions, the imaginary part itself becomes anisotropic before we derive any other optical quantity from it.
+% We thus arrive at the microscopic picture behind $\varepsilon_2(\omega)$.
+% It collects energy-conserving and dipole-allowed interband transitions, and weights them by their direction-resolved transition strength.
+% This point naturally leads us to the dielectric response in anisotropic media.
 
 \subsection{Dielectric response in anisotropic media}
 
@@ -371,7 +455,6 @@ test
 \subsection{Kramers--Kronig relations for the dielectric function}
 
 \subsection{Static limit and physical interpretation}
-
 
 \newpage
 \section{From the dielectric function to optical properties}
