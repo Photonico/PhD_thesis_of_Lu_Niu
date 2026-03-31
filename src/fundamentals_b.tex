@@ -392,27 +392,37 @@ the previous equation immediately gives:
 This relation demonstrates that the imaginary part of the dielectric response directly describes the energy-absorbing part of the induced current,
 which leads to dissipation under the external field.
 
+Next, we describe this microscopic process in a periodic solid as an interband transition from an occupied valence state $\ket{\psi_{v\vec{k}}}$ to an empty conduction state $\ket{\psi_{c\vec{k}}}$.
+Here, $\vec{k}$ denotes the crystal momentum in the first Brillouin zone.
+In the optical regime, the photon momentum is negligible on the scale of the Brillouin zone.
+
+In the optical regime, the photon momentum remains negligible on the scale of the Brillouin zone,
+and the transition therefore occurs nearly vertically in $\vec{k}$-space~\cite{fox2010optical}.
+
+Therefore, in $\vec{k}$-space, the transition proceeds effectively vertically.
+The electric field drives electronic motion directly.
+Accordingly, the transition strength depends on the velocity operator $\hat{v}_\alpha$ rather than on the band energies alone~\cite{adler1962quantum, wiser1963dielectric}.
+
+In the present work, we adopt the independent-particle approximation (IPA).
+The imaginary part of the dielectric tensor $\varepsilon_{2,\alpha\beta}(\omega)$ takes the standard interband form:
+
+\begin{equation}
+    \varepsilon_{2,\alpha\beta}(\omega)
+    \propto
+    \sum_{v,c}
+    \int_{\mathrm{BZ}}\frac{\dif^3{k}}{(2\pi)^3}\,
+    \mel{\psi_{c\vec{k}}}{\hat{v}_\alpha}{\psi_{v\vec{k}}}
+    \mel{\psi_{v\vec{k}}}{\hat{v}_\beta}{\psi_{c\vec{k}}}
+    \delta\!\left(E_{c\vec{k}}-E_{v\vec{k}}-\hbar\omega\right)
+\label{independent_particle_imaginary_dielectric_tensor}
+\end{equation}
+
 Draft % Draft
 
-% Next, we rewrite this macroscopic picture in the language of crystal states.
-% In a periodic solid, the relevant microscopic process is an interband transition from an occupied valence state $\ket{\psi_{v\vec{k}}}$ to an empty conduction state $\ket{\psi_{c\vec{k}}}$.
-% Here, $\vec{k}$ denotes the crystal momentum in the first Brillouin zone.
-% In the optical regime, the photon momentum is negligible on the scale of the Brillouin zone.
-% Therefore, the transition is effectively vertical in $\vec{k}$-space.
-% At the same time, the transition strength depends on the velocity operator $\hat{v}_\alpha$, because the electric field drives electronic motion rather than the band energies alone~\cite{adler1962quantum,wiser1963dielectric}.
 
-% For the independent-particle picture adopted in the present work, the imaginary part of the dielectric tensor therefore takes the standard interband form:
 
-% \begin{equation}
-%     \varepsilon_{2,\alpha\beta}(\omega)
-%     \propto
-%     \sum_{v,c}
-%     \int_{\mathrm{BZ}}\frac{\dif^3{k}}{(2\pi)^3}\,
-%     \mel{\psi_{c\vec{k}}}{\hat{v}_\alpha}{\psi_{v\vec{k}}}
-%     \mel{\psi_{v\vec{k}}}{\hat{v}_\beta}{\psi_{c\vec{k}}}
-%     \delta\!\left(E_{c\vec{k}}-E_{v\vec{k}}-\hbar\omega\right)
-% \label{independent_particle_imaginary_dielectric_tensor}
-% \end{equation}
+
+
 
 % Here, $v$ and $c$ label the valence bands and conduction bands, respectively.
 % $E_{v\vec{k}}$ and $E_{c\vec{k}}$ denote the corresponding band energies.
