@@ -407,22 +407,16 @@ In the present work, we adopt the independent-particle approximation (IPA).
 The imaginary part of the dielectric tensor $\varepsilon_{2,\alpha\beta}(\omega)$ takes the standard interband form~\cite{d2016accurate}:
 
 \begin{equation}
-    \varepsilon_{2,\alpha\beta}(\omega)
-    \propto
+    \varepsilon_{2,\alpha\beta}(\omega)\propto
     \sum_{v,c}
     \int_{\mathrm{BZ}}\frac{\dif^3{k}}{(2\pi)^3}\,
-    \langle \psi_{c\vec{k}} \rvert \hat{v}_{\alpha} \lvert \psi_{v\vec{k}} \rangle
-    \langle \psi_{v\vec{k}} \rvert \hat{v}_{\beta} \lvert \psi_{c\vec{k}} \rangle
+    \bra{\psi_{c\vec{k}}}\hat{v}_{\alpha}\ket{\psi_{v\vec{k}}}
+    \bra{\psi_{v\vec{k}}}\hat{v}_{\beta}\ket{\psi_{c\vec{k}}}
     \delta\,\left(E_{c\vec{k}} - E_{v\vec{k}} - \hbar\omega\right)
 \label{independent_particle_imaginary_dielectric_tensor}
 \end{equation}
 
 Draft % Draft
-
-
-
-
-
 
 % Here, $v$ and $c$ label the valence bands and conduction bands, respectively.
 % $E_{v\vec{k}}$ and $E_{c\vec{k}}$ denote the corresponding band energies.
