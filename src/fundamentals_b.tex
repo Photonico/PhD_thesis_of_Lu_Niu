@@ -20,12 +20,12 @@ This choice keeps the structure of the Maxwell equations explicit.
 \subsection{Maxwell equations in matter}
 
 Let us start by the universal structure of the problem.
-When an electromagnetic field enters a material, it drives charge redistribution and induces currents inside the medium, while these induced sources further modify the field itself.
+When an electromagnetic field enters a medium, it drives charge redistribution and induces currents inside the medium, while these induced sources further modify the field itself.
 Therefore, the optical response of matter should be described within the framework of electrodynamics~\cite{griffiths2023introduction}.
 
-At this stage, we do not explore how a specific material responds.
+At this stage, we do not explore how a specific medium responds.
 Instead, we first identify the general field equations that govern electromagnetic dynamics in matter.
-They provide the universal backbone of the problem, while the constitutive relations later encode the material-specific information.
+They provide the universal backbone of the problem, while the constitutive relations later encode the medium-specific information.
 
 Firstly, we write the macroscopic Maxwell equations for the electric field $\vec{E}(\vec{r},t)$ and magnetic field $\vec{B}(\vec{r},t)$ as:
 
@@ -56,7 +56,7 @@ and use Gauss's law for the electric field to obtain the continuity equation for
 
 here, the conservation principle encountered in the previous chapter reappears in electrodynamic language.
 
-Secondly, for materials, it proves useful to decompose the sources into free and bound contributions:
+Secondly, for media, it proves useful to decompose the sources into free and bound contributions:
 
 \begin{equation}
 \begin{aligned}
@@ -83,7 +83,7 @@ Accordingly, we define the electric displacement field as:
 \label{electric_displacement_field_definition}
 \end{equation}
 
-For the nonmagnetic materials considered in the present work, the electric response is the central object.
+For the nonmagnetic media considered in the present work, the electric response is the central object.
 Therefore, it is sufficient here to keep the Maxwell equations in the form:
 
 \begin{equation}
@@ -102,7 +102,7 @@ Therefore, it is sufficient here to keep the Maxwell equations in the form:
 
 Consequently, we can now characterize the structure of the problem.
 The Maxwell equations themselves are universal,
-while the material dependence enters through the induced polarization $\vec{P}(\vec{r},t)$, and therefore through the electric displacement field $\vec{D}(\vec{r},t)$.
+while the medium dependence enters through the induced polarization $\vec{P}(\vec{r},t)$, and therefore through the electric displacement field $\vec{D}(\vec{r},t)$.
 
 In many optical problems, one considers the response to an external electromagnetic perturbation in the absence of free charges and free currents inside the medium.
 Under this condition, equation~\eqref{maxwell_equations_in_matter} shows that the central issue is no longer the field equations themselves,
@@ -116,7 +116,7 @@ and it also provides the starting point for introducing the dielectric function\
 We have established the universal field equations in the previous subsection.
 However, those equations do not explore how matter responds to the applied field.
 To close the problem, we still need a relation that connects the induced polarization to the electric field.
-This relation is the constitutive relation, and it is here that the material-specific information enters~\cite{lima2022usefulness}.
+This relation is the constitutive relation, and it is here that the medium-specific information enters~\cite{lima2022usefulness}.
 
 Here, the central object is the polarization field $\vec{P}(\vec{r},t)$.
 It describes how the medium rearranges its internal charges under the applied electric field.
@@ -156,7 +156,7 @@ here, $\chi_{\alpha\beta}(t-t')$ denotes the time-dependent susceptibility tenso
 This expression demonstrates that the polarization does not follow the electric field instantaneously.
 Instead, the medium retains a memory of the earlier perturbation.
 
-Optical experiments usually probe the response of a material under an oscillating electromagnetic field.
+Optical experiments usually probe the response of a medium under an oscillating electromagnetic field.
 Therefore, once we enter the linear-response regime, the frequency domain provides the natural language for discussing the optical response~\cite{han2023temperature}.
 Next, we transform equation~\eqref{time_domain_constitutive_relation} to the frequency domain, and obtain:
 
@@ -222,7 +222,7 @@ here, the scalar dielectric function $\varepsilon(\omega)$ already determines th
 since the isotropic medium does not distinguish one Cartesian direction from another.
 The tensor structure, therefore, no longer carries additional directional information.
 
-Secondly, crystalline materials usually do distinguish directions.
+Secondly, crystalline media usually distinguish directions.
 In that case, anisotropy survives, and we must retain the full tensor form.
 When we choose the Cartesian axes along the principal directions of the crystal,
 the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ takes the principal-axis form:
@@ -295,7 +295,7 @@ We describe this response in terms of the electric susceptibility and the dielec
 
 The electric susceptibility tensor $\chi_{\alpha\beta}(\omega)$ measures how strongly the polarization component $P_\alpha$ responds to the field component $E_\beta$, while the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ collects this response into the form most directly used in optical analysis~\cite{gajdovs2006linear}.
 
-At this point, we have clarified that the dielectric function describes how internal charges polarize in response to an external electric field and how that response varies with frequency.
+At this stage, we have clarified that the dielectric function describes how internal charges polarize in response to an external electric field and how that response varies with frequency.
 When we enter the frequency domain, the optical response no longer appears as a static redistribution of charge.
 Instead, the field drives the electrons continuously, and the medium answers with a frequency-dependent polarization.
 For this reason, the dielectric function becomes the central response quantity for discussing optical performance.
@@ -338,36 +338,30 @@ here, $\varepsilon_1(\omega)$ denotes the real part of the dielectric function,
 and $\varepsilon_2(\omega)$ denotes the imaginary part of the dielectric function.
 
 This scalar form represents the dielectric response along a specific direction.
-Here, the complex dielectric function describes the response of matter to an external electric field.
-We then derive the optical quantities discussed below.
+Here, the complex dielectric function describes the response of medium to an external electric field.
+we can therefore derive the absorption coefficient $\alpha(\omega)$,
+the refractive index $n(\omega)$, the extinction coefficient $k(\omega)$,
+the reflectivity $R(\omega)$, and the energy-loss function $L(\omega)$.
+It represents a unified framework for the linear optical properties~\cite{djurivsic2002progress}.
 
-When we have $\varepsilon(\omega)$,
-we can derive the absorption coefficient $\alpha(\omega)$.
+These two parts of the dielectric function together determine the optical response.
+In practical calculations, the imaginary part $\varepsilon_2(\omega)$ comes from electronic excitations,
+whereas the real part $\varepsilon_1(\omega)$ follows from causality.
 
-% draft
+For the xene systems considered in the present work,
+we accordingly resolve the dielectric response for the in-plane and out-of-plane channels for separate analysis.
+In anisotropic xenes, the response along the structural plane usually differs substantially from that along the perpendicular direction~\cite{marinopoulos2002anisotropy}.
 
-Once $\varepsilon(\omega)$ is known, we can derive the absorption coefficient $\alpha(\omega)$, the complex refractive index $N(\omega)$ together with the refractive index $n(\omega)$ and the extinction coefficient $k(\omega)$, the reflectivity $R(\omega)$, and the energy-loss function $L(\omega)$ from the same response function.
-In this sense, the dielectric function does not represent only one observable among many.
-It organizes the whole chain of linear optical properties into a unified framework~\cite{gajdos2006linear}.
-
-At the same time, the two parts of the dielectric function do not play independent roles.
-In practical first-principles calculations, the imaginary part $\varepsilon_2(\omega)$ is directly tied to electronic excitations, while the real part $\varepsilon_1(\omega)$ follows from the causality structure of the response.
-Therefore, once we determine the complex dielectric function, we do not merely obtain a numerical spectrum.
-We also recover the physical route by which the applied field drives polarization, transfers energy, and finally shapes the measurable optical response~\cite{onida2002electronic,gajdos2006linear}.
-
-For the layered systems considered in the present work, directional dependence remains essential.
-We therefore later resolve the dielectric response into the in-plane and out-of-plane channels and compare them separately.
-This directional decomposition is particularly important for anisotropic layered materials, where the dielectric response along the structural plane can differ substantially from that along the perpendicular direction~\cite{marinopoulos2002anisotropy}.
-At the present stage, however, the key point is already clear.
-The applied field drives a polarization response, the electric susceptibility tensor quantifies that response, and the complex dielectric function collects it into the form most useful for first-principles optical analysis.
-
-Therefore, we arrive at the complex dielectric function as the central response quantity of the present chapter.
-What remains is to identify which microscopic electronic processes generate the imaginary part $\varepsilon_2(\omega)$, and how the real part $\varepsilon_1(\omega)$ follows from it.
-We now turn to the first of these two questions.
+At this stage, we arrive at the complex dielectric function as the central response quantity of the present chapter.
+Here, microscopic electronic processes generate the imaginary part $\varepsilon_2(\omega)$,
+and causality then determines the real part $\varepsilon_1(\omega)$.
+We now turn to the microscopic origin of the imaginary part $\varepsilon_2(\omega)$.
 
 \subsection{Microscopic origin of the imaginary part}
 
-\subsection{Dielectric response in anisotropic materials}
+test
+
+\subsection{Dielectric response in anisotropic media}
 
 \newpage
 \section{Causality and the Kramers--Kronig relations}
