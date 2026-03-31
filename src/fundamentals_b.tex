@@ -404,16 +404,16 @@ The electric field drives electronic motion directly.
 Accordingly, the transition strength depends on the velocity operator $\hat{v}_\alpha$ rather than on the band energies alone~\cite{adler1962quantum, wiser1963dielectric}.
 
 In the present work, we adopt the independent-particle approximation (IPA).
-The imaginary part of the dielectric tensor $\varepsilon_{2,\alpha\beta}(\omega)$ takes the standard interband form:
+The imaginary part of the dielectric tensor $\varepsilon_{2,\alpha\beta}(\omega)$ takes the standard interband form~\cite{d2016accurate}:
 
 \begin{equation}
     \varepsilon_{2,\alpha\beta}(\omega)
     \propto
     \sum_{v,c}
     \int_{\mathrm{BZ}}\frac{\dif^3{k}}{(2\pi)^3}\,
-    \mel{\psi_{c\vec{k}}}{\hat{v}_\alpha}{\psi_{v\vec{k}}}
-    \mel{\psi_{v\vec{k}}}{\hat{v}_\beta}{\psi_{c\vec{k}}}
-    \delta\!\left(E_{c\vec{k}}-E_{v\vec{k}}-\hbar\omega\right)
+    \langle \psi_{c\vec{k}} \rvert \hat{v}_{\alpha} \lvert \psi_{v\vec{k}} \rangle
+    \langle \psi_{v\vec{k}} \rvert \hat{v}_{\beta} \lvert \psi_{c\vec{k}} \rangle
+    \delta\,\left(E_{c\vec{k}} - E_{v\vec{k}} - \hbar\omega\right)
 \label{independent_particle_imaginary_dielectric_tensor}
 \end{equation}
 
@@ -427,7 +427,7 @@ Draft % Draft
 % Here, $v$ and $c$ label the valence bands and conduction bands, respectively.
 % $E_{v\vec{k}}$ and $E_{c\vec{k}}$ denote the corresponding band energies.
 % $\hat{v}_\alpha$ denotes the velocity operator along the $\alpha$ direction.
-% The Dirac delta function $\delta\!\left(E_{c\vec{k}}-E_{v\vec{k}}-\hbar\omega\right)$ enforces energy conservation.
+% The Dirac delta function $\delta\,\left(E_{c\vec{k}}-E_{v\vec{k}}-\hbar\omega\right)$ enforces energy conservation.
 
 % Equation~\eqref{independent_particle_imaginary_dielectric_tensor} shows the microscopic action in a transparent way.
 % Firstly, an electronic state can contribute only when the initial state is occupied and the final state is empty.
