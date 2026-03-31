@@ -307,7 +307,8 @@ We therefore write the dielectric tensor in complex form as:
 
 \begin{equation}
     \varepsilon_{\alpha\beta}(\omega)
-    = \varepsilon_{1,\alpha\beta}(\omega) + \mathrm{i}\,\varepsilon_{2,\alpha\beta}(\omega)
+    = \varepsilon_{1,\alpha\beta}(\omega)
+    + \mathrm{i}\,\varepsilon_{2,\alpha\beta}(\omega)
 \label{complex_dielectric_tensor_definition}
 \end{equation}
 
@@ -320,25 +321,31 @@ It describes how the medium polarizes with the field and therefore how it stores
 The imaginary part denotes the absorptive part of the response.
 It describes how the field drives electronic excitations and therefore how it transfers energy into the medium~\cite{ambrosch2006linear}.
 
-% Draft
+For the later discussion on optical observables,
+when the field polarization is fixed or working along a principal direction of the dielectric tensor,
+we suppress the tensor indices and write the dielectric response in scalar form.
 
-For the later discussion of optical observables, it proves convenient to suppress the tensor indices once the field polarization has been fixed, or once we work along a principal direction of the dielectric tensor.
-The corresponding complex dielectric function then reads:
+Therefore, we can describe the corresponding complex dielectric function as a degenerate expression:
 
 \begin{equation}
     \varepsilon(\omega)
-    =
-    \varepsilon_1(\omega)
-    +
-    \mathrm{i}\,\varepsilon_2(\omega)
+    = \varepsilon_1(\omega)
+    + \mathrm{i}\,\varepsilon_2(\omega)
 \label{complex_dielectric_function_definition}
 \end{equation}
 
-here, $\varepsilon_1(\omega)$ is the real part of the dielectric function, and $\varepsilon_2(\omega)$ is the imaginary part of the dielectric function.
-This scalar notation does not discard the tensor character of the response.
-Instead, it isolates one resolved channel of that response and prepares the form used in the later derivation of optical quantities.
+here, $\varepsilon_1(\omega)$ denotes the real part of the dielectric function,
+and $\varepsilon_2(\omega)$ denotes the imaginary part of the dielectric function.
 
-The complex dielectric function is central not only because it describes the electric response itself, but also because it provides the common starting point for the later optical analysis.
+This scalar form represents the dielectric response along a specific direction.
+Here, the complex dielectric function describes the response of matter to an external electric field.
+We then derive the optical quantities discussed below.
+
+When we have $\varepsilon(\omega)$,
+we can derive the absorption coefficient $\alpha(\omega)$.
+
+% draft
+
 Once $\varepsilon(\omega)$ is known, we can derive the absorption coefficient $\alpha(\omega)$, the complex refractive index $N(\omega)$ together with the refractive index $n(\omega)$ and the extinction coefficient $k(\omega)$, the reflectivity $R(\omega)$, and the energy-loss function $L(\omega)$ from the same response function.
 In this sense, the dielectric function does not represent only one observable among many.
 It organizes the whole chain of linear optical properties into a unified framework~\cite{gajdos2006linear}.
