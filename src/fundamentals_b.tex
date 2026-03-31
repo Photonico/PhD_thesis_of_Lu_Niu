@@ -412,16 +412,21 @@ The imaginary part of the dielectric tensor $\varepsilon_{2,\alpha\beta}(\omega)
     \int_{\mathrm{BZ}}\frac{\dif^3{k}}{(2\pi)^3}\,
     \bra{\psi_{c\vec{k}}}\hat{v}_{\alpha}\ket{\psi_{v\vec{k}}}
     \bra{\psi_{v\vec{k}}}\hat{v}_{\beta}\ket{\psi_{c\vec{k}}}
-    \delta\,\left(E_{c\vec{k}} - E_{v\vec{k}} - \hbar\omega\right)
+    \delta\left(E_{c\vec{k}} - E_{v\vec{k}} - \hbar\omega\right)
 \label{independent_particle_imaginary_dielectric_tensor}
 \end{equation}
 
-Draft % Draft
+Here, the valence-band index $v$ and conduction-band index $c$ label the occupied and empty bands, respectively.
+The band energies $E_{v\vec{k}}$ and $E_{c\vec{k}}$ describe the initial and final states.
+The velocity operator $\hat{v}_{\alpha}$ determines the transition strength along the $\alpha$ direction.
+Meanwhile, the Dirac delta function $\delta\left(E_{c\vec{k}}-E_{v\vec{k}}-\hbar\omega\right)$ enforces the energy-conservation condition:
 
-% Here, $v$ and $c$ label the valence bands and conduction bands, respectively.
-% $E_{v\vec{k}}$ and $E_{c\vec{k}}$ denote the corresponding band energies.
-% $\hat{v}_\alpha$ denotes the velocity operator along the $\alpha$ direction.
-% The Dirac delta function $\delta\,\left(E_{c\vec{k}}-E_{v\vec{k}}-\hbar\omega\right)$ enforces energy conservation.
+\begin{equation}
+    E_{c\vec{k}}-E_{v\vec{k}}=\hbar\omega
+\label{dirac_energy_conservation_condition}
+\end{equation}
+
+Draft % Draft
 
 % Equation~\eqref{independent_particle_imaginary_dielectric_tensor} shows the microscopic action in a transparent way.
 % Firstly, an electronic state can contribute only when the initial state is occupied and the final state is empty.
