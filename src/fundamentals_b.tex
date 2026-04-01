@@ -463,39 +463,32 @@ This result naturally leads us to the dielectric response in anisotropic media.~
 \subsection{Dielectric response in anisotropic media}
 
 The previous subsection established the microscopic expression for the imaginary part $\varepsilon_{2,\alpha\beta}(\omega)$.
+We now describe the dielectric response of anisotropic media in a direction-resolved form~\cite{slavich2024exploring}.
+
+For an anisotropic medium,
+each principal direction corresponds to a specific complex dielectric response.
+
+Once we determine the principal directions,
+equation~\eqref{principal_axis_dielectric_tensor} describes the principal-axis form of the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$.
+For each principal component with $\lambda=x,y,z$, 
+we write the complex dielectric function with direction resolved:
+
+\begin{equation}
+    \varepsilon_{\lambda\lambda}(\omega) =
+    \varepsilon_{1,\lambda\lambda}(\omega)
+    + \mathrm{i}\,\varepsilon_{2,\lambda\lambda}(\omega)
+\label{direction_resolved_complex_dielectric_function}
+\end{equation}
+
+here, 
+
+here, the real part $\varepsilon_{1,\lambda\lambda}(\omega)$ describes the directional dispersive response,
+whereas the imaginary part $\varepsilon_{2,\lambda\lambda}(\omega)$ describes the directional absorptive response.
 
 
 Draft % Draft
 
-The previous subsection established the microscopic origin of the imaginary part $\varepsilon_{2,\alpha\beta}(\omega)$.
-We now retain the same directional structure in the dielectric response of anisotropic media~\cite{capper2019optical,huang2023optical}.
 
-For an anisotropic medium, each principal direction carries its own complex dielectric response.
-When we choose the coordinate axes along the principal directions, the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ takes the principal-axis form:
-
-\begin{equation}
-    \varepsilon(\omega)=
-    \begin{pmatrix}
-        \varepsilon_{xx}(\omega) & 0 & 0 \\
-        0 & \varepsilon_{yy}(\omega) & 0 \\
-        0 & 0 & \varepsilon_{zz}(\omega)
-    \end{pmatrix}
-\label{principal_axis_complex_dielectric_tensor}
-\end{equation}
-
-Here, each diagonal component is itself a complex dielectric function.
-For $i=x,y,z$, we write:
-
-\begin{equation}
-    \varepsilon_{ii}(\omega)
-    =
-    \varepsilon_{1,ii}(\omega)
-    +
-    \mathrm{i}\,\varepsilon_{2,ii}(\omega)
-\label{direction_resolved_complex_dielectric_function}
-\end{equation}
-
-Here, the real part $\varepsilon_{1,ii}(\omega)$ describes the directional dispersive response, whereas the imaginary part $\varepsilon_{2,ii}(\omega)$ describes the directional absorptive response.
 Therefore, anisotropy enters the optical response through the difference among the principal components.
 
 For layered systems, the structural plane and the normal direction organize the dielectric response most naturally~\cite{guo2021complete,sujith2023large}.
