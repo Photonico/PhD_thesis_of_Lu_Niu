@@ -508,9 +508,117 @@ we next turn to the Kramers--Kronig relations for each direction to connect the 
 \newpage
 \section{Causality and the Kramers--Kronig relations}
 
-Draft % Draft
+% opening paragraph
+The previous section established a direction-resolved complex dielectric response for anisotropic media.
+We now identify the constraints on the real and imaginary parts of each directional component.
+
+Here, the major physical constraint is causality.
+In a causal medium, the external electric field precedes the induced polarization.
+This temporal order determines the analytic structure of the response function in frequency space.
+As a result, for each complex component,
+
+the real part and the imaginary part cannot vary independently.
+Instead, they determine each other through the Kramers--Kronig relations.
+Therefore, for the dielectric response, once we calculate the absorptive part,
+we can determine the dispersive part and construct the complete dielectric response.
+This connection completes the dielectric response and opens the derivation of the optical properties.
 
 \subsection{Causality and analytic structure of response functions}
+
+To express causality explicitly, 
+Firstly, we express the linear relation between
+the polarization field $P_{\alpha}(\vec{r},t)$ and
+the electric field $E_{\beta}(\vec{r}\,',t')$ in the time domain:
+
+\begin{equation}
+    P_{\alpha}(\vec{r},t) = 
+    \varepsilon_{0}\sum_{\beta}\int_{-\infty}^{\infty}\dif{t'}
+    \int\dif^3{r'}\,\chi_{\alpha\beta}(\vec{r},\vec{r}\,',t-t')
+    E_{\beta}(\vec{r}\,',t')
+\label{general_linear_response_polarization}
+\end{equation}
+
+here, $\chi_{\alpha\beta}(\vec{r},\vec{r}\,',t-t')$ denotes the time-domain electric susceptibility tensor.
+This equation characterizes the polarization response at position $\vec{r}$ and time $t$ to an electric field applied at position $\vec{r}\,'$ and time $t'$.
+
+Secondly, causality requires that the medium responds only to earlier external driving fields:
+
+\begin{equation}
+    \chi_{\alpha\beta}(\vec{r},\vec{r}\,',t-t')=0
+    \qquad \text{for $t<t'$}
+\label{causal_condition_susceptibility_kernel}
+\end{equation}
+
+This condition defines a retarded response kernel.
+It ensures that the polarization collects only earlier driving fields and excludes any advanced response.
+
+In the present work,
+we consider the optical long-wavelength limit,
+where the wave-vector dependence of the dielectric response becomes negligible.
+The linear response therefore reduces to a frequency-dependent tensor relation:
+
+\begin{equation}
+    P_{\alpha}(\omega) =
+    \varepsilon_{0}\sum_{\beta}\chi_{\alpha\beta}(\omega)
+    \,E_{\beta}(\omega)
+\label{frequency_domain_polarization_response}
+\end{equation}
+
+here, $\chi_{\alpha\beta}(\omega)$ denotes the frequency-domain electric susceptibility tensor.
+It characterizes the response amplitude and phase delay for each Cartesian component at angular frequency $\omega$.
+
+Draft % Draft
+
+The dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ then follows from:
+\begin{equation}
+\varepsilon_{\alpha\beta}(\omega)
+=
+\delta_{\alpha\beta}
++
+\chi_{\alpha\beta}(\omega)
+\label{dielectric_tensor_from_susceptibility}
+\end{equation}
+
+The causal condition in equation~\eqref{causal_condition_susceptibility_kernel} allows us to rewrite the frequency-domain susceptibility as:
+\begin{equation}
+\chi_{\alpha\beta}(\omega)
+=
+\int_{0}^{\infty}
+\chi_{\alpha\beta}(t)
+\,\mathrm{e}^{\,\mathrm{i}\omega t}
+\dif{t}
+\label{frequency_domain_susceptibility_from_causality}
+\end{equation}
+
+This representation shows the analytic structure directly.
+Because the time integral starts from $t=0$, the response function remains analytic in the upper half of the complex frequency plane.
+
+For a real time-domain response kernel, the susceptibility and dielectric tensor further satisfy:
+\begin{equation}
+\chi_{\alpha\beta}(-\omega)
+=
+\chi_{\alpha\beta}^{*}(\omega),
+\qquad
+\varepsilon_{\alpha\beta}(-\omega)
+=
+\varepsilon_{\alpha\beta}^{*}(\omega)
+\label{reality_condition_response_functions}
+\end{equation}
+
+Therefore, in the principal-axis representation, the real part $\varepsilon_{1,\lambda\lambda}(\omega)$ is an even function of frequency, whereas the imaginary part $\varepsilon_{2,\lambda\lambda}(\omega)$ is an odd function:
+\begin{equation}
+\varepsilon_{1,\lambda\lambda}(-\omega)
+=
+\varepsilon_{1,\lambda\lambda}(\omega),
+\qquad
+\varepsilon_{2,\lambda\lambda}(-\omega)
+=
+-\varepsilon_{2,\lambda\lambda}(\omega)
+\label{parity_of_dielectric_components}
+\end{equation}
+
+At this stage, we have translated the temporal order of a causal response into the analytic structure of the dielectric function in frequency space.
+We next use this structure to derive the Kramers--Kronig relations between the real and imaginary parts of the dielectric response.
 
 \subsection{Kramers--Kronig relations for the dielectric function}
 
