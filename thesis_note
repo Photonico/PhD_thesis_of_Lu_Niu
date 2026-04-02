@@ -1,4 +1,6 @@
-# VSCode login
+# ## Note
+
+## VSCode login
 
 1. Open DevTools (F12) → Network.
 
@@ -8,9 +10,13 @@
 
 4. In Request Headers, copy the full Cookie: ... value (e.g., overleaf_session2=...; sharelatex.sid=......) and paste it.
 
-# DFT contents
+## compile information
 
-# 我的风格
+* compiler: pdflatex
+
+## DFT contents
+
+## 我的风格
 
 * 叙事推进优先, 有讲故事感, 始终使用 we-style.
 * 多用具体动词和主动语态, 少用空泛 be 动词.
@@ -31,7 +37,7 @@
 * 喜欢的名词: medium,...
 * 喜欢的副词: as, meanwhile, therefore, whereas...
 
-# Horizontal spacing
+## Horizontal spacing
 
 * \!       -3 mu = -1/6 em
 * \,        3 mu = 1/6 em
@@ -41,6 +47,3 @@
 * \enspace  1/2 em
 * \quad     1 em
 * \qquad    2 em
-
-
-
