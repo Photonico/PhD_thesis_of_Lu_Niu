@@ -630,65 +630,53 @@ We next derive the Kramers--Kronig relations between its real and imaginary part
 
 \subsection{Kramers--Kronig relations for the dielectric function}
 
-Draft - Draft - Draft - Draft - Draft - Draft % Draft
-
-\subsection{Kramers--Kronig relations for the dielectric function}
-
 The previous subsection established the analytic structure of the dielectric response in frequency space.
 We now derive the Kramers--Kronig relations for the dielectric function.
-
-Firstly, the causal structure in equation~\eqref{frequency_domain_susceptibility_from_causality} and the reality condition in equation~\eqref{reality_condition_response_functions} do not allow the real and imaginary parts of the dielectric response to vary independently.
-Instead, they are connected by a Hilbert-transform pair.
-For the dielectric tensor, we write the general frequency-domain form as:
+Firstly, the causal structure in equation~\eqref{frequency_domain_susceptibility_from_causality} and the reality condition in equation~\eqref{reality_condition_response_functions} establish a Hilbert transform relation between the real and imaginary parts of the dielectric response.
+We therefore represent the dielectric tensor in the general frequency-domain form as:
 
 \begin{equation}
-    \varepsilon_{1,\alpha\beta}(\omega)-\delta_{\alpha\beta}
-    =
-    \frac{1}{\pi}\mathcal{P}\int_{-\infty}^{\infty}
-    \frac{\varepsilon_{2,\alpha\beta}(\omega')}{\omega'-\omega}
-    \,\dif{\omega'}
-\label{kk_real_part_general_dielectric_tensor}
-\end{equation}
-
-\begin{equation}
-    \varepsilon_{2,\alpha\beta}(\omega)
-    =
-    -\frac{1}{\pi}\mathcal{P}\int_{-\infty}^{\infty}
+\left\{\begin{aligned}
+    \varepsilon_{1,\alpha\beta}(\omega)-\delta_{\alpha\beta} &=
+    \frac{1}{\pi}\mathcal{P}
+    \int_{-\infty}^{\infty}\dif{\omega'}\,
+    \frac{\varepsilon_{2,\alpha\beta}(\omega')}{\omega'-\omega} \\
+\varepsilon_{2,\alpha\beta}(\omega) &=
+    -\frac{1}{\pi}\mathcal{P}
+    \int_{-\infty}^{\infty}\dif{\omega'}\,
     \frac{\varepsilon_{1,\alpha\beta}(\omega')-\delta_{\alpha\beta}}{\omega'-\omega}
-    \,\dif{\omega'}
-\label{kk_imaginary_part_general_dielectric_tensor}
+\end{aligned}\right.
+\label{kk_general_dielectric_tensor}
 \end{equation}
 
-Here, $\mathcal{P}$ denotes the Cauchy principal value.
-It removes the singular contribution at $\omega'=\omega$ and keeps the dispersion integral well defined.
+here, $\mathcal{P}$ denotes the Cauchy principal value.
+It removes the singular contribution at $\omega'=\omega$.
+The integral therefore remains well defined.
 
-These two expressions assign clear physical roles to the two parts of the dielectric response.
-The imaginary part $\varepsilon_{2,\alpha\beta}(\omega)$ characterizes the absorptive channel.
-The real part $\varepsilon_{1,\alpha\beta}(\omega)$ characterizes the dispersive channel.
-Causality then binds these two channels into a single complex response function.
+This expression identifies the physical roles of the two parts of the dielectric response.
+The imaginary part $\varepsilon_{2,\alpha\beta}(\omega)$ characterizes the absorptive channel, 
+whereas the real part $\varepsilon_{1,\alpha\beta}(\omega)$ characterizes the dispersive channel.
+Consequently, causality unifies these two channels into a single complex response function.
 
-Next, we use the symmetry relations in equation~\eqref{parity_of_dielectric_components} to reduce the full-frequency integrals to positive-frequency integrals.
-In the principal-axis representation, each complex dielectric component $\varepsilon_{\lambda\lambda}(\omega)$ satisfies the Kramers--Kronig relations in the form:
+Next, the symmetry relations in equation~\eqref{parity_of_dielectric_components} degenerate the full-frequency integrals to positive-frequency integrals.
+In the principal-axis representation,
+each complex dielectric component $\varepsilon_{\lambda\lambda}(\omega)$ satisfies the Kramers--Kronig relations in the form:
 
 \begin{equation}
-    \varepsilon_{1,\lambda\lambda}(\omega)
-    =
-    1
-    +
-    \frac{2}{\pi}\mathcal{P}\int_{0}^{\infty}
-    \frac{\omega'\varepsilon_{2,\lambda\lambda}(\omega')}{\omega'^2-\omega^2}
-    \,\dif{\omega'}
-\label{kk_real_part_positive_frequency_dielectric_component}
+\left\{\begin{aligned}
+    \varepsilon_{1,\lambda\lambda}(\omega) &=
+    1+\frac{2}{\pi}\mathcal{P}
+    \int_{0}^{\infty}\dif{\omega'}\,
+    \frac{\omega'\varepsilon_{2,\lambda\lambda}(\omega')}{\omega'^2-\omega^2} \\
+    \varepsilon_{2,\lambda\lambda}(\omega) &=
+    -\frac{2\omega}{\pi}\mathcal{P}
+    \int_{0}^{\infty}\dif{\omega'}\,
+    \frac{\varepsilon_{1,\lambda\lambda}(\omega')-1}{\omega'^2-\omega^2}  
+\end{aligned}\right.
+\label{kk_positive_frequency_dielectric_component}
 \end{equation}
 
-\begin{equation}
-    \varepsilon_{2,\lambda\lambda}(\omega)
-    =
-    -\frac{2\omega}{\pi}\mathcal{P}\int_{0}^{\infty}
-    \frac{\varepsilon_{1,\lambda\lambda}(\omega')-1}{\omega'^2-\omega^2}
-    \,\dif{\omega'}
-\label{kk_imaginary_part_positive_frequency_dielectric_component}
-\end{equation}
+\# Draft - Draft - Draft - Draft - Draft - Draft % Draft
 
 These relations are the working expressions for the dielectric function in the present study.
 Once the absorptive part $\varepsilon_{2,\lambda\lambda}(\omega)$ is obtained from the electronic transitions, equation~\eqref{kk_real_part_positive_frequency_dielectric_component} determines the dispersive part $\varepsilon_{1,\lambda\lambda}(\omega)$.
