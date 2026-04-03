@@ -502,15 +502,15 @@ This notation keeps the later comparison clear.
 Once we decompose the dielectric response into directional channels,
 the derived optical quantities inherit the same anisotropy~\cite{alonso2004optical}.
 
-% A representative example of the direction-resolved dielectric response is shown in figure~\ref{fig:representative_dielectric_response}.
-% The real and imaginary parts exhibit distinct in-plane and out-of-plane features over the full photon-energy range.
+A representative example of the direction-resolved dielectric response is shown in the following figure.
+The real and imaginary parts exhibit distinct in-plane and out-of-plane features over the full photon-energy range.
 
-% \begin{figure}[htbp]
-%     \centering
-%     \includegraphics[width=0.88\textwidth]{figures/representative_dielectric_response.pdf}
-%     \caption{Representative real and imaginary parts of the in-plane and out-of-plane dielectric function as a function of photon energy for a two-dimensional heterostructure. The figure illustrates the direction-resolved complex dielectric response discussed in the text.}
-%     \label{fig:representative_dielectric_response}
-% \end{figure}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{figures_ch3/3.1_dielectric.pdf}
+    \caption{Representative real and imaginary parts of the in-plane and out-of-plane dielectric function as a function of photon energy for a two-dimensional heterostructure. The figure illustrates the direction-resolved complex dielectric response discussed in the text.}
+    \label{figure_representative_dielectric_response}
+\end{figure}
 
 At this stage, we have established the direction-resolved complex dielectric response for anisotropic media.
 
@@ -700,28 +700,32 @@ In the next subsection, we derive the corresponding static expression and clarif
 
 \subsection{Static limit and physical interpretation}
 
-\# Draft - Draft - Draft - Draft - Draft - Draft % Draft
-
 The previous subsection established the positive-frequency form of the Kramers--Kronig relations for the dielectric response.
-We now examine the static limit and clarify its physical interpretation.
+We now describe the static limit and clarify its physical interpretation.
 
-Firstly, the static dielectric response is determined by the zero-frequency limit of the dispersive part.
-In the principal-axis representation, we set $\omega\to0$ in equation~\eqref{kk_positive_frequency_dielectric_component} and obtain:
+Firstly, the zero-frequency limit of the dispersive part determines the static dielectric response.
+For the principal-axis representation,
+we set $\omega\to0$ in positive-frequency Kramers--Kronig relations~\eqref{kk_positive_frequency_dielectric_component},
+we then obtain the static-limit form for the Kramers--Kronig relations:
 
 \begin{equation}
     \varepsilon_{1,\lambda\lambda}(0)
-    =
-    1+\frac{2}{\pi}
+    = 1+\frac{2}{\pi}
     \int_{0}^{\infty}\dif{\omega'}\,
     \frac{\varepsilon_{2,\lambda\lambda}(\omega')}{\omega'}
 \label{static_limit_from_kramers_kronig}
 \end{equation}
 
-Here, $\varepsilon_{1,\lambda\lambda}(0)$ characterizes the static dielectric response along the principal direction $\lambda$.
+here, $\varepsilon_{1,\lambda\lambda}(0)$ characterizes the static dielectric response along the principal direction $\lambda$.
 This expression shows that the static limit is not an independent quantity.
 Instead, the full directional absorption spectrum $\varepsilon_{2,\lambda\lambda}(\omega)$ determines it through causality.
 
 Next, the factor $1/\omega'$ gives stronger weight to low-energy spectral contributions.
+
+
+\# Draft - Draft - Draft - Draft - Draft - Draft % Draft
+
+
 Low-energy electronic transitions therefore enhance the static dielectric response more efficiently, whereas higher-energy transitions contribute with weaker weight.
 The static limit thus represents an accumulated response over the full absorption spectrum, with the dominant contribution controlled by its low-energy part.
 
@@ -739,7 +743,7 @@ At this stage, we arrive at the static interpretation of the Kramers--Kronig rel
 \section{From the dielectric function to optical properties}
 
 % opening paragraph
-test
+test test test
 
 \subsection{Complex refractive index, refractive index, and extinction coefficient}
 
