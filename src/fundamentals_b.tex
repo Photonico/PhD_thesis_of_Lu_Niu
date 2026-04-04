@@ -863,40 +863,37 @@ We next turn to the complex refractive index and determine the refractive index 
 \subsection{Refractive index and extinction coefficient}
 
 The previous subsection described the absorption coefficient as the optical quantity that characterizes energy dissipation in the medium.
-We now continue this optical picture inside the medium by introducing the refractive index $n_{\lambda}(\omega)$ and extinction coefficient $k_{\lambda}(\omega)$.
-These two quantities characterize the propagation of the electromagnetic wave through the medium.
-The refractive index determines the phase velocity,
+We now continue this description of light propagation in the medium by introducing the refractive index $n_{\lambda}(\omega)$ and extinction coefficient $k_{\lambda}(\omega)$, 
+which characterize the propagation of the electromagnetic wave.
+The refractive index determines the phase evolution,
 whereas the extinction coefficient describes the attenuation of the wave amplitude.
 Starting from the dielectric response, we derive explicit expressions for $n_{\lambda}(\omega)$ and $k_{\lambda}(\omega)$.
 
 For a monochromatic wave propagating along the principal direction $\lambda$,
-we represent the electric field as:
+we firstly represent the electric field as:
 
 \begin{equation}
 \begin{aligned}
     E_{\lambda}(z,t)
     &= E_{\lambda,0}\,
-    \exp\left[\mathrm{i}\frac{\omega}{c}N_{\lambda}(\omega)z-\mathrm{i}\omega t\right]\\
+    \exp\left[\mathrm{i}\frac{\omega}{c}N_{\lambda}(\omega)z-\mathrm{i}\,\omega t\right]\\
     &= E_{\lambda,0}\,
     \exp\left[\mathrm{i}\frac{\omega}{c}n_{\lambda}(\omega)z\right]
     \exp\left[-\frac{\omega}{c}k_{\lambda}(\omega)z\right]
-    \exp\left(-\mathrm{i}\omega t\right)
+    \exp\left(-\mathrm{i}\,\omega t\right)
 \end{aligned}
 \label{monochromatic_wave_with_complex_refractive_index}
 \end{equation}
 
 here, $N_{\lambda}(\omega)$ denotes the complex refractive index,
-$n_{\lambda}(\omega)$ denotes the refractive index,
-and $k_{\lambda}(\omega)$ denotes the extinction coefficient.
+while its real and imaginary parts respectively represent $n_{\lambda}(\omega)$ and $k_{\lambda}(\omega)$, which correspond to the refractive index and extinction coefficient.
 
 This expression separates phase evolution from amplitude attenuation.
-In equation~\eqref{complex_refractive_index_for_absorption_coefficient},
-$n_{\lambda}(\omega)$ determines the phase evolution of the wave,
-whereas $k_{\lambda}(\omega)$ describes the exponential attenuation of the wave amplitude in the medium.
+In equation~\eqref{monochromatic_wave_with_complex_refractive_index},
+the refractive index $n_{\lambda}(\omega)$ determines the phase evolution of the electromagnetic wave,
+whereas the extinction coefficient $k_{\lambda}(\omega)$ describes the exponential attenuation of its amplitude in the medium.
 
-\# Draft % Draft
-
-In general, the complex refractive index satisfies:
+We then write the general relation between the complex refractive index $N_{\lambda}(\omega)$, dielectric function $\varepsilon_{\lambda\lambda}(\omega)$, and magnetic permeability $\mu_{\lambda\lambda}(\omega)$ as:
 
 \begin{equation}
     N_{\lambda}^{2}(\omega)
@@ -905,7 +902,7 @@ In general, the complex refractive index satisfies:
 \end{equation}
 
 here, $\mu_{\lambda\lambda}(\omega)$ denotes the magnetic permeability.
-For the non-magnetic media considered in the present work,
+For the non-magnetic systems considered in the present work,
 we take $\mu_{\lambda\lambda}(\omega)\approx 1$.
 Therefore, the relation reduces to:
 
@@ -915,10 +912,11 @@ Therefore, the relation reduces to:
 \label{nonmagnetic_refractive_index_dielectric_relation}
 \end{equation}
 
-Using equation~\eqref{direction_resolved_complex_dielectric_function},
-together with
-$N_{\lambda}(\omega)=n_{\lambda}(\omega)+\mathrm{i}\,k_{\lambda}(\omega)$,
-we obtain the coupled relations:
+We substitute equation~\eqref{direction_resolved_complex_dielectric_function}
+and the definition of the complex refractive index in equation~\eqref{complex_refractive_index_for_absorption_coefficient}
+into equation~\eqref{nonmagnetic_refractive_index_dielectric_relation},
+and then separate the real and imaginary parts.
+We therefore derive the coupled relations:
 
 \begin{equation}
 \begin{aligned}
@@ -929,6 +927,10 @@ we obtain the coupled relations:
 \end{aligned}
 \label{refractive_index_extinction_coefficient_auxiliary_relations}
 \end{equation}
+
+These two equations relate the refractive index $n_{\lambda}(\omega)$ and the extinction coefficient $k_{\lambda}(\omega)$ to its real part $\varepsilon_{1,\lambda\lambda}(\omega)$ and imaginary part $\varepsilon_{2,\lambda\lambda}(\omega)$.
+
+\# Draft % Draft
 
 These two equations show the physical division of labor directly.
 The real part $\varepsilon_{1,\lambda\lambda}(\omega)$ fixes the dispersive balance between phase propagation and damping,
@@ -1016,15 +1018,3 @@ We next use them to determine the reflectivity.
 \subsection{Reflectivity}
 
 \subsection{Energy-loss spectrum}
-
-% We start from the absorption coefficient $\alpha(\omega)$,
-% which characterizes the attenuation of incident light in the
-% medium.
-% We then turn to the refractive index $n(\omega)$ and extinction
-% coefficient $k(\omega)$, which describe phase propagation and
-% amplitude decay.
-% Next, we determine the reflectivity $R(\omega)$, which
-% represents the reflected portion of the electromagnetic wave at
-% the interface.
-% Finally, we examine the energy-loss spectrum $L(\omega)$,
-% which characterizes the dominant energy dissipation channels.
