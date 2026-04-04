@@ -4,7 +4,7 @@
 
 1. Open DevTools (F12) → Network.
 
-2. Go to https://www.overleaf.com (or open a project) and refresh.
+2. Go to `https://www.overleaf.com` (or open a project) and refresh.
 
 3. Click a `/project/...` request in the Network list.
 

@@ -117,7 +117,7 @@ and it also provides the starting point for introducing the dielectric function\
 We have established the universal field equations in the previous subsection.
 However, those equations do not explore how matter responds to the applied field.
 To close the problem, we still need a relation that connects the induced polarization to the electric field.
-This relation is the constitutive relation, and it is here that the medium-specific information enters~\cite{landau1984electrodynamics, lima2022usefulness}.
+This relation is the constitutive relation, and it is here that the medium-specific information enters~\cite{landau2013electrodynamics, lima2022usefulness}.
 
 Here, the central object is the polarization field $\vec{P}(\vec{r},t)$.
 It describes how the medium rearranges its internal charges under the applied electric field.
@@ -862,9 +862,169 @@ We next turn to the complex refractive index and determine the refractive index 
 
 \subsection{Refractive index and extinction coefficient}
 
+The previous subsection described the absorption coefficient as the optical quantity that characterizes energy dissipation in the medium.
+We now continue this optical picture inside the medium by introducing the refractive index $n_{\lambda}(\omega)$ and extinction coefficient $k_{\lambda}(\omega)$.
+These two quantities characterize the propagation of the electromagnetic wave through the medium.
+The refractive index determines the phase velocity,
+whereas the extinction coefficient describes the attenuation of the wave amplitude.
+Starting from the dielectric response, we derive explicit expressions for $n_{\lambda}(\omega)$ and $k_{\lambda}(\omega)$.
+
+For a monochromatic wave propagating along the principal direction $\lambda$,
+we represent the electric field as:
+
+\begin{equation}
+\begin{aligned}
+    E_{\lambda}(z,t)
+    &= E_{\lambda,0}\,
+    \exp\left[\mathrm{i}\frac{\omega}{c}N_{\lambda}(\omega)z-\mathrm{i}\omega t\right]\\
+    &= E_{\lambda,0}\,
+    \exp\left[\mathrm{i}\frac{\omega}{c}n_{\lambda}(\omega)z\right]
+    \exp\left[-\frac{\omega}{c}k_{\lambda}(\omega)z\right]
+    \exp\left(-\mathrm{i}\omega t\right)
+\end{aligned}
+\label{monochromatic_wave_with_complex_refractive_index}
+\end{equation}
+
+here, $N_{\lambda}(\omega)$ denotes the complex refractive index,
+$n_{\lambda}(\omega)$ denotes the refractive index,
+and $k_{\lambda}(\omega)$ denotes the extinction coefficient.
+
+This expression separates phase evolution from amplitude attenuation.
+In equation~\eqref{complex_refractive_index_for_absorption_coefficient},
+$n_{\lambda}(\omega)$ determines the phase evolution of the wave,
+whereas $k_{\lambda}(\omega)$ describes the exponential attenuation of the wave amplitude in the medium.
+
 \# Draft % Draft
-test test
+
+In general, the complex refractive index satisfies:
+
+\begin{equation}
+    N_{\lambda}^{2}(\omega)
+    = \varepsilon_{\lambda\lambda}(\omega)\,\mu_{\lambda\lambda}(\omega)
+\label{general_refractive_index_permeability_relation}
+\end{equation}
+
+here, $\mu_{\lambda\lambda}(\omega)$ denotes the magnetic permeability.
+For the non-magnetic media considered in the present work,
+we take $\mu_{\lambda\lambda}(\omega)\approx 1$.
+Therefore, the relation reduces to:
+
+\begin{equation}
+    N_{\lambda}^{2}(\omega)
+    = \varepsilon_{\lambda\lambda}(\omega)
+\label{nonmagnetic_refractive_index_dielectric_relation}
+\end{equation}
+
+Using equation~\eqref{direction_resolved_complex_dielectric_function},
+together with
+$N_{\lambda}(\omega)=n_{\lambda}(\omega)+\mathrm{i}\,k_{\lambda}(\omega)$,
+we obtain the coupled relations:
+
+\begin{equation}
+\begin{aligned}
+    n_{\lambda}^{2}(\omega)-k_{\lambda}^{2}(\omega)
+    &= \varepsilon_{1,\lambda\lambda}(\omega) \\
+    2\,n_{\lambda}(\omega)\,k_{\lambda}(\omega)
+    &= \varepsilon_{2,\lambda\lambda}(\omega)
+\end{aligned}
+\label{refractive_index_extinction_coefficient_auxiliary_relations}
+\end{equation}
+
+These two equations show the physical division of labor directly.
+The real part $\varepsilon_{1,\lambda\lambda}(\omega)$ fixes the dispersive balance between phase propagation and damping,
+whereas the imaginary part $\varepsilon_{2,\lambda\lambda}(\omega)$ transfers spectral weight into the damping channel.
+
+Solving equation~\eqref{refractive_index_extinction_coefficient_auxiliary_relations},
+we obtain the refractive index:
+
+\begin{equation}
+    n_{\lambda}(\omega)
+    = \left[
+        \frac{
+            \sqrt{\varepsilon_{1,\lambda\lambda}^{2}(\omega)
+            + \varepsilon_{2,\lambda\lambda}^{2}(\omega)}
+            + \varepsilon_{1,\lambda\lambda}(\omega)
+        }{2}
+    \right]^{1/2}
+\label{refractive_index_from_dielectric_response}
+\end{equation}
+
+and the extinction coefficient:
+
+\begin{equation}
+    k_{\lambda}(\omega)
+    = \left[
+        \frac{
+            \sqrt{\varepsilon_{1,\lambda\lambda}^{2}(\omega)
+            + \varepsilon_{2,\lambda\lambda}^{2}(\omega)}
+            - \varepsilon_{1,\lambda\lambda}(\omega)
+        }{2}
+    \right]^{1/2}
+\label{extinction_coefficient_from_dielectric_response}
+\end{equation}
+
+For the present xene systems,
+we finally reduce the principal-direction index $\lambda$ to the in-plane channel $\varparallel$ and the out-of-plane channel $\perp$.
+This reduction allows a direct comparison between the two optical directions.
+
+We first examine the refractive index spectra of $\alpha$-Beryllene and $\beta$-Beryllene:
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.90\textwidth]{figures_ch3/4.2_refractive_alt.pdf}
+    \caption{The refractive indices for the in-plane and out-of-plane directions as functions of photon energy for $\alpha$-Beryllene and $\beta$-Beryllene.}
+    \label{refractive_index_alpha_beta_beryllene}
+\end{figure}
+
+In the in-plane channel,
+$\beta$-Beryllene exhibits a much larger low-energy refractive index than $\alpha$-Beryllene,
+and it also shows a strong dispersive structure below about $2\,\mathrm{eV}$.
+Meanwhile, $\alpha$-Beryllene develops a broader enhancement in the mid-energy range around $5$ to $6\,\mathrm{eV}$.
+In the out-of-plane channel,
+both systems exhibit stronger resonant features,
+with especially sharp structures appearing between about $3$ and $6\,\mathrm{eV}$.
+At higher photon energies,
+the refractive indices in both directions decrease gradually and approach smaller values.
+These trends demonstrate that the phase response inherits the anisotropy already established in the dielectric function.
+
+We next examine the extinction coefficient,
+which more directly follows the absorptive part of the dielectric response:
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.90\textwidth]{figures_ch3/4.3_extinction_alt.pdf}
+    \caption{The extinction coefficients for the in-plane and out-of-plane directions as functions of photon energy for $\alpha$-Beryllene and $\beta$-Beryllene.}
+    \label{extinction_coefficient_alpha_beta_beryllene}
+\end{figure}
+
+In the in-plane channel,
+$\beta$-Beryllene carries much stronger low-energy damping than $\alpha$-Beryllene.
+This contrast explains why the low-energy optical attenuation differs strongly between the two systems.
+In the out-of-plane channel,
+both systems exhibit sharper oscillatory structures over the intermediate-energy range,
+which indicates a more structured absorptive response along the normal direction.
+Whenever $k_{\lambda}(\omega)$ becomes small,
+the wave mainly accumulates phase and suffers weaker attenuation.
+Together with equation~\eqref{absorption_coefficient_from_extinction_coefficient},
+these spectra clarify the directional variation of the absorption coefficient discussed in the previous subsection.
+
+Therefore, the refractive index $n_{\lambda}(\omega)$ and extinction coefficient $k_{\lambda}(\omega)$ provide a compact description of phase propagation and amplitude decay in the medium.
+They also supply the two optical quantities required by the Fresnel equations at an interface.
+At this stage, we arrive at the refractive index and extinction coefficient as the intermediate response quantities that connect the dielectric function to the measurable interface response.
+We next use them to determine the reflectivity.
 
 \subsection{Reflectivity}
 
 \subsection{Energy-loss spectrum}
+
+% We start from the absorption coefficient $\alpha(\omega)$,
+% which characterizes the attenuation of incident light in the
+% medium.
+% We then turn to the refractive index $n(\omega)$ and extinction
+% coefficient $k(\omega)$, which describe phase propagation and
+% amplitude decay.
+% Next, we determine the reflectivity $R(\omega)$, which
+% represents the reflected portion of the electromagnetic wave at
+% the interface.
+% Finally, we examine the energy-loss spectrum $L(\omega)$,
+% which characterizes the dominant energy dissipation channels.
