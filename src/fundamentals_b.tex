@@ -930,42 +930,37 @@ We therefore derive the coupled relations:
 
 These two equations relate the refractive index $n_{\lambda}(\omega)$ and the extinction coefficient $k_{\lambda}(\omega)$ to its real part $\varepsilon_{1,\lambda\lambda}(\omega)$ and imaginary part $\varepsilon_{2,\lambda\lambda}(\omega)$.
 
-\# Draft % Draft
+These two equations connect the refractive index $n_{\lambda}(\omega)$ and extinction coefficient $k_{\lambda}(\omega)$ to the real part $\varepsilon_{1,\lambda\lambda}(\omega)$ and imaginary part $\varepsilon_{2,\lambda\lambda}(\omega)$ of the dielectric function $\varepsilon_{\lambda\lambda}(\omega)$.
 
-These two equations show the physical division of labor directly.
-The real part $\varepsilon_{1,\lambda\lambda}(\omega)$ fixes the dispersive balance between phase propagation and damping,
-whereas the imaginary part $\varepsilon_{2,\lambda\lambda}(\omega)$ transfers spectral weight into the damping channel.
-
-Solving equation~\eqref{refractive_index_extinction_coefficient_auxiliary_relations},
-we obtain the refractive index:
+By solving these coupled relations,
+we express the refractive index $n_{\lambda}(\omega)$ as:
 
 \begin{equation}
-    n_{\lambda}(\omega)
-    = \left[
-        \frac{
-            \sqrt{\varepsilon_{1,\lambda\lambda}^{2}(\omega)
-            + \varepsilon_{2,\lambda\lambda}^{2}(\omega)}
-            + \varepsilon_{1,\lambda\lambda}(\omega)
-        }{2}
-    \right]^{1/2}
-\label{refractive_index_from_dielectric_response}
+    n_{\lambda}(\omega) = 
+    \left[\frac{1}{2}\left(\sqrt{\varepsilon_{1,\lambda\lambda}^{2}(\omega)
+        + \varepsilon_{2,\lambda\lambda}^{2}(\omega)}
+        + \varepsilon_{1,\lambda\lambda}(\omega)\right)\right]^{1/2}
+\label{refractive_index_from_dielectric_respons}
 \end{equation}
 
+Similarly, we express the extinction coefficient $k_{\lambda}(\omega)$ as:
 and the extinction coefficient:
 
 \begin{equation}
-    k_{\lambda}(\omega)
-    = \left[
-        \frac{
-            \sqrt{\varepsilon_{1,\lambda\lambda}^{2}(\omega)
-            + \varepsilon_{2,\lambda\lambda}^{2}(\omega)}
-            - \varepsilon_{1,\lambda\lambda}(\omega)
-        }{2}
-    \right]^{1/2}
+    k_{\lambda}(\omega) =
+    \left[\frac{1}{2}\left(\sqrt{\varepsilon_{1,\lambda\lambda}^{2}(\omega)
+        + \varepsilon_{2,\lambda\lambda}^{2}(\omega)}
+        - \varepsilon_{1,\lambda\lambda}(\omega)\right)\right]^{1/2}
 \label{extinction_coefficient_from_dielectric_response}
 \end{equation}
 
-For the present xene systems,
+In the present work for xene systems,
+we consider two principal optical channels,
+they are the in-plane channel $\varparallel$ and the out-of-plane channel $\perp$.
+This allows a direct comparison between the two optical directions.
+
+\# Draft % Draft
+
 we finally reduce the principal-direction index $\lambda$ to the in-plane channel $\varparallel$ and the out-of-plane channel $\perp$.
 This reduction allows a direct comparison between the two optical directions.
 
