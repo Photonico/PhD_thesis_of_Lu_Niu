@@ -349,7 +349,7 @@ the reflectivity $R(\omega)$,
 and the energy-loss spectrum $L(\omega)$.
 This complex dielectric function therefore provides a unified framework for the linear optical properties~\cite{onida2002electronic,djurivsic2002progress,niu2024electronic}.
 
-These two parts of the dielectric function together determine the optical response~\cite{wooten2013optical,born2013principles,dressel2002electrodynamics,fox2010optical}.
+These two parts of the dielectric function together determine the optical response~\cite{born2013principles,wooten2013optical,dressel2002electrodynamics,fox2010optical}.
 In practical calculations, the imaginary part $\varepsilon_2(\omega)$ comes from electronic excitations,
 whereas the real part $\varepsilon_1(\omega)$ follows from causality.
 
@@ -759,10 +759,10 @@ Next, we determine the reflectivity $R(\omega)$, which
 represents the reflected portion of the electromagnetic wave at
 the interface.
 Finally, we examine the energy-loss spectrum $L(\omega)$,
-which characterizes the dominant energy dissipation channels.
+which identifies the dominant resonant energy-loss channels in the medium.
 
 In what follows, we present the general relations that
-connect these quantities to the complex dielectric function $\varepsilon(\omega)$~\cite{wooten2013optical,born2013principles,dressel2002electrodynamics,fox2010optical}.
+connect these quantities to the complex dielectric function $\varepsilon(\omega)$~\cite{born2013principles,wooten2013optical,dressel2002electrodynamics,fox2010optical}.
 Recent first-principles studies have also analyzed the dielectric response together with the derived optical quantities in low-dimensional materials~\cite{niu2024electronic,khan2025insight,albert2024optical,huang2023optical,cheng2025two}.
 Afterwards, we analyze the in-plane and out-of-plane optical response of the present systems.
 
@@ -859,8 +859,8 @@ These peaks indicate energy ranges where interband transitions contribute more s
 Therefore, the absorption coefficient reflects the directional excitation spectrum of the medium.
 It also provides a direct measure of directional optical attenuation~\cite{niu2024electronic,khan2025insight,zhang2024advanced,elbanna20232d}.
 
-Consequently, the absorption coefficient characterizes the rate of attenuation of incident light in the medium.
-We next turn to the complex refractive index and determine the refractive index and extinction coefficient.
+Consequently, the absorption coefficient $\alpha_{\lambda}(\omega)$ characterizes the rate of optical attenuation in the medium.
+We next use the same dielectric response to determine the refractive index $n_{\lambda}(\omega)$ and extinction coefficient $k_{\lambda}(\omega)$, which describe the propagation of the attenuated wave.
 
 \subsection{Refractive index and extinction coefficient}
 
@@ -869,7 +869,7 @@ We now continue this description of light propagation in the medium by introduci
 The refractive index determines the phase evolution,
 whereas the extinction coefficient describes the attenuation of the wave amplitude.
 Starting from the dielectric response,
-we derive explicit expressions for $n_{\lambda}(\omega)$ and $k_{\lambda}(\omega)$~\cite{wooten2013optical,born2013principles,dressel2002electrodynamics,fox2010optical}.
+we derive explicit expressions for $n_{\lambda}(\omega)$ and $k_{\lambda}(\omega)$~\cite{born2013principles,wooten2013optical,dressel2002electrodynamics,fox2010optical}.
 
 For a monochromatic wave propagating along the principal direction $\lambda$,
 we first represent the electric field as~\cite{politano2023spectroscopic}:
@@ -896,7 +896,9 @@ In equation~\eqref{monochromatic_wave_with_complex_refractive_index},
 the refractive index $n_{\lambda}(\omega)$ determines the phase evolution of the electromagnetic wave,
 whereas the extinction coefficient $k_{\lambda}(\omega)$ describes the exponential attenuation of its amplitude in the medium.
 
-We then write the general relation between the complex refractive index $N_{\lambda}(\omega)$, dielectric function $\varepsilon_{\lambda\lambda}(\omega)$, and magnetic permeability $\mu_{\lambda\lambda}(\omega)$ as~\cite{wooten2013optical,born2013principles,dressel2002electrodynamics,politano2023spectroscopic}:
+We then write the general relation between the complex refractive index $N_{\lambda}(\omega)$,
+dielectric function $\varepsilon_{\lambda\lambda}(\omega)$,
+and magnetic permeability $\mu_{\lambda\lambda}(\omega)$ as~\cite{born2013principles,wooten2013optical,dressel2002electrodynamics,politano2023spectroscopic}:
 
 \begin{equation}
     N_{\lambda}^{2}(\omega)
@@ -985,8 +987,8 @@ In the out-of-plane channel, $\beta$-Beryllene remains stronger over the low-ene
 This behavior shows that amplitude attenuation also depends on both the optical direction and the crystal structure of the medium~\cite{niu2024electronic,khan2025insight,huang2023optical,suk2024ultrafast,cheng2025two,tang2025unveiling,kim2024hyperspectral}.
 
 Consequently, the refractive index $n_{\lambda}(\omega)$ and extinction coefficient $k_{\lambda}(\omega)$ characterize phase propagation and amplitude decay in the medium.
-Meanwhile, they connect the dielectric function to the interface response through the Fresnel equations~\cite{wooten2013optical,born2013principles,dressel2002electrodynamics}.
-We next use them to determine the reflectivity.
+Meanwhile, they connect the dielectric function to the interface response through the Fresnel equations~\cite{born2013principles,wooten2013optical,dressel2002electrodynamics}.
+We next use them to determine the reflectivity, which transfers the bulk optical response to the interface.
 
 \subsection{Reflectivity}
 
@@ -1031,7 +1033,7 @@ whereas the extinction coefficient $k_{\lambda}(\omega)$ represents the dissipat
 These two quantities together determine the reflected amplitude at the surface.
 
 We next express the reflectivity $R_{\lambda}(\omega)$ as the reflected power ratio.
-It equals the squared modulus of the amplitude reflection coefficient~\cite{wooten2013optical,born2013principles,dressel2002electrodynamics}:
+It equals the squared modulus of the amplitude reflection coefficient~\cite{born2013principles,wooten2013optical,dressel2002electrodynamics}:
 
 \begin{equation}
     R_{\lambda}(\omega)
@@ -1040,7 +1042,7 @@ It equals the squared modulus of the amplitude reflection coefficient~\cite{woot
 \end{equation}
 
 After substituting equation~\eqref{normal_incidence_amplitude_reflection_coefficient_vacuum_interface},
-this equation produces the reflectivity through the refractive index $n_\lambda(\omega)$ and the extinction coefficient as $k_\lambda(\omega)$:
+this equation produces the reflectivity through the refractive index $n_\lambda(\omega)$ and the extinction coefficient $k_\lambda(\omega)$:
 
 \begin{equation}
     R_{\lambda}(\omega) =
@@ -1053,8 +1055,6 @@ This equation links the surface reflection to the refractive index $n_{\lambda}(
 A larger mismatch between $n_{\lambda}(\omega)$ and the vacuum value enhances reflection,
 whereas $k_{\lambda}(\omega)$ modifies the reflected intensity through optical dissipation.
 Therefore, the reflectivity $R_{\lambda}(\omega)$ characterizes the reflected optical response at a specific photon energy.
-
-\# Draft % Draft
 
 The following figure presents the calculated reflectivity spectra of $\alpha$-Beryllene and $\beta$-Beryllene for the in-plane and out-of-plane directions:
 
@@ -1074,8 +1074,86 @@ Optical dissipation strongly influences the reflectivity spectra, whereas the re
 
 Consequently, the reflectivity $R_{\lambda}(\omega)$ characterizes the surface reflection of the medium.
 We arrive at a direct optical quantity derived from the complex refractive index $N_{\lambda}(\omega)$.
-We next turn to the energy-loss spectrum and describe the energy dissipation encoded in the dielectric response.
+We next turn to the energy-loss spectrum $L_{\lambda}(\omega)$ and identify the photon-energy range where the dielectric screening gives way to the strongest resonant dissipation.
 
 \subsection{Energy-loss spectrum}
 
-test test
+The previous subsection introduced the reflectivity $R_{\lambda}(\omega)$ as the surface response characterized by the refractive index $n_{\lambda}(\omega)$ and the extinction coefficient $k_{\lambda}(\omega)$.
+We now return from surface reflection to energy dissipation inside the medium.
+To complete the optical description derived from the dielectric response, we examine the energy-loss spectrum $L_{\lambda}(\omega)$.
+
+\# Draft % Draft
+
+The energy-loss spectrum $L_{\lambda}(\omega)$ characterizes the energy transferred from an external probe to the medium at a given photon energy.
+In particular, it describes the spectral strength of longitudinal energy dissipation and therefore identifies the energy range where collective electronic response becomes most pronounced.
+This quantity is widely used to describe the loss channels probed by electron energy-loss spectroscopy.
+
+We first write the general form of the energy-loss spectrum along the principal direction $\lambda$ as:
+
+\begin{equation}
+    L_{\lambda}(\omega)
+    =
+    \mathrm{Im}
+    \left[
+        -\frac{1}{\varepsilon_{\lambda\lambda}(\omega)}
+    \right]
+\label{energy_loss_spectrum_from_inverse_dielectric_function}
+\end{equation}
+
+This expression shows that the energy-loss spectrum is determined by the inverse dielectric response.
+Therefore, it does not only follow the absorptive part of the medium, but also depends on the screening effect encoded in the full complex dielectric function.
+A strong loss peak develops when the dielectric screening becomes weak, which usually occurs near the energy range where the real part of the dielectric function approaches zero while the imaginary part remains finite.
+
+Using the direction-resolved complex dielectric function in equation~\eqref{direction_resolved_complex_dielectric_function}:
+
+\begin{equation}
+    \varepsilon_{\lambda\lambda}(\omega)
+    =
+    \varepsilon_{1,\lambda\lambda}(\omega)
+    +
+    \mathrm{i}\,\varepsilon_{2,\lambda\lambda}(\omega)
+\label{direction_resolved_complex_dielectric_function_for_energy_loss}
+\end{equation}
+
+we then obtain the explicit expression used in the present work:
+
+\begin{equation}
+    L_{\lambda}(\omega)
+    =
+    \frac{\varepsilon_{2,\lambda\lambda}(\omega)}
+    {\varepsilon_{1,\lambda\lambda}^{2}(\omega)
+    +
+    \varepsilon_{2,\lambda\lambda}^{2}(\omega)}
+\label{energy_loss_spectrum_from_dielectric_function}
+\end{equation}
+
+This equation makes the physical roles of the two parts of the dielectric function transparent.
+The imaginary part $\varepsilon_{2,\lambda\lambda}(\omega)$ provides the dissipative channel, whereas the denominator contains the total dielectric screening.
+As a result, the energy-loss spectrum becomes large when the medium can absorb energy efficiently and meanwhile fails to screen the external perturbation strongly.
+In this sense, $L_{\lambda}(\omega)$ emphasizes resonant loss channels more directly than the absorption coefficient or the reflectivity.
+
+The following figure presents the calculated energy-loss spectra of $\alpha$-Beryllene and $\beta$-Beryllene for the in-plane and out-of-plane directions:
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.90\textwidth]{figures_ch3/4.5_energy_alt.pdf}
+    \caption{The energy-loss spectra for the in-plane and out-of-plane directions as functions of photon energy for $\alpha$-Beryllene and $\beta$-Beryllene.}
+    \label{energy_loss_spectrum_alpha_beta_beryllene}
+\end{figure}
+
+The energy-loss spectra demonstrate a directional contrast that is even sharper than that in the reflectivity.
+In the in-plane channel, $\beta$-Beryllene develops an evident low-energy loss peak in the visible range, whereas $\alpha$-Beryllene remains very weak at low photon energy and then rises strongly in the high-energy region.
+Above about $7$~eV, the in-plane loss response of $\alpha$-Beryllene increases rapidly and forms a broad strong structure before rising again near the upper end of the present energy window.
+This behavior indicates that the dominant loss channels of $\alpha$-Beryllene are concentrated in the high-energy range, whereas $\beta$-Beryllene already supports a visible-range loss feature.
+
+In the out-of-plane channel, the contrast becomes stronger.
+$\alpha$-Beryllene develops several very sharp and intense loss peaks in the ultraviolet range, whereas $\beta$-Beryllene shows weaker and broader structures over the same interval.
+Therefore, the out-of-plane dielectric response of $\alpha$-Beryllene supports much stronger resonant loss channels at high photon energy.
+Meanwhile, $\beta$-Beryllene maintains a more moderate loss response with less abrupt spectral variation.
+
+These results show that the energy-loss spectrum depends strongly on both the optical direction and the crystal structure of the medium.
+Because $L_{\lambda}(\omega)$ is determined by the inverse dielectric function, its peaks mark the energy range where the dielectric screening changes most critically.
+Therefore, the energy-loss spectrum provides a compact way to identify the dominant dissipation channels that are not equally visible in absorption or reflectivity alone.
+
+Consequently, the energy-loss spectrum $L_{\lambda}(\omega)$ characterizes the energy transferred from an external probe to the medium and identifies the dominant resonant loss channels encoded in the dielectric response.
+We arrive at the final optical quantity derived from $\varepsilon_{\lambda\lambda}(\omega)$, which completes the chain from optical attenuation, to wave propagation, to surface reflection, and finally to intrinsic energy dissipation in the medium.
