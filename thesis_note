@@ -51,3 +51,17 @@
 ## Question
 
 This expression separates phase evolution from amplitude attenuation.
+
+## Other
+
+We start from the absorption coefficient $\alpha(\omega)$,
+which characterizes the attenuation of incident light in the
+medium.
+We then turn to the refractive index $n(\omega)$ and extinction
+coefficient $k(\omega)$, which describe phase propagation and
+amplitude decay.
+Next, we determine the reflectivity $R(\omega)$, which
+represents the reflected portion of the electromagnetic wave at
+the interface.
+Finally, we examine the energy-loss spectrum $L(\omega)$,
+which characterizes the dominant energy dissipation channels.
