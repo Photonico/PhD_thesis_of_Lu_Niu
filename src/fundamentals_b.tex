@@ -12,7 +12,7 @@ When an electromagnetic field is applied, it drives the electrons away from thei
 Therefore, before introducing the dielectric function, we need a language that describes both the applied field and the feedback of matter to that field.
 That language is electrodynamics.
 The present section does not aim to review a complete lecture of electrodynamics.
-Instead, we only extract the ingredients required for the later discussion of the dielectric function, the Kramers--Kronig relations, and the optical properties~\cite{landau2013electrodynamics}.
+Instead, we only extract the ingredients required for the later discussion of the dielectric function, the Kramers--Kronig relations, and the optical properties~\cite{landau2013electrodynamics,griffiths2023introduction}.
 We begin with electromagnetic fields in matter, and then gradually move toward a frequency-dependent response function that can be connected to the electronic structure.
 
 In the present section, we mainly use SI units for the macroscopic electrodynamic equations.
@@ -22,7 +22,7 @@ This choice keeps the structure of the Maxwell equations explicit.
 
 Let us start by the universal structure of the problem.
 When an electromagnetic field enters a medium, it drives charge redistribution and induces currents inside the medium, while these induced sources further modify the field itself.
-Therefore, the optical response of matter should be described within the framework of electrodynamics~\cite{griffiths2023introduction}.
+Therefore, the optical response of matter should be described within the framework of electrodynamics~\cite{landau2013electrodynamics,griffiths2023introduction}.
 
 At this stage, we do not explore how a specific medium responds.
 Instead, we first identify the general field equations that govern electromagnetic dynamics in matter.
@@ -110,7 +110,7 @@ Under this condition, equation~\eqref{maxwell_equations_in_matter} shows that th
 but how the medium develops polarization under the applied electric field.
 Once the relation between $\vec{P}(\vec{r},t)$ and $\vec{E}(\vec{r},t)$ is specified, the electromagnetic response becomes well defined.
 This is precisely the point where macroscopic electrodynamics meets microscopic electronic structure,
-and it also provides the starting point for introducing the dielectric function\cite{landau2013electrodynamics, bernasconi2011first}.
+and it also provides the starting point for introducing the dielectric function~\cite{landau2013electrodynamics,lima2022usefulness,bernasconi2011first}.
 
 \subsection{Polarization, electric displacement, and constitutive relations}
 
@@ -242,7 +242,7 @@ and anisotropy enters through the difference among these components.
 
 For the present work, this directional dependence plays a central role~\cite{slavich2024exploring}.
 We later compare the optical response within the structural plane and perpendicular to that plane.
-Therefore, it is convenient to introduce the in-plane dielectric function $\varepsilon_{\varparallel}(\omega)$ and the out-of-plane dielectric function $\varepsilon_{\perp}(\omega)$~\cite{nye1985physical}:
+Therefore, it is convenient to introduce the in-plane dielectric function $\varepsilon_{\varparallel}(\omega)$ and the out-of-plane dielectric function $\varepsilon_{\perp}(\omega)$~\cite{nye1985physical,guo2021complete}:
 
 \begin{equation}
     \varepsilon(\omega) = \begin{pmatrix}
@@ -255,9 +255,9 @@ Therefore, it is convenient to introduce the in-plane dielectric function $\vare
 
 here, the in-plane dielectric function $\varepsilon_{\varparallel}(\omega)$ describes the response to an electric field within the structural plane,
 while the out-of-plane dielectric function $\varepsilon_{\perp}(\omega)$ describes the response to an electric field normal to that plane.
-This notation directly prepares the comparison between the in-plane and out-of-plane dielectric spectra and optical properties~\cite{guo2021complete}.
+This notation directly prepares the comparison between the in-plane and out-of-plane dielectric spectra and optical properties~\cite{guo2021complete,slavich2024exploring}.
 
-This anisotropy also propagates to other optical quantities derived from the dielectric tensor~\cite{sujith2023large}.
+This anisotropy also propagates to other optical quantities derived from the dielectric tensor~\cite{sujith2023large,slavich2024exploring}.
 Once the dielectric response changes with direction, the refractive index, the extinction coefficient, the reflectivity, and the energy-loss spectrum also inherit that directional dependence.
 Therefore, the tensor structure does not only refine the notation.
 It also determines how we organize and interpret the later optical results.
@@ -279,7 +279,7 @@ the electric susceptibility tensor $\chi_{\alpha\beta}(\omega)$,
 and the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$.
 These quantities complete Maxwell electrodynamics in matter.
 We now recover the response function that electronic structure calculations actually provide,
-which is the frequency-dependent dielectric function~\cite{wooten2013optical, onida2002electronic}.
+which is the frequency-dependent dielectric function~\cite{onida2002electronic,gajdovs2006linear,ambrosch2006linear}.
 
 In this section, we start by expressing the polarization response in the language of electric susceptibility and the complex dielectric function.
 We then identify the microscopic electronic processes that generate its imaginary part.
@@ -347,15 +347,15 @@ the refractive index $n(\omega)$,
 the extinction coefficient $k(\omega)$,
 the reflectivity $R(\omega)$,
 and the energy-loss spectrum $L(\omega)$.
-This complex dielectric function therefore provides a unified framework for the linear optical properties~\cite{djurivsic2002progress}.
+This complex dielectric function therefore provides a unified framework for the linear optical properties~\cite{onida2002electronic,djurivsic2002progress,niu2024electronic}.
 
-These two parts of the dielectric function together determine the optical response~\cite{wooten2013optical, born2013principles,dressel2002electrodynamics,fox2010optical}.
+These two parts of the dielectric function together determine the optical response~\cite{wooten2013optical,born2013principles,dressel2002electrodynamics,fox2010optical}.
 In practical calculations, the imaginary part $\varepsilon_2(\omega)$ comes from electronic excitations,
 whereas the real part $\varepsilon_1(\omega)$ follows from causality.
 
 For the xene systems considered in the present work,
 we accordingly resolve the dielectric response for the in-plane and out-of-plane channels for separate analysis.
-In anisotropic xenes, the response along the structural plane usually differs substantially from that along the perpendicular direction~\cite{marinopoulos2002anisotropy}.
+In anisotropic xenes, the response along the structural plane usually differs substantially from that along the perpendicular direction~\cite{marinopoulos2002anisotropy,huang2023optical,slavich2024exploring,cheng2025two}.
 
 At this stage, we arrive at the complex dielectric function as the central response quantity of the present chapter.
 Here, microscopic electronic processes generate the imaginary part $\varepsilon_2(\omega)$,
@@ -376,7 +376,7 @@ and the medium absorbs this energy through a dissipative response~\cite{toudert2
 To describe this dissipative response quantitatively,
 we now introduce the optical conductivity tensor $\sigma_{\alpha\beta}(\omega)$ within linear response theory~\cite{kubo1957statistical}.
 
-Firstly, we express the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ through the optical conductivity tensor $\sigma_{\alpha\beta}(\omega)$ as:
+Firstly, we express the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ through the optical conductivity tensor $\sigma_{\alpha\beta}(\omega)$ as~\cite{kubo1957statistical,onida2002electronic}:
 
 \begin{equation}
     \varepsilon_{\alpha\beta}(\omega)
@@ -634,7 +634,7 @@ whereas the imaginary part $\varepsilon_{2,\lambda\lambda}(\omega)$ is an odd fu
 \label{parity_of_dielectric_components}
 \end{equation}
 
-At this stage, the previous discussion has established the analytic structure of the dielectric response in frequency space~\cite{leon2026momentum}.
+At this stage, the previous discussion has established the analytic structure of the dielectric response in frequency space~\cite{nussenzveig1972causality,franta2020symmetry,leon2026momentum}.
 We next derive the Kramers--Kronig relations between its real and imaginary parts.
 
 \subsection{Kramers--Kronig relations for the dielectric function}
@@ -735,7 +735,7 @@ This static limit shows that directional absorption produces directional dielect
 Consequently, the static limit reveals the physical interpretation of the Kramers--Kronig relations.
 The imaginary part characterizes the spectral weight generated by electronic excitations, 
 whereas the real part determines the corresponding zero-frequency dielectric response.
-Therefore, the complex dielectric function provides the complete information required for the subsequent optical quantities~\cite{vandenberghe2023two}.
+Therefore, the complex dielectric function provides the complete information required for the subsequent optical quantities~\cite{lucarini2005kramers,vandenberghe2023two}.
 
 At this stage, we arrive at the static physical interpretation of the Kramers--Kronig relations for anisotropic media.
 We next use the same dielectric response to derive the absorption coefficient, refractive index, extinction coefficient, reflectivity, and energy-loss spectrum.
@@ -763,6 +763,7 @@ which characterizes the dominant energy dissipation channels.
 
 In what follows, we present the general relations that
 connect these quantities to the complex dielectric function $\varepsilon(\omega)$~\cite{wooten2013optical,born2013principles,dressel2002electrodynamics,fox2010optical}.
+Recent first-principles studies have also analyzed the dielectric response together with the derived optical quantities in low-dimensional materials~\cite{niu2024electronic,khan2025insight,albert2024optical,huang2023optical,cheng2025two}.
 Afterwards, we analyze the in-plane and out-of-plane optical response of the present systems.
 
 \subsection{Absorption coefficient}
@@ -833,7 +834,7 @@ response quantity derived from the dielectric function.
 Here, the imaginary part $\varepsilon_{2,\lambda\lambda}(\omega)$ provides the spectral weight generated by electronic transitions,
 whereas the real part $\varepsilon_{1,\lambda\lambda}(\omega)$ modifies the magnitude and energy dependence of the resulting attenuation.
 
-The following figure presents the calculated absorption coefficient spectra of the present systems for the in-plane and out-of-plane directions. % cite my third project here
+The following figure presents the calculated absorption coefficient spectra of the present systems for the in-plane and out-of-plane directions~\cite{niu2024electronic,khan2025insight,huang2023optical,suk2024ultrafast,cheng2025two,tang2025unveiling,kim2024hyperspectral}:
 
 \begin{figure}[htbp]
     \centering
@@ -856,7 +857,7 @@ As the photon energy increases,broader peaks emerge in the absorption spectrum.
 These peaks indicate energy ranges where interband transitions contribute more strongly to the absorption process\cite{elbanna20232d}.
 
 Therefore, the absorption coefficient reflects the directional excitation spectrum of the medium.
-It also provides a direct measure of directional optical attenuation~\cite{zhang2024advanced}.
+It also provides a direct measure of directional optical attenuation~\cite{niu2024electronic,khan2025insight,zhang2024advanced,elbanna20232d}.
 
 Consequently, the absorption coefficient characterizes the rate of attenuation of incident light in the medium.
 We next turn to the complex refractive index and determine the refractive index and extinction coefficient.
@@ -868,10 +869,10 @@ We now continue this description of light propagation in the medium by introduci
 The refractive index determines the phase evolution,
 whereas the extinction coefficient describes the attenuation of the wave amplitude.
 Starting from the dielectric response,
-we derive explicit expressions for $n_{\lambda}(\omega)$ and $k_{\lambda}(\omega)$~\cite{wooten2013optical,born2013principles,cheng2025two,kim2024hyperspectral}.
+we derive explicit expressions for $n_{\lambda}(\omega)$ and $k_{\lambda}(\omega)$~\cite{wooten2013optical,born2013principles,dressel2002electrodynamics,fox2010optical}.
 
 For a monochromatic wave propagating along the principal direction $\lambda$,
-we first represent the electric field as~\cite{fox2010optical,born2013principles,politano2023spectroscopic}:
+we first represent the electric field as~\cite{politano2023spectroscopic}:
 
 \begin{equation}
 \begin{aligned}
@@ -895,7 +896,7 @@ In equation~\eqref{monochromatic_wave_with_complex_refractive_index},
 the refractive index $n_{\lambda}(\omega)$ determines the phase evolution of the electromagnetic wave,
 whereas the extinction coefficient $k_{\lambda}(\omega)$ describes the exponential attenuation of its amplitude in the medium.
 
-We then write the general relation between the complex refractive index $N_{\lambda}(\omega)$, dielectric function $\varepsilon_{\lambda\lambda}(\omega)$, and magnetic permeability $\mu_{\lambda\lambda}(\omega)$ as~\cite{wooten2013optical,dressel2002electrodynamics,politano2023spectroscopic}:
+We then write the general relation between the complex refractive index $N_{\lambda}(\omega)$, dielectric function $\varepsilon_{\lambda\lambda}(\omega)$, and magnetic permeability $\mu_{\lambda\lambda}(\omega)$ as~\cite{wooten2013optical,born2013principles,dressel2002electrodynamics,politano2023spectroscopic}:
 
 \begin{equation}
     N_{\lambda}^{2}(\omega)
@@ -918,7 +919,7 @@ We substitute equation~\eqref{direction_resolved_complex_dielectric_function}
 and the definition of the complex refractive index $N_{\lambda}(\omega)$ in equation~\eqref{complex_refractive_index_for_absorption_coefficient}
 into equation~\eqref{nonmagnetic_refractive_index_dielectric_relation},
 and then separate the real and imaginary parts.
-We therefore derive the coupled relations~\cite{wooten2013optical,dressel2002electrodynamics,fox2010optical,cheng2025two,kim2024hyperspectral}:
+We therefore derive the coupled relations~\cite{wooten2013optical,dressel2002electrodynamics,fox2010optical}:
 
 \begin{equation}
 \begin{aligned}
@@ -953,7 +954,7 @@ Similarly, we express the extinction coefficient $k_{\lambda}(\omega)$ as:
 \label{extinction_coefficient_from_dielectric_response}
 \end{equation}
 
-With these expressions, we present the calculated refractive index spectra of $\alpha$-Beryllene and $\beta$-Beryllene~\cite{tang2025unveiling,huang2023optical,suk2024ultrafast,cheng2025two}: % cite my third project
+With these expressions, we present the calculated refractive index spectra of $\alpha$-Beryllene and $\beta$-Beryllene~\cite{niu2024electronic,khan2025insight,huang2023optical,suk2024ultrafast,cheng2025two,tang2025unveiling,kim2024hyperspectral}:
 
 \begin{figure}[htbp]
     \centering
@@ -965,10 +966,10 @@ With these expressions, we present the calculated refractive index spectra of $\
 The refractive index spectra demonstrate distinct directional and structural contrasts.
 In the in-plane channel, $\beta$-Beryllene develops two pronounced enhancements in the infrared and near-ultraviolet regions, with a minimum in the visible range, whereas $\alpha$-Beryllene varies more smoothly over the same interval.
 In the out-of-plane channel, $\beta$-Beryllene remains stronger than $\alpha$-Beryllene over the infrared to near-ultraviolet range.
-These trends indicate that the phase response depends on both the optical direction and the crystal structure of the medium~\cite{huang2023optical,cheng2025two}.
+These trends indicate that the phase response depends on both the optical direction and the crystal structure of the medium~\cite{niu2024electronic,khan2025insight,huang2023optical,suk2024ultrafast,cheng2025two,kim2024hyperspectral}.
 
 We next present the extinction coefficient spectra,
-which follows the absorptive part of the dielectric response more directly~\cite{wooten2013optical,dressel2002electrodynamics,politano2023spectroscopic}:
+which follows the absorptive part of the dielectric response more directly~\cite{wooten2013optical,dressel2002electrodynamics,fox2010optical}:
 
 \begin{figure}[htbp]
     \centering
@@ -981,10 +982,10 @@ The extinction coefficient spectra demonstrate a similar directional contrast.
 In the in-plane channel, $\beta$-Beryllene develops strong peaks in the infrared and near-ultraviolet regions, separated by a deep trough,
 whereas $\alpha$-Beryllene again varies more smoothly.
 In the out-of-plane channel, $\beta$-Beryllene remains stronger over the low-energy range and then decreases rapidly on approaching the near-ultraviolet region.
-This behavior shows that amplitude attenuation also depends on both the optical direction and the crystal structure of the medium~\cite{suk2024ultrafast,cheng2025two,tang2025unveiling}.
+This behavior shows that amplitude attenuation also depends on both the optical direction and the crystal structure of the medium~\cite{niu2024electronic,khan2025insight,huang2023optical,suk2024ultrafast,cheng2025two,tang2025unveiling,kim2024hyperspectral}.
 
 Consequently, the refractive index $n_{\lambda}(\omega)$ and extinction coefficient $k_{\lambda}(\omega)$ characterize phase propagation and amplitude decay in the medium.
-Meanwhile, they connect the dielectric function to the interface response through the Fresnel equations~\cite{wooten2013optical,dressel2002electrodynamics,politano2023spectroscopic}.
+Meanwhile, they connect the dielectric function to the interface response through the Fresnel equations~\cite{wooten2013optical,born2013principles,dressel2002electrodynamics}.
 We next use them to determine the reflectivity.
 
 \subsection{Reflectivity}
@@ -992,7 +993,6 @@ We next use them to determine the reflectivity.
 The previous subsection determined the refractive index $n_{\lambda}(\omega)$ and extinction coefficient $k_{\lambda}(\omega)$,
 which characterize the phase propagation and amplitude attenuation in the medium.
 We now turn from propagation inside the medium to reflection at its surface.
-It characterizes the fraction of incident electromagnetic energy reflected at the interface.
 
 The reflectivity $R_{\lambda}(\omega)$ characterizes the fraction of incident electromagnetic energy reflected at the interface.
 We then describe it through the Fresnel coefficient at normal incidence~\cite{born2013principles,wooten2013optical,dressel2002electrodynamics,fox2010optical}.
@@ -1031,7 +1031,7 @@ whereas the extinction coefficient $k_{\lambda}(\omega)$ represents the dissipat
 These two quantities together determine the reflected amplitude at the surface.
 
 We next express the reflectivity $R_{\lambda}(\omega)$ as the reflected power ratio.
-It equals the squared modulus of the amplitude reflection coefficient~\cite{born2013principles,dressel2002electrodynamics}:
+It equals the squared modulus of the amplitude reflection coefficient~\cite{wooten2013optical,born2013principles,dressel2002electrodynamics}:
 
 \begin{equation}
     R_{\lambda}(\omega)
@@ -1070,7 +1070,7 @@ In the in-plane channel, $\beta$-Beryllene exhibits strong reflection in the low
 whereas $\alpha$-Beryllene again varies more smoothly with a broad intermediate-energy feature.
 In the out-of-plane channel, $\beta$-Beryllene remains stronger over the low-energy range and then develops a series of rapid oscillations toward higher photon energies,
 while $\alpha$-Beryllene shows pronounced peaks in the ultraviolet region.
-Optical dissipation strongly influences the reflectivity spectra, whereas the refractive index $n_{\lambda}(\omega)$ further modulates them\cite{chahal2023beryllene,huang2023optical,suk2024ultrafast,cheng2025two,tang2025unveiling}.
+Optical dissipation strongly influences the reflectivity spectra, whereas the refractive index $n_{\lambda}(\omega)$ further modulates them~\cite{niu2024electronic,khan2025insight,albert2024optical,huang2023optical,suk2024ultrafast,cheng2025two,tang2025unveiling}.
 
 Consequently, the reflectivity $R_{\lambda}(\omega)$ characterizes the surface reflection of the medium.
 We arrive at a direct optical quantity derived from the complex refractive index $N_{\lambda}(\omega)$.
@@ -1078,4 +1078,4 @@ We next turn to the energy-loss spectrum and describe the energy dissipation enc
 
 \subsection{Energy-loss spectrum}
 
-
+test

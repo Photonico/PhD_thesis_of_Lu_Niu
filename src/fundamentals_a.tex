@@ -315,7 +315,7 @@ After truncating each one-particle space to a finite basis of size $d$, the many
 \end{equation}
 
 This complexity is often called the curse of dimensionality~\cite{alhambra2023quantum}.
-It motivates approximate methods such as Hartree--Fock theory and density functional theory~\cite{ pribram2015dft}.
+It motivates approximate methods such as Hartree--Fock theory and density functional theory~\cite{pribram2015dft,jones2015density}.
 We will return to these methods in later sections.
 
 When electron interactions are completely disregarded, the problem simplifies to $N$ independent single-electron problems.
@@ -415,7 +415,7 @@ This form is particularly convenient for discussing conserved quantities and sym
 
 Having seen that any local one-body observable can be written as an integral over a single function,
 we now introduce that central quantity.
-The one-body density contains all the information needed to compute one-particle expectation values and serves as the fundamental variable in density functional theory~\cite{maitra2016perspective}.
+The one-body density contains all the information needed to compute one-particle expectation values and serves as the fundamental variable in density functional theory~\cite{hohenberg1964inhomogeneous,jones2015density,maitra2016perspective}.
 In what follows, we review its precise definition:
 
 \begin{equation}
@@ -710,7 +710,7 @@ Next, recall the general expression for an observable in a many-body system: equ
 \end{equation}
 
 We can find that this integral naturally factors into two components: the one-body operator kernel $\Omega_1(x_1)$,
-and the corresponding one-body density~\cite{mazziotti2012two}:
+and the corresponding one-body density~\cite{engel2011density,mazziotti2012two}:
 
 \begin{equation}
     n(x_1)=N\int\mathrm{d}x_2\cdots\mathrm{d}x_N\Psi^*(x_1,x_2,\cdots,x_N)\Psi(x_1,x_2,\cdots,x_N)
@@ -1437,7 +1437,7 @@ and\eqref{density_potential_map}, we finally arrive at a one-to-one corresponden
 \label{hk_correspondence_v_n_psi}
 \end{equation}
 
-The two previous equations~\eqref{density_potential_map} and~\eqref{hk_correspondence_v_n_psi} summarize the content of the Hohenberg--Kohn theorem~\cite{burke2012perspective}.
+The two previous equations~\eqref{density_potential_map} and~\eqref{hk_correspondence_v_n_psi} summarize the content of the Hohenberg--Kohn theorem~\cite{hohenberg1964inhomogeneous,burke2012perspective}.
 For a fixed form of interaction and a non-degenerate ground-state, the ground-state density $n(\vec{r}\,)$ is in bijection with the equivalence class of the external potential $\left[v_\mathrm{ext}(\vec{r}\,)\right]$ up to an additive constant. 
 Consequently, the ground-state density uniquely determines the hamiltonian and the ground-state wave function up to an overall phase,
 and any ground-state observable is, in principle, a unique functional of $n(\vec{r}\,)$.
@@ -1737,7 +1737,7 @@ and the corresponding kinetic energy density reads:
 
 Within the local density approximation,
 we apply this homogeneous result locally by replacing $n$ with $n(\vec{r}\,)$ and integrating over space.
-Accordingly, this yields the Thomas--Fermi kinetic energy functional~\cite{mi2023orbital}:
+Accordingly, this yields the Thomas--Fermi kinetic energy functional~\cite{thomas1927calculation,fermi1927metodo,mi2023orbital}:
 
 \begin{equation}
     T_\mathrm{TF}[n] = C_1\int\dif{\vec{r}}\,n(\vec{r}\,)^{\frac{5}{3}}
@@ -1753,7 +1753,7 @@ with the Thomas--Fermi constant:
 
 This expression holds for a spin-unpolarized system.
 
-Therefore, we arrive at the full Thomas--Fermi energy functional as a functional of the electron density~\cite{xu2024recent}.
+Therefore, we arrive at the full Thomas--Fermi energy functional as a functional of the electron density~\cite{garcia2007efficient,xu2024recent}.
 The nucleus-nucleus contribution $E_\mathrm{NN}$ is omitted since it does not depend on $n(\vec{r}\,)$.
 
 \begin{equation}
@@ -1902,7 +1902,7 @@ This procedure constitutes the Thomas--Fermi method.
 
 For a many-body system,
 it is instructive to contrast the exact density functional with the Thomas--Fermi approximation.
-In density functional theory, the total energy can be written as a functional of the electron density~\cite{jones2015density}.
+In density functional theory, the total energy can be written as a functional of the electron density~\cite{hohenberg1964inhomogeneous,jones2015density}.
 
 Let us express the exact total energy as a functional of the density:
 
@@ -1983,8 +1983,8 @@ Including the Dirac exchange term, we obtain the Thomas--Fermi Dirac functional:
 The Thomas--Fermi Dirac approximation improves total energies by incorporating an explicit exchange contribution.
 However, the kinetic energy is still treated at the Thomas--Fermi level, which is often insufficient for molecules and solids.
 
-A systematic correction to the kinetic energy can be introduced through a gradient term proposed by von Weizsäcker~\cite{yang1986gradient}.
-The von Weizsäcker kinetic energy functional is defined by:
+A systematic gradient correction to the kinetic energy can be introduced through the von Weizsäcker form~\cite{yang1986gradient}.
+The corresponding von Weizsäcker kinetic energy functional is defined as:
 
 \begin{equation}
     T_\mathrm{vW}[n]\coloneqq \frac{1}{2}\int\dif{\vec{r}}\,\left|\nabla\sqrt{n(\vec{r}\,)}\right|^2
@@ -2406,7 +2406,7 @@ Meanwhile, $v_\mathrm{eff}([n];\vec{r}\,)$ depends on $n(\vec{r}\,)$ through equ
 Therefore, equations~\eqref{KS_effective_potential_definition} and~\eqref{KS_equation} are solved self-consistently.
 
 In this sense, density functional theory is built on the Hohenberg--Kohn theorem.
-It states that the ground-state density uniquely determines the external potential modulo an additive constant~\cite{kohn1999nobel}.
+It states that the ground-state density uniquely determines the external potential modulo an additive constant~\cite{hohenberg1964inhomogeneous,kohn1999nobel}.
 Meanwhile, the density and the external potential are in bijective correspondence:
 
 \begin{equation}
@@ -2977,13 +2977,13 @@ Accordingly, the exchange-correlation functional is written as:
 \label{LDA_exchange_correlation_functional}
 \end{equation}
 
-here, $\varepsilon_\mathrm{xc}^\mathrm{HEG}(n)$ refers to the exchange-correlation energy per electron of the homogeneous electron gas at density $n$~\cite{perdew1992accurate}.
+here, $\varepsilon_\mathrm{xc}^\mathrm{HEG}(n)$ refers to the exchange-correlation energy per electron of the homogeneous electron gas at density $n$~\cite{dirac1930note,perdew1992accurate}.
 
-The local density approximation is simple and computationally efficient~\cite{stampfl1999density}.
+The local density approximation is simple and computationally efficient~\cite{jones2015density,stampfl1999density}.
 For many bulk solids, it already gives a reasonable description.
 However, it neglects the inhomogeneity of the density.
 Therefore, it may become insufficient in systems where the density varies strongly in space,
-for instance in molecules, surfaces, and low-dimensional systems~\cite{li2003insights}.
+for instance in molecules, surfaces, and low-dimensional systems~\cite{martin2020electronic,li2003insights}.
 
 Next, to improve upon the local density approximation,
 we include the gradient of the density.
