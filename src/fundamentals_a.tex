@@ -3004,8 +3004,8 @@ In this case, the exchange-correlation functional depends on both the density an
 
 here, $f(n(\vec{r}\,),\nabla n(\vec{r}\,))$ refers to a semilocal exchange-correlation energy density.
 
-In practical constructions of the exchange part,
-it is convenient to introduce the reduced density gradient:
+In practical treatments of the exchange part,
+the reduced density gradient takes the form:
 
 \begin{equation}
 \left\{\begin{aligned}
@@ -3018,7 +3018,7 @@ it is convenient to introduce the reduced density gradient:
 here, $k_\mathrm{F}(\vec{r}\,)$ refers to the local Fermi wave vector corresponding to the density $n(\vec{r}\,)$,
 and $s(\vec{r}\,)$ measures the local inhomogeneity of the density.
 
-Accordingly, the exchange part of a generalized gradient approximation is often written as:
+Accordingly, the exchange functional in a generalized gradient approximation combines the local-density exchange energy per electron with the exchange enhancement factor:
 
 \begin{equation}
     E_x^\mathrm{GGA}[n]
@@ -3026,22 +3026,20 @@ Accordingly, the exchange part of a generalized gradient approximation is often 
 \label{GGA_exchange_functional_enhancement_factor_form}
 \end{equation}
 
-here, $\varepsilon_x^\mathrm{LDA}(n)$ refers to the local-density exchange energy per electron,
-and $F_x(s)$ refers to the exchange enhancement factor.
-It accounts for the effect of density gradients on the exchange energy.
+here, $\varepsilon_x^\mathrm{LDA}(n)$ denotes the local-density exchange energy per electron,
+and $F_x(s)$ denotes the exchange enhancement factor.
+The factor $F_x(s)$ incorporates density-gradient effects into the exchange energy.
 
-Subsequently, different generalized gradient approximations correspond to different choices of the enhancement factor $F_x(s)$ and of the correlation functional.
+Subsequently, different generalized gradient approximations choose different exchange enhancement factors $F_x(s)$ and different correlation functionals.
 Prominent examples include the Perdew--Wang functional and the Perdew--Burke--Ernzerhof functional.
-These generalized gradient approximations are constructed to satisfy several known exact constraints on the exchange-correlation energy~\cite{perdew1992atoms, perdew1996generalized}.
-Among them, the Perdew--Burke--Ernzerhof functional is one of the most widely used generalized gradient approximations in first-principles calculations of condensed-matter systems.
+These generalized gradient approximations satisfy several known exact constraints on the exchange-correlation energy~\cite{perdew1992atoms, perdew1996generalized}.
+Among them, the Perdew--Burke--Ernzerhof functional remains one of the most widely used generalized gradient approximations in first-principles calculations of condensed-matter systems.
 
 Compared with the local density approximation,
 generalized gradient approximations usually improve equilibrium geometries,
-atomization energies,
-and surface properties.
-However, they may still slightly overestimate lattice constants and underestimate band gaps.
-Nevertheless, because they provide a good balance between computational efficiency and accuracy,
-generalized gradient approximations have become standard exchange-correlation approximations in many practical calculations.
+atomization energies, and surface properties.
+However, they still tend to overestimate lattice constants slightly and underestimate band gaps.
+Meanwhile, their balance between computational efficiency and accuracy keeps generalized gradient approximations in wide use in practical calculations.
 
 \subsection{Hybrid functionals and the Heyd--Scuseria--Ernzerhof functional}
 
@@ -3066,7 +3064,7 @@ the Coulomb interaction is separated into short-range and long-range parts as fo
 
 here, $\omega$ refers to the screening parameter that controls the range separation.
 
-Accordingly, the exchange-correlation functional of the Heyd--Scuseria--Ernzerhof scheme is written as:
+With this range separation, the Heyd--Scuseria--Ernzerhof scheme constructs the exchange-correlation functional as:
 
 \begin{equation}
     E_\mathrm{xc}^\mathrm{HSE}[n]
