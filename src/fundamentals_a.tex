@@ -3045,10 +3045,9 @@ generalized gradient approximations have become standard exchange-correlation ap
 
 \subsection{Hybrid functionals and the Heyd--Scuseria--Ernzerhof functional}
 
-Finally, besides local and semilocal approximations,
-one may further improve the exchange-correlation functional by incorporating a fraction of exact exchange.
-This leads to the class of hybrid functionals.
-Their motivation is that the inclusion of exact Hartree--Fock exchange can partially reduce the self-interaction error and often improves the description of band gaps, reaction barriers, and localized electronic states.
+In addition to local and semilocal approximations,
+hybrid functionals incorporate a fraction of exact exchange into the exchange-correlation functional.
+The exact Hartree--Fock exchange term partially reduces the self-interaction error and often yields more accurate band gaps, reaction barriers, and localized electronic states.
 
 However, in periodic solids,
 the direct use of long-range Hartree--Fock exchange is computationally expensive.
@@ -3091,19 +3090,18 @@ Therefore, only the short-range part of the exchange interaction contains exact 
 while the long-range part is still described by a semilocal approximation.
 
 By restricting exact exchange to the short-range part,
-the Heyd--Scuseria--Ernzerhof functional significantly reduces the computational cost compared with global hybrid functionals.
-At the same time, it usually gives improved band gaps,
-better defect-level positions,
+the Heyd--Scuseria--Ernzerhof functional lowers the computational cost significantly relative to global hybrid functionals.
+Meanwhile, its screened exact exchange often yields more accurate band gaps,
+more reasonable defect-level positions,
 and a more reliable description of localized states in semiconductors and insulators.
-Therefore, it has become one of the most widely used hybrid functionals in first-principles calculations of condensed-matter systems.
+These advantages make the Heyd--Scuseria--Ernzerhof functional one of the most widely used hybrid functionals in first-principles calculations of condensed-matter systems.
 
-Consequently, through the local density approximation,
+Consequently, the local density approximation,
 the generalized gradient approximation,
-and hybrid functionals such as the Heyd--Scuseria--Ernzerhof functional,
-we arrive at a practical hierarchy of exchange-correlation approximations in density functional theory.
-The local density approximation provides the simplest local description.
-The generalized gradient approximation improves it by incorporating the inhomogeneity of the density through its gradient.
-Hybrid functionals go one step further by mixing in a fraction of exact exchange.
+and hybrid functionals such as the Heyd--Scuseria--Ernzerhof functional form a practical hierarchy of exchange-correlation approximations in density functional theory.
+The local density approximation gives the simplest local description of exchange and correlation.
+The generalized gradient approximation includes the density gradient and captures density inhomogeneity.
+Hybrid functionals incorporate a fraction of exact exchange.
 Therefore, for the density functional theory framework used in the present work,
 we arrive at the essential exchange-correlation approximations required in practical first-principles calculations.
 
