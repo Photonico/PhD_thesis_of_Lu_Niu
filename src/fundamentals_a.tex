@@ -5,13 +5,14 @@
 
 % opening paragraph
 % Imagine that we are watching a microscopic play, with electrons and atoms as the actors.
-Imagine that we are watching the evolution of electrons and atoms through a microscope, as a microscopic performance.
+Imagine that we are watching the evolution of electrons and atoms as a microscopic performance.
 You blink, and suddenly the stage configuration has shifted.
 Something has changed. But how do we describe this evolution in physical language?
 
 In classical physics, we started with Newton's laws to describe motion.
-Later, we developed the lagrangian and hamiltonian mechanics to describe from the perspective of degrees of freedom, symmetries, and conservation laws.
-The twentieth century then brought the quantum revolution, establishing quantum mechanics as the fundamental framework for describing microscopic physics. In this new framework, that role is played by the Schrödinger equation.
+Later, Lagrangian and Hamiltonian mechanics provided a different framework for describing physics from the perspective of degrees of freedom, symmetries, and conservation laws.
+The twentieth century then brought the quantum revolution, establishing quantum mechanics as the fundamental framework for describing microscopic physics.
+In this new framework, the Schrödinger equation plays the central role.
 
 \subsection{Time-dependent Schrödinger equation}
 
@@ -142,8 +143,7 @@ For the one-parameter family $\hat{U}(\tau)$, the identity element, $\hat{I}$, c
 
 In this sense, these relations mean that time translation can be composed consistently, and that the evolution can always be undone by evolving backward.
 
-Unitarity also guarantees probability conservation.
-If the state is normalized at time $t_0$, it remains normalized for all later times:
+Unitarity also guarantees probability conservation:
 
 \begin{equation}
 \begin{aligned}
@@ -188,7 +188,7 @@ In this case, its corresponding time-evolution operator can be written as a time
 \label{time-ordering_operator}
 \end{equation}
 
-here $\hat{T}$ denotes the time-ordering operator.
+here, $\hat{T}$ denotes the time-ordering operator.
 It orders products of $\hat{H}(t)$ such that operators at later times appear to the left.
 This is required when the hamiltonians at different times do not commute:
 
@@ -271,9 +271,9 @@ For the fixed nuclear positions, the stationary electronic states satisfy the ei
 \label{many-body_hamiltonian_argument}
 \end{equation}
 
-where $N$ denotes the number of electrons, and $x_i\coloneqq(\vec{r}_i,\sigma_i)$.
+here, $N$ denotes the number of electrons, and $x_i\coloneqq(\vec{r}_i,\sigma_i)$.
 
-In practice, due to the significantly greater mass of nuclei compared to electrons, we commonly adopt the clamped-nuclei approximation.
+In practice, due to the significantly greater mass of nuclei compared to electrons, we commonly adopt the clamped-nuclei approximation within the Born-Oppenheimer framework.
 For fixed nuclear positions, the nucleus-nucleus repulsion contributes only an additive constant, $\hat{V}_\mathrm{NN}(\{\vec{R}_I\})$.
 The corresponding hamiltonian can then be rewritten as:
 
@@ -290,7 +290,7 @@ The corresponding hamiltonian can then be rewritten as:
 \label{clamped_nuclei_many_body_hamiltonian}
 \end{equation}
 
-where $E_\mathrm{NN}\coloneqq \hat{V}_\mathrm{NN}(\{\vec{R}_I\})$.
+here, $E_\mathrm{NN}\coloneqq \hat{V}_\mathrm{NN}(\{\vec{R}_I\})$.
 
 At this stage, it is convenient to collect all one-body terms acting on the electrons into an external potential.
 We define the external potential as:
@@ -330,7 +330,7 @@ If we further ignore fermionic antisymmetry, the many-body wave function reduces
 \label{independent_body_function}
 \end{equation}
 
-where $\lambda=\{n_1,n_2,\cdots,n_N\}$ labels the states.
+here, $\lambda=\{n_1,n_2,\cdots,n_N\}$ labels the states.
 
 In the coordinate representation, we can represent the antisymmetric wave function as a Slater determinant:
 
@@ -491,7 +491,7 @@ The Heisenberg-picture current operator can now be introduced:
 \label{heisenberg-picture_current_operator}
 \end{equation}
 
-where $\hat{\vec{p}}_i$ is the momentum operator of particle $i$. A direct commutator calculation then yields
+here, $\hat{\vec{p}}_i$ is the momentum operator of particle $i$. A direct commutator calculation then yields
 
 \begin{equation}
     \frac{\mathrm{i}}{\hbar}\left[\hat{T}_\mathrm{e},\hat n_\mathrm{H}(\vec{r},t)\right]
@@ -547,7 +547,11 @@ In the grand canonical ensemble, the expectation value of any observable operato
 \label{grand_canonical}
 \end{equation}
 
-where the summation runs over all quantum states labeled by $\alpha$. Here, $\Psi_{\alpha}$ represents the many-body quantum states of the system, characterized by their energies $E_{\alpha}$ and particle numbers $N_{\alpha}$. The inverse temperature $\beta$ is defined as $\beta = 1/(k_B T)$, with $T$ being the temperature and $k_B$ the Boltzmann constant. The chemical potential $\mu$ controls particle exchange between the system and its reservoir. The partition function $\mathcal{Z}$ serves as a normalization factor and is defined as:
+here, the summation runs over all quantum states labeled by $\alpha$,
+and $\Psi_{\alpha}$ represents the many-body quantum states of the system, characterized by their energies $E_{\alpha}$ and particle numbers $N_{\alpha}$.
+The inverse temperature $\beta$ is defined as $\beta = 1/(k_B T)$, with $T$ being the temperature and $k_B$ the Boltzmann constant.
+The chemical potential $\mu$ controls particle exchange between the system and its reservoir.
+Therefore, the partition function $\mathcal{Z}$ serves as a normalization factor and is defined as:
 
 \begin{equation}
     \mathcal{Z} = \sum_{\alpha} \mathrm{e}^{-\beta(E_{\alpha}-\mu N_{\alpha})}
@@ -657,7 +661,7 @@ Accordingly, one may view the spectrum and the eigenstates as depending on the e
 \label{spectrum_mapping_from_external_potential}
 \end{equation}
 
-where $E_n\left[v_\mathrm{ext}\right]$ denotes the energy eigenvalue associated with the stationary state $\ket{\Psi_n\left[v_\mathrm{ext}\right]}$, namely:
+here, $E_n\left[v_\mathrm{ext}\right]$ denotes the energy eigenvalue associated with the stationary state $\ket{\Psi_n\left[v_\mathrm{ext}\right]}$, namely:
 
 \begin{equation}
     E_n\left[v_\mathrm{ext}(\vec{r}\,)\right] \coloneqq
@@ -728,7 +732,7 @@ Accordingly, the ground-state expectation value of the one-body operator can be 
 \label{expectation_one_body_operator}
 \end{equation}
 
-here $x$ denotes the one-particle coordinate.
+here, $x$ denotes the one-particle coordinate.
 If $x$ refers to the spatial coordinate only, we write $x=\vec{r}$ and denote the usual spatial density as $n(\vec{r}\,)$.
 More generally, in many-body notation $x$ denotes a combined space-spin coordinate, and we write $x=(\vec{r},\sigma)$.
 In this case, $n(x)=n(\vec{r},\sigma)$ is the spin-resolved one-body density.
@@ -1033,7 +1037,7 @@ This leads to the Thomas--Fermi kinetic energy functional:
 \label{tf_functional}
 \end{equation}
 
-where $C=\frac{3}{10}(3\pi^2)^{2/3}$ for a spin-degenerate electron gas in atomic units.
+here, $C=\frac{3}{10}(3\pi^2)^{2/3}$ for a spin-degenerate electron gas in atomic units.
 This form of kinetic energy functional was introduced independently in the seminal works by L.~H.~Thomas~\cite{thomas1927calculation} and E.~Fermi~\cite{fermi1927metodo}.
 
 Moreover, to account for inhomogeneity effects beyond the purely local Thomas--Fermi form, one often adds the von Weizsäcker gradient correction to the kinetic energy functional.
@@ -1312,7 +1316,7 @@ Moreover, the wave function is directly related to the density through the stand
 \label{density_function}
 \end{equation}
 
-where $\Psi$ is normalized and $N$ is the number of particles.
+here, $\Psi$ is normalized and $N$ is the number of particles.
 This means that the external potential $v_\mathrm{ext}$ induces a mapping to the ground-state density $n(\vec r\,)$, which this subsection further clarifies the character of this mapping.
 
 The strategy to establish this relation is also a reductio ad absurdum argument.
@@ -1351,7 +1355,7 @@ Therefore, using $\ket{\Psi_0^{(2)}}$ as a trial state for $\hat{H}_1$ and using
 \label{Rayleigh-Ritz_principle_application}
 \end{equation}
 
-where the strict inequalities follow from the assumption that the ground-state is non-degenerate and that $\ket{\Psi_0^{(1)}}\neq\ket{\Psi_0^{(2)}}$.
+here, the strict inequalities follow from the assumption that the ground-state is non-degenerate and that $\ket{\Psi_0^{(1)}}\neq\ket{\Psi_0^{(2)}}$.
 
 Let us rewrite the variational bound for $E_1$.
 Recall the eigenvalue equation~\eqref{difference_eigen} and the definition of the hamiltonian difference in equation~\eqref{energy_difference}.
@@ -1710,7 +1714,7 @@ Using the electron-electron Coulomb repulsion~\eqref{electrons_Coulomb}, we intr
 \end{aligned}
 \end{equation}
 
-here $E_{\Delta\mathrm{int}}[n]$ collects the nonclassical part of the interaction energy beyond the Hartree term.
+here, $E_{\Delta\mathrm{int}}[n]$ collects the nonclassical part of the interaction energy beyond the Hartree term.
 In the Hartree approximation, we set $E_{\Delta\mathrm{int}}[n]=0$.
 
 We next approximate the interaction energy functional by the classical Coulomb energy associated with the density distribution.
@@ -1726,7 +1730,7 @@ Therefore, we introduce a Hartree approximation at the level of the interaction 
 \label{hartree_interaction_level_energy}
 \end{equation}
 
-here $T[n]$ is the interacting kinetic energy functional evaluated on the minimizing many-body state $\Psi[n]$ that yields the density $n$.
+here, $T[n]$ is the interacting kinetic energy functional evaluated on the minimizing many-body state $\Psi[n]$ that yields the density $n$.
 In other words, this replacement affects only the interaction energy, while the kinetic energy functional remains $T[n]$ at this stage.
 
 We next consider the kinetic energy functional.
@@ -2170,7 +2174,7 @@ and compensating for its effect through a tuned one-body potential $v_\mathrm{au
 \label{BO_hamiltonian_aux}
 \end{equation}
 
-here $\Psi_\mathrm{aux}$ denotes the auxiliary many-body wave function and $E_\mathrm{aux}$ represents the corresponding eigenvalue.
+here, $\Psi_\mathrm{aux}$ denotes the auxiliary many-body wave function and $E_\mathrm{aux}$ represents the corresponding eigenvalue.
 
 The density of the auxiliary system is obtained by integrating out $N-1$ coordinates:
 
@@ -2207,7 +2211,7 @@ The auxiliary density is then expressed in terms of these orbitals as:
 \label{aux_density_orbitals}
 \end{equation}
 
-where $f_l$ denotes the occupation number of the orbital $\varphi^\mathrm{aux}_l$.
+here, $f_l$ denotes the occupation number of the orbital $\varphi^\mathrm{aux}_l$.
 
 At this stage, we do not try to reproduce the full many-body wave function of the interacting system;
 instead, we tune the one-body potential $v_\mathrm{aux}(\vec{r}\,)$ in the auxiliary system so that its density matches the target density:
