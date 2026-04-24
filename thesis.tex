@@ -10,7 +10,6 @@
 \def\department{School of Physics}
 \def\degree{Doctor of Philosophy}
 \def\mydegrees{Doctor of Philosophy}
-% \def\sid{200342291}
 % \def\sid{480446912}   % Lu Niu
 \def\supervisor{Catherine Stampfl}
 \def\assocsupervisora{Oliver James Conquest}
@@ -161,7 +160,7 @@
 %%%% Setup
 \newenvironment{myquote}{\list{}{\leftmargin=6em\rightmargin=6em}\item[]}{\endlist}
 
-%%%% Running head (old)
+%%%% Running head (legacy)
 % \makeatletter
 % \renewcommand{\chaptermark}[1]{\markboth{\parbox[t]{0.95\textwidth}{
 %     \centering\scriptsize\scshape~#1}}{}
@@ -173,7 +172,7 @@
 % \setlength{\headheight}{1.5em}
 % \setlength{\headsep}{1em}
 
-%%%% Running head (for TeX Live 2025)
+%%%% Running head (>= TeX Live 2025)
 \makeatletter
 \newcommand{\runhead}[1]{
   \parbox[t]{0.95\textwidth}{\centering\scriptsize\scshape #1}
