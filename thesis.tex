@@ -105,6 +105,15 @@
 % \@dottedtocline{level}{indent}{numwidth}
 \renewcommand{\l@section}{\@dottedtocline{1}{1em}{2em}}
 \renewcommand{\l@subsection}{\@dottedtocline{2}{2em}{3em}}
+% Use the optional short title in \chapter[short title]{long title}
+\def\@chapter[#1]#2{
+  \refstepcounter{chapter}
+  \typeout{\@chapapp\space\thechapter.}
+  \chaptermark{#1}
+  \addcontentsline{toc}{chapter}{\protect\tocchapter{\chaptername}{\thechapter}{#1}}%
+  \@makechapterhead{#2}
+  \@afterheading
+}
 \makeatother
 
 %%%% Section/subsection references
@@ -139,19 +148,41 @@
 \newcommand{\bepsilon}{{\boldsymbol\epsilon}}
 
 %%%% Setup
-\newenvironment{myquote}{\list{}{\leftmargin=2.5cm\rightmargin=2.5cm}\item[]}{\endlist}
+\newenvironment{myquote}{\list{}{\leftmargin=6em\rightmargin=6em}\item[]}{\endlist}
 
-%%%% Running head
+%%%% Running head (old)
+% \makeatletter
+% \renewcommand{\chaptermark}[1]{\markboth{\parbox[t]{0.95\textwidth}{
+%     \centering\scriptsize\scshape~#1}}{}
+% }
+% \renewcommand{\sectionmark}[1]{\markright{\parbox[t]{0.95\textwidth}{
+%     \centering\scriptsize\scshape\thesection~#1}}
+% }
+% \makeatother
+% \setlength{\headheight}{1.5em}
+% \setlength{\headsep}{1em}
+
+%%%% Running head (for TeX Live 2025)
 \makeatletter
-\renewcommand{\chaptermark}[1]{\markboth{\parbox[t]{0.95\textwidth}{
-    \centering\scriptsize\scshape~#1}}{}
+\newcommand{\runhead}[1]{
+  \parbox[t]{0.95\textwidth}{\centering\scriptsize\scshape #1}
 }
-\renewcommand{\sectionmark}[1]{\markright{\parbox[t]{0.95\textwidth}{
-    \centering\scriptsize\scshape\thesection~#1}}
+\renewcommand{\chaptermark}[1]{
+  \InsertMark{2e-left}{\runhead{#1}}
 }
+\renewcommand{\sectionmark}[1]{
+  \InsertMark{2e-right}{\runhead{\thesection~#1}}
+}
+\def\ps@headings{
+  \let\@oddfoot\@empty
+  \let\@evenfoot\@empty
+  \def\@evenhead{\normalfont\scriptsize\rlap{\thepage}\hfil\LastMark{2e-left}\hfil}%
+  \def\@oddhead{\normalfont\scriptsize\hfil\FirstMark{2e-right}\hfil\llap{\thepage}}%
+}
+\pagestyle{headings}
 \makeatother
-\setlength{\headheight}{1em}
-\setlength{\headsep}{1.5em}
+\setlength{\headheight}{1.5em}
+\setlength{\headsep}{1em}
 
 %%%% References
 \usepackage[
@@ -198,6 +229,10 @@
   {0.5em}
   {}
 
+% %%%% Force section titles into odd-page running heads
+% \let\oldsection\section
+% \renewcommand{\section}[1]{\oldsection{#1}\sectionmark{#1}}
+
 %%%% Start
 % \input{src/glossary.tex}
 % \makeglossaries
@@ -242,14 +277,9 @@
 \input{src/project_1.tex}
 \input{src/project_2.tex}
 \input{src/project_3.tex}
-% \input{src/fundamentals_c.tex}
 % \input{src/methods.tex}
 % \input{src/results.tex}
 % \input{src/conclusion.tex}
-
-% \input{src/pub1_G-BC.tex}
-% \input{src/pub2_o-B14.tex}
-% \input{src/pub3_Beryllene.tex}
 
 %% Bibliography
 % \bibliographystyle{style/mybibstyle}
