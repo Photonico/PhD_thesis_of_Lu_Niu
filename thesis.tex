@@ -55,8 +55,8 @@
 % \usepackage{textcase}
 %% font family settings (requires XeLaTeX or LuaLaTeX)
 % \usepackage{fontspec}
-% \setmainfont{TeX Gyre Schola}
 % \usepackage{unicode-math}
+% \setmainfont{TeX Gyre Schola}
 % \setmathfont{TeX Gyre Schola Math}
 
 %%%% Avoid starting a page with a displayed equation
@@ -90,23 +90,8 @@
 
 %%%% Contents settings
 \makeatletter
-\newcommand{\tocchapwidth}{5em}
-\renewcommand{\tocchapter}[3]{%
-  \@ifempty{#2}{#3}{\makebox[\tocchapwidth][l]{#1~#2}#3}%
-}
-\renewcommand{\l@chapter}[2]{%
-  \par\addvspace{0.5em plus 0.5em}%
-  \begingroup
-    \bfseries
-    \parindent=0pt
-    \leftskip=0pt
-    \rightskip=\@pnumwidth plus 4em
-    \parfillskip=-\@pnumwidth
-    \hangindent=\tocchapwidth
-    \hangafter=1
-    #1\nobreak\hfill\hbox to\@pnumwidth{\hss #2}\par
-  \endgroup
-}
+\providecommand{\@dotsep}{4.5}
+\renewcommand{\tocchapter}[3]{\indentlabel{\@ifnotempty{#2}{#1~#2\space}}#3}
 \renewcommand{\l@section}{\@dottedtocline{1}{1em}{2em}}
 \renewcommand{\l@subsection}{\@dottedtocline{2}{2em}{3em}}
 \def\@chapter[#1]#2{%
