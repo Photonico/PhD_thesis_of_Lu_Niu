@@ -4,7 +4,7 @@
 
 %%%% Commands
 \newcommand{\suptitle}{Exploring Quantum Properties of Light-Element Xenes: DFT Studies of the Electronic Structure and Optical Response for Boron and Beryllium Allotropes}
-\newcommand{\myname}{Lu Niu}  % test
+\newcommand{\myname}{Lu Niu}
 
 %%%% Personal configuration
 \def\department{School of Physics}
@@ -15,7 +15,7 @@
 \def\supervisor{Catherine Stampfl}
 \def\assocsupervisora{Oliver James Conquest}
 \def\assocsupervisorb{Carla Verdi}
-\documentclass[logo]{style/usydthesis}
+\documentclass[12pt,logo]{style/usydthesis}
 
 % Remove the optional 'logo' argument to remove the logo from the title page
 
@@ -150,8 +150,8 @@
     \centering\scriptsize\scshape\thesection~#1}}
 }
 \makeatother
-\setlength{\headheight}{1.5em}
-\setlength{\headsep}{1em}
+\setlength{\headheight}{1em}
+\setlength{\headsep}{1.5em}
 
 %%%% References
 \usepackage[
@@ -170,20 +170,19 @@
 % \makeindex
 
 %%%% Page size settings
-\oddsidemargin=0.2in
-\evensidemargin=0.0in
-\textwidth=6.1in
+\oddsidemargin=1.0em
+\evensidemargin=0.0em
+\textwidth=37em
 
 %\textheight=22cm
 %\topmargin=-1cm
 
 %%%% Title configuration
-% Chapter
-\titleformat{\chapter}[hang]
-  {\normalfont\bfseries\Large}
-  {Chapter~\thechapter}
-  {0.5em} 
-  {}
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}
+  {\Large Chapter~\thechapter}
+  {0.4em}
+  {\Large}
 
 % Section
 \titleformat{\section}[hang]
