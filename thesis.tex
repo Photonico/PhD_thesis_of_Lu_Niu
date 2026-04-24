@@ -1,5 +1,5 @@
 %%%%%%%% An academic thesis template
-% Academic thesis style by Lu Niu, 2025
+% Academic thesis style by Lu Niu, 2026
 % based on the file by David Symonds
 
 %%%% Commands
@@ -10,20 +10,18 @@
 \def\department{School of Physics}
 \def\degree{Doctor of Philosophy}
 \def\mydegrees{Doctor of Philosophy}
-% \def\sid{200342291}
-% \def\sid{480446912}   % Lu Niu
+% \def\sid{480446912}
 \def\supervisor{Catherine Stampfl}
 \def\assocsupervisora{Oliver James Conquest}
-\def\assocsupervisorb{Carla Verdi}
+% \def\assocsupervisorb{Carla Verdi}
 \documentclass[12pt,logo]{style/usydthesis}
 
-% Remove the optional 'logo' argument to remove the logo from the title page
-
+%% Remove the optional "logo" argument to remove the logo from the title page
 % Uncomment these two lines if you want a watermark
 % \usepackage[timestamp]{draftcopy}
 % \draftcopyVersion{Printed\space}
 
-% Remove weird spaces in the List of Figures
+%% Remove weird spaces in the List of Figures
 % \newcommand*{\noaddvspace}{\renewcommand*{\addvspace}[1]{}}
 % \addtocontents{lof}{\protect\noaddvspace}
 
@@ -91,12 +89,15 @@
 
 %%%% Contents settings
 \makeatletter
+\providecommand{\@dotsep}{4.5}
+\makeatother
+\makeatletter
 \newcommand{\tocchapwidth}{5em}
 \renewcommand{\tocchapter}[3]{%
   \@ifempty{#2}{#3}{\makebox[\tocchapwidth][l]{#1~#2}#3}%
 }
-\renewcommand{\l@chapter}[2]{%
-  \par\addvspace{0.5em plus 0.5em}%
+\renewcommand{\l@chapter}[2]{
+  \par\addvspace{0.5em plus 0.5em}
   \begingroup
     \bfseries
     \parindent=0pt
