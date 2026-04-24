@@ -89,32 +89,43 @@
 \newcommand{\me}{m_\mathrm{e}}      % electron mass
 \newcommand{\varparallel}{\mathbin{/\mkern-4mu/}}
 
-%%%% Environment settings
-% Abstract env fallback (this class defines 'summary', not 'abstract') 
-\makeatletter
-\@ifundefined{abstract}{%
-  \newenvironment{abstract}{\begin{summary}}{\end{summary}}%
-}{}
-\makeatother
-\makeatletter
-\providecommand\@dotsep{4.5}
-\makeatother
-
 %%%% Contents settings
 \makeatletter
-% \@dottedtocline{level}{indent}{numwidth}
+\newcommand{\tocchapwidth}{5em}
+\renewcommand{\tocchapter}[3]{%
+  \@ifempty{#2}{#3}{\makebox[\tocchapwidth][l]{#1~#2}#3}%
+}
+\renewcommand{\l@chapter}[2]{%
+  \par\addvspace{0.5em plus 0.5em}%
+  \begingroup
+    \bfseries
+    \parindent=0pt
+    \leftskip=0pt
+    \rightskip=\@pnumwidth plus 4em
+    \parfillskip=-\@pnumwidth
+    \hangindent=\tocchapwidth
+    \hangafter=1
+    #1\nobreak\hfill\hbox to\@pnumwidth{\hss #2}\par
+  \endgroup
+}
 \renewcommand{\l@section}{\@dottedtocline{1}{1em}{2em}}
 \renewcommand{\l@subsection}{\@dottedtocline{2}{2em}{3em}}
-% Use the optional short title in \chapter[short title]{long title}
-\def\@chapter[#1]#2{
-  \refstepcounter{chapter}
-  \typeout{\@chapapp\space\thechapter.}
-  \chaptermark{#1}
+\def\@chapter[#1]#2{%
+  \refstepcounter{chapter}%
+  \chaptermark{#1}%
   \addcontentsline{toc}{chapter}{\protect\tocchapter{\chaptername}{\thechapter}{#1}}%
-  \@makechapterhead{#2}
+  \@makechapterhead{#2}%
   \@afterheading
 }
 \makeatother
+
+% %%%% Force each chapter to start on an odd page
+% \makeatletter
+% \def\chapter{%
+%   \cleardoublepage
+%   \thispagestyle{plain}\global\@topnum\z@
+%   \@afterindenttrue \secdef\@chapter\@schapter}
+% \makeatother
 
 %%%% Section/subsection references
 \newcommand{\secref}[1]{section~\ref{#1}}
@@ -179,7 +190,13 @@
   \def\@evenhead{\normalfont\scriptsize\rlap{\thepage}\hfil\LastMark{2e-left}\hfil}%
   \def\@oddhead{\normalfont\scriptsize\hfil\FirstMark{2e-right}\hfil\llap{\thepage}}%
 }
-\pagestyle{headings}
+\def\ps@plain{
+  \let\@mkboth\@gobbletwo
+  \let\@oddhead\@empty
+  \let\@evenhead\@empty
+  \def\@evenfoot{\normalfont\scriptsize\rlap{\thepage}\hfil}%
+  \def\@oddfoot{\normalfont\scriptsize\hfil\llap{\thepage}}%
+}
 \makeatother
 \setlength{\headheight}{1.5em}
 \setlength{\headsep}{1em}
@@ -209,10 +226,11 @@
 %\topmargin=-1cm
 
 %%%% Title configuration
+% Chapter
 \titleformat{\chapter}[display]
   {\normalfont\bfseries}
-  {\Large Chapter~\thechapter}
-  {0.4em}
+  {\Large \chaptername~\thechapter}
+  {0.5em}
   {\Large}
 
 % Section
@@ -229,6 +247,18 @@
   {0.5em}
   {}
 
+%%%% Automatically suppress "Chapter" for \chapter*
+\makeatletter
+\let\thesis@schapter\@schapter
+\def\@schapter#1{%
+  \begingroup
+    \renewcommand{\chaptername}{}%
+    \renewcommand{\thechapter}{}%
+    \thesis@schapter{#1}%
+  \endgroup
+}
+\makeatother
+
 % %%%% Force section titles into odd-page running heads
 % \let\oldsection\section
 % \renewcommand{\section}[1]{\oldsection{#1}\sectionmark{#1}}
@@ -237,6 +267,8 @@
 % \input{src/glossary.tex}
 % \makeglossaries
 \begin{document}
+\pagestyle{plain}
+% \renewcommand{\chaptername}{}
 
 % initial page numbers: i, ii, iii, ...
 \renewcommand{\thepage}{\roman{page}}	
@@ -247,9 +279,16 @@
 \author{\myname}
 
 \maketitle
-\linespread{1.20}\selectfont
+
+% \clearpage
+% \thispagestyle{empty}
+% \null
+% \clearpage
+
+\linespread{1.25}\selectfont
 % \onehalfspacing
 % intro pages
+\cleardoublepage
 \input{src/abstract.tex}
 \input{src/publications.tex}
 \input{src/thanks.tex}
@@ -257,6 +296,7 @@
 
 \setcounter{tocdepth}{2}
 \newpage
+\cleardoublepage
 \addcontentsline{toc}{chapter}{Contents}
 \tableofcontents
 % \listoffigures
@@ -270,12 +310,20 @@
 %% main page numbers:  1, 2, 3, ...
 \renewcommand{\thepage}{\arabic{page}}	
 \setupParagraphs
+\pagestyle{headings}
 
+\cleardoublepage
 \input{src/introduction.tex}
+% \renewcommand{\chaptername}{Chapter}
+\cleardoublepage
 \input{src/fundamentals_a.tex}
+\cleardoublepage
 \input{src/fundamentals_b.tex}
+\cleardoublepage
 \input{src/project_1.tex}
+\cleardoublepage
 \input{src/project_2.tex}
+\cleardoublepage
 \input{src/project_3.tex}
 % \input{src/methods.tex}
 % \input{src/results.tex}
@@ -284,6 +332,7 @@
 %% Bibliography
 % \bibliographystyle{style/mybibstyle}
 % \bibliography{thesis}
+% \renewcommand{\chaptername}{}
 \printbibliography
 
 %% Appendices
