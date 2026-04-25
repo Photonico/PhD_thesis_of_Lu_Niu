@@ -1,7 +1,23 @@
 \chapter{Fundamentals \textRoman{2}: Linear Optical Response}
 \label{cha:fundamentals_b}
 
+% opening paragraph
+In this chapter, we establish the linear optical response framework behind the optical-property calculations used in this thesis.
+The optical properties of the materials studied here arise from electrons driven by an external electromagnetic field.
+Under the applied field, the electronic system moves away from its static equilibrium and develops an induced polarization $\vec{P}(\vec{r},t)$.
+In principle, the full time-dependent many-body response contains the complete optical information of the system.
+In practice, the linear-response regime allows us to describe this response through the electric susceptibility tensor $\chi_{\alpha\beta}(\omega)$ and the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$.
+We therefore follow the route from Maxwell electrodynamics in matter to the complex dielectric function $\varepsilon(\omega)$, and then to the optical properties derived from it.
+
+The chapter is organized as follows.
+In section~\ref{sec:toward_electromagnetic_response_in_matter}, we start from Maxwell equations in matter and introduce polarization, electric displacement, and the dielectric tensor.
+In section~\ref{sec:from_electronic_response_to_dielectric_function}, we connect the electronic response to the complex dielectric function and discuss its direction-resolved form in anisotropic media.
+In section~\ref{sec:causality_and_kramers_kronig_relations}, we introduce causality and derive the Kramers--Kronig relations for the dielectric response.
+Finally, in section~\ref{sec:from_dielectric_function_to_optical_properties}, we use the dielectric function to determine the absorption coefficient $\alpha(\omega)$, refractive index $n(\omega)$, extinction coefficient $k(\omega)$, reflectivity $R(\omega)$, and energy-loss spectrum $L(\omega)$.
+
+\newpage
 \section{Toward electromagnetic response in matter}
+\label{sec:toward_electromagnetic_response_in_matter}
 
 % opening paragraph
 The previous chapter focused on the ground-state electronic problem.
@@ -299,6 +315,7 @@ This direction-resolved form provides the natural bridge from the tensor descrip
 
 \newpage
 \section{From electronic response to the dielectric function}
+\label{sec:from_electronic_response_to_dielectric_function}
 
 % opening paragraph
 The previous section established the electrodynamic framework of optical response.
@@ -525,6 +542,7 @@ and then derive the Kramers--Kronig relations for each directional component.
 
 \newpage
 \section{Causality and the Kramers--Kronig relations}
+\label{sec:causality_and_kramers_kronig_relations}
 
 % opening paragraph
 The previous section established a direction-resolved complex dielectric response for anisotropic media.
@@ -747,6 +765,7 @@ We next use the same dielectric response to derive the absorption coefficient, r
 
 \newpage
 \section{From the dielectric function to optical properties}
+\label{sec:from_dielectric_function_to_optical_properties}
 
 % opening paragraph
 The previous section established the complex dielectric function.
