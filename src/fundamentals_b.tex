@@ -2,18 +2,19 @@
 \label{cha:fundamentals_b}
 
 % opening paragraph
-In this chapter, we establish the linear optical response framework behind the optical-property calculations used in this thesis.
-The optical properties of the materials studied here arise from electrons driven by an external electromagnetic field.
-Under the applied field, the electronic system moves away from its static equilibrium and develops an induced polarization $\vec{P}(\vec{r},t)$.
-In principle, the full time-dependent many-body response contains the complete optical information of the system.
-In practice, the linear-response regime allows us to describe this response through the electric susceptibility tensor $\chi_{\alpha\beta}(\omega)$ and the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$.
-We therefore follow the route from Maxwell electrodynamics in matter to the complex dielectric function $\varepsilon(\omega)$, and then to the optical properties derived from it.
+We continue our discussion of the fundamentals in this chapter, where we introduce the linear optical response of matter.
+The interaction between materials and light occurs through the response of electrons to the electric-field component of incident radiation.
+This response induces polarization and produces electronic excitations, including interband transitions and plasmonic charge excitations.
+Collectively, these processes determine the dielectric function, plasmonic behaviour, absorption, reflection, refraction, and energy loss.
+We therefore use linear response theory to connect the electromagnetic field to the dielectric response of the medium.
 
-The chapter is organized as follows.
-In section~\ref{sec:toward_electromagnetic_response_in_matter}, we start from Maxwell equations in matter and introduce polarization, electric displacement, and the dielectric tensor.
-In section~\ref{sec:from_electronic_response_to_dielectric_function}, we connect the electronic response to the complex dielectric function and discuss its direction-resolved form in anisotropic media.
-In section~\ref{sec:causality_and_kramers_kronig_relations}, we introduce causality and derive the Kramers--Kronig relations for the dielectric response.
-Finally, in section~\ref{sec:from_dielectric_function_to_optical_properties}, we use the dielectric function to determine the absorption coefficient $\alpha(\omega)$, refractive index $n(\omega)$, extinction coefficient $k(\omega)$, reflectivity $R(\omega)$, and energy-loss spectrum $L(\omega)$.
+The discussion follows the route used in the optical analysis of this thesis.
+We first establish the electrodynamic variables, then formulate the dielectric response, and finally derive the optical observables.
+In section~\ref{sec:toward_electromagnetic_response_in_matter}, we begin with Maxwell equations in matter and introduce the polarization field $\vec{P}(\vec{r},t)$ and electric displacement field $\vec{D}(\vec{r},t)$.
+The constitutive relation closes the field equations and leads to the dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$.
+Section~\ref{sec:from_electronic_response_to_dielectric_function} then describes the complex dielectric function $\varepsilon(\omega)=\varepsilon_1(\omega)+i\varepsilon_2(\omega)$ and its directional form in anisotropic media.
+Causality constrains the real and imaginary parts of this response, and section~\ref{sec:causality_and_kramers_kronig_relations} expresses this constraint through the Kramers--Kronig relations.
+Finally, section~\ref{sec:from_dielectric_function_to_optical_properties} derives the absorption coefficient $\alpha(\omega)$, refractive index $n(\omega)$, extinction coefficient $k(\omega)$, reflectivity $R(\omega)$, and energy-loss spectrum $L(\omega)$ from the complex dielectric function.
 
 \newpage
 \section{Toward electromagnetic response in matter}
