@@ -33,9 +33,10 @@
 \usepackage{fancyhdr}
 % \usepackage[nolineno,norules]{lgrind}
 % \usepackage{makeidx}
+\usepackage[UKenglish]{babel}
 \usepackage[version=4]{mhchem}
 \usepackage[utf8]{inputenc}     % comment if you use XeLaTeX or LuaLaTeX
-\usepackage[UKenglish]{babel}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{setspace}
 % \usepackage{animate}
 \usepackage{amsmath}
@@ -52,7 +53,6 @@
 \usepackage{titlesec}
 \usepackage{etoolbox}
 \usepackage{lmodern}
-\usepackage{xcolor}
 % \usepackage{textcase}
 %% font family settings (requires XeLaTeX or LuaLaTeX)
 % \usepackage{fontspec}
@@ -132,8 +132,8 @@
     pdfauthor = {\myname},
     pdftitle = {\suptitle},
     colorlinks,
-    linkcolor={teal},
-    citecolor={violet},
+    linkcolor={Black},
+    citecolor={Purple},
     }
 
 %%%% Maths functions
@@ -282,6 +282,7 @@
 \cleardoublepage
 \addcontentsline{toc}{chapter}{Contents}
 \tableofcontents
+\hypersetup{linkcolor=MidnightBlue}
 % \listoffigures
 % \listoftables
 
