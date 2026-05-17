@@ -86,6 +86,12 @@ This is followed by the Conclusion in Section 4.
 
 \section{Calculation method}
 
-We perform first-principle calculations using density functional theory (DFT) as implemented in the Vienna Ab initio Simulation Package (VASP) \cite{kresse1993ab, kresse1996efficiency, kresse1996software}.
+We perform first-principle calculations using density functional theory (DFT) as implemented in the Vienna Ab initio Simulation Package (VASP) \cite{kresse1993ab, kresse1996efficiency, kresse1996efficient}.
+The projector augmented wave (PAW) method pseudopotentials are used to account for the electron-ion interactions \cite{kresse1999ultrasoft}.
+For the structural optimization calculations, we use the generalized gradient approximation (GGA) of Perdew-Burke-Ernzerhof (PBE) as the exchange-correlation functional.
+The Becke-Johnson damped D3(BJ) dispersion correction is also included to account for long-range van der Waals (vdW) interactions.
+A $\Gamma$-centered k-point sampling mesh of $11 \times 11 \times 1$ ($23 \times 23 \times 1$ for the smaller graphene unit cell) and a plane wave energy cutoff of \qty{450}{\electronvolt} are used.
+Electronic convergence criteria are set to \qty{1e-6}{\electronvolt} and systems are allowed to relax until all forces on each atom are below \qty{0.01}{\electronvolt\per\angstrom}.
+For smearing at the Fermi level we used the Gaussian smearing method implemented in VASP.
 
 % test test test
