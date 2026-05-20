@@ -94,9 +94,9 @@ A $\Gamma$-centered $\vec{k}$-point sampling mesh of $11 \times 11 \times 1$ ($2
 Electronic convergence criteria are set to \qty{1e-6}{\electronvolt} and systems are allowed to relax until all forces on each atom are below \qty{0.01}{\electronvolt\per\angstrom}.
 For smearing at the Fermi level we used the Gaussian smearing method implemented in VASP.
 
-For the calculation of electronic properties, 
-the PBE exchange-correlation functional is known to underestimate band-gap energies,
-therefore, we also use the screened hybrid exchange-correlation functional of Heyd, Scuseria, and Ernzerhof (HSE06),
+For the calculation of electronic properties,
+the PBE exchange-correlation functional is known to underestimate band-gap energies.
+Therefore, we also use the screened hybrid exchange-correlation functional of Heyd, Scuseria, and Ernzerhof (HSE06),
 which gives more accurate band-gap energies \cite{sassnick2021electronic, heyd2003hybrid, krukau2006influence}.
 All density of states (DOS) calculations use a $\Gamma$-centered $\vec{k}$-point sampling mesh of $33 \times 33 \times 1$,
 with smearing at the Fermi level calculated using the Gaussian method and a broadening value of \qty{0.1}{\electronvolt}.
