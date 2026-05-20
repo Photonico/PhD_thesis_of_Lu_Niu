@@ -104,7 +104,38 @@ The HSE06 exchange-correlation functional is also used for the calculation of op
 in particular, the frequency-dependent dielectric function with a $\Gamma$-centered $\vec{k}$-point sampling mesh of $17 \times 17 \times 1$ and $65 \times 65 \times 1$.
 The complex frequency-dependent dielectric function, $\varepsilon(\omega)$,
 is given by equation \ref{complex_dielectric_function_definition},
-where $\varepsilon_{1}(\omega)$ and $\varepsilon_{2}(\omega)$ are the real and imaginary parts, respectively, and $\omega$ is the frequency in electron volt.
+where $\varepsilon_{1}(\omega)$ and $\varepsilon_{2}(\omega)$ are the real and imaginary parts, respectively, and $\omega$ denotes the photon energy in \unit{\electronvolt}.
+
+We then use the dielectric function to calculate the absorption coefficient,
+refractive index, extinction coefficient, reflectivity, and energy-loss spectrum,
+following the relations introduced in section~\ref{sec:from_dielectric_function_to_optical_properties}.
+
+We next calculate the interlayer binding energy, $E_{\mathrm{b}}$, as:
+
+\begin{equation}
+    E_{\mathrm{b}}
+    = E_{\mathrm{H}}
+    - E_{\mathrm{BC}/\mathrm{B}}
+    - E_{\mathrm{G}}
+\label{interlayer_binding_energy}
+\end{equation}
+
+here, $E_{\mathrm{H}}$ denotes the total energy of the heterostructure,
+$E_{\mathrm{BC}/\mathrm{B}}$ corresponds to the total energy of the isolated boron-carbide or borophene monolayer,
+and $E_{\mathrm{G}}$ denotes the total energy of the isolated graphene monolayer.
+
+Afterwards, the charge density difference, $\Delta \rho(\vec{r}\,)$ takes the form:
+
+\begin{equation}
+    \Delta \rho(\vec{r}\,) =
+    \rho_{\mathrm{AB}}(\vec{r}\,)
+    - \rho_{\mathrm{A}}(\vec{r}\,)
+    - \rho_{\mathrm{B}}(\vec{r}\,)
+\label{charge_density_difference}
+\end{equation}
+
+here, $\rho_{\mathrm{AB}}(\vec{r}\,)$ denotes the total charge density of the heterostructure.
+The terms $\rho_{\mathrm{A}}(\vec{r}\,)$ and $\rho_{\mathrm{B}}(\vec{r}\,)$ represent the charge densities of the isolated monolayers forming the heterostructure.
 
 % test test test
 
