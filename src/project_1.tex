@@ -94,4 +94,9 @@ A $\Gamma$-centered k-point sampling mesh of $11 \times 11 \times 1$ ($23 \times
 Electronic convergence criteria are set to \qty{1e-6}{\electronvolt} and systems are allowed to relax until all forces on each atom are below \qty{0.01}{\electronvolt\per\angstrom}.
 For smearing at the Fermi level we used the Gaussian smearing method implemented in VASP.
 
+For the calculation of electronic properties, 
+the PBE exchange-correlation functional is known to underestimate band-gap energies so we also use the screened hybrid exchange-correlation functional of Heyd, Scuseria, and Ernzerhof (HSE06) which gives more accurate band-gap energies \cite{sassnick2021electronic, heyd2003hybrid, krukau2006influence}.
+
 % test test test
+
+All density of states (DOS) calculations use a $\Gamma$-centered {\bf k}-point sampling mesh of $33 \times 33 \times 1$ with smearing at the Fermi level calculated with the Gaussian method and a broadening value of $0.1$ eV. The HSE06 exchange-correlation functional is also used for the calculation of optical properties, in particular, the frequency-dependent dielectric function with a $\Gamma$-centered {\bf k}-point sampling mesh of $17 \times 17 \times 1$ and $65 \times 65 \times 1$. The complex frequency-dependent dielectric function, $\epsilon(\omega)$, is given by equation \ref{eqn:dielectric-function}, where $\epsilon_{1}(\omega)$ and $\epsilon_{2}(\omega)$ are the real and imaginary parts, respectively, and $\omega$ is the frequency in eV.
