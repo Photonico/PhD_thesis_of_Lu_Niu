@@ -78,9 +78,9 @@ Such understanding is crucial for their future technological application,
 where the unique properties of these materials can be harnessed. 
 
 The paper is organised as follows:
-in Section 2 the calculation method is described,
+In Section 2, the calculation method is described,
 followed by the Results and Discussion in Section 3.
-Herein we describe the physical properties of the monolayers and heterostructures, including bandstructure, density of states, electron density difference distributions,
+Herein, we describe the physical properties of the monolayers and heterostructures, including bandstructure, density of states, electron density difference distributions,
 Schottky barriers and the optical properties.
 This is followed by the Conclusion in Section 4.
 
@@ -150,14 +150,15 @@ For this study, we chose to investigate the $\alpha'$ structure of borophene,
 not only because it has been synthesised experimentally, 
 but also because it has been shown to have the most favourable cohesive energy from GGA level \textit{ab initio} calculations \cite{wu2012two}.
 
-The structural properties and band-gap energies of the monolayer systems are shown in table~\ref{tab_monolayer}.
+The structural properties and band-gap energies of the monolayer systems are shown in Table~\ref{tab:1_monolayer}.
 For graphene, the lattice constant is calculated to be $a = 2.467$ $\mathring{\mathrm{A}}$,
 while those of borophene, \ce{BC3}, and \ce{B4C3} are 5.051 $\mathring{\mathrm{A}}$, 5.169 $\mathring{\mathrm{A}}$, and 4.690 $\mathring{\mathrm{A}}$, respectively.
 In agreement with previous calculations, graphene is a semimetal and borophene is metallic,
 whereas \ce{BC3} and \ce{B4C3} are indirect semiconductors~\cite{zhang2018strain, nosheen2022first}.
-The calculated indirect band gaps of \ce{BC3} and \ce{B4C3} are \qty{1.822}{\electronvolt} (\qty{0.634}{\electronvolt}) and \qty{2.381}{\electronvolt} (\qty{1.647}{\electronvolt}), respectively, as obtained using HSE06 (PBE).
-Figure \ref{fig1.01} shows the optimisation of the lattice constants for the monolayers,
-while figure~\ref{fig-bs-monolayers} presents the band structures of the four monolayer systems.
+The calculated indirect band gaps of \ce{BC3} and \ce{B4C3} are 1.822 eV (0.634 eV) and 2.381 eV (1.647 eV), respectively, as obtained using HSE06 (PBE).
+Figure S1 shows the optimisation of the lattice constants for the monolayers,
+while Figure~\ref{fig-bs-monolayers} presents the band structures of the four monolayer systems.
+
 
 \begin{figure}[htbp]
     \centering
@@ -169,6 +170,53 @@ while figure~\ref{fig-bs-monolayers} presents the band structures of the four mo
     The unit cells are highlighted in orange.}
     \label{fig1.01}
 \end{figure}
+
+\begin{table}[H]
+\centering
+\rowcolors{2}{gray!15}{white}
+\begin{adjustbox}{max width=1.0\linewidth}
+\begin{tabular}{ccm{48px}m{48px}m{48px}m{72px}m{72px}c}
+% \begin{tabularx}{\linewidth}{ccYYYYYc}
+\hline
+\rowcolor{gray!25}
+system
+& $a$ $(a=b)$ (Å) & B-B (Å) & C-C (Å) & B-C (Å) & $E_{\mathrm{g-PBE}}$ (eV) & $E_{\mathrm{g-HSE06}}$ (eV) & Nature
+\\ \hline
+\ce{BC3}
+& 5.169 & - & 1.421 & 1.563
+& 0.634
+\newline (0.62--0.66) 
+\newline\cite{behzad2017mechanical,zhang2018theoretical,zhang2018strain}
+& 1.822 \newline(1.83)\cite{zhang2018theoretical}
+& indirect
+
+\\ \ce{Borophene}
+& 5.051
+& 1.689 ($l_1$) \newline
+  1.672 ($l_2$) \newline
+  1.707 ($l_3$)
+& - & - & - & -
+& metallic
+
+\\ \ce{B4C3}
+& 4.690 & 1.689 ($l_4$) & -
+& 1.592 ($l_5$) \newline
+  1.517 ($l_6$) \newline
+  1.548 ($l_7$)
+& 1.647 & 2.381 \newline(2.39)\cite{chang2019b4c3}
+& indirect
+
+\\ \ce{Graphene}
+& 2.467 & - & 1.424 & - & - & - & semimetal \\
+\hline
+\end{tabular}
+\end{adjustbox}
+
+\caption{Optimized lattice constants, inter-atomic distances, and band gaps of monolayer \ce{BC3}, borophene, \ce{B4C3}, and graphene. Here, $a$ is the lattice parameter with $a=b$ for all systems, B-B, C-C, and B-C are the boron-boron, carbon-carbon, and boron-carbon bond lengths. Borophene and \ce{B4C3} have B-B and B-C bonds of different lengths, these are identified by labels $l_1,\cdots,l_7$ in figure \ref{fig1.01}.
+The band gap $E_{\mathrm{g}}$ is calculated using the PBE and HSE06 exchange-correlation functionals; values in brackets are from previous theoretical studies. ``Nature'' indicates the electronic character of the system.}
+\label{tab:1_monolayer}
+\end{table}
+
 
 
 % test test
