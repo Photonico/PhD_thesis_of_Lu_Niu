@@ -8,7 +8,7 @@ the atomic, electronic, and optical properties of two-dimensional graphene, boro
 as well as their constituent monolayers are investigated on the basis of first-principles calculations using the HSE06 hybrid functional.
 Our calculations show that while borophene is metallic,
 both monolayer \ce{BC3} and \ce{B4C3} are indirect semiconductors,
-with band-gaps of $1.822$ eV and $2.381$ eV as obtained using HSE06.
+with band gaps of $1.822$ eV and $2.381$ eV as obtained using HSE06.
 The \ce{Graphene-BC3} and \ce{Graphene-B4C3} bilayer heterojunction systems maintain the Dirac point of graphene at the $\vec{k}$-point and are semi-metals,
 while \ce{Graphene-Borophene} is metallic.
 All bilayer heterostructure systems possess absorbance in the visible region where the resonance frequency and resonance absorption peak intensity vary between structures.
@@ -86,8 +86,8 @@ This is followed by the Conclusion in Section 4.
 
 \section{Calculation method}
 
-We perform first-principle calculations using density functional theory (DFT) as implemented in the Vienna Ab initio Simulation Package (VASP) \cite{kresse1993ab, kresse1996efficiency, kresse1996efficient}.
-The projector augmented wave (PAW) method pseudopotentials are used to account for the electron-ion interactions \cite{kresse1999ultrasoft}.
+We perform first-principle calculations using density functional theory (DFT) as implemented in the Vienna Ab initio Simulation Package (VASP)~\cite{kresse1993ab, kresse1996efficiency, kresse1996efficient}.
+The projector augmented wave (PAW) method pseudopotentials are used to account for the electron-ion interactions~\cite{kresse1999ultrasoft}.
 For the structural optimization calculations, we use the generalized gradient approximation (GGA) of Perdew-Burke-Ernzerhof (PBE) as the exchange-correlation functional.
 The Becke-Johnson damped D3(BJ) dispersion correction is also included to account for long-range van der Waals (vdW) interactions.
 A $\Gamma$-centered $\vec{k}$-point sampling mesh of $11 \times 11 \times 1$ ($23 \times 23 \times 1$ for the smaller graphene unit cell) and a plane wave energy cutoff of \qty{450}{\electronvolt} are used.
@@ -95,9 +95,9 @@ Electronic convergence criteria are set to \qty{1e-6}{\electronvolt} and systems
 For smearing at the Fermi level we used the Gaussian smearing method implemented in VASP.
 
 For the calculation of electronic properties,
-the PBE exchange-correlation functional is known to underestimate band-gap energies.
+the PBE exchange-correlation functional is known to underestimate band gap energies.
 Therefore, we also use the screened hybrid exchange-correlation functional of Heyd, Scuseria, and Ernzerhof (HSE06),
-which gives more accurate band-gap energies \cite{sassnick2021electronic, heyd2003hybrid, krukau2006influence}.
+which gives more accurate band gap energies~\cite{sassnick2021electronic, heyd2003hybrid, krukau2006influence}.
 All density of states (DOS) calculations use a $\Gamma$-centered $\vec{k}$-point sampling mesh of $33 \times 33 \times 1$,
 with smearing at the Fermi level calculated using the Gaussian method and a broadening value of \qty{0.1}{\electronvolt}.
 The HSE06 exchange-correlation functional is also used for the calculation of optical properties,
@@ -143,26 +143,36 @@ We start by investigating the structural and electronic properties of the three 
 namely \ce{BC3}, \ce{B4C3} and borophene.
 The graphene monolayer is also investigated as it always forms one layer of the heterostructure systems.
 The optimized structures of \ce{BC3}, \ce{B4C3}, borophene,
-and graphene are shown in figure \ref{fig1.01}.
+and graphene are shown in figure~\ref{fig1.01}.
 The monolayer allotrope of borophene has been predicted to have various low-energy structures with the $\beta_{12}$, 
-$\chi_{3}$, and $\alpha'$ structures having been synthesised experimentally \cite{kaneti2021borophene}.
+$\chi_{3}$, and $\alpha'$ structures having been synthesised experimentally~\cite{kaneti2021borophene}.
 For this study, we chose to investigate the $\alpha'$ structure of borophene,
 not only because it has been synthesised experimentally, 
-but also because it has been shown to have the most favourable cohesive energy from GGA level \textit{ab initio} calculations \cite{wu2012two}.
+but also because it has been shown to have the most favourable cohesive energy from GGA level \textit{ab initio} calculations~\cite{wu2012two}.
 
-The structural properties and band-gap energies of the monolayer systems are shown in Table~\ref{tab:1_monolayer}.
+The structural properties and band gap energies of the monolayer systems are shown in Table~\ref{tab:1_monolayer}.
 For graphene, the lattice constant is calculated to be $a = 2.467$ $\mathring{\mathrm{A}}$,
 while those of borophene, \ce{BC3}, and \ce{B4C3} are 5.051 $\mathring{\mathrm{A}}$, 5.169 $\mathring{\mathrm{A}}$, and 4.690 $\mathring{\mathrm{A}}$, respectively.
 In agreement with previous calculations, graphene is a semimetal and borophene is metallic,
 whereas \ce{BC3} and \ce{B4C3} are indirect semiconductors~\cite{zhang2018strain, nosheen2022first}.
 The calculated indirect band gaps of \ce{BC3} and \ce{B4C3} are 1.822 eV (0.634 eV) and 2.381 eV (1.647 eV), respectively, as obtained using HSE06 (PBE).
-Figure S1 shows the optimisation of the lattice constants for the monolayers,
-while Figure~\ref{fig-bs-monolayers} presents the band structures of the four monolayer systems.
+Figure~\ref{fig1.01} shows the optimization of the lattice constants for the monolayers,
+while figure~\ref{fig1.02_monolayers_bs} presents the band structures of the four monolayer systems.
 
+% \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[width=0.96\textwidth]{figures_proj1/proj1.1.png}
+%     \caption{Optimized atomic structures of \ce{BC3}, borophene, \ce{B4C3}, and graphene.
+%     Boron and carbon atoms are denoted by the green and brown spheres, respectively.
+%     Borophene has three unique bonds indicated by $l_1$, $l_2$ and $l_3$,
+%     while \ce{B4C3} has four unique bonds indicated by $l_4$, $l_5$, $l_6$ and $l_7$.
+%     The unit cells are highlighted in orange.}
+%     \label{fig1.01}
+% \end{figure}
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.90\textwidth]{figures_proj1/proj1.1.png}
+    \includesvg[width=0.96\textwidth]{figures_proj1/proj1.1.svg}
     \caption{Optimized atomic structures of \ce{BC3}, borophene, \ce{B4C3}, and graphene.
     Boron and carbon atoms are denoted by the green and brown spheres, respectively.
     Borophene has three unique bonds indicated by $l_1$, $l_2$ and $l_3$,
@@ -212,11 +222,53 @@ system
 \end{tabular}
 \end{adjustbox}
 
-\caption{Optimized lattice constants, inter-atomic distances, and band gaps of monolayer \ce{BC3}, borophene, \ce{B4C3}, and graphene. Here, $a$ is the lattice parameter with $a=b$ for all systems, B-B, C-C, and B-C are the boron-boron, carbon-carbon, and boron-carbon bond lengths. Borophene and \ce{B4C3} have B-B and B-C bonds of different lengths, these are identified by labels $l_1,\cdots,l_7$ in figure \ref{fig1.01}.
+\caption{Optimized lattice constants, inter-atomic distances, and band gaps of monolayer \ce{BC3}, borophene, \ce{B4C3}, and graphene. Here, $a$ is the lattice parameter with $a=b$ for all systems, B-B, C-C, and B-C are the boron-boron, carbon-carbon, and boron-carbon bond lengths. Borophene and \ce{B4C3} have B-B and B-C bonds of different lengths, these are identified by labels $l_1,\cdots,l_7$ in figure~\ref{fig1.01}.
 The band gap $E_{\mathrm{g}}$ is calculated using the PBE and HSE06 exchange-correlation functionals; values in brackets are from previous theoretical studies. ``Nature'' indicates the electronic character of the system.}
 \label{tab:1_monolayer}
 \end{table}
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.48\linewidth]{figures_proj1/proj1.3a.pdf}%
+    \includegraphics[width=0.48\linewidth]{figures_proj1/proj1.3b.pdf}%
+    \par\nointerlineskip
+    \includegraphics[width=0.48\linewidth]{figures_proj1/proj1.3c.pdf}%
+    \includegraphics[width=0.48\linewidth]{figures_proj1/proj1.3d.pdf}%
+    \caption{Band structures of the four monolayer systems, graphene, borophene, \ce{BC3}, and \ce{B4C3}, calculated using PBE (blue) and HSE06 (orange).}
+    \label{fig1.02_monolayers_bs}
+\end{figure}
 
+\subsection{Heterostructure}
 
-% test test
+\subsubsection{Structural Properties}
+
+We now turn to determine the structure of the bilayer heterojunctions,
+which are composed of monolayer graphene stacked with monolayer \ce{BC3}, borophene,
+and \ce{B4C3} (namely, \ce{Graphene-BC3}, \ce{Graphene-Borophene}, and \ce{Graphene-B4C3}), respectively.
+To create the heterostructues, we use a ($2\times2\time1$) cell.
+For each system,
+we considered various lateral coordinations (positions) of these layers.
+Specifically, ``Hollow'', ``Bridge'' and ``Top'' coordinations for the \ce{Graphene-BC3} bilayer systems,
+and ``Hollow 1'', ``Hollow 2'', ``Bridge'' and ``Top'' coordinations for the \ce{Graphene-Borohene} and \ce{Graphene-B4C3} bilayer systems.
+We studied the relative energies, optimized lattice constants, and inter-planar distances for all structures.
+Details about this procedure are given in figures S4-S7.
+Due to the weak van der Waals interaction between the layers,
+the difference in energies of the lateral positions is very small,
+with the values given in figure S8.
+
+The results demonstrate that the energetically most favorable lateral position for the \ce{Graphene-BC3} system is the ``Hollow'' coordination stacking configuration.
+This means that each atom in \ce{BC3} is projected onto the center of a hexagon in graphene as shown in figure~\ref{fig1.03}.
+Both the \ce{Graphene-Borophene} and \ce{Graphene-B4C3} bilayer systems energetically favor the ``Top'' coordination stacking configuration.
+In this arrangement, each atom-free hexagon in the bottom layer is projected onto the center of a hexagon in graphene.
+However, the converse does not hold, as not every hexagon center in graphene aligns with an atom-free hexagon in the bottom layer, as illustrated in figure~\ref{fig1.03}.
+
+\begin{figure}[htbp]
+    \centering
+    \includesvg[width=0.96\textwidth]{figures_proj1/proj1.3.svg}
+    \caption{Top view of the optimized atomic structures  of \ce{Graphene-BC3}, \ce{Graphene-Borophene}, and \ce{Graphene-B4C3}.
+    Boron and carbon atoms are denoted by the green and brown spheres, respectively.
+    The unit cell is indicated by the orange parallelogram.}
+    \label{fig1.03}
+\end{figure}
+
+% test test test test

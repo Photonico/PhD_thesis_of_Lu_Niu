@@ -38,6 +38,7 @@
 \usepackage[utf8]{inputenc}     % comment if you use XeLaTeX or LuaLaTeX
 \usepackage[dvipsnames]{xcolor}
 \usepackage{setspace}
+\usepackage{svg}
 % \usepackage{animate}
 \usepackage{amsmath}
 \usepackage{braket}
@@ -47,6 +48,7 @@
 \usepackage{mathtools}
 \usepackage{newunicodechar}
 \usepackage{style/bib}
+\usepackage{subcaption}
 \usepackage{pdfpages}               % for hosting full PDF docs as in the appendix
 \usepackage[pdftex,bookmarks=true]{hyperref}
 % \usepackage[xindy]{glossaries}      % must be after hyperref
@@ -216,6 +218,7 @@
 %\topmargin=-1cm
 
 %%%% Title configuration
+
 % Chapter
 \titleformat{\chapter}[display]
   {\normalfont\bfseries}
@@ -234,6 +237,13 @@
 \titleformat{\subsection}[hang]
   {\normalfont\bfseries}
   {\thesubsection}
+  {0.5em}
+  {}
+
+% Subsubsection
+\titleformat{\subsubsection}[hang]
+  {\normalfont\bfseries}
+  {\thesubsubsection}
   {0.5em}
   {}
 
