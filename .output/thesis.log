@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.6)  20 JUN 2026 07:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.6)  20 JUN 2026 07:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1892,6 +1892,26 @@ File: figures_proj1/S1.12.pdf Graphic file (type pdf)
 <use figures_proj1/S1.12.pdf>
 Package pdftex.def Info: figures_proj1/S1.12.pdf  used on input line 557.
 (pdftex.def)             Requested size: 347.7164pt x 260.78273pt.
+<figures_proj1/S1.13a.pdf, id=2600, 1156.32pt x 433.62pt>
+File: figures_proj1/S1.13a.pdf Graphic file (type pdf)
+<use figures_proj1/S1.13a.pdf>
+Package pdftex.def Info: figures_proj1/S1.13a.pdf  used on input line 566.
+(pdftex.def)             Requested size: 347.7164pt x 130.39136pt.
+<figures_proj1/S1.13b.pdf, id=2601, 1156.32pt x 433.62pt>
+File: figures_proj1/S1.13b.pdf Graphic file (type pdf)
+<use figures_proj1/S1.13b.pdf>
+Package pdftex.def Info: figures_proj1/S1.13b.pdf  used on input line 568.
+(pdftex.def)             Requested size: 347.7164pt x 130.39136pt.
+<figures_proj1/S1.13c.pdf, id=2602, 1156.32pt x 433.62pt>
+File: figures_proj1/S1.13c.pdf Graphic file (type pdf)
+<use figures_proj1/S1.13c.pdf>
+Package pdftex.def Info: figures_proj1/S1.13c.pdf  used on input line 570.
+(pdftex.def)             Requested size: 347.7164pt x 130.39136pt.
+<figures_proj1/S1.13d.pdf, id=2603, 1156.32pt x 433.62pt>
+File: figures_proj1/S1.13d.pdf Graphic file (type pdf)
+<use figures_proj1/S1.13d.pdf>
+Package pdftex.def Info: figures_proj1/S1.13d.pdf  used on input line 572.
+(pdftex.def)             Requested size: 347.7164pt x 130.39136pt.
 )
 
 [120
@@ -1900,12 +1920,11 @@ Package pdftex.def Info: figures_proj1/S1.12.pdf  used on input line 557.
 
 [121 <./figures_proj1/S1.11.pdf> <./figures_proj1/S1.12.pdf>]
 
-[122
-
-
-] (./src/project_2.tex)
+[122 <./figures_proj1/S1.13a.pdf> <./figures_proj1/S1.13b.pdf> <./figures_proj1/S1.13c.pdf> <./figures_proj1/S1.13d.pdf>] (./src/project_2.tex)
 
 [123
+
+
 
 ]
 
@@ -1969,24 +1988,24 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 803B92D5F528F608DF502E76F57B49AA;14898.
+(rerunfilecheck)             Checksum: F2E3B4687F2806F628E30BEB6304F5FB;14898.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36600 strings out of 473190
- 728647 string characters out of 5715801
- 1621334 words of memory out of 5000000
- 58136 multiletter control sequences out of 15000+600000
+ 36630 strings out of 473190
+ 729631 string characters out of 5715801
+ 1621577 words of memory out of 5000000
+ 58165 multiletter control sequences out of 15000+600000
  642696 words of font info for 240 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  94i,21n,131p,1035b,2887s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on .output/thesis.pdf (145 pages, 37015151 bytes).
+Output written on .output/thesis.pdf (145 pages, 37116153 bytes).
 PDF statistics:
- 3135 PDF objects out of 3580 (max. 8388607)
- 2141 compressed objects within 22 object streams
- 687 named destinations out of 1000 (max. 500000)
- 35970 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 3304 PDF objects out of 3580 (max. 8388607)
+ 2162 compressed objects within 22 object streams
+ 688 named destinations out of 1000 (max. 500000)
+ 35990 words of extra memory for PDF output out of 42996 (max. 10000000)
 

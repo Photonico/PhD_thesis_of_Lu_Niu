@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber .output/thesis"] 1781901210.4811 ".output/thesis.bcf" ".output/thesis.bbl" ".output/thesis" 1781904849.55818 0
-  ".output/thesis.bcf" 1781904849.40223 130588 36464d66415c0b4905c6bf45dfbe24c3 "pdflatex"
+["biber .output/thesis"] 1781901210.4811 ".output/thesis.bcf" ".output/thesis.bbl" ".output/thesis" 1781906199.28442 0
+  ".output/thesis.bcf" 1781906199.11842 130588 36464d66415c0b4905c6bf45dfbe24c3 "pdflatex"
   "thesis.bib" 1781899340.82227 50162 46b604b48ea115974b2e6c2c4694a0e8 ""
   (generated)
   ".output/thesis.bbl"
   ".output/thesis.blg"
   (rewritten before read)
-["pdflatex"] 1781904840.21887 "/Users/lu/Repos/Thesis GitHub/thesis.tex" ".output/thesis.pdf" "thesis" 1781904849.5586 0
-  ".output/thesis.aux" 1781904849.33957 95998 3263efbb18a25107c24cb48c23481636 "pdflatex"
+["pdflatex"] 1781906189.61172 "/Users/lu/Repos/Thesis GitHub/thesis.tex" ".output/thesis.pdf" "thesis" 1781906199.28475 0
+  ".output/thesis.aux" 1781906199.06025 96648 140ecb9ef9d362c4dd382a9b36e66ed1 "pdflatex"
   ".output/thesis.bbl" 1781901212.42701 236695 b1b1e3e5950544cdecc163b365e39ffd "biber .output/thesis"
-  ".output/thesis.out" 1781904849.39853 14898 803b92d5f528f608df502e76f57b49aa "pdflatex"
-  ".output/thesis.run.xml" 1781904849.40303 2379 f75cc13aa91ba640ee0d8112fc09c504 "pdflatex"
-  ".output/thesis.toc" 1781904849.40311 6718 cbdbe8c40a2ab7e0bb2eae286934a30a "pdflatex"
+  ".output/thesis.out" 1781906199.11539 14898 f2e3b4687f2806f628e30beb6304f5fb "pdflatex"
+  ".output/thesis.run.xml" 1781906199.11909 2379 f75cc13aa91ba640ee0d8112fc09c504 "pdflatex"
+  ".output/thesis.toc" 1781906199.11916 6718 e1343a2e1b277f3385aac20486292a2e "pdflatex"
   "/Users/lu/Repos/Thesis GitHub/thesis.tex" 1781901500.68271 9408 202d2ce487369f6d52644d03bc7d3cf7 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -269,6 +269,10 @@
   "figures_proj1/S1.10.pdf" 1781899340.60581 79198 8dfa24606737d3f2a1b658037a5357e9 ""
   "figures_proj1/S1.11.pdf" 1781899340.60609 82538 d86afc3f363f066575767c645d5434dc ""
   "figures_proj1/S1.12.pdf" 1781899340.60627 50358 f42eb20c37f4e8f890386c9ca896ddf6 ""
+  "figures_proj1/S1.13a.pdf" 1781899340.60693 28836 21bee1d7e15ab6f46cd7cb3cfbdc2403 ""
+  "figures_proj1/S1.13b.pdf" 1781899340.60717 25192 3fe96234c069d5ec8f74e544d09b9f99 ""
+  "figures_proj1/S1.13c.pdf" 1781899340.60732 30964 ae20639f498d9b2ab31fa99c558a6fc1 ""
+  "figures_proj1/S1.13d.pdf" 1781899340.60748 28214 c51d39fe55c833c56232c1220de27e81 ""
   "figures_proj1/S1.2.pdf" 1781899340.61223 27748 c24d6937a33a800d70805fbb0130ebd1 ""
   "figures_proj1/S1.3.pdf" 1781899340.61739 37286 79cfdecc94d5a6e691d6cd025b6cfadb ""
   "figures_proj1/S1.4.pdf" 1781901084.87734 311923 738e3a4929a8db64994145d37b112abc ""
@@ -287,7 +291,7 @@
   "src/fundamentals_a.tex" 1781899340.81985 158355 d0a6d4a6fd5c4295ccaeb09438be2956 ""
   "src/fundamentals_b.tex" 1781899340.82002 71865 14e553ef6ad264a815f93d5cfc783f5a ""
   "src/introduction.tex" 1781899340.82009 57 13996f907b83f3e8567bad897058b7b9 ""
-  "src/project_1.tex" 1781904831.35637 28319 29ccca48bdad8da634c4d3703bafa4da ""
+  "src/project_1.tex" 1781906189.36615 28986 492661690a0cc59e938de3659289a04a ""
   "src/project_2.tex" 1781899340.82032 41 8a5db72d85512629db5a3b777af71ae4 ""
   "src/project_3.tex" 1781899340.82039 41 3eadbf2337ede8791b4183858635865c ""
   "src/publications.tex" 1781899340.82046 51 944e67c94cda9d6fa018235b19b40afb ""

@@ -63,5 +63,5 @@
 \contentsline {section}{\numberline {4.6}Supplementary information}{116}{section.4.6}%
 \contentsline {chapter}{\tocchapter {Chapter}{5}{project 2}}{123}{chapter.5}%
 \contentsline {chapter}{\tocchapter {Chapter}{6}{project 3}}{125}{chapter.6}%
-\contentsline {chapter}{\tocchapter {}{}{Bibliography}}{126}{chapter*.28}%
-\contentsline {chapter}{\tocchapter {}{}{Appendix}}{136}{appendix*.29}%
+\contentsline {chapter}{\tocchapter {}{}{Bibliography}}{126}{chapter*.29}%
+\contentsline {chapter}{\tocchapter {}{}{Appendix}}{136}{appendix*.30}%
