@@ -1,0 +1,761 @@
+\chapter[Optoelectronic Properties of Heterostructure Bilayers]{Electronic and Optical Properties of 2D Heterostructure Bilayers of Graphene, Borophene and 2D Boron Carbides from First-Principles}
+\label{cha:project_1}
+
+\section{Abstract}
+
+In this chapter,
+we investigate the atomic, electronic, and optical properties of two-dimensional 
+namely Graphene-\ce{BC3}, Graphene-Borophene, and Graphene-\ce{B4C3},
+as well as their constituent monolayers, on the basis of first-principles calculations using the HSE06 hybrid functional.
+The calculations show that while borophene is metallic,
+both monolayer \ce{BC3} and \ce{B4C3} are indirect semiconductors,
+with band gaps of \qty{1.822}{\electronvolt} and \qty{2.381}{\electronvolt} as obtained using HSE06.
+The Graphene-\ce{BC3} and Graphene-\ce{B4C3} bilayer heterojunction systems maintain the Dirac point of graphene at the $\mathrm{K}$ point and are semimetals,
+while Graphene-Borophene is metallic.
+All bilayer heterostructure systems exhibit absorption in the visible region, where the resonance frequency and resonance absorption peak intensity vary between structures.
+In addition, all heterojunctions support plasmons within the range \qtyrange{16.5}{18.5}{\electronvolt}, while Graphene-\ce{B4C3} and Graphene-Borophene exhibit a $\pi$-type plasmon within the region \qtyrange{4}{6}{\electronvolt},
+with the latter possessing an additional plasmon at the lower energy of \qtyrange{1.5}{3}{\electronvolt}.
+The dielectric tensor for Graphene-\ce{B4C3} exhibits complex off-diagonal elements due to the lower $P3$ space-group symmetry, indicating anisotropic dielectric properties and possible optically active (chiral) effects.
+These results show that the two-dimensional heterostructures have desirable optical properties and broaden their potential applications.
+
+\newpage
+\section{Introduction}
+
+Graphene has excellent electrical conductivity,
+desirable mechanical and thermal properties,
+and high light transmittance in the visible-light and infrared regions.
+It also has an extremely high quantum efficiency for light-matter interactions and is strongly optically nonlinear.
+These properties have therefore enabled applications in e.g. electronics, energy storage, biomedical devices, and other fields~\cite{janavika2023graphene}.
+Relative to conventional plasmonic materials, graphene possesses highly confined plasmons with much longer lifetimes.
+In addition, graphene plasmons are active in an extended wavelength range, namely, the mid-infrared and terahertz regime.
+This wavelength range overlaps with the characteristic signals of most organic and biomolecules,
+which has broadened graphene's applications towards plasmonic biological and chemical sensors~\cite{sakthivel2023} in addition to plasmonic waveguides
+and infrared photodetectors.
+Moreover, forming graphene-hybrid materials can tune the properties of graphene, finding applications in biosensors, chemical sensors, optical sensors, and other types of sensors~\cite{zhang2022}.
+
+In other areas, however, the use of graphene remains limited by its zero band gap.
+One method used to expand the application of graphene is to form heterostructures.
+Stacking different two-dimensional (2D) materials together can form double-layer or even multi-layer artificial materials that are maintained by van der Waals interactions~\cite{novoselov20162d}.
+Such materials are known as van der Waals heterojunctions.
+Such stacking can generate a wide range of physical properties,
+making van der Waals heterojunctions even more important than the individual 2D materials themselves.
+There are vast numbers of 2D materials, and by forming heterostructures thereof,
+a diverse range of electrical, photonic, plasmonic, mechanical, and chemical properties can be theoretically predicted through \textit{ab initio} calculations and machine learning~\cite{thygesen2017,he2023}, and experimentally engineered~\cite{lin2023recent,elbanna20232d}.
+
+Recently, the prospect of developing plasmonic devices employing 2D semiconductors has attracted considerable attention~\cite{agarwal2018plasmonics, qiu2018optical}.
+Plasmonic modes in each class of van der Waals semiconductors have their own peculiarities, along with potential technological capabilities.
+Graphene-like \ce{BC3} has also been synthesized experimentally~\cite{yanagisawa2004phonon, yanagisawa2006phonon, tanaka2005novel} and is found to be semiconducting with an indirect band gap.
+Calculations have shown that nanostructures of graphene-like \ce{BC3} exhibit desirable absorption in the visible region and, by changing the size of the nanostructure,
+the resonance peak position of the absorption spectrum can be effectively regulated~\cite{chen2019plasmon}.
+Recent studies have also predicted a stable \ce{B4C3} monolayer,
+which is even more stable than the previously synthesized \ce{BC3} monolayer~\cite{tian2019}.
+Boron carbides are known for their exceptional hardness,
+thermal stability, and chemical inertness.
+The emergence of 2D boron carbides adds a new dimension to the study of these materials,
+offering novel properties and opportunities for technological innovation~\cite{luo2011predicting,fan2018two}.
+
+Borophene is another 2D material of high current interest.
+This monolayer allotrope of boron forms several structures and is characterized by its unique atomic structure and exceptional electronic properties,
+which have opened new avenues for innovation in the areas of electronics,
+energy storage, catalysis, plasmonics, superconductivity, and sensors~\cite{qiu2018optical}.
+One particularly intriguing aspect of borophene's versatility lies in its ability to form heterojunctions---interfaces between different borophene structures or between borophene and other materials.
+Borophene-graphene heterostructures have been realized~\cite{hou2021borophene},
+where they have shown good stability and the ability to function as humidity sensors,
+exhibiting a sensitivity about 700 times higher than that of pristine graphene,
+and 27 times higher than that of borophene.
+Recently, both lateral and vertical integration of borophene with graphene has also been achieved~\cite{liu2019borophene},
+as has the formation of bilayer ($\alpha$-phase) borophene on the Ag(111) surface~\cite{liu2022}.
+
+The synergistic combination of graphene's exceptional electrical conductivity,
+mechanical strength, and flexibility with boron carbide's high hardness,
+thermal stability, and chemical resistance, and with borophene's attractive electronic properties,
+holds significant potential for a wide range of applications spanning from electronics and optoelectronics to energy storage and sensing.
+As research in this field continues to advance,
+the development of scalable synthesis methods, the elucidation of structure-property relationships,
+and the exploration of novel applications will be key focal points.
+To date, little is known about the physical properties of graphene-based bilayer heterojunctions with borophene and boron-carbide materials.
+This motivates the present chapter to gain an understanding of these heterojunctions
+through the study of their electronic and optical properties on the basis of first-principles calculations.
+Such understanding is crucial for their future technological application,
+where the unique properties of these materials can be harnessed.
+
+This chapter is organised as follows:
+In Section~\ref{1_calculation_method}, the calculation method is described,
+followed by the Results and Discussion in Section~\ref{1_results}.
+Herein, we describe the physical properties of the monolayers and heterostructures, including band structure, density of states, electron density difference distributions,
+Schottky barriers and the optical properties.
+This is followed by the Conclusion in Section~\ref{1_conclusions}.
+
+\section{Calculation method}
+\label{1_calculation_method}
+
+We perform first-principles calculations using density functional theory (DFT) as implemented in the Vienna Ab initio Simulation Package (VASP)~\cite{kresse1993ab, kresse1996efficiency, kresse1996efficient}.
+Projector augmented wave (PAW) pseudopotentials account for the electron-ion interactions~\cite{kresse1999ultrasoft}.
+For the structural optimization calculations, we use the generalized gradient approximation (GGA) of Perdew-Burke-Ernzerhof (PBE) as the exchange-correlation functional.
+The Becke-Johnson damped D3(BJ) dispersion correction accounts for long-range van der Waals (vdW) interactions.
+The structural calculations use a $\Gamma$-centered $\vec{k}$-point sampling mesh of $11 \times 11 \times 1$, except for the smaller graphene unit cell shown in figure~\ref{fig1.1}, for which a denser mesh of $23 \times 23 \times 1$ is used.
+Here, the plane-wave energy cutoff is set to \qty{450}{\electronvolt}.
+The electronic convergence criterion is set to \qty{1e-6}{\electronvolt}, and the systems are allowed to relax until all forces on each atom are below \qty{0.01}{\electronvolt\per\angstrom}.
+For smearing at the Fermi level,
+we use the Gaussian smearing method implemented in VASP.
+
+For the calculation of electronic properties,
+the PBE exchange-correlation functional is known to underestimate band gap energies.
+Therefore, we also use the screened hybrid exchange-correlation functional of Heyd, Scuseria, and Ernzerhof (HSE06),
+which gives more accurate band gap energies~\cite{sassnick2021electronic, heyd2003hybrid, krukau2006influence}.
+
+All density of states (DoS) calculations use a $\Gamma$-centered $\vec{k}$-point sampling mesh of $33 \times 33 \times 1$,
+with smearing at the Fermi level calculated using the Gaussian method and a broadening value of \qty{0.1}{\electronvolt}.
+The HSE06 exchange-correlation functional is also used for the calculation of optical properties,
+in particular, the frequency-dependent dielectric function with $\Gamma$-centered $\vec{k}$-point sampling meshes of $17 \times 17 \times 1$ and $65 \times 65 \times 1$.
+The complex frequency-dependent dielectric function, $\varepsilon(\omega)$,
+is given by equation~\ref{complex_dielectric_function_definition};
+here, $\varepsilon_{1}(\omega)$ and $\varepsilon_{2}(\omega)$ are the real and imaginary parts, respectively, and $\omega$ denotes the photon energy in \unit{\electronvolt}.
+
+We then use the dielectric function to calculate the absorption coefficient,
+refractive index, extinction coefficient, reflectivity, and energy-loss spectrum,
+following the relations introduced in section~\ref{sec:from_dielectric_function_to_optical_properties}.
+
+The interlayer binding energy $E_{\mathrm{b}}$ follows as:
+
+\begin{equation}
+E_{\mathrm{b}}
+= E_{\mathrm{H}} - E_{\mathrm{BC}/\mathrm{B}} - E_{\mathrm{G}}
+\label{interlayer_binding_energy}
+\end{equation}
+
+here, $E_{\mathrm{H}}$ denotes the total energy of the heterostructure,
+$E_{\mathrm{BC}/\mathrm{B}}$ corresponds to the total energy of the isolated boron-carbide or borophene monolayer,
+and $E_{\mathrm{G}}$ denotes the total energy of the isolated graphene monolayer.
+
+Afterwards, the charge density difference $\Delta \rho(\vec{r},)$ takes the form:
+
+\begin{equation}
+\Delta \rho(\vec{r},) =
+\rho_{\mathrm{AB}}(\vec{r},)
+- \rho_{\mathrm{A}}(\vec{r},)
+- \rho_{\mathrm{B}}(\vec{r},)
+\label{charge_density_difference}
+\end{equation}
+
+here, $\rho_{\mathrm{AB}}(\vec{r},)$ denotes the total charge density of the heterostructure.
+The terms $\rho_{\mathrm{A}}(\vec{r},)$ and $\rho_{\mathrm{B}}(\vec{r},)$ represent the charge densities of the isolated monolayers forming the heterostructure.
+
+\section{Results and discussion}
+\label{1_results}
+
+\subsection{Monolayer properties}
+
+We first examine the structural and electronic properties of the three non-graphene monolayers,
+namely \ce{BC3}, \ce{B4C3}, and borophene.
+Graphene is also investigated because it always forms one layer of the heterostructure systems.
+The optimized structures of \ce{BC3}, \ce{B4C3}, borophene,
+and graphene are shown in figure~\ref{fig1.1}.
+Borophene monolayers have been predicted to possess various low-energy structures,
+among which the $\beta_{12}$, $\chi_{3}$, and $\alpha'$ structures have been synthesised experimentally~\cite{kaneti2021borophene}.
+For this study, we choose to investigate the $\alpha'$ structure of borophene,
+not only because it has been synthesised experimentally,
+but also because GGA-level \textit{ab initio} calculations have shown it to have the most favourable cohesive energy~\cite{wu2012two}.
+
+The structural properties and band gap energies of the monolayer systems are shown in table~\ref{tab:1.1_monolayer}.
+For graphene, the calculated lattice constant is $a = 2.467$ $\mathring{\mathrm{A}}$,
+while those of borophene, \ce{BC3}, and \ce{B4C3} are 5.051 $\mathring{\mathrm{A}}$, 5.169 $\mathring{\mathrm{A}}$, and 4.690 $\mathring{\mathrm{A}}$, respectively.
+In agreement with previous calculations, graphene is a semimetal and borophene is metallic,
+whereas \ce{BC3} and \ce{B4C3} are indirect semiconductors~\cite{zhang2018strain, nosheen2022first}.
+The calculated indirect band gaps of \ce{BC3} and \ce{B4C3} are \qty{1.822}{\electronvolt} (\qty{0.634}{\electronvolt}) and \qty{2.381}{\electronvolt} (\qty{1.647}{\electronvolt}), respectively, as obtained using HSE06 (PBE).
+
+Figure~\ref{S1.2} shows the optimization of the lattice constants for the monolayers,
+while figure~\ref{fig1.2_monolayers_bs} presents the band structures of the four monolayer systems.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{figures_proj1/proj1.1.pdf}
+\caption{Optimized atomic structures of \ce{BC3}, borophene, \ce{B4C3}, and graphene.
+Green and brown spheres denote boron and carbon atoms, respectively.
+Borophene has three unique bonds indicated by $l_1$, $l_2$ and $l_3$,
+while \ce{B4C3} has four unique bonds indicated by $l_4$, $l_5$, $l_6$ and $l_7$.
+Orange lines highlight the unit cells.}
+\label{fig1.1}
+\end{figure}
+
+\begin{table}[!htbp]
+\centering
+\rowcolors{2}{gray!15}{white}
+\begin{adjustbox}{max width=1.0\linewidth}
+\begin{tabular}{ccm{48px}m{48px}m{48px}m{72px}m{72px}c}
+\hline
+\rowcolor{gray!25}
+system
+& $a$ $(a=b)$ (Å) & B-B (Å) & C-C (Å) & B-C (Å) & $E_{\mathrm{g-PBE}}$ (eV) & $E_{\mathrm{g-HSE06}}$ (eV) & Nature \\ \hline
+\ce{BC3}
+& 5.169 & - & 1.421 & 1.563
+& 0.634
+\newline (0.62--0.66)
+\newline\cite{behzad2017mechanical,zhang2018theoretical,zhang2018strain}
+& 1.822 \newline(1.83)\cite{zhang2018theoretical}
+& indirect \\
+
+Borophene
+& 5.051
+& 1.689 ($l_1$) \newline
+1.672 ($l_2$) \newline
+1.707 ($l_3$)
+& - & - & - & -
+& metallic \\
+
+\ce{B4C3}
+& 4.690 & 1.689 ($l_4$) & -
+& 1.592 ($l_5$) \newline
+1.517 ($l_6$) \newline
+1.548 ($l_7$)
+& 1.647 & 2.381 \newline(2.39)\cite{chang2019b4c3}
+& indirect \\
+
+Graphene
+& 2.467 & - & 1.424 & - & - & - & semimetal \\
+\hline
+\end{tabular}
+\end{adjustbox}
+
+\caption{Optimized lattice constants, interatomic distances, and band gaps of monolayer \ce{BC3}, borophene, \ce{B4C3}, and graphene.
+Here, $a$ is the lattice parameter with $a=b$ for all systems, and B-B, C-C,
+and B-C are the boron-boron, carbon-carbon, and boron-carbon bond lengths, respectively.
+Borophene and \ce{B4C3} have B-B and B-C bonds of different lengths,
+which are identified by labels $l_1,\cdots,l_7$ in figure~\ref{fig1.1}.
+The band gap $E_{\mathrm{g}}$ is calculated using the PBE and HSE06 exchange-correlation functionals;
+values in brackets are from previous theoretical studies. ``Nature'' indicates the electronic character of the system.}
+\label{tab:1.1_monolayer}
+\end{table}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.40\linewidth]{figures_proj1/proj1.3a.pdf}%
+\includegraphics[width=0.40\linewidth]{figures_proj1/proj1.3b.pdf}%
+\par\nointerlineskip
+\includegraphics[width=0.40\linewidth]{figures_proj1/proj1.3c.pdf}%
+\includegraphics[width=0.40\linewidth]{figures_proj1/proj1.3d.pdf}%
+\caption{Band structures of graphene, borophene, \ce{BC3}, and \ce{B4C3} calculated using PBE (blue) and HSE06 (orange).}
+\label{fig1.2_monolayers_bs}
+\end{figure}
+
+\subsection{Heterostructure}
+
+\subsubsection{Structural properties}
+
+We next determine the structures of the bilayer heterojunctions,
+which consist of monolayer graphene stacked with monolayer \ce{BC3}, borophene,
+and \ce{B4C3}, namely Graphene-\ce{BC3}, Graphene-Borophene, and Graphene-\ce{B4C3}, respectively.
+To create the heterostructures, we use a $2\times 2\times 1$ cell.
+For each system,
+we consider several lateral stacking coordinations of these layers.
+Specifically, we consider `Hollow'', `Bridge'', and `Top'' coordinations for the Graphene-\ce{BC3} bilayer system,
+and `Hollow 1'', `Hollow 2'', `Bridge'', and ``Top'' coordinations for the Graphene-Borophene and Graphene-\ce{B4C3} bilayer systems.
+We calculate the relative energies,
+optimized lattice constants, and interlayer distances for all structures.
+Figures~\ref{S1.4}--\ref{S1.6} give details of this procedure.
+Due to the weak van der Waals interaction between the layers,
+the energy differences among the lateral positions are very small,
+as shown in table~\ref{tab:S1.1}.
+
+The results show that the lowest-energy lateral position for the Graphene-\ce{BC3} system is the `Hollow'' stacking configuration.
+As shown in figure~\ref{fig1.3},
+each atom in \ce{BC3} projects to the center of a hexagon in graphene.
+Both the Graphene-Borophene and Graphene-\ce{B4C3} bilayer systems favor the `Top'' stacking configuration.
+In this arrangement, each atom-free hexagon in the bottom layer projects to the center of a hexagon in graphene.
+However, the converse does not hold, because not every hexagon center in graphene aligns with an atom-free hexagon in the bottom layer, as illustrated in figure~\ref{fig1.3}.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=1.00\textwidth]{figures_proj1/proj1.3.pdf}
+\caption{Top views of the optimized atomic structures of Graphene-\ce{BC3}, Graphene-Borophene, and Graphene-\ce{B4C3}.
+Green and brown spheres denote boron and carbon atoms, respectively.
+The orange parallelogram indicates the unit cell.}
+\label{fig1.3}
+\end{figure}
+
+\begin{table}[!htbp]
+\centering
+\rowcolors{2}{gray!15}{white}
+\begin{adjustbox}{max width=1.0\linewidth}
+\begin{tabular}{ccm{72px}m{64px}m{88px}m{72px}c}
+\hline
+\rowcolor{gray!25}
+system
+& coordination
+& $a$ $(a=b)$ (Å)
+& $S_{\mathrm{G}}$
+& $S_{\mathrm{BC}/\mathrm{B}}$
+& $d_{\mathrm{IL}}$ (Å)
+& Nature \\ \hline
+
+Graphene-\ce{BC3}
+& Hollow
+& 5.044
+& \qty{2.23}{\percent}
+& \qty{-2.42}{\percent}
+& 3.372
+& semimetal \\
+
+Graphene-Borophene
+& Top
+& 4.979
+& \qty{0.91}{\percent}
+& \qty{-1.43}{\percent}
+& 3.505
+& metallic \\
+
+Graphene-\ce{B4C3}
+& Top
+& 4.846
+& \qty{-1.78}{\percent}
+& \qty{3.33}{\percent}
+& 3.514
+& semimetal
+\\ \hline
+\end{tabular}
+\end{adjustbox}
+\caption{Optimized structural properties of each bilayer heterojunction system,
+including the lowest-energy lateral stacking coordination relative to graphene,
+the optimized lattice constant $a$,
+the strains relative to the respective monolayers, $S_{\mathrm{G}}$ and $S_{\mathrm{BC}/\mathrm{B}}$,
+the interlayer distance $d_{\mathrm{IL}}$,
+and the electronic nature.
+Negative and positive percentage strains denote compressive and tensile strains, respectively.}
+\label{tab:1.2_heterostructure}
+\end{table}
+
+Table~\ref{tab:1.2_heterostructure} shows that Graphene-Borophene is metallic,
+whereas Graphene-\ce{BC3} and Graphene-\ce{B4C3} are semimetals.
+Among all heterostructure systems, \ce{B4C3} shows the largest tensile strain of \qty{3.33}{\percent}.
+For Graphene-\ce{BC3},
+graphene is under tensile strain and \ce{BC3} is under compressive strain.
+For Graphene-Borophene,
+graphene has a slight tensile strain,
+while borophene experiences compressive strain.
+For Graphene-\ce{B4C3},
+graphene is under compressive strain,
+while \ce{B4C3} is under a larger tensile strain.
+In general, tensile strain tends to narrow the band gap and increase conductivity~\cite{roldan2015strain}.
+Conversely, compressive strain tends to widen the band gap and decrease conductivity~\cite{boukhvalov2008hydrogen}.
+
+\subsubsection{Charge density difference}
+
+The charge density difference distributions of the heterostructure systems are shown in figure~\ref{fig1.4_cdd}.
+We calculate these distributions using equation~\ref{charge_density_difference}.
+Specifically, we subtract the charge densities of the isolated monolayers from the charge density of the corresponding heterostructure.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=1.0\textwidth]{figures_proj1/proj1.4.pdf}
+\caption{Charge density difference ($\Delta \rho(\vec{r})$, calculated using equation~\ref{charge_density_difference}) between the monolayers and the heterostructures.
+Regions of charge accumulation are shown in yellow,
+and regions of charge depletion are shown in blue.
+The isosurface level is $1.5\times10^{-4}$ a$_{0}^{-3}$ and the top layer is always graphene.}
+\label{fig1.4_cdd}
+\end{figure}
+
+The side views in the middle panels of figure~\ref{fig1.4_cdd} show charge depletion from the graphene layer and charge accumulation in the corresponding non-graphene monolayer for all three systems.
+Among these systems, Graphene-\ce{BC3} exhibits the largest charge redistribution.
+This larger charge redistribution is consistent with the smaller interlayer distance associated with the hollow-site coordination.
+In contrast, Graphene-Borophene and Graphene-\ce{B4C3} adopt top-site coordination.
+
+We also observe that atoms in the lower layers
+that directly coordinate with a carbon atom in the graphene layer
+have the largest charge accumulation regions.
+In contrast, the carbon atoms in the graphene layer with bridge or hollow coordination to the atoms of the lower layer show the largest regions of charge depletion.
+These coordination-dependent charge redistributions produce the accumulation and depletion patterns shown in the top and bottom views of figure~\ref{fig1.4_cdd}.
+Therefore, the relative coordination of the two monolayers directly influences the interfacial electronic structure.
+The top and bottom views of the Graphene-\ce{B4C3} heterostructure reveal a clear threefold rotational symmetry in the upper and lower plots of the rightmost panel.
+
+In the next sections, we investigate the band structures and densities of states to further characterise the electronic structures of these heterostructure systems.
+
+\subsubsection{Band structure and density of states}
+
+For the bilayer systems, the band structures and total density of states (DoS) are shown in figures~\ref{fig1.5}--\ref{fig1.7} as calculated using the HSE06 and PBE functionals.
+The corresponding atom-projected (or partial) PDoS are presented in figures~\ref{S1.9}--\ref{S1.11}.
+
+The Graphene-\ce{BC3} heterojunction exhibits a sizeable density of states just above the Fermi level, as shown in figure~\ref{S1.9},
+which is related to the relatively flat band near the $\mathrm{M}$ point and along the $\mathrm{K}$--$\Gamma$ path in the Brillouin zone.
+The Graphene-Borophene system exhibits metallic behaviour due to the small occupation of states at the $\mathrm{K}$ point; these states are mainly carbon-related, as shown by the PDoS in figure~\ref{S1.10}.
+The Graphene-\ce{B4C3} bilayer exhibits essentially semimetallic behaviour, with the \ce{B4C3}-derived states located away from the Fermi level, mainly above approximately \qty{1.2}{\electronvolt} and below approximately \qty{-0.8}{\electronvolt}, as shown by the PDoS in figure~\ref{S1.11}.
+
+Across these three bilayers,
+HSE06 mainly shifts the conduction bands upward and the valence bands downward relative to PBE.
+At the $\mathrm{K}$ point, the graphene bands exhibit very small band-gap openings of \qty{20}{\milli\electronvolt} and
+\qty{50}{\milli\electronvolt} for Graphene-\ce{B4C3} and Graphene-\ce{BC3}, respectively.
+
+Figures~\ref{fig1.5}--\ref{fig1.7} show the band structures and total DoS of the three bilayer systems calculated using the PBE and HSE06 functionals.
+In each figure, the PBE and HSE06 results are shown in blue and orange, respectively, and the Fermi level is indicated by the purple dashed line.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{figures_proj1/proj1.5.pdf}
+\caption{Band structure and total DoS of Graphene-\ce{BC3}.}
+\label{fig1.5}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{figures_proj1/proj1.6.pdf}
+\caption{Band structure and total DoS of Graphene-Borophene.}
+\label{fig1.6}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{figures_proj1/proj1.7.pdf}
+\caption{Band structure and total DoS of Graphene-\ce{B4C3}.}
+\label{fig1.7}
+\end{figure}
+
+\subsubsection{Schottky barrier height}
+
+Bilayer heterostructures composed of graphene and boron-carbide monolayers can function as Schottky diodes.
+A high Schottky barrier blocks the reverse current from the metal to the semiconductor and enables the rectification effect of a diode.
+Based on the Schottky--Mott model shown in figure~\ref{fig1.8},
+the Schottky barrier at a metal--semiconductor interface~\cite{guo2017all} is determined by the relative positions of the Fermi level and the semiconductor band edges.
+
+For $n$-type materials, the Schottky barrier $\Phi_n$ is defined as the energy difference between the conduction band minimum $E_C$ and the Fermi level $E_F$:
+
+\begin{equation}
+    \Phi_n = E_C - E_F
+\end{equation}
+
+Similarly, for $p$-type materials, the Schottky barrier $\Phi_p$ is defined as the energy difference between the Fermi level $E_F$ and the valence band maximum $E_V$:
+
+\begin{equation}
+    \Phi_p = E_F - E_V
+\end{equation}
+
+The sum of these two Schottky barriers is approximately equal to the semiconductor band gap $E_g$:
+
+\begin{equation}
+    \Phi_n + \Phi_p \approx E_g
+\end{equation}
+
+For the Graphene-\ce{B4C3} system illustrated in figure~\ref{fig1.8}, we find $\Phi_n = \qty{1.42}{\electronvolt}$ ($\qty{1.07}{\electronvolt}$) and $\Phi_p = \qty{0.87}{\electronvolt}$ ($\qty{0.55}{\electronvolt}$) using HSE06 (PBE).
+Since $\Phi_p < \Phi_n$, this heterojunction forms a $p$-type Schottky barrier.
+For the Graphene-\ce{BC3} heterostructure bilayer, we find $\Phi_n = \qty{0.19}{\electronvolt}$ ($\qty{0.003}{\electronvolt}$) and $\Phi_p = \qty{1.42}{\electronvolt}$ ($\qty{0.39}{\electronvolt}$) using HSE06 (PBE).
+This result indicates that the Graphene-\ce{BC3} heterojunction forms an $n$-type Schottky barrier.
+For device applications, a smaller Schottky barrier height, or even an Ohmic contact, is preferred to reduce contact resistance.
+
+\begin{figure}[!htbp]
+\centering
+    \adjustbox{valign=c}{\includegraphics[width=0.40\linewidth]{figures_proj1/proj1.8a.pdf}}%
+    \adjustbox{valign=c}{\includegraphics[width=0.40\linewidth]{figures_proj1/proj1.8b.pdf}}%
+\caption{\textbf{Left:} Schematic of the Schottky--Mott model showing the valence and conduction band energies, the Fermi energy, and $n$-type and $p$-type Schottky barriers labelled $E_V$, $E_C$, $E_F$, $\Phi_n$, and $\Phi_p$, respectively. \textbf{Right:} Example of the HSE06-calculated Graphene-\ce{B4C3} heterojunction showing the determined Schottky barrier height from the band structure.}
+\label{fig1.8}
+\end{figure}
+
+\subsection{Optical properties}
+
+% bookmark
+
+\section{Conclusions}
+\label{1_conclusions}
+
+\section{Supplementary information}
+
+The supplementary information presents the lattice-parameter determination for the graphene, borophene, \ce{BC3}, and \ce{B4C3} monolayers,
+as well as the corresponding results for the associated heterostructure bilayers under various relative lateral displacements.
+It also provides $\vec{k}$-point mesh convergence tests, projected densities of states, dielectric-function convergence tests, and derived optical properties for the monolayer and bilayer systems investigated.
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.6\textwidth]{figures_proj1/S1.1.pdf}
+    \caption{Total energy versus the $\vec{k}$-point mesh used to sample the Brillouin zone for the Graphene-\ce{BC3} bilayer; here, $X$ denotes an $X \times X \times 1$~$\vec{k}$-point mesh.}
+\label{S1.1}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.2.pdf}
+\caption{Total energy versus lattice constant for the four monolayer systems: graphene, borophene, \ce{BC3}, and \ce{B4C3}.
+The lattice constant yielding the lowest total energy is shown by the full circle in each plot.}
+\label{S1.2}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.00\textwidth]{figures_proj1/S1.3.pdf}
+\caption{Total energy versus lattice constant for each bilayer system for the various stacking positions considered.
+The lines are fitted curves, with the full circle indicating the lowest-energy structure.}
+\label{S1.3}
+\end{figure}
+
+\clearpage
+Figures~\ref{S1.4}--\ref{S1.6} show the total energy versus the lattice constant and interlayer distance for the various lateral positions considered.
+In each figure, the equilibrium geometry is indicated by the ``Extrema of fitted data'' result.
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.00\textwidth]{figures_proj1/S1.4.pdf}
+\caption{Total-energy landscape of the Graphene-\ce{BC3} bilayer.}
+\label{S1.4}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.5.pdf}
+\caption{Total-energy landscape of the Graphene-Borophene bilayer.}
+\label{S1.5}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.6.pdf}
+\caption{Total-energy landscape of the Graphene-\ce{B4C3} bilayer.}
+\label{S1.6}
+\end{figure}
+
+\begin{table}[!htbp]
+\centering
+\begin{adjustbox}{max width=1.0\linewidth}
+\begin{tabular}{cm{60px}m{110px}m{120px}m{90px}m{100px}}
+\hline
+\rowcolor{gray!25}
+system
+& site
+& lattice constant (Å)
+& interlayer spacing (Å)
+& total energy (eV)
+& relative energy (eV) \\ \hline
+
+\multirow{3}{*}{Graphene-\ce{BC3}}
+& Top
+& 5.044
+& 3.432
+& -142.275
+& 0.018 \\
+
+& \cellcolor{gray!15} Bridge
+& \cellcolor{gray!15} 5.044
+& \cellcolor{gray!15} 3.384
+& \cellcolor{gray!15} -142.290
+& \cellcolor{gray!15} 0.002 \\
+
+& \textbf{Hollow}
+& \textbf{5.044}
+& \textbf{3.375}
+& \textbf{-142.293}
+& \textbf{0.000} \\ \hline
+
+\cellcolor{gray!15}
+& \textbf{Top}
+& \textbf{4.979}
+& \textbf{3.496}
+& \textbf{-125.927}
+& \textbf{0.000} \\
+
+\rowcolor{gray!15}
+\cellcolor{gray!15}
+& Bridge
+& 4.979
+& 3.505
+& -125.921
+& 0.006 \\
+
+\cellcolor{gray!15}
+& Hollow 1
+& 4.979
+& 3.551
+& -125.914
+& 0.013 \\
+
+\rowcolor{gray!15}
+\cellcolor{gray!15}
+\multirow{-4}{*}{Graphene-Borophene}
+& Hollow 2
+& 4.979
+& 3.548
+& -125.909
+& 0.018 \\ \hline
+
+\cellcolor{white}
+& \textbf{Top}
+& \textbf{4.846}
+& \textbf{3.514}
+& \textbf{-127.138}
+& \textbf{0.000} \\
+
+\rowcolor{gray!15}
+\cellcolor{white}
+& Bridge
+& 4.846
+& 3.536
+& -127.135
+& 0.003 \\
+
+\cellcolor{white}
+& Hollow 1
+& 4.846
+& 3.545
+& -127.133
+& 0.005 \\
+
+\rowcolor{gray!15}
+\cellcolor{white}
+\multirow{-4}{*}{Graphene-\ce{B4C3}}
+& Hollow 2
+& 4.846
+& 3.562
+& -127.124
+& 0.014 \\ \hline
+
+\end{tabular}
+\end{adjustbox}
+\caption{For each bilayer system and each lateral position considered, the optimized lattice constant, interlayer spacing, total energy, and relative energy are given.
+The relative energy is given with respect to the most favourable structure, which corresponds to the lowest total energy for each bilayer system.}
+\label{tab:S1.1}
+\end{table}
+
+\clearpage
+In addition, figures~\ref{S1.9}--\ref{S1.11} show the projected densities of states of the three heterostructure systems calculated using the HSE06 functional.
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.9.pdf}
+\caption{HSE06 projected density of states of Graphene-\ce{BC3}.}
+\label{S1.9}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\textwidth]{figures_proj1/S1.10.pdf}
+\caption{HSE06 projected density of states of Graphene-Borophene.}
+\label{S1.10}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.11.pdf}
+\caption{HSE06 projected density of states of Graphene-\ce{B4C3}.}
+\label{S1.11}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.12.pdf}
+\caption{Dielectric function of graphene calculated using the PBE functional for different $\vec{k}$-point meshes;
+here, for example,
+$33$ denotes a $33 \times 33 \times 1$ $\vec{k}$-point mesh.}
+\label{S1.12}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\linewidth]{figures_proj1/S1.13a.pdf}
+    \par\nointerlineskip
+    \includegraphics[width=0.80\linewidth]{figures_proj1/S1.13b.pdf}
+    \par\nointerlineskip
+    \includegraphics[width=0.80\linewidth]{figures_proj1/S1.13c.pdf}
+    \par\nointerlineskip
+    \includegraphics[width=0.80\linewidth]{figures_proj1/S1.13d.pdf}
+\caption{Real and imaginary parts of the dielectric function
+for the four monolayers as calculated using the PBE functional with a
+$129\times 129\times 1$
+$\vec{k}$-point mesh for graphene,
+and a $65\times 65\times 1$
+$\vec{k}$-point mesh for the borophene and boron-carbide monolayers.}
+\label{S1.13}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\linewidth]{figures_proj1/S1.14a.pdf}
+    \par\nointerlineskip
+    \includegraphics[width=0.80\linewidth]{figures_proj1/S1.14b.pdf}
+    \par\nointerlineskip
+    \includegraphics[width=0.80\linewidth]{figures_proj1/S1.14c.pdf}
+    \par\nointerlineskip
+    \includegraphics[width=0.80\linewidth]{figures_proj1/S1.14d.pdf}
+    \par\nointerlineskip
+    \includegraphics[width=0.80\linewidth]{figures_proj1/S1.14e.pdf}
+\caption{Optical properties
+for the four monolayers as calculated using the PBE functional with a
+$129\times 129\times 1$
+$\vec{k}$-point mesh for graphene,
+and a $65\times 65\times 1$
+$\vec{k}$-point mesh for the borophene and boron-carbide monolayers.}
+\label{S1.14}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.15.pdf}
+\caption{Convergence test of the dielectric function of Graphene-\ce{B4C3} with respect to the number of unoccupied bands, calculated using PBE.}
+\label{S1.15}
+\end{figure}
+
+\clearpage
+Figure~\ref{S1.16} also shows the effect of the energy convergence criterion \texttt{EDIFF} on the calculated dielectric function, together with the effects of different $\vec{k}$-point meshes and the comparison between HSE06 and PBE.
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.16.pdf}
+\caption{Dielectric function of the Graphene-Borophene bilayer comparing PBE and HSE06 results, HSE06 $\vec{k}$-point meshes of $17 \times 17 \times 1$ and $65 \times 65 \times 1$, and HSE06 energy convergence criteria \texttt{EDIFF} = $10^{-4}$, $10^{-5}$, and $10^{-6}$.}
+\label{S1.16}
+\end{figure}
+
+\clearpage
+Figures~\ref{S1.17}--\ref{S1.19} show the PBE dielectric function tensor components of the three bilayer systems.
+The off-diagonal components are small but non-zero and satisfy the antisymmetric relations $\varepsilon_{yx}=-\varepsilon_{xy}$, $\varepsilon_{yz}=-\varepsilon_{zy}$, and $\varepsilon_{zx}=-\varepsilon_{xz}$.
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.17.pdf}
+\caption{PBE dielectric function components of Graphene-\ce{BC3}.}
+\label{S1.17}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.18.pdf}
+\caption{PBE dielectric function components of Graphene-Borophene.}
+\label{S1.18}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.19.pdf}
+\caption{PBE dielectric function components of Graphene-\ce{B4C3}.}
+\label{S1.19}
+\end{figure}
+
+\clearpage
+Figures~\ref{S1.20}--\ref{S1.24} show the HSE06 optical properties of the three bilayer heterostructures, including the absorption coefficient, energy-loss spectrum, reflectivity, refractive index, and extinction coefficient.
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.20.pdf}
+\caption{Absorption coefficient.}
+\label{S1.20}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.21.pdf}
+\caption{Energy-loss spectrum.}
+\label{S1.21}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.22.pdf}
+\caption{Reflectivity.}
+\label{S1.22}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.23.pdf}
+\caption{Refractive index.}
+\label{S1.23}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.24.pdf}
+\caption{Extinction coefficient.}
+\label{S1.24}
+\end{figure}
