@@ -1725,4 +1725,361 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [105])
 
-[106 <./fi
+[106 <./figures_ch3/4.5_energy_alt.pdf>] (./src/project_1.tex
+Overfull \hbox (6.52834pt too wide) in paragraph at lines 6--19
+\T1/lmr/m/n/12 (-20) graphene, borophene, and boron carbide het-ero-junc-tion bilayer sys-tems ($[][][][][]$,
+ []
+
+
+
+[107
+
+
+
+]
+Underfull \vbox (badness 4779) has occurred while \output is active []
+
+
+
+[108]
+
+LaTeX Warning: Reference `s1.1' on page 109 undefined on input line 95.
+
+
+Package siunitx Warning: Unit macro \angstrom has been deprecated in this
+(siunitx)                release.
+(siunitx)                
+(siunitx)                The BIPM have removed this unit from the SI Brochure.
+(siunitx)                You should define it yourself using \DeclareSIUnit in
+(siunitx)                your source. The current definition is
+(siunitx)                
+(siunitx)                \DeclareSIUnit\angstrom{\text {Å}}
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[109]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[110]
+<figures_proj1/proj1.1.pdf, id=2132, 4537.95375pt x 2865.95718pt>
+File: figures_proj1/proj1.1.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.1.pdf>
+Package pdftex.def Info: figures_proj1/proj1.1.pdf  used on input line 171.
+(pdftex.def)             Requested size: 347.7164pt x 219.573pt.
+<figures_proj1/proj1.3a.pdf, id=2140, 722.7pt x 433.62pt>
+File: figures_proj1/proj1.3a.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.3a.pdf>
+Package pdftex.def Info: figures_proj1/proj1.3a.pdf  used on input line 231.
+(pdftex.def)             Requested size: 173.85489pt x 104.30911pt.
+<figures_proj1/proj1.3b.pdf, id=2141, 722.7pt x 433.62pt>
+File: figures_proj1/proj1.3b.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.3b.pdf>
+Package pdftex.def Info: figures_proj1/proj1.3b.pdf  used on input line 232.
+(pdftex.def)             Requested size: 173.85489pt x 104.30911pt.
+<figures_proj1/proj1.3c.pdf, id=2142, 722.7pt x 433.62pt>
+File: figures_proj1/proj1.3c.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.3c.pdf>
+Package pdftex.def Info: figures_proj1/proj1.3c.pdf  used on input line 234.
+(pdftex.def)             Requested size: 173.85489pt x 104.30911pt.
+<figures_proj1/proj1.3d.pdf, id=2143, 722.7pt x 433.62pt>
+File: figures_proj1/proj1.3d.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.3d.pdf>
+Package pdftex.def Info: figures_proj1/proj1.3d.pdf  used on input line 235.
+(pdftex.def)             Requested size: 173.85489pt x 104.30911pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[111]
+
+[112 <./figures_proj1/proj1.1.pdf>]
+
+[113 <./figures_proj1/proj1.3a.pdf> <./figures_proj1/proj1.3b.pdf> <./figures_proj1/proj1.3c.pdf> <./figures_proj1/proj1.3d.pdf>]
+<figures_proj1/proj1.3.pdf, id=2355, 6778.32375pt x 1504.8722pt>
+File: figures_proj1/proj1.3.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.3.pdf>
+Package pdftex.def Info: figures_proj1/proj1.3.pdf  used on input line 268.
+(pdftex.def)             Requested size: 434.64386pt x 96.4883pt.
+
+Underfull \hbox (badness 1895) in paragraph at lines 271--271
+[]\T1/lmr/m/sc/12 (+20) Figure 4.3.|\T1/lmr/m/n/12 (+20) Top view of the op-tim-ized atomic struc-tures of
+ []
+
+
+Overfull \hbox (10.17027pt too wide) in paragraph at lines 326--340
+[]\T1/lmr/m/n/12 (-20) It can be seen from table [][]4.2[][] that $[][][]$ is metal-lic, while $[][][][][]$
+ []
+
+
+
+[114 <./figures_proj1/proj1.3.pdf>]
+<figures_proj1/proj1.4.pdf, id=2373, 4537.95375pt x 2865.95718pt>
+File: figures_proj1/proj1.4.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.4.pdf>
+Package pdftex.def Info: figures_proj1/proj1.4.pdf  used on input line 349.
+(pdftex.def)             Requested size: 434.64386pt x 274.49904pt.
+
+
+[115 <./figures_proj1/proj1.4.pdf>]
+<figures_proj1/S1.1.pdf, id=2387, 722.7pt x 433.62pt>
+File: figures_proj1/S1.1.pdf Graphic file (type pdf)
+<use figures_proj1/S1.1.pdf>
+Package pdftex.def Info: figures_proj1/S1.1.pdf  used on input line 385.
+(pdftex.def)             Requested size: 260.78896pt x 156.4736pt.
+<figures_proj1/S1.2.pdf, id=2388, 1156.32pt x 867.24pt>
+File: figures_proj1/S1.2.pdf Graphic file (type pdf)
+<use figures_proj1/S1.2.pdf>
+Package pdftex.def Info: figures_proj1/S1.2.pdf  used on input line 392.
+(pdftex.def)             Requested size: 347.7164pt x 260.78273pt.
+<figures_proj1/S1.3.pdf, id=2389, 1734.48pt x 433.62pt>
+File: figures_proj1/S1.3.pdf Graphic file (type pdf)
+<use figures_proj1/S1.3.pdf>
+Package pdftex.def Info: figures_proj1/S1.3.pdf  used on input line 400.
+(pdftex.def)             Requested size: 434.64386pt x 108.65616pt.
+
+
+[116 <./figures_proj1/S1.1.pdf>]
+
+[117 <./figures_proj1/S1.2.pdf> <./figures_proj1/S1.3.pdf>]
+<figures_proj1/S1.4.pdf, id=2566, 3496.06125pt x 892.08281pt>
+File: figures_proj1/S1.4.pdf Graphic file (type pdf)
+<use figures_proj1/S1.4.pdf>
+Package pdftex.def Info: figures_proj1/S1.4.pdf  used on input line 412.
+(pdftex.def)             Requested size: 434.64386pt x 110.89752pt.
+<figures_proj1/S1.5.pdf, id=2567, 2326.19063pt x 1777.39032pt>
+File: figures_proj1/S1.5.pdf Graphic file (type pdf)
+<use figures_proj1/S1.5.pdf>
+Package pdftex.def Info: figures_proj1/S1.5.pdf  used on input line 419.
+(pdftex.def)             Requested size: 347.7164pt x 265.67494pt.
+<figures_proj1/S1.6.pdf, id=2568, 2326.19063pt x 1777.39032pt>
+File: figures_proj1/S1.6.pdf Graphic file (type pdf)
+<use figures_proj1/S1.6.pdf>
+Package pdftex.def Info: figures_proj1/S1.6.pdf  used on input line 426.
+(pdftex.def)             Requested size: 347.7164pt x 265.67494pt.
+
+
+[118
+
+ <./figures_proj1/S1.4.pdf> <./figures_proj1/S1.5.pdf
+
+pdfTeX warning: pdflatex (file ./figures_proj1/S1.5.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+
+[119 <./figures_proj1/S1.6.pdf>]
+<figures_proj1/S1.9.pdf, id=2596, 1156.32pt x 867.24pt>
+File: figures_proj1/S1.9.pdf Graphic file (type pdf)
+<use figures_proj1/S1.9.pdf>
+Package pdftex.def Info: figures_proj1/S1.9.pdf  used on input line 536.
+(pdftex.def)             Requested size: 347.7164pt x 260.78273pt.
+<figures_proj1/S1.10.pdf, id=2597, 1734.48pt x 433.62pt>
+File: figures_proj1/S1.10.pdf Graphic file (type pdf)
+<use figures_proj1/S1.10.pdf>
+Package pdftex.def Info: figures_proj1/S1.10.pdf  used on input line 543.
+(pdftex.def)             Requested size: 434.64386pt x 108.65616pt.
+<figures_proj1/S1.11.pdf, id=2598, 1156.32pt x 867.24pt>
+File: figures_proj1/S1.11.pdf Graphic file (type pdf)
+<use figures_proj1/S1.11.pdf>
+Package pdftex.def Info: figures_proj1/S1.11.pdf  used on input line 550.
+(pdftex.def)             Requested size: 347.7164pt x 260.78273pt.
+<figures_proj1/S1.12.pdf, id=2599, 1156.32pt x 867.24pt>
+File: figures_proj1/S1.12.pdf Graphic file (type pdf)
+<use figures_proj1/S1.12.pdf>
+Package pdftex.def Info: figures_proj1/S1.12.pdf  used on input line 557.
+(pdftex.def)             Requested size: 347.7164pt x 260.78273pt.
+<figures_proj1/S1.13a.pdf, id=2600, 1156.32pt x 433.62pt>
+File: figures_proj1/S1.13a.pdf Graphic file (type pdf)
+<use figures_proj1/S1.13a.pdf>
+Package pdftex.def Info: figures_proj1/S1.13a.pdf  used on input line 566.
+(pdftex.def)             Requested size: 347.7164pt x 130.39136pt.
+<figures_proj1/S1.13b.pdf, id=2601, 1156.32pt x 433.62pt>
+File: figures_proj1/S1.13b.pdf Graphic file (type pdf)
+<use figures_proj1/S1.13b.pdf>
+Package pdftex.def Info: figures_proj1/S1.13b.pdf  used on input line 568.
+(pdftex.def)             Requested size: 347.7164pt x 130.39136pt.
+<figures_proj1/S1.13c.pdf, id=2602, 1156.32pt x 433.62pt>
+File: figures_proj1/S1.13c.pdf Graphic file (type pdf)
+<use figures_proj1/S1.13c.pdf>
+Package pdftex.def Info: figures_proj1/S1.13c.pdf  used on input line 570.
+(pdftex.def)             Requested size: 347.7164pt x 130.39136pt.
+<figures_proj1/S1.13d.pdf, id=2603, 1156.32pt x 433.62pt>
+File: figures_proj1/S1.13d.pdf Graphic file (type pdf)
+<use figures_proj1/S1.13d.pdf>
+Package pdftex.def Info: figures_proj1/S1.13d.pdf  used on input line 572.
+(pdftex.def)             Requested size: 347.7164pt x 130.39136pt.
+<figures_proj1/S1.14a.pdf, id=2604, 1734.48pt x 433.62pt>
+File: figures_proj1/S1.14a.pdf Graphic file (type pdf)
+<use figures_proj1/S1.14a.pdf>
+Package pdftex.def Info: figures_proj1/S1.14a.pdf  used on input line 584.
+(pdftex.def)             Requested size: 347.7164pt x 86.92757pt.
+<figures_proj1/S1.14b.pdf, id=2605, 1734.48pt x 433.62pt>
+File: figures_proj1/S1.14b.pdf Graphic file (type pdf)
+<use figures_proj1/S1.14b.pdf>
+Package pdftex.def Info: figures_proj1/S1.14b.pdf  used on input line 586.
+(pdftex.def)             Requested size: 347.7164pt x 86.92757pt.
+<figures_proj1/S1.14c.pdf, id=2606, 1734.48pt x 433.62pt>
+File: figures_proj1/S1.14c.pdf Graphic file (type pdf)
+<use figures_proj1/S1.14c.pdf>
+Package pdftex.def Info: figures_proj1/S1.14c.pdf  used on input line 588.
+(pdftex.def)             Requested size: 347.7164pt x 86.92757pt.
+<figures_proj1/S1.14d.pdf, id=2607, 1734.48pt x 433.62pt>
+File: figures_proj1/S1.14d.pdf Graphic file (type pdf)
+<use figures_proj1/S1.14d.pdf>
+Package pdftex.def Info: figures_proj1/S1.14d.pdf  used on input line 590.
+(pdftex.def)             Requested size: 347.7164pt x 86.92757pt.
+<figures_proj1/S1.14e.pdf, id=2608, 1734.48pt x 433.62pt>
+File: figures_proj1/S1.14e.pdf Graphic file (type pdf)
+<use figures_proj1/S1.14e.pdf>
+Package pdftex.def Info: figures_proj1/S1.14e.pdf  used on input line 592.
+(pdftex.def)             Requested size: 347.7164pt x 86.92757pt.
+<figures_proj1/S1.15.pdf, id=2609, 1156.32pt x 867.24pt>
+File: figures_proj1/S1.15.pdf Graphic file (type pdf)
+<use figures_proj1/S1.15.pdf>
+Package pdftex.def Info: figures_proj1/S1.15.pdf  used on input line 604.
+(pdftex.def)             Requested size: 347.7164pt x 260.78273pt.
+
+
+[120
+
+ <./figures_proj1/S1.9.pdf> <./figures_proj1/S1.10.pdf>]
+
+[121 <./figures_proj1/S1.11.pdf> <./figures_proj1/S1.12.pdf>]
+
+[122 <./figures_proj1/S1.13a.pdf> <./figures_proj1/S1.13b.pdf> <./figures_proj1/S1.13c.pdf> <./figures_proj1/S1.13d.pdf>]
+
+[123 <./figures_proj1/S1.14a.pdf> <./figures_proj1/S1.14b.pdf> <./figures_proj1/S1.14c.pdf> <./figures_proj1/S1.14d.pdf> <./figures_proj1/S1.14e.pdf>]
+
+[124 <./figures_proj1/S1.15.pdf>]
+<figures_proj1/S1.16.pdf, id=3299, 1156.32pt x 867.24pt>
+File: figures_proj1/S1.16.pdf Graphic file (type pdf)
+<use figures_proj1/S1.16.pdf>
+Package pdftex.def Info: figures_proj1/S1.16.pdf  used on input line 613.
+(pdftex.def)             Requested size: 347.7164pt x 260.78273pt.
+
+
+[125
+
+ <./figures_proj1/S1.16.pdf>]
+<figures_proj1/S1.17.pdf, id=3356, 1734.48pt x 1300.86pt>
+File: figures_proj1/S1.17.pdf Graphic file (type pdf)
+<use figures_proj1/S1.17.pdf>
+Package pdftex.def Info: figures_proj1/S1.17.pdf  used on input line 626.
+(pdftex.def)             Requested size: 347.7164pt x 260.78273pt.
+<figures_proj1/S1.18.pdf, id=3357, 1734.48pt x 1300.86pt>
+File: figures_proj1/S1.18.pdf Graphic file (type pdf)
+<use figures_proj1/S1.18.pdf>
+Package pdftex.def Info: figures_proj1/S1.18.pdf  used on input line 633.
+(pdftex.def)             Requested size: 347.7164pt x 260.78273pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 634--634
+[]\T1/lmr/m/sc/12 (+20) Figure 4.20.|\T1/lmr/m/n/12 (+20) PBE dielectric-function com-pon-ents of
+ []
+
+<figures_proj1/S1.19.pdf, id=3358, 1734.48pt x 1300.86pt>
+File: figures_proj1/S1.19.pdf Graphic file (type pdf)
+<use figures_proj1/S1.19.pdf>
+Package pdftex.def Info: figures_proj1/S1.19.pdf  used on input line 640.
+(pdftex.def)             Requested size: 347.7164pt x 260.78273pt.
+)
+
+[126
+
+ <./figures_proj1/S1.17.pdf>]
+
+[127 <./figures_proj1/S1.18.pdf> <./figures_proj1/S1.19.pdf>]
+
+[128
+
+
+] (./src/project_2.tex)
+
+[129
+
+]
+
+[130
+
+
+] (./src/project_3.tex)
+
+[131
+
+]
+Bibliography
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 341.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+[132
+
+]
+
+[133]
+Overfull \hbox (27.27335pt too wide) in paragraph at lines 342--342
+[]\T1/lmr/m/n/12 (-20) Piotr De Silva and To-masz A Weso-lowski. `  Pure-state non-in-ter-act-ing v-representability
+ []
+
+
+
+[134]
+
+[135]
+
+[136]
+
+[137]
+
+[138]
+
+[139]
+
+[140] (./src/appendix.tex
+
+[141]
+Appendix
+)
+
+[142
+
+] (.output/thesis.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 9785AD7AB275E95818BAC6B2C9886055;14898.
+Package logreq Info: Writing requests to 'thesis.run.xml'.
+\openout1 = `thesis.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 36726 strings out of 473190
+ 732290 string characters out of 5715801
+ 1622572 words of memory out of 5000000
+ 58241 multiletter control sequences out of 15000+600000
+ 643100 words of font info for 244 fonts, out of 8000000 for 9000
+ 1302 hyphenation exceptions out of 8191
+ 94i,21n,131p,1035b,2887s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on .output/thesis.pdf (151 pages, 38198314 bytes).
+PDF statistics:
+ 3831 PDF objects out of 4296 (max. 8388607)
+ 2246 compressed objects within 23 object streams
+ 700 named destinations out of 1000 (max. 500000)
+ 36040 words of extra memory for PDF output out of 42996 (max. 10000000)
+
