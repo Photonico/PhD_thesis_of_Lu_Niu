@@ -4,50 +4,49 @@
 \section{Abstract}
 
 In this chapter,
-we investigate the atomic, electronic, and optical properties of two-dimensional graphene, borophene, and boron-carbide heterojunction bilayer systems,
+we investigate the atomic, electronic, and optical properties of two-dimensional 
 namely Graphene-\ce{BC3}, Graphene-Borophene, and Graphene-\ce{B4C3},
 as well as their constituent monolayers, on the basis of first-principles calculations using the HSE06 hybrid functional.
-Our calculations show that borophene is metallic,
-whereas monolayer \ce{BC3} and \ce{B4C3} are indirect semiconductors,
-with HSE06 band gaps of \qty{1.822}{\electronvolt} and \qty{2.381}{\electronvolt}, respectively.
+The calculations show that while borophene is metallic,
+both monolayer \ce{BC3} and \ce{B4C3} are indirect semiconductors,
+with band gaps of \qty{1.822}{\electronvolt} and \qty{2.381}{\electronvolt} as obtained using HSE06.
 The Graphene-\ce{BC3} and Graphene-\ce{B4C3} bilayer heterojunction systems maintain the Dirac point of graphene at the $\mathrm{K}$ point and are semimetals,
-whereas Graphene-Borophene is metallic.
-All bilayer heterostructure systems exhibit absorption in the visible region, with resonance frequencies and resonance absorption peak intensities that vary between structures.
-In addition, all heterojunctions support plasmons within the range \qtyrange{16.5}{18.5}{\electronvolt},
-while Graphene-\ce{B4C3} and Graphene-Borophene exhibit a $\pi$-type plasmon within the range \qtyrange{4}{6}{\electronvolt},
-with the latter possessing an additional lower-energy plasmon within the range \qtyrange{1.5}{3}{\electronvolt}.
-The dielectric tensor of Graphene-\ce{B4C3} exhibits complex off-diagonal elements due to its lower $P3$ space-group symmetry,
-indicating anisotropic dielectric properties and possible optically active (chiral) effects.
-These results show that these two-dimensional heterostructures have desirable optical properties and broaden their potential applications.
+while Graphene-Borophene is metallic.
+All bilayer heterostructure systems exhibit absorption in the visible region, where the resonance frequency and resonance absorption peak intensity vary between structures.
+In addition, all heterojunctions support plasmons within the range \qtyrange{16.5}{18.5}{\electronvolt}, while Graphene-\ce{B4C3} and Graphene-Borophene exhibit a $\pi$-type plasmon within the region \qtyrange{4}{6}{\electronvolt},
+with the latter possessing an additional plasmon at the lower energy of \qtyrange{1.5}{3}{\electronvolt}.
+The dielectric tensor for Graphene-\ce{B4C3} exhibits complex off-diagonal elements due to the lower $P3$ space-group symmetry, indicating anisotropic dielectric properties and possible optically active (chiral) effects.
+These results show that the two-dimensional heterostructures have desirable optical properties and broaden their potential applications.
 
 \newpage
 \section{Introduction}
 
-Graphene combines excellent electrical conductivity,
+Graphene has excellent electrical conductivity,
 desirable mechanical and thermal properties,
 and high light transmittance in the visible-light and infrared regions.
-It also exhibits extremely high quantum efficiency for light-matter interactions and strong optical nonlinearity.
-These properties have therefore enabled applications in, for example, electronics, energy storage, biomedical devices, and other fields~\cite{janavika2023graphene}.
-Relative to conventional plasmonic materials, graphene supports highly confined plasmons with much longer lifetimes.
-In addition, graphene plasmons are active over an extended wavelength range, namely the mid-infrared and terahertz regimes.
+It also has an extremely high quantum efficiency for light-matter interactions and is strongly optically nonlinear.
+These properties have therefore enabled applications in e.g. electronics, energy storage, biomedical devices, and other fields~\cite{janavika2023graphene}.
+Relative to conventional plasmonic materials, graphene possesses highly confined plasmons with much longer lifetimes.
+In addition, graphene plasmons are active in an extended wavelength range, namely, the mid-infrared and terahertz regime.
 This wavelength range overlaps with the characteristic signals of most organic and biomolecules,
-which has broadened graphene applications toward plasmonic biological and chemical sensors~\cite{sakthivel2023}, as well as plasmonic waveguides and infrared photodetectors.
-Moreover, forming graphene-hybrid materials can tune the properties of graphene, enabling applications in biosensors, chemical sensors, optical sensors, and other types of sensors~\cite{zhang2022}.
+which has broadened graphene's applications towards plasmonic biological and chemical sensors~\cite{sakthivel2023} in addition to plasmonic waveguides
+and infrared photodetectors.
+Moreover, forming graphene-hybrid materials can tune the properties of graphene, finding applications in biosensors, chemical sensors, optical sensors, and other types of sensors~\cite{zhang2022}.
 
 In other areas, however, the use of graphene remains limited by its zero band gap.
-One route to expanding the application of graphene is to form heterostructures.
-Stacking different two-dimensional (2D) materials together can form double-layer or even multi-layer artificial materials maintained by van der Waals interactions~\cite{novoselov20162d}.
+One method used to expand the application of graphene is to form heterostructures.
+Stacking different two-dimensional (2D) materials together can form double-layer or even multi-layer artificial materials that are maintained by van der Waals interactions~\cite{novoselov20162d}.
 Such materials are known as van der Waals heterojunctions.
-This stacking can generate a wide range of physical properties,
+Such stacking can generate a wide range of physical properties,
 making van der Waals heterojunctions even more important than the individual 2D materials themselves.
-Because many 2D materials are available, their heterostructures can provide a diverse range of electrical, photonic, plasmonic, mechanical, and chemical properties.
-These properties can be theoretically predicted through \textit{ab initio} calculations and machine learning~\cite{thygesen2017,he2023}, and experimentally engineered~\cite{lin2023recent,elbanna20232d}.
+There are vast numbers of 2D materials, and by forming heterostructures thereof,
+a diverse range of electrical, photonic, plasmonic, mechanical, and chemical properties can be theoretically predicted through \textit{ab initio} calculations and machine learning~\cite{thygesen2017,he2023}, and experimentally engineered~\cite{lin2023recent,elbanna20232d}.
 
-The prospect of developing plasmonic devices based on 2D semiconductors has recently attracted considerable attention~\cite{agarwal2018plasmonics, qiu2018optical}.
-Plasmonic modes in different classes of van der Waals semiconductors have their own peculiarities and potential technological capabilities.
-Graphene-like \ce{BC3} has recently been synthesized experimentally~\cite{yanagisawa2004phonon, yanagisawa2006phonon, tanaka2005novel} and has been found to be semiconducting with an indirect band gap.
-Calculations show that nanostructures of graphene-like \ce{BC3} exhibit desirable absorption in the visible region.
-By changing the size of the nanostructure, the resonance peak position of the absorption spectrum can be effectively regulated~\cite{chen2019plasmon}.
+Recently, the prospect of developing plasmonic devices employing 2D semiconductors has attracted considerable attention~\cite{agarwal2018plasmonics, qiu2018optical}.
+Plasmonic modes in each class of van der Waals semiconductors have their own peculiarities, along with potential technological capabilities.
+Graphene-like \ce{BC3} has also been synthesized experimentally~\cite{yanagisawa2004phonon, yanagisawa2006phonon, tanaka2005novel} and is found to be semiconducting with an indirect band gap.
+Calculations have shown that nanostructures of graphene-like \ce{BC3} exhibit desirable absorption in the visible region and, by changing the size of the nanostructure,
+the resonance peak position of the absorption spectrum can be effectively regulated~\cite{chen2019plasmon}.
 Recent studies have also predicted a stable \ce{B4C3} monolayer,
 which is even more stable than the previously synthesized \ce{BC3} monolayer~\cite{tian2019}.
 Boron carbides are known for their exceptional hardness,
@@ -56,47 +55,47 @@ The emergence of 2D boron carbides adds a new dimension to the study of these ma
 offering novel properties and opportunities for technological innovation~\cite{luo2011predicting,fan2018two}.
 
 Borophene is another 2D material of high current interest.
-This monolayer allotrope of boron forms several structures and exhibits a unique atomic structure and exceptional electronic properties.
-These features have opened new avenues for innovation in electronics,
+This monolayer allotrope of boron forms several structures and is characterized by its unique atomic structure and exceptional electronic properties,
+which have opened new avenues for innovation in the areas of electronics,
 energy storage, catalysis, plasmonics, superconductivity, and sensors~\cite{qiu2018optical}.
-One particularly intriguing aspect of borophene lies in its ability to form heterojunctions,
-including interfaces between different borophene structures and interfaces between borophene and other materials.
-Borophene-graphene heterostructures have been realized~\cite{hou2021borophene}.
-These heterostructures show good stability and can function as humidity sensors,
-with a sensitivity about 700 times higher than that of pristine graphene and 27 times higher than that of borophene.
+One particularly intriguing aspect of borophene's versatility lies in its ability to form heterojunctions---interfaces between different borophene structures or between borophene and other materials.
+Borophene-graphene heterostructures have been realized~\cite{hou2021borophene},
+where they have shown good stability and the ability to function as humidity sensors,
+exhibiting a sensitivity about 700 times higher than that of pristine graphene,
+and 27 times higher than that of borophene.
 Recently, both lateral and vertical integration of borophene with graphene has also been achieved~\cite{liu2019borophene},
-as has the formation of bilayer $\alpha$-phase borophene on the Ag(111) surface~\cite{liu2022}.
+as has the formation of bilayer ($\alpha$-phase) borophene on the Ag(111) surface~\cite{liu2022}.
 
 The synergistic combination of graphene's exceptional electrical conductivity,
 mechanical strength, and flexibility with boron carbide's high hardness,
 thermal stability, and chemical resistance, and with borophene's attractive electronic properties,
-may support a wide range of applications spanning from electronics and optoelectronics to energy storage and sensing.
+holds significant potential for a wide range of applications spanning from electronics and optoelectronics to energy storage and sensing.
 As research in this field continues to advance,
 the development of scalable synthesis methods, the elucidation of structure-property relationships,
-and the exploration of novel applications will remain key focal points.
-To date, only limited information is available on the physical properties of graphene-based bilayer heterojunctions with borophene and boron-carbide materials.
-This motivates us to investigate these heterojunctions
-by studying their electronic and optical properties on the basis of first-principles calculations.
-Such understanding is crucial for future technological applications,
+and the exploration of novel applications will be key focal points.
+To date, little is known about the physical properties of graphene-based bilayer heterojunctions with borophene and boron-carbide materials.
+This motivates the present chapter to gain an understanding of these heterojunctions
+through the study of their electronic and optical properties on the basis of first-principles calculations.
+Such understanding is crucial for their future technological application,
 where the unique properties of these materials can be harnessed.
 
-This chapter is organised as follows.
-In section~\ref{1_calculation_method}, we describe the calculation method.
-In section~\ref{1_results}, we present the results and discussion.
-There, we examine the physical properties of the monolayers and heterostructures, including band structures, densities of states, electron density difference distributions,
-Schottky barriers, and optical properties.
-Finally, section~\ref{1_conclusions} gives the conclusion.
+This chapter is organised as follows:
+In Section~\ref{1_calculation_method}, the calculation method is described,
+followed by the Results and Discussion in Section~\ref{1_results}.
+Herein, we describe the physical properties of the monolayers and heterostructures, including band structure, density of states, electron density difference distributions,
+Schottky barriers and the optical properties.
+This is followed by the Conclusion in Section~\ref{1_conclusions}.
 
 \section{Calculation method}
 \label{1_calculation_method}
 
 We perform first-principles calculations using density functional theory (DFT) as implemented in the Vienna Ab initio Simulation Package (VASP)~\cite{kresse1993ab, kresse1996efficiency, kresse1996efficient}.
-The projector augmented wave (PAW) method pseudopotentials are used to account for the electron-ion interactions~\cite{kresse1999ultrasoft}.
+Projector augmented wave (PAW) pseudopotentials account for the electron-ion interactions~\cite{kresse1999ultrasoft}.
 For the structural optimization calculations, we use the generalized gradient approximation (GGA) of Perdew-Burke-Ernzerhof (PBE) as the exchange-correlation functional.
-The Becke-Johnson damped D3(BJ) dispersion correction is also included to account for long-range van der Waals (vdW) interactions.
+The Becke-Johnson damped D3(BJ) dispersion correction accounts for long-range van der Waals (vdW) interactions.
 We use a $\Gamma$-centered $\vec{k}$-point sampling mesh of $11 \times 11 \times 1$, except for the smaller graphene unit cell shown in figure~\ref{fig1.1}, for which we use a denser mesh of $23 \times 23 \times 1$.
 We set the plane-wave energy cutoff to \qty{450}{\electronvolt}.
-Electronic convergence criteria are set to \qty{1e-6}{\electronvolt} and systems are allowed to relax until all forces on each atom are below \qty{0.01}{\electronvolt\per\angstrom}.
+The electronic convergence criterion is set to \qty{1e-6}{\electronvolt}, and the systems are allowed to relax until all forces on each atom are below \qty{0.01}{\electronvolt\per\angstrom}.
 For smearing at the Fermi level,
 we use the Gaussian smearing method implemented in VASP.
 
@@ -108,10 +107,10 @@ which gives more accurate band gap energies~\cite{sassnick2021electronic, heyd20
 All density of states (DoS) calculations use a $\Gamma$-centered $\vec{k}$-point sampling mesh of $33 \times 33 \times 1$,
 with smearing at the Fermi level calculated using the Gaussian method and a broadening value of \qty{0.1}{\electronvolt}.
 The HSE06 exchange-correlation functional is also used for the calculation of optical properties,
-in particular, the frequency-dependent dielectric function with a $\Gamma$-centered $\vec{k}$-point sampling mesh of $17 \times 17 \times 1$ and $65 \times 65 \times 1$.
+in particular, the frequency-dependent dielectric function with $\Gamma$-centered $\vec{k}$-point sampling meshes of $17 \times 17 \times 1$ and $65 \times 65 \times 1$.
 The complex frequency-dependent dielectric function, $\varepsilon(\omega)$,
-is given by equation~\ref{complex_dielectric_function_definition},
-where $\varepsilon_{1}(\omega)$ and $\varepsilon_{2}(\omega)$ are the real and imaginary parts, respectively, and $\omega$ denotes the photon energy in \unit{\electronvolt}.
+is given by equation~\ref{complex_dielectric_function_definition};
+here, $\varepsilon_{1}(\omega)$ and $\varepsilon_{2}(\omega)$ are the real and imaginary parts, respectively, and $\omega$ denotes the photon energy in \unit{\electronvolt}.
 
 We then use the dielectric function to calculate the absorption coefficient,
 refractive index, extinction coefficient, reflectivity, and energy-loss spectrum,
@@ -120,8 +119,8 @@ following the relations introduced in section~\ref{sec:from_dielectric_function_
 The interlayer binding energy $E_{\mathrm{b}}$ follows as:
 
 \begin{equation}
-    E_{\mathrm{b}}
-    = E_{\mathrm{H}} - E_{\mathrm{BC}/\mathrm{B}} - E_{\mathrm{G}}
+E_{\mathrm{b}}
+= E_{\mathrm{H}} - E_{\mathrm{BC}/\mathrm{B}} - E_{\mathrm{G}}
 \label{interlayer_binding_energy}
 \end{equation}
 
@@ -129,18 +128,18 @@ here, $E_{\mathrm{H}}$ denotes the total energy of the heterostructure,
 $E_{\mathrm{BC}/\mathrm{B}}$ corresponds to the total energy of the isolated boron-carbide or borophene monolayer,
 and $E_{\mathrm{G}}$ denotes the total energy of the isolated graphene monolayer.
 
-Afterwards, the charge density difference $\Delta \rho(\vec{r}\,)$ takes the form:
+Afterwards, the charge density difference $\Delta \rho(\vec{r},)$ takes the form:
 
 \begin{equation}
-    \Delta \rho(\vec{r}\,) =
-    \rho_{\mathrm{AB}}(\vec{r}\,)
-    - \rho_{\mathrm{A}}(\vec{r}\,)
-    - \rho_{\mathrm{B}}(\vec{r}\,)
+\Delta \rho(\vec{r},) =
+\rho_{\mathrm{AB}}(\vec{r},)
+- \rho_{\mathrm{A}}(\vec{r},)
+- \rho_{\mathrm{B}}(\vec{r},)
 \label{charge_density_difference}
 \end{equation}
 
-here, $\rho_{\mathrm{AB}}(\vec{r}\,)$ denotes the total charge density of the heterostructure.
-The terms $\rho_{\mathrm{A}}(\vec{r}\,)$ and $\rho_{\mathrm{B}}(\vec{r}\,)$ represent the charge densities of the isolated monolayers forming the heterostructure.
+here, $\rho_{\mathrm{AB}}(\vec{r},)$ denotes the total charge density of the heterostructure.
+The terms $\rho_{\mathrm{A}}(\vec{r},)$ and $\rho_{\mathrm{B}}(\vec{r},)$ represent the charge densities of the isolated monolayers forming the heterostructure.
 
 \section{Results and discussion}
 \label{1_results}
