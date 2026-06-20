@@ -93,8 +93,8 @@ We perform first-principles calculations using density functional theory (DFT) a
 Projector augmented wave (PAW) pseudopotentials account for the electron-ion interactions~\cite{kresse1999ultrasoft}.
 For the structural optimization calculations, we use the generalized gradient approximation (GGA) of Perdew-Burke-Ernzerhof (PBE) as the exchange-correlation functional.
 The Becke-Johnson damped D3(BJ) dispersion correction accounts for long-range van der Waals (vdW) interactions.
-We use a $\Gamma$-centered $\vec{k}$-point sampling mesh of $11 \times 11 \times 1$, except for the smaller graphene unit cell shown in figure~\ref{fig1.1}, for which we use a denser mesh of $23 \times 23 \times 1$.
-We set the plane-wave energy cutoff to \qty{450}{\electronvolt}.
+The structural calculations use a $\Gamma$-centered $\vec{k}$-point sampling mesh of $11 \times 11 \times 1$, except for the smaller graphene unit cell shown in figure~\ref{fig1.1}, for which a denser mesh of $23 \times 23 \times 1$ is used.
+Here, the plane-wave energy cutoff is set to \qty{450}{\electronvolt}.
 The electronic convergence criterion is set to \qty{1e-6}{\electronvolt}, and the systems are allowed to relax until all forces on each atom are below \qty{0.01}{\electronvolt\per\angstrom}.
 For smearing at the Fermi level,
 we use the Gaussian smearing method implemented in VASP.
@@ -340,32 +340,32 @@ Conversely, compressive strain tends to widen the band gap and decrease conducti
 
 \subsubsection{Charge density difference}
 
-The charge density difference distributions for the heterostructure systems are shown in figure~\ref{fig1.4_cdd}.
+The charge density difference distributions of the heterostructure systems are shown in figure~\ref{fig1.4_cdd}.
 We calculate these distributions using equation~\ref{charge_density_difference}.
 Specifically, we subtract the charge densities of the isolated monolayers from the charge density of the corresponding heterostructure.
 
 \begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=1.0\textwidth]{figures_proj1/proj1.4.pdf}
-    \caption{Charge density difference ($\Delta \rho(\vec{r})$, calculated using equation~\ref{charge_density_difference}) between the monolayers and the heterostructures.
-    Regions of charge accumulation are shown in yellow,
-    and regions of charge depletion are shown in blue.
-    The isosurface level is $1.5\times10^{-4}$ a$_{0}^{-3}$ and the top layer is always graphene.}
+\centering
+\includegraphics[width=1.0\textwidth]{figures_proj1/proj1.4.pdf}
+\caption{Charge density difference ($\Delta \rho(\vec{r})$, calculated using equation~\ref{charge_density_difference}) between the monolayers and the heterostructures.
+Regions of charge accumulation are shown in yellow,
+and regions of charge depletion are shown in blue.
+The isosurface level is $1.5\times10^{-4}$ a$_{0}^{-3}$ and the top layer is always graphene.}
 \label{fig1.4_cdd}
 \end{figure}
 
-The side views in the middle panels of figure~\ref{fig1.4_cdd} show charge depletion from the graphene layer and charge accumulation in the respective non-graphene monolayer for all three systems.
+The side views in the middle panels of figure~\ref{fig1.4_cdd} show charge depletion from the graphene layer and charge accumulation in the corresponding non-graphene monolayer for all three systems.
 Among these systems, Graphene-\ce{BC3} exhibits the largest charge redistribution.
 This larger charge redistribution is consistent with the smaller interlayer distance associated with the hollow-site coordination.
 In contrast, Graphene-Borophene and Graphene-\ce{B4C3} adopt top-site coordination.
 
-We also observe that atoms in the lower layers,
-which directly coordinate with a carbon atom in the graphene layer,
+We also observe that atoms in the lower layers
+that directly coordinate with a carbon atom in the graphene layer
 have the largest charge accumulation regions.
 In contrast, the carbon atoms in the graphene layer with bridge or hollow coordination to the atoms of the lower layer show the largest regions of charge depletion.
 These coordination-dependent charge redistributions produce the accumulation and depletion patterns shown in the top and bottom views of figure~\ref{fig1.4_cdd}.
-Therefore, we find that the relative coordination of the two monolayers directly influences the interfacial electronic structure.
-The top and bottom views of the Graphene-\ce{B4C3} heterostructure reveal a striking threefold rotational symmetry in the upper and lower plots of the rightmost panel.
+Therefore, the relative coordination of the two monolayers directly influences the interfacial electronic structure.
+The top and bottom views of the Graphene-\ce{B4C3} heterostructure reveal a clear threefold rotational symmetry in the upper and lower plots of the rightmost panel.
 
 In the next sections, we investigate the band structures and densities of states to further characterise the electronic structures of these heterostructure systems.
 
@@ -374,13 +374,13 @@ In the next sections, we investigate the band structures and densities of states
 For the bilayer systems, the band structures and total density of states (DoS) are shown in figures~\ref{fig1.5}--\ref{fig1.7} as calculated using the HSE06 and PBE functionals.
 The corresponding atom-projected (or partial) PDoS are presented in figures~\ref{S1.9}--\ref{S1.11}.
 
-The Graphene-\ce{BC3} heterojunction exhibits a sizeable density of states just above the Fermi level (see figure~\ref{S1.9}),
+The Graphene-\ce{BC3} heterojunction exhibits a sizeable density of states just above the Fermi level, as shown in figure~\ref{S1.9},
 which is related to the relatively flat band near the $\mathrm{M}$ point and along the $\mathrm{K}$--$\Gamma$ path in the Brillouin zone.
-The Graphene-Borophene system exhibits metallic behaviour due to the small occupation of states at the $\mathrm{K}$ point, which are mainly carbon-related, as shown by the PDoS in figure~\ref{S1.10}.
+The Graphene-Borophene system exhibits metallic behaviour due to the small occupation of states at the $\mathrm{K}$ point; these states are mainly carbon-related, as shown by the PDoS in figure~\ref{S1.10}.
 The Graphene-\ce{B4C3} bilayer exhibits essentially semimetallic behaviour, with the \ce{B4C3}-derived states located away from the Fermi level, mainly above approximately \qty{1.2}{\electronvolt} and below approximately \qty{-0.8}{\electronvolt}, as shown by the PDoS in figure~\ref{S1.11}.
 
 Across these three bilayers,
-the main difference between PBE and HSE06 appears to be that HSE06 shifts the conduction bands upward and the valence bands downward relative to PBE.
+HSE06 mainly shifts the conduction bands upward and the valence bands downward relative to PBE.
 At the $\mathrm{K}$ point, the graphene bands exhibit very small band-gap openings of \qty{20}{\milli\electronvolt} and
 \qty{50}{\milli\electronvolt} for Graphene-\ce{B4C3} and Graphene-\ce{BC3}, respectively.
 
@@ -411,26 +411,26 @@ In each figure, the PBE and HSE06 results are shown in blue and orange, respecti
 \subsubsection{Schottky barrier height}
 
 Bilayer heterostructures composed of graphene and boron-carbide monolayers can function as Schottky diodes.
-A high Schottky barrier blocks the reverse metal-to-semiconductor current and enables the rectification effect of a diode.
+A high Schottky barrier blocks the reverse current from the metal to the semiconductor and enables the rectification effect of a diode.
 Based on the Schottky--Mott model shown in figure~\ref{fig1.8},
 the Schottky barrier at a metal--semiconductor interface~\cite{guo2017all} is determined by the relative positions of the Fermi level and the semiconductor band edges.
 
 For $n$-type materials, the Schottky barrier $\Phi_n$ is defined as the energy difference between the conduction band minimum $E_C$ and the Fermi level $E_F$:
 
 \begin{equation}
-    \Phi_n = E_C - E_F .
+    \Phi_n = E_C - E_F
 \end{equation}
 
 Similarly, for $p$-type materials, the Schottky barrier $\Phi_p$ is defined as the energy difference between the Fermi level $E_F$ and the valence band maximum $E_V$:
 
 \begin{equation}
-    \Phi_p = E_F - E_V .
+    \Phi_p = E_F - E_V
 \end{equation}
 
 The sum of these two Schottky barriers is approximately equal to the semiconductor band gap $E_g$:
 
 \begin{equation}
-    \Phi_n + \Phi_p \approx E_g .
+    \Phi_n + \Phi_p \approx E_g
 \end{equation}
 
 For the Graphene-\ce{B4C3} system illustrated in figure~\ref{fig1.8}, we find $\Phi_n = \qty{1.42}{\electronvolt}$ ($\qty{1.07}{\electronvolt}$) and $\Phi_p = \qty{0.87}{\electronvolt}$ ($\qty{0.55}{\electronvolt}$) using HSE06 (PBE).
