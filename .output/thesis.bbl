@@ -5773,6 +5773,45 @@
       \field{pages}{035427}
       \range{pages}{1}
     \endentry
+    \entry{guo2017all}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a2fe10b415b18d0453bb1af3d0b42ed6}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Yaguang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3561dcc3bb99df987407c91e31d23848}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Fancy\bibnamedelima Qian},
+           giveni={F\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+        {{hash=b05219a6acab0132847dc1d15a7fc0ef}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Qian},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{ab0cde4d11e1ac0206c8ced20a652034}
+      \strng{fullhash}{ab0cde4d11e1ac0206c8ced20a652034}
+      \strng{fullhashraw}{ab0cde4d11e1ac0206c8ced20a652034}
+      \strng{bibnamehash}{ab0cde4d11e1ac0206c8ced20a652034}
+      \strng{authorbibnamehash}{ab0cde4d11e1ac0206c8ced20a652034}
+      \strng{authornamehash}{ab0cde4d11e1ac0206c8ced20a652034}
+      \strng{authorfullhash}{ab0cde4d11e1ac0206c8ced20a652034}
+      \strng{authorfullhashraw}{ab0cde4d11e1ac0206c8ced20a652034}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Physics Letters}
+      \field{number}{7}
+      \field{title}{An all-carbon vdW heterojunction composed of penta-graphene and graphene: tuning the Schottky barrier by electrostatic gating or nitrogen doping}
+      \field{volume}{111}
+      \field{year}{2017}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
