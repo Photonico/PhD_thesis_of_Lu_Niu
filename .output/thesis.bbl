@@ -5137,6 +5137,7 @@
       \strng{authornamehash}{5df6eb7ccf29635fdc14ffb5af669222}
       \strng{authorfullhash}{d744d889db2d3f544a0c51d11925d795}
       \strng{authorfullhashraw}{d744d889db2d3f544a0c51d11925d795}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -5811,6 +5812,57 @@
       \field{title}{An all-carbon vdW heterojunction composed of penta-graphene and graphene: tuning the Schottky barrier by electrostatic gating or nitrogen doping}
       \field{volume}{111}
       \field{year}{2017}
+    \endentry
+    \entry{liu2018tuning}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=0f27c371a6aa531b05c9095522c5f1db}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Biao},
+           giveni={B\bibinitperiod}}}%
+        {{hash=bf580a1fe1859cc0bdb43c17bc909d0e}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Yu-Qing},
+           giveni={Y\bibinithyphendelim Q\bibinitperiod}}}%
+        {{hash=68b4b4b1c6bd79184a2ad0d30ff1d5d6}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Zhuo-Liang},
+           giveni={Z\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=469522419eb303a6ea768a1e6bdff435}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lin-Zhi},
+           giveni={L\bibinithyphendelim Z\bibinitperiod}}}%
+        {{hash=41da69527ed1579246fcc5b21b6651ea}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Meng-Qiu},
+           giveni={M\bibinithyphendelim Q\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{dfd9505f6ef7f332ee3d1b5e0d40cc52}
+      \strng{fullhash}{495c084199d0cc30d682b14192598f93}
+      \strng{fullhashraw}{495c084199d0cc30d682b14192598f93}
+      \strng{bibnamehash}{dfd9505f6ef7f332ee3d1b5e0d40cc52}
+      \strng{authorbibnamehash}{dfd9505f6ef7f332ee3d1b5e0d40cc52}
+      \strng{authornamehash}{dfd9505f6ef7f332ee3d1b5e0d40cc52}
+      \strng{authorfullhash}{495c084199d0cc30d682b14192598f93}
+      \strng{authorfullhashraw}{495c084199d0cc30d682b14192598f93}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of colloid and interface science}
+      \field{title}{Tuning the Schottky rectification in graphene-hexagonal boron nitride-molybdenum disulfide heterostructure}
+      \field{volume}{513}
+      \field{year}{2018}
+      \field{pages}{677\bibrangedash 683}
+      \range{pages}{7}
     \endentry
   \enddatalist
 \endrefsection

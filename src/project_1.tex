@@ -415,8 +415,29 @@ A high Schottky barrier will block the reverse (metal-to-semiconductor) current,
 the rectification effect of a diode. Based on the Schottky-Mott model (shown in figure~\ref{fig1.8}, left), at the metal-semiconductor interface~\cite{guo2017all} in $n$-type materials the Schottky barrier ($\Phi_n$) is defined as the energy difference between the Fermi level ($E_F$) and the conduction band
 minimum ($E_C$),
 that is, $\Phi_n = E_C - E_f$.
-Similarly, in $p$-type materials the Schottky barrier ($\Phi_p$)
+Similarly, in $p$-type materials the Schottky barrier ($\Phi_p$) is defined as the energy difference between the Fermi level ($E_F$) and the VBM ($E_V$),
+that is, $\Phi_p = E_F - E_V$~\cite{guo2017all, liu2018tuning}.
+The sum of two types of Schottky barriers is approximately equal to the band gap value ($E_g$) of of the semiconductor,
+that is $\Phi_n + \Phi_p = E_g$.
+For For the Graphene-\ce{B4C3} system as illustrated in figure~\ref{fig1.8},
+right, we find $\Phi_n = \qty{1.42}{\electronvolt} (\qty{1.07}{\electronvolt})$ for the HSE06(PBE),
+and $\Phi_p = \qty{0.87}{\electronvolt} (\qty{0.55}{\electronvolt})$ for the HSE06 (PBE) signifying the heterojunction forms a $p$-type Schottky barrier since
+$\Phi_p<\Phi_n$
+For the Graphene-\ce{BC3} heterostructure bilayer,
+we find $\Phi_n = \qty{0.19}{\electronvolt} (\qty{0.003}{\electronvolt})$ for the HSE06(PBE),
+and $\Phi_p = \qty{0.87}{\electronvolt} (\qty{0.55}{\electronvolt})$ for the HSE06 (PBE) signifying the heterojunction forms a $n$-type Schottky barrier.
+For device applications a smaller Schottky
+barrier height or even an Ohmic contact is preferred to reduce contact resistance.
 
+\begin{figure}[!htbp]
+    \centering
+    \adjustbox{valign=c}{\includegraphics[width=0.40\linewidth]{figures_proj1/proj1.8a.pdf}}%
+    \adjustbox{valign=c}{\includegraphics[width=0.40\linewidth]{figures_proj1/proj1.8b.pdf}}%
+    \caption{\textbf{Left:} Schematic of the Schottky--Mott model showing the valence and conduction band energies, the Fermi energy, and $n$-type and $p$-type Schottky barriers labelled $E_V$, $E_C$, $E_F$, $\Phi_n$, and $\Phi_p$, respectively. \textbf{Right:} Example for the HSE06-calculated Graphene-\ce{B4C3} heterojunction showing the determined Schottky barrier height from the band structure.}
+    \label{fig1.8}
+\end{figure}
+
+test test
 
 \section{Conclusions}
 \label{1_conclusions}
