@@ -1114,4 +1114,615 @@ Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package mi
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 272.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+<style/usyd-logo.jpg, id=259, 1185.42876pt x 1185.42876pt>
+File: style/usyd-logo.jpg Graphic file (type jpg)
+<use style/usyd-logo.jpg>
+Package pdftex.def Info: style/usyd-logo.jpg  used on input line 285.
+(pdftex.def)             Requested size: 199.16928pt x 199.16876pt.
+
+
+[1
+
+
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./style/usyd-logo.jpg>]
+
+[2
+
+
+] (./src/abstract.tex
+Abstract
+) (./src/publications.tex
+
+[3
+
+]
+List of Publications
+) (./src/thanks.tex
+
+[4
+
+]
+Acknowledgements
+)
+
+[5
+
+]
+
+[6
+
+
+]
+Contents
+(.output/thesis.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 8.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 8.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 8.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+
+[7
+
+]
+Underfull \vbox (badness 1178) has occurred while \output is active []
+
+
+
+[8])
+\tf@toc=\write6
+\openout6 = `thesis.toc'.
+
+
+
+[9] (./src/introduction.tex)
+
+[1
+
+
+
+]
+
+[2
+
+
+] (./src/fundamentals_a.tex
+
+[3
+
+{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/9'.
+(microtype)             Ignoring protrusion settings for this character.
+[4{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[7{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+Underfull \vbox (badness 3396) has occurred while \output is active []
+
+
+
+[8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[14]
+
+[15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[16]
+
+[17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[21]
+Overfull \hbox (13.42091pt too wide) detected at line 827
+[][][][][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[25]
+
+[26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[29]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[32]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[35]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[36]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[37]
+Overfull \hbox (4.24358pt too wide) in paragraph at lines 1476--1480
+[]\T1/lmr/m/n/12 (-20) The two pre-vi-ous equa-tions [] and [] sum-mar-ize the con-tent of the Hohenberg--
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[38]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[39]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[40]
+<figures_ch2/2.0_HK_variational_serif.pdf, id=804, 485.77368pt x 259.43121pt>
+File: figures_ch2/2.0_HK_variational_serif.pdf Graphic file (type pdf)
+<use figures_ch2/2.0_HK_variational_serif.pdf>
+Package pdftex.def Info: figures_ch2/2.0_HK_variational_serif.pdf  used on input line 1604.
+(pdftex.def)             Requested size: 347.7164pt x 185.70567pt.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/12'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[41]
+Underfull \vbox (badness 2027) has occurred while \output is active []
+
+
+
+[42 <./figures_ch2/2.0_HK_variational_serif.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[43]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[44]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[45]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[46]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[47]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[48]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[49]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[50]
+
+[51]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[52]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[53]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[54]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[55]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[56]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[57]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[58]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[59]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[60]
+Underfull \vbox (badness 8000) has occurred while \output is active []
+
+
+
+[61]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[62]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[63]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[64]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[65]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[66]
+Underfull \vbox (badness 4792) has occurred while \output is active []
+
+
+
+[67]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[68]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[69]
+
+[70]
+
+[71]
+Overfull \hbox (4.03809pt too wide) in paragraph at lines 2998--3003
+[]\T1/lmr/m/n/12 (-20) Thereafter, we in-tro-duce sev-eral widely used ap-prox-im-a-tions for the exchange-correlation
+ []
+
+
+
+[72]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[73]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[74])
+
+[75]
+
+[76
+
+
+] (./src/fundamentals_b.tex
+
+[77
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[78]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[79]
+
+[80]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[81]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[82]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[83]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[84]
+
+[85]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[86]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[87]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[88]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[89]
+<figures_ch3/3.1_dielectric_alt.pdf, id=1438, 1156.32pt x 867.24pt>
+File: figures_ch3/3.1_dielectric_alt.pdf Graphic file (type pdf)
+<use figures_ch3/3.1_dielectric_alt.pdf>
+Package pdftex.def Info: figures_ch3/3.1_dielectric_alt.pdf  used on input line 533.
+(pdftex.def)             Requested size: 417.26102pt x 312.93398pt.
+
+
+[90]
+
+[91 <./figures_ch3/3.1_dielectric_alt.pdf>]
+
+[92]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[93]
+Underfull \vbox (badness 3724) has occurred while \output is active []
+
+
+
+[94]
+Underfull \vbox (badness 1430) has occurred while \output is active []
+
+
+
+[95]
+
+[96]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[97]
+<figures_ch3/4.1_absroption_alt.pdf, id=1627, 1156.32pt x 433.62pt>
+File: figures_ch3/4.1_absroption_alt.pdf Graphic file (type pdf)
+<use figures_ch3/4.1_absroption_alt.pdf>
+Package pdftex.def Info: figures_ch3/4.1_absroption_alt.pdf  used on input line 866.
+(pdftex.def)             Requested size: 417.26102pt x 156.46698pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[98]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[99 <./figures_ch3/4.1_absroption_alt.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[100]
+<figures_ch3/4.2_refractive_alt.pdf, id=1741, 1156.32pt x 433.62pt>
+File: figures_ch3/4.2_refractive_alt.pdf Graphic file (type pdf)
+<use figures_ch3/4.2_refractive_alt.pdf>
+Package pdftex.def Info: figures_ch3/4.2_refractive_alt.pdf  used on input line 986.
+(pdftex.def)             Requested size: 417.26102pt x 156.46698pt.
+<figures_ch3/4.3_extinction_alt.pdf, id=1751, 1156.32pt x 433.62pt>
+File: figures_ch3/4.3_extinction_alt.pdf Graphic file (type pdf)
+<use figures_ch3/4.3_extinction_alt.pdf>
+Package pdftex.def Info: figures_ch3/4.3_extinction_alt.pdf  used on input line 1001.
+(pdftex.def)             Requested size: 417.26102pt x 156.46698pt.
+
+
+[101 <./figures_ch3/4.2_refractive_alt.pdf>]
+
+[102 <./figures_ch3/4.3_extinction_alt.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[103]
+<figures_ch3/4.4_reflectivity_alt.pdf, id=1898, 1156.32pt x 433.62pt>
+File: figures_ch3/4.4_reflectivity_alt.pdf Graphic file (type pdf)
+<use figures_ch3/4.4_reflectivity_alt.pdf>
+Package pdftex.def Info: figures_ch3/4.4_reflectivity_alt.pdf  used on input line 1085.
+(pdftex.def)             Requested size: 417.26102pt x 156.46698pt.
+
+
+[104 <./figures_ch3/4.4_reflectivity_alt.pdf>]
+<figures_ch3/4.5_energy_alt.pdf, id=1980, 1156.32pt x 433.62pt>
+File: figures_ch3/4.5_energy_alt.pdf Graphic file (type pdf)
+<use figures_ch3/4.5_energy_alt.pdf>
+Package pdftex.def Info: figures_ch3/4.5_energy_alt.pdf  used on input line 1146.
+(pdftex.def)             Requested size: 417.26102pt x 156.46698pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[105])
+
+[106 <./fi
