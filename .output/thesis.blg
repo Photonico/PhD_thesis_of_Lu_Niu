@@ -1,15 +1,15 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is '.output/thesis.blg'
-[33] biber-darwin:340> INFO - === Sun Jun 21, 2026, 08:27:59
-[41] Biber.pm:420> INFO - Reading '.output/thesis.bcf'
-[114] Biber.pm:994> INFO - Found 137 citekeys in bib section 0
-[121] Biber.pm:4463> INFO - Processing section 0
-[127] Biber.pm:4654> INFO - Looking for bibtex file 'thesis.bib' for section 0
-[130] bibtex.pm:1713> INFO - LaTeX decoding ...
-[208] bibtex.pm:1519> INFO - Found BibTeX data source 'thesis.bib'
-[657] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[657] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
-[657] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-UK'
-[657] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-UK'
-[702] bbl.pm:676> INFO - Writing '.output/thesis.bbl' with encoding 'UTF-8'
-[737] bbl.pm:779> INFO - Output to .output/thesis.bbl
+[33] biber-darwin:340> INFO - === Sun Jun 21, 2026, 09:07:40
+[42] Biber.pm:420> INFO - Reading '.output/thesis.bcf'
+[116] Biber.pm:994> INFO - Found 137 citekeys in bib section 0
+[124] Biber.pm:4463> INFO - Processing section 0
+[129] Biber.pm:4654> INFO - Looking for bibtex file 'thesis.bib' for section 0
+[133] bibtex.pm:1713> INFO - LaTeX decoding ...
+[210] bibtex.pm:1519> INFO - Found BibTeX data source 'thesis.bib'
+[671] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[671] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[671] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-UK'
+[671] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-UK'
+[716] bbl.pm:676> INFO - Writing '.output/thesis.bbl' with encoding 'UTF-8'
+[750] bbl.pm:779> INFO - Output to .output/thesis.bbl
