@@ -2682,8 +2682,6 @@
     <bcf:citekey order="155" intorder="1">roldan2015strain</bcf:citekey>
     <bcf:citekey order="156" intorder="1">boukhvalov2008hydrogen</bcf:citekey>
     <bcf:citekey order="157" intorder="1">guo2017all</bcf:citekey>
-    <bcf:citekey order="158" intorder="1">guo2017all</bcf:citekey>
-    <bcf:citekey order="158" intorder="2">liu2018tuning</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
