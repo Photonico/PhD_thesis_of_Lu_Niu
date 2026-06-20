@@ -61,7 +61,7 @@
 \contentsline {subsubsection}{\numberline {4.4.2.3}Band structure and density of states}{116}{subsubsection.4.4.2.3}%
 \contentsline {section}{\numberline {4.5}Conclusions}{116}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Supplementary information}{116}{section.4.6}%
-\contentsline {chapter}{\tocchapter {Chapter}{5}{project 2}}{131}{chapter.5}%
-\contentsline {chapter}{\tocchapter {Chapter}{6}{project 3}}{133}{chapter.6}%
-\contentsline {chapter}{\tocchapter {}{}{Bibliography}}{134}{chapter*.40}%
-\contentsline {chapter}{\tocchapter {}{}{Appendix}}{144}{appendix*.41}%
+\contentsline {chapter}{\tocchapter {Chapter}{5}{project 2}}{133}{chapter.5}%
+\contentsline {chapter}{\tocchapter {Chapter}{6}{project 3}}{135}{chapter.6}%
+\contentsline {chapter}{\tocchapter {}{}{Bibliography}}{136}{chapter*.40}%
+\contentsline {chapter}{\tocchapter {}{}{Appendix}}{146}{appendix*.41}%
