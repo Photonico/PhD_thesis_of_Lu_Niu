@@ -398,7 +398,7 @@ It also provides $\vec{k}$-point mesh convergence tests, projected densities of 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=1.00\textwidth]{figures_proj1/S1.3.pdf}
-    \caption{Total energy versus lattice constant for the four monolayer systems: Graphene, borophene, \ce{BC3}, and \ce{B4C3}.
+    \caption{
     Total energy versus lattice constant for each bilayer system for the various stacking positions considered.
     The lines are fitted curves with the full circle indicating the lowest energy structure.}
     \label{S1.3}
@@ -572,9 +572,9 @@ $33$ denotes a $33 \times 33 \times 1$ $\vec{k}$-point mesh.}
     \includegraphics[width=0.80\linewidth]{figures_proj1/S1.13d.pdf}
 \caption{Real and imaginary part of the dielectric function
 for all the four monolayers as calculated using the PBE functional with a 
-$129\times 129\times 129$
+$129\times 129\times 1$
 $\vec{k}$-point mesh for Graphene and a
-$65\times 65 \times 65$
+$65\times 65\times 1$
 $\vec{k}$-point mesh for the borophene and boron-carbide monolayers.}
 \label{S1.13}
 \end{figure}
@@ -592,9 +592,9 @@ $\vec{k}$-point mesh for the borophene and boron-carbide monolayers.}
     \includegraphics[width=0.80\linewidth]{figures_proj1/S1.14e.pdf}
 \caption{Optical properties
 for all the four monolayers as calculated using the PBE functional with a 
-$129\times 129\times 129$
+$129\times 129\times 1$
 $\vec{k}$-point mesh for Graphene and a
-$65\times 65 \times 65$
+$65\times 65\times 1$
 $\vec{k}$-point mesh for the borophene and boron-carbide monolayers.}
 \label{S1.14}
 \end{figure}
@@ -606,7 +606,7 @@ $\vec{k}$-point mesh for the borophene and boron-carbide monolayers.}
 \label{S1.15}
 \end{figure}
 
-\clearpage We also test the effect of the energy convergence criteria ``EDIFF'' on the calculated dielectric function in figure~\ref{S1.16} along with different $\vec{k}$-point meshes and comparison of HSE06 and PBE.
+\clearpage We also test the effect of the energy convergence criteria \texttt{EDIFF} on the calculated dielectric function in figure~\ref{S1.16} along with different $\vec{k}$-point meshes and comparison of HSE06 and PBE.
 
 \begin{figure}[!htbp]
 \centering
@@ -617,9 +617,8 @@ with the PBE result included for reference.}
 \end{figure}
 
 \clearpage
-
 Figures~\ref{S1.17}--\ref{S1.19} show the PBE dielectric function tensor components of the three bilayer systems.
-The off-diagonal components are small but non-zero and satisfy the antisymmetric relations $\varepsilon_{yx}=-\varepsilon_{xy}$, $\varepsilon_{yz}=-\varepsilon_{zy}$, and $\varepsilon_{zx}=-\varepsilon_{xz}$.
+The off-diagonal components are small but non-zero and approximately satisfy the antisymmetric relations $\varepsilon_{yx}=-\varepsilon_{xy}$, $\varepsilon_{yz}=-\varepsilon_{zy}$, and $\varepsilon_{zx}=-\varepsilon_{xz}$.
 
 \begin{figure}[!htbp]
 \centering
