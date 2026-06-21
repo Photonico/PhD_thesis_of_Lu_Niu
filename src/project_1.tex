@@ -495,7 +495,35 @@ It can be seen that 128 bands yield well-converged results,
 and we therefore use this value for all three bilayer calculations.
 Further tests of the energy convergence criterion are reported in figure~\ref{S1.16}.
 
-The results for the dielectric function of the Graphene-\ce{BC3} heterostructure are shown in figure~\ref{fig1.9},
+% Graphene-Borophene
+The results for the dielectric function of the Graphene-Borophene heterojunction are shown in figure~\ref{fig1.9},
+as obtained using both the PBE and HSE06 functionals.
+The corresponding full dielectric tensor components are provided in figure~\ref{S1.18}.
+Compared with the PBE results,
+HSE06 yields a blue shift of the features to higher energies.
+The real part exhibits characteristics of both graphene and borophene,
+with plasmons emerging around the same energies as those of the respective monolayers shown in figure~\ref{S1.13},
+namely around \qty{5}{\electronvolt} (\qty{4}{\electronvolt}) and \qty{2}{\electronvolt} (\qty{1}{\electronvolt}) for HSE06 (PBE), respectively.
+There is, however, a significant difference in the out-of-plane dielectric function compared with the monolayer systems.
+The borophene-related plasmon that emerges at around \qty{9.8}{\electronvolt} in the monolayer shifts to higher energies and now appears at around \qty{17}{\electronvolt} (\qty{14}{\electronvolt}) for HSE06 (PBE),
+with a plasmon resonance frequency at about \qty{18}{\electronvolt} (\qty{15}{\electronvolt}) for HSE06 (PBE),
+as determined by the energy at which the real part of the dielectric function changes from negative to positive.
+In addition, a new feature with two peaks occurs around \qtyrange{2}{5}{\electronvolt} (\qtyrange{1}{4}{\electronvolt}) for HSE06 (PBE) in both the real and imaginary parts of the dielectric function.
+This feature in the imaginary part is attributed to interband transitions involving borophene- and graphene-derived states around the $\mathrm{K}$ point and along the direction towards the $\mathrm{M}$ and $\Gamma$ points.
+A similar feature appears for the other bilayer heterojunctions, although it shows only one main peak.
+For in-plane polarization, the first main peak of $\varepsilon_2$ occurs in the visible range and is related to $\pi-\pi^*$ transitions.
+The main peaks along the out-of-plane direction are broad and occur in the energy range \qtyrange{9}{18.5}{\electronvolt} (\qtyrange{8}{17.5}{\electronvolt}) for HSE06 (PBE),
+being related to $\pi-\sigma^*$ and $\pi^*-\sigma$ transitions.
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.8\textwidth]{figures_proj1/proj1.9.pdf}
+\caption{Real and imaginary parts of the in-plane and out-of-plane dielectric function versus photon energy, as calculated using the PBE and HSE06 functionals for the Graphene-Borophene heterostructure.}
+\label{fig1.9}
+\end{figure}
+
+% Graphene-BC3
+The results for the dielectric function of the Graphene-\ce{BC3} heterostructure are shown in figure~\ref{fig1.10},
 as obtained using both the PBE and HSE06 functionals.
 The corresponding full dielectric tensor components are provided in figure~\ref{S1.17}.
 Interestingly, and in contrast to Graphene-Borophene,
@@ -534,37 +562,12 @@ being related to $\pi-\sigma^*$ and $\pi^*-\sigma$ transitions.
 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=1.0\textwidth]{figures_proj1/proj1.9_diff.pdf}
-\caption{Real and imaginary parts of the in-plane and out-of-plane dielectric function versus photon energy, as calculated using the PBE and HSE06 functionals for the Graphene-\ce{BC3} heterostructure.}
-\label{fig1.9}
-\end{figure}
-
-The results for the dielectric function of the Graphene-Borophene heterojunction are shown in figure~\ref{fig1.10},
-as obtained using both the PBE and HSE06 functionals.
-The corresponding full dielectric tensor components are provided in figure~\ref{S1.18}.
-Compared with the PBE results,
-HSE06 yields a blue shift of the features to higher energies.
-The real part exhibits characteristics of both graphene and borophene,
-with plasmons emerging around the same energies as those of the respective monolayers shown in figure~\ref{S1.13},
-namely around \qty{5}{\electronvolt} (\qty{4}{\electronvolt}) and \qty{2}{\electronvolt} (\qty{1}{\electronvolt}) for HSE06 (PBE), respectively.
-There is, however, a significant difference in the out-of-plane dielectric function compared with the monolayer systems.
-The borophene-related plasmon that emerges at around \qty{9.8}{\electronvolt} in the monolayer shifts to higher energies and now appears at around \qty{17}{\electronvolt} (\qty{14}{\electronvolt}) for HSE06 (PBE),
-with a plasmon resonance frequency at about \qty{18}{\electronvolt} (\qty{15}{\electronvolt}) for HSE06 (PBE),
-as determined by the energy at which the real part of the dielectric function changes from negative to positive.
-In addition, a new feature with two peaks occurs around \qtyrange{2}{5}{\electronvolt} (\qtyrange{1}{4}{\electronvolt}) for HSE06 (PBE) in both the real and imaginary parts of the dielectric function.
-This feature in the imaginary part is attributed to interband transitions involving borophene- and graphene-derived states around the $\mathrm{K}$ point and along the direction towards the $\mathrm{M}$ and $\Gamma$ points.
-A similar feature appears for the other bilayer heterojunctions, although it shows only one main peak.
-For in-plane polarization, the first main peak of $\varepsilon_2$ occurs in the visible range and is related to $\pi-\pi^*$ transitions.
-The main peaks along the out-of-plane direction are broad and occur in the energy range \qtyrange{9}{18.5}{\electronvolt} (\qtyrange{8}{17.5}{\electronvolt}) for HSE06 (PBE),
-being related to $\pi-\sigma^*$ and $\pi^*-\sigma$ transitions.
-
-\begin{figure}[!htbp]
-\centering
-    \includegraphics[width=0.8\textwidth]{figures_proj1/proj1.10.pdf}
-\caption{Real and imaginary parts of the in-plane and out-of-plane dielectric function versus photon energy, as calculated using the PBE and HSE06 functionals for the Graphene-Borophene heterostructure.}
+    \includegraphics[width=1.0\textwidth]{figures_proj1/proj1.10_diff.pdf}
+\caption{Real and imaginary parts of the in-plane, out-of-plane, and off-diagonal dielectric function components versus photon energy, as calculated using the PBE and HSE06 functionals for the Graphene-\ce{BC3} heterostructure.}
 \label{fig1.10}
 \end{figure}
 
+% Graphene-B4C3
 The results for the dielectric function of the Graphene-\ce{B4C3} heterostructure are shown in figure~\ref{fig1.11},
 as obtained using both the PBE and HSE06 functionals.
 The corresponding full dielectric tensor components are provided in figure~\ref{S1.19}.
@@ -593,8 +596,16 @@ The presence of complex off-diagonal elements in the dielectric tensor of a mate
 which could lead to effects such as optical activity.
 It further indicates that Graphene-\ce{B4C3} dissipates energy differently depending on the direction of the electric field.
 
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\textwidth]{figures_proj1/proj1.11_diff.pdf}
+\caption{Real and imaginary parts of the in-plane, out-of-plane, and off-diagonal dielectric function components versus photon energy, as calculated using the PBE and HSE06 functionals for the Graphene-\ce{B4C3} heterostructure.}
+\label{fig1.11}
+\end{figure}
+
 % bookmark
 
+\clearpage
 \section{Conclusions}
 \label{1_conclusions}
 
@@ -602,7 +613,7 @@ It further indicates that Graphene-\ce{B4C3} dissipates energy differently depen
 
 The supplementary information presents the lattice-parameter determination for the graphene, borophene, \ce{BC3}, and \ce{B4C3} monolayers,
 as well as the corresponding results for the associated heterostructure bilayers under various relative lateral displacements.
-It also provides $\vec{k}$-point mesh convergence tests, projected densities of states, dielectric-function convergence tests, and derived optical properties for the monolayer and bilayer systems investigated.
+It also provides $\vec{k}$-point mesh convergence tests, projected densities of states, dielectric function convergence tests, and derived optical properties for the monolayer and bilayer systems investigated.
 
 \begin{figure}[!htbp]
 \centering
@@ -758,15 +769,15 @@ In addition, figures~\ref{S1.9}--\ref{S1.11} show the projected densities of sta
 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.9.pdf}
-\caption{Projected density of states of the Graphene-\ce{BC3} calculated using the HSE06 functional.}
+    \includegraphics[width=1.00\textwidth]{figures_proj1/S1.9.pdf}
+\caption{Projected density of states of Graphene-Borophene calculated using the HSE06 functional.}
 \label{S1.9}
 \end{figure}
 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=1.00\textwidth]{figures_proj1/S1.10.pdf}
-\caption{Projected density of states of Graphene-Borophene calculated using the HSE06 functional.}
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.10.pdf}
+\caption{Projected density of states of the Graphene-\ce{BC3} calculated using the HSE06 functional.}
 \label{S1.10}
 \end{figure}
 
@@ -800,7 +811,7 @@ for the four monolayers as calculated using the PBE functional with a
 $129\times 129\times 1$
 $\vec{k}$-point mesh for graphene,
 and a $65\times 65\times 1$
-$\vec{k}$-point mesh for the borophene and boron-carbide monolayers.}
+$\vec{k}$-point mesh for the borophene and boron-carbide monolayers..}
 \label{S1.13}
 \end{figure}
 
@@ -847,14 +858,14 @@ The off-diagonal components are small but non-zero and satisfy the antisymmetric
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=0.85\textwidth]{figures_proj1/S1.17.pdf}
-\caption{PBE dielectric function components of Graphene-\ce{BC3}.}
+\caption{PBE dielectric function components of Graphene-Borophene.}
 \label{S1.17}
 \end{figure}
 
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=0.85\textwidth]{figures_proj1/S1.18.pdf}
-\caption{PBE dielectric function components of Graphene-Borophene.}
+\caption{PBE dielectric function components of Graphene-\ce{BC3}.}
 \label{S1.18}
 \end{figure}
 

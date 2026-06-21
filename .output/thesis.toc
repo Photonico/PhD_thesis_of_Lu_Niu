@@ -61,9 +61,9 @@
 \contentsline {subsubsection}{\numberline {4.4.2.3}Band structure and density of states}{116}{subsubsection.4.4.2.3}%
 \contentsline {subsubsection}{\numberline {4.4.2.4}Schottky barrier height}{116}{subsubsection.4.4.2.4}%
 \contentsline {subsection}{\numberline {4.4.3}Optical properties}{119}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Conclusions}{123}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Supplementary information}{123}{section.4.6}%
-\contentsline {chapter}{\tocchapter {Chapter}{5}{project 2}}{139}{chapter.5}%
-\contentsline {chapter}{\tocchapter {Chapter}{6}{project 3}}{141}{chapter.6}%
-\contentsline {chapter}{\tocchapter {}{}{Bibliography}}{142}{chapter*.46}%
-\contentsline {chapter}{\tocchapter {}{}{Appendix}}{153}{appendix*.47}%
+\contentsline {section}{\numberline {4.5}Conclusions}{125}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Supplementary information}{125}{section.4.6}%
+\contentsline {chapter}{\tocchapter {Chapter}{5}{project 2}}{141}{chapter.5}%
+\contentsline {chapter}{\tocchapter {Chapter}{6}{project 3}}{143}{chapter.6}%
+\contentsline {chapter}{\tocchapter {}{}{Bibliography}}{144}{chapter*.47}%
+\contentsline {chapter}{\tocchapter {}{}{Appendix}}{155}{appendix*.48}%
