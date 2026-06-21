@@ -52,7 +52,7 @@
 \contentsline {chapter}{\tocchapter {Chapter}{4}{Optoelectronic Properties of Heterostructure Bilayers}}{107}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Abstract}{107}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Introduction}{108}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Calculation method}{110}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Calculation methods}{110}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Results and discussion}{111}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Monolayer properties}{111}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Heterostructure}{113}{subsection.4.4.2}%
@@ -64,7 +64,13 @@
 \contentsline {subsection}{\numberline {4.4.4}Derived optical properties}{124}{subsection.4.4.4}%
 \contentsline {section}{\numberline {4.5}Conclusions}{127}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Supplementary information}{127}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Data availability statement}{138}{section.4.7}%
 \contentsline {chapter}{\tocchapter {Chapter}{5}{Functional Properties of Penta-Bipyramid Boron Allotropes}}{143}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Abstract}{143}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Introduction}{143}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Computation methods}{143}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Results and discussion}{143}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Conclusion}{143}{section.5.5}%
 \contentsline {chapter}{\tocchapter {Chapter}{6}{project 3}}{145}{chapter.6}%
 \contentsline {chapter}{\tocchapter {}{}{Bibliography}}{146}{chapter*.50}%
 \contentsline {chapter}{\tocchapter {}{}{Appendix}}{157}{appendix*.51}%
