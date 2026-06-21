@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.6)  21 JUN 2026 15:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.6)  21 JUN 2026 15:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -718,7 +718,7 @@ Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
 \minrowclearance=\skip95
 \rownum=\count352
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 149.
+Package hyperref Info: Option `colorlinks' set `true' on input line 152.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/logreq/logreq.sty
@@ -968,65 +968,65 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'UKenglish'.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 272.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 275.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (.output/thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 272.
-LaTeX Font Info:    ... okay on input line 272.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 272.
-LaTeX Font Info:    ... okay on input line 272.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 272.
-LaTeX Font Info:    ... okay on input line 272.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 272.
-LaTeX Font Info:    ... okay on input line 272.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 272.
-LaTeX Font Info:    ... okay on input line 272.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 272.
-LaTeX Font Info:    ... okay on input line 272.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 272.
-LaTeX Font Info:    ... okay on input line 272.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 272.
-LaTeX Font Info:    ... okay on input line 272.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 272.
-LaTeX Font Info:    ... okay on input line 272.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 272.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 275.
+LaTeX Font Info:    ... okay on input line 275.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 275.
+LaTeX Font Info:    ... okay on input line 275.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 275.
+LaTeX Font Info:    ... okay on input line 275.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 275.
+LaTeX Font Info:    ... okay on input line 275.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 275.
+LaTeX Font Info:    ... okay on input line 275.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 275.
+LaTeX Font Info:    ... okay on input line 275.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 275.
+LaTeX Font Info:    ... okay on input line 275.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 275.
+LaTeX Font Info:    ... okay on input line 275.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 275.
+LaTeX Font Info:    ... okay on input line 275.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 275.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 272.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 275.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 272.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 275.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 272.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 275.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 272.
+(Font)              <10> on input line 275.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 272.
+(Font)              <7> on input line 275.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 272.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 272.
+(Font)              <5> on input line 275.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 275.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 272.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 275.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 272.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 275.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 272.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 275.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1049,7 +1049,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 
-Package chemgreek Info: Activating mapping `default' on line 272.
+Package chemgreek Info: Activating mapping `default' on line 275.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
@@ -1063,7 +1063,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-Package hyperref Info: Link coloring ON on input line 272.
+Package hyperref Info: Link coloring ON on input line 275.
  (.output/thesis.out) (.output/thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
@@ -1097,25 +1097,25 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
  (.output/thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 272.
-Package biblatex Info: Reference segment=0 on input line 272.
+Package biblatex Info: Reference section=0 on input line 275.
+Package biblatex Info: Reference segment=0 on input line 275.
 Package microtype Info: Patching varwidth to enable character protrusion.
 \MT@vwid@leftmargin=\dimen288
 \MT@vwid@rightmargin=\dimen289
-LaTeX Info: Redefining \microtypecontext on input line 272.
-Package microtype Info: Applying patch `item' on input line 272.
-Package microtype Info: Applying patch `toc' on input line 272.
-Package microtype Info: Applying patch `eqnum' on input line 272.
-Package microtype Info: Applying patch `footnote' on input line 272.
-Package microtype Info: Applying patch `verbatim' on input line 272.
-LaTeX Info: Redefining \microtypesetup on input line 272.
+LaTeX Info: Redefining \microtypecontext on input line 275.
+Package microtype Info: Applying patch `item' on input line 275.
+Package microtype Info: Applying patch `toc' on input line 275.
+Package microtype Info: Applying patch `eqnum' on input line 275.
+Package microtype Info: Applying patch `footnote' on input line 275.
+Package microtype Info: Applying patch `verbatim' on input line 275.
+LaTeX Info: Redefining \microtypesetup on input line 275.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 272.
+LaTeX Info: Redefining \showhyphens on input line 275.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1125,7 +1125,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 <style/usyd-logo.jpg, id=267, 1185.42876pt x 1185.42876pt>
 File: style/usyd-logo.jpg Graphic file (type jpg)
 <use style/usyd-logo.jpg>
-Package pdftex.def Info: style/usyd-logo.jpg  used on input line 285.
+Package pdftex.def Info: style/usyd-logo.jpg  used on input line 288.
 (pdftex.def)             Requested size: 199.16928pt x 199.16876pt.
 
 
@@ -1734,17 +1734,6 @@ Underfull \vbox (badness 4779) has occurred while \output is active []
 
 
 [108]
-
-Package siunitx Warning: Unit macro \angstrom has been deprecated in this
-(siunitx)                release.
-(siunitx)                
-(siunitx)                The BIPM have removed this unit from the SI Brochure.
-(siunitx)                You should define it yourself using \DeclareSIUnit in
-(siunitx)                your source. The current definition is
-(siunitx)                
-(siunitx)                \DeclareSIUnit\angstrom{\text {Å}}
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2142,7 +2131,7 @@ Bibliography
 ]
 
 [147]
-Overfull \hbox (27.27335pt too wide) in paragraph at lines 342--342
+Overfull \hbox (27.27335pt too wide) in paragraph at lines 345--345
 []\T1/lmr/m/n/12 (-20) Piotr De Silva and To-masz A Weso-lowski. `  Pure-state non-in-ter-act-ing v-representability
  []
 
@@ -2176,21 +2165,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: B43F16D13E865A028EE3603E290AFB98;15256.
+(rerunfilecheck)             Checksum: 3B053E7CF3A327B529A4189D00DE7909;15508.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36934 strings out of 473190
- 738455 string characters out of 5715801
- 1623585 words of memory out of 5000000
- 58398 multiletter control sequences out of 15000+600000
- 643592 words of font info for 249 fonts, out of 8000000 for 9000
+ 36941 strings out of 473190
+ 738583 string characters out of 5715801
+ 1623638 words of memory out of 5000000
+ 58401 multiletter control sequences out of 15000+600000
+ 643786 words of font info for 251 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 94i,21n,131p,1035b,2887s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,21n,131p,1035b,2889s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on .output/thesis.pdf (166 pages, 39589968 bytes).
+Output written on .output/thesis.pdf (166 pages, 39590202 bytes).
 PDF statistics:
  4900 PDF objects out of 5155 (max. 8388607)
  2503 compressed objects within 26 object streams
