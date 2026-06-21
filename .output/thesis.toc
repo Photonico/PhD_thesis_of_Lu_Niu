@@ -1,0 +1,69 @@
+\babel@toc {UKenglish}{}\relax 
+\contentsline {chapter}{\tocchapter {}{}{Abstract}}{iii}{chapter*.1}%
+\contentsline {chapter}{\tocchapter {}{}{List of Publications}}{iv}{chapter*.2}%
+\contentsline {chapter}{\tocchapter {}{}{Acknowledgements}}{v}{chapter*.3}%
+\contentsline {chapter}{Contents}{vii}{chapter*.3}%
+\contentsline {chapter}{\tocchapter {Chapter}{1}{Introduction}}{1}{chapter.1}%
+\contentsline {chapter}{\tocchapter {Chapter}{2}{Fundamentals \MakeUppercase []{i}: Many-Body Quantum Physics and DFT}}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}A story starts with time evolution quantum mechanics}{4}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Time-dependent Schrödinger equation}{4}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Time evolution operator}{5}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Many-body Schrödinger equation}{8}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}From Schrödinger picture to Heisenberg picture}{11}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}From Heisenberg picture to the continuity equation}{13}{subsection.2.1.5}%
+\contentsline {section}{\numberline {2.2}Toward the many-body problem}{16}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}An introduction to grand canonical ensemble}{16}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}From wave function to practical functionals}{17}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}An introduction to density functionals}{27}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}What is the functional?}{27}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Density functional in quantum mechanics}{28}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}The Hohenberg--Kohn theorem}{32}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}The Thomas--Fermi approach}{43}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Limitations of the Thomas--Fermi approach}{49}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}From density functional to Kohn--Sham theory}{52}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Auxiliary system}{52}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}The framework of the Kohn--Sham equations}{56}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}From variational derivation to the Kohn--Sham equations}{61}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Variational construction of the Kohn--Sham scheme}{64}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Remarks on the Kohn--Sham solutions}{66}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Structure and construction of the Kohn--Sham potential}{67}{subsection.2.4.6}%
+\contentsline {subsection}{\numberline {2.4.7}The Hartree equations}{70}{subsection.2.4.7}%
+\contentsline {section}{\numberline {2.5}Exchange-correlation functional}{72}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Local density and generalized gradient approximations}{72}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Hybrid functionals and the Heyd--Scuseria--Ernzerhof functional}{74}{subsection.2.5.2}%
+\contentsline {chapter}{\tocchapter {Chapter}{3}{Fundamentals \MakeUppercase []{ii}: Linear Optical Response}}{77}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Toward electromagnetic response in matter}{78}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Maxwell equations in matter}{78}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Polarization, electric displacement, and constitutive relations}{80}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Anisotropy and the dielectric tensor}{83}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}From electronic response to the dielectric function}{86}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}From polarization response to the complex dielectric function}{86}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Microscopic origin of the imaginary part}{88}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Dielectric response in anisotropic media}{90}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Causality and the Kramers--Kronig relations}{92}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Causality and analytic structure of response functions}{92}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Kramers--Kronig relations for the dielectric function}{94}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Static limit and physical interpretation}{95}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}From the dielectric function to optical properties}{97}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Absorption coefficient}{97}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Refractive index and extinction coefficient}{99}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Reflectivity}{102}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Energy-loss spectrum}{104}{subsection.3.4.4}%
+\contentsline {chapter}{\tocchapter {Chapter}{4}{Optoelectronic Properties of Heterostructure Bilayers}}{107}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Abstract}{107}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Introduction}{108}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Calculation method}{110}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Results and discussion}{111}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Monolayer properties}{111}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Heterostructure}{113}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Structural properties}{113}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}Charge density difference}{114}{subsubsection.4.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.3}Band structure and density of states}{116}{subsubsection.4.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.4.2.4}Schottky barrier height}{116}{subsubsection.4.4.2.4}%
+\contentsline {subsection}{\numberline {4.4.3}Optical properties}{119}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Conclusions}{122}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Supplementary information}{122}{section.4.6}%
+\contentsline {chapter}{\tocchapter {Chapter}{5}{project 2}}{141}{chapter.5}%
+\contentsline {chapter}{\tocchapter {Chapter}{6}{project 3}}{143}{chapter.6}%
+\contentsline {chapter}{\tocchapter {}{}{Bibliography}}{144}{chapter*.46}%
+\contentsline {chapter}{\tocchapter {}{}{Appendix}}{155}{appendix*.47}%
