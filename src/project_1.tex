@@ -495,9 +495,32 @@ It can be seen that 128 bands yield well-converged results,
 and we therefore use this value for all three bilayer calculations.
 Further tests of the energy convergence criterion are reported in figure~\ref{S1.16}.
 
-The dielectric functions of the Graphene-Borophene heterojunction calculated using both the PBE and HSE06 functionals are shown in figure~\ref{fig1.9}.
-First, compared with the PBE results, HSE06 yields a blue shift of the features to higher energies.
-The real part exhibits characteristics of both graphene and borophene, with plasmons emerging around the same energies as in the corresponding monolayers,
+The results for the dielectric function of the Graphene-\ce{BC3} heterostructure are shown in figure~\ref{fig1.9},
+as obtained using both the PBE and HSE06 functionals.
+In contrast to the Graphene-Borophene system,
+the real part of the dielectric function is positive over the whole energy range considered.
+There are, however, energy ranges where it approaches zero,
+namely in the region \qtyrange{2.5}{5}{\electronvolt} and from \qty{13}{\electronvolt} (\qty{15}{\electronvolt}) onwards for PBE (HSE06).
+When $\varepsilon_1$ is zero but not negative,
+this suggests that the system is close to resonance but has not fully entered the regime where strong optical reflection or plasmonic modes are dominant,
+since such modes typically require $\varepsilon_1 < 0$.
+Another difference from the Graphene-Borophene system is the sizeable in-plane value of both $\varepsilon_1$ and $\varepsilon_2$ in the region \qtyrange{10}{15}{\electronvolt}.
+Similar to the Graphene-Borophene system, however,
+the out-of-plane real part of the dielectric function becomes negative at around \qtyrange{16}{17}{\electronvolt} (\qtyrange{14}{15}{\electronvolt}) for HSE06 (PBE),
+indicating the presence of a plasmon.
+Interestingly, monolayer \ce{BC3} does not exhibit this feature, unlike borophene.
+It is therefore presumably related to the $\pi-\sigma$-type plasmon present for graphene at approximately \qty{15}{\electronvolt},
+but involves transitions between states associated with both monolayers.
+For in-plane polarization, the first main peaks of $\varepsilon_2$ occur in the visible range and are related to $\pi-\pi^*$ transitions.
+The main peaks along the out-of-plane direction are broad and occur in the energy range \qtyrange{11}{17}{\electronvolt} (\qtyrange{9}{16}{\electronvolt}) for HSE06 (PBE),
+being related to $\pi-\sigma^*$ and $\pi^*-\sigma$ transitions.
+
+The results for the dielectric function of the Graphene-Borophene heterojunction are shown in figure~\ref{fig1.10},
+as obtained using both the PBE and HSE06 functionals.
+Compared with the PBE results,
+HSE06 yields a blue shift of the features to higher energies.
+The real part exhibits characteristics of both graphene and borophene,
+with the presence of plasmons emerging around the same energies as those of the respective monolayers,
 namely around \qty{5}{\electronvolt} (\qty{4}{\electronvolt}) and \qty{2}{\electronvolt} (\qty{1}{\electronvolt}) for HSE06 (PBE), respectively.
 There is, however, a significant difference in the out-of-plane dielectric function compared with the monolayer systems.
 The borophene-related plasmon that emerges at around \qty{9.8}{\electronvolt} in the monolayer shifts to higher energies and now appears at around \qty{17}{\electronvolt} (\qty{14}{\electronvolt}) for HSE06 (PBE),
@@ -509,6 +532,20 @@ A similar feature appears for the other bilayer heterojunctions, although it sho
 For in-plane polarization, the first main peak of $\varepsilon_2$ occurs in the visible range and is related to $\pi-\pi^*$ transitions.
 The main peaks along the out-of-plane direction are broad and occur in the energy range \qtyrange{9}{18.5}{\electronvolt} (\qtyrange{8}{17.5}{\electronvolt}) for HSE06 (PBE),
 being related to $\pi-\sigma^*$ and $\pi^*-\sigma$ transitions.
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\textwidth]{figures_proj1/proj1.9.pdf}
+\caption{The real and imaginary parts of the in-plane and out-of-plane dielectric function as a function of photon energy as calculated using the PBE and HSE06 functionals for the Graphene-\ce{BC3} heterostructure.}
+\label{fig1.9}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.8\textwidth]{figures_proj1/proj1.10.pdf}
+\caption{The real and imaginary parts of the in-plane and out-of-plane dielectric function as a function of photon energy as calculated using the PBE and HSE06 functionals for the Graphene-Borophene heterostructure.}
+\label{fig1.10}
+\end{figure}
 
 % bookmark
 
@@ -676,21 +713,21 @@ In addition, figures~\ref{S1.9}--\ref{S1.11} show the projected densities of sta
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=0.80\textwidth]{figures_proj1/S1.9.pdf}
-\caption{HSE06 projected density of states of Graphene-\ce{BC3}.}
+\caption{Projected density of states of the Graphene-\ce{BC3} calculated using the HSE06 functional.}
 \label{S1.9}
 \end{figure}
 
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=1.0\textwidth]{figures_proj1/S1.10.pdf}
-\caption{HSE06 projected density of states of Graphene-Borophene.}
+\caption{Projected density of states of Graphene-Borophene calculated using the HSE06 functional.}
 \label{S1.10}
 \end{figure}
 
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=0.80\textwidth]{figures_proj1/S1.11.pdf}
-\caption{HSE06 projected density of states of Graphene-\ce{B4C3}.}
+\caption{Projected density of states of the Graphene-\ce{B4C3} calculated using the HSE06 functional.}
 \label{S1.11}
 \end{figure}
 
@@ -723,17 +760,16 @@ $\vec{k}$-point mesh for the borophene and boron-carbide monolayers.}
 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=0.80\linewidth]{figures_proj1/S1.14a.pdf}
+    \includegraphics[width=1.0\linewidth]{figures_proj1/S1.14a.pdf}
     \par\nointerlineskip
-    \includegraphics[width=0.80\linewidth]{figures_proj1/S1.14b.pdf}
+    \includegraphics[width=1.0\linewidth]{figures_proj1/S1.14b.pdf}
     \par\nointerlineskip
-    \includegraphics[width=0.80\linewidth]{figures_proj1/S1.14c.pdf}
+    \includegraphics[width=1.0\linewidth]{figures_proj1/S1.14c.pdf}
     \par\nointerlineskip
-    \includegraphics[width=0.80\linewidth]{figures_proj1/S1.14d.pdf}
+    \includegraphics[width=1.0\linewidth]{figures_proj1/S1.14d.pdf}
     \par\nointerlineskip
-    \includegraphics[width=0.80\linewidth]{figures_proj1/S1.14e.pdf}
-\caption{Optical properties
-for the four monolayers as calculated using the PBE functional with a
+    \includegraphics[width=1.0\linewidth]{figures_proj1/S1.14e.pdf}
+\caption{Optical properties for the four monolayers as calculated using the PBE functional with a
 $129\times 129\times 1$
 $\vec{k}$-point mesh for graphene,
 and a $65\times 65\times 1$
@@ -764,21 +800,21 @@ The off-diagonal components are small but non-zero and satisfy the antisymmetric
 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.17.pdf}
+    \includegraphics[width=1.0\textwidth]{figures_proj1/S1.17.pdf}
 \caption{PBE dielectric function components of Graphene-\ce{BC3}.}
 \label{S1.17}
 \end{figure}
 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.18.pdf}
+    \includegraphics[width=1.0\textwidth]{figures_proj1/S1.18.pdf}
 \caption{PBE dielectric function components of Graphene-Borophene.}
 \label{S1.18}
 \end{figure}
 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.19.pdf}
+    \includegraphics[width=1.0\textwidth]{figures_proj1/S1.19.pdf}
 \caption{PBE dielectric function components of Graphene-\ce{B4C3}.}
 \label{S1.19}
 \end{figure}
@@ -788,40 +824,41 @@ Figures~\ref{S1.20}--\ref{S1.24} show the HSE06 optical properties of the three 
 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.20.pdf}
+    \includegraphics[width=1.0\textwidth]{figures_proj1/S1.20.pdf}
 \caption{Absorption coefficient.}
 \label{S1.20}
 \end{figure}
 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.21.pdf}
+    \includegraphics[width=1.0\textwidth]{figures_proj1/S1.21.pdf}
 \caption{Energy-loss spectrum.}
 \label{S1.21}
 \end{figure}
 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.22.pdf}
+    \includegraphics[width=1.0\textwidth]{figures_proj1/S1.22.pdf}
 \caption{Reflectivity.}
 \label{S1.22}
 \end{figure}
 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.23.pdf}
+    \includegraphics[width=1.0\textwidth]{figures_proj1/S1.23.pdf}
 \caption{Refractive index.}
 \label{S1.23}
 \end{figure}
 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.24.pdf}
+    \includegraphics[width=1.0\textwidth]{figures_proj1/S1.24.pdf}
 \caption{Extinction coefficient.}
 \label{S1.24}
 \end{figure}
 
 % test test test test
+% F1.9 F1.10 exchange
 % no S7, S8
 % S9 to S10, S10 to S11, S11 to S9
 % S19-23 to S20-24
