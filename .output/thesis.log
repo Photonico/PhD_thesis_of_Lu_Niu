@@ -2060,12 +2060,12 @@ Package pdftex.def Info: figures_proj1/S1.22.pdf  used on input line 858.
 File: figures_proj1/S1.23.pdf Graphic file (type pdf)
 <use figures_proj1/S1.23.pdf>
 Package pdftex.def Info: figures_proj1/S1.23.pdf  used on input line 865.
-(pdftex.def)             Requested size: 399.87155pt x 299.88625pt.
+(pdftex.def)             Requested size: 369.44992pt x 277.07916pt.
 <figures_proj1/S1.24.pdf, id=3980, 1734.48pt x 1300.86pt>
 File: figures_proj1/S1.24.pdf Graphic file (type pdf)
 <use figures_proj1/S1.24.pdf>
 Package pdftex.def Info: figures_proj1/S1.24.pdf  used on input line 872.
-(pdftex.def)             Requested size: 399.87155pt x 299.88625pt.
+(pdftex.def)             Requested size: 369.44992pt x 277.07916pt.
 )
 
 [136
@@ -2076,13 +2076,14 @@ Package pdftex.def Info: figures_proj1/S1.24.pdf  used on input line 872.
 
 [138 <./figures_proj1/S1.22.pdf>]
 
-[139 <./figures_proj1/S1.23.pdf>]
+[139 <./figures_proj1/S1.23.pdf> <./figures_proj1/S1.24.pdf>]
 
-[140 <./figures_proj1/S1.24.pdf>] (./src/project_2.tex)
+[140
+
+
+] (./src/project_2.tex)
 
 [141
-
-
 
 ]
 
@@ -2150,7 +2151,7 @@ Here is how much of TeX's memory you used:
  1302 hyphenation exceptions out of 8191
  94i,21n,131p,1035b,2887s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on .output/thesis.pdf (164 pages, 39388912 bytes).
+Output written on .output/thesis.pdf (164 pages, 39388712 bytes).
 PDF statistics:
  4586 PDF objects out of 5155 (max. 8388607)
  2452 compressed objects within 25 object streams
