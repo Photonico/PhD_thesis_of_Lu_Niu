@@ -5812,6 +5812,178 @@
       \field{volume}{111}
       \field{year}{2017}
     \endentry
+    \entry{warmbier2016}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=aa2c6c574199d4bc30b3710200c146dd}{%
+           family={Warmbier},
+           familyi={W\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4beed9ca5c11913f0ce94cbc8acec417}{%
+           family={Quandt},
+           familyi={Q\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{03fc887f76eae1395b67275b03641850}
+      \strng{fullhash}{03fc887f76eae1395b67275b03641850}
+      \strng{fullhashraw}{03fc887f76eae1395b67275b03641850}
+      \strng{bibnamehash}{03fc887f76eae1395b67275b03641850}
+      \strng{authorbibnamehash}{03fc887f76eae1395b67275b03641850}
+      \strng{authornamehash}{03fc887f76eae1395b67275b03641850}
+      \strng{authorfullhash}{03fc887f76eae1395b67275b03641850}
+      \strng{authorfullhashraw}{03fc887f76eae1395b67275b03641850}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computational Materials Science}
+      \field{title}{Plasmonic and dielectric properties of ideal graphene}
+      \field{volume}{114}
+      \field{year}{2016}
+      \field{pages}{18\bibrangedash 22}
+      \range{pages}{5}
+    \endentry
+    \entry{mortazavi2019outstanding}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=ff86e5683b46d3961d925756a3adea6a}{%
+           family={Mortazavi},
+           familyi={M\bibinitperiod},
+           given={Bohayra},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e5ec1a65d5bc06e6cf15950a015c5e6f}{%
+           family={Shahrokhi},
+           familyi={S\bibinitperiod},
+           given={Masoud},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f6498b6270942adf24440853fa2d30cf}{%
+           family={Raeisi},
+           familyi={R\bibinitperiod},
+           given={Mostafa},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e502d5d80f63eb5a219f8d5c0aefd899}{%
+           family={Zhuang},
+           familyi={Z\bibinitperiod},
+           given={Xiaoying},
+           giveni={X\bibinitperiod}}}%
+        {{hash=7c438656b7fb6b2c1b670ed69eecb72b}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={Luiz\bibnamedelimb Felipe\bibnamedelima C},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=0f6ba41beb0e82d9c87026741dd73d48}{%
+           family={Rabczuk},
+           familyi={R\bibinitperiod},
+           given={Timon},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{a851236a84ce54b24a72416d48d37a9c}
+      \strng{fullhash}{9001090d4d30dedaeb32385b0a7ea1c0}
+      \strng{fullhashraw}{9001090d4d30dedaeb32385b0a7ea1c0}
+      \strng{bibnamehash}{a851236a84ce54b24a72416d48d37a9c}
+      \strng{authorbibnamehash}{a851236a84ce54b24a72416d48d37a9c}
+      \strng{authornamehash}{a851236a84ce54b24a72416d48d37a9c}
+      \strng{authorfullhash}{9001090d4d30dedaeb32385b0a7ea1c0}
+      \strng{authorfullhashraw}{9001090d4d30dedaeb32385b0a7ea1c0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Carbon}
+      \field{title}{Outstanding strength, optical characteristics and thermal conductivity of graphene-like \ce{BC3} and \ce{BC6N} semiconductors}
+      \field{volume}{149}
+      \field{year}{2019}
+      \field{pages}{733\bibrangedash 742}
+      \range{pages}{10}
+    \endentry
+    \entry{huang2017}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=bc01c0870ebc71e39699b78c4ac4354e}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Yuefei},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=89931011d585e0ddaaa995fb0c54f905}{%
+           family={Shirodkar},
+           familyi={S\bibinitperiod},
+           given={Sharmila\bibnamedelima N},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=2dc1f712f5a8d04db1daa8312357f01c}{%
+           family={Yakobson},
+           familyi={Y\bibinitperiod},
+           given={Boris\bibnamedelima I},
+           giveni={B\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{4a2b44a5d39790ab274619d41ee8b5d5}
+      \strng{fullhash}{4a2b44a5d39790ab274619d41ee8b5d5}
+      \strng{fullhashraw}{4a2b44a5d39790ab274619d41ee8b5d5}
+      \strng{bibnamehash}{4a2b44a5d39790ab274619d41ee8b5d5}
+      \strng{authorbibnamehash}{4a2b44a5d39790ab274619d41ee8b5d5}
+      \strng{authornamehash}{4a2b44a5d39790ab274619d41ee8b5d5}
+      \strng{authorfullhash}{4a2b44a5d39790ab274619d41ee8b5d5}
+      \strng{authorfullhashraw}{4a2b44a5d39790ab274619d41ee8b5d5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Chemical Society}
+      \field{number}{47}
+      \field{title}{Two-dimensional boron polymorphs for visible range plasmonics: a first-principles exploration}
+      \field{volume}{139}
+      \field{year}{2017}
+      \field{pages}{17181\bibrangedash 17185}
+      \range{pages}{5}
+    \endentry
+    \entry{li2017first}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=d65091e16e5b9faf16b05cf9bc5f91fc}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Pengfei},
+           giveni={P\bibinitperiod}}}%
+        {{hash=effe6f809b23dc77b6f98b9c6bf11910}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Xinguo},
+           giveni={X\bibinitperiod}}}%
+        {{hash=270ba622dd678db75d9da419902c72a4}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Lixin},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{a76b7190bdc20220b8f6c7a759351ca6}
+      \strng{fullhash}{a76b7190bdc20220b8f6c7a759351ca6}
+      \strng{fullhashraw}{a76b7190bdc20220b8f6c7a759351ca6}
+      \strng{bibnamehash}{a76b7190bdc20220b8f6c7a759351ca6}
+      \strng{authorbibnamehash}{a76b7190bdc20220b8f6c7a759351ca6}
+      \strng{authornamehash}{a76b7190bdc20220b8f6c7a759351ca6}
+      \strng{authorfullhash}{a76b7190bdc20220b8f6c7a759351ca6}
+      \strng{authorfullhashraw}{a76b7190bdc20220b8f6c7a759351ca6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{16}
+      \field{title}{First-principles calculations and model analysis of plasmon excitations in graphene and graphene/hBN heterostructure}
+      \field{volume}{96}
+      \field{year}{2017}
+      \field{pages}{165417}
+      \range{pages}{1}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

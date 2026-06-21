@@ -449,6 +449,52 @@ For device applications, a smaller Schottky barrier height, or even an Ohmic con
 
 \subsection{Optical properties}
 
+Having determined the atomic and electronic properties of the bilayer systems,
+we now investigate their optical properties.
+In particular, we calculate the real part $\varepsilon_1$ and imaginary part $\varepsilon_2$ of the dielectric function,
+from which the other optical properties can be determined, as given by equations~\ref{absorption_coefficient_from_dielectric_function},
+~\ref{refractive_index_from_dielectric_response},
+~\ref{extinction_coefficient_from_dielectric_response},
+~\ref{reflectivity_from_refractive_index_and_extinction_coefficient},
+and~\ref{energy_loss_spectrum_from_inverse_dielectric_function}.
+The real part $\varepsilon_1$ measures the strength of the dynamical screening effects arising from charge excitations,
+whereas the imaginary part $\varepsilon_2$ measures light absorption as a consequence of neutral and plasmonic charge excitations.
+A negative value of the real part of the dielectric function indicates metallic character in the corresponding energy range of the electromagnetic spectrum.
+
+It is first important to establish the appropriate $\vec{k}$-point set to yield converged results.
+For graphene, we test a number of $\vec{k}$-point meshes and find that a $129 \times 129 \times 1$ mesh gives converged results, as shown in figure~\ref{S1.12}, in good agreement with previous results~\cite{warmbier2016}.
+We therefore use this $\vec{k}$-point sampling density for the other single monolayers, whose unit cells are $2 \times 2$ relative to graphene, namely a $65 \times 65 \times 1$ $\vec{k}$-point mesh.
+The dielectric functions for all the monolayers are shown in figure~\ref{S1.13}, where the results are consistent with previous calculations, namely graphene~\cite{warmbier2016}, \ce{BC3}~\cite{chen2019plasmon,mortazavi2019outstanding}, \ce{B4C3}~\cite{chang2019b4c3}, and borophene~\cite{huang2017,li2017first}.
+
+The response of the structures to light is highly dependent on the polarization direction of the incoming light,
+as seen from the anisotropic character of the in-plane and out-of-plane components of the dielectric function.
+For the in-plane direction, the well-known $\pi$ plasmon of graphene emerges around \qty{4}{\electronvolt},
+and the $\pi-\sigma$ plasmon emerges around \qty{14}{\electronvolt}.
+The other monolayer systems also have a $\pi$-like plasmon,
+which emerges for \ce{B4C3} around \qty{3}{\electronvolt},
+for \ce{BC3} around \qty{2}{\electronvolt},
+and for borophene around \qty{1}{\electronvolt}.
+It can furthermore be seen from figure~\ref{S1.13} that, for the real part of the dielectric function in the out-of-plane direction for borophene,
+a plasmon emerges at \qty{9.8}{\electronvolt}, as evidenced by the negative value that becomes positive around \qty{10.5}{\electronvolt}.
+
+As previously reported, the latter three monolayers exhibit visible-light absorption,
+which is also indicated by the in-plane imaginary part of the dielectric function shown in figure~\ref{S1.13}.
+The static dielectric constants, namely the real part of the dielectric function at zero energy,
+for \ce{BC3} are 4.0 for in-plane polarization and 1.4 for out-of-plane polarization as obtained using PBE.
+These values can be compared with previously reported PBE values of 4.86 for in-plane polarization and 1.59 for out-of-plane polarization~\cite{mortazavi2019outstanding}.
+
+For \ce{B4C3}, the in-plane static dielectric constant is 3.9,
+and the out-of-plane value is calculated to be 1.5.
+We note that these values reflect the combined monolayer-vacuum system.
+Figure~\ref{S1.14} shows the corresponding optical properties for the monolayer systems.
+
+Before presenting the results for the three heterostructure bilayer systems,
+we first perform a convergence check for the number of unoccupied bands included in the calculation of the dielectric function.
+Figure~\ref{S1.15} shows the results for the representative Graphene-\ce{B4C3} system.
+It can be seen that 128 bands yield well-converged results,
+and we therefore use this value for all three bilayer calculations.
+Further tests of the energy convergence criterion are reported in figure~\ref{S1.16}.
+
 % bookmark
 
 \section{Conclusions}
@@ -635,7 +681,7 @@ In addition, figures~\ref{S1.9}--\ref{S1.11} show the projected densities of sta
 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.12.pdf}
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.12_alt.pdf}
 \caption{Dielectric function of graphene calculated using the PBE functional for different $\vec{k}$-point meshes;
 here, for example,
 $33$ denotes a $33 \times 33 \times 1$ $\vec{k}$-point mesh.}
@@ -692,7 +738,7 @@ Figure~\ref{S1.16} also shows the effect of the energy convergence criterion \te
 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.16.pdf}
+    \includegraphics[width=0.80\textwidth]{figures_proj1/S1.16_alt.pdf}
 \caption{Dielectric function of the Graphene-Borophene bilayer comparing PBE and HSE06 results, HSE06 $\vec{k}$-point meshes of $17 \times 17 \times 1$ and $65 \times 65 \times 1$, and HSE06 energy convergence criteria \texttt{EDIFF} = $10^{-4}$, $10^{-5}$, and $10^{-6}$.}
 \label{S1.16}
 \end{figure}
@@ -759,3 +805,11 @@ Figures~\ref{S1.20}--\ref{S1.24} show the HSE06 optical properties of the three 
 \caption{Extinction coefficient.}
 \label{S1.24}
 \end{figure}
+
+% test test test test
+% no S7, S8
+% S9 to S10, S10 to S11, S11 to S9
+% S19-23 to S20-24
+% line 82;
+% line 247, 250;
+% line 368, 370;

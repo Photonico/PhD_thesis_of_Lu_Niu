@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber .output/thesis"] 1781996859.35969 ".output/thesis.bcf" ".output/thesis.bbl" ".output/thesis" 1781996913.02203 0
-  ".output/thesis.bcf" 1781996912.85081 130655 99d590cd48dbb6c90a4923df379b3793 "pdflatex"
+["biber .output/thesis"] 1781999586.13702 ".output/thesis.bcf" ".output/thesis.bbl" ".output/thesis" 1782000315.70039 0
+  ".output/thesis.bcf" 1782000315.53604 131231 7cba36a53bbd4d53d879539150955c24 "pdflatex"
   "thesis.bib" 1781985691.77342 50882 3043e7f7b297fb9c4df1e3ee1b1aa342 ""
   (generated)
   ".output/thesis.bbl"
   ".output/thesis.blg"
   (rewritten before read)
-["pdflatex"] 1781996905.32126 "/Users/lu/Repos/Thesis GitHub/thesis.tex" ".output/thesis.pdf" "thesis" 1781996913.02236 0
-  ".output/thesis.aux" 1781996912.78767 102291 d55ac7adff9ac648d898c5ce100161ea "pdflatex"
-  ".output/thesis.bbl" 1781996861.3637 238378 46946e2f7678e163a8f5f39441209286 "biber .output/thesis"
-  ".output/thesis.out" 1781996912.84675 15053 8d6d0a69290d6b94e6c1d153b0a38330 "pdflatex"
-  ".output/thesis.run.xml" 1781996912.85152 2379 f75cc13aa91ba640ee0d8112fc09c504 "pdflatex"
-  ".output/thesis.toc" 1781996912.85159 6913 efbc225458c10a95c10d22ab3c522c1c "pdflatex"
+["pdflatex"] 1782000307.77777 "/Users/lu/Repos/Thesis GitHub/thesis.tex" ".output/thesis.pdf" "thesis" 1782000315.70071 0
+  ".output/thesis.aux" 1782000315.47042 103183 40a115514e7e4a5182016ff7e5e12333 "pdflatex"
+  ".output/thesis.bbl" 1781999588.5279 245523 9e9798a739ab88872c982bcbba494fee "biber .output/thesis"
+  ".output/thesis.out" 1782000315.53197 15053 8d6d0a69290d6b94e6c1d153b0a38330 "pdflatex"
+  ".output/thesis.run.xml" 1782000315.53676 2379 f75cc13aa91ba640ee0d8112fc09c504 "pdflatex"
+  ".output/thesis.toc" 1782000315.53683 6913 5ed2e2631c3358e871e09ca63e088fd1 "pdflatex"
   "/Users/lu/Repos/Thesis GitHub/thesis.tex" 1781901500.68271 9408 202d2ce487369f6d52644d03bc7d3cf7 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -268,7 +268,7 @@
   "figures_proj1/S1.1.pdf" 1781899340.60544 17932 2842fbbbde98eb8a7185edbe4f7c20a2 ""
   "figures_proj1/S1.10.pdf" 1781899340.60581 79198 8dfa24606737d3f2a1b658037a5357e9 ""
   "figures_proj1/S1.11.pdf" 1781899340.60609 82538 d86afc3f363f066575767c645d5434dc ""
-  "figures_proj1/S1.12.pdf" 1781899340.60627 50358 f42eb20c37f4e8f890386c9ca896ddf6 ""
+  "figures_proj1/S1.12_alt.pdf" 1781899340.60676 38442 dd3872197ae48541b4dc5e907c0ffdaf ""
   "figures_proj1/S1.13a.pdf" 1781899340.60693 28836 21bee1d7e15ab6f46cd7cb3cfbdc2403 ""
   "figures_proj1/S1.13b.pdf" 1781899340.60717 25192 3fe96234c069d5ec8f74e544d09b9f99 ""
   "figures_proj1/S1.13c.pdf" 1781899340.60732 30964 ae20639f498d9b2ab31fa99c558a6fc1 ""
@@ -279,7 +279,7 @@
   "figures_proj1/S1.14d.pdf" 1781899340.60875 63504 a6db75c5c7a90189dd787335ec13f8e3 ""
   "figures_proj1/S1.14e.pdf" 1781899340.60898 65335 4d07696acbe8c582d9ab6b7d8651f357 ""
   "figures_proj1/S1.15.pdf" 1781899340.60929 128120 2768451128018462a0e9102c684f0e84 ""
-  "figures_proj1/S1.16.pdf" 1781912713.56473 88772 9c94dedb9122fbab6984742b361d3e95 ""
+  "figures_proj1/S1.16_alt.pdf" 1781912714.363 53709 dc336a69cb18a6f9b00b74d252566b2e ""
   "figures_proj1/S1.17.pdf" 1781899340.61033 158419 c7caa687ee38c105c14bb97ac81f39e0 ""
   "figures_proj1/S1.18.pdf" 1781899340.61163 198180 935709ff713ab06ca24bfafa3d7b6ce8 ""
   "figures_proj1/S1.19.pdf" 1781899340.61211 203753 ba440aea15b1bf8532e0c0bb7e92050f ""
@@ -311,7 +311,7 @@
   "src/fundamentals_a.tex" 1781899340.81985 158355 d0a6d4a6fd5c4295ccaeb09438be2956 ""
   "src/fundamentals_b.tex" 1781899340.82002 71865 14e553ef6ad264a815f93d5cfc783f5a ""
   "src/introduction.tex" 1781899340.82009 57 13996f907b83f3e8567bad897058b7b9 ""
-  "src/project_1.tex" 1781996905.13476 36798 add3dfb0fda1c547556fa3d25725a99f ""
+  "src/project_1.tex" 1782000312.21548 41062 051adcc3eba4682cf75b1580a59319c3 ""
   "src/project_2.tex" 1781899340.82032 41 8a5db72d85512629db5a3b777af71ae4 ""
   "src/project_3.tex" 1781899340.82039 41 3eadbf2337ede8791b4183858635865c ""
   "src/publications.tex" 1781899340.82046 51 944e67c94cda9d6fa018235b19b40afb ""
