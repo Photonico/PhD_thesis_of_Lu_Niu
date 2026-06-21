@@ -441,7 +441,7 @@ For device applications, a smaller Schottky barrier height, or even an Ohmic con
 
 \begin{figure}[!htbp]
 \centering
-    \adjustbox{valign=c}{\includegraphics[width=0.40\linewidth]{figures_proj1/proj1.8a.pdf}}%
+    \adjustbox{valign=c}{\includegraphics[width=0.45\linewidth]{figures_proj1/proj1.8a.pdf}}%
     \adjustbox{valign=c}{\includegraphics[width=0.40\linewidth]{figures_proj1/proj1.8b.pdf}}%
 \caption{\textbf{Left:} Schematic of the Schottky--Mott model showing the valence and conduction band energies, the Fermi energy, and $n$-type and $p$-type Schottky barriers labelled $E_V$, $E_C$, $E_F$, $\Phi_n$, and $\Phi_p$, respectively. \textbf{Right:} Example of the HSE06-calculated Graphene-\ce{B4C3} heterojunction showing the determined Schottky barrier height from the band structure.}
 \label{fig1.8}
@@ -450,8 +450,7 @@ For device applications, a smaller Schottky barrier height, or even an Ohmic con
 \subsection{Optical properties}
 
 Having determined the atomic and electronic properties of the bilayer systems,
-we now investigate their optical properties.
-In particular, we calculate the real part $\varepsilon_1$ and imaginary part $\varepsilon_2$ of the dielectric function,
+we calculate the real part $\varepsilon_1$ and imaginary part $\varepsilon_2$ of the dielectric function,
 from which the other optical properties can be determined, as given by equations~\ref{absorption_coefficient_from_dielectric_function},
 ~\ref{refractive_index_from_dielectric_response},
 ~\ref{extinction_coefficient_from_dielectric_response},
@@ -466,8 +465,7 @@ For graphene, we test a number of $\vec{k}$-point meshes and find that a $129 \t
 We therefore use this $\vec{k}$-point sampling density for the other single monolayers, whose unit cells are $2 \times 2$ relative to graphene, namely a $65 \times 65 \times 1$ $\vec{k}$-point mesh.
 The dielectric functions for all the monolayers are shown in figure~\ref{S1.13}, where the results are consistent with previous calculations, namely graphene~\cite{warmbier2016}, \ce{BC3}~\cite{chen2019plasmon,mortazavi2019outstanding}, \ce{B4C3}~\cite{chang2019b4c3}, and borophene~\cite{huang2017,li2017first}.
 
-The response of the structures to light is highly dependent on the polarization direction of the incoming light,
-as seen from the anisotropic character of the in-plane and out-of-plane components of the dielectric function.
+The anisotropic in-plane and out-of-plane components of the dielectric function show that the optical response depends strongly on the polarization direction of the incoming light.
 For the in-plane direction, the well-known $\pi$ plasmon of graphene emerges around \qty{4}{\electronvolt},
 and the $\pi-\sigma$ plasmon emerges around \qty{14}{\electronvolt}.
 The other monolayer systems also have a $\pi$-like plasmon,
@@ -490,8 +488,7 @@ Figure~\ref{S1.14} shows the corresponding optical properties for the monolayer 
 
 Before presenting the results for the three heterostructure bilayer systems,
 we first perform a convergence check for the number of unoccupied bands included in the calculation of the dielectric function.
-Figure~\ref{S1.15} shows the results for the representative Graphene-\ce{B4C3} system.
-It can be seen that 128 bands yield well-converged results,
+Figure~\ref{S1.15} shows that 128 bands yield well-converged results for the representative Graphene-\ce{B4C3} system,
 and we therefore use this value for all three bilayer calculations.
 Further tests of the energy convergence criterion are reported in figure~\ref{S1.16}.
 
@@ -518,7 +515,7 @@ being related to $\pi-\sigma^*$ and $\pi^*-\sigma$ transitions.
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=0.8\textwidth]{figures_proj1/proj1.9.pdf}
-\caption{Real and imaginary parts of the in-plane and out-of-plane dielectric function versus photon energy, as calculated using the PBE and HSE06 functionals for the Graphene-Borophene heterostructure.}
+\caption{In-plane and out-of-plane dielectric-function components of the Graphene-Borophene heterostructure.}
 \label{fig1.9}
 \end{figure}
 
@@ -563,42 +560,46 @@ being related to $\pi-\sigma^*$ and $\pi^*-\sigma$ transitions.
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=1.0\textwidth]{figures_proj1/proj1.10_diff.pdf}
-\caption{Real and imaginary parts of the in-plane, out-of-plane, and off-diagonal $\varepsilon_{xy}$ dielectric-function component versus photon energy, as calculated using the PBE and HSE06 functionals for the Graphene-\ce{BC3} heterostructure.}
+\caption{In-plane, out-of-plane, and off-diagonal $\varepsilon_{xy}$ components of the dielectric function for the Graphene-\ce{BC3} heterostructure.}
 \label{fig1.10}
 \end{figure}
 
 % Graphene-B4C3
 The results for the dielectric function of the Graphene-\ce{B4C3} heterostructure are shown in figure~\ref{fig1.11},
 as obtained using both the PBE and HSE06 functionals.
-The corresponding full dielectric tensor components are provided in figure~\ref{S1.19};
-the off-diagonal $\varepsilon_{xy}$ component is also included in figure~\ref{fig1.11}.
-The real part of the in-plane dielectric function is negative in the region \qtyrange{5}{6}{\electronvolt} for HSE06 (\qtyrange{4}{5}{\electronvolt} for PBE)
-and in the region \qtyrange{17}{18}{\electronvolt} for HSE06 (\qtyrange{15}{16}{\electronvolt} for PBE),
-indicating the presence of plasmons in the ultraviolet region.
+The corresponding full dielectric tensor components are provided in figure~\ref{S1.19}.
+The off-diagonal $\varepsilon_{xy}$ component is also included in figure~\ref{fig1.11}.
+The real part of the in-plane dielectric function is negative in two regions:
+\qtyrange{5}{6}{\electronvolt} for HSE06 (\qtyrange{4}{5}{\electronvolt} for PBE)
+and \qtyrange{17}{18}{\electronvolt} for HSE06 (\qtyrange{15}{16}{\electronvolt} for PBE).
+These negative regions indicate the presence of plasmons in the ultraviolet region.
 The out-of-plane component also displays negative values at about \qtyrange{17}{18}{\electronvolt} for HSE06 (\qtyrange{14.5}{15.5}{\electronvolt} for PBE).
-As in Graphene-\ce{BC3},
+Similar to Graphene-\ce{BC3},
 the first main peaks of $\varepsilon_2$ for in-plane polarization are also in the visible range.
-The main peaks along the out-of-plane direction are broad and occur in the energy range \qtyrange{10}{18}{\electronvolt} (\qtyrange{9}{17}{\electronvolt}) for HSE06 (PBE).
-The dielectric tensor also contains complex non-zero off-diagonal components.
+The broad main peaks along the out-of-plane direction occur in the energy range \qtyrange{10}{18}{\electronvolt} (\qtyrange{9}{17}{\electronvolt}) for HSE06 (PBE).
+
+The dielectric tensor for this system also contains complex non-zero off-diagonal components.
 These components satisfy the antisymmetric relations
 $\varepsilon_{xy}=-\varepsilon_{yx}$,
 $\varepsilon_{xz}=-\varepsilon_{zx}$,
 and $\varepsilon_{yz}=-\varepsilon_{zy}$, as shown in figure~\ref{S1.19}.
-Unlike in Graphene-\ce{BC3}, however, these components are non-zero over a considerable energy range,
+In contrast to Graphene-\ce{BC3}, however, these components remain non-zero over a considerable energy range,
 namely from \qtyrange{0}{5}{\electronvolt} and from \qtyrange{10}{15}{\electronvolt}.
 This behaviour is consistent with the lower symmetry of Graphene-\ce{B4C3}.
 The system has a $P3$ space group,
-with threefold rotational symmetry along the $c$ axis, corresponding to the $z$ direction,
-and it lacks mirror-symmetry planes perpendicular to this axis or within the $a,b$ plane, corresponding to the $x,y$ plane.
-This lower symmetry allows off-diagonal elements in the dielectric tensor and can produce anisotropic coupling between different crystallographic directions.
-The presence of complex off-diagonal elements further indicates anisotropic and possibly chiral optical properties,
-which may lead to effects such as optical activity.
-It also suggests that Graphene-\ce{B4C3} dissipates energy differently depending on the direction of the electric field.
+with threefold rotational symmetry along the $c$ axis, corresponding to the $z$ direction.
+It also lacks mirror-symmetry planes perpendicular to this axis or within the $a,b$ plane,
+corresponding to the $x,y$ plane.
+This lower symmetry allows the presence of off-diagonal elements in the dielectric tensor.
+Therefore, the dielectric response of this material can exhibit anisotropic coupling between different crystallographic directions.
+The presence of complex off-diagonal elements in the dielectric tensor of a material with the $P3$ space group indicates anisotropic and possibly chiral optical properties,
+which could lead to effects such as optical activity.
+It also indicates that Graphene-\ce{B4C3} dissipates energy differently depending on the direction of the electric field.
 
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=1.0\textwidth]{figures_proj1/proj1.11_diff.pdf}
-\caption{Real and imaginary parts of the in-plane, out-of-plane, and off-diagonal $\varepsilon_{xy}$ dielectric-function component versus photon energy, as calculated using the PBE and HSE06 functionals for the Graphene-\ce{B4C3} heterostructure.}
+\caption{In-plane, out-of-plane, and off-diagonal $\varepsilon_{xy}$ components of the dielectric function for the Graphene-\ce{B4C3} heterostructure.}
 \label{fig1.11}
 \end{figure}
 
