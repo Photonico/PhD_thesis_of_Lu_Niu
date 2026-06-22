@@ -314,6 +314,7 @@
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{220901}
       \field{journaltitle}{The Journal of Chemical Physics}
       \field{number}{22}
       \field{title}{Perspective: Fundamental aspects of time-dependent density functional theory}
@@ -353,6 +354,7 @@
       \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{040901}
       \field{journaltitle}{The Journal of Chemical Physics}
       \field{number}{4}
       \field{title}{“Ensemblization” of density functional theory}
@@ -466,6 +468,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{18A301}
       \field{journaltitle}{The Journal of Chemical Physics}
       \field{number}{18}
       \field{title}{Perspective: Fifty years of density-functional theory in chemical physics}
@@ -617,6 +620,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{150901}
       \field{journaltitle}{The Journal of Chemical Physics}
       \field{number}{15}
       \field{title}{Perspective on density functional theory}
@@ -1257,6 +1261,7 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{224105}
       \field{journaltitle}{The Journal of Chemical Physics}
       \field{number}{22}
       \field{title}{Exact Kohn--Sham potential of strongly correlated finite systems}
@@ -1773,6 +1778,7 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{224106}
       \field{journaltitle}{The Journal of Chemical Physics}
       \field{number}{22}
       \field{title}{Influence of the exchange screening parameter on the performance of screened hybrid functionals}
@@ -1827,6 +1833,7 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{154709}
       \field{journaltitle}{The Journal of Chemical Physics}
       \field{number}{15}
       \field{title}{Screened hybrid density functionals applied to solids}
@@ -2087,6 +2094,7 @@
       \strng{authornamehash}{e92267d1f7df0208cc4ddb9bee4f7ced}
       \strng{authorfullhash}{f1e6b3ecc11db476d0b910bc3133a7b7}
       \strng{authorfullhashraw}{f1e6b3ecc11db476d0b910bc3133a7b7}
+      \field{extraname}{1}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -3379,6 +3387,7 @@
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{223101}
       \field{journaltitle}{Journal of Applied Physics}
       \field{number}{22}
       \field{title}{Symmetry of linear dielectric response tensors: dispersion models fulfilling three fundamental conditions}
@@ -3425,6 +3434,9 @@
            given={Kristian},
            giveni={K\bibinitperiod}}}%
       }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
       \strng{namehash}{eabb8021b0a1b1d51f33789d023817e3}
       \strng{fullhash}{eabb8021b0a1b1d51f33789d023817e3}
       \strng{fullhashraw}{eabb8021b0a1b1d51f33789d023817e3}
@@ -3437,9 +3449,15 @@
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2602.00692}
-      \field{title}{Momentum-and frequency-resolved collective electronic excitations in solids: insights from spectroscopy and first-principles calculations}
+      \field{eid}{183001}
+      \field{journaltitle}{Journal of Physics: Condensed Matter}
+      \field{number}{18}
+      \field{title}{Momentum- and frequency-resolved collective electronic excitations in solids: insights from spectroscopy and first-principles calculations}
+      \field{volume}{38}
       \field{year}{2026}
+      \verb{doi}
+      \verb 10.1088/1361-648X/ae62e7
+      \endverb
     \endentry
     \entry{ossikovski2021constitutive}{article}{}{}
       \name{author}{3}{}{%
@@ -5806,6 +5824,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{073503}
       \field{journaltitle}{Applied Physics Letters}
       \field{number}{7}
       \field{title}{An all-carbon vdW heterojunction composed of penta-graphene and graphene: tuning the Schottky barrier by electrostatic gating or nitrogen doping}
@@ -5983,6 +6002,68 @@
       \field{year}{2017}
       \field{pages}{165417}
       \range{pages}{1}
+    \endentry
+    \entry{han2023superconducting}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=9174027072c715064e210f9354e2111c}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Shuai},
+           giveni={S\bibinitperiod}}}%
+        {{hash=017911d05e0e354919b269b902234861}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yunxian},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3ad93e4c675a68a22a9c2c52b38e2751}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chao},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e1d35dd671e498ae8de251bade063132}{%
+           family={Yi},
+           familyi={Y\bibinitperiod},
+           given={Wencai},
+           giveni={W\bibinitperiod}}}%
+        {{hash=c6b0b16d268b7266380aa15c23031fcf}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=98403717c0e4948572be99f7b14300fb}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yongsheng},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6026405c5af9112230e8ff8bf18dd043}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xiaobing},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Royal Society of Chemistry}%
+      }
+      \strng{namehash}{cec11ee1f19f8d76cc2910e160496ac4}
+      \strng{fullhash}{153d742b162224fa5d3259739e076939}
+      \strng{fullhashraw}{153d742b162224fa5d3259739e076939}
+      \strng{bibnamehash}{cec11ee1f19f8d76cc2910e160496ac4}
+      \strng{authorbibnamehash}{cec11ee1f19f8d76cc2910e160496ac4}
+      \strng{authornamehash}{cec11ee1f19f8d76cc2910e160496ac4}
+      \strng{authorfullhash}{153d742b162224fa5d3259739e076939}
+      \strng{authorfullhashraw}{153d742b162224fa5d3259739e076939}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Chemistry Chemical Physics}
+      \field{number}{22}
+      \field{title}{Superconducting boron allotrope featuring pentagonal bipyramid at ambient pressure}
+      \field{volume}{25}
+      \field{year}{2023}
+      \field{pages}{15400\bibrangedash 15406}
+      \range{pages}{7}
     \endentry
   \enddatalist
 \endrefsection

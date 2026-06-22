@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.6)  22 JUN 2026 11:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.6)  22 JUN 2026 16:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1733,7 +1733,9 @@ Underfull \vbox (badness 4779) has occurred while \output is active []
 
 
 
-[108]
+[108
+
+]
 
 LaTeX Warning: Reference `1_calculation_method' on page 109 undefined on input line 83.
 
@@ -2100,6 +2102,9 @@ Package pdftex.def Info: figures_proj1/S1.24.pdf  used on input line 1134.
 [139 <./figures_proj1/S1.21.pdf> <./figures_proj1/S1.22.pdf>]
 
 [140 <./figures_proj1/S1.23.pdf> <./figures_proj1/S1.24.pdf>] (./src/project_2.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [141
 
@@ -2107,12 +2112,11 @@ Package pdftex.def Info: figures_proj1/S1.24.pdf  used on input line 1134.
 
 ]
 
-[142
-
-
-] (./src/project_3.tex)
+[142] (./src/project_3.tex)
 
 [143
+
+
 
 ]
 Bibliography
@@ -2167,18 +2171,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36959 strings out of 473190
- 738835 string characters out of 5715801
- 1630885 words of memory out of 5000000
- 58413 multiletter control sequences out of 15000+600000
- 643786 words of font info for 251 fonts, out of 8000000 for 9000
+ 36965 strings out of 473190
+ 739059 string characters out of 5715801
+ 1630966 words of memory out of 5000000
+ 58416 multiletter control sequences out of 15000+600000
+ 643915 words of font info for 252 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  94i,21n,131p,1035b,2889s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on .output/thesis.pdf (164 pages, 39594565 bytes).
+Output written on .output/thesis.pdf (164 pages, 39597248 bytes).
 PDF statistics:
- 4933 PDF objects out of 5155 (max. 8388607)
- 2538 compressed objects within 26 object streams
- 747 named destinations out of 1000 (max. 500000)
+ 4936 PDF objects out of 5155 (max. 8388607)
+ 2541 compressed objects within 26 object streams
+ 748 named destinations out of 1000 (max. 500000)
  36210 words of extra memory for PDF output out of 42996 (max. 10000000)
 

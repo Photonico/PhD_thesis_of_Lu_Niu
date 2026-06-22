@@ -67,12 +67,12 @@
 \contentsline {section}{\numberline {4.7}Supplementary information}{127}{section.4.7}%
 \contentsline {chapter}{\tocchapter {Chapter}{5}{Functional Properties of Penta-Bipyramid Boron Allotropes}}{141}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Abstract}{141}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Introduction}{141}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Computation methods}{141}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Results and discussion}{141}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Conclusion}{141}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Data availability statement}{141}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Supplementary information}{141}{section.5.7}%
+\contentsline {section}{\numberline {5.2}Introduction}{142}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Computation methods}{142}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Results and discussion}{142}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Conclusion}{142}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Data availability statement}{142}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Supplementary information}{142}{section.5.7}%
 \contentsline {chapter}{\tocchapter {Chapter}{6}{project 3}}{143}{chapter.6}%
 \contentsline {chapter}{\tocchapter {}{}{Bibliography}}{144}{chapter*.50}%
 \contentsline {chapter}{\tocchapter {}{}{Appendix}}{155}{appendix*.51}%
