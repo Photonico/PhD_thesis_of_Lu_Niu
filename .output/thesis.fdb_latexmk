@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber .output/thesis"] 1782107676.69341 ".output/thesis.bcf" ".output/thesis.bbl" ".output/thesis" 1782108078.37557 0
-  ".output/thesis.bcf" 1782108078.1726 131310 e9e8ba8ab34498b7089f4c23486024f6 "pdflatex"
+["biber .output/thesis"] 1782107676.69341 ".output/thesis.bcf" ".output/thesis.bbl" ".output/thesis" 1782109414.55199 0
+  ".output/thesis.bcf" 1782109414.33783 131310 e9e8ba8ab34498b7089f4c23486024f6 "pdflatex"
   "thesis.bib" 1782107340.96578 72140 2b09f27589ee2cd489bea7611b9ea8e2 ""
   (generated)
   ".output/thesis.bbl"
   ".output/thesis.blg"
   (rewritten before read)
-["pdflatex"] 1782108068.90837 "/Users/lu/Repos/Thesis GitHub/thesis.tex" ".output/thesis.pdf" "thesis" 1782108078.37593 0
-  ".output/thesis.aux" 1782108078.10952 107210 6243181b24e826490e48923b09b4aa35 "pdflatex"
+["pdflatex"] 1782109404.85693 "/Users/lu/Repos/Thesis GitHub/thesis.tex" ".output/thesis.pdf" "thesis" 1782109414.55234 0
+  ".output/thesis.aux" 1782109414.27367 107210 6243181b24e826490e48923b09b4aa35 "pdflatex"
   ".output/thesis.bbl" 1782107678.98255 248425 779a87dcc715eda3fe238cd25d40094d "biber .output/thesis"
-  ".output/thesis.out" 1782108078.16909 16727 bd4ccfa6a459b7cfc5c3ec05e110049a "pdflatex"
-  ".output/thesis.run.xml" 1782108078.17377 2379 f75cc13aa91ba640ee0d8112fc09c504 "pdflatex"
-  ".output/thesis.toc" 1782108078.17387 7707 6beff5f065e0be713097fb7ccbeddca1 "pdflatex"
+  ".output/thesis.out" 1782109414.3331 16727 bd4ccfa6a459b7cfc5c3ec05e110049a "pdflatex"
+  ".output/thesis.run.xml" 1782109414.33943 2379 f75cc13aa91ba640ee0d8112fc09c504 "pdflatex"
+  ".output/thesis.toc" 1782109414.33952 7707 6beff5f065e0be713097fb7ccbeddca1 "pdflatex"
   "/Users/lu/Repos/Thesis GitHub/thesis.tex" 1782090792.8026 9734 0b1675225a0f8e523fec05f727e323f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -319,7 +319,7 @@
   "src/fundamentals_a.tex" 1782005873.11756 158357 9c156efa274a8150e7b9ee4b1c9d9dea ""
   "src/fundamentals_b.tex" 1782006155.70786 71865 e182e618caa61c09a4560c2b71fd53b8 ""
   "src/introduction.tex" 1781899340.82009 57 13996f907b83f3e8567bad897058b7b9 ""
-  "src/project_1.tex" 1782108068.68875 59418 33fbdbd8a87af68f6b599d4595eece37 ""
+  "src/project_1.tex" 1782109404.5984 59456 c3549013e873158b9f37ec6d2fdd792e ""
   "src/project_2.tex" 1782108068.66774 1829 df48bcce276f5187fcef38892b3b8105 ""
   "src/project_3.tex" 1782107517.94419 41 3eadbf2337ede8791b4183858635865c ""
   "src/publications.tex" 1781899340.82046 51 944e67c94cda9d6fa018235b19b40afb ""

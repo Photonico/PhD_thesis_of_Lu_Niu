@@ -4,7 +4,7 @@
 \section{Abstract}
 
 In this chapter,
-we investigate the atomic, electronic, and optical properties of two-dimensional 
+we investigate the atomic, electronic, and optical properties of two-dimensional heterostructure bilayers,
 namely Graphene-\ce{BC3}, Graphene-Borophene, and Graphene-\ce{B4C3},
 as well as their constituent monolayers, on the basis of first-principles calculations using the HSE06 hybrid functional.
 The calculations show that while borophene is metallic,
@@ -80,7 +80,7 @@ Such understanding is crucial for their future technological application,
 where the unique properties of these materials can be harnessed.
 
 This chapter is organised as follows:
-In Section~\ref{1_calculation_method}, the calculation method is described,
+In Section~\ref{1_calculation_methods}, the calculation method is described,
 followed by the Results and Discussion in Section~\ref{1_results}.
 Herein, we describe the physical properties of the monolayers and heterostructures, including band structure, density of states, electron density difference distributions,
 Schottky barriers and the optical properties.
@@ -128,13 +128,13 @@ here, $E_{\mathrm{H}}$ denotes the total energy of the heterostructure,
 $E_{\mathrm{BC}/\mathrm{B}}$ corresponds to the total energy of the isolated boron-carbide or borophene monolayer,
 and $E_{\mathrm{G}}$ denotes the total energy of the isolated graphene monolayer.
 
-Afterwards, the charge density difference $\Delta \rho(\vec{r},)$ takes the form:
+Afterwards, the charge density difference $\Delta \rho(\vec{r}\,)$ takes the form:
 
 \begin{equation}
-\Delta \rho(\vec{r},) =
-\rho_{\mathrm{AB}}(\vec{r},)
-- \rho_{\mathrm{A}}(\vec{r},)
-- \rho_{\mathrm{B}}(\vec{r},)
+\Delta \rho(\vec{r}\,) =
+\rho_{\mathrm{AB}}(\vec{r}\,)
+- \rho_{\mathrm{A}}(\vec{r}\,)
+- \rho_{\mathrm{B}}(\vec{r}\,)
 \label{charge_density_difference}
 \end{equation}
 
@@ -248,8 +248,8 @@ and \ce{B4C3}, namely Graphene-\ce{BC3}, Graphene-Borophene, and Graphene-\ce{B4
 To create the heterostructures, we use a $2\times 2\times 1$ cell.
 For each system,
 we consider several lateral stacking coordinations of these layers.
-Specifically, we consider `Hollow'', `Bridge'', and `Top'' coordinations for the Graphene-\ce{BC3} bilayer system,
-and `Hollow 1'', `Hollow 2'', `Bridge'', and ``Top'' coordinations for the Graphene-Borophene and Graphene-\ce{B4C3} bilayer systems.
+Specifically, we consider ``Hollow'', `'`Bridge'', and ``Top'' coordinations for the Graphene-\ce{BC3} bilayer system,
+and ``Hollow 1'', ``Hollow 2'', ``Bridge'', and ``Top'' coordinations for the Graphene-Borophene and Graphene-\ce{B4C3} bilayer systems.
 We calculate the relative energies,
 optimized lattice constants, and interlayer distances for all structures.
 Figures~\ref{S1.4}--\ref{S1.6} give details of this procedure.
@@ -374,9 +374,9 @@ In the next sections, we investigate the band structures and densities of states
 For the bilayer systems, the band structures and total density of states (DoS) are shown in figures~\ref{fig1.5}--\ref{fig1.7} as calculated using the HSE06 and PBE functionals.
 The corresponding atom-projected (or partial) PDoS are presented in figures~\ref{S1.9}--\ref{S1.11}.
 
-The Graphene-\ce{BC3} heterojunction exhibits a sizeable density of states just above the Fermi level, as shown in figure~\ref{S1.9},
+The Graphene-\ce{BC3} heterojunction exhibits a sizeable density of states just above the Fermi level, as shown in figure~\ref{S1.10},
 which is related to the relatively flat band near the $\mathrm{M}$ point and along the $\mathrm{K}$--$\Gamma$ path in the Brillouin zone.
-The Graphene-Borophene system exhibits metallic behaviour due to the small occupation of states at the $\mathrm{K}$ point; these states are mainly carbon-related, as shown by the PDoS in figure~\ref{S1.10}.
+The Graphene-Borophene system exhibits metallic behaviour due to the small occupation of states at the $\mathrm{K}$ point; these states are mainly carbon-related, as shown by the PDoS in figure~\ref{S1.9}.
 The Graphene-\ce{B4C3} bilayer exhibits essentially semimetallic behaviour, with the \ce{B4C3}-derived states located away from the Fermi level, mainly above approximately \qty{1.2}{\electronvolt} and below approximately \qty{-0.8}{\electronvolt}, as shown by the PDoS in figure~\ref{S1.11}.
 
 Across these three bilayers,
@@ -495,7 +495,7 @@ Further tests of the energy convergence criterion are reported in figure~\ref{S1
 % Graphene-Borophene
 The results for the dielectric function of the Graphene-Borophene heterojunction are shown in figure~\ref{fig1.9},
 as obtained using both the PBE and HSE06 functionals.
-The corresponding full dielectric tensor components are provided in figure~\ref{S1.18}.
+The corresponding full dielectric tensor components are provided in figure~\ref{S1.17}.
 Compared with the PBE results,
 HSE06 yields a blue shift of the features to higher energies.
 The real part exhibits characteristics of both graphene and borophene,
@@ -522,7 +522,7 @@ being related to $\pi-\sigma^*$ and $\pi^*-\sigma$ transitions.
 % Graphene-BC3
 The results for the dielectric function of the Graphene-\ce{BC3} heterostructure are shown in figure~\ref{fig1.10},
 as obtained using both the PBE and HSE06 functionals.
-The corresponding full dielectric tensor components are provided in figure~\ref{S1.17}.
+The corresponding full dielectric tensor components are provided in figure~\ref{S1.18}.
 Interestingly, and in contrast to Graphene-Borophene,
 the dielectric tensor for this system contains complex non-zero off-diagonal components.
 These components satisfy the antisymmetric relations
