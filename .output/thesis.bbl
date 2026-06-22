@@ -3703,6 +3703,7 @@
       \strng{authornamehash}{bdde6bdca5ddfd5b8805b8c4d4b1d609}
       \strng{authorfullhash}{1989cd262fee48e7edf855562472f5a8}
       \strng{authorfullhashraw}{1989cd262fee48e7edf855562472f5a8}
+      \field{extraname}{1}
       \field{sortinit}{9}
       \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
@@ -4064,6 +4065,7 @@
       \strng{authornamehash}{10e18dd3d10cbf6232674d224bfe00e1}
       \strng{authorfullhash}{e7f91804e345b6c0db147de3ca33fdda}
       \strng{authorfullhashraw}{e7f91804e345b6c0db147de3ca33fdda}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -5065,6 +5067,7 @@
       \strng{authornamehash}{6b166dbf93d621225d36abd4a6a546b8}
       \strng{authorfullhash}{87e26c04300f2b01bf8b471b50b568b6}
       \strng{authorfullhashraw}{87e26c04300f2b01bf8b471b50b568b6}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -6065,7 +6068,1822 @@
       \field{pages}{15400\bibrangedash 15406}
       \range{pages}{7}
     \endentry
+    \entry{ranjan2024properties}{incollection}{}{}
+      \name{author}{5}{}{%
+        {{hash=aed164bfe25132a7fb5c8ad8bdf6b149}{%
+           family={Ranjan},
+           familyi={R\bibinitperiod},
+           given={Pushpesh},
+           giveni={P\bibinitperiod}}}%
+        {{hash=00a649afd17908474c39ac558ef8b636}{%
+           family={Tiwari},
+           familyi={T\bibinitperiod},
+           given={Rudramani},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8c8bbc36942e1442eab60444242137eb}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Raju},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6df91caf6a12ceb0c13e9b805c750500}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Archana},
+           giveni={A\bibinitperiod}}}%
+        {{hash=871e323d3f3ca191a0e56fd464754052}{%
+           family={Banjara},
+           familyi={B\bibinitperiod},
+           given={Lal\bibnamedelima Singh},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{8723f3b86bb6415adcfd8200b262e629}
+      \strng{fullhash}{b9e0eace8fbb2d440086ba31427c5ed6}
+      \strng{fullhashraw}{b9e0eace8fbb2d440086ba31427c5ed6}
+      \strng{bibnamehash}{8723f3b86bb6415adcfd8200b262e629}
+      \strng{authorbibnamehash}{8723f3b86bb6415adcfd8200b262e629}
+      \strng{authornamehash}{8723f3b86bb6415adcfd8200b262e629}
+      \strng{authorfullhash}{b9e0eace8fbb2d440086ba31427c5ed6}
+      \strng{authorfullhashraw}{b9e0eace8fbb2d440086ba31427c5ed6}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2D Boron Nanosheets: Synthesis and Applications}
+      \field{title}{Properties of Boron Nanocrystals, Borophene, and its Polymorphs}
+      \field{year}{2024}
+      \field{pages}{83\bibrangedash 101}
+      \range{pages}{19}
+    \endentry
+    \entry{widom2008symmetry}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=ba2a13b5387ecb88d933358ed279beec}{%
+           family={Widom},
+           familyi={W\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e9c828d849f512f9541f3e55fb63f4cc}{%
+           family={Mihalkovič},
+           familyi={M\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{77fbf230636a26c6f5164fb3e95ce6ee}
+      \strng{fullhash}{77fbf230636a26c6f5164fb3e95ce6ee}
+      \strng{fullhashraw}{77fbf230636a26c6f5164fb3e95ce6ee}
+      \strng{bibnamehash}{77fbf230636a26c6f5164fb3e95ce6ee}
+      \strng{authorbibnamehash}{77fbf230636a26c6f5164fb3e95ce6ee}
+      \strng{authornamehash}{77fbf230636a26c6f5164fb3e95ce6ee}
+      \strng{authorfullhash}{77fbf230636a26c6f5164fb3e95ce6ee}
+      \strng{authorfullhashraw}{77fbf230636a26c6f5164fb3e95ce6ee}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B Condensed Matter and Materials Physics}
+      \field{number}{6}
+      \field{title}{Symmetry-broken crystal structure of elemental boron at low temperature}
+      \field{volume}{77}
+      \field{year}{2008}
+      \field{pages}{064113}
+      \range{pages}{1}
+    \endentry
+    \entry{an2016new}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=9946394d9664a6c937b57f01cc0ac710}{%
+           family={An},
+           familyi={A\bibinitperiod},
+           given={Qi},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=5709504d9971ac909fab40be34497e97}{%
+           family={Reddy},
+           familyi={R\bibinitperiod},
+           given={K\bibnamedelima Madhav},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9363002e94f0463343d15274cae678ec}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Kelvin\bibnamedelima Y},
+           giveni={K\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=a64bf607b5283ea75da5efd3091d4a23}{%
+           family={Hemker},
+           familyi={H\bibinitperiod},
+           given={Kevin\bibnamedelima J},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=a9e28a47770ec65de97f2a80203d5e0b}{%
+           family={Goddard\bibnamedelima III},
+           familyi={G\bibinitperiod\bibinitdelim I\bibinitperiod},
+           given={William\bibnamedelima A},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{7014cd265c9160a4cbf9f68afcb0e819}
+      \strng{fullhash}{f2e936ff05ca5ee3bbe0d23908335ef2}
+      \strng{fullhashraw}{f2e936ff05ca5ee3bbe0d23908335ef2}
+      \strng{bibnamehash}{7014cd265c9160a4cbf9f68afcb0e819}
+      \strng{authorbibnamehash}{7014cd265c9160a4cbf9f68afcb0e819}
+      \strng{authornamehash}{7014cd265c9160a4cbf9f68afcb0e819}
+      \strng{authorfullhash}{f2e936ff05ca5ee3bbe0d23908335ef2}
+      \strng{authorfullhashraw}{f2e936ff05ca5ee3bbe0d23908335ef2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{8}
+      \field{title}{New ground-state crystal structure of elemental boron}
+      \field{volume}{117}
+      \field{year}{2016}
+      \field{pages}{085501}
+      \range{pages}{1}
+    \endentry
+    \entry{ouyang2025superconductivity}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=ed6740ef73bc2caaa5662f66c8398031}{%
+           family={Ouyang},
+           familyi={O\bibinitperiod},
+           given={Zhenfeng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=844661cec1d11738e19e6e7d3cc5602b}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Miao},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3956e3ea5b8950c93711f6bf6f8e55ed}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Zhong-Yi},
+           giveni={Z\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{d3b1d2c6a46860752cba3327d642ab67}
+      \strng{fullhash}{d3b1d2c6a46860752cba3327d642ab67}
+      \strng{fullhashraw}{d3b1d2c6a46860752cba3327d642ab67}
+      \strng{bibnamehash}{d3b1d2c6a46860752cba3327d642ab67}
+      \strng{authorbibnamehash}{d3b1d2c6a46860752cba3327d642ab67}
+      \strng{authornamehash}{d3b1d2c6a46860752cba3327d642ab67}
+      \strng{authorfullhash}{d3b1d2c6a46860752cba3327d642ab67}
+      \strng{authorfullhashraw}{d3b1d2c6a46860752cba3327d642ab67}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{13}
+      \field{title}{Superconductivity in a three-dimensional kagome-like boron allotrope}
+      \field{volume}{111}
+      \field{year}{2025}
+      \field{pages}{134518}
+      \range{pages}{1}
+    \endentry
+    \entry{zhang2020superconducting}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=301a500bc3eee8050dd30f2ee2b1daac}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Shoutao},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a5abcf1ed41e458b76d83e8fb91e1747}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=0d07f767aa8e33af7b012239ccbb1cfe}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Jianyan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=78567467f4ff70005955d484ad2bbd26}{%
+           family={Bergara},
+           familyi={B\bibinitperiod},
+           given={Aitor},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c6b0b16d268b7266380aa15c23031fcf}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=6026405c5af9112230e8ff8bf18dd043}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xiaobing},
+           giveni={X\bibinitperiod}}}%
+        {{hash=e78ad2cc8521b7b23bc94bd9e3ed19c0}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiaohua},
+           giveni={X\bibinitperiod}}}%
+        {{hash=c79eaeae391a1f7c5dfe8b4ce29b4e7f}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Guochun},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{7324972abaef3db1c660f0273f3de003}
+      \strng{fullhash}{019ecbaba3ebd0cc2ef5eeefc40ae147}
+      \strng{fullhashraw}{019ecbaba3ebd0cc2ef5eeefc40ae147}
+      \strng{bibnamehash}{7324972abaef3db1c660f0273f3de003}
+      \strng{authorbibnamehash}{7324972abaef3db1c660f0273f3de003}
+      \strng{authornamehash}{7324972abaef3db1c660f0273f3de003}
+      \strng{authorfullhash}{019ecbaba3ebd0cc2ef5eeefc40ae147}
+      \strng{authorfullhashraw}{019ecbaba3ebd0cc2ef5eeefc40ae147}
+      \field{extraname}{5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{17}
+      \field{title}{Superconducting boron allotropes}
+      \field{volume}{101}
+      \field{year}{2020}
+      \field{pages}{174507}
+      \range{pages}{1}
+    \endentry
+    \entry{pan2019fluxional}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=236e8c1d826dfb1cd916126d2cedc6df}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Sudip},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c811bfd2abc63eb2720d865040f72df9}{%
+           family={Barroso},
+           familyi={B\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+        {{hash=651397a5eacef6a3a0594b6107f9ee4f}{%
+           family={Jalife},
+           familyi={J\bibinitperiod},
+           given={Said},
+           giveni={S\bibinitperiod}}}%
+        {{hash=677c72ad7e783738dbdb390e118bcb96}{%
+           family={Heine},
+           familyi={H\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=6f9da2131acb83d16debeac1c395c8fb}{%
+           family={Asmis},
+           familyi={A\bibinitperiod},
+           given={Knut\bibnamedelima R},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=9cc98870a44be8ead91e6ccb5bd459b1}{%
+           family={Merino},
+           familyi={M\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{70237b16759b2a93385923bcf03e1055}
+      \strng{fullhash}{f5b75f54f202190f746014d1d8b87dc0}
+      \strng{fullhashraw}{f5b75f54f202190f746014d1d8b87dc0}
+      \strng{bibnamehash}{70237b16759b2a93385923bcf03e1055}
+      \strng{authorbibnamehash}{70237b16759b2a93385923bcf03e1055}
+      \strng{authornamehash}{70237b16759b2a93385923bcf03e1055}
+      \strng{authorfullhash}{f5b75f54f202190f746014d1d8b87dc0}
+      \strng{authorfullhashraw}{f5b75f54f202190f746014d1d8b87dc0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Accounts of Chemical Research}
+      \field{number}{9}
+      \field{title}{Fluxional boron clusters: from theory to reality}
+      \field{volume}{52}
+      \field{year}{2019}
+      \field{pages}{2732\bibrangedash 2744}
+      \range{pages}{13}
+    \endentry
+    \entry{wang2024borophene}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=b7567123ad8063ff975519a285490851}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f2f914b39163b8a9cd99d8f8d700c838}{%
+           family={Choyal},
+           familyi={C\bibinitperiod},
+           given={Shilpa},
+           giveni={S\bibinitperiod}}}%
+        {{hash=03ca0d411dfc0187c0d2e7b6dcdba1ca}{%
+           family={Schultz},
+           familyi={S\bibinitperiod},
+           given={Jeremy\bibnamedelima F},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=1323e25626d543dadda7147d9135649f}{%
+           family={McKenzie},
+           familyi={M\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=38d93032b886668f2b68611ed2d24cef}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Linfei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=4c6d92753f18960c12189e5a38ef6380}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xiaolong},
+           giveni={X\bibinitperiod}}}%
+        {{hash=7468fad9969f4d0241aaf0ab47f42591}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{e984698da62ed26abe9405adc038fb30}
+      \strng{fullhash}{451209072c15187407d91913423b74af}
+      \strng{fullhashraw}{451209072c15187407d91913423b74af}
+      \strng{bibnamehash}{e984698da62ed26abe9405adc038fb30}
+      \strng{authorbibnamehash}{e984698da62ed26abe9405adc038fb30}
+      \strng{authornamehash}{e984698da62ed26abe9405adc038fb30}
+      \strng{authorfullhash}{451209072c15187407d91913423b74af}
+      \strng{authorfullhashraw}{451209072c15187407d91913423b74af}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ChemPlusChem}
+      \field{number}{10}
+      \field{title}{Borophene: Synthesis, Chemistry, and Electronic Properties}
+      \field{volume}{89}
+      \field{year}{2024}
+      \field{pages}{e202400333}
+      \range{pages}{-1}
+    \endentry
+    \entry{mishra2024borophene}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=000186b34a9e365be3276ecda6db8d3c}{%
+           family={Mishra},
+           familyi={M\bibinitperiod},
+           given={Raghvendra\bibnamedelima Kumar},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=001c5997571637f8d3e8db6b29128557}{%
+           family={Sarkar},
+           familyi={S\bibinitperiod},
+           given={Jayati},
+           giveni={J\bibinitperiod}}}%
+        {{hash=32e490ae49108ff4a1b010343d3a0067}{%
+           family={Verma},
+           familyi={V\bibinitperiod},
+           given={Kartikey},
+           giveni={K\bibinitperiod}}}%
+        {{hash=a34f4442fa213627659ecda12508428b}{%
+           family={Chianella},
+           familyi={C\bibinitperiod},
+           given={Iva},
+           giveni={I\bibinitperiod}}}%
+        {{hash=a0aa4a109da2dfabe31cacaa9174ec94}{%
+           family={Goel},
+           familyi={G\bibinitperiod},
+           given={Saurav},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6b16417575a9d3dec2935b86bd78a78c}{%
+           family={Nezhad},
+           familyi={N\bibinitperiod},
+           given={Hamed\bibnamedelima Yazdani},
+           giveni={H\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{635c021fad55c3e5cd5204fee6b03dcf}
+      \strng{fullhash}{e0cfc58c6d3b47e2141202d59f946738}
+      \strng{fullhashraw}{e0cfc58c6d3b47e2141202d59f946738}
+      \strng{bibnamehash}{635c021fad55c3e5cd5204fee6b03dcf}
+      \strng{authorbibnamehash}{635c021fad55c3e5cd5204fee6b03dcf}
+      \strng{authornamehash}{635c021fad55c3e5cd5204fee6b03dcf}
+      \strng{authorfullhash}{e0cfc58c6d3b47e2141202d59f946738}
+      \strng{authorfullhashraw}{e0cfc58c6d3b47e2141202d59f946738}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nano Materials Science}
+      \field{title}{Borophene: A 2D wonder shaping the future of nanotechnology and materials science}
+      \field{year}{2024}
+    \endentry
+    \entry{mohanty2023review}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=8d82ffedfd5a8e984a8303b3b3ed3f3c}{%
+           family={Mohanty},
+           familyi={M\bibinitperiod},
+           given={Sheetikanta},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b21db9d67fbb81115d6ed7e484362506}{%
+           family={Panda},
+           familyi={P\bibinitperiod},
+           given={Debasish},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c94684c6dafcad6c46ff4a7d953a0081}{%
+           family={Dash},
+           familyi={D\bibinitperiod},
+           given={Ajit},
+           giveni={A\bibinitperiod}}}%
+        {{hash=247595ec44d512fd96b360eb9199cbe5}{%
+           family={Sovan\bibnamedelima Kumar},
+           familyi={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=bd3692fdeb834fff1066ee921d022663}{%
+           family={Padhi},
+           familyi={P\bibinitperiod},
+           given={Rohit\bibnamedelima Raj},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=e516b06a0eaaff91418982d85f32b396}{%
+           family={Guhathakurata},
+           familyi={G\bibinitperiod},
+           given={Shrabani},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c24848371bbeabb38b3fc21fd16b8998}{%
+           family={Mallik},
+           familyi={M\bibinitperiod},
+           given={Sandipan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{7a2a24b3d9a84868b5d54fe70b59c91a}
+      \strng{fullhash}{196a1b3232f65db45fffbf1e7ef0a3d3}
+      \strng{fullhashraw}{196a1b3232f65db45fffbf1e7ef0a3d3}
+      \strng{bibnamehash}{7a2a24b3d9a84868b5d54fe70b59c91a}
+      \strng{authorbibnamehash}{7a2a24b3d9a84868b5d54fe70b59c91a}
+      \strng{authornamehash}{7a2a24b3d9a84868b5d54fe70b59c91a}
+      \strng{authorfullhash}{196a1b3232f65db45fffbf1e7ef0a3d3}
+      \strng{authorfullhashraw}{196a1b3232f65db45fffbf1e7ef0a3d3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Electronic Materials}
+      \field{number}{7}
+      \field{title}{A Review on Borophene: A Potential Gas-Capture Material}
+      \field{volume}{52}
+      \field{year}{2023}
+      \field{pages}{4434\bibrangedash 4454}
+      \range{pages}{21}
+    \endentry
+    \entry{yang2023borophenes}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=c4f0c9678fb69ebf79ff4210b385eee5}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod}}}%
+        {{hash=cb1dc6ca259ec9245f99944f2f1d5e21}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Mengtao},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Royal Society of Chemistry}%
+      }
+      \strng{namehash}{e44db00b1c43c5ce181bbd08e7df02f5}
+      \strng{fullhash}{e44db00b1c43c5ce181bbd08e7df02f5}
+      \strng{fullhashraw}{e44db00b1c43c5ce181bbd08e7df02f5}
+      \strng{bibnamehash}{e44db00b1c43c5ce181bbd08e7df02f5}
+      \strng{authorbibnamehash}{e44db00b1c43c5ce181bbd08e7df02f5}
+      \strng{authornamehash}{e44db00b1c43c5ce181bbd08e7df02f5}
+      \strng{authorfullhash}{e44db00b1c43c5ce181bbd08e7df02f5}
+      \strng{authorfullhashraw}{e44db00b1c43c5ce181bbd08e7df02f5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Materials Chemistry C}
+      \field{number}{21}
+      \field{title}{Borophenes: monolayer, bilayer and heterostructures}
+      \field{volume}{11}
+      \field{year}{2023}
+      \field{pages}{6834\bibrangedash 6846}
+      \range{pages}{13}
+    \endentry
+    \entry{kumar2024}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=7a01333f7a8882a1544ea42b848a85a9}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Prashant},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2671c79027f42877ebafdc511cc73b3a}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Gurwinder},
+           giveni={G\bibinitperiod}}}%
+        {{hash=7abad0299ecfc94bfb4d86e58a905dca}{%
+           family={Bahadur},
+           familyi={B\bibinitperiod},
+           given={Rohan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5a4eeed025335227d03312cae996d7e6}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zhixuan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=478529dbaf65944bad3f3e52576b8ad8}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiangwei},
+           giveni={X\bibinitperiod}}}%
+        {{hash=cd8a11a2c4af84061600ded2e58671d9}{%
+           family={Sathish},
+           familyi={S\bibinitperiod},
+           given={CI},
+           giveni={C\bibinitperiod}}}%
+        {{hash=104493a79a1f7395301b0131785c529a}{%
+           family={Benzigar},
+           familyi={B\bibinitperiod},
+           given={Mercy\bibnamedelima R},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=0430823437953e74c60a22ca7e1cfa2d}{%
+           family={Tran},
+           familyi={T\bibinitperiod},
+           given={Thi\bibnamedelimb Kim\bibnamedelima Anh},
+           giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=e497e84f2c9c519cd37a07c2d0e21054}{%
+           family={Padmanabhan},
+           familyi={P\bibinitperiod},
+           given={Nisha\bibnamedelima T},
+           giveni={N\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=6391d73034b636576814844ad3c45104}{%
+           family={Radhakrishnan},
+           familyi={R\bibinitperiod},
+           given={Sithara},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{cbcf0bd8e38069a9c78ed5413ba7cafa}
+      \strng{fullhash}{907aae8f69e049edb24866d597b5d1c0}
+      \strng{fullhashraw}{907aae8f69e049edb24866d597b5d1c0}
+      \strng{bibnamehash}{cbcf0bd8e38069a9c78ed5413ba7cafa}
+      \strng{authorbibnamehash}{cbcf0bd8e38069a9c78ed5413ba7cafa}
+      \strng{authornamehash}{cbcf0bd8e38069a9c78ed5413ba7cafa}
+      \strng{authorfullhash}{907aae8f69e049edb24866d597b5d1c0}
+      \strng{authorfullhashraw}{907aae8f69e049edb24866d597b5d1c0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Progress in Materials Science}
+      \field{title}{The rise of borophene}
+      \field{year}{2024}
+      \field{pages}{101331}
+      \range{pages}{1}
+    \endentry
+    \entry{xie2020two}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=64a8e5d371bfde66322d60e18ba138eb}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Zhongjian},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=8c983625df24a6e3d8e58754c3fc881d}{%
+           family={Meng},
+           familyi={M\bibinitperiod},
+           given={Xiangying},
+           giveni={X\bibinitperiod}}}%
+        {{hash=4a12676ef27f66f9c275782e1ec3a71c}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xiangnan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=f81930fe444f5f89f02fee06f1700e15}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Weiyuan},
+           giveni={W\bibinitperiod}}}%
+        {{hash=cf624eb201bba36aeb1bb71d9eb726b8}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Weichun},
+           giveni={W\bibinitperiod}}}%
+        {{hash=7216f0812b07d54cc9a6a5a07ba26811}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Keqiang},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5b48823e634fdeb9632d621a88525ef7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jianming},
+           giveni={J\bibinitperiod}}}%
+        {{hash=39fdb485e84090881a84486ff8b65934}{%
+           family={Xing},
+           familyi={X\bibinitperiod},
+           given={Chenyang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2a928d882dfb76343c343e8ac8879d83}{%
+           family={Qiu},
+           familyi={Q\bibinitperiod},
+           given={Meng},
+           giveni={M\bibinitperiod}}}%
+        {{hash=edefadf2737f4300dd8a9daa07b31f02}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AAAS}%
+      }
+      \strng{namehash}{20f83cdbf1fffb3c7fd54fd40b5e4cce}
+      \strng{fullhash}{1c76a05e5cad5bb2fe3f465214c03836}
+      \strng{fullhashraw}{1c76a05e5cad5bb2fe3f465214c03836}
+      \strng{bibnamehash}{20f83cdbf1fffb3c7fd54fd40b5e4cce}
+      \strng{authorbibnamehash}{20f83cdbf1fffb3c7fd54fd40b5e4cce}
+      \strng{authornamehash}{20f83cdbf1fffb3c7fd54fd40b5e4cce}
+      \strng{authorfullhash}{1c76a05e5cad5bb2fe3f465214c03836}
+      \strng{authorfullhashraw}{1c76a05e5cad5bb2fe3f465214c03836}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Research}
+      \field{title}{Two-dimensional borophene: properties, fabrication, and promising applications}
+      \field{year}{2020}
+    \endentry
+    \entry{sun2017two}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=281895c524b32a9ec1c3fbca8253baaa}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Xu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=70be6e98e2abe2ebc3d3a4d1983f06e2}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xiaofei},
+           giveni={X\bibinitperiod}}}%
+        {{hash=0d3a90be6980e4da6ea04e03c78db575}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ee546239b3853560d932c660fdd25836}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3142078ae7703c528cd37e12ceedddf3}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f4eb2d11e33efed5ab849eb7601f4c5e}{%
+           family={Hang},
+           familyi={H\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=df9213290d57a3bb70bc876385c59f31}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Xiaocheng},
+           giveni={X\bibinitperiod}}}%
+        {{hash=568ac2fcbf3885bd4bde86fb9eb44d58}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Maolin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cffd00e785edee99467ff82fe0bc7f08}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jidong},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4c188cd6f53a067a775cffc64ca8efa6}{%
+           family={Tai},
+           familyi={T\bibinitperiod},
+           given={Guoan},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{e01daabb8d49822d34571bec7fc765f2}
+      \strng{fullhash}{b4c87448f582b33efca6462f435aa12d}
+      \strng{fullhashraw}{b4c87448f582b33efca6462f435aa12d}
+      \strng{bibnamehash}{e01daabb8d49822d34571bec7fc765f2}
+      \strng{authorbibnamehash}{e01daabb8d49822d34571bec7fc765f2}
+      \strng{authornamehash}{e01daabb8d49822d34571bec7fc765f2}
+      \strng{authorfullhash}{b4c87448f582b33efca6462f435aa12d}
+      \strng{authorfullhashraw}{b4c87448f582b33efca6462f435aa12d}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advanced Functional Materials}
+      \field{number}{19}
+      \field{title}{Two-dimensional boron crystals: structural stability, tunable properties, fabrications and applications}
+      \field{volume}{27}
+      \field{year}{2017}
+      \field{pages}{1603300}
+      \range{pages}{1}
+    \endentry
+    \entry{mozvashi2021mechanical}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=702190ab6d8688ac9370da3038ccb6c2}{%
+           family={Mozvashi},
+           familyi={M\bibinitperiod},
+           given={Shobair\bibnamedelima Mohammadi},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=fce9e8d58a684d004ba357e2f04f2839}{%
+           family={Mohebpour},
+           familyi={M\bibinitperiod},
+           given={Mohammad\bibnamedelima Ali},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ce36aab2ee1c8d0c015e3e6d66b935cb}{%
+           family={Vishkayi},
+           familyi={V\bibinitperiod},
+           given={Sahar\bibnamedelima Izadi},
+           giveni={S\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=cd970a51ff373e6c2e99fbbe08ebdc66}{%
+           family={Tagani},
+           familyi={T\bibinitperiod},
+           given={Meysam\bibnamedelima Bagheri},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{13f5c89eee742a2ce3f3545ee6d9ce8c}
+      \strng{fullhash}{0bf1002e9fccbda9b663b3075bccf1f3}
+      \strng{fullhashraw}{0bf1002e9fccbda9b663b3075bccf1f3}
+      \strng{bibnamehash}{13f5c89eee742a2ce3f3545ee6d9ce8c}
+      \strng{authorbibnamehash}{13f5c89eee742a2ce3f3545ee6d9ce8c}
+      \strng{authornamehash}{13f5c89eee742a2ce3f3545ee6d9ce8c}
+      \strng{authorfullhash}{0bf1002e9fccbda9b663b3075bccf1f3}
+      \strng{authorfullhashraw}{0bf1002e9fccbda9b663b3075bccf1f3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scientific Reports}
+      \field{number}{1}
+      \field{title}{Mechanical strength and flexibility in $\alpha'$-4H borophene}
+      \field{volume}{11}
+      \field{year}{2021}
+      \field{pages}{7547}
+      \range{pages}{1}
+    \endentry
+    \entry{zhang2017elasticity}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=4457dcbfbac24ee7703b663c6c72a209}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhuhua},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=d9da4a23ca804cbf6aff5760349ec643}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=aa00584418348d7cbb23774f55dc2f54}{%
+           family={Penev},
+           familyi={P\bibinitperiod},
+           given={Evgeni\bibnamedelima S},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=2dc1f712f5a8d04db1daa8312357f01c}{%
+           family={Yakobson},
+           familyi={Y\bibinitperiod},
+           given={Boris\bibnamedelima I},
+           giveni={B\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{ea6b14ba2783791bae085aa81e7c9a5d}
+      \strng{fullhash}{967455677d3aae93831ff9b15f47a3f9}
+      \strng{fullhashraw}{967455677d3aae93831ff9b15f47a3f9}
+      \strng{bibnamehash}{ea6b14ba2783791bae085aa81e7c9a5d}
+      \strng{authorbibnamehash}{ea6b14ba2783791bae085aa81e7c9a5d}
+      \strng{authornamehash}{ea6b14ba2783791bae085aa81e7c9a5d}
+      \strng{authorfullhash}{967455677d3aae93831ff9b15f47a3f9}
+      \strng{authorfullhashraw}{967455677d3aae93831ff9b15f47a3f9}
+      \field{extraname}{6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advanced Functional Materials}
+      \field{number}{9}
+      \field{title}{Elasticity, flexibility, and ideal strength of borophenes}
+      \field{volume}{27}
+      \field{year}{2017}
+      \field{pages}{1605059}
+      \range{pages}{1}
+    \endentry
+    \entry{qureshi2024bilayer}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=3dc392774ac52d8781de6d3d534327c8}{%
+           family={Qureshi},
+           familyi={Q\bibinitperiod},
+           given={Ali\bibnamedelima Hamza},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=4ecf6f19fcc21ef32abbea3a7f2a885c}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b2ebd270d4acb822b3bc5444667ffd36}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Licheng},
+           giveni={L\bibinitperiod}}}%
+        {{hash=cb7d22e93cc88d203c1a3317f5f6ef06}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yanbiao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ee22b4c9c8fc25c68409ca72acd5f37d}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Xiaojing},
+           giveni={X\bibinitperiod}}}%
+        {{hash=a0ddf06c0acbe400b2cd86d634d2a7df}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiuyun},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{8b6dfcda9231d070016d1793921d377b}
+      \strng{fullhash}{d690daf8d5126382374e6065d75c3181}
+      \strng{fullhashraw}{d690daf8d5126382374e6065d75c3181}
+      \strng{bibnamehash}{8b6dfcda9231d070016d1793921d377b}
+      \strng{authorbibnamehash}{8b6dfcda9231d070016d1793921d377b}
+      \strng{authornamehash}{8b6dfcda9231d070016d1793921d377b}
+      \strng{authorfullhash}{d690daf8d5126382374e6065d75c3181}
+      \strng{authorfullhashraw}{d690daf8d5126382374e6065d75c3181}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACS Applied Nano Materials}
+      \field{number}{13}
+      \field{title}{Bilayer Borophene Allotropes: Structural Stabilities and Electronic Properties}
+      \field{volume}{7}
+      \field{year}{2024}
+      \field{pages}{15685\bibrangedash 15692}
+      \range{pages}{8}
+    \endentry
+    \entry{jin2022tuning}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=3fa994ede10489696e1f06d742dc792d}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Xujie},
+           giveni={X\bibinitperiod}}}%
+        {{hash=284dd43556f146f171c1d0433bd6d8d1}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiaoyuan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=2ac1dd12316e165faff2eee34899d7eb}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Rongyao},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9c1ecb1f7c47cf02e9e994296746328c}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=5ff3a43ec19bd72f09616f5b8e47bfb6}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Yabin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=03ad26e93e64d8e24e6a74febb945c07}{%
+           family={Xuan},
+           familyi={X\bibinitperiod},
+           given={Fuzhen},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{40d65ee4b5b059a5e43ca0dbddef835b}
+      \strng{fullhash}{cd7353ac757c1a50d8f425cf9676db53}
+      \strng{fullhashraw}{cd7353ac757c1a50d8f425cf9676db53}
+      \strng{bibnamehash}{40d65ee4b5b059a5e43ca0dbddef835b}
+      \strng{authorbibnamehash}{40d65ee4b5b059a5e43ca0dbddef835b}
+      \strng{authornamehash}{40d65ee4b5b059a5e43ca0dbddef835b}
+      \strng{authorfullhash}{cd7353ac757c1a50d8f425cf9676db53}
+      \strng{authorfullhashraw}{cd7353ac757c1a50d8f425cf9676db53}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Physical Chemistry C}
+      \field{number}{41}
+      \field{title}{Tuning band gaps in twisted bilayer borophene}
+      \field{volume}{126}
+      \field{year}{2022}
+      \field{pages}{17769\bibrangedash 17776}
+      \range{pages}{8}
+    \endentry
+    \entry{gao2017prediction}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=844661cec1d11738e19e6e7d3cc5602b}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Miao},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4417c53646305eb90b92e6b6f4da4683}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Qi-Zhi},
+           giveni={Q\bibinithyphendelim Z\bibinitperiod}}}%
+        {{hash=5ffcc4f859a77c738c2b91bd5f5cb91c}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Xun-Wang},
+           giveni={X\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=2f3ea981fa5a715a69118b48e576a9f5}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{1b6161701bcf18744781650bd57c23cd}
+      \strng{fullhash}{f11efa3ba4a87a6e8ac0db3817a2420d}
+      \strng{fullhashraw}{f11efa3ba4a87a6e8ac0db3817a2420d}
+      \strng{bibnamehash}{1b6161701bcf18744781650bd57c23cd}
+      \strng{authorbibnamehash}{1b6161701bcf18744781650bd57c23cd}
+      \strng{authornamehash}{1b6161701bcf18744781650bd57c23cd}
+      \strng{authorfullhash}{f11efa3ba4a87a6e8ac0db3817a2420d}
+      \strng{authorfullhashraw}{f11efa3ba4a87a6e8ac0db3817a2420d}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{2}
+      \field{title}{Prediction of phonon-mediated superconductivity in borophene}
+      \field{volume}{95}
+      \field{year}{2017}
+      \field{pages}{024505}
+      \range{pages}{1}
+    \endentry
+    \entry{zhu2019magnetic}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=fcc7c01d8024f21091c39bb5fcb6c42f}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Meng-Hong},
+           giveni={M\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=24422cba752d5fa5e76a895d4a518a51}{%
+           family={Weng},
+           familyi={W\bibinitperiod},
+           given={Xiao-Ji},
+           giveni={X\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=84d336f0e8cbc729b76b8d48f15efe27}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Guoying},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ecbb7c949f04b21c1c5165f0c31b680f}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Shuai},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d60b13fdc228a46d98d7c46d5529d2e9}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Ling-Fang},
+           giveni={L\bibinithyphendelim F\bibinitperiod}}}%
+        {{hash=3c1fb723b79f5fdee68a035433d96fcb}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Wei-Hua},
+           giveni={W\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=d9fa159bfff46823e381d8d81607e387}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=c786315183a827f211ffb919321f8b61}{%
+           family={Oganov},
+           familyi={O\bibinitperiod},
+           given={Artem\bibnamedelima R},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=b41004cb7b83c99693977a132e6a75e5}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=bd9e5b4d6d62938a47870c4336c8b502}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={Yongjun},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{f6aa34ce708657415e1fcf48b2d05766}
+      \strng{fullhash}{64ead68ed8b2bbb34f79b0e3bfd38664}
+      \strng{fullhashraw}{64ead68ed8b2bbb34f79b0e3bfd38664}
+      \strng{bibnamehash}{f6aa34ce708657415e1fcf48b2d05766}
+      \strng{authorbibnamehash}{f6aa34ce708657415e1fcf48b2d05766}
+      \strng{authornamehash}{f6aa34ce708657415e1fcf48b2d05766}
+      \strng{authorfullhash}{64ead68ed8b2bbb34f79b0e3bfd38664}
+      \strng{authorfullhashraw}{64ead68ed8b2bbb34f79b0e3bfd38664}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{20}
+      \field{title}{Magnetic borophenes from an evolutionary search}
+      \field{volume}{99}
+      \field{year}{2019}
+      \field{pages}{205412}
+      \range{pages}{1}
+    \endentry
+    \entry{wang2025second}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=b2ebd270d4acb822b3bc5444667ffd36}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Licheng},
+           giveni={L\bibinitperiod}}}%
+        {{hash=3dc392774ac52d8781de6d3d534327c8}{%
+           family={Qureshi},
+           familyi={Q\bibinitperiod},
+           given={Ali\bibnamedelima Hamza},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=4ecf6f19fcc21ef32abbea3a7f2a885c}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b89a8236e3152a737a4696976448ba2c}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaokang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=ee22b4c9c8fc25c68409ca72acd5f37d}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Xiaojing},
+           giveni={X\bibinitperiod}}}%
+        {{hash=99ed43b19d3ea9ded257983384834d98}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Ai-Lei},
+           giveni={A\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=11b6c8c17a7c72e4bb72ce8eb25fadd6}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Yuan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a0ddf06c0acbe400b2cd86d634d2a7df}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiuyun},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{7964ecbf32aed48f1d138f2873d8a481}
+      \strng{fullhash}{e0cf4d61b35f1badee72f90c76fd1247}
+      \strng{fullhashraw}{e0cf4d61b35f1badee72f90c76fd1247}
+      \strng{bibnamehash}{7964ecbf32aed48f1d138f2873d8a481}
+      \strng{authorbibnamehash}{7964ecbf32aed48f1d138f2873d8a481}
+      \strng{authornamehash}{7964ecbf32aed48f1d138f2873d8a481}
+      \strng{authorfullhash}{e0cf4d61b35f1badee72f90c76fd1247}
+      \strng{authorfullhashraw}{e0cf4d61b35f1badee72f90c76fd1247}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{3}
+      \field{title}{Second-order topological insulator in bilayer borophene}
+      \field{volume}{111}
+      \field{year}{2025}
+      \field{pages}{035113}
+      \range{pages}{1}
+    \endentry
+    \entry{rakshit2025exploring}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=7013132b5973e494e5a69ab86f35b266}{%
+           family={Rakshit},
+           familyi={R\bibinitperiod},
+           given={Subrata},
+           giveni={S\bibinitperiod}}}%
+        {{hash=dfc210d677ce3936482fdaf632ae668d}{%
+           family={Gonzalez\bibnamedelima Szwacki},
+           familyi={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Nevill},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{b741b6c78f56ac2c0bc97a5c3770ad24}
+      \strng{fullhash}{b741b6c78f56ac2c0bc97a5c3770ad24}
+      \strng{fullhashraw}{b741b6c78f56ac2c0bc97a5c3770ad24}
+      \strng{bibnamehash}{b741b6c78f56ac2c0bc97a5c3770ad24}
+      \strng{authorbibnamehash}{b741b6c78f56ac2c0bc97a5c3770ad24}
+      \strng{authornamehash}{b741b6c78f56ac2c0bc97a5c3770ad24}
+      \strng{authorfullhash}{b741b6c78f56ac2c0bc97a5c3770ad24}
+      \strng{authorfullhashraw}{b741b6c78f56ac2c0bc97a5c3770ad24}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scientific Reports}
+      \field{number}{1}
+      \field{title}{Exploring the structure and properties of $\alpha$-sheet based bilayer borophenes}
+      \field{volume}{15}
+      \field{year}{2025}
+      \field{pages}{349}
+      \range{pages}{1}
+    \endentry
+    \entry{wang2019serendipity}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=6cf17277f5968e7ee5a96674f5f9e4a6}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Aizhu},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dc59efda4c059476184650a6c6b795aa}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e49ce576ea14ccac47308a583f3f9233}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Mingwen},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4fa328e9fe84fad65134eca8385a591b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiaoming},
+           giveni={X\bibinitperiod}}}%
+        {{hash=113b66ab7c6e3f3ddd90faafacbc4594}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Tao},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a420fe5cfd650b52d8cfd02ef8e93867}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Weifeng},
+           giveni={W\bibinitperiod}}}%
+        {{hash=17d3711038668d995bff12040de11eda}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Yuanping},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=44a453a69684789133e3b3393f75ef31}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Hong},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Royal Society of Chemistry}%
+      }
+      \strng{namehash}{ff4025ff11af028bca3b33aab595d93a}
+      \strng{fullhash}{5bca19602a74cd1d46495c1f506f4528}
+      \strng{fullhashraw}{5bca19602a74cd1d46495c1f506f4528}
+      \strng{bibnamehash}{ff4025ff11af028bca3b33aab595d93a}
+      \strng{authorbibnamehash}{ff4025ff11af028bca3b33aab595d93a}
+      \strng{authornamehash}{ff4025ff11af028bca3b33aab595d93a}
+      \strng{authorfullhash}{5bca19602a74cd1d46495c1f506f4528}
+      \strng{authorfullhashraw}{5bca19602a74cd1d46495c1f506f4528}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Chemistry Chemical Physics}
+      \field{number}{40}
+      \field{title}{Serendipity of a topological nontrivial band gap in the 2D borophene subunit lattice with broken mirror symmetry}
+      \field{volume}{21}
+      \field{year}{2019}
+      \field{pages}{22526\bibrangedash 22530}
+      \range{pages}{5}
+    \endentry
+    \entry{feng2017dirac}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=6559975edc9eb773747adde4a759e8a5}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Baojie},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a715cc1fda902e33aeb0c0596e97e4dd}{%
+           family={Sugino},
+           familyi={S\bibinitperiod},
+           given={Osamu},
+           giveni={O\bibinitperiod}}}%
+        {{hash=d744237a78c6a25e6867a0b93f5230ad}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Ro-Ya},
+           giveni={R\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=eb96d0b531eeac5c6b8b186634522d92}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=15c3404209223410ab8524a249454f29}{%
+           family={Yukawa},
+           familyi={Y\bibinitperiod},
+           given={Ryu},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6e9c355b9a939e624e1be431b778fa86}{%
+           family={Kawamura},
+           familyi={K\bibinitperiod},
+           given={Mitsuaki},
+           giveni={M\bibinitperiod}}}%
+        {{hash=adae6a3e8a85c6fcadd940fcef0a4495}{%
+           family={Iimori},
+           familyi={I\bibinitperiod},
+           given={Takushi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3e51fdde7725c2a3ca356b95822a3b4a}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Howon},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a53b810c21fcfc30b7669398c98167bb}{%
+           family={Hasegawa},
+           familyi={H\bibinitperiod},
+           given={Yukio},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=9b1528d0b6c9bc88bfd8c569f290bcec}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Hui},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{8108a47a4927e9faaf540d382cd1cdec}
+      \strng{fullhash}{a04032a0212bda9ff61abc249a1766b0}
+      \strng{fullhashraw}{a04032a0212bda9ff61abc249a1766b0}
+      \strng{bibnamehash}{8108a47a4927e9faaf540d382cd1cdec}
+      \strng{authorbibnamehash}{8108a47a4927e9faaf540d382cd1cdec}
+      \strng{authornamehash}{8108a47a4927e9faaf540d382cd1cdec}
+      \strng{authorfullhash}{a04032a0212bda9ff61abc249a1766b0}
+      \strng{authorfullhashraw}{a04032a0212bda9ff61abc249a1766b0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{9}
+      \field{title}{Dirac fermions in borophene}
+      \field{volume}{118}
+      \field{year}{2017}
+      \field{pages}{096401}
+      \range{pages}{1}
+    \endentry
+    \entry{gao2024bilayer}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=63677015b0fbd760e55a21f08a606f98}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Qian},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=1b1836d1173907c606909f3ecdabd7d0}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Qimin},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=cded69ff70e71b433e0a5d3e51a6bd0e}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Zhenpeng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=c9d7cb840bbd1b8b9357c0ca6f7fc7ee}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Lan},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{90c9631511f60b66e56441c5c6339f11}
+      \strng{fullhash}{621a30d79793ec9bd242e90c03cee5d0}
+      \strng{fullhashraw}{621a30d79793ec9bd242e90c03cee5d0}
+      \strng{bibnamehash}{90c9631511f60b66e56441c5c6339f11}
+      \strng{authorbibnamehash}{90c9631511f60b66e56441c5c6339f11}
+      \strng{authornamehash}{90c9631511f60b66e56441c5c6339f11}
+      \strng{authorfullhash}{621a30d79793ec9bd242e90c03cee5d0}
+      \strng{authorfullhashraw}{621a30d79793ec9bd242e90c03cee5d0}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advanced Science}
+      \field{number}{37}
+      \field{title}{Bilayer kagome borophene with multiple van Hove singularities}
+      \field{volume}{11}
+      \field{year}{2024}
+      \field{pages}{2305059}
+      \range{pages}{1}
+    \endentry
+    \entry{kim2017boron}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=249ee3c0bd06ccec8f39e1a46e923149}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Sunghyun},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ef397779c2bea0b57d281de8c39ae70b}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Woo\bibnamedelima Hyun},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=fc77ad4517fb0cdc5f477650f6af1fcb}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={In-Ho},
+           giveni={I\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=4c5edac619aca802f8eaede4312a09fa}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={KJ},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{062f1fcee46710e8035aa528ec77c31b}
+      \strng{fullhash}{4d018eded5cf149cffb96cb132196196}
+      \strng{fullhashraw}{4d018eded5cf149cffb96cb132196196}
+      \strng{bibnamehash}{062f1fcee46710e8035aa528ec77c31b}
+      \strng{authorbibnamehash}{062f1fcee46710e8035aa528ec77c31b}
+      \strng{authornamehash}{062f1fcee46710e8035aa528ec77c31b}
+      \strng{authorfullhash}{4d018eded5cf149cffb96cb132196196}
+      \strng{authorfullhashraw}{4d018eded5cf149cffb96cb132196196}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scientific Reports}
+      \field{number}{1}
+      \field{title}{Boron triangular Kagome lattice with half-metallic ferromagnetism}
+      \field{volume}{7}
+      \field{year}{2017}
+      \field{pages}{7279}
+      \range{pages}{1}
+    \endentry
+    \entry{chen2022synthesis}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=bd2b74b3eccf699866b5472d5f507cb5}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Caiyun},
+           giveni={C\bibinitperiod}}}%
+        {{hash=17517ca6f6d35f9dad4c86d81adfa494}{%
+           family={Lv},
+           familyi={L\bibinitperiod},
+           given={Haifeng},
+           giveni={H\bibinitperiod}}}%
+        {{hash=28b6504d56c03d7d44c0ecca06ae0869}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ping},
+           giveni={P\bibinitperiod}}}%
+        {{hash=aaa30a628d3c5d26ca7720700922a3f4}{%
+           family={Zhuo},
+           familyi={Z\bibinitperiod},
+           given={Zhiwen},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=b2eccb185095fccfeb40fdffd8b2105f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0b13d29cc629ce6345c4d0376393515f}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Chen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4c3ca380459621c1c40ff46ebac70f81}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wenbin},
+           giveni={W\bibinitperiod}}}%
+        {{hash=680b969b08136852f572e4c0d63b63d0}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xuguang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=6559975edc9eb773747adde4a759e8a5}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Baojie},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c3845395037befcdb569dc974daf082c}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{e08e16087aeba8d342adc098c4f83225}
+      \strng{fullhash}{f0f3a598c74292c68592ac3c64757c73}
+      \strng{fullhashraw}{f0f3a598c74292c68592ac3c64757c73}
+      \strng{bibnamehash}{e08e16087aeba8d342adc098c4f83225}
+      \strng{authorbibnamehash}{e08e16087aeba8d342adc098c4f83225}
+      \strng{authornamehash}{e08e16087aeba8d342adc098c4f83225}
+      \strng{authorfullhash}{f0f3a598c74292c68592ac3c64757c73}
+      \strng{authorfullhashraw}{f0f3a598c74292c68592ac3c64757c73}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Chemistry}
+      \field{number}{1}
+      \field{title}{Synthesis of bilayer borophene}
+      \field{volume}{14}
+      \field{year}{2022}
+      \field{pages}{25\bibrangedash 31}
+      \range{pages}{7}
+    \endentry
+    \entry{zhong2017metastable}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=3b89cdda527a5e5b2bc5ae1839779f3a}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Qing},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=eb96d0b531eeac5c6b8b186634522d92}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c3845395037befcdb569dc974daf082c}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6559975edc9eb773747adde4a759e8a5}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Baojie},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4c3ca380459621c1c40ff46ebac70f81}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wenbin},
+           giveni={W\bibinitperiod}}}%
+        {{hash=b92b536ac3433ba799ad99638f8ce855}{%
+           family={Sheng},
+           familyi={S\bibinitperiod},
+           given={Shaoxiang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9b1528d0b6c9bc88bfd8c569f290bcec}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Hui},
+           giveni={H\bibinitperiod}}}%
+        {{hash=1cd1129ecffdb82a5d9008ab59b3a0f9}{%
+           family={Meng},
+           familyi={M\bibinitperiod},
+           given={Sheng},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c9d7cb840bbd1b8b9357c0ca6f7fc7ee}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Lan},
+           giveni={L\bibinitperiod}}}%
+        {{hash=839b6ebd5f26fc0d3f34bd30b8a2bdfd}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Kehui},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{7e356b77d113d53d7efb043d132d56c3}
+      \strng{fullhash}{1ebb079a93f027feb22142735e742a92}
+      \strng{fullhashraw}{1ebb079a93f027feb22142735e742a92}
+      \strng{bibnamehash}{7e356b77d113d53d7efb043d132d56c3}
+      \strng{authorbibnamehash}{7e356b77d113d53d7efb043d132d56c3}
+      \strng{authornamehash}{7e356b77d113d53d7efb043d132d56c3}
+      \strng{authorfullhash}{1ebb079a93f027feb22142735e742a92}
+      \strng{authorfullhashraw}{1ebb079a93f027feb22142735e742a92}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Physics: Condensed Matter}
+      \field{number}{9}
+      \field{title}{Metastable phases of 2D boron sheets on Ag (1 1 1)}
+      \field{volume}{29}
+      \field{year}{2017}
+      \field{pages}{095002}
+      \range{pages}{1}
+    \endentry
+    \entry{hou2020ultrastable}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=7a65b2423d80c0256c9b4a21f0127440}{%
+           family={Hou},
+           familyi={H\bibinitperiod},
+           given={Chuang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4c188cd6f53a067a775cffc64ca8efa6}{%
+           family={Tai},
+           familyi={T\bibinitperiod},
+           given={Guoan},
+           giveni={G\bibinitperiod}}}%
+        {{hash=17c551cac05f7441429770371eb0e000}{%
+           family={Hao},
+           familyi={H\bibinitperiod},
+           given={Jinqian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2ffaa214de73d7e59ed011424a4d123f}{%
+           family={Sheng},
+           familyi={S\bibinitperiod},
+           given={Lihang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=fa97927921a403cfe822973e31081dca}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a883f95b3e3f754a0730e39692e9d72b}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Zitong},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{6b166dbf93d621225d36abd4a6a546b8}
+      \strng{fullhash}{a0058b8b16e84aff1de46fee6380ff6f}
+      \strng{fullhashraw}{a0058b8b16e84aff1de46fee6380ff6f}
+      \strng{bibnamehash}{6b166dbf93d621225d36abd4a6a546b8}
+      \strng{authorbibnamehash}{6b166dbf93d621225d36abd4a6a546b8}
+      \strng{authornamehash}{6b166dbf93d621225d36abd4a6a546b8}
+      \strng{authorfullhash}{a0058b8b16e84aff1de46fee6380ff6f}
+      \strng{authorfullhashraw}{a0058b8b16e84aff1de46fee6380ff6f}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Angewandte Chemie International Edition}
+      \field{number}{27}
+      \field{title}{Ultrastable crystalline semiconducting hydrogenated borophene}
+      \field{volume}{59}
+      \field{year}{2020}
+      \field{pages}{10819\bibrangedash 10825}
+      \range{pages}{7}
+    \endentry
+    \entry{li2021synthesis}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=5b32b7295d0c1fe4587a4a4bebb42959}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Qiucheng},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=67e7546bb2f9cc7e9769c44da2373822}{%
+           family={Kolluru},
+           familyi={K\bibinitperiod},
+           given={Venkata\bibnamedelimb Surya\bibnamedelima Chaitanya},
+           giveni={V\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=005e81e29bdff76747d739e1f9575a49}{%
+           family={Rahn},
+           familyi={R\bibinitperiod},
+           given={Matthew\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=e4f96d0627bc25b71f55c7dd19bfc4a6}{%
+           family={Schwenker},
+           familyi={S\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ced6b085e2703eda880933b5e26943cb}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Shaowei},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a4d22ed1836a275dcbed427a170842ac}{%
+           family={Hennig},
+           familyi={H\bibinitperiod},
+           given={Richard\bibnamedelima G},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=fdd016cc53b7aa6946b247d7d0aa9c34}{%
+           family={Darancet},
+           familyi={D\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=1f50eaa4a7ec66786f3eb8c6d840e45b}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Maria\bibnamedelima KY},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=59b2abb5fe45884a94edde71afa253a8}{%
+           family={Hersam},
+           familyi={H\bibinitperiod},
+           given={Mark\bibnamedelima C},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science}%
+      }
+      \strng{namehash}{b57e43f89182a30d4c769f31a47822df}
+      \strng{fullhash}{e0e07003fdcbbb43eb8c8f514260ce87}
+      \strng{fullhashraw}{e0e07003fdcbbb43eb8c8f514260ce87}
+      \strng{bibnamehash}{b57e43f89182a30d4c769f31a47822df}
+      \strng{authorbibnamehash}{b57e43f89182a30d4c769f31a47822df}
+      \strng{authornamehash}{b57e43f89182a30d4c769f31a47822df}
+      \strng{authorfullhash}{e0e07003fdcbbb43eb8c8f514260ce87}
+      \strng{authorfullhashraw}{e0e07003fdcbbb43eb8c8f514260ce87}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{number}{6534}
+      \field{title}{Synthesis of borophane polymorphs through hydrogenation of borophene}
+      \field{volume}{371}
+      \field{year}{2021}
+      \field{pages}{1143\bibrangedash 1148}
+      \range{pages}{6}
+    \endentry
+    \entry{ranjan2019freestanding}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=179bd4ddb1dc986ddbc30892f8f6e317}{%
+           family={Ranjan},
+           familyi={R\bibinitperiod},
+           given={Pranay},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bf5ab30f610e085747e7f54df7c889ac}{%
+           family={Sahu},
+           familyi={S\bibinitperiod},
+           given={Tumesh\bibnamedelima Kumar},
+           giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=54c13bce038efa6379d4752a47eb85fc}{%
+           family={Bhushan},
+           familyi={B\bibinitperiod},
+           given={Rebti},
+           giveni={R\bibinitperiod}}}%
+        {{hash=839c94cba67b7671d3bc57da0dcc34c9}{%
+           family={Yamijala},
+           familyi={Y\bibinitperiod},
+           given={Sharma\bibnamedelima SRKC},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b2543f5973eb54a1ea4fcd0383b2c719}{%
+           family={Late},
+           familyi={L\bibinitperiod},
+           given={Dattatray\bibnamedelima J},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=7a01333f7a8882a1544ea42b848a85a9}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Prashant},
+           giveni={P\bibinitperiod}}}%
+        {{hash=22f7f985994dbdf8a14d1b972aeb6705}{%
+           family={Vinu},
+           familyi={V\bibinitperiod},
+           given={Ajayan},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{dd8bd3a5e198bf45ffef488018e6a2fa}
+      \strng{fullhash}{eef930ba1883ecee402649826cb0b602}
+      \strng{fullhashraw}{eef930ba1883ecee402649826cb0b602}
+      \strng{bibnamehash}{dd8bd3a5e198bf45ffef488018e6a2fa}
+      \strng{authorbibnamehash}{dd8bd3a5e198bf45ffef488018e6a2fa}
+      \strng{authornamehash}{dd8bd3a5e198bf45ffef488018e6a2fa}
+      \strng{authorfullhash}{eef930ba1883ecee402649826cb0b602}
+      \strng{authorfullhashraw}{eef930ba1883ecee402649826cb0b602}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advanced Materials}
+      \field{number}{27}
+      \field{title}{Freestanding borophene and its hybrids}
+      \field{volume}{31}
+      \field{year}{2019}
+      \field{pages}{1900353}
+      \range{pages}{1}
+    \endentry
+    \entry{zhang2023novel}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=22e810ff9a181b269b71e3401c0ecaf0}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yibo},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1ee927469a019bbef19010305ae3f44c}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Mingyang},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2a72f304d2bc33c9c92301f2dc3063b2}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cf0d155966309d41351c23938fd99ae9}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Shijia},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b325b5f2b462819b4c14770bcae77dcf}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wenming},
+           giveni={W\bibinitperiod}}}%
+        {{hash=2c63cb173e678010229fb33de90d53d2}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Jiacong},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Royal Society of Chemistry}%
+      }
+      \strng{namehash}{9bff5f9d723bd8f6e2522accb54dd020}
+      \strng{fullhash}{9c83464bbb1d8b103f4dc12cd46a819c}
+      \strng{fullhashraw}{9c83464bbb1d8b103f4dc12cd46a819c}
+      \strng{bibnamehash}{9bff5f9d723bd8f6e2522accb54dd020}
+      \strng{authorbibnamehash}{9bff5f9d723bd8f6e2522accb54dd020}
+      \strng{authornamehash}{9bff5f9d723bd8f6e2522accb54dd020}
+      \strng{authorfullhash}{9c83464bbb1d8b103f4dc12cd46a819c}
+      \strng{authorfullhashraw}{9c83464bbb1d8b103f4dc12cd46a819c}
+      \field{extraname}{7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Materials Chemistry A}
+      \field{number}{2}
+      \field{title}{A novel highly stable two-dimensional boron phase with promising potentials in energy fields}
+      \field{volume}{11}
+      \field{year}{2023}
+      \field{pages}{828\bibrangedash 837}
+      \range{pages}{10}
+    \endentry
   \enddatalist
+  \missing{huang2017two}
 \endrefsection
 \endinput
 
