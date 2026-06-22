@@ -2077,4 +2077,108 @@ File: figures_proj1/S1.22.pdf Graphic file (type pdf)
 <use figures_proj1/S1.22.pdf>
 Package pdftex.def Info: figures_proj1/S1.22.pdf  used on input line 1120.
 (pdftex.def)             Requested size: 369.44992pt x 277.07916pt.
-<figures_proj1/S1.23.
+<figures_proj1/S1.23.pdf, id=4072, 1734.48pt x 1300.86pt>
+File: figures_proj1/S1.23.pdf Graphic file (type pdf)
+<use figures_proj1/S1.23.pdf>
+Package pdftex.def Info: figures_proj1/S1.23.pdf  used on input line 1127.
+(pdftex.def)             Requested size: 369.44992pt x 277.07916pt.
+<figures_proj1/S1.24.pdf, id=4073, 1734.48pt x 1300.86pt>
+File: figures_proj1/S1.24.pdf Graphic file (type pdf)
+<use figures_proj1/S1.24.pdf>
+Package pdftex.def Info: figures_proj1/S1.24.pdf  used on input line 1134.
+(pdftex.def)             Requested size: 369.44992pt x 277.07916pt.
+)
+
+[135 <./figures_proj1/S1.15.pdf>]
+
+[136 <./figures_proj1/S1.16_alt.pdf>]
+
+[137 <./figures_proj1/S1.17_alt.pdf> <./figures_proj1/S1.18.pdf>]
+
+[138 <./figures_proj1/S1.19.pdf> <./figures_proj1/S1.20.pdf>]
+
+[139 <./figures_proj1/S1.21.pdf> <./figures_proj1/S1.22.pdf>]
+
+[140 <./figures_proj1/S1.23.pdf> <./figures_proj1/S1.24.pdf>] (./src/project_2.tex)
+
+[141
+
+
+
+]
+
+[142
+
+
+] (./src/project_3.tex)
+
+[143
+
+]
+Bibliography
+
+
+[144
+
+]
+
+[145]
+Overfull \hbox (27.27335pt too wide) in paragraph at lines 354--354
+[]\T1/lmr/m/n/12 (-20) Piotr De Silva and To-masz A Weso-lowski. `  Pure-state non-in-ter-act-ing v-representability
+ []
+
+
+
+[146]
+
+[147]
+
+[148]
+
+[149]
+
+[150]
+
+[151]
+
+[152]
+
+[153] (./src/appendix.tex
+
+[154]
+Appendix
+)
+
+[155
+
+] (.output/thesis.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: BD4CCFA6A459B7CFC5C3EC05E110049A;16727.
+Package logreq Info: Writing requests to 'thesis.run.xml'.
+\openout1 = `thesis.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 36959 strings out of 473190
+ 738835 string characters out of 5715801
+ 1630885 words of memory out of 5000000
+ 58413 multiletter control sequences out of 15000+600000
+ 643786 words of font info for 251 fonts, out of 8000000 for 9000
+ 1302 hyphenation exceptions out of 8191
+ 94i,21n,131p,1035b,2889s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on .output/thesis.pdf (164 pages, 39594565 bytes).
+PDF statistics:
+ 4933 PDF objects out of 5155 (max. 8388607)
+ 2538 compressed objects within 26 object streams
+ 747 named destinations out of 1000 (max. 500000)
+ 36210 words of extra memory for PDF output out of 42996 (max. 10000000)
+
