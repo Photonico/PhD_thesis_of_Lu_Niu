@@ -48,38 +48,38 @@
 \contentsline {subsection}{\numberline {3.4.1}Absorption coefficient}{97}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Refractive index and extinction coefficient}{99}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}Reflectivity}{102}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Energy-loss spectrum}{104}{subsection.3.4.4}%
-\contentsline {chapter}{\tocchapter {Chapter}{4}{Optoelectronic Properties of Heterostructure Bilayers}}{107}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Abstract}{107}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Introduction}{108}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Calculation methods}{110}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Results and discussion}{111}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Monolayer properties}{111}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Heterostructure}{113}{subsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.1}Structural properties}{113}{subsubsection.4.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.4.2.2}Charge density difference}{114}{subsubsection.4.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.3}Band structure and density of states}{116}{subsubsection.4.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.4.2.4}Schottky barrier height}{116}{subsubsection.4.4.2.4}%
-\contentsline {subsection}{\numberline {4.4.3}Dielectric function}{119}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Derived optical properties}{123}{subsection.4.4.4}%
-\contentsline {section}{\numberline {4.5}Conclusions}{128}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Data availability statement}{128}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Supplementary information}{128}{section.4.7}%
-\contentsline {chapter}{\tocchapter {Chapter}{5}{Functional Properties of Penta-Bipyramid Boron Allotropes}}{143}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Abstract}{143}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Introduction}{144}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Computation methods}{147}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Results and discussion}{147}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Conclusions}{147}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Data availability statement}{147}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Supplementary information}{147}{section.5.7}%
-\contentsline {chapter}{\tocchapter {Chapter}{6}{project 3}}{149}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Abstract}{149}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Introduction}{149}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Computation methods}{149}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Results and discussion}{149}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Conclusions}{149}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Data availability statement}{149}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Supplementary information}{149}{section.6.7}%
-\contentsline {chapter}{\tocchapter {}{}{Bibliography}}{150}{chapter*.50}%
-\contentsline {chapter}{\tocchapter {}{}{Appendix}}{163}{appendix*.51}%
+\contentsline {subsection}{\numberline {3.4.4}Energy-loss spectrum}{105}{subsection.3.4.4}%
+\contentsline {chapter}{\tocchapter {Chapter}{4}{Optoelectronic Properties of Heterostructure Bilayers}}{109}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Abstract}{109}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Introduction}{110}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Calculation methods}{112}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Results and discussion}{113}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Monolayer properties}{113}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Heterostructure}{115}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Structural properties}{115}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}Charge density difference}{116}{subsubsection.4.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.3}Band structure and density of states}{118}{subsubsection.4.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.4.2.4}Schottky barrier height}{118}{subsubsection.4.4.2.4}%
+\contentsline {subsection}{\numberline {4.4.3}Dielectric function}{121}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Derived optical properties}{125}{subsection.4.4.4}%
+\contentsline {section}{\numberline {4.5}Conclusions}{130}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Data availability statement}{130}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Supplementary information}{130}{section.4.7}%
+\contentsline {chapter}{\tocchapter {Chapter}{5}{Functional Properties of Penta-Bipyramid Boron Allotropes}}{145}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Abstract}{145}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Introduction}{146}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Computation methods}{149}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Results and discussion}{149}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Conclusions}{149}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Data availability statement}{149}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Supplementary information}{149}{section.5.7}%
+\contentsline {chapter}{\tocchapter {Chapter}{6}{project 3}}{151}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Abstract}{151}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Introduction}{151}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Computation methods}{151}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Results and discussion}{151}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Conclusions}{151}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Data availability statement}{151}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Supplementary information}{151}{section.6.7}%
+\contentsline {chapter}{\tocchapter {}{}{Bibliography}}{152}{chapter*.50}%
+\contentsline {chapter}{\tocchapter {}{}{Appendix}}{165}{appendix*.51}%
