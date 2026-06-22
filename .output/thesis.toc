@@ -62,7 +62,7 @@
 \contentsline {subsubsection}{\numberline {4.4.2.4}Schottky barrier height}{118}{subsubsection.4.4.2.4}%
 \contentsline {subsection}{\numberline {4.4.3}Dielectric function}{121}{subsection.4.4.3}%
 \contentsline {subsection}{\numberline {4.4.4}Derived optical properties}{125}{subsection.4.4.4}%
-\contentsline {section}{\numberline {4.5}Conclusions}{130}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Conclusions}{129}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Data availability statement}{130}{section.4.6}%
 \contentsline {section}{\numberline {4.7}Supplementary information}{130}{section.4.7}%
 \contentsline {chapter}{\tocchapter {Chapter}{5}{Functional Properties of Penta-Bipyramid Boron Allotropes}}{145}{chapter.5}%
