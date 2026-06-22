@@ -95,7 +95,7 @@ For the structural optimization calculations, we use the generalized gradient ap
 The Becke-Johnson damped D3(BJ) dispersion correction accounts for long-range van der Waals (vdW) interactions.
 The structural calculations use a $\Gamma$-centered $\vec{k}$-point sampling mesh of $11 \times 11 \times 1$, except for the smaller graphene unit cell shown in figure~\ref{fig1.1}, for which a denser mesh of $23 \times 23 \times 1$ is used.
 Here, the plane-wave energy cutoff is set to \qty{450}{\electronvolt}.
-The electronic convergence criterion is set to \qty{1e-6}{\electronvolt}, and the systems are allowed to relax until all forces on each atom are below \qty{0.01}{\electronvolt\per\angstromunit}.
+The electronic convergence criterion is set to \qty{1e-6}{\electronvolt}, and the systems are allowed to relax until all forces on each atom are below \qty{0.01}{\electronvolt\per\angstrom}.
 For smearing at the Fermi level,
 we use the Gaussian smearing method implemented in VASP.
 
@@ -293,7 +293,7 @@ Graphene-\ce{BC3}
 & 5.044
 & \qty{2.23}{\percent}
 & \qty{-2.42}{\percent}
-& 3.372
+& 3.375 % 3.372
 & semimetal \\
 
 Graphene-Borophene
@@ -301,7 +301,7 @@ Graphene-Borophene
 & 4.979
 & \qty{0.91}{\percent}
 & \qty{-1.43}{\percent}
-& 3.505
+& 3.496 % 3.505
 & metallic \\
 
 Graphene-\ce{B4C3}
@@ -456,9 +456,9 @@ from which the other optical properties can be determined, as given by equations
 ~\ref{extinction_coefficient_from_dielectric_response},
 ~\ref{reflectivity_from_refractive_index_and_extinction_coefficient},
 and~\ref{energy_loss_spectrum_from_inverse_dielectric_function}.
-The real part $\varepsilon_1$ measures the strength of the dynamical screening effects arising from charge excitations,
-whereas the imaginary part $\varepsilon_2$ measures light absorption as a consequence of neutral and plasmonic charge excitations.
-A negative value of the real part of the dielectric function indicates metallic character in the corresponding energy range of the electromagnetic spectrum.
+The real part of the frequency-dependent dielectric function $\varepsilon_1(\omega)$ characterizes the strength of the dynamical screening from charge excitations,
+whereas the imaginary part $\varepsilon_2(\omega)$ describes light absorption from neutral and plasmonic charge excitations.
+A negative value of $\varepsilon_1(\omega)$ indicates metallic character in the optical response over the corresponding photon-energy range.
 
 It is first important to establish the appropriate $\vec{k}$-point set to yield converged results.
 For graphene, we test a number of $\vec{k}$-point meshes and find that a $129 \times 129 \times 1$ mesh gives converged results, as shown in figure~\ref{S1.12}, in good agreement with previous results~\cite{warmbier2016}.
@@ -574,6 +574,7 @@ The real part of the in-plane dielectric function is negative in two regions:
 and \qtyrange{17}{18}{\electronvolt} for HSE06 (\qtyrange{15}{16}{\electronvolt} for PBE).
 These negative regions indicate the presence of plasmons in the ultraviolet region.
 The out-of-plane component also displays negative values at about \qtyrange{17}{18}{\electronvolt} for HSE06 (\qtyrange{14.5}{15.5}{\electronvolt} for PBE).
+
 Similar to Graphene-\ce{BC3},
 the first main peaks of $\varepsilon_2$ for in-plane polarization are also in the visible range.
 The broad main peaks along the out-of-plane direction occur in the energy range \qtyrange{10}{18}{\electronvolt} (\qtyrange{9}{17}{\electronvolt}) for HSE06 (PBE).
