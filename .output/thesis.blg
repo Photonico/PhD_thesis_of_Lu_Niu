@@ -1,17 +1,15 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is '.output/thesis.blg'
-[35] biber-darwin:340> INFO - === Mon Jun 22, 2026, 19:06:36
-[44] Biber.pm:420> INFO - Reading '.output/thesis.bcf'
-[127] Biber.pm:994> INFO - Found 174 citekeys in bib section 0
-[136] Biber.pm:4463> INFO - Processing section 0
-[142] Biber.pm:4654> INFO - Looking for bibtex file 'thesis.bib' for section 0
-[147] bibtex.pm:1713> INFO - LaTeX decoding ...
-[258] bibtex.pm:1519> INFO - Found BibTeX data source 'thesis.bib'
-[911] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
-[912] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[912] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-UK'
-[912] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-UK'
-[969] bbl.pm:676> INFO - Writing '.output/thesis.bbl' with encoding 'UTF-8'
-[1020] bbl.pm:779> INFO - Output to .output/thesis.bbl
-[1021] Biber.pm:131> WARN - I didn't find a database entry for 'huang2017two' (section 0)
-[1021] Biber.pm:133> INFO - WARNINGS: 1
+[37] biber-darwin:340> INFO - === Mon Jun 22, 2026, 19:36:48
+[46] Biber.pm:420> INFO - Reading '.output/thesis.bcf'
+[132] Biber.pm:994> INFO - Found 173 citekeys in bib section 0
+[141] Biber.pm:4463> INFO - Processing section 0
+[147] Biber.pm:4654> INFO - Looking for bibtex file 'thesis.bib' for section 0
+[153] bibtex.pm:1713> INFO - LaTeX decoding ...
+[268] bibtex.pm:1519> INFO - Found BibTeX data source 'thesis.bib'
+[921] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[921] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[921] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-UK'
+[921] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-UK'
+[979] bbl.pm:676> INFO - Writing '.output/thesis.bbl' with encoding 'UTF-8'
+[1025] bbl.pm:779> INFO - Output to .output/thesis.bbl
