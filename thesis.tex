@@ -139,15 +139,23 @@
   \ifcase#1\or I\or II\or III\else #1\fi
 }
 
+\definecolor{dark_blue}{HTML}{0069A0}
+\definecolor{dark_violet}{HTML}{8C3CA5}
+\definecolor{dark_emerald}{HTML}{009687}
+
 %%%% Hyperlink configurations
 \hypersetup{
     pdfauthor = {\myname},
     pdftitle = {\suptitle},
     colorlinks,
     linkcolor={Black},
-    citecolor={Purple},
+    % citecolor={Purple},
+    citecolor={dark_violet},
+    urlcolor={dark_emerald},
+    % urlcolor={PineGreen},
+    % urlcolor={Emerald},
     % urlcolor={WildStrawberry},
-    urlcolor={Emerald},
+    % urlcolor={Mulberry},
     % urlcolor={Orchid},
     }
 
@@ -305,7 +313,8 @@
 \cleardoublepage
 \addcontentsline{toc}{chapter}{Contents}
 \tableofcontents
-\hypersetup{linkcolor=MidnightBlue}
+\hypersetup{linkcolor=dark_blue}
+% \hypersetup{linkcolor=MidnightBlue}
 % \hypersetup{linkcolor=Periwinkle}
 % \listoffigures
 % \listoftables
