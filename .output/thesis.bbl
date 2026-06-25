@@ -357,7 +357,7 @@
       \field{eid}{040901}
       \field{journaltitle}{The Journal of Chemical Physics}
       \field{number}{4}
-      \field{title}{“Ensemblization” of density functional theory}
+      \field{title}{``Ensemblization'' of density functional theory}
       \field{volume}{164}
       \field{year}{2026}
     \endentry
@@ -1027,7 +1027,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Reviews of Modern Physics}
       \field{number}{5}
-      \field{title}{Nobel Lecture: Electronic structure of matter—wave functions and density functionals}
+      \field{title}{Nobel Lecture: Electronic structure of matter--wave functions and density functionals}
       \field{volume}{71}
       \field{year}{1999}
       \field{pages}{1253}
@@ -1145,7 +1145,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review B}
       \field{number}{24}
-      \field{title}{Comment on “Significance of the highest occupied Kohn-Sham eigenvalue”}
+      \field{title}{Comment on ``Significance of the highest occupied Kohn-Sham eigenvalue''}
       \field{volume}{56}
       \field{year}{1997}
       \field{pages}{16021}
