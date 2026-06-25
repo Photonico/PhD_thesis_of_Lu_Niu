@@ -1,15 +1,15 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
-[0] Config.pm:311> INFO - Logfile is '.output/thesis.blg'
-[36] biber-darwin:340> INFO - === Thu Jun 25, 2026, 22:14:59
-[46] Biber.pm:420> INFO - Reading '.output/thesis.bcf'
-[131] Biber.pm:994> INFO - Found 173 citekeys in bib section 0
-[140] Biber.pm:4463> INFO - Processing section 0
-[146] Biber.pm:4654> INFO - Looking for bibtex file 'thesis.bib' for section 0
-[152] bibtex.pm:1713> INFO - LaTeX decoding ...
-[279] bibtex.pm:1519> INFO - Found BibTeX data source 'thesis.bib'
-[969] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[969] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
-[969] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-UK'
-[969] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-UK'
-[1028] bbl.pm:676> INFO - Writing '.output/thesis.bbl' with encoding 'UTF-8'
-[1076] bbl.pm:779> INFO - Output to .output/thesis.bbl
+[1] Config.pm:311> INFO - Logfile is '.output/thesis.blg'
+[38] biber-darwin:340> INFO - === Thu Jun 25, 2026, 22:28:12
+[48] Biber.pm:420> INFO - Reading '.output/thesis.bcf'
+[137] Biber.pm:994> INFO - Found 173 citekeys in bib section 0
+[146] Biber.pm:4463> INFO - Processing section 0
+[152] Biber.pm:4654> INFO - Looking for bibtex file 'thesis.bib' for section 0
+[158] bibtex.pm:1713> INFO - LaTeX decoding ...
+[284] bibtex.pm:1519> INFO - Found BibTeX data source 'thesis.bib'
+[988] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[988] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[988] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-UK'
+[988] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-UK'
+[1049] bbl.pm:676> INFO - Writing '.output/thesis.bbl' with encoding 'UTF-8'
+[1099] bbl.pm:779> INFO - Output to .output/thesis.bbl

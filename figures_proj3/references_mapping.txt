@@ -26,7 +26,7 @@ Checked reference-key mapping for the Beryllene thesis section
 [24] becke2005density                   existing
 [25] grimme2010consistent               existing
 [26] grimme2011effect                   existing
-[27] wooten1972optical                  new
+[27] wooten2013optical                  existing
 [28] gajdovs2006linear                  existing
 [29] weng2018honeycomb                  existing
 [30] laturia2018dielectric              existing
@@ -41,7 +41,7 @@ Checked reference-key mapping for the Beryllene thesis section
 [39] li2017first                        existing
 [40] elbanna20232d                      existing
 [41] born2013principles                 existing
-[42] wooten2013optical                  existing
+[42] wooten2013optical                  duplicate of [27]
 [43] niu2024electronic                  existing
 [44] khan2025insight                    existing
 [45] huang2023optical                   existing

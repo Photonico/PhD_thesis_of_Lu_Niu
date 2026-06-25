@@ -2480,7 +2480,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Reviews of Modern Physics}
       \field{number}{2}
-      \field{title}{Electronic excitations: density-functional versus many-body Green’s-function approaches}
+      \field{title}{Electronic excitations: density-functional versus many-body {Green's}-function approaches}
       \field{volume}{74}
       \field{year}{2002}
       \field{pages}{601}
@@ -5035,10 +5035,10 @@
            familyi={H\bibinitperiod},
            given={Chuang},
            giveni={C\bibinitperiod}}}%
-        {{hash=28c017eec11c3326b65539c145eba3e5}{%
+        {{hash=3f66686b2730ef1d6647ca902de49f4f}{%
            family={Tai},
            familyi={T\bibinitperiod},
-           given={Guo’an},
+           given={Guo'an},
            giveni={G\bibinitperiod}}}%
         {{hash=fa97927921a403cfe822973e31081dca}{%
            family={Liu},
@@ -5060,13 +5060,13 @@
         {Springer}%
       }
       \strng{namehash}{6b166dbf93d621225d36abd4a6a546b8}
-      \strng{fullhash}{87e26c04300f2b01bf8b471b50b568b6}
-      \strng{fullhashraw}{87e26c04300f2b01bf8b471b50b568b6}
+      \strng{fullhash}{6b00e089b64d23067bc6a70e82229921}
+      \strng{fullhashraw}{6b00e089b64d23067bc6a70e82229921}
       \strng{bibnamehash}{6b166dbf93d621225d36abd4a6a546b8}
       \strng{authorbibnamehash}{6b166dbf93d621225d36abd4a6a546b8}
       \strng{authornamehash}{6b166dbf93d621225d36abd4a6a546b8}
-      \strng{authorfullhash}{87e26c04300f2b01bf8b471b50b568b6}
-      \strng{authorfullhashraw}{87e26c04300f2b01bf8b471b50b568b6}
+      \strng{authorfullhash}{6b00e089b64d23067bc6a70e82229921}
+      \strng{authorfullhashraw}{6b00e089b64d23067bc6a70e82229921}
       \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
