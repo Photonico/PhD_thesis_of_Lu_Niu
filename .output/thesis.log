@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.6)  27 JUN 2026 04:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.6)  27 JUN 2026 05:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2166,31 +2166,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [152]
 
-LaTeX Warning: Reference `S2.10' on page 153 undefined on input line 330.
-
-
 LaTeX Warning: Reference `S2.11' on page 153 undefined on input line 333.
-
-
-LaTeX Warning: Reference `S2.12' on page 153 undefined on input line 334.
-
-
-LaTeX Warning: Reference `S2.13' on page 153 undefined on input line 336.
-
-
-LaTeX Warning: Reference `S2.14' on page 153 undefined on input line 337.
-
-
-LaTeX Warning: Reference `S2.15' on page 153 undefined on input line 339.
-
-
-LaTeX Warning: Reference `S2.16' on page 153 undefined on input line 340.
-
-
-LaTeX Warning: Reference `S2.17' on page 153 undefined on input line 341.
-
-
-LaTeX Warning: Reference `S2.18' on page 153 undefined on input line 342.
 
 
 Underfull \vbox (badness 1048) has occurred while \output is active []
@@ -2198,61 +2174,121 @@ Underfull \vbox (badness 1048) has occurred while \output is active []
 
 
 [153]
-<figures_proj2/S2.1a.pdf, id=4894, 722.7pt x 542.025pt>
+<figures_proj2/S2.1a.pdf, id=4911, 722.7pt x 542.025pt>
 File: figures_proj2/S2.1a.pdf Graphic file (type pdf)
 <use figures_proj2/S2.1a.pdf>
 Package pdftex.def Info: figures_proj2/S2.1a.pdf  used on input line 373.
 (pdftex.def)             Requested size: 260.78896pt x 195.592pt.
-<figures_proj2/S2.1b.pdf, id=4895, 722.7pt x 433.62pt>
+<figures_proj2/S2.1b.pdf, id=4912, 722.7pt x 433.62pt>
 File: figures_proj2/S2.1b.pdf Graphic file (type pdf)
 <use figures_proj2/S2.1b.pdf>
 Package pdftex.def Info: figures_proj2/S2.1b.pdf  used on input line 375.
 (pdftex.def)             Requested size: 260.78896pt x 156.4736pt.
-<figures_proj2/S2.2.pdf, id=4896, 722.7pt x 542.025pt>
+<figures_proj2/S2.2.pdf, id=4913, 722.7pt x 542.025pt>
 File: figures_proj2/S2.2.pdf Graphic file (type pdf)
 <use figures_proj2/S2.2.pdf>
 Package pdftex.def Info: figures_proj2/S2.2.pdf  used on input line 383.
 (pdftex.def)             Requested size: 260.78896pt x 195.592pt.
-<figures_proj2/S2.3.pdf, id=4897, 722.7pt x 433.62pt>
+<figures_proj2/S2.3.pdf, id=4914, 722.7pt x 433.62pt>
 File: figures_proj2/S2.3.pdf Graphic file (type pdf)
 <use figures_proj2/S2.3.pdf>
 Package pdftex.def Info: figures_proj2/S2.3.pdf  used on input line 390.
 (pdftex.def)             Requested size: 260.78896pt x 156.4736pt.
-<figures_proj2/S2.4.pdf, id=4898, 1734.48pt x 867.24pt>
+<figures_proj2/S2.4.pdf, id=4915, 1734.48pt x 867.24pt>
 File: figures_proj2/S2.4.pdf Graphic file (type pdf)
 <use figures_proj2/S2.4.pdf>
 Package pdftex.def Info: figures_proj2/S2.4.pdf  used on input line 397.
 (pdftex.def)             Requested size: 434.64386pt x 217.31232pt.
-<figures_proj2/S2.5.pdf, id=4899, 1734.48pt x 867.24pt>
+<figures_proj2/S2.5.pdf, id=4916, 1734.48pt x 867.24pt>
 File: figures_proj2/S2.5.pdf Graphic file (type pdf)
 <use figures_proj2/S2.5.pdf>
 Package pdftex.def Info: figures_proj2/S2.5.pdf  used on input line 405.
 (pdftex.def)             Requested size: 434.64386pt x 217.31232pt.
-<figures_proj2/S2.6.png, id=4900, 722.7pt x 481.8pt>
+<figures_proj2/S2.6.png, id=4917, 722.7pt x 481.8pt>
 File: figures_proj2/S2.6.png Graphic file (type png)
 <use figures_proj2/S2.6.png>
 Package pdftex.def Info: figures_proj2/S2.6.png  used on input line 413.
 (pdftex.def)             Requested size: 260.78896pt x 173.85956pt.
-<figures_proj2/S2.7.png, id=4902, 963.6pt x 963.6pt>
+<figures_proj2/S2.7.png, id=4919, 963.6pt x 963.6pt>
 File: figures_proj2/S2.7.png Graphic file (type png)
 <use figures_proj2/S2.7.png>
 Package pdftex.def Info: figures_proj2/S2.7.png  used on input line 420.
 (pdftex.def)             Requested size: 260.78896pt x 260.77832pt.
-<figures_proj2/S2.8.pdf, id=4903, 722.7pt x 433.62pt>
+<figures_proj2/S2.8.pdf, id=4920, 722.7pt x 433.62pt>
 File: figures_proj2/S2.8.pdf Graphic file (type pdf)
 <use figures_proj2/S2.8.pdf>
 Package pdftex.def Info: figures_proj2/S2.8.pdf  used on input line 429.
 (pdftex.def)             Requested size: 260.78896pt x 156.4736pt.
-<figures_proj2/S2.9a.pdf, id=4904, 650.43pt x 433.62pt>
+<figures_proj2/S2.9a.pdf, id=4921, 650.43pt x 433.62pt>
 File: figures_proj2/S2.9a.pdf Graphic file (type pdf)
 <use figures_proj2/S2.9a.pdf>
 Package pdftex.def Info: figures_proj2/S2.9a.pdf  used on input line 436.
 (pdftex.def)             Requested size: 195.58841pt x 130.39136pt.
-<figures_proj2/S2.9b.pdf, id=4905, 650.43pt x 433.62pt>
+<figures_proj2/S2.9b.pdf, id=4922, 650.43pt x 433.62pt>
 File: figures_proj2/S2.9b.pdf Graphic file (type pdf)
 <use figures_proj2/S2.9b.pdf>
 Package pdftex.def Info: figures_proj2/S2.9b.pdf  used on input line 437.
 (pdftex.def)             Requested size: 195.58841pt x 130.39136pt.
+<figures_proj2/S2.10/S2.10a_long.pdf, id=4929, 722.7pt x 433.62pt>
+File: figures_proj2/S2.10/S2.10a_long.pdf Graphic file (type pdf)
+<use figures_proj2/S2.10/S2.10a_long.pdf>
+Package pdftex.def Info: figures_proj2/S2.10/S2.10a_long.pdf  used on input line 447.
+(pdftex.def)             Requested size: 325.9829pt x 195.59035pt.
+<figures_proj2/S2.10/S2.10b.pdf, id=4930, 1884.8016pt x 2886.94551pt>
+File: figures_proj2/S2.10/S2.10b.pdf Graphic file (type pdf)
+<use figures_proj2/S2.10/S2.10b.pdf>
+Package pdftex.def Info: figures_proj2/S2.10/S2.10b.pdf  used on input line 448.
+(pdftex.def)             Requested size: 108.66096pt x 166.42537pt.
+<figures_proj2/S2.11a.pdf, id=4931, 650.43pt x 433.62pt>
+File: figures_proj2/S2.11a.pdf Graphic file (type pdf)
+<use figures_proj2/S2.11a.pdf>
+Package pdftex.def Info: figures_proj2/S2.11a.pdf  used on input line 458.
+(pdftex.def)             Requested size: 195.58841pt x 130.39136pt.
+<figures_proj2/S2.11b.pdf, id=4932, 650.43pt x 433.62pt>
+File: figures_proj2/S2.11b.pdf Graphic file (type pdf)
+<use figures_proj2/S2.11b.pdf>
+Package pdftex.def Info: figures_proj2/S2.11b.pdf  used on input line 459.
+(pdftex.def)             Requested size: 195.58841pt x 130.39136pt.
+<figures_proj2/S2.12.pdf, id=4933, 722.7pt x 433.62pt>
+File: figures_proj2/S2.12.pdf Graphic file (type pdf)
+<use figures_proj2/S2.12.pdf>
+Package pdftex.def Info: figures_proj2/S2.12.pdf  used on input line 468.
+(pdftex.def)             Requested size: 260.78896pt x 156.4736pt.
+<figures_proj2/S2.13.pdf, id=4934, 722.7pt x 433.62pt>
+File: figures_proj2/S2.13.pdf Graphic file (type pdf)
+<use figures_proj2/S2.13.pdf>
+Package pdftex.def Info: figures_proj2/S2.13.pdf  used on input line 475.
+(pdftex.def)             Requested size: 260.78896pt x 156.4736pt.
+<figures_proj2/S2.14.pdf, id=4935, 722.7pt x 433.62pt>
+File: figures_proj2/S2.14.pdf Graphic file (type pdf)
+<use figures_proj2/S2.14.pdf>
+Package pdftex.def Info: figures_proj2/S2.14.pdf  used on input line 483.
+(pdftex.def)             Requested size: 260.78896pt x 156.4736pt.
+<figures_proj2/S2.15/S2.15.pdf, id=4936, 714.83505pt x 426.45328pt>
+File: figures_proj2/S2.15/S2.15.pdf Graphic file (type pdf)
+<use figures_proj2/S2.15/S2.15.pdf>
+Package pdftex.def Info: figures_proj2/S2.15/S2.15.pdf  used on input line 496.
+(pdftex.def)             Requested size: 260.78896pt x 155.57932pt.
+<figures_proj2/S2.16a.pdf, id=4937, 867.24pt x 433.62pt>
+File: figures_proj2/S2.16a.pdf Graphic file (type pdf)
+<use figures_proj2/S2.16a.pdf>
+Package pdftex.def Info: figures_proj2/S2.16a.pdf  used on input line 504.
+(pdftex.def)             Requested size: 260.78896pt x 130.39136pt.
+<figures_proj2/S2.16b.pdf, id=4938, 867.24pt x 433.62pt>
+File: figures_proj2/S2.16b.pdf Graphic file (type pdf)
+<use figures_proj2/S2.16b.pdf>
+Package pdftex.def Info: figures_proj2/S2.16b.pdf  used on input line 506.
+(pdftex.def)             Requested size: 260.78896pt x 130.39136pt.
+<figures_proj2/S2.17/S2.17.png, id=4939, 5489.50874pt x 2828.31656pt>
+File: figures_proj2/S2.17/S2.17.png Graphic file (type png)
+<use figures_proj2/S2.17/S2.17.png>
+Package pdftex.def Info: figures_proj2/S2.17/S2.17.png  used on input line 515.
+(pdftex.def)             Requested size: 260.78896pt x 134.34644pt.
+<figures_proj2/S2.18.pdf, id=4940, 1734.48pt x 433.62pt>
+File: figures_proj2/S2.18.pdf Graphic file (type pdf)
+<use figures_proj2/S2.18.pdf>
+Package pdftex.def Info: figures_proj2/S2.18.pdf  used on input line 525.
+(pdftex.def)             Requested size: 434.64386pt x 108.65616pt.
 )
 
 [154 <./figures_proj2/S2.1a.pdf> <./figures_proj2/S2.1b.pdf>]
@@ -2263,43 +2299,44 @@ Package pdftex.def Info: figures_proj2/S2.9b.pdf  used on input line 437.
 
 [157 <./figures_proj2/S2.6.png> <./figures_proj2/S2.7.png>]
 
-[158 <./figures_proj2/S2.8.pdf> <./figures_proj2/S2.9a.pdf> <./figures_proj2/S2.9b.pdf>] (./src/project_3.tex
+[158 <./figures_proj2/S2.8.pdf> <./figures_proj2/S2.9a.pdf> <./figures_proj2/S2.9b.pdf>]
+
+[159 <./figures_proj2/S2.10/S2.10a_long.pdf> <./figures_proj2/S2.10/S2.10b.pdf> <./figures_proj2/S2.11a.pdf> <./figures_proj2/S2.11b.pdf>]
+
+[160 <./figures_proj2/S2.12.pdf> <./figures_proj2/S2.13.pdf>]
+
+[161 <./figures_proj2/S2.14.pdf> <./figures_proj2/S2.15/S2.15.pdf>]
+
+[162 <./figures_proj2/S2.16a.pdf> <./figures_proj2/S2.16b.pdf> <./figures_proj2/S2.17/S2.17.png>]
+
+[163 <./figures_proj2/S2.18.pdf>]
+
+[164
+
+
+] (./src/project_3.tex
 Overfull \hbox (25.94962pt too wide) in paragraph at lines 1--1
 \T1/lmr/bx/n/17.28 (-20) Pristine and Hydrogen-Functionalized Two-Dimensional
  []
 
 )
 
-[159
-
-
+[165
 
 ]
 Bibliography
 
 
-[160
+[166
 
 ]
 
-[161]
+[167]
 Overfull \hbox (27.27335pt too wide) in paragraph at lines 378--378
 []\T1/lmr/m/n/12 (-20) Piotr De Silva and To-masz A Weso-lowski. `  Pure-state non-in-ter-act-ing v-representability
  []
 
 
-
-[162]
-
-[163]
-
-[164]
-
-[165]
-
-[166]
-
-[167]
 
 [168]
 
@@ -2312,26 +2349,38 @@ Overfull \hbox (27.27335pt too wide) in paragraph at lines 378--378
 [172]
 
 [173]
+
+[174]
+
+[175]
+
+[176]
+
+[177]
+
+[178]
+
+[179]
 Overfull \hbox (13.97218pt too wide) in paragraph at lines 378--378
 []\T1/lmr/m/n/12 (-20) Chuang Hou et al. `  Ul-trastable crys-tal-line semi-con-duct-ing hy-dro-gen-ated borophene'.
  []
 
 
 
-[174]
+[180]
 Overfull \hbox (8.13083pt too wide) in paragraph at lines 378--378
 \T1/lmr/m/it/12 (-20) Phys-ical Re-view B Con-densed Mat-ter and Ma-ter-i-als Phys-ics \T1/lmr/m/n/12 (-20) 88.8 (2013), p. 085117. 
  []
 
 
 
-[175] (./src/appendix.tex
+[181] (./src/appendix.tex
 
-[176]
+[182]
 Appendix
 )
 
-[177
+[183
 
 ] (.output/thesis.aux)
  ***********
@@ -2343,24 +2392,24 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E4AF1C38094503416C2AF448B22708B2;18944.
+(rerunfilecheck)             Checksum: 4BA797081FC10736B91D933278F1E7B6;18944.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37382 strings out of 473190
- 753000 string characters out of 5715801
- 1634945 words of memory out of 5000000
- 58711 multiletter control sequences out of 15000+600000
- 650823 words of font info for 262 fonts, out of 8000000 for 9000
+ 37483 strings out of 473190
+ 756244 string characters out of 5715801
+ 1636838 words of memory out of 5000000
+ 58795 multiletter control sequences out of 15000+600000
+ 650924 words of font info for 263 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  94i,21n,131p,1035b,2889s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on .output/thesis.pdf (186 pages, 42889616 bytes).
+Output written on .output/thesis.pdf (192 pages, 51698161 bytes).
 PDF statistics:
- 5830 PDF objects out of 6186 (max. 8388607)
- 3004 compressed objects within 31 object streams
- 852 named destinations out of 1000 (max. 500000)
- 40449 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 6394 PDF objects out of 7423 (max. 8388607)
+ 3115 compressed objects within 32 object streams
+ 867 named destinations out of 1000 (max. 500000)
+ 40509 words of extra memory for PDF output out of 42996 (max. 10000000)
 

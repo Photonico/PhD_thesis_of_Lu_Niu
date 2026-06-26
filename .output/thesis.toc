@@ -80,13 +80,13 @@
 \contentsline {section}{\numberline {5.5}Conclusions}{152}{section.5.5}%
 \contentsline {section}{\numberline {5.6}Data availability statement}{152}{section.5.6}%
 \contentsline {section}{\numberline {5.7}Supplementary information}{152}{section.5.7}%
-\contentsline {chapter}{\tocchapter {Chapter}{6}{Topological and Optical Properties of Beryllene Phases}}{159}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Abstract}{159}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Introduction}{159}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Computation methods}{159}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Results and discussion}{159}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Conclusions}{159}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Data availability statement}{159}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Supplementary information}{159}{section.6.7}%
-\contentsline {chapter}{\tocchapter {}{}{Bibliography}}{160}{chapter*.59}%
-\contentsline {chapter}{\tocchapter {}{}{Appendix}}{177}{appendix*.60}%
+\contentsline {chapter}{\tocchapter {Chapter}{6}{Topological and Optical Properties of Beryllene Phases}}{165}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Abstract}{165}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Introduction}{165}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Computation methods}{165}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Results and discussion}{165}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Conclusions}{165}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Data availability statement}{165}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Supplementary information}{165}{section.6.7}%
+\contentsline {chapter}{\tocchapter {}{}{Bibliography}}{166}{chapter*.68}%
+\contentsline {chapter}{\tocchapter {}{}{Appendix}}{183}{appendix*.69}%
