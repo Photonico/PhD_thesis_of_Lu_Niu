@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber .output/thesis"] 1782391238.45381 ".output/thesis.bcf" ".output/thesis.bbl" ".output/thesis" 1782391241.34895 0
-  ".output/thesis.bcf" 1782391221.44313 133815 7214da055ea154bf33a26009314b8f53 "pdflatex"
-  "thesis.bib" 1782391239.41714 79663 8854239cca33c8bc63d23b1ebf35cb00 ""
+["biber .output/thesis"] 1782439136.52245 ".output/thesis.bcf" ".output/thesis.bbl" ".output/thesis" 1782439179.83488 0
+  ".output/thesis.bcf" 1782439179.65498 136002 8855b4fb4d06f3671781185a940f51f2 "pdflatex"
+  "thesis.bib" 1782391267.54659 79663 8854239cca33c8bc63d23b1ebf35cb00 ""
   (generated)
   ".output/thesis.bbl"
   ".output/thesis.blg"
   (rewritten before read)
-["pdflatex"] 1782391212.05183 "/Users/lu/Repos/Thesis GitHub/thesis.tex" ".output/thesis.pdf" "thesis" 1782391241.34916 0
-  ".output/thesis.aux" 1782391221.34706 114266 bc7a41a49fc616acd8d41281a065a7be "pdflatex"
-  ".output/thesis.bbl" 1782391241.23568 320264 7aacff7b511086695dfd34ee7ef0d0b9 "biber .output/thesis"
-  ".output/thesis.out" 1782391221.43566 17755 e9d5dc49c89dc46c8ddb8e85c1c20edb "pdflatex"
-  ".output/thesis.run.xml" 1782391221.45712 2379 f75cc13aa91ba640ee0d8112fc09c504 "pdflatex"
-  ".output/thesis.toc" 1782391221.45736 8266 5b2fbd3f8e8aefee762ba73fc2325431 "pdflatex"
+["pdflatex"] 1782439169.26934 "/Users/lu/Repos/Thesis GitHub/thesis.tex" ".output/thesis.pdf" "thesis" 1782439179.83532 0
+  ".output/thesis.aux" 1782439179.55442 118273 2ed98fea497f81dc417fd25e6f7a87a7 "pdflatex"
+  ".output/thesis.bbl" 1782439139.12587 351394 2287425630623809fa44f628312a94df "biber .output/thesis"
+  ".output/thesis.out" 1782439179.6515 17755 e9d5dc49c89dc46c8ddb8e85c1c20edb "pdflatex"
+  ".output/thesis.run.xml" 1782439179.65572 2379 f75cc13aa91ba640ee0d8112fc09c504 "pdflatex"
+  ".output/thesis.toc" 1782439179.65581 8266 a003319cd3d27f517df2341dcebc1cfb "pdflatex"
   "/Users/lu/Repos/Thesis GitHub/thesis.tex" 1782090792.8026 9734 0b1675225a0f8e523fec05f727e323f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -320,7 +320,7 @@
   "src/fundamentals_b.tex" 1782146435.5349 72212 601cd4b91385b05afb1971446dda4c43 ""
   "src/introduction.tex" 1781899340.82009 57 13996f907b83f3e8567bad897058b7b9 ""
   "src/project_1.tex" 1782286484.00119 61107 3ea3b9eb74a9b128c37bef4a7bb73ccd ""
-  "src/project_2.tex" 1782122089.19045 11975 2b9661579481fce65bbdce5d9abf51c6 ""
+  "src/project_2.tex" 1782439169.09283 21529 e75def197906e8a36c736c8144ea2ee4 ""
   "src/project_3.tex" 1782118750.99015 386 d884d2f7f802de149a4fcf98ac44c815 ""
   "src/publications.tex" 1781899340.82046 51 944e67c94cda9d6fa018235b19b40afb ""
   "src/thanks.tex" 1781899340.82058 44 0ef663f11c0eb1e66730564baa6934a4 ""
