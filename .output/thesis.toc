@@ -19,7 +19,7 @@
 \contentsline {subsection}{\numberline {2.3.2}Density functional in quantum mechanics}{28}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}The Hohenberg--Kohn theorem}{32}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}The Thomas--Fermi approach}{43}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Limitations of the Thomas--Fermi approach}{48}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.5}Limitations of the Thomas--Fermi approach}{49}{subsection.2.3.5}%
 \contentsline {section}{\numberline {2.4}From density functional to Kohn--Sham theory}{52}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Auxiliary system}{52}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}The framework of the Kohn--Sham equations}{56}{subsection.2.4.2}%
@@ -55,37 +55,38 @@
 \contentsline {section}{\numberline {4.3}Calculation methods}{112}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Results and discussion}{113}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Monolayer properties}{113}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Heterostructure}{114}{subsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.1}Structural properties}{114}{subsubsection.4.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.4.2.2}Charge density difference}{117}{subsubsection.4.4.2.2}%
+\contentsline {subsection}{\numberline {4.4.2}Heterostructure}{115}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Structural properties}{115}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}Charge density difference}{116}{subsubsection.4.4.2.2}%
 \contentsline {subsubsection}{\numberline {4.4.2.3}Band structure and density of states}{118}{subsubsection.4.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.4.2.4}Schottky barrier height}{120}{subsubsection.4.4.2.4}%
-\contentsline {subsection}{\numberline {4.4.3}Dielectric function}{120}{subsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.2.4}Schottky barrier height}{118}{subsubsection.4.4.2.4}%
+\contentsline {subsection}{\numberline {4.4.3}Dielectric function}{121}{subsection.4.4.3}%
 \contentsline {subsection}{\numberline {4.4.4}Derived optical properties}{125}{subsection.4.4.4}%
 \contentsline {section}{\numberline {4.5}Conclusions}{129}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Data availability statement}{131}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Supplementary information}{131}{section.4.7}%
-\contentsline {chapter}{\tocchapter {Chapter}{5}{Functional Properties of Penta-Bipyramid Boron Phases}}{147}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Abstract}{147}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Introduction}{148}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Computation methods}{151}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Results and discussion}{155}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Bulk o-\ce {B14}: atomic structure and electronic properties}{155}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Xene o-\ce {B14}: atomic structure and energetics}{155}{subsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.2.1}Structural properties}{155}{subsubsection.5.4.2.1}%
-\contentsline {subsubsection}{\numberline {5.4.2.2}Dynamic stability: phonon dispersion}{155}{subsubsection.5.4.2.2}%
-\contentsline {subsubsection}{\numberline {5.4.2.3}Electronic properties}{155}{subsubsection.5.4.2.3}%
-\contentsline {subsection}{\numberline {5.4.3}Superconducting properties}{155}{subsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.4.4}Optical properties}{155}{subsection.5.4.4}%
-\contentsline {section}{\numberline {5.5}Conclusions}{155}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Data availability statement}{155}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Supplementary information}{155}{section.5.7}%
-\contentsline {chapter}{\tocchapter {Chapter}{6}{Topological and Optical Properties of Beryllene Phases}}{163}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Abstract}{163}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Introduction}{163}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Computation methods}{163}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Results and discussion}{163}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Conclusions}{163}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Data availability statement}{163}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Supplementary information}{163}{section.6.7}%
-\contentsline {chapter}{\tocchapter {}{}{Appendix}}{164}{appendix*.59}%
+\contentsline {section}{\numberline {4.6}Data availability statement}{130}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Supplementary information}{130}{section.4.7}%
+\contentsline {chapter}{\tocchapter {Chapter}{5}{Functional Properties of Penta-Bipyramid Boron Phases}}{145}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Abstract}{145}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Introduction}{146}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Computation methods}{149}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Results and discussion}{152}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Bulk o-\ce {B14}: atomic structure and electronic properties}{152}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Xene o-\ce {B14}: atomic structure and energetics}{152}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}Structural properties}{152}{subsubsection.5.4.2.1}%
+\contentsline {subsubsection}{\numberline {5.4.2.2}Dynamic stability: phonon dispersion}{152}{subsubsection.5.4.2.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.3}Electronic properties}{152}{subsubsection.5.4.2.3}%
+\contentsline {subsection}{\numberline {5.4.3}Superconducting properties}{152}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Optical properties}{152}{subsection.5.4.4}%
+\contentsline {section}{\numberline {5.5}Conclusions}{152}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Data availability statement}{152}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Supplementary information}{152}{section.5.7}%
+\contentsline {chapter}{\tocchapter {Chapter}{6}{Topological and Optical Properties of Beryllene Phases}}{159}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Abstract}{159}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Introduction}{159}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Computation methods}{159}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Results and discussion}{159}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Conclusions}{159}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Data availability statement}{159}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Supplementary information}{159}{section.6.7}%
+\contentsline {chapter}{\tocchapter {}{}{Bibliography}}{160}{chapter*.59}%
+\contentsline {chapter}{\tocchapter {}{}{Appendix}}{177}{appendix*.60}%
