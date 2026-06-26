@@ -9124,6 +9124,150 @@
       \field{pages}{17057\bibrangedash 17067}
       \range{pages}{11}
     \endentry
+    \entry{liu2016continuum}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=5b32d3cb374ea13d5441b19af42aebb9}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7d9a898612df9cea1bcdc19fd5dcd9d4}{%
+           family={Every},
+           familyi={E\bibinitperiod},
+           given={Arthur\bibnamedelima G},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=09eb3ba39ac2db5d700c84065a8886ab}{%
+           family={Tománek},
+           familyi={T\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{71f74a9ed2bfbecb598bac8427bd4f18}
+      \strng{fullhash}{71f74a9ed2bfbecb598bac8427bd4f18}
+      \strng{fullhashraw}{71f74a9ed2bfbecb598bac8427bd4f18}
+      \strng{bibnamehash}{71f74a9ed2bfbecb598bac8427bd4f18}
+      \strng{authorbibnamehash}{71f74a9ed2bfbecb598bac8427bd4f18}
+      \strng{authornamehash}{71f74a9ed2bfbecb598bac8427bd4f18}
+      \strng{authorfullhash}{71f74a9ed2bfbecb598bac8427bd4f18}
+      \strng{authorfullhashraw}{71f74a9ed2bfbecb598bac8427bd4f18}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{16}
+      \field{title}{Continuum approach for long-wavelength acoustic phonons in quasi-two-dimensional structures}
+      \field{volume}{94}
+      \field{year}{2016}
+      \field{pages}{165432}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.94.165432
+      \endverb
+    \endentry
+    \entry{querne2023crystal}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=ea95d55c5ec7853e45d893182609fcba}{%
+           family={Querne},
+           familyi={Q\bibinitperiod},
+           given={Mateus\bibnamedelima BP},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=b705f37c4dd992dad8d62f2d82b4c98b}{%
+           family={Bracht},
+           familyi={B\bibinitperiod},
+           given={Jean\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9c624c0bbd0f9e004afacb5f2c38186f}{%
+           family={Da\bibnamedelima Silva},
+           familyi={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Juarez\bibnamedelima LF},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=1bf44a187068614093c9afa6cb8eaa9b}{%
+           family={Janotti},
+           familyi={J\bibinitperiod},
+           given={Anderson},
+           giveni={A\bibinitperiod}}}%
+        {{hash=94c9dd8e8aa76025027600e474db4d42}{%
+           family={Lima},
+           familyi={L\bibinitperiod},
+           given={Matheus\bibnamedelima P},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{28894beac1ed7d67eb659bb7b772b6cf}
+      \strng{fullhash}{ad3b11d0f89d0b785a15e7c5b837f658}
+      \strng{fullhashraw}{ad3b11d0f89d0b785a15e7c5b837f658}
+      \strng{bibnamehash}{28894beac1ed7d67eb659bb7b772b6cf}
+      \strng{authorbibnamehash}{28894beac1ed7d67eb659bb7b772b6cf}
+      \strng{authornamehash}{28894beac1ed7d67eb659bb7b772b6cf}
+      \strng{authorfullhash}{ad3b11d0f89d0b785a15e7c5b837f658}
+      \strng{authorfullhashraw}{ad3b11d0f89d0b785a15e7c5b837f658}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{8}
+      \field{title}{Crystal structure and electrical and optical properties of two-dimensional group-IV monochalcogenides}
+      \field{volume}{108}
+      \field{year}{2023}
+      \field{pages}{085409}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.108.085409
+      \endverb
+    \endentry
+    \entry{pallikara2022physical}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=2fc7986c3c206ccbbd02356943f352c7}{%
+           family={Pallikara},
+           familyi={P\bibinitperiod},
+           given={Ioanna},
+           giveni={I\bibinitperiod}}}%
+        {{hash=91b402aed61552895fb5ad204abf12c4}{%
+           family={Kayastha},
+           familyi={K\bibinitperiod},
+           given={Prakriti},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a589d072a8b9695390e610f1c4efb587}{%
+           family={Skelton},
+           familyi={S\bibinitperiod},
+           given={Jonathan\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c563730053384278d3054e07042079e3}{%
+           family={Whalley},
+           familyi={W\bibinitperiod},
+           given={Lucy\bibnamedelima D},
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{004f9850f92ebf73da6b1373498a785e}
+      \strng{fullhash}{c5d27c2124a7198091e7e827af3830d0}
+      \strng{fullhashraw}{c5d27c2124a7198091e7e827af3830d0}
+      \strng{bibnamehash}{004f9850f92ebf73da6b1373498a785e}
+      \strng{authorbibnamehash}{004f9850f92ebf73da6b1373498a785e}
+      \strng{authornamehash}{004f9850f92ebf73da6b1373498a785e}
+      \strng{authorfullhash}{c5d27c2124a7198091e7e827af3830d0}
+      \strng{authorfullhashraw}{c5d27c2124a7198091e7e827af3830d0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Electronic Structure}
+      \field{number}{3}
+      \field{title}{The physical significance of imaginary phonon modes in crystals}
+      \field{volume}{4}
+      \field{year}{2022}
+      \field{pages}{033002}
+      \range{pages}{1}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

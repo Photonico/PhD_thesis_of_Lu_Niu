@@ -2756,6 +2756,12 @@
     <bcf:citekey order="207" intorder="2">laturia2018dielectric</bcf:citekey>
     <bcf:citekey order="208" intorder="1">yang2021method</bcf:citekey>
     <bcf:citekey order="209" intorder="1">li2017first</bcf:citekey>
+    <bcf:citekey order="210" intorder="1">liu2016continuum</bcf:citekey>
+    <bcf:citekey order="210" intorder="2">querne2023crystal</bcf:citekey>
+    <bcf:citekey order="210" intorder="3">pallikara2022physical</bcf:citekey>
+    <bcf:citekey order="211" intorder="1">liu2016continuum</bcf:citekey>
+    <bcf:citekey order="211" intorder="2">querne2023crystal</bcf:citekey>
+    <bcf:citekey order="211" intorder="3">pallikara2022physical</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

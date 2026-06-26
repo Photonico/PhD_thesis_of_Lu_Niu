@@ -1,77 +1,7 @@
 % Supplementary information for Project 2.
 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{fig-coh-en-k-ecut.eps}
-    \caption{
-    Cohesive energy per atom as a function of plane-wave energy cutoff and k-point set for bulk o-\ce{B14}.
-    }
-    \label{fig:S2.2}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{fig-new-E-versus-vacuum.eps}
-    \caption{
-    Total energy as a function of vacuum-region thickness.
-    }
-    \label{fig:S2.3}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1.0\linewidth]{fig-new-dielec-func-convergence-2.eps}
-    \caption{
-    In-plane and out-of-plane components of the real and imaginary parts of the dielectric function of o-\ce{B14},
-    calculated with various k-point sets.
-    }
-    \label{fig:S2.4}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1.0\linewidth]{fig-new-dielec-func-convergence-2.eps}
-    \caption{
-    In-plane and out-of-plane components of the real and imaginary parts of the dielectric function of bulk o-\ce{B14},
-    calculated with different numbers of unoccupied states included in the calculation,
-    as denoted by the parameter \texttt{NBANDS}.
-    }
-    \label{fig:S2.5}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\linewidth]{Layer-thickness.eps}
-    \caption{
-    Definition of the layer thickness used in the renormalization of the dielectric function,
-    $D_{\mathrm{total}}\equiv d_{\mathrm{2D}}$.
-    }
-    \label{fig:S2.6}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.35\linewidth]{New-H-site.eps}
-    \caption{
-    Sketch of the hollow-bridge site,
-    indicated by the yellow cross,
-    for H adsorption on the monolayer and bilayer structures.
-    The black rectangle represents the unit cell.
-    }
-    \label{fig:S2.7}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{fig-phonon.eps}
-    \caption{
-    Phonon dispersion curves obtained using a $(2\times2)$ supercell.
-    }
-    \label{fig:S2.8}
-\end{figure}
-
-\begin{figure}[H]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.7\linewidth]{phonons-3x3-monolayer-bilayer.eps}
     \includegraphics[width=0.7\linewidth]{phonon-3x3-mono-bi-Hydrog.eps}
@@ -85,20 +15,20 @@
     such features are often found in 2D materials and do not by themselves indicate
     dynamical instability~\cite{liu2016continuum,querne2023crystal,pallikara2022physical}.
     }
-    \label{fig:S2.9}
+    \label{S2.9}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.9\linewidth]{AIMD-oB14.eps}
     \caption{
     \textit{Ab initio} molecular dynamics calculations for the H-terminated bilayer at \qty{400}{K}.
     The structure remains thermodynamically stable and exhibits only very small structural changes.
     }
-    \label{fig:S2.10}
+    \label{S2.10}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=1.0\linewidth]{fig-bands-HSE06-PBE-monolayer.eps}
     \caption{
@@ -109,29 +39,29 @@
     functionals.
     The Fermi energy is set to zero.
     }
-    \label{fig:S2.11}
+    \label{S2.11}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.9\linewidth]{fig-dos-all.eps}
     \caption{
     Total density of states (DOS) of the various structures as calculated using the PBE functional.
     }
-    \label{fig:S2.12}
+    \label{S2.12}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.7\linewidth]{fig-monolayer-HSE.eps}
     \caption{
     Non-spin-polarized band structure of the monolayer calculated using different functionals.
     The Fermi energy is set to zero.
     }
-    \label{fig:S2.13}
+    \label{S2.13}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.7\linewidth]{fig-bands-2x1.eps}
     \caption{
@@ -142,19 +72,19 @@
     The structure was subsequently fully relaxed,
     but the results remained unchanged and displayed no symmetry-lowering distortions.
     }
-    \label{fig:S2.14}
+    \label{S2.14}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.5\linewidth]{fig-spin-profiles.eps}
     \caption{
     Fixed-spin calculations for the FM monolayer as calculated using PBE+D3 and r$^{2}$SCAN.
     }
-    \label{fig:S2.15}
+    \label{S2.15}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.6\linewidth]{TDOS_FM_HSE06.eps}
     \includegraphics[width=0.6\linewidth]{TDOS_AFM_HSE06.eps}
@@ -165,10 +95,10 @@
     lower,
     monolayer structures as calculated using the HSE06 functional.
     }
-    \label{fig:S2.16}
+    \label{S2.16}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.8\linewidth]{fig-new-spin-state-densty.eps}
     \caption{
@@ -177,10 +107,10 @@
     (b) Corresponding spin density,
     with an isosurface value of \qty{0.005}{e\per\angstrom\cubed}.
     }
-    \label{fig:S2.17}
+    \label{S2.17}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=1.0\linewidth]{fig-new-6.3_extinction.eps}
     \caption{
@@ -188,5 +118,5 @@
     $yy$,
     and $zz$ directions.
     }
-    \label{fig:S2.18}
+    \label{S2.18}
 \end{figure}

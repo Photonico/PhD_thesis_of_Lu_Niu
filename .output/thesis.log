@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.6)  27 JUN 2026 02:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.6)  27 JUN 2026 03:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2164,29 +2164,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [151]
 
-LaTeX Warning: Reference `S2.3' on page 152 undefined on input line 317.
-
-
-LaTeX Warning: Reference `S2.4' on page 152 undefined on input line 318.
-
-
-LaTeX Warning: Reference `S2.5' on page 152 undefined on input line 319.
-
-
-LaTeX Warning: Reference `S2.6' on page 152 undefined on input line 320.
-
-
-LaTeX Warning: Reference `S2.7' on page 152 undefined on input line 323.
-
-
-
 [152]
-
-LaTeX Warning: Reference `S2.8' on page 153 undefined on input line 326.
-
-
-LaTeX Warning: Reference `S2.9' on page 153 undefined on input line 326.
-
 
 LaTeX Warning: Reference `S2.10' on page 153 undefined on input line 330.
 
@@ -2215,68 +2193,101 @@ LaTeX Warning: Reference `S2.17' on page 153 undefined on input line 341.
 LaTeX Warning: Reference `S2.18' on page 153 undefined on input line 342.
 
 
-LaTeX Warning: Reference `S2.6' on page 153 undefined on input line 369.
-
-
 Underfull \vbox (badness 1048) has occurred while \output is active []
 
 
 
 [153]
-<figures_proj2/S2.1a.pdf, id=4879, 722.7pt x 542.025pt>
+<figures_proj2/S2.1a.pdf, id=4894, 722.7pt x 542.025pt>
 File: figures_proj2/S2.1a.pdf Graphic file (type pdf)
 <use figures_proj2/S2.1a.pdf>
 Package pdftex.def Info: figures_proj2/S2.1a.pdf  used on input line 373.
-(pdftex.def)             Requested size: 195.58841pt x 146.68779pt.
-<figures_proj2/S2.1b.pdf, id=4880, 722.7pt x 433.62pt>
+(pdftex.def)             Requested size: 260.78896pt x 195.592pt.
+<figures_proj2/S2.1b.pdf, id=4895, 722.7pt x 433.62pt>
 File: figures_proj2/S2.1b.pdf Graphic file (type pdf)
 <use figures_proj2/S2.1b.pdf>
-Package pdftex.def Info: figures_proj2/S2.1b.pdf  used on input line 374.
-(pdftex.def)             Requested size: 195.58841pt x 117.35023pt.
-<figures_proj2/S2.2.pdf, id=4881, 722.7pt x 542.025pt>
+Package pdftex.def Info: figures_proj2/S2.1b.pdf  used on input line 375.
+(pdftex.def)             Requested size: 260.78896pt x 156.4736pt.
+<figures_proj2/S2.2.pdf, id=4896, 722.7pt x 542.025pt>
 File: figures_proj2/S2.2.pdf Graphic file (type pdf)
 <use figures_proj2/S2.2.pdf>
-Package pdftex.def Info: figures_proj2/S2.2.pdf  used on input line 382.
+Package pdftex.def Info: figures_proj2/S2.2.pdf  used on input line 383.
 (pdftex.def)             Requested size: 260.78896pt x 195.592pt.
+<figures_proj2/S2.3.pdf, id=4897, 722.7pt x 433.62pt>
+File: figures_proj2/S2.3.pdf Graphic file (type pdf)
+<use figures_proj2/S2.3.pdf>
+Package pdftex.def Info: figures_proj2/S2.3.pdf  used on input line 390.
+(pdftex.def)             Requested size: 260.78896pt x 156.4736pt.
+<figures_proj2/S2.4.pdf, id=4898, 1734.48pt x 867.24pt>
+File: figures_proj2/S2.4.pdf Graphic file (type pdf)
+<use figures_proj2/S2.4.pdf>
+Package pdftex.def Info: figures_proj2/S2.4.pdf  used on input line 397.
+(pdftex.def)             Requested size: 434.64386pt x 217.31232pt.
+<figures_proj2/S2.5.pdf, id=4899, 1734.48pt x 867.24pt>
+File: figures_proj2/S2.5.pdf Graphic file (type pdf)
+<use figures_proj2/S2.5.pdf>
+Package pdftex.def Info: figures_proj2/S2.5.pdf  used on input line 405.
+(pdftex.def)             Requested size: 434.64386pt x 217.31232pt.
+<figures_proj2/S2.6.png, id=4900, 722.7pt x 481.8pt>
+File: figures_proj2/S2.6.png Graphic file (type png)
+<use figures_proj2/S2.6.png>
+Package pdftex.def Info: figures_proj2/S2.6.png  used on input line 413.
+(pdftex.def)             Requested size: 260.78896pt x 173.85956pt.
+<figures_proj2/S2.7.png, id=4902, 963.6pt x 963.6pt>
+File: figures_proj2/S2.7.png Graphic file (type png)
+<use figures_proj2/S2.7.png>
+Package pdftex.def Info: figures_proj2/S2.7.png  used on input line 420.
+(pdftex.def)             Requested size: 260.78896pt x 260.77832pt.
+<figures_proj2/S2.8.pdf, id=4903, 722.7pt x 433.62pt>
+File: figures_proj2/S2.8.pdf Graphic file (type pdf)
+<use figures_proj2/S2.8.pdf>
+Package pdftex.def Info: figures_proj2/S2.8.pdf  used on input line 429.
+(pdftex.def)             Requested size: 260.78896pt x 156.4736pt.
+<figures_proj2/S2.9a.pdf, id=4904, 650.43pt x 433.62pt>
+File: figures_proj2/S2.9a.pdf Graphic file (type pdf)
+<use figures_proj2/S2.9a.pdf>
+Package pdftex.def Info: figures_proj2/S2.9a.pdf  used on input line 436.
+(pdftex.def)             Requested size: 195.58841pt x 130.39136pt.
+<figures_proj2/S2.9b.pdf, id=4905, 650.43pt x 433.62pt>
+File: figures_proj2/S2.9b.pdf Graphic file (type pdf)
+<use figures_proj2/S2.9b.pdf>
+Package pdftex.def Info: figures_proj2/S2.9b.pdf  used on input line 438.
+(pdftex.def)             Requested size: 195.58841pt x 130.39136pt.
+)
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[154 <./figures_proj2/S2.1a.pdf> <./figures_proj2/S2.1b.pdf>]
 
+[155 <./figures_proj2/S2.2.pdf> <./figures_proj2/S2.3.pdf>]
 
+[156 <./figures_proj2/S2.4.pdf> <./figures_proj2/S2.5.pdf>]
 
-[154 <./figures_proj2/S2.1a.pdf> <./figures_proj2/S2.1b.pdf>])
+[157 <./figures_proj2/S2.6.png> <./figures_proj2/S2.7.png>]
 
-[155 <./figures_proj2/S2.2.pdf>]
-
-[156
-
-
-] (./src/project_3.tex
+[158 <./figures_proj2/S2.8.pdf> <./figures_proj2/S2.9a.pdf> <./figures_proj2/S2.9b.pdf>] (./src/project_3.tex
 Overfull \hbox (25.94962pt too wide) in paragraph at lines 1--1
 \T1/lmr/bx/n/17.28 (-20) Pristine and Hydrogen-Functionalized Two-Dimensional
  []
 
 )
 
-[157
+[159
+
+
 
 ]
 Bibliography
 
 
-[158
+[160
 
 ]
 
-[159]
+[161]
 Overfull \hbox (27.27335pt too wide) in paragraph at lines 370--370
 []\T1/lmr/m/n/12 (-20) Piotr De Silva and To-masz A Weso-lowski. `  Pure-state non-in-ter-act-ing v-representability
  []
 
 
-
-[160]
-
-[161]
 
 [162]
 
@@ -2297,26 +2308,30 @@ Overfull \hbox (27.27335pt too wide) in paragraph at lines 370--370
 [170]
 
 [171]
+
+[172]
+
+[173]
 Overfull \hbox (13.97218pt too wide) in paragraph at lines 370--370
 []\T1/lmr/m/n/12 (-20) Chuang Hou et al. `  Ul-trastable crys-tal-line semi-con-duct-ing hy-dro-gen-ated borophene'.
  []
 
 
 
-[172]
+[174]
 Overfull \hbox (8.13083pt too wide) in paragraph at lines 370--370
 \T1/lmr/m/it/12 (-20) Phys-ical Re-view B Con-densed Mat-ter and Ma-ter-i-als Phys-ics \T1/lmr/m/n/12 (-20) 88.8 (2013), p. 085117. 
  []
 
 
 
-[173] (./src/appendix.tex
+[175] (./src/appendix.tex
 
-[174]
+[176]
 Appendix
 )
 
-[175
+[177
 
 ] (.output/thesis.aux)
  ***********
@@ -2328,24 +2343,24 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 6AA426169F5F6ED4484475CA776184C9;18944.
+(rerunfilecheck)             Checksum: E4AF1C38094503416C2AF448B22708B2;18944.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37302 strings out of 473190
- 750501 string characters out of 5715801
- 1633211 words of memory out of 5000000
- 58647 multiletter control sequences out of 15000+600000
- 650621 words of font info for 260 fonts, out of 8000000 for 9000
+ 37382 strings out of 473190
+ 753000 string characters out of 5715801
+ 1634938 words of memory out of 5000000
+ 58711 multiletter control sequences out of 15000+600000
+ 650823 words of font info for 262 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  94i,21n,131p,1035b,2889s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on .output/thesis.pdf (184 pages, 39733742 bytes).
+Output written on .output/thesis.pdf (186 pages, 42889597 bytes).
 PDF statistics:
- 5514 PDF objects out of 6186 (max. 8388607)
- 2942 compressed objects within 30 object streams
- 840 named destinations out of 1000 (max. 500000)
- 40409 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 5830 PDF objects out of 6186 (max. 8388607)
+ 3004 compressed objects within 31 object streams
+ 852 named destinations out of 1000 (max. 500000)
+ 40449 words of extra memory for PDF output out of 42996 (max. 10000000)
 
