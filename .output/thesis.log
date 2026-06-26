@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.6)  26 JUN 2026 12:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.6)  26 JUN 2026 12:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1096,43 +1096,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
- (.output/thesis.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                D3BJ2005
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                D3BJ2010
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                D3BJ2011
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                PBE-1996
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                kresse1994ef
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (.output/thesis.bbl)
 Package biblatex Info: Reference section=0 on input line 283.
 Package biblatex Info: Reference segment=0 on input line 283.
 Package microtype Info: Patching varwidth to enable character protrusion.
@@ -1722,4 +1686,567 @@ Package pdftex.def Info: figures_ch3/4.2_refractive_sized.pdf  used on input lin
 (pdftex.def)             Requested size: 412.91034pt x 154.83932pt.
 <figures_ch3/4.3_extinction_sized.pdf, id=1837, 1156.32pt x 433.62pt>
 File: figures_ch3/4.3_extinction_sized.pdf Graphic file (type pdf)
-<use fig
+<use figures_ch3/4.3_extinction_sized.pdf>
+Package pdftex.def Info: figures_ch3/4.3_extinction_sized.pdf  used on input line 1002.
+(pdftex.def)             Requested size: 412.91034pt x 154.83932pt.
+
+
+[101 <./figures_ch3/4.2_refractive_sized.pdf>]
+
+[102 <./figures_ch3/4.3_extinction_sized.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[103]
+<figures_ch3/4.4_reflectivity_sized.pdf, id=1984, 1156.32pt x 433.62pt>
+File: figures_ch3/4.4_reflectivity_sized.pdf Graphic file (type pdf)
+<use figures_ch3/4.4_reflectivity_sized.pdf>
+Package pdftex.def Info: figures_ch3/4.4_reflectivity_sized.pdf  used on input line 1087.
+(pdftex.def)             Requested size: 412.91034pt x 154.83932pt.
+
+
+[104 <./figures_ch3/4.4_reflectivity_sized.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[105]
+<figures_ch3/4.5_energy-loss_sized.pdf, id=2071, 1156.32pt x 433.62pt>
+File: figures_ch3/4.5_energy-loss_sized.pdf Graphic file (type pdf)
+<use figures_ch3/4.5_energy-loss_sized.pdf>
+Package pdftex.def Info: figures_ch3/4.5_energy-loss_sized.pdf  used on input line 1148.
+(pdftex.def)             Requested size: 412.91034pt x 154.83932pt.
+)
+Underfull \vbox (badness 2617) has occurred while \output is active []
+
+
+
+[106 <./figures_ch3/4.5_energy-loss_sized.pdf>]
+
+[107]
+
+[108
+
+
+] (./src/project_1.tex
+
+[109
+
+]
+Underfull \vbox (badness 4779) has occurred while \output is active []
+
+
+
+[110
+
+]
+
+Package siunitx Warning: Unit macro \angstrom has been deprecated in this
+(siunitx)                release.
+(siunitx)                
+(siunitx)                The BIPM have removed this unit from the SI Brochure.
+(siunitx)                You should define it yourself using \DeclareSIUnit in
+(siunitx)                your source. The current definition is
+(siunitx)                
+(siunitx)                \DeclareSIUnit\angstrom{\text {Å}}
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[111]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[112]
+<figures_proj1/proj1.1.pdf, id=2228, 4537.95375pt x 2865.95718pt>
+File: figures_proj1/proj1.1.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.1.pdf>
+Package pdftex.def Info: figures_proj1/proj1.1.pdf  used on input line 174.
+(pdftex.def)             Requested size: 347.7164pt x 219.573pt.
+<figures_proj1/proj1.3a.pdf, id=2236, 722.7pt x 433.62pt>
+File: figures_proj1/proj1.3a.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.3a.pdf>
+Package pdftex.def Info: figures_proj1/proj1.3a.pdf  used on input line 234.
+(pdftex.def)             Requested size: 173.85489pt x 104.30911pt.
+<figures_proj1/proj1.3b.pdf, id=2237, 722.7pt x 433.62pt>
+File: figures_proj1/proj1.3b.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.3b.pdf>
+Package pdftex.def Info: figures_proj1/proj1.3b.pdf  used on input line 235.
+(pdftex.def)             Requested size: 173.85489pt x 104.30911pt.
+<figures_proj1/proj1.3c.pdf, id=2238, 722.7pt x 433.62pt>
+File: figures_proj1/proj1.3c.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.3c.pdf>
+Package pdftex.def Info: figures_proj1/proj1.3c.pdf  used on input line 237.
+(pdftex.def)             Requested size: 173.85489pt x 104.30911pt.
+<figures_proj1/proj1.3d.pdf, id=2239, 722.7pt x 433.62pt>
+File: figures_proj1/proj1.3d.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.3d.pdf>
+Package pdftex.def Info: figures_proj1/proj1.3d.pdf  used on input line 238.
+(pdftex.def)             Requested size: 173.85489pt x 104.30911pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[113]
+
+[114 <./figures_proj1/proj1.1.pdf>]
+<figures_proj1/proj1.3.pdf, id=2268, 6778.32375pt x 1504.8722pt>
+File: figures_proj1/proj1.3.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.3.pdf>
+Package pdftex.def Info: figures_proj1/proj1.3.pdf  used on input line 271.
+(pdftex.def)             Requested size: 434.64386pt x 96.4883pt.
+
+
+[115 <./figures_proj1/proj1.3a.pdf> <./figures_proj1/proj1.3b.pdf> <./figures_proj1/proj1.3c.pdf> <./figures_proj1/proj1.3d.pdf>]
+<figures_proj1/proj1.4.pdf, id=2460, 4537.95375pt x 2865.95718pt>
+File: figures_proj1/proj1.4.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.4.pdf>
+Package pdftex.def Info: figures_proj1/proj1.4.pdf  used on input line 351.
+(pdftex.def)             Requested size: 434.64386pt x 274.49904pt.
+
+
+[116 <./figures_proj1/proj1.3.pdf>]
+Underfull \vbox (badness 6236) has occurred while \output is active []
+
+
+
+[117 <./figures_proj1/proj1.4.pdf>]
+<figures_proj1/proj1.5.pdf, id=2496, 867.24pt x 433.62pt>
+File: figures_proj1/proj1.5.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.5.pdf>
+Package pdftex.def Info: figures_proj1/proj1.5.pdf  used on input line 394.
+(pdftex.def)             Requested size: 347.7164pt x 173.86176pt.
+<figures_proj1/proj1.6.pdf, id=2497, 867.24pt x 433.62pt>
+File: figures_proj1/proj1.6.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.6.pdf>
+Package pdftex.def Info: figures_proj1/proj1.6.pdf  used on input line 401.
+(pdftex.def)             Requested size: 347.7164pt x 173.86176pt.
+<figures_proj1/proj1.7.pdf, id=2498, 867.24pt x 433.62pt>
+File: figures_proj1/proj1.7.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.7.pdf>
+Package pdftex.def Info: figures_proj1/proj1.7.pdf  used on input line 408.
+(pdftex.def)             Requested size: 347.7164pt x 173.86176pt.
+
+
+[118]
+
+[119 <./figures_proj1/proj1.5.pdf> <./figures_proj1/proj1.6.pdf> <./figures_proj1/proj1.7.pdf>]
+<figures_proj1/proj1.8a.pdf, id=2671, 867.24pt x 289.08pt>
+File: figures_proj1/proj1.8a.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.8a.pdf>
+Package pdftex.def Info: figures_proj1/proj1.8a.pdf  used on input line 446.
+(pdftex.def)             Requested size: 195.58841pt x 65.19456pt.
+<figures_proj1/proj1.8b.pdf, id=2672, 578.16pt x 433.62pt>
+File: figures_proj1/proj1.8b.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.8b.pdf>
+Package pdftex.def Info: figures_proj1/proj1.8b.pdf  used on input line 447.
+(pdftex.def)             Requested size: 173.85489pt x 130.39136pt.
+
+
+[120 <./figures_proj1/proj1.8a.pdf> <./figures_proj1/proj1.8b.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[121]
+<figures_proj1/proj1.9.pdf, id=2811, 1156.32pt x 867.24pt>
+File: figures_proj1/proj1.9.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.9.pdf>
+Package pdftex.def Info: figures_proj1/proj1.9.pdf  used on input line 519.
+(pdftex.def)             Requested size: 347.7164pt x 260.78273pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[122]
+Underfull \vbox (badness 1038) has occurred while \output is active []
+
+
+
+[123 <./figures_proj1/proj1.9.pdf>]
+<figures_proj1/proj1.10_diff.pdf, id=2872, 1734.48pt x 867.24pt>
+File: figures_proj1/proj1.10_diff.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.10_diff.pdf>
+Package pdftex.def Info: figures_proj1/proj1.10_diff.pdf  used on input line 564.
+(pdftex.def)             Requested size: 434.64386pt x 217.31232pt.
+
+
+[124 <./figures_proj1/proj1.10_diff.pdf>]
+<figures_proj1/proj1.11_diff.pdf, id=2935, 1734.48pt x 867.24pt>
+File: figures_proj1/proj1.11_diff.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.11_diff.pdf>
+Package pdftex.def Info: figures_proj1/proj1.11_diff.pdf  used on input line 604.
+(pdftex.def)             Requested size: 434.64386pt x 217.31232pt.
+
+Underfull \vbox (badness 5274) has occurred while \output is active []
+
+
+
+[125]
+<figures_proj1/proj1.12a.pdf, id=2946, 1156.32pt x 433.62pt>
+File: figures_proj1/proj1.12a.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.12a.pdf>
+Package pdftex.def Info: figures_proj1/proj1.12a.pdf  used on input line 630.
+(pdftex.def)             Requested size: 347.7164pt x 130.39136pt.
+<figures_proj1/proj1.12b.pdf, id=2947, 1156.32pt x 433.62pt>
+File: figures_proj1/proj1.12b.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.12b.pdf>
+Package pdftex.def Info: figures_proj1/proj1.12b.pdf  used on input line 632.
+(pdftex.def)             Requested size: 347.7164pt x 130.39136pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[126 <./figures_proj1/proj1.11_diff.pdf>]
+<figures_proj1/proj1.13a_cor.pdf, id=3006, 1156.32pt x 433.62pt>
+File: figures_proj1/proj1.13a_cor.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.13a_cor.pdf>
+Package pdftex.def Info: figures_proj1/proj1.13a_cor.pdf  used on input line 665.
+(pdftex.def)             Requested size: 347.7164pt x 130.39136pt.
+<figures_proj1/proj1.13b.pdf, id=3007, 1156.32pt x 433.62pt>
+File: figures_proj1/proj1.13b.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.13b.pdf>
+Package pdftex.def Info: figures_proj1/proj1.13b.pdf  used on input line 667.
+(pdftex.def)             Requested size: 347.7164pt x 130.39136pt.
+
+Underfull \vbox (badness 1038) has occurred while \output is active []
+
+
+
+[127 <./figures_proj1/proj1.12a.pdf> <./figures_proj1/proj1.12b.pdf>]
+
+[128 <./figures_proj1/proj1.13a_cor.pdf> <./figures_proj1/proj1.13b.pdf>]
+<figures_proj1/proj1.14_cor.pdf, id=3209, 1156.32pt x 433.62pt>
+File: figures_proj1/proj1.14_cor.pdf Graphic file (type pdf)
+<use figures_proj1/proj1.14_cor.pdf>
+Package pdftex.def Info: figures_proj1/proj1.14_cor.pdf  used on input line 696.
+(pdftex.def)             Requested size: 347.7164pt x 130.39136pt.
+
+
+[129 <./figures_proj1/proj1.14_cor.pdf>]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 726.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+<figures_proj1/S1.1.pdf, id=3264, 722.7pt x 433.62pt>
+File: figures_proj1/S1.1.pdf Graphic file (type pdf)
+<use figures_proj1/S1.1.pdf>
+Package pdftex.def Info: figures_proj1/S1.1.pdf  used on input line 737.
+(pdftex.def)             Requested size: 260.78896pt x 156.4736pt.
+<figures_proj1/S1.2.pdf, id=3265, 1156.32pt x 867.24pt>
+File: figures_proj1/S1.2.pdf Graphic file (type pdf)
+<use figures_proj1/S1.2.pdf>
+Package pdftex.def Info: figures_proj1/S1.2.pdf  used on input line 744.
+(pdftex.def)             Requested size: 347.7164pt x 260.78273pt.
+<figures_proj1/S1.3.pdf, id=3266, 1734.48pt x 433.62pt>
+File: figures_proj1/S1.3.pdf Graphic file (type pdf)
+<use figures_proj1/S1.3.pdf>
+Package pdftex.def Info: figures_proj1/S1.3.pdf  used on input line 752.
+(pdftex.def)             Requested size: 434.64386pt x 108.65616pt.
+<figures_proj1/S1.4.pdf, id=3269, 3496.06125pt x 892.08281pt>
+File: figures_proj1/S1.4.pdf Graphic file (type pdf)
+<use figures_proj1/S1.4.pdf>
+Package pdftex.def Info: figures_proj1/S1.4.pdf  used on input line 763.
+(pdftex.def)             Requested size: 434.64386pt x 110.89752pt.
+<figures_proj1/S1.5.pdf, id=3270, 2326.19063pt x 1777.39032pt>
+File: figures_proj1/S1.5.pdf Graphic file (type pdf)
+<use figures_proj1/S1.5.pdf>
+Package pdftex.def Info: figures_proj1/S1.5.pdf  used on input line 770.
+(pdftex.def)             Requested size: 347.7164pt x 265.67494pt.
+<figures_proj1/S1.6.pdf, id=3271, 2326.19063pt x 1777.39032pt>
+File: figures_proj1/S1.6.pdf Graphic file (type pdf)
+<use figures_proj1/S1.6.pdf>
+Package pdftex.def Info: figures_proj1/S1.6.pdf  used on input line 777.
+(pdftex.def)             Requested size: 347.7164pt x 265.67494pt.
+
+
+[130
+
+ <./figures_proj1/S1.1.pdf>]
+
+[131 <./figures_proj1/S1.2.pdf> <./figures_proj1/S1.3.pdf>]
+
+[132 <./figures_proj1/S1.4.pdf> <./figures_proj1/S1.5.pdf
+
+pdfTeX warning: pdflatex (file ./figures_proj1/S1.5.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+
+[133 <./figures_proj1/S1.6.pdf>]
+<figures_proj1/S1.9.pdf, id=3469, 1734.48pt x 433.62pt>
+File: figures_proj1/S1.9.pdf Graphic file (type pdf)
+<use figures_proj1/S1.9.pdf>
+Package pdftex.def Info: figures_proj1/S1.9.pdf  used on input line 993.
+(pdftex.def)             Requested size: 434.64386pt x 108.65616pt.
+<figures_proj1/S1.10.pdf, id=3470, 1156.32pt x 867.24pt>
+File: figures_proj1/S1.10.pdf Graphic file (type pdf)
+<use figures_proj1/S1.10.pdf>
+Package pdftex.def Info: figures_proj1/S1.10.pdf  used on input line 1000.
+(pdftex.def)             Requested size: 347.7164pt x 260.78273pt.
+<figures_proj1/S1.11.pdf, id=3471, 1156.32pt x 867.24pt>
+File: figures_proj1/S1.11.pdf Graphic file (type pdf)
+<use figures_proj1/S1.11.pdf>
+Package pdftex.def Info: figures_proj1/S1.11.pdf  used on input line 1007.
+(pdftex.def)             Requested size: 347.7164pt x 260.78273pt.
+<figures_proj1/S1.12_alt.pdf, id=3472, 1156.32pt x 867.24pt>
+File: figures_proj1/S1.12_alt.pdf Graphic file (type pdf)
+<use figures_proj1/S1.12_alt.pdf>
+Package pdftex.def Info: figures_proj1/S1.12_alt.pdf  used on input line 1014.
+(pdftex.def)             Requested size: 347.7164pt x 260.78273pt.
+<figures_proj1/S1.13a.pdf, id=3473, 1156.32pt x 433.62pt>
+File: figures_proj1/S1.13a.pdf Graphic file (type pdf)
+<use figures_proj1/S1.13a.pdf>
+Package pdftex.def Info: figures_proj1/S1.13a.pdf  used on input line 1023.
+(pdftex.def)             Requested size: 347.7164pt x 130.39136pt.
+<figures_proj1/S1.13b.pdf, id=3474, 1156.32pt x 433.62pt>
+File: figures_proj1/S1.13b.pdf Graphic file (type pdf)
+<use figures_proj1/S1.13b.pdf>
+Package pdftex.def Info: figures_proj1/S1.13b.pdf  used on input line 1025.
+(pdftex.def)             Requested size: 347.7164pt x 130.39136pt.
+<figures_proj1/S1.13c.pdf, id=3475, 1156.32pt x 433.62pt>
+File: figures_proj1/S1.13c.pdf Graphic file (type pdf)
+<use figures_proj1/S1.13c.pdf>
+Package pdftex.def Info: figures_proj1/S1.13c.pdf  used on input line 1027.
+(pdftex.def)             Requested size: 347.7164pt x 130.39136pt.
+<figures_proj1/S1.13d.pdf, id=3476, 1156.32pt x 433.62pt>
+File: figures_proj1/S1.13d.pdf Graphic file (type pdf)
+<use figures_proj1/S1.13d.pdf>
+Package pdftex.def Info: figures_proj1/S1.13d.pdf  used on input line 1029.
+(pdftex.def)             Requested size: 347.7164pt x 130.39136pt.
+<figures_proj1/S1.14a.pdf, id=3477, 1734.48pt x 433.62pt>
+File: figures_proj1/S1.14a.pdf Graphic file (type pdf)
+<use figures_proj1/S1.14a.pdf>
+Package pdftex.def Info: figures_proj1/S1.14a.pdf  used on input line 1041.
+(pdftex.def)             Requested size: 434.64386pt x 108.65616pt.
+<figures_proj1/S1.14b.pdf, id=3478, 1734.48pt x 433.62pt>
+File: figures_proj1/S1.14b.pdf Graphic file (type pdf)
+<use figures_proj1/S1.14b.pdf>
+Package pdftex.def Info: figures_proj1/S1.14b.pdf  used on input line 1043.
+(pdftex.def)             Requested size: 434.64386pt x 108.65616pt.
+<figures_proj1/S1.14c.pdf, id=3479, 1734.48pt x 433.62pt>
+File: figures_proj1/S1.14c.pdf Graphic file (type pdf)
+<use figures_proj1/S1.14c.pdf>
+Package pdftex.def Info: figures_proj1/S1.14c.pdf  used on input line 1045.
+(pdftex.def)             Requested size: 434.64386pt x 108.65616pt.
+<figures_proj1/S1.14d.pdf, id=3480, 1734.48pt x 433.62pt>
+File: figures_proj1/S1.14d.pdf Graphic file (type pdf)
+<use figures_proj1/S1.14d.pdf>
+Package pdftex.def Info: figures_proj1/S1.14d.pdf  used on input line 1047.
+(pdftex.def)             Requested size: 434.64386pt x 108.65616pt.
+<figures_proj1/S1.14e_correct.pdf, id=3481, 1734.48pt x 433.62pt>
+File: figures_proj1/S1.14e_correct.pdf Graphic file (type pdf)
+<use figures_proj1/S1.14e_correct.pdf>
+Package pdftex.def Info: figures_proj1/S1.14e_correct.pdf  used on input line 1049.
+(pdftex.def)             Requested size: 434.64386pt x 108.65616pt.
+<figures_proj1/S1.15.pdf, id=3482, 1156.32pt x 867.24pt>
+File: figures_proj1/S1.15.pdf Graphic file (type pdf)
+<use figures_proj1/S1.15.pdf>
+Package pdftex.def Info: figures_proj1/S1.15.pdf  used on input line 1060.
+(pdftex.def)             Requested size: 347.7164pt x 260.78273pt.
+<figures_proj1/S1.16_alt.pdf, id=3484, 1156.32pt x 867.24pt>
+File: figures_proj1/S1.16_alt.pdf Graphic file (type pdf)
+<use figures_proj1/S1.16_alt.pdf>
+Package pdftex.def Info: figures_proj1/S1.16_alt.pdf  used on input line 1069.
+(pdftex.def)             Requested size: 347.7164pt x 260.78273pt.
+
+
+[134
+
+ <./figures_proj1/S1.9.pdf> <./figures_proj1/S1.10.pdf>]
+
+[135 <./figures_proj1/S1.11.pdf> <./figures_proj1/S1.12_alt.pdf>]
+
+[136 <./figures_proj1/S1.13a.pdf> <./figures_proj1/S1.13b.pdf> <./figures_proj1/S1.13c.pdf> <./figures_proj1/S1.13d.pdf>]
+
+[137 <./figures_proj1/S1.14a.pdf> <./figures_proj1/S1.14b.pdf> <./figures_proj1/S1.14c.pdf> <./figures_proj1/S1.14d.pdf> <./figures_proj1/S1.14e_correct.pdf>]
+<figures_proj1/S1.17_alt.pdf, id=4115, 1734.48pt x 1300.86pt>
+File: figures_proj1/S1.17_alt.pdf Graphic file (type pdf)
+<use figures_proj1/S1.17_alt.pdf>
+Package pdftex.def Info: figures_proj1/S1.17_alt.pdf  used on input line 1091.
+(pdftex.def)             Requested size: 369.44992pt x 277.07916pt.
+<figures_proj1/S1.18.pdf, id=4116, 1734.48pt x 1300.86pt>
+File: figures_proj1/S1.18.pdf Graphic file (type pdf)
+<use figures_proj1/S1.18.pdf>
+Package pdftex.def Info: figures_proj1/S1.18.pdf  used on input line 1098.
+(pdftex.def)             Requested size: 369.44992pt x 277.07916pt.
+<figures_proj1/S1.19.pdf, id=4117, 1734.48pt x 1300.86pt>
+File: figures_proj1/S1.19.pdf Graphic file (type pdf)
+<use figures_proj1/S1.19.pdf>
+Package pdftex.def Info: figures_proj1/S1.19.pdf  used on input line 1105.
+(pdftex.def)             Requested size: 369.44992pt x 277.07916pt.
+<figures_proj1/S1.20.pdf, id=4118, 1734.48pt x 1300.86pt>
+File: figures_proj1/S1.20.pdf Graphic file (type pdf)
+<use figures_proj1/S1.20.pdf>
+Package pdftex.def Info: figures_proj1/S1.20.pdf  used on input line 1112.
+(pdftex.def)             Requested size: 369.44992pt x 277.07916pt.
+<figures_proj1/S1.21.pdf, id=4119, 1734.48pt x 1300.86pt>
+File: figures_proj1/S1.21.pdf Graphic file (type pdf)
+<use figures_proj1/S1.21.pdf>
+Package pdftex.def Info: figures_proj1/S1.21.pdf  used on input line 1119.
+(pdftex.def)             Requested size: 369.44992pt x 277.07916pt.
+<figures_proj1/S1.22.pdf, id=4120, 1734.48pt x 1300.86pt>
+File: figures_proj1/S1.22.pdf Graphic file (type pdf)
+<use figures_proj1/S1.22.pdf>
+Package pdftex.def Info: figures_proj1/S1.22.pdf  used on input line 1126.
+(pdftex.def)             Requested size: 369.44992pt x 277.07916pt.
+<figures_proj1/S1.23_correct.pdf, id=4121, 1734.48pt x 1300.86pt>
+File: figures_proj1/S1.23_correct.pdf Graphic file (type pdf)
+<use figures_proj1/S1.23_correct.pdf>
+Package pdftex.def Info: figures_proj1/S1.23_correct.pdf  used on input line 1133.
+(pdftex.def)             Requested size: 369.44992pt x 277.07916pt.
+<figures_proj1/S1.24_correct.pdf, id=4122, 1734.48pt x 1300.86pt>
+File: figures_proj1/S1.24_correct.pdf Graphic file (type pdf)
+<use figures_proj1/S1.24_correct.pdf>
+Package pdftex.def Info: figures_proj1/S1.24_correct.pdf  used on input line 1140.
+(pdftex.def)             Requested size: 369.44992pt x 277.07916pt.
+)
+
+[138 <./figures_proj1/S1.15.pdf>]
+
+[139 <./figures_proj1/S1.16_alt.pdf>]
+
+[140 <./figures_proj1/S1.17_alt.pdf> <./figures_proj1/S1.18.pdf>]
+
+[141 <./figures_proj1/S1.19.pdf> <./figures_proj1/S1.20.pdf>]
+
+[142 <./figures_proj1/S1.21.pdf> <./figures_proj1/S1.22.pdf>]
+
+[143 <./figures_proj1/S1.23_correct.pdf> <./figures_proj1/S1.24_correct.pdf>]
+
+[144
+
+
+] (./src/project_2.tex
+
+[145
+
+]
+Underfull \vbox (badness 4779) has occurred while \output is active []
+
+
+
+[146
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[147]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[148]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[149]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[150]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[151])
+
+[152] (./src/project_3.tex)
+
+[153
+
+
+
+]
+Bibliography
+
+
+[154
+
+]
+
+[155]
+Overfull \hbox (27.27335pt too wide) in paragraph at lines 354--354
+[]\T1/lmr/m/n/12 (-20) Piotr De Silva and To-masz A Weso-lowski. `  Pure-state non-in-ter-act-ing v-representability
+ []
+
+
+
+[156]
+
+[157]
+
+[158]
+
+[159]
+
+[160]
+
+[161]
+
+[162]
+
+[163]
+
+[164]
+
+[165]
+Overfull \hbox (13.97218pt too wide) in paragraph at lines 354--354
+[]\T1/lmr/m/n/12 (-20) Chuang Hou et al. `  Ul-trastable crys-tal-line semi-con-duct-ing hy-dro-gen-ated borophene'.
+ []
+
+
+Overfull \hbox (5.85136pt too wide) in paragraph at lines 354--354
+\T1/lmr/m/it/12 (-20) Phys-ical Re-view B Con-densed Mat-ter and Ma-ter-i-als Phys-ics \T1/lmr/m/n/12 (-20) 88.8 (2013), p. 085117. 
+ []
+
+
+
+[166] (./src/appendix.tex
+
+[167]
+Appendix
+)
+
+[168
+
+] (.output/thesis.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: E9D5DC49C89DC46C8DDB8E85C1C20EDB;17755.
+Package logreq Info: Writing requests to 'thesis.run.xml'.
+\openout1 = `thesis.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 37221 strings out of 473190
+ 749184 string characters out of 5715801
+ 1632462 words of memory out of 5000000
+ 58593 multiletter control sequences out of 15000+600000
+ 644267 words of font info for 254 fonts, out of 8000000 for 9000
+ 1302 hyphenation exceptions out of 8191
+ 94i,21n,131p,1035b,2889s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on .output/thesis.pdf (177 pages, 39643132 bytes).
+PDF statistics:
+ 5168 PDF objects out of 6186 (max. 8388607)
+ 2758 compressed objects within 28 object streams
+ 823 named destinations out of 1000 (max. 500000)
+ 36266 words of extra memory for PDF output out of 42996 (max. 10000000)
+

@@ -7920,6 +7920,127 @@
       \field{pages}{14251}
       \range{pages}{1}
     \endentry
+    \entry{becke2005density}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=f527507fc8054400b1e8bd22392330ae}{%
+           family={Becke},
+           familyi={B\bibinitperiod},
+           given={Axel\bibnamedelima D},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=ddd67ce43e2368ad796232bdf659874d}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Erin\bibnamedelima R},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{38dc4feec9177065288e61fda1878c21}
+      \strng{fullhash}{38dc4feec9177065288e61fda1878c21}
+      \strng{fullhashraw}{38dc4feec9177065288e61fda1878c21}
+      \strng{bibnamehash}{38dc4feec9177065288e61fda1878c21}
+      \strng{authorbibnamehash}{38dc4feec9177065288e61fda1878c21}
+      \strng{authornamehash}{38dc4feec9177065288e61fda1878c21}
+      \strng{authorfullhash}{38dc4feec9177065288e61fda1878c21}
+      \strng{authorfullhashraw}{38dc4feec9177065288e61fda1878c21}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{154101}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{number}{15}
+      \field{title}{A density-functional model of the dispersion interaction}
+      \field{volume}{123}
+      \field{year}{2005}
+    \endentry
+    \entry{grimme2010consistent}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=3a2585af369dbd4150db746c63177b0c}{%
+           family={Grimme},
+           familyi={G\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9ea89f28c9ac3083757e980d0b4a8fec}{%
+           family={Antony},
+           familyi={A\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c1a85a74b8b1d9992721d20377d7f50f}{%
+           family={Ehrlich},
+           familyi={E\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=46ef1d196909f4706f09f9180d33ab91}{%
+           family={Krieg},
+           familyi={K\bibinitperiod},
+           given={Helge},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{7f2c045e27c631b672c2213391161e48}
+      \strng{fullhash}{e1a418c5d65690d89c4609d3b99952c2}
+      \strng{fullhashraw}{e1a418c5d65690d89c4609d3b99952c2}
+      \strng{bibnamehash}{7f2c045e27c631b672c2213391161e48}
+      \strng{authorbibnamehash}{7f2c045e27c631b672c2213391161e48}
+      \strng{authornamehash}{7f2c045e27c631b672c2213391161e48}
+      \strng{authorfullhash}{e1a418c5d65690d89c4609d3b99952c2}
+      \strng{authorfullhashraw}{e1a418c5d65690d89c4609d3b99952c2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{154104}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{number}{15}
+      \field{title}{A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu}
+      \field{volume}{132}
+      \field{year}{2010}
+    \endentry
+    \entry{grimme2011effect}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=3a2585af369dbd4150db746c63177b0c}{%
+           family={Grimme},
+           familyi={G\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c1a85a74b8b1d9992721d20377d7f50f}{%
+           family={Ehrlich},
+           familyi={E\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7cb60366f9b8a050856b7dcdde43b066}{%
+           family={Goerigk},
+           familyi={G\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{a4b6041b0a755ed3bf5baedebafa62a0}
+      \strng{fullhash}{a4b6041b0a755ed3bf5baedebafa62a0}
+      \strng{fullhashraw}{a4b6041b0a755ed3bf5baedebafa62a0}
+      \strng{bibnamehash}{a4b6041b0a755ed3bf5baedebafa62a0}
+      \strng{authorbibnamehash}{a4b6041b0a755ed3bf5baedebafa62a0}
+      \strng{authornamehash}{a4b6041b0a755ed3bf5baedebafa62a0}
+      \strng{authorfullhash}{a4b6041b0a755ed3bf5baedebafa62a0}
+      \strng{authorfullhashraw}{a4b6041b0a755ed3bf5baedebafa62a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Chemistry}
+      \field{number}{7}
+      \field{title}{Effect of the damping function in dispersion corrected density functional theory}
+      \field{volume}{32}
+      \field{year}{2011}
+      \field{pages}{1456\bibrangedash 1465}
+      \range{pages}{10}
+    \endentry
     \entry{giannozzi2009quantum}{article}{}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -8656,11 +8777,6 @@
       \range{pages}{11}
     \endentry
   \enddatalist
-  \missing{D3BJ2005}
-  \missing{D3BJ2010}
-  \missing{D3BJ2011}
-  \missing{PBE-1996}
-  \missing{kresse1994ef}
 \endrefsection
 \endinput
 
