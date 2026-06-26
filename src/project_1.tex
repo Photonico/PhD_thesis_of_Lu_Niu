@@ -95,7 +95,7 @@ We perform first-principles calculations using density functional theory (DFT) a
 Projector augmented wave (PAW) pseudopotentials account for the electron-ion interactions~\cite{kresse1999ultrasoft}.
 For the structural optimization calculations, we use the generalized gradient approximation (GGA) of Perdew-Burke-Ernzerhof (PBE) as the exchange-correlation functional.
 The Becke-Johnson damped D3(BJ) dispersion correction accounts for long-range van der Waals (vdW) interactions.
-The structural calculations use a $\Gamma$-centered $\vec{k}$-point sampling mesh of $11 \times 11 \times 1$, except for the smaller graphene unit cell shown in figure~\ref{fig1.1}, for which a denser mesh of $23 \times 23 \times 1$ is used.
+The structural calculations use a $\Gamma$-centered k-point sampling mesh of $11 \times 11 \times 1$, except for the smaller graphene unit cell shown in figure~\ref{fig1.1}, for which a denser mesh of $23 \times 23 \times 1$ is used.
 Here, the plane-wave energy cutoff is set to \qty{450}{\electronvolt}.
 The electronic convergence criterion is set to \qty{1e-6}{\electronvolt}, and the systems are allowed to relax until all forces on each atom are below \qty{0.01}{\electronvolt\per\angstrom}.
 For smearing at the Fermi level,
@@ -106,10 +106,10 @@ the PBE exchange-correlation functional is known to underestimate band gap energ
 Therefore, we also use the screened hybrid exchange-correlation functional of Heyd, Scuseria, and Ernzerhof (HSE06),
 which gives more accurate band gap energies~\cite{sassnick2021electronic, heyd2003hybrid, krukau2006influence}.
 
-All density of states (DoS) calculations use a $\Gamma$-centered $\vec{k}$-point sampling mesh of $33 \times 33 \times 1$,
+All density of states (DoS) calculations use a $\Gamma$-centered k-point sampling mesh of $33 \times 33 \times 1$,
 with smearing at the Fermi level calculated using the Gaussian method and a broadening value of \qty{0.1}{\electronvolt}.
 The HSE06 exchange-correlation functional is also used for the calculation of optical properties,
-in particular, the frequency-dependent dielectric function with $\Gamma$-centered $\vec{k}$-point sampling meshes of $17 \times 17 \times 1$ and $65 \times 65 \times 1$.
+in particular, the frequency-dependent dielectric function with $\Gamma$-centered k-point sampling meshes of $17 \times 17 \times 1$ and $65 \times 65 \times 1$.
 The complex frequency-dependent dielectric function, $\varepsilon(\omega)$,
 is given by equation~\ref{complex_dielectric_function_definition};
 here, $\varepsilon_{1}(\omega)$ and $\varepsilon_{2}(\omega)$ are the real and imaginary parts, respectively, and $\omega$ denotes the photon energy in \unit{\electronvolt}.
@@ -462,9 +462,9 @@ The real part of the frequency-dependent dielectric function $\varepsilon_1(\ome
 whereas the imaginary part $\varepsilon_2(\omega)$ describes light absorption from neutral and plasmonic charge excitations.
 A negative value of $\varepsilon_1(\omega)$ indicates metallic character in the optical response over the corresponding photon-energy range.
 
-It is first important to establish the appropriate $\vec{k}$-point set to yield converged results.
-For graphene, we test a number of $\vec{k}$-point meshes and find that a $129 \times 129 \times 1$ mesh gives converged results, as shown in figure~\ref{S1.12}, in good agreement with previous results~\cite{warmbier2016}.
-We therefore use this $\vec{k}$-point sampling density for the other single monolayers, whose unit cells are $2 \times 2$ relative to graphene, namely a $65 \times 65 \times 1$ $\vec{k}$-point mesh.
+It is first important to establish the appropriate k-point set to yield converged results.
+For graphene, we test a number of k-point meshes and find that a $129 \times 129 \times 1$ mesh gives converged results, as shown in figure~\ref{S1.12}, in good agreement with previous results~\cite{warmbier2016}.
+We therefore use this k-point sampling density for the other single monolayers, whose unit cells are $2 \times 2$ relative to graphene, namely a $65 \times 65 \times 1$ k-point mesh.
 The dielectric functions for all the monolayers are shown in figure~\ref{S1.13}, where the results are consistent with previous calculations, namely graphene~\cite{warmbier2016}, \ce{BC3}~\cite{chen2019plasmon,mortazavi2019outstanding}, \ce{B4C3}~\cite{chang2019b4c3}, and borophene~\cite{huang2017,li2017first}.
 
 The anisotropic in-plane and out-of-plane components of the dielectric function show that the optical response depends strongly on the polarization direction of the incoming light.
@@ -730,12 +730,12 @@ The original data presented in this chapter are openly available from the GitHub
 
 The supplementary information presents the lattice-parameter determination for the graphene, borophene, \ce{BC3}, and \ce{B4C3} monolayers,
 as well as the corresponding results for the associated heterostructure bilayers under various relative lateral displacements.
-It also provides $\vec{k}$-point mesh convergence tests, projected densities of states, dielectric function convergence tests, and derived optical properties for the monolayer and bilayer systems investigated.
+It also provides k-point mesh convergence tests, projected densities of states, dielectric function convergence tests, and derived optical properties for the monolayer and bilayer systems investigated.
 
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=0.6\textwidth]{figures_proj1/S1.1.pdf}
-    \caption{Total energy versus the $\vec{k}$-point mesh used to sample the Brillouin zone for the Graphene-\ce{BC3} bilayer; here, $\mathrm{X}$ denotes an $\mathrm{X} \times \mathrm{X} \times 1$~$\vec{k}$-point mesh.}
+    \caption{Total energy versus the k-point mesh used to sample the Brillouin zone for the Graphene-\ce{BC3} bilayer; here, $\mathrm{X}$ denotes an $\mathrm{X} \times \mathrm{X} \times 1$~k-point mesh.}
 \label{S1.1}
 \end{figure}
 
@@ -1012,9 +1012,9 @@ In addition, figures~\ref{S1.9}--\ref{S1.11} show the projected densities of sta
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=0.80\textwidth]{figures_proj1/S1.12_alt.pdf}
-\caption{Dielectric function of graphene calculated using the PBE functional for different $\vec{k}$-point meshes;
+\caption{Dielectric function of graphene calculated using the PBE functional for different k-point meshes;
 here, for example,
-$33$ denotes a $33 \times 33 \times 1$ $\vec{k}$-point mesh.}
+$33$ denotes a $33 \times 33 \times 1$ k-point mesh.}
 \label{S1.12}
 \end{figure}
 
@@ -1030,9 +1030,9 @@ $33$ denotes a $33 \times 33 \times 1$ $\vec{k}$-point mesh.}
 \caption{Real and imaginary parts of the dielectric function
 for the four monolayers as calculated using the PBE functional with a
 $129\times 129\times 1$
-$\vec{k}$-point mesh for graphene,
+k-point mesh for graphene,
 and a $65\times 65\times 1$
-$\vec{k}$-point mesh for the borophene and boron-carbide monolayers..}
+k-point mesh for the borophene and boron-carbide monolayers..}
 \label{S1.13}
 \end{figure}
 
@@ -1049,9 +1049,9 @@ $\vec{k}$-point mesh for the borophene and boron-carbide monolayers..}
     \includegraphics[width=1.0\linewidth]{figures_proj1/S1.14e_correct.pdf}
 \caption{Optical properties for the four monolayers as calculated using the PBE functional with a
 $129\times 129\times 1$
-$\vec{k}$-point mesh for graphene,
+k-point mesh for graphene,
 and a $65\times 65\times 1$
-$\vec{k}$-point mesh for the borophene and boron-carbide monolayers.}
+k-point mesh for the borophene and boron-carbide monolayers.}
 \label{S1.14}
 \end{figure}
 
@@ -1062,12 +1062,12 @@ $\vec{k}$-point mesh for the borophene and boron-carbide monolayers.}
 \label{S1.15}
 \end{figure}
 
-Figure~\ref{S1.16} also shows the effect of the energy convergence criterion \texttt{EDIFF} on the calculated dielectric function, together with the effects of different $\vec{k}$-point meshes and the comparison between HSE06 and PBE.
+Figure~\ref{S1.16} also shows the effect of the energy convergence criterion \texttt{EDIFF} on the calculated dielectric function, together with the effects of different k-point meshes and the comparison between HSE06 and PBE.
 
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=0.80\textwidth]{figures_proj1/S1.16_alt.pdf}
-\caption{Dielectric function of the Graphene-Borophene bilayer comparing PBE and HSE06 results, HSE06 $\vec{k}$-point meshes of $17 \times 17 \times 1$ and $65 \times 65 \times 1$, and HSE06 energy convergence criteria \texttt{EDIFF} = $10^{-4}$, $10^{-5}$, and $10^{-6}$.}
+\caption{Dielectric function of the Graphene-Borophene bilayer comparing PBE and HSE06 results, HSE06 k-point meshes of $17 \times 17 \times 1$ and $65 \times 65 \times 1$, and HSE06 energy convergence criteria \texttt{EDIFF} = $10^{-4}$, $10^{-5}$, and $10^{-6}$.}
 \label{S1.16}
 \end{figure}
 

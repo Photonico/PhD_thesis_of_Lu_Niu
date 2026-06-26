@@ -152,11 +152,11 @@ This is followed by the conclusions in Section~\ref{2_conclusions}.
 The DFT calculations are performed using the Vienna Ab initio Simulation Package (VASP)~\cite{kresse1993ab,kresse1994ab,kresse1996efficiency,kresse1996efficient}.
 The projector augmented wave (PAW) method pseudopotentials are used to describe the electron-ion interactions~\cite{kresse1999ultrasoft}.
 The generalized gradient approximation (GGA) of Perdew--Burke--Ernzerhof (PBE) for the exchange-correlation functional~\cite{perdew1996generalized} is employed along with the Becke--Johnson damped D3(BJ) dispersion correction to account for long-range van der Waals (vdW) interactions~\cite{becke2005density,grimme2010consistent,grimme2011effect}.
-For bulk o-\ce{B14}, a $\Gamma$-centered $\vec{k}$-point mesh of $34 \times 48 \times 31$ is used with a plane-wave energy cutoff of \qty{600}{\electronvolt}.
+For bulk o-\ce{B14}, a $\Gamma$-centered k-point mesh of $34 \times 48 \times 31$ is used with a plane-wave energy cutoff of \qty{600}{\electronvolt}.
 The electronic convergence criterion is set to \qty{1e-6}{\electronvolt},
 and the structures are relaxed until all forces on each atom are below \qty{0.01}{\electronvolt\per\angstrom}.
 For the 2D systems, a vacuum region of approximately \qty{22}{\angstrom} is included,
-and a $\vec{k}$-point mesh of $20 \times 18 \times 1$ is used.
+and a k-point mesh of $20 \times 18 \times 1$ is used.
 Convergence tests show that these settings yield accurate results,
 as shown in figures~S1--S3 of the Supplementary Information.
 
@@ -166,7 +166,7 @@ which gives more accurate band-gap energies~\cite{sassnick2021electronic,krukau2
 Unless explicitly stated otherwise,
 all figures show results obtained using the PBE functional.
 For the density-of-states (DOS) calculations for bulk o-\ce{B14},
-we use a $\Gamma$-centered $\vec{k}$-point mesh of $20 \times 28 \times 18$.
+we use a $\Gamma$-centered k-point mesh of $20 \times 28 \times 18$.
 For the 2D systems,
 we use a mesh of $20 \times 18 \times 1$.
 The smearing at the Fermi level is calculated using the Gaussian method with a broadening value of \qty{0.1}{\electronvolt}.
@@ -218,7 +218,7 @@ Calculations are carried out using the PBE formulation of the generalized gradie
 as provided in Quantum ESPRESSO~\cite{giannozzi2009quantum}.
 Norm-conserving pseudopotentials and a kinetic energy cutoff of $45$ Ry are chosen~\cite{hamann2013optimized},
 and a vacuum spacing of \qty{15}{\angstrom} is added for the 2D systems to suppress spurious periodic interactions.
-Monkhorst--Pack $\vec{k}$-point meshes of $9 \times 12 \times 8$ for the bulk,
+Monkhorst--Pack k-point meshes of $9 \times 12 \times 8$ for the bulk,
 $10 \times 10 \times 1$ for the monolayer,
 and $9 \times 9 \times 1$ for the bilayer are employed to sample the Brillouin zone~\cite{methfessel1989high}.
 The phonon dispersions are calculated on $\vec{q}$-point grids of $3 \times 4 \times 3$,
@@ -227,7 +227,7 @@ Atomic positions and lattice parameters are relaxed until residual forces are be
 corresponding to \qty{2.6e-4}{\electronvolt\per\angstrom}.
 
 Maximally localized Wannier functions are constructed in Wannier90 by initializing projections on B $s$ and $p$ orbitals~\cite{pizzi2020wannier90}.
-Uniform $\vec{k}$-point meshes of $6 \times 8 \times 6$ for the bulk and $6 \times 6 \times 1$ for the monolayer and bilayer are used in Wannier interpolation.
+Uniform k-point meshes of $6 \times 8 \times 6$ for the bulk and $6 \times 6 \times 1$ for the monolayer and bilayer are used in Wannier interpolation.
 Superconductivity is subsequently analyzed through EPW~\cite{giannozzi2009quantum,giannozzi2020quantum,giannozzi2017advanced,ponce2016epw},
 which is employed to evaluate electron-phonon coupling strength and estimate Allen--Dynes transition temperatures, $T_c$~\cite{margine2013anisotropic}.
 The superconducting properties are also obtained by solving the fully anisotropic Migdal--Eliashberg equations~\cite{bardeen1955electron,giustino2017electron,margine2013anisotropic},
@@ -241,7 +241,7 @@ as discussed in Section~\ref{2_superconducting_properties}.
 
 For the calculation of the optical properties within VASP,
 in particular the frequency-dependent dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$,
-the $\vec{k}$-point meshes of $20 \times 28 \times 18$ and $20 \times 18 \times 1$ are found to yield converged results for the bulk and 2D systems,
+the k-point meshes of $20 \times 28 \times 18$ and $20 \times 18 \times 1$ are found to yield converged results for the bulk and 2D systems,
 respectively, as shown in figure~S4.
 A convergence check for the number of unoccupied bands included in the calculation of the dielectric function is also performed.
 Figure~S5 shows the result for bulk o-\ce{B14}.
@@ -311,11 +311,11 @@ and hence finite plasmon lifetimes as well as interband transitions~\cite{li2017
 \label{2_supplementary}
 
 Convergence tests are shown for the total energy, the plane-wave energy cutoff,
-and the $\vec{k}$-point set of bulk o-\ce{B14} in figure~\ref{S2.1}.
+and the k-point set of bulk o-\ce{B14} in figure~\ref{S2.1}.
 The lattice-constant determination is shown in the lower panel of figure~\ref{S2.1},
 and the cohesive-energy convergence is shown in figure~\ref{S2.2}.
 The total energy as a function of vacuum-region thickness for the monolayer is given in figure~\ref{S2.3}.
-Convergence tests for the calculation of the dielectric function are also shown for the $\vec{k}$-point set in figure~\ref{S2.4}
+Convergence tests for the calculation of the dielectric function are also shown for the k-point set in figure~\ref{S2.4}
 and for the number of unoccupied bands included in the calculation, the parameter \texttt{NBANDS}, in figure~\ref{S2.5}.
 The definition of $d_{\mathrm{2D}}$ used in the dielectric-function renormalization is displayed in figure~\ref{S2.6}.
 The renormalization procedure is given in Section~\ref{2_calculation_methods},
@@ -367,3 +367,20 @@ the top and bottom atoms are the H atoms.
 Here, we use $d_{\mathrm{vdW}}=\qty{1.91}{\angstrom}$ for boron and $d_{\mathrm{vdW}}=\qty{1.2}{\angstrom}$ for hydrogen.
 A schematic illustration of the total thickness, $D_{\mathrm{total}}\equiv d_{\mathrm{2D}}$,
 is shown in figure~\ref{S2.6}.
+
+\begin{figure}[!htbp]
+\centering
+    \adjustbox{valign=c}{\includegraphics[width=0.45\linewidth]{figures_proj2/S2.1a.pdf}}%
+    \adjustbox{valign=c}{\includegraphics[width=0.45\linewidth]{figures_proj2/S2.1b.pdf}}%
+\caption{Left: Plane-wave energy cutoff and k-point convergence of the total energy for bulk o-\ce{B14}.
+Right: Lattice-constant dependence of the total energy at a plane-wave energy cutoff of \qty{600}{\electronvolt} and a k-point set of $34\times48\times31$.}
+\label{S2.1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{figures_proj2/S2.2.pdf}
+\caption{Cohesive energy per atom as a function of plane-wave energy cutoff and $k$-point set for bulk o-\ce{B14}.}
+\label{S2.2}
+\end{figure}
+
