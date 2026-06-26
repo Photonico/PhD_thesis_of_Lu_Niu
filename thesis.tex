@@ -216,6 +216,22 @@
     sortcites=true
 ]{biblatex} 
 \addbibresource{thesis.bib}
+% Put DOI on a separate line without changing the line spacing.
+\renewbibmacro*{doi+eprint+url}{%
+  \iftoggle{bbx:doi}
+    {\iffieldundef{doi}
+       {}
+       {\setunit{\addperiod\newline}%
+        \printfield{doi}}}
+    {}%
+  \newunit\newblock
+  \iftoggle{bbx:eprint}
+    {\usebibmacro{eprint}}
+    {}%
+  \newunit\newblock
+  \iftoggle{bbx:url}
+    {\usebibmacro{url+urldate}}
+    {}}
 
 \usepackage{microtype}
 % \setlength{\parskip}{3mm plus0.5mm minus0.5mm}
