@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber .output/thesis"] 1782442305.32212 ".output/thesis.bcf" ".output/thesis.bbl" ".output/thesis" 1782443467.37543 0
-  ".output/thesis.bcf" 1782443467.19134 136132 562874eb4cef2f78b38fbccbe15266ca "pdflatex"
-  "thesis.bib" 1782442305.19579 80067 f337927c29a11f1974ca020d56066441 ""
+["biber .output/thesis"] 1782442305.32212 ".output/thesis.bcf" ".output/thesis.bbl" ".output/thesis" 1782445259.38618 0
+  ".output/thesis.bcf" 1782445259.19555 136132 562874eb4cef2f78b38fbccbe15266ca "pdflatex"
+  "thesis.bib" 1782444302.35992 80067 f337927c29a11f1974ca020d56066441 ""
   (generated)
   ".output/thesis.bbl"
   ".output/thesis.blg"
   (rewritten before read)
-["pdflatex"] 1782443457.87642 "/Users/lu/Repos/Thesis GitHub/thesis.tex" ".output/thesis.pdf" "thesis" 1782443467.37576 0
-  ".output/thesis.aux" 1782443467.09277 120416 bd3466e5f4f81d0569d93d86a2d9fb42 "pdflatex"
+["pdflatex"] 1782445248.77255 "/Users/lu/Repos/Thesis GitHub/thesis.tex" ".output/thesis.pdf" "thesis" 1782445259.38655 0
+  ".output/thesis.aux" 1782445259.09662 120400 23629dbf7c6ddd093bac71033ecdf208 "pdflatex"
   ".output/thesis.bbl" 1782442308.22323 358220 d78f928894f6fb4de4d09459812ab407 "biber .output/thesis"
-  ".output/thesis.out" 1782443467.18802 18967 347878fbde17e6a563fd899220d7943a "pdflatex"
-  ".output/thesis.run.xml" 1782443467.19206 2379 f75cc13aa91ba640ee0d8112fc09c504 "pdflatex"
-  ".output/thesis.toc" 1782443467.19215 9072 3623d74ecf05c238202f878590a239aa "pdflatex"
+  ".output/thesis.out" 1782445259.19206 18944 d2bede10a91f93a6bca3d68738e7e9ba "pdflatex"
+  ".output/thesis.run.xml" 1782445259.19634 2379 f75cc13aa91ba640ee0d8112fc09c504 "pdflatex"
+  ".output/thesis.toc" 1782445259.19642 9068 f0dcebe7bf1dbfb8165da63abf247b60 "pdflatex"
   "/Users/lu/Repos/Thesis GitHub/thesis.tex" 1782090792.8026 9734 0b1675225a0f8e523fec05f727e323f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -319,11 +319,11 @@
   "figures_proj1/proj1.9.pdf" 1781899340.81559 47781 8114fba0a811028e95aadf1197f3a58e ""
   "src/abstract.tex" 1781899340.81947 39 8ad422c347e2f7434cf85eacca24f18e ""
   "src/appendix.tex" 1781899340.81953 31 4571cb39421361a5c4c114dcfbba1262 ""
-  "src/fundamentals_a.tex" 1782139599.05719 158351 d94929c0805682be4ba84e8cab02b187 ""
+  "src/fundamentals_a.tex" 1782445238.31383 158412 cb75e2a7224cdc0992137c5357358479 ""
   "src/fundamentals_b.tex" 1782146435.5349 72212 601cd4b91385b05afb1971446dda4c43 ""
   "src/introduction.tex" 1781899340.82009 57 13996f907b83f3e8567bad897058b7b9 ""
   "src/project_1.tex" 1782442715.85011 61114 fad49bf3c8ed21b27b1c057d3021e347 ""
-  "src/project_2.tex" 1782443467.32517 21386 f76c39729858e5b69939f8f4c186c72f ""
+  "src/project_2.tex" 1782445247.68421 21386 f76c39729858e5b69939f8f4c186c72f ""
   "src/project_3.tex" 1782442816.53126 557 5accb5c9fa0e0243a603ee9cfa5214c0 ""
   "src/publications.tex" 1781899340.82046 51 944e67c94cda9d6fa018235b19b40afb ""
   "src/thanks.tex" 1781899340.82058 44 0ef663f11c0eb1e66730564baa6934a4 ""

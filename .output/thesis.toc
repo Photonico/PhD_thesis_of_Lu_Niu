@@ -30,7 +30,7 @@
 \contentsline {subsection}{\numberline {2.4.7}The Hartree equations}{70}{subsection.2.4.7}%
 \contentsline {section}{\numberline {2.5}Exchange-correlation functional}{72}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Local density and generalized gradient approximations}{72}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Hybrid functionals and the Heyd--Scuseria--Ernzerhof functional}{74}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.2}Hybrid functionals and Heyd--Scuseria--Ernzerhof functional}{74}{subsection.2.5.2}%
 \contentsline {chapter}{\tocchapter {Chapter}{3}{Fundamentals \MakeUppercase []{ii}: Linear Optical Response}}{77}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Toward electromagnetic response in matter}{78}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Maxwell equations in matter}{78}{subsection.3.1.1}%
