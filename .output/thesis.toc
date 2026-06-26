@@ -80,7 +80,6 @@
 \contentsline {section}{\numberline {5.5}Conclusions}{152}{section.5.5}%
 \contentsline {section}{\numberline {5.6}Data availability statement}{152}{section.5.6}%
 \contentsline {section}{\numberline {5.7}Supplementary information}{152}{section.5.7}%
-\contentsline {subsection}{\numberline {5.7.1}Optical properties}{153}{subsection.5.7.1}%
 \contentsline {chapter}{\tocchapter {Chapter}{6}{Topological and Optical Properties of Beryllene Phases}}{155}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Abstract}{155}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Introduction}{155}{section.6.2}%
