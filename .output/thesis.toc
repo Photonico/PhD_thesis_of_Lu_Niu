@@ -70,8 +70,8 @@
 \contentsline {section}{\numberline {5.2}Introduction}{146}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Computation methods}{149}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Results and discussion}{152}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Bulk o-B14: atomic structure and electronic properties}{152}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}2D o-\ce {B14}: atomic structure and energetics}{152}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.1}Bulk o-\ce {B14}: atomic structure and electronic properties}{152}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Xene o-\ce {B14}: atomic structure and energetics}{152}{subsection.5.4.2}%
 \contentsline {subsubsection}{\numberline {5.4.2.1}Structural properties}{152}{subsubsection.5.4.2.1}%
 \contentsline {subsubsection}{\numberline {5.4.2.2}Dynamic stability: phonon dispersion}{152}{subsubsection.5.4.2.2}%
 \contentsline {subsubsection}{\numberline {5.4.2.3}Electronic properties}{152}{subsubsection.5.4.2.3}%
