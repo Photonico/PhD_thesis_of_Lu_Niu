@@ -182,6 +182,9 @@
       \field{year}{2023}
       \field{pages}{040201}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PRXQuantum.4.040201
+      \endverb
     \endentry
     \entry{pribram2015dft}{article}{}{}
       \name{author}{3}{}{%
@@ -223,6 +226,9 @@
       \field{year}{2015}
       \field{pages}{283\bibrangedash 304}
       \range{pages}{22}
+      \verb{doi}
+      \verb 10.1146/annurev-physchem-040214-121420
+      \endverb
     \endentry
     \entry{jones2015density}{article}{}{}
       \name{author}{1}{}{%
@@ -254,6 +260,9 @@
       \field{year}{2015}
       \field{pages}{897\bibrangedash 923}
       \range{pages}{27}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.87.897
+      \endverb
     \endentry
     \entry{hohenberg1964inhomogeneous}{article}{}{}
       \name{author}{2}{}{%
@@ -290,6 +299,9 @@
       \field{year}{1964}
       \field{pages}{B864}
       \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1103/PhysRev.136.B864
+      \endverb
     \endentry
     \entry{maitra2016perspective}{article}{}{}
       \name{author}{1}{}{%
@@ -320,6 +332,9 @@
       \field{title}{Perspective: Fundamental aspects of time-dependent density functional theory}
       \field{volume}{144}
       \field{year}{2016}
+      \verb{doi}
+      \verb 10.1063/1.4953039
+      \endverb
     \endentry
     \entry{gould2026ensemblization}{article}{}{}
       \name{author}{3}{}{%
@@ -360,6 +375,9 @@
       \field{title}{``Ensemblization'' of density functional theory}
       \field{volume}{164}
       \field{year}{2026}
+      \verb{doi}
+      \verb 10.1063/5.0274509
+      \endverb
     \endentry
     \entry{shankar2017quantum}{book}{}{}
       \name{author}{1}{}{%
@@ -444,6 +462,9 @@
       \field{year}{2012}
       \field{pages}{244\bibrangedash 262}
       \range{pages}{19}
+      \verb{doi}
+      \verb 10.1021/cr2000493
+      \endverb
     \endentry
     \entry{becke2014perspective}{article}{}{}
       \name{author}{1}{}{%
@@ -474,6 +495,9 @@
       \field{title}{Perspective: Fifty years of density-functional theory in chemical physics}
       \field{volume}{140}
       \field{year}{2014}
+      \verb{doi}
+      \verb 10.1063/1.4869598
+      \endverb
     \endentry
     \entry{thomas1927calculation}{inproceedings}{}{}
       \name{author}{1}{}{%
@@ -596,6 +620,9 @@
       \field{year}{1965}
       \field{pages}{A1133}
       \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1103/PhysRev.140.A1133
+      \endverb
     \endentry
     \entry{burke2012perspective}{article}{}{}
       \name{author}{1}{}{%
@@ -626,6 +653,9 @@
       \field{title}{Perspective on density functional theory}
       \field{volume}{136}
       \field{year}{2012}
+      \verb{doi}
+      \verb 10.1063/1.4704546
+      \endverb
     \endentry
     \entry{levy1979universal}{article}{}{}
       \name{author}{1}{}{%
@@ -654,6 +684,9 @@
       \field{year}{1979}
       \field{pages}{6062\bibrangedash 6065}
       \range{pages}{4}
+      \verb{doi}
+      \verb 10.1073/pnas.76.12.6062
+      \endverb
     \endentry
     \entry{simon2013oxford}{book}{}{}
       \name{author}{1}{}{%
@@ -726,6 +759,9 @@
       \field{year}{2023}
       \field{pages}{12039\bibrangedash 12104}
       \range{pages}{66}
+      \verb{doi}
+      \verb 10.1021/acs.chemrev.2c00758
+      \endverb
     \endentry
     \entry{xu2024recent}{article}{}{}
       \name{author}{5}{}{%
@@ -777,6 +813,9 @@
       \field{year}{2024}
       \field{pages}{e1724}
       \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1002/wcms.1724
+      \endverb
     \endentry
     \entry{mermin1965thermal}{article}{}{}
       \name{author}{1}{}{%
@@ -808,6 +847,9 @@
       \field{year}{1965}
       \field{pages}{A1441}
       \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1103/PhysRev.137.A1441
+      \endverb
     \endentry
     \entry{schwinger1980thomas}{article}{}{}
       \name{author}{1}{}{%
@@ -840,6 +882,9 @@
       \field{year}{1980}
       \field{pages}{1827}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.22.1827
+      \endverb
     \endentry
     \entry{schwinger1981thomas}{article}{}{}
       \name{author}{1}{}{%
@@ -872,6 +917,9 @@
       \field{year}{1981}
       \field{pages}{2353}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.24.2353
+      \endverb
     \endentry
     \entry{dirac1930note}{inproceedings}{}{}
       \name{author}{1}{}{%
@@ -934,6 +982,9 @@
       \field{year}{1986}
       \field{pages}{4575}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.34.4575
+      \endverb
     \endentry
     \entry{lieb1981thomas}{article}{}{}
       \name{author}{1}{}{%
@@ -965,6 +1016,9 @@
       \field{year}{1981}
       \field{pages}{603}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.53.603
+      \endverb
     \endentry
     \entry{de2012pure}{article}{}{}
       \name{author}{2}{}{%
@@ -1001,6 +1055,9 @@
       \field{year}{2012}
       \field{pages}{032518}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.85.032518
+      \endverb
     \endentry
     \entry{kohn1999nobel}{article}{}{}
       \name{author}{1}{}{%
@@ -1032,6 +1089,9 @@
       \field{year}{1999}
       \field{pages}{1253}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.71.1253
+      \endverb
     \endentry
     \entry{wagner2014kohn}{article}{}{}
       \name{author}{5}{}{%
@@ -1083,6 +1143,9 @@
       \field{year}{2014}
       \field{pages}{045109}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.90.045109
+      \endverb
     \endentry
     \entry{hartree1928wave}{inproceedings}{}{}
       \name{author}{1}{}{%
@@ -1150,6 +1213,9 @@
       \field{year}{1997}
       \field{pages}{16021}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.56.16021
+      \endverb
     \endentry
     \entry{harbola1999relationship}{article}{}{}
       \name{author}{1}{}{%
@@ -1181,6 +1247,9 @@
       \field{year}{1999}
       \field{pages}{4545}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.60.4545
+      \endverb
     \endentry
     \entry{mundt2006photoelectron}{article}{}{}
       \name{author}{4}{}{%
@@ -1227,6 +1296,9 @@
       \field{year}{2006}
       \field{pages}{205407}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.73.205407
+      \endverb
     \endentry
     \entry{helbig2009exact}{article}{}{}
       \name{author}{3}{}{%
@@ -1308,6 +1380,9 @@
       \field{year}{2011}
       \field{pages}{062512}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.83.062512
+      \endverb
     \endentry
     \entry{hodgson2016origin}{article}{}{}
       \name{author}{3}{}{%
@@ -1349,6 +1424,9 @@
       \field{year}{2016}
       \field{pages}{155146}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.93.155146
+      \endverb
     \endentry
     \entry{wang1993construction}{article}{}{}
       \name{author}{2}{}{%
@@ -1385,6 +1463,9 @@
       \field{year}{1993}
       \field{pages}{R1591}
       \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.47.R1591
+      \endverb
     \endentry
     \entry{astala2006kohn}{article}{}{}
       \name{author}{2}{}{%
@@ -1421,6 +1502,9 @@
       \field{year}{2006}
       \field{pages}{115127}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.73.115127
+      \endverb
     \endentry
     \entry{perdew1981self}{article}{}{}
       \name{author}{2}{}{%
@@ -1457,6 +1541,9 @@
       \field{year}{1981}
       \field{pages}{5048}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.23.5048
+      \endverb
     \endentry
     \entry{martin2020electronic}{book}{}{}
       \name{author}{1}{}{%
@@ -1519,6 +1606,9 @@
       \field{year}{1992}
       \field{pages}{13244}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.45.13244
+      \endverb
     \endentry
     \entry{stampfl1999density}{article}{}{}
       \name{author}{2}{}{%
@@ -1555,6 +1645,9 @@
       \field{year}{1999}
       \field{pages}{5521}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.59.5521
+      \endverb
     \endentry
     \entry{li2003insights}{article}{}{}
       \name{author}{3}{}{%
@@ -1596,6 +1689,9 @@
       \field{year}{2003}
       \field{pages}{165412}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.68.165412
+      \endverb
     \endentry
     \entry{perdew1992atoms}{article}{}{}
       \name{author}{7}{}{%
@@ -1657,6 +1753,9 @@
       \field{year}{1992}
       \field{pages}{6671}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.46.6671
+      \endverb
     \endentry
     \entry{perdew1996generalized}{article}{}{}
       \name{author}{3}{}{%
@@ -1698,6 +1797,9 @@
       \field{year}{1996}
       \field{pages}{3865}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.77.3865
+      \endverb
     \endentry
     \entry{heyd2003hybrid}{article}{}{}
       \name{author}{3}{}{%
@@ -1739,6 +1841,9 @@
       \field{year}{2003}
       \field{pages}{8207\bibrangedash 8215}
       \range{pages}{9}
+      \verb{doi}
+      \verb 10.1063/1.1564060
+      \endverb
     \endentry
     \entry{krukau2006influence}{article}{}{}
       \name{author}{4}{}{%
@@ -1784,6 +1889,9 @@
       \field{title}{Influence of the exchange screening parameter on the performance of screened hybrid functionals}
       \field{volume}{125}
       \field{year}{2006}
+      \verb{doi}
+      \verb 10.1063/1.2404663
+      \endverb
     \endentry
     \entry{paier2006screened}{article}{}{}
       \name{author}{6}{}{%
@@ -1839,6 +1947,9 @@
       \field{title}{Screened hybrid density functionals applied to solids}
       \field{volume}{124}
       \field{year}{2006}
+      \verb{doi}
+      \verb 10.1063/1.2187006
+      \endverb
     \endentry
     \entry{landau2013electrodynamics}{book}{}{}
       \name{author}{6}{}{%
@@ -2013,6 +2124,9 @@
       \field{year}{2011}
       \field{pages}{195325}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.83.195325
+      \endverb
     \endentry
     \entry{royo2019first}{article}{}{}
       \name{author}{2}{}{%
@@ -2049,6 +2163,9 @@
       \field{year}{2019}
       \field{pages}{021050}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevX.9.021050
+      \endverb
     \endentry
     \entry{han2023temperature}{article}{}{}
       \name{author}{6}{}{%
@@ -2106,6 +2223,9 @@
       \field{year}{2023}
       \field{pages}{L201202}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.107.L201202
+      \endverb
     \endentry
     \entry{capper2019optical}{book}{}{}
       \name{author}{3}{}{%
@@ -2353,6 +2473,9 @@
       \field{year}{2021}
       \field{pages}{525\bibrangedash 534}
       \range{pages}{10}
+      \verb{doi}
+      \verb 10.1021/acsmaterialslett.1c00026
+      \endverb
     \endentry
     \entry{matthes2016influence}{article}{}{}
       \name{author}{3}{}{%
@@ -2394,6 +2517,9 @@
       \field{year}{2016}
       \field{pages}{205408}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.94.205408
+      \endverb
     \endentry
     \entry{sujith2023large}{article}{}{}
       \name{author}{5}{}{%
@@ -2444,6 +2570,9 @@
       \field{year}{2023}
       \field{pages}{111161}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jpcs.2022.111161
+      \endverb
     \endentry
     \entry{onida2002electronic}{article}{}{}
       \name{author}{3}{}{%
@@ -2485,6 +2614,9 @@
       \field{year}{2002}
       \field{pages}{601}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.74.601
+      \endverb
     \endentry
     \entry{gajdovs2006linear}{article}{}{}
       \name{author}{5}{}{%
@@ -2536,6 +2668,9 @@
       \field{year}{2006}
       \field{pages}{045112}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.73.045112
+      \endverb
     \endentry
     \entry{ambrosch2006linear}{article}{}{}
       \name{author}{2}{}{%
@@ -2572,6 +2707,9 @@
       \field{year}{2006}
       \field{pages}{1\bibrangedash 14}
       \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/j.cpc.2006.03.005
+      \endverb
     \endentry
     \entry{djurivsic2002progress}{article}{}{}
       \name{author}{3}{}{%
@@ -2613,6 +2751,9 @@
       \field{year}{2002}
       \field{pages}{237\bibrangedash 293}
       \range{pages}{57}
+      \verb{doi}
+      \verb 10.1016/S0927-796X(02)00063-3
+      \endverb
     \endentry
     \entry{niu2024electronic}{article}{}{}
       \name{author}{4}{}{%
@@ -2659,6 +2800,9 @@
       \field{year}{2024}
       \field{pages}{1659}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/nano14201659
+      \endverb
     \endentry
     \entry{marinopoulos2002anisotropy}{article}{}{}
       \name{author}{8}{}{%
@@ -2725,6 +2869,9 @@
       \field{year}{2002}
       \field{pages}{076402}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.89.076402
+      \endverb
     \endentry
     \entry{huang2023optical}{article}{}{}
       \name{author}{5}{}{%
@@ -2868,6 +3015,9 @@
       \field{year}{1926}
       \field{pages}{547\bibrangedash 557}
       \range{pages}{11}
+      \verb{doi}
+      \verb 10.1364/JOSA.12.000547
+      \endverb
     \endentry
     \entry{toll1956causality}{article}{}{}
       \name{author}{1}{}{%
@@ -2899,6 +3049,9 @@
       \field{year}{1956}
       \field{pages}{1760}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRev.104.1760
+      \endverb
     \endentry
     \entry{persson2001first}{article}{}{}
       \name{author}{4}{}{%
@@ -2983,6 +3136,9 @@
       \field{year}{2017}
       \field{pages}{2299\bibrangedash 2325}
       \range{pages}{27}
+      \verb{doi}
+      \verb 10.1364/OME.7.002299
+      \endverb
     \endentry
     \entry{kubo1957statistical}{article}{}{}
       \name{author}{1}{}{%
@@ -3014,6 +3170,9 @@
       \field{year}{1957}
       \field{pages}{570\bibrangedash 586}
       \range{pages}{17}
+      \verb{doi}
+      \verb 10.1143/JPSJ.12.570
+      \endverb
     \endentry
     \entry{fox2010optical}{book}{}{}
       \name{author}{1}{}{%
@@ -3107,6 +3266,9 @@
       \field{year}{2016}
       \field{pages}{165166}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.94.165166
+      \endverb
     \endentry
     \entry{alonso2004optical}{article}{}{}
       \name{author}{2}{}{%
@@ -3255,6 +3417,9 @@
       \field{year}{2022}
       \field{pages}{1536}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/ma15041536
+      \endverb
     \endentry
     \entry{agranovich2013crystal}{book}{}{}
       \name{author}{2}{}{%
@@ -3535,6 +3700,9 @@
       \field{year}{2024}
       \field{pages}{155107}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.110.155107
+      \endverb
     \endentry
     \entry{vandenberghe2023two}{article}{}{}
       \name{author}{2}{}{%
@@ -3668,6 +3836,9 @@
       \field{year}{2024}
       \field{pages}{107\bibrangedash 154}
       \range{pages}{48}
+      \verb{doi}
+      \verb 10.1515/nanoph-2023-0639
+      \endverb
     \endentry
     \entry{sun2025recent}{article}{}{}
       \name{author}{4}{}{%
@@ -3861,6 +4032,9 @@
       \field{year}{2024}
       \field{pages}{155421}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.110.155421
+      \endverb
     \endentry
     \entry{lin2023recent}{article}{}{}
       \true{moreauthor}
@@ -3939,6 +4113,9 @@
       \field{year}{2023}
       \field{pages}{9694\bibrangedash 9747}
       \range{pages}{54}
+      \verb{doi}
+      \verb 10.1021/acsnano.2c12759
+      \endverb
     \endentry
     \entry{tang2025unveiling}{article}{}{}
       \name{author}{8}{}{%
@@ -4437,6 +4614,9 @@
       \field{year}{2016}
       \field{pages}{aac9439}
       \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1126/science.aac9439
+      \endverb
     \endentry
     \entry{thygesen2017}{article}{}{}
       \name{author}{1}{}{%
@@ -4629,6 +4809,9 @@
       \field{year}{2018}
       \field{pages}{962}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/nano8110962
+      \endverb
     \endentry
     \entry{yanagisawa2004phonon}{article}{}{}
       \name{author}{7}{}{%
@@ -4691,6 +4874,9 @@
       \field{year}{2004}
       \field{pages}{177003}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.93.177003
+      \endverb
     \endentry
     \entry{yanagisawa2006phonon}{article}{}{}
       \name{author}{6}{}{%
@@ -4748,6 +4934,9 @@
       \field{year}{2006}
       \field{pages}{045412}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.73.045412
+      \endverb
     \endentry
     \entry{tanaka2005novel}{article}{}{}
       \name{author}{7}{}{%
@@ -4981,6 +5170,9 @@
       \field{year}{2011}
       \field{pages}{16285\bibrangedash 16290}
       \range{pages}{6}
+      \verb{doi}
+      \verb 10.1021/ja2072753
+      \endverb
     \endentry
     \entry{fan2018two}{article}{}{}
       \name{author}{4}{}{%
@@ -5113,6 +5305,9 @@
       \field{year}{2019}
       \field{pages}{eaax6444}
       \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1126/sciadv.aax6444
+      \endverb
     \endentry
     \entry{liu2022}{article}{}{}
       \name{author}{6}{}{%
@@ -5206,6 +5401,9 @@
       \field{year}{1993}
       \field{pages}{558}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.47.558
+      \endverb
     \endentry
     \entry{kresse1996efficiency}{article}{}{}
       \name{author}{2}{}{%
@@ -5243,6 +5441,9 @@
       \field{year}{1996}
       \field{pages}{15\bibrangedash 50}
       \range{pages}{36}
+      \verb{doi}
+      \verb 10.1016/0927-0256(96)00008-0
+      \endverb
     \endentry
     \entry{kresse1996efficient}{article}{}{}
       \name{author}{2}{}{%
@@ -5280,6 +5481,9 @@
       \field{year}{1996}
       \field{pages}{11169\bibrangedash 11186}
       \range{pages}{18}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.54.11169
+      \endverb
     \endentry
     \entry{kresse1999ultrasoft}{article}{}{}
       \name{author}{2}{}{%
@@ -5316,6 +5520,9 @@
       \field{year}{1999}
       \field{pages}{1758}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.59.1758
+      \endverb
     \endentry
     \entry{sassnick2021electronic}{article}{}{}
       \name{author}{2}{}{%
@@ -5408,6 +5615,9 @@
       \field{year}{2021}
       \field{pages}{1000\bibrangedash 1051}
       \range{pages}{52}
+      \verb{doi}
+      \verb 10.1021/acs.chemrev.1c00233
+      \endverb
     \endentry
     \entry{wu2012two}{article}{}{}
       \name{author}{6}{}{%
@@ -5651,6 +5861,9 @@
       \field{year}{2018}
       \field{pages}{10517\bibrangedash 10525}
       \range{pages}{9}
+      \verb{doi}
+      \verb 10.1021/acsomega.8b01998
+      \endverb
     \endentry
     \entry{chang2019b4c3}{article}{}{}
       \name{author}{6}{}{%
@@ -5707,6 +5920,9 @@
       \field{year}{2019}
       \field{pages}{25091\bibrangedash 25101}
       \range{pages}{11}
+      \verb{doi}
+      \verb 10.1021/acs.jpcc.9b06744
+      \endverb
     \endentry
     \entry{roldan2015strain}{article}{}{}
       \name{author}{4}{}{%
@@ -5794,6 +6010,9 @@
       \field{year}{2008}
       \field{pages}{035427}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.77.035427
+      \endverb
     \endentry
     \entry{guo2017all}{article}{}{}
       \name{author}{3}{}{%
@@ -6006,6 +6225,9 @@
       \field{year}{2017}
       \field{pages}{165417}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.96.165417
+      \endverb
     \endentry
     \entry{han2023superconducting}{article}{}{}
       \name{author}{7}{}{%
@@ -6154,6 +6376,9 @@
       \field{year}{2008}
       \field{pages}{064113}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.77.064113
+      \endverb
     \endentry
     \entry{an2016new}{article}{}{}
       \name{author}{5}{}{%
@@ -6205,6 +6430,9 @@
       \field{year}{2016}
       \field{pages}{085501}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.117.085501
+      \endverb
     \endentry
     \entry{ouyang2025superconductivity}{article}{}{}
       \name{author}{3}{}{%
@@ -6246,6 +6474,9 @@
       \field{year}{2025}
       \field{pages}{134518}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.111.134518
+      \endverb
     \endentry
     \entry{zhang2020superconducting}{article}{}{}
       \name{author}{8}{}{%
@@ -6313,6 +6544,9 @@
       \field{year}{2020}
       \field{pages}{174507}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.101.174507
+      \endverb
     \endentry
     \entry{pan2019fluxional}{article}{}{}
       \name{author}{6}{}{%
@@ -7061,6 +7295,9 @@
       \field{year}{2017}
       \field{pages}{024505}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.95.024505
+      \endverb
     \endentry
     \entry{zhu2019magnetic}{article}{}{}
       \true{moreauthor}
@@ -7139,6 +7376,9 @@
       \field{year}{2019}
       \field{pages}{205412}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.99.205412
+      \endverb
     \endentry
     \entry{wang2025second}{article}{}{}
       \name{author}{8}{}{%
@@ -7206,6 +7446,9 @@
       \field{year}{2025}
       \field{pages}{035113}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.111.035113
+      \endverb
     \endentry
     \entry{rakshit2025exploring}{article}{}{}
       \name{author}{2}{}{%
@@ -7387,6 +7630,9 @@
       \field{year}{2017}
       \field{pages}{096401}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.118.096401
+      \endverb
     \endentry
     \entry{gao2024bilayer}{article}{}{}
       \name{author}{4}{}{%
@@ -7635,6 +7881,9 @@
       \field{year}{2017}
       \field{pages}{095002}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1361-648X/aa5165
+      \endverb
     \endentry
     \entry{hou2020ultrastable}{article}{}{}
       \name{author}{6}{}{%
@@ -7919,6 +8168,9 @@
       \field{year}{1994}
       \field{pages}{14251}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.49.14251
+      \endverb
     \endentry
     \entry{becke2005density}{article}{}{}
       \name{author}{2}{}{%
@@ -7954,6 +8206,9 @@
       \field{title}{A density-functional model of the dispersion interaction}
       \field{volume}{123}
       \field{year}{2005}
+      \verb{doi}
+      \verb 10.1063/1.2065267
+      \endverb
     \endentry
     \entry{grimme2010consistent}{article}{}{}
       \name{author}{4}{}{%
@@ -7999,6 +8254,9 @@
       \field{title}{A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu}
       \field{volume}{132}
       \field{year}{2010}
+      \verb{doi}
+      \verb 10.1063/1.3382344
+      \endverb
     \endentry
     \entry{grimme2011effect}{article}{}{}
       \name{author}{3}{}{%
@@ -8040,6 +8298,9 @@
       \field{year}{2011}
       \field{pages}{1456\bibrangedash 1465}
       \range{pages}{10}
+      \verb{doi}
+      \verb 10.1002/jcc.21759
+      \endverb
     \endentry
     \entry{giannozzi2009quantum}{article}{}{}
       \true{moreauthor}
@@ -8119,6 +8380,9 @@
       \field{year}{2009}
       \field{pages}{395502}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0953-8984/21/39/395502
+      \endverb
     \endentry
     \entry{hamann2013optimized}{article}{}{}
       \name{author}{1}{}{%
@@ -8150,6 +8414,9 @@
       \field{year}{2013}
       \field{pages}{085117}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.88.085117
+      \endverb
     \endentry
     \entry{methfessel1989high}{article}{}{}
       \name{author}{2}{}{%
@@ -8186,6 +8453,9 @@
       \field{year}{1989}
       \field{pages}{3616}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.40.3616
+      \endverb
     \endentry
     \entry{baroni2001phonons}{article}{}{}
       \name{author}{4}{}{%
@@ -8232,6 +8502,9 @@
       \field{year}{2001}
       \field{pages}{515}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.73.515
+      \endverb
     \endentry
     \entry{pizzi2020wannier90}{article}{}{}
       \true{moreauthor}
@@ -8310,6 +8583,9 @@
       \field{year}{2020}
       \field{pages}{165902}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1361-648X/ab51ff
+      \endverb
     \endentry
     \entry{giannozzi2020quantum}{article}{}{}
       \true{moreauthor}
@@ -8388,6 +8664,9 @@
       \field{title}{Quantum ESPRESSO toward the exascale}
       \field{volume}{152}
       \field{year}{2020}
+      \verb{doi}
+      \verb 10.1063/5.0005082
+      \endverb
     \endentry
     \entry{giannozzi2017advanced}{article}{}{}
       \true{moreauthor}
@@ -8467,6 +8746,9 @@
       \field{year}{2017}
       \field{pages}{465901}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1361-648X/aa8f79
+      \endverb
     \endentry
     \entry{ponce2016epw}{article}{}{}
       \name{author}{4}{}{%
@@ -8548,6 +8830,9 @@
       \field{year}{2013}
       \field{pages}{024505}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.87.024505
+      \endverb
     \endentry
     \entry{bardeen1955electron}{article}{}{}
       \name{author}{2}{}{%
@@ -8584,6 +8869,9 @@
       \field{year}{1955}
       \field{pages}{1140}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRev.99.1140
+      \endverb
     \endentry
     \entry{giustino2017electron}{article}{}{}
       \name{author}{1}{}{%
@@ -8615,6 +8903,9 @@
       \field{year}{2017}
       \field{pages}{015003}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.89.015003
+      \endverb
     \endentry
     \entry{allen-dynes}{article}{}{}
       \name{author}{2}{}{%
@@ -8651,6 +8942,9 @@
       \field{year}{1975}
       \field{pages}{905}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.12.905
+      \endverb
     \endentry
     \entry{zhao2019two}{article}{}{}
       \name{author}{6}{}{%
@@ -8707,6 +9001,9 @@
       \field{year}{2019}
       \field{pages}{094516}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.100.094516
+      \endverb
     \endentry
     \entry{weng2018honeycomb}{article}{}{}
       \name{author}{2}{}{%

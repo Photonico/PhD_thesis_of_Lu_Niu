@@ -1,15 +1,17 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is '.output/thesis.blg'
-[36] biber-darwin:340> INFO - === Fri Jun 26, 2026, 13:58:58
-[46] Biber.pm:420> INFO - Reading '.output/thesis.bcf'
-[140] Biber.pm:994> INFO - Found 193 citekeys in bib section 0
-[148] Biber.pm:4463> INFO - Processing section 0
-[154] Biber.pm:4654> INFO - Looking for bibtex file 'thesis.bib' for section 0
-[159] bibtex.pm:1713> INFO - LaTeX decoding ...
-[279] bibtex.pm:1519> INFO - Found BibTeX data source 'thesis.bib'
-[1100] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1100] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1100] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-UK'
-[1100] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-UK'
-[1169] bbl.pm:676> INFO - Writing '.output/thesis.bbl' with encoding 'UTF-8'
-[1226] bbl.pm:779> INFO - Output to .output/thesis.bbl
+[37] biber-darwin:340> INFO - === Sat Jun 27, 2026, 01:10:58
+[49] Biber.pm:420> INFO - Reading '.output/thesis.bcf'
+[145] Biber.pm:994> INFO - Found 193 citekeys in bib section 0
+[153] Biber.pm:4463> INFO - Processing section 0
+[161] Biber.pm:4654> INFO - Looking for bibtex file 'thesis.bib' for section 0
+[166] bibtex.pm:1713> INFO - LaTeX decoding ...
+[297] bibtex.pm:1519> INFO - Found BibTeX data source 'thesis.bib'
+[1099] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1099] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1099] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-UK'
+[1099] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-UK'
+[1161] bbl.pm:676> INFO - Writing '.output/thesis.bbl' with encoding 'UTF-8'
+[1213] bbl.pm:779> INFO - Output to .output/thesis.bbl
+[1213] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/jd/spwt8xjd2jdcbvqz6zhd785m0000gn/T/biber_tmp_AS63/10964c7c28215ff4e717a58daf08cffc_27237.utf8, line 1523, warning: 25 characters of junk seen at toplevel
+[1213] Biber.pm:133> INFO - WARNINGS: 1
