@@ -221,8 +221,8 @@
   \iftoggle{bbx:doi}
     {\iffieldundef{doi}
        {}
-       {\setunit{\addperiod\newline}%
-        \printfield{doi}}}
+       {\setunit{\addperiod\newline\hspace*{0.75em}}%
+        \printfield{doi}\nopunct}}
     {}%
   \newunit\newblock
   \iftoggle{bbx:eprint}
