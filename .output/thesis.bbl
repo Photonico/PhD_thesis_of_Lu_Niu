@@ -5652,6 +5652,9 @@
            given={Xiao\bibnamedelima Cheng},
            giveni={X\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
       }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
       \strng{namehash}{162260e0ca02bbdd32cea0b2eb572443}
       \strng{fullhash}{2ece109eb234e8924995edc76dc14514}
       \strng{fullhashraw}{2ece109eb234e8924995edc76dc14514}
@@ -5671,6 +5674,9 @@
       \field{year}{2012}
       \field{pages}{7443\bibrangedash 7453}
       \range{pages}{11}
+      \verb{doi}
+      \verb 10.1021/nn302696v
+      \endverb
     \endentry
     \entry{zhang2018strain}{article}{}{}
       \name{author}{6}{}{%
