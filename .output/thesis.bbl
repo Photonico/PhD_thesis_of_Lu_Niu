@@ -8468,6 +8468,51 @@
       \field{pages}{465901}
       \range{pages}{1}
     \endentry
+    \entry{ponce2016epw}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=dc1faae449227387f8ae529498b49a78}{%
+           family={Poncé},
+           familyi={P\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4d22710aaa1ac4084323a2c04fffe688}{%
+           family={Margine},
+           familyi={M\bibinitperiod},
+           given={Elena\bibnamedelima R.},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=b53a862af453bd7b42d757e5f820ada5}{%
+           family={Verdi},
+           familyi={V\bibinitperiod},
+           given={Carla},
+           giveni={C\bibinitperiod}}}%
+        {{hash=cf353e094c5b7894cbb61e9917d8ec68}{%
+           family={Giustino},
+           familyi={G\bibinitperiod},
+           given={Feliciano},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{b740ce6969006694746d351237893a6a}
+      \strng{fullhash}{c66eff827bc01044c2c88898ce448255}
+      \strng{fullhashraw}{c66eff827bc01044c2c88898ce448255}
+      \strng{bibnamehash}{b740ce6969006694746d351237893a6a}
+      \strng{authorbibnamehash}{b740ce6969006694746d351237893a6a}
+      \strng{authornamehash}{b740ce6969006694746d351237893a6a}
+      \strng{authorfullhash}{c66eff827bc01044c2c88898ce448255}
+      \strng{authorfullhashraw}{c66eff827bc01044c2c88898ce448255}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer Physics Communications}
+      \field{title}{{EPW}: Electron--phonon coupling, transport and superconducting properties using maximally localized Wannier functions}
+      \field{volume}{209}
+      \field{year}{2016}
+      \field{pages}{116\bibrangedash 133}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1016/j.cpc.2016.07.028
+      \endverb
+    \endentry
     \entry{margine2013anisotropic}{article}{}{}
       \name{author}{2}{}{%
         {{hash=1606346929a1284c8efb7bab7b67f10d}{%

@@ -1,6 +1,5 @@
-\chapter[Functional Properties of Penta-Bipyramid Boron Allotropes]{Superconductivity, Magnetism, and Directional Plasmonic Modes in
-Two-Dimensional Penta-Bipyramid Boron Allotropes}
-\label{cha:project_2}
+\chapter[Functional Properties of Penta-Bipyramid Boron Phases]{Superconductivity, Magnetism, and Directional Plasmonic Modes in Two-Dimensional Penta-Bipyramid Boron Allotropes}
+\label{cha:project_boron}
 
 \section{Abstract}
 \label{2_abstract}
@@ -150,7 +149,7 @@ This is followed by the conclusions in Section~\ref{2_conclusions}.
 \section{Computation methods}
 \label{2_calculation_methods}
 
-The DFT calculations are performed using the Vienna Ab initio Simulation Package (VASP)~\cite{kresse1993ab,kresse1996efficiency,kresse1996efficiency,kresse1994ab}.
+The DFT calculations are performed using the Vienna Ab initio Simulation Package (VASP)~\cite{kresse1993ab,kresse1994ab,kresse1996efficiency,kresse1996efficient}.
 The projector augmented wave (PAW) method pseudopotentials are used to describe the electron-ion interactions~\cite{kresse1999ultrasoft}.
 The generalized gradient approximation (GGA) of Perdew--Burke--Ernzerhof (PBE) for the exchange-correlation functional~\cite{perdew1996generalized} is employed along with the Becke--Johnson damped D3(BJ) dispersion correction to account for long-range van der Waals (vdW) interactions~\cite{becke2005density,grimme2010consistent,grimme2011effect}.
 For bulk o-\ce{B14}, a $\Gamma$-centered $\vec{k}$-point mesh of $34 \times 48 \times 31$ is used with a plane-wave energy cutoff of \qty{600}{\electronvolt}.
@@ -163,12 +162,13 @@ as shown in figures~S1--S3 of the Supplementary Information.
 
 For selected calculations,
 we also use the screened hybrid exchange-correlation functional of Heyd, Scuseria, and Ernzerhof (HSE06),
-which gives more accurate band-gap energies~\cite{sassnick2021electronic, krukau2006influence}.
+which gives more accurate band-gap energies~\cite{sassnick2021electronic,krukau2006influence}.
 Unless explicitly stated otherwise,
 all figures show results obtained using the PBE functional.
-For the density-of-states (DOS) calculations,
-we use a $\Gamma$-centered $\vec{k}$-point mesh of $20 \times 28 \times 18$ for bulk o-\ce{B14},
-and $20 \times 18 \times 1$ for the 2D systems.
+For the density-of-states (DOS) calculations for bulk o-\ce{B14},
+we use a $\Gamma$-centered $\vec{k}$-point mesh of $20 \times 28 \times 18$.
+For the 2D systems,
+we use a mesh of $20 \times 18 \times 1$.
 The smearing at the Fermi level is calculated using the Gaussian method with a broadening value of \qty{0.1}{\electronvolt}.
 
 The adsorption energy per atom, $E_{\mathrm{ad}}$, of hydrogen atoms on the surface is calculated as:
@@ -179,10 +179,10 @@ The adsorption energy per atom, $E_{\mathrm{ad}}$, of hydrogen atoms on the surf
 \end{equation}
 
 here,
-$E_{\mathrm{H/B}}$ denotes the total energy of the hydrogen-adsorbed boron system,
-$E_{\mathrm{B}}$ denotes the total energy of the pristine 2D boron structure,
-$E_{\mathrm{H}}$ denotes the total energy of a hydrogen atom in the \ce{H2} molecule,
-and $n_{\mathrm{H}}$ denotes the number of H atoms in the unit cell.
+$E_{\mathrm{H/B}}$ is the total energy of the adsorption system,
+$E_{\mathrm{B}}$ is the total energy of the pristine 2D boron structure,
+$E_{\mathrm{H}}$ is the total energy of a hydrogen atom in the \ce{H2} molecule,
+and $n_{\mathrm{H}}$ is the number of H atoms in the unit cell.
 
 The cohesive energy per atom, $E_{\mathrm{c}}$, of the boron systems is calculated as:
 
@@ -193,9 +193,9 @@ The cohesive energy per atom, $E_{\mathrm{c}}$, of the boron systems is calculat
 \end{equation}
 
 here,
-$E_{\mathrm{B\text{-}struc}}$ denotes the total energy of the boron structure of interest,
-$E_{\mathrm{B\text{-}atom}}$ denotes the total energy of a free boron atom calculated in a large supercell,
-and $n_{\mathrm{B}}$ denotes the number of boron atoms in the unit cell.
+$E_{\mathrm{B\text{-}struc}}$ is the total energy of the boron structure of interest,
+$E_{\mathrm{B\text{-}atom}}$ is the total energy of a free boron atom calculated in a large supercell,
+and $n_{\mathrm{B}}$ is the number of boron atoms in the unit cell of the structure.
 
 The charge density difference, $\Delta \rho(\vec{r})$, for hydrogen adsorption on the surface is calculated as:
 
@@ -208,71 +208,52 @@ The charge density difference, $\Delta \rho(\vec{r})$, for hydrogen adsorption o
 \end{equation}
 
 here,
-$\rho_{\mathrm{H/B}}(\vec{r})$ denotes the total charge density of the hydrogen-adsorbed system.
-The terms $\rho_{\mathrm{B}}(\vec{r})$ and $\rho_{\mathrm{H}}(\vec{r})$ denote the charge densities of the clean boron structure and the adsorbed hydrogen atoms,
+$\rho_{\mathrm{H/B}}(\vec{r})$ is the total charge density of the adsorbed system,
+and $\rho_{\mathrm{B}}(\vec{r})$ and $\rho_{\mathrm{H}}(\vec{r})$ are the total charge densities of the clean boron structure and the hydrogen atom,
 respectively.
 
 The superconducting behaviour of o-\ce{B14} is investigated systematically in three structural phases,
-namely bulk,
-monolayer,
-and hydrogen-terminated bilayer.
+namely bulk, monolayer, and hydrogen-terminated bilayer.
 Calculations are carried out using the PBE formulation of the generalized gradient approximation~\cite{perdew1996generalized},
 as provided in Quantum ESPRESSO~\cite{giannozzi2009quantum}.
-Norm-conserving pseudopotentials and a kinetic energy cutoff of $45$ Ry are used~\cite{hamann2013optimized}.
-For the 2D systems,
-a vacuum spacing of \qty{15}{\angstrom} is added to suppress spurious periodic interactions.
+Norm-conserving pseudopotentials and a kinetic energy cutoff of $45$ Ry are chosen~\cite{hamann2013optimized},
+and a vacuum spacing of \qty{15}{\angstrom} is added for the 2D systems to suppress spurious periodic interactions.
 Monkhorst--Pack $\vec{k}$-point meshes of $9 \times 12 \times 8$ for the bulk,
 $10 \times 10 \times 1$ for the monolayer,
 and $9 \times 9 \times 1$ for the bilayer are employed to sample the Brillouin zone~\cite{methfessel1989high}.
 The phonon dispersions are calculated on $\vec{q}$-point grids of $3 \times 4 \times 3$,
-$5 \times 5 \times 1$,
-and $3 \times 3 \times 1$,
-respectively~\cite{baroni2001phonons}.
-Atomic positions and lattice parameters are relaxed until the residual forces are below $1\times10^{-5}$ Ry/bohr,
+$5 \times 5 \times 1$, and $3 \times 3 \times 1$, respectively~\cite{baroni2001phonons}.
+Atomic positions and lattice parameters are relaxed until residual forces are below $1\times10^{-5}$ Ry/bohr,
 corresponding to \qty{2.6e-4}{\electronvolt\per\angstrom}.
 
 Maximally localized Wannier functions are constructed in Wannier90 by initializing projections on B $s$ and $p$ orbitals~\cite{pizzi2020wannier90}.
 Uniform $\vec{k}$-point meshes of $6 \times 8 \times 6$ for the bulk and $6 \times 6 \times 1$ for the monolayer and bilayer are used in Wannier interpolation.
-Superconductivity is subsequently analyzed through EPW~\cite{giannozzi2009quantum,giannozzi2020quantum,giannozzi2017advanced},
-which is used to evaluate the electron-phonon coupling strength and estimate the Allen--Dynes transition temperature $T_c$~\cite{margine2013anisotropic}.
+Superconductivity is subsequently analyzed through EPW~\cite{giannozzi2009quantum,giannozzi2020quantum,giannozzi2017advanced,ponce2016epw},
+which is employed to evaluate electron-phonon coupling strength and estimate Allen--Dynes transition temperatures, $T_c$~\cite{margine2013anisotropic}.
 The superconducting properties are also obtained by solving the fully anisotropic Migdal--Eliashberg equations~\cite{bardeen1955electron,giustino2017electron,margine2013anisotropic},
-as implemented in EPW.
+as implemented in the EPW code.
 The Morel--Anderson pseudopotential $\mu^{*}$ is chosen to be $0.13$,
 consistent with the typical semi-empirical range of $0.10$--$0.16$ used in Migdal--Eliashberg calculations for light-element and $sp$-bonded superconductors~\cite{allen-dynes},
 and with the value adopted in the literature for boron-based 2D superconductors~\cite{zhao2019two}.
 With this choice,
-the calculated electron-phonon coupling strength $\lambda$ and $T_c$ indicate clear dimensionality effects,
-as discussed below in the superconductivity section.
+the calculated electron-phonon coupling strengths, $\lambda$, and $T_c$ indicate clear dimensionality effects,
+as discussed in Section~\ref{2_superconducting_properties}.
 
 For the calculation of the optical properties within VASP,
-we calculate the frequency-dependent dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$.
-The physical meaning of $\varepsilon_{\alpha\beta}(\omega)$,
-its real and imaginary parts,
-and the resulting optical observables are introduced in chapter~\ref{cha:fundamentals_b}.
-In particular,
-the dielectric response is described in section~\ref{sec:from_electronic_response_to_dielectric_function},
-the Kramers--Kronig relation between the real and imaginary parts is discussed in section~\ref{sec:causality_and_kramers_kronig_relations},
-and the absorption coefficient $\alpha_{\lambda}(\omega)$,
-refractive index $n_{\lambda}(\omega)$,
-extinction coefficient $k_{\lambda}(\omega)$,
-reflectivity $R_{\lambda}(\omega)$,
-and energy-loss spectrum $L_{\lambda}(\omega)$ are derived in section~\ref{sec:from_dielectric_function_to_optical_properties}.
-
-For the present systems,
-$\vec{k}$-point meshes of $20 \times 28 \times 18$ and $20 \times 18 \times 1$ are found to yield converged dielectric responses for the bulk and 2D systems,
-respectively,
-as shown in figure~S4.
-A convergence check for the number of unoccupied bands included in the dielectric-function calculation is also performed.
+in particular the frequency-dependent dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$,
+the $\vec{k}$-point meshes of $20 \times 28 \times 18$ and $20 \times 18 \times 1$ are found to yield converged results for the bulk and 2D systems,
+respectively, as shown in figure~S4.
+A convergence check for the number of unoccupied bands included in the calculation of the dielectric function is also performed.
 Figure~S5 shows the result for bulk o-\ce{B14}.
-The dielectric response is well converged with $128$ bands,
-and this value is therefore used for all systems.
+It can be seen that $128$ bands yield well-converged results,
+and this value is used for all systems.
+The definitions of the dielectric tensor and the derived optical quantities are given in Section~\ref{sec:from_dielectric_function_to_optical_properties}.
 
-For 2D slab calculations,
-the dielectric tensor contains the combined dielectric response of the 2D material and the vacuum region.
+The dielectric tensor contains the combined dielectric response of the 2D material and the vacuum,
+so the magnitude of $\varepsilon_{1}(\omega)$ and $\varepsilon_{2}(\omega)$ depends linearly on the vacuum thickness~\cite{weng2018honeycomb,laturia2018dielectric}.
 Therefore,
-the magnitude of the calculated $\varepsilon_{1}(\omega)$ and $\varepsilon_{2}(\omega)$ depends linearly on the vacuum thickness~\cite{weng2018honeycomb, laturia2018dielectric}.
-To obtain the intrinsic dielectric function of the 2D structures,
-we renormalize the supercell dielectric function following Ref.~\cite{yang2021method}:
+to obtain the intrinsic dielectric function of the structures,
+the calculated dielectric functions are renormalized following Ref.~\cite{yang2021method}:
 
 \begin{equation}
     \varepsilon_{2}^{\mathrm{2D}}(\omega)
@@ -289,21 +270,35 @@ we renormalize the supercell dielectric function following Ref.~\cite{yang2021me
 \end{equation}
 
 here, $\varepsilon_{i}^{\mathrm{2D}}(\omega)$ and $\varepsilon_{i}^{\mathrm{SC}}(\omega)$,
-with $i=1,2$,
-denote the dielectric functions of the 2D structure after removing the vacuum contribution and of the full supercell,
-respectively. The quantity $d_{\mathrm{SC}}$ denotes the length of the supercell,
-whereas $d_{\mathrm{2D}}$ denotes the effective thickness of the 2D structure.
-The values of $d_{\mathrm{2D}}$ for the monolayer,
-bilayer, and H-terminated bilayer are \qty{5.897}{\angstrom},
+with $i=1,2$, are the dielectric functions of the studied 2D structure without the influence of the vacuum region and for the whole supercell,
+respectively, and $d_{\mathrm{SC}}$ is the length of the supercell.
+The thickness $d_{\mathrm{2D}}$ for the monolayer, bilayer,
+and H-terminated bilayer is \qty{5.897}{\angstrom},
 \qty{9.412}{\angstrom}, and \qty{11.209}{\angstrom}, respectively.
-The definition of the thickness is shown in figure~S6.
-In studies of 2D materials, omitting this correction can produce errors in the reported dielectric functions and therefore in the derived optical properties.
-
-When interpreting the energy-loss spectra, we also consider that individual interband transitions may coexist with plasmons and form a broad background.
-The coexistence of individual transitions and plasmons in the same energy range can couple the two excitation channels, leading to finite plasmon lifetimes as well as interband-transition contributions~\cite{li2017first}.
+The thickness is defined in figure~S6.
+In the literature, this correction is often ignored in studies on 2D materials,
+which leads to errors in the reported dielectric functions and therefore the optical properties of the 2D materials.
+It is noted that interband transitions presumably coexist with the plasmons forming a broad background.
+The coexistence of individual transitions and plasmons in the same energy range leads to coupling of the two types of excitations,
+and hence finite plasmon lifetimes as well as interband transitions~\cite{li2017first}.
 
 \section{Results and discussion}
 \label{2_results}
+
+\subsection{Bulk o-B14: atomic structure and electronic properties}
+
+\subsection[2D o-\ce{B14}: atomic structure and energetics]{Monolayers and bilayers: atomic and electronic structure and energetics}
+
+\subsubsection{Structural properties}
+
+\subsubsection{Dynamic stability: phonon dispersion}
+
+\subsubsection{Electronic properties}
+
+\subsection{Superconducting properties}
+\label{2_superconducting_properties}
+
+\subsection{Optical properties}
 
 \section{Conclusions}
 \label{2_conclusions}
@@ -312,5 +307,3 @@ The coexistence of individual transitions and plasmons in the same energy range 
 
 \section{Supplementary information}
 \label{2_supplementary}
-
-
