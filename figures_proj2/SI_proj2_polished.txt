@@ -1,0 +1,296 @@
+% Supplementary information for Project 2.
+% This thesis version removes the standalone RevTeX wrapper and keeps only the SI body.
+% Images are intentionally left unchanged.
+
+\renewcommand{\thefigure}{S\arabic{figure}}
+\setcounter{figure}{0}
+
+Convergence tests are shown for the total energy, the plane-wave energy cutoff,
+and the $\vec{k}$-point set of bulk o-\ce{B14} in figure~\ref{fig:2_si_bulk_energy_convergence}.
+The lattice-constant determination is shown in the lower panel of figure~\ref{fig:2_si_bulk_energy_convergence},
+and the cohesive-energy convergence is shown in figure~\ref{fig:2_si_cohesive_energy_convergence}.
+The total energy as a function of vacuum-region thickness for the monolayer is given in figure~\ref{fig:2_si_vacuum_convergence}.
+Convergence tests for the calculation of the dielectric function are also shown for the $\vec{k}$-point set in figure~\ref{fig:2_si_dielectric_kpoint_convergence}
+and for the number of unoccupied bands included in the calculation,
+the parameter \texttt{NBANDS},
+in figure~\ref{fig:2_si_nbands_convergence}.
+The definition of $d_{\mathrm{2D}}$ used in the dielectric-function renormalization is displayed in figure~\ref{fig:2_si_thickness_definition}.
+The renormalization procedure is given in Section~\ref{2_calculation_methods},
+and the general optical-property definitions are introduced in Chapter~\ref{cha:fundamentals_b}.
+Figure~\ref{fig:2_si_hollow_bridge_site} shows the hollow-bridge site that was also considered for H adsorption on the monolayer and bilayer structures.
+
+The calculated phonon dispersion curves for the two-dimensional systems,
+as obtained using $(2 \times 2)$ and $(3 \times 3)$ supercells,
+are shown in figures~\ref{fig:2_si_phonon_2x2} and~\ref{fig:2_si_phonon_3x3}.
+The results obtained using both supercells show qualitatively the same behaviour.
+The hydrogen-terminated monolayer is dynamically unstable due to imaginary frequencies across a wide range of the Brillouin zone.
+
+Results of \textit{ab initio} molecular dynamics (AIMD) calculations for the H-terminated bilayer are shown in figure~\ref{fig:2_si_aimd_h_bilayer} for a temperature of \qty{400}{K},
+displaying good structural stability.
+
+Comparison of the spin-polarized FM band structures for the monolayer,
+as calculated using the HSE06 and GGA-PBE functionals,
+is shown in figure~\ref{fig:2_si_fm_band_pbe_hse}.
+The corresponding total density of states (DOS) is shown in figure~\ref{fig:2_si_total_dos_pbe}.
+A comparison of the non-spin-polarized band structure of the monolayer,
+as calculated using the r$^{2}$SCAN,
+HSE06,
+and GGA-PBE functionals,
+is shown in figure~\ref{fig:2_si_monolayer_functional_comparison}.
+In figure~\ref{fig:2_si_jahn_teller_test},
+the non-spin-polarized band structure of the monolayer is shown as calculated in a $(2\times1)$ supercell without symmetry,
+which tests the effect of possible Jahn--Teller distortions.
+For the FM monolayer structure,
+the spin moment is shown in figure~\ref{fig:2_si_fixed_spin_moment},
+where a clear minimum can be seen near $2.0~\mu_{\mathrm{B}}$.
+The projected DOS for the AFM and FM monolayers is shown in figure~\ref{fig:2_si_spin_resolved_dos_fm_afm}.
+Figure~\ref{fig:2_si_fm_spin_density_states} displays the spin density and the state distribution for the highest occupied and lowest unoccupied states of the FM monolayer midway along the T--Y direction.
+Finally,
+the frequency-dependent extinction coefficient for all structures considered is displayed in figure~\ref{fig:2_si_extinction_coefficient}.
+
+\textbf{Optical properties}
+
+The optical observables used in this chapter are obtained from the frequency-dependent dielectric function.
+Their definitions,
+including the absorption coefficient $\alpha_{\lambda}(\omega)$,
+loss function $L_{\lambda}(\omega)$,
+refractive index $n_{\lambda}(\omega)$,
+extinction coefficient $k_{\lambda}(\omega)$,
+and reflectivity $R_{\lambda}(\omega)$,
+are introduced in Section~\ref{sec:from_dielectric_function_to_optical_properties}.
+Therefore,
+the duplicate formula definitions are not repeated here.
+
+\textbf{Renormalization of the dielectric function to account for the vacuum region}
+
+The thickness of the 2D systems,
+$d_{\mathrm{2D}}$,
+is required for the dielectric-function renormalization introduced in Section~\ref{2_calculation_methods}.
+It is defined by taking the difference in the $z$ coordinate of the top and bottom atoms in the system,
+$dz$,
+and adding an additional van der Waals distance on each side of the monolayer and bilayer systems.
+For the monolayer and bilayer,
+the top and bottom atoms are the pyramidal apical B atoms.
+For the H-terminated bilayer,
+the top and bottom atoms are the H atoms.
+Here,
+we use $d_{\mathrm{vdW}}=\qty{1.91}{\angstrom}$ for boron and $d_{\mathrm{vdW}}=\qty{1.2}{\angstrom}$ for hydrogen.
+A schematic illustration of the total thickness,
+$D_{\mathrm{total}}\equiv d_{\mathrm{2D}}$,
+is shown in figure~\ref{fig:2_si_thickness_definition}.
+
+\textbf{References}
+
+[1] Dan Liu, Arthur G. Every, and David Tomanek.
+Continuum approach for long-wavelength acoustic phonons in quasi-two-dimensional structures.
+Phys. Rev. B, 2016, 94, 165432.
+
+[2] Mateus B. P. Querne, Jean M. Bracht, Juarez L. F. Da Silva, Anderson Janotti, and Matheus P. Lima.
+Crystal structure and electrical and optical properties of two-dimensional group-IV monochalcogenides.
+Phys. Rev. B, 2023, 108, 085409.
+
+[3] Ioanna Pallikara, Prakriti Kayastha, Jonathan M. Skelton, and Lucy D. Whalley.
+The physical significance of imaginary phonon modes in crystals.
+Electron. Struct. 4, 033002, 2022.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{fig-k-Ecut-converg-2.eps}
+    \caption{
+    Upper:
+    Total energy as a function of plane-wave energy cutoff and $\vec{k}$-point set for bulk o-\ce{B14}.
+    Lower:
+    Total energy as a function of lattice constant for a plane-wave energy cutoff of \qty{600}{\electronvolt} and a $\vec{k}$-point set of $34\times48\times31$.
+    }
+    \label{fig:2_si_bulk_energy_convergence}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{fig-coh-en-k-ecut.eps}
+    \caption{
+    Cohesive energy per atom as a function of plane-wave energy cutoff and $\vec{k}$-point set for bulk o-\ce{B14}.
+    }
+    \label{fig:2_si_cohesive_energy_convergence}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{fig-new-E-versus-vacuum.eps}
+    \caption{
+    Total energy as a function of vacuum-region thickness.
+    }
+    \label{fig:2_si_vacuum_convergence}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{fig-new-dielec-func-convergence-2.eps}
+    \caption{
+    In-plane and out-of-plane components of the real and imaginary parts of the dielectric function of o-\ce{B14},
+    calculated with various $\vec{k}$-point sets.
+    }
+    \label{fig:2_si_dielectric_kpoint_convergence}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{fig-new-dielec-func-convergence-2.eps}
+    \caption{
+    In-plane and out-of-plane components of the real and imaginary parts of the dielectric function of bulk o-\ce{B14},
+    calculated with different numbers of unoccupied states included in the calculation,
+    as denoted by the parameter \texttt{NBANDS}.
+    }
+    \label{fig:2_si_nbands_convergence}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{Layer-thickness.eps}
+    \caption{
+    Definition of the layer thickness used in the renormalization of the dielectric function,
+    $D_{\mathrm{total}}\equiv d_{\mathrm{2D}}$.
+    }
+    \label{fig:2_si_thickness_definition}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.35\linewidth]{New-H-site.eps}
+    \caption{
+    Sketch of the hollow-bridge site,
+    indicated by the yellow cross,
+    for H adsorption on the monolayer and bilayer structures.
+    The black rectangle represents the unit cell.
+    }
+    \label{fig:2_si_hollow_bridge_site}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{fig-phonon.eps}
+    \caption{
+    Phonon dispersion curves obtained using a $(2\times2)$ supercell.
+    }
+    \label{fig:2_si_phonon_2x2}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{phonons-3x3-monolayer-bilayer.eps}
+    \includegraphics[width=0.7\linewidth]{phonon-3x3-mono-bi-Hydrog.eps}
+    \caption{
+    Phonon dispersion curves for the monolayer and bilayer,
+    upper,
+    and the hydrogen-terminated monolayer and bilayer,
+    lower,
+    as calculated using a $(3\times3)$ supercell.
+    Although small negative frequencies appear around the $\Gamma$ point for the H-bilayer,
+    these modes are often found for 2D materials and do not indicate structural instability,
+    as discussed in Refs.~[1--3].
+    }
+    \label{fig:2_si_phonon_3x3}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{AIMD-oB14.eps}
+    \caption{
+    \textit{Ab initio} molecular dynamics calculations for the H-terminated bilayer at \qty{400}{K}.
+    The structure remains thermodynamically stable and exhibits only very small structural changes.
+    }
+    \label{fig:2_si_aimd_h_bilayer}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{fig-bands-HSE06-PBE-monolayer.eps}
+    \caption{
+    Spin-polarized FM band structure of the monolayer calculated using the PBE,
+    left,
+    and HSE06,
+    right,
+    functionals.
+    The Fermi energy is set to zero.
+    }
+    \label{fig:2_si_fm_band_pbe_hse}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{fig-dos-all.eps}
+    \caption{
+    Total density of states (DOS) of the various structures as calculated using the PBE functional.
+    }
+    \label{fig:2_si_total_dos_pbe}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{fig-monolayer-HSE.eps}
+    \caption{
+    Non-spin-polarized band structure of the monolayer calculated using different functionals.
+    The Fermi energy is set to zero.
+    }
+    \label{fig:2_si_monolayer_functional_comparison}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{fig-bands-2x1.eps}
+    \caption{
+    Band structure of the monolayer calculated using a $(2\times1)$ unit cell.
+    The label ``shifted atoms'' means that,
+    in the initial atomic structure,
+    some atoms were moved slightly away from the ideal high-symmetry sites to break symmetry and allow Jahn--Teller distortions if they were favourable.
+    The structure was subsequently fully relaxed,
+    but the results remained unchanged and displayed no symmetry-lowering distortions.
+    }
+    \label{fig:2_si_jahn_teller_test}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{fig-spin-profiles.eps}
+    \caption{
+    Fixed-spin calculations for the FM monolayer as calculated using PBE+D3 and r$^{2}$SCAN.
+    }
+    \label{fig:2_si_fixed_spin_moment}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{TDOS_FM_HSE06.eps}
+    \includegraphics[width=0.6\linewidth]{TDOS_AFM_HSE06.eps}
+    \caption{
+    Spin-resolved total DOS for the FM,
+    upper,
+    and AFM,
+    lower,
+    monolayer structures as calculated using the HSE06 functional.
+    }
+    \label{fig:2_si_spin_resolved_dos_fm_afm}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{fig-new-spin-state-densty.eps}
+    \caption{
+    (a) Highest occupied spin-up state and lowest unoccupied spin-down state of the FM monolayer,
+    taken midway along the high-symmetry T--Y direction in the Brillouin zone.
+    (b) Corresponding spin density,
+    with an isosurface value of \qty{0.005}{e\per\angstrom\cubed}.
+    }
+    \label{fig:2_si_fm_spin_density_states}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{fig-new-6.3_extinction.eps}
+    \caption{
+    Extinction coefficient as a function of energy for the o-\ce{B14} structures along the $xx$,
+    $yy$,
+    and $zz$ directions.
+    }
+    \label{fig:2_si_extinction_coefficient}
+\end{figure}
