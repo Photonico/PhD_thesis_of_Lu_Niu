@@ -165,7 +165,7 @@ we also use the screened hybrid exchange-correlation functional of Heyd, Scuseri
 which gives more accurate band-gap energies~\cite{sassnick2021electronic,krukau2006influence}.
 Unless explicitly stated otherwise,
 all figures show results obtained using the PBE functional.
-For the density-of-states (DOS) calculations for bulk o-\ce{B14},
+For the density-of-states (DoS) calculations for bulk o-\ce{B14},
 we use a $\Gamma$-centered k-point mesh of $20 \times 28 \times 18$.
 For the 2D systems,
 we use a mesh of $20 \times 18 \times 1$.
@@ -307,6 +307,9 @@ and hence finite plasmon lifetimes as well as interband transitions~\cite{li2017
 
 \section{Data availability statement}
 
+% The original data presented in this chapter are openly available from the GitHub repository:
+% \href{https://github.com/Photonico/Graphene-BC_20230622}{\texttt{Photonico/Graphene-BC\_20230622}}.
+
 \section{Supplementary information}
 \label{2_supplementary}
 
@@ -331,13 +334,13 @@ Results of \textit{ab initio} molecular dynamics (AIMD) calculations for the hyd
 
 Comparison of the spin-polarized FM band structures for the monolayer,
 as calculated using the HSE06 and GGA-PBE functionals, is shown in figure~\ref{S2.11}.
-The corresponding total density of states (DOS) is shown in figure~\ref{S2.12}.
+The corresponding total density of states (DoS) is shown in figure~\ref{S2.12}.
 A comparison of the non-spin-polarized band structure of the monolayer,
 as calculated using the r$^{2}$SCAN, HSE06, and GGA-PBE functionals, is shown in figure~\ref{S2.13}.
 In figure~\ref{S2.14}, the non-spin-polarized band structure of the monolayer is shown as calculated in a $(2\times1)$ supercell without symmetry,
 which tests the effect of possible Jahn--Teller distortions.
-For the FM monolayer structure, the spin moment is shown in figure~\ref{S2.15}, where a clear minimum can be seen near $2.0~\mu_{\mathrm{B}}$.
-The projected DOS for the AFM and FM monolayers is shown in figure~\ref{S2.16}.
+For the monolayer structure, the fixed-spin energy profile is shown in figure~\ref{S2.15}, where a clear energy minimum appears near a fixed spin moment of $2.0~\mu_{\mathrm{B}}$.
+The projected DoS for the AFM and FM monolayers is shown in figure~\ref{S2.16}.
 Figure~\ref{S2.17} displays the spin density and the state distribution for the highest occupied and lowest unoccupied states of the FM monolayer midway along the T--Y direction.
 Finally, the frequency-dependent extinction coefficient for all structures considered is displayed in figure~\ref{S2.18}.
 
@@ -365,7 +368,7 @@ the top and bottom atoms are the pyramidal apical B atoms.
 For the hydrogen-terminated bilayer,
 the top and bottom atoms are the H atoms.
 Here, we use $d_{\mathrm{vdW}}=\qty{1.91}{\angstrom}$ for boron and $d_{\mathrm{vdW}}=\qty{1.2}{\angstrom}$ for hydrogen.
-A schematic illustration of the total thickness, $D_{\mathrm{total}}\equiv d_{\mathrm{2D}}$,
+A schematic illustration of the total thickness, $D_{\mathrm{total}}\coloneqq d_{\mathrm{2D}}$,
 is shown in figure~\ref{S2.6}.
 
 \begin{figure}[!htbp]
@@ -381,7 +384,7 @@ Lower: Lattice-constant dependence of the total energy at a plane-wave energy cu
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=0.6\linewidth]{figures_proj2/S2.2.pdf}
-\caption{Cohesive energy per atom as a function of plane-wave energy cutoff and $k$-point set for bulk o-\ce{B14}.}
+\caption{Cohesive energy per atom as a function of plane-wave energy cutoff and k-point set for bulk o-\ce{B14}.}
 \label{S2.2}
 \end{figure}
 
@@ -404,14 +407,14 @@ calculated with various k-point sets.}
 \centering
     \includegraphics[width=1.0\linewidth]{figures_proj2/S2.5.pdf}
 \caption{In-plane and out-of-plane components of the real and imaginary parts of the dielectric function of bulk o-\ce{B14},
-calculated with different numbers of unoccupied states included in the calculation,as denoted by the parameter \texttt{NBANDS}.}
+calculated with different numbers of unoccupied states included in the calculation, as denoted by the parameter \texttt{NBANDS}.}
 \label{S2.5}
 \end{figure}
 
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=0.6\linewidth]{figures_proj2/S2.6.png}
-\caption{Definition of the layer thickness used in the renormalization of the dielectric function, $D_{\mathrm{total}}\coloneqq d_{\mathrm{2D}}$.}
+\caption{Definition of the layer thickness used in the renormalization of the dielectric function, $D_{\mathrm{total}} \coloneqq d_{\mathrm{2D}}$.}
 \label{S2.6}
 \end{figure}
 
@@ -435,8 +438,8 @@ The black rectangle represents the unit cell.}
 \centering
     \adjustbox{valign=c}{\includegraphics[width=0.45\linewidth]{figures_proj2/S2.9a.pdf}}%
     \adjustbox{valign=c}{\includegraphics[width=0.45\linewidth]{figures_proj2/S2.9b.pdf}}%
-\caption{Upper: Phonon dispersion curves of the monolayer and bilayer calculated using a $3\times3$ supercell.
-Lower: Phonon dispersion curves of the hydrogen-terminated monolayer and bilayer calculated using a $3\times3$ supercell.
+\caption{Left: Phonon dispersion curves of the monolayer and bilayer calculated using a $3\times3$ supercell.
+Right: Phonon dispersion curves of the hydrogen-terminated monolayer and bilayer calculated using a $3\times3$ supercell.
 Small negative frequencies appear around the $\Gamma$ point for the hydrogen-terminated bilayer.
 These small negative frequencies are often found in 2D materials and do not by themselves indicate dynamical instability~\cite{liu2016continuum,querne2023crystal,pallikara2022physical}.}
 \label{S2.9}
@@ -449,7 +452,7 @@ These small negative frequencies are often found in 2D materials and do not by t
 \caption{
 Left: Total energy and temperature as functions of time from \textit{ab initio} molecular dynamics calculations for the hydrogen-terminated bilayer at \qty{400}{K}.
 Right: Top and side views of the molecular structure of the hydrogen-terminated bilayer at the corresponding temperature.
-The structure remains thermodynamically stable and exhibits only very small structural changes.}
+The structure maintains high stability, exhibiting only minimal deformation.}
 \label{S2.10}
 \end{figure}
 
@@ -461,6 +464,7 @@ The structure remains thermodynamically stable and exhibits only very small stru
 Left: Spin-polarized ferromagnetic band structure of the monolayer calculated using the PBE functional.
 Right: Spin-polarized ferromagnetic band structure of the monolayer calculated using the HSE06 functional.
 The Fermi energy is set to zero.}
+\label{S2.11}
 \end{figure}
 
 \begin{figure}[!htbp]
@@ -494,8 +498,8 @@ but the results remained unchanged and displayed no symmetry-lowering distortion
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=0.6\linewidth]{figures_proj2/S2.15/S2.15.pdf}
-\caption{Spin-resolved total DOS for the FM, upper, and AFM,
-lower,monolayer structures as calculated using the HSE06 functional.}
+\caption{Fixed-spin energy profile of the monolayer calculated using the PBE+D3 and r$^{2}$SCAN functionals.
+The relative energy reaches its minimum near a fixed spin moment of $2.0~\mu_{\mathrm{B}}$.}
 \label{S2.15}
 \end{figure}
 
@@ -504,8 +508,7 @@ lower,monolayer structures as calculated using the HSE06 functional.}
     \adjustbox{valign=c}{\includegraphics[width=0.6\linewidth]{figures_proj2/S2.16a.pdf}}%
     \par\nointerlineskip
     \adjustbox{valign=c}{\includegraphics[width=0.6\linewidth]{figures_proj2/S2.16b.pdf}}%
-\caption{Spin-resolved total DOS for the FM,
-upper, and AFM, lower,
+\caption{Spin-resolved total DoS for the FM, upper, and AFM, lower,
 monolayer structures as calculated using the HSE06 functional.}
 \label{S2.16}
 \end{figure}
