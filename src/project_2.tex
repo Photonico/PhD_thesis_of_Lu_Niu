@@ -36,7 +36,7 @@ The most well-characterized and stable crystalline forms are $\alpha$-rhombohedr
 $\beta$-rhombohedral boron, $\beta$-B with 105--108 atoms per unit cell~\cite{widom2008symmetry};
 and $\gamma$-orthorhombic boron, $\gamma$-B with 28 atoms per unit cell~\cite{an2016new}.
 $\alpha$-B consists of \ce{B12} icosahedral building blocks and forms at low temperature,
-whereas $\beta$-B has the same structural motif, but also includes interstitial B atoms.
+whereas $\beta$-B has the same structural motif, but also includes interstitial boron atoms.
 $\beta$-B forms at room temperature and is the most stable structure.
 $\gamma$-B is also composed of \ce{B12} icosahedral units and forms at high pressure and
 temperature.
@@ -173,9 +173,9 @@ we use a mesh of $20 \times 18 \times 1$.
 The Fermi-level smearing is calculated using the Gaussian method with a broadening value of \qty{0.1}{\electronvolt}.
 
 For hydrogen termination,
-the hydrogen atoms are placed on top of the B atoms of the bipyramids.
+the hydrogen atoms are placed on top of the boron atoms of the bipyramids.
 The hollow-bridge site,
-located between the two apical B atoms on each side of the layer,
+located between the two apical boron atoms on each side of the layer,
 is also considered for comparison,
 as shown in figure~\ref{S2.7}.
 
@@ -241,7 +241,7 @@ $5 \times 5 \times 1$, and $3 \times 3 \times 1$, respectively~\cite{baroni2001p
 Atomic positions and lattice parameters are relaxed until residual forces are below $1\times10^{-5}$~Ry/bohr,
 corresponding to \qty{2.6e-4}{\electronvolt\per\angstrom}.
 
-Maximally localized Wannier functions are constructed in Wannier90 by initializing projections on B $s$ and $p$ orbitals~\cite{pizzi2020wannier90}.
+Maximally localized Wannier functions are constructed in Wannier90 by initializing projections on boron $s$ and $p$ orbitals~\cite{pizzi2020wannier90}.
 Uniform k-point meshes of $6 \times 8 \times 6$ for the bulk and $6 \times 6 \times 1$ for the monolayer and bilayer are used in Wannier interpolation.
 Superconductivity is subsequently analysed using the EPW code~\cite{giannozzi2009quantum,giannozzi2020quantum,giannozzi2017advanced,ponce2016epw},
 which is employed to evaluate the electron-phonon coupling strength and estimate the Allen--Dynes transition temperatures, $T_c$~\cite{margine2013anisotropic}.
@@ -305,16 +305,17 @@ and hence to finite plasmon lifetimes in the presence of interband transitions~\
 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=1.0\linewidth]{figures_proj2/fig2.1/fig2.1_6k.png}
+    \includegraphics[width=0.8\linewidth]{figures_proj2/fig2.1/fig2.1_6k.png}
 \caption{Atomic structure of o-\ce{B14}.
-Panels~a and~b show two side views of the bulk structure,
-and panel~c shows the corresponding top view.
+Panels~(a) and~(b) show two side views of the bulk structure,
+and panel~(c) shows the corresponding top view.
 The unit cell is highlighted in pale blue.
-The B atoms are grouped into G2, G3, and G7,
-as indicated by the coloured circles in panel~c and sketched in panel~f.
+The boron atoms are grouped into G2 (circled in blue),
+G3 (circled in orange), and G7 (circled in purple),
+as indicated by the coloured circles in panel~(c) and sketched in panel~(f).
 These groups correspond to the two-atom, three-atom, and seven-atom groups used in the bonding analysis, respectively.
-Panels~d and~e show two side views of the bilayer structure.
-Panels~g and~h show two side views of the monolayer structure.
+Panels~(d) and~(e) show two side views of the bilayer structure.
+Panels~(g) and~(h) show two side views of the monolayer structure.
 The crystallographic directions are indicated by the axis triad.}
 \label{fig:ob14_atomic_structure}
 \end{figure}
@@ -327,9 +328,9 @@ The atomic structure is shown in figure~\ref{fig:ob14_atomic_structure}.
 This boron allotrope has been predicted, on the basis of first-principles calculations,
 to be dynamically and thermodynamically stable~\cite{han2023superconducting}.
 The structural properties are listed in table~\ref{tab:bulk_o-b14_structure}.
-Following Ref.~\cite{han2023superconducting},
+Following the previous work on boron allotrope~\cite{han2023superconducting},
 the boron atoms in the unit cell are assigned to three groups,
-as indicated by the circles in panel b of figure~\ref{fig:ob14_atomic_structure} and sketched in panel d.
+as indicated by the circles in panel~(b) of figure~\ref{fig:ob14_atomic_structure} and sketched in panel~(d).
 These groups are denoted as G2, G3, and G7.
 This grouping was obtained using the approach of solid-state adaptive natural density partitioning to analyse the multi-centre bonding.
 This method combines ideas from Lewis theory and aromaticity.
@@ -362,27 +363,33 @@ $\alpha=\beta=\gamma$ & $90^\circ$
 
 \begin{figure}[!htbp]
 \centering
-    \adjustbox{valign=c}{\includegraphics[width=0.2\linewidth]{figures_proj2/fig2.2/fig2.2a2s.pdf}}%
-    \adjustbox{valign=c}{\includegraphics[width=0.4\linewidth]{figures_proj2/fig2.2/fig2.2a1s.pdf}}%
-    \adjustbox{valign=c}{\includegraphics[width=0.4\linewidth]{figures_proj2/fig2.2/fig2.2bs.pdf}}%
-\caption{Band structure of bulk o-\ce{B14} and the Brillouin zone with high-symmetry k-points labelled in the upper panel.
-The state-resolved density of states of bulk o-\ce{B14} is shown in the lower panel,
-with the different groups of Boron atoms indicated by colour as defined in panel d of figure~\ref{fig:ob14_atomic_structure}.}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}cc@{}}
+\includegraphics[width=0.55\linewidth]{figures_proj2/fig2.2/fig2.2a1s.pdf}&
+\includegraphics[width=0.35\linewidth]{figures_proj2/fig2.2/fig2.2a2t.pdf}\\
+\multicolumn{2}{@{}c@{}}{
+\includegraphics[width=0.90\linewidth]{figures_proj2/fig2.2/fig2.2b.pdf}
+}\end{tabular}
+\caption{Electronic structure of bulk o-\ce{B14}.
+The upper-left panel shows the calculated band structure along the selected high-symmetry path.
+The upper-right panel presents the Brillouin zone and the corresponding high-symmetry k-path used for the band-structure calculation.
+The Fermi energy is set to zero and marked by the horizontal dashed line.
+The lower panel shows the projected density of states of bulk o-\ce{B14},
+resolved into boron $s$ and $p$ orbital contributions for the atom groups defined in panel~(f) of figure~\ref{fig:ob14_atomic_structure}.}
 \label{fig:bulk_ob14_band_dos}
 \end{figure}
 
 The calculated band structure of bulk o-\ce{B14},
-shown in figure~\ref{fig:bulk_ob14_band_dos},
+shown in the upper-right panel of figure~\ref{fig:bulk_ob14_band_dos},
 exhibits metallic behaviour with three bands crossing the Fermi level.
+The corresponding high-symmetry k-path is shown in the upper-left panel.
 These bands include steep bands that promote high electron velocities,
 as well as flat bands near the Fermi level that enhance the density of states and favour electronic interactions.
 Such electronic features suggest the potential for unusual transport and quantum properties.
 Furthermore,
-the state-resolved density of states shows strong orbital hybridization between the B $2p$ orbitals within the structural units,
+the projected density of states shown in the lower panel
+shows strong orbital hybridization between the B $2p$ orbitals within the structural units,
 which reinforces the stability of the bonding framework.
-The calculated cohesive energy of bulk o-\ce{B14} is \qty{-6.16}{\electronvolt}.
-Relative to the ground-state phase of boron, $\alpha$-\ce{B12},
-the total energy of o-\ce{B14} is \qty{0.232}{\electronvolt} higher~\cite{han2023superconducting}.
 
 \subsection{\texorpdfstring{Xene o-\ce{B14}: atomic and electronic structure}{Xene o-B14: atomic and electronic structure}}
 \label{2_twod_atomic_electronic_structure}
@@ -417,7 +424,7 @@ The total energy as a function of vacuum-region thickness for the monolayer is g
 Convergence tests for the calculation of the dielectric function are also shown for the k-point set in figure~\ref{S2.4}
 and for the number of unoccupied bands included in the calculation, the parameter \texttt{NBANDS}, in figure~\ref{S2.5}.
 The definition of $d_{\mathrm{2D}}$ used in the dielectric-function renormalization is displayed in figure~\ref{S2.6}.
-The renormalization procedure is given in Section~\ref{2_calculation_methods},
+The renormalization procedure is given in Section~\ref{2_methods},
 and the general optical-property definitions are introduced in Chapter~\ref{cha:fundamentals_b}.
 Figure~\ref{S2.7} shows the hollow-bridge site that was also considered for H adsorption on the monolayer and bilayer structures.
 
@@ -460,7 +467,7 @@ We define it from the difference in the $z$ coordinate of the top and bottom ato
 together with one additional van der Waals radius on each side of the slab.
 Thus, $d_{\mathrm{2D}}=dz+2d_{\mathrm{vdW}}$.
 For the bare monolayer and bilayer,
-the top and bottom atoms are the pyramidal apical B atoms.
+the top and bottom atoms are the pyramidal apical boron atoms.
 For the hydrogen-terminated bilayer,
 the top and bottom atoms are the H atoms.
 Here, we use $d_{\mathrm{vdW}}=\qty{1.91}{\angstrom}$ for boron and $d_{\mathrm{vdW}}=\qty{1.2}{\angstrom}$ for hydrogen.
