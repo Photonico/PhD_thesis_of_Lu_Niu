@@ -589,7 +589,7 @@ Therefore, the antiferromagnetic state is energetically more favourable.
 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=0.6\linewidth]{figures_proj2/fig2.7/fig2.7_from2.6.pdf}
+    \includegraphics[width=0.75\linewidth]{figures_proj2/fig2.7/fig2.7_from2.6.pdf}
 \caption{Highest occupied and lowest unoccupied spin-up and spin-down states of the monolayer in the antiferromagnetic state
 at a k-point midway along the high-symmetry $\mathrm{T}$--$\mathrm{Y}$ direction.
 The corresponding spin density of the monolayer is also shown.
@@ -617,6 +617,45 @@ the hydrogen-terminated bilayer becomes metallic and bears some resemblance to t
 
 \subsection{Superconducting properties}
 \label{2_superconducting}
+
+The conventional superconducting properties of bulk o-\ce{B14},
+the monolayer,
+and the hydrogen-terminated bilayer are investigated.
+The bilayer is not considered due to its semiconducting nature.
+We first confirm that the atomic relaxation obtained using Quantum ESPRESSO yields very similar results to those obtained using VASP.
+For the hydrogen-terminated bilayer,
+the lattice constants $a$ and $b$ are \qty{5.66}{\angstrom} and \qty{6.12}{\angstrom} from Quantum ESPRESSO,
+compared with \qty{5.68}{\angstrom} and \qty{6.14}{\angstrom} from VASP.
+The interlayer distance is \qty{4.13}{\angstrom} from Quantum ESPRESSO and \qty{4.11}{\angstrom} from VASP,
+while the H-B distance is \qty{1.19}{\angstrom} in both cases.
+
+For the bulk phase,
+an electron-phonon coupling strength of $\lambda=0.931$ is obtained,
+corresponding to an Allen--Dynes superconducting transition temperature of $T_c=\qty{28.2}{K}$.
+This value is consistent with the previously reported value of \qty{29.1}{K}~\cite{han2023superconducting}.
+The hydrogen-terminated bilayer exhibits a slightly higher electron-phonon coupling strength,
+$\lambda=1.01$,
+but a lower transition temperature of $T_c=\qty{18.5}{K}$.
+This may be attributed to phonon softening effects arising at higher electron-phonon coupling strengths~\cite{karakozov1975,allen1975transition,carbotte1990properties}.
+The monolayer phase yields $\lambda=0.05$ and a negligible $T_c$,
+indicating the absence of significant phonon-mediated superconductivity.
+
+\begin{figure}[!htbp]
+\centering
+    \adjustbox{valign=c}{\includegraphics[width=0.49\linewidth]{figures_proj2/fig2.9a.pdf}}%
+    \adjustbox{valign=c}{\includegraphics[width=0.49\linewidth]{figures_proj2/fig2.9b.pdf}}%
+\caption{Superconducting gap versus temperature for bulk o-\ce{B14} (left)
+and hydrogen-terminated bilayer o-\ce{B14} (right).}
+\label{fig:ob14_superconducting_gap}
+\end{figure}
+
+From the anisotropic Migdal--Eliashberg equations,
+the analysis of the superconducting gap evolution further supports these results.
+As shown in the left and right panels of figure~\ref{fig:ob14_superconducting_gap},
+the superconducting gap closes around $T_c=\qty{31.3}{K}$ for bulk o-\ce{B14}
+and around $T_c=\qty{24.3}{K}$ for the hydrogen-terminated bilayer.
+Overall, these results suggest that o-\ce{B14} is unlikely to possess conventional superconductivity in the monolayer phase owing to the extremely weak electron-phonon interaction,
+whereas the bulk and hydrogen-terminated bilayer possess phonon-mediated superconducting states with transition temperatures in the range of \qtyrange{20}{30}{K}.
 
 \subsection{Optical properties}
 \label{2_optical}
@@ -833,7 +872,7 @@ as calculated using the HSE06 functional.}
 
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=0.6\linewidth]{figures_proj2/S2.17/S2.17.png}
+    \includegraphics[width=0.75\linewidth]{figures_proj2/S2.17/S2.17.png}
 \caption{(a) Highest occupied spin-up state and lowest unoccupied spin-down state of the FM monolayer,
 taken midway along the high-symmetry $\mathrm{T}$--$\mathrm{Y}$ direction in the Brillouin zone.
 (b) Corresponding spin density,
