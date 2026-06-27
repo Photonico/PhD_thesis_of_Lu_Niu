@@ -151,8 +151,7 @@ Finally, section~\ref{2_conclusions} gives the conclusions.
 
 The density functional theory calculations are performed using the Vienna Ab initio Simulation Package, VASP~\cite{kresse1993ab,kresse1994ab,kresse1996efficiency,kresse1996efficient}.
 The projector augmented wave method is used to describe the electron-ion interactions~\cite{kresse1999ultrasoft}.
-The Perdew--Burke--Ernzerhof formulation of the generalized gradient approximation, PBE,
-is employed for the exchange-correlation functional~\cite{perdew1996generalized},
+The generalized gradient approximation of Perdew--Burke--Ernzerhof is employed for the exchange-correlation functional~\cite{perdew1996generalized},
 along with the D3 dispersion correction with Becke--Johnson damping to account for long-range van der Waals interactions~\cite{becke2005density,grimme2010consistent,grimme2011effect}.
 For bulk o-\ce{B14}, a $\Gamma$-centered k-point mesh of $34 \times 48 \times 31$ is used with a plane-wave energy cutoff of \qty{600}{\electronvolt}.
 The electronic convergence criterion is set to \qty{1e-6}{\electronvolt},
@@ -166,12 +165,19 @@ For selected calculations,
 we also use the screened hybrid exchange-correlation functional of Heyd, Scuseria, and Ernzerhof, HSE06,
 which gives more accurate band-gap energies~\cite{sassnick2021electronic,krukau2006influence}.
 Unless explicitly stated otherwise,
-all figures show results obtained using the PBE functional.
+all figures show results obtained using the Perdew--Burke--Ernzerhof functional.
 For the density-of-states calculations for bulk o-\ce{B14},
 we use a $\Gamma$-centered k-point mesh of $20 \times 28 \times 18$.
 For the two-dimensional systems,
 we use a mesh of $20 \times 18 \times 1$.
-The Fermi-level smearing is described using the Gaussian method with a broadening value of \qty{0.1}{\electronvolt}.
+The Fermi-level smearing is calculated using the Gaussian method with a broadening value of \qty{0.1}{\electronvolt}.
+
+For hydrogen termination,
+the hydrogen atoms are placed on top of the B atoms of the bipyramids.
+The hollow-bridge site,
+located between the two apical B atoms on each side of the layer,
+is also considered for comparison,
+as shown in figure~\ref{S2.7}.
 
 The adsorption energy per atom, $E_{\mathrm{ad}}$, of hydrogen atoms on the surface is calculated as:
 
@@ -181,9 +187,9 @@ The adsorption energy per atom, $E_{\mathrm{ad}}$, of hydrogen atoms on the surf
 \end{equation}
 
 here, $E_{\mathrm{H/B}}$ is the total energy of the adsorption system,
-$E_{\mathrm{B}}$ is the total energy of the pristine two-dimensional boron structure,
-$E_{\mathrm{H}}$ is the total energy of a hydrogen atom in the \ce{H2} molecule,
-and $n_{\mathrm{H}}$ is the number of hydrogen atoms in the unit cell.
+$E_{\mathrm{B}}$ represnets the total energy of the pristine two-dimensional boron structure,
+$E_{\mathrm{H}}$ denotes the total energy of a hydrogen atom in the \ce{H2} molecule,
+and $n_{\mathrm{H}}$ denotes the number of hydrogen atoms in the unit cell.
 
 The cohesive energy per atom, $E_{\mathrm{c}}$, of the boron systems is calculated as:
 
@@ -193,7 +199,8 @@ The cohesive energy per atom, $E_{\mathrm{c}}$, of the boron systems is calculat
 \label{cohesive_energy_per_atom}
 \end{equation}
 
-here, $E_{\mathrm{B\text{-}struc}}$ represents the total energy of the boron structure of interest,
+here,
+$E_{\mathrm{B\text{-}struc}}$ represents the total energy of the boron structure of interest,
 $E_{\mathrm{B\text{-}atom}}$ is the total energy of a free boron atom calculated in a large supercell,
 and $n_{\mathrm{B}}$ denotes the number of boron atoms in the unit cell of the structure.
 
@@ -211,9 +218,18 @@ here, $\rho_{\mathrm{H/B}}(\vec{r}\,)$ is the total charge density of the adsorb
 and $\rho_{\mathrm{B}}(\vec{r}\,)$ and $\rho_{\mathrm{H}}(\vec{r}\,)$ are the total charge densities of the clean boron structure and the hydrogen atom,
 respectively.
 
+The dynamical stability of the pristine monolayer and bilayer,
+as well as the hydrogen-terminated structures,
+is examined from the phonon dispersion curves using the finite-difference method.
+The main phonon dispersions are calculated using $(3\times3)$ supercells.
+The comparison with $(2\times2)$ supercells is included in figures~\ref{S2.8} and~\ref{S2.9}.
+For the hydrogen-terminated bilayer,
+\textit{ab initio} molecular dynamics calculations are also carried out at a temperature of \qty{400}{K} using VASP,
+as shown in figure~\ref{S2.10}.
+
 The superconducting behaviour of o-\ce{B14} is investigated systematically in three structural phases,
 namely bulk, monolayer, and hydrogen-terminated bilayer.
-Calculations are carried out using the PBE formulation of the generalized gradient approximation~\cite{perdew1996generalized},
+Calculations are carried out using the Perdew--Burke--Ernzerhof formulation of the generalized gradient approximation~\cite{perdew1996generalized},
 as provided in Quantum ESPRESSO~\cite{giannozzi2009quantum}.
 Norm-conserving pseudopotentials and a kinetic energy cutoff of $45$~Ry are chosen~\cite{hamann2013optimized},
 and a vacuum spacing of \qty{15}{\angstrom} is added for the two-dimensional systems to suppress spurious periodic interactions.
@@ -228,7 +244,7 @@ corresponding to \qty{2.6e-4}{\electronvolt\per\angstrom}.
 Maximally localized Wannier functions are constructed in Wannier90 by initializing projections on B $s$ and $p$ orbitals~\cite{pizzi2020wannier90}.
 Uniform k-point meshes of $6 \times 8 \times 6$ for the bulk and $6 \times 6 \times 1$ for the monolayer and bilayer are used in Wannier interpolation.
 Superconductivity is subsequently analysed using the EPW code~\cite{giannozzi2009quantum,giannozzi2020quantum,giannozzi2017advanced,ponce2016epw},
-which is employed to evaluate electron-phonon coupling strength and estimate Allen--Dynes transition temperatures, $T_c$~\cite{margine2013anisotropic}.
+which is employed to evaluate the electron-phonon coupling strength and estimate the Allen--Dynes transition temperatures, $T_c$~\cite{margine2013anisotropic}.
 The superconducting properties are also obtained by solving the fully anisotropic Migdal--Eliashberg equations~\cite{bardeen1955electron,giustino2017electron,margine2013anisotropic},
 as implemented in the EPW code.
 The Morel--Anderson pseudopotential $\mu^{*}$ is chosen to be $0.13$,
@@ -246,26 +262,29 @@ A convergence check for the number of unoccupied bands included in the calculati
 Figure~\ref{S2.5} shows the result for bulk o-\ce{B14}.
 The result shows that $128$ bands yield well-converged results,
 and this value is used for all systems.
-The definitions of the dielectric tensor and the derived optical quantities are introduced in Chapter~\ref{cha:fundamentals_b},
+The microscopic expression for the dielectric response,
+the Kramers--Kronig relation,
+and the derived optical quantities are introduced in Chapter~\ref{cha:fundamentals_b},
 especially Sections~\ref{sec:from_electronic_response_to_dielectric_function} and~\ref{sec:from_dielectric_function_to_optical_properties}.
 
 The dielectric tensor contains the combined dielectric response of the two-dimensional material and the vacuum,
 so the magnitude of $\varepsilon_{1}(\omega)$ and $\varepsilon_{2}(\omega)$ depends linearly on the vacuum thickness~\cite{weng2018honeycomb,laturia2018dielectric}.
-Therefore, to obtain the intrinsic dielectric function of the structures,
+Therefore,
+to obtain the intrinsic dielectric function of the structures,
 the calculated dielectric functions are renormalized following Ref.~\cite{yang2021method}:
 
 \begin{equation}
     \varepsilon_{2}^{\mathrm{2D}}(\omega)
     = \frac{d_{\mathrm{SC}}}{d_{\mathrm{2D}}}
     \varepsilon_{2}^{\mathrm{SC}}(\omega)
-\label{dielectric_vacuum_correction_imaginary}
+    \label{dielectric_vacuum_correction_imaginary}
 \end{equation}
 
 \begin{equation}
     \varepsilon_{1}^{\mathrm{2D}}(\omega) =
     1 + \frac{d_{\mathrm{SC}}}{d_{\mathrm{2D}}}
     \left[\varepsilon_{1}^{\mathrm{SC}}(\omega)-1\right]
-\label{dielectric_vacuum_correction_real}
+    \label{dielectric_vacuum_correction_real}
 \end{equation}
 
 here, $\varepsilon_{i}^{\mathrm{2D}}(\omega)$ and $\varepsilon_{i}^{\mathrm{SC}}(\omega)$,
@@ -284,51 +303,79 @@ and hence to finite plasmon lifetimes in the presence of interband transitions~\
 \section{Results and discussion}
 \label{2_results}
 
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\linewidth]{figures_proj2/fig2.1/fig2.1_6k.png}
+\caption{Atomic structure of o-\ce{B14}.
+(a) Side views and (b) top view of the bulk structure.
+The unit cell is highlighted in pale blue.
+The B atoms are grouped into three groups, G2, G3, and G7,
+following Ref.~\cite{han2023superconducting}.
+These groups correspond to the two, three, and seven B atoms, respectively.
+The atoms in these groups are sketched in (d).
+The two side views of the bilayer and monolayer structures are shown in (c) and (e), respectively.
+The top view is the same as (b).}
+\label{fig:ob14_atomic_structure}
+\end{figure}
+
 \subsection{\texorpdfstring{Bulk o-\ce{B14}: atomic and electronic structure}{Bulk o-B14: atomic and electronic structure}}
 \label{2_bulk_atomic_electronic_structure}
 
 The structural and electronic properties of bulk o-\ce{B14} are investigated first.
+The atomic structure is shown in figure~\ref{fig:ob14_atomic_structure}.
 This boron allotrope has been predicted, on the basis of first-principles calculations,
 to be dynamically and thermodynamically stable~\cite{han2023superconducting}.
 The structural properties are listed in table~\ref{tab:bulk_o-b14_structure}.
 Following Ref.~\cite{han2023superconducting},
 the boron atoms in the unit cell are assigned to three groups,
-namely G2, G3, and G7.
-This grouping was obtained using the approach of solid-state adaptive natural density partitioning
-to analyse the multi-centre bonding.
+as indicated by the circles in panel b of figure~\ref{fig:ob14_atomic_structure} and sketched in panel d.
+These groups are denoted as G2, G3, and G7.
+This grouping was obtained using the approach of solid-state adaptive natural density partitioning to analyse the multi-centre bonding.
 This method combines ideas from Lewis theory and aromaticity.
-It was found that,
-aside from the four normal two-centre-two-electron and the sixteen three-centre-two-electron B-B $\sigma$-bonds,
+It was found that, aside from the four normal two-centre-two-electron and the sixteen three-centre-two-electron B-B $\sigma$-bonds,
 there are unusual seven-centre-two-electron $\pi$-bonds~\cite{han2023superconducting}.
 
 \begin{table}[!htbp]
 \centering
 \rowcolors{2}{gray!15}{white}
 \setlength{\tabcolsep}{12pt}
-\begin{adjustbox}{center,max width=0.95\linewidth}
+\begin{adjustbox}{center,max width=1.0\linewidth}
 \begin{tabular}{cccc}
 \hline
 \rowcolor{gray!25}
 lattice parameter & value & atom & internal coordinate \\ \hline
 $a$ & \qty{5.6970}{\angstrom}
-& B1 (4x) & \texttt{(0.52123, 0.50000, 0.63796)} \\
-$b$ & \qty{4.0479}{\angstrom} & B2 (4j) & \texttt{(0.60090, 0.50000, 0.89991)} \\
+& B1~(4x) & \texttt{(0.52123, 0.50000, 0.63796)} \\
+$b$ & \qty{4.0479}{\angstrom}
+& B2~(4j) & \texttt{(0.60090, 0.50000, 0.89991)} \\
 $c$ & \qty{6.2042}{\angstrom}
-& B3 (4k) & \texttt{(0.75000, 0.79171, 0.72973)} \\
-$\alpha=\beta=\gamma$ & $90^\circ$ & B4 (2f) & \texttt{(0.25000, 0.50000, 0.52367)} \\
+& B3~(4k) & \texttt{(0.75000, 0.79171, 0.72973)} \\
+$\alpha=\beta=\gamma$ & $90^\circ$
+& B4~(2f) & \texttt{(0.25000, 0.50000, 0.52367)} \\
 \hline
 \end{tabular}
 \end{adjustbox}
 \caption{Lattice constants, lattice angles, and internal coordinates of bulk o-\ce{B14}~\cite{han2023superconducting}.}
-\label{tab:bulk_ob14_structure}
+\label{tab:bulk_o-b14_structure}
 \end{table}
 
-The calculated band structure of bulk o-\ce{B14} exhibits metallic behaviour,
-with three bands crossing the Fermi level.
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\linewidth]{ERROR_REPLACE_WITH_FIGURE_2_BULK_OB14_BAND_STRUCTURE_AND_DOS}
+\caption{Band structure of bulk o-\ce{B14} and the Brillouin zone with high-symmetry k-points labelled in the upper panel.
+The state-resolved density of states of bulk o-\ce{B14} is shown in the lower panel,
+with the different groups of B atoms indicated by colour as defined in panel d of figure~\ref{fig:ob14_atomic_structure}.}
+\label{fig:bulk_ob14_band_dos}
+\end{figure}
+
+The calculated band structure of bulk o-\ce{B14},
+shown in figure~\ref{fig:bulk_ob14_band_dos},
+exhibits metallic behaviour with three bands crossing the Fermi level.
 These bands include steep bands that promote high electron velocities,
 as well as flat bands near the Fermi level that enhance the density of states and favour electronic interactions.
 Such electronic features suggest the potential for unusual transport and quantum properties.
-Furthermore, the state-resolved density of states shows strong orbital hybridization between the B $2p$ orbitals within the structural units,
+Furthermore,
+the state-resolved density of states shows strong orbital hybridization between the B $2p$ orbitals within the structural units,
 which reinforces the stability of the bonding framework.
 The calculated cohesive energy of bulk o-\ce{B14} is \qty{-6.16}{\electronvolt}.
 Relative to the ground-state phase of boron, $\alpha$-\ce{B12},
