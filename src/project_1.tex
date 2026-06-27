@@ -184,34 +184,37 @@ Orange lines highlight the unit cells.}
 \centering
 \rowcolors{2}{gray!15}{white}
 \begin{adjustbox}{max width=1.0\linewidth}
-\begin{tabular}{ccm{48px}m{48px}m{48px}m{72px}m{72px}c}
+
+\begin{tabular}{cccccccc}
 \hline
 \rowcolor{gray!25}
-system
-& $a$ $(a=b)$ (Å) & B-B (Å) & C-C (Å) & B-C (Å) & $E_{\mathrm{g-PBE}}$ (eV) & $E_{\mathrm{g-HSE06}}$ (eV) & Nature \\ \hline
+system & $a$ $(a=b)$ (Å) & B-B (Å) & C-C (Å) & B-C (Å) & $E_{\mathrm{g-PBE}}$ (eV) & $E_{\mathrm{g-HSE06}}$ (eV) & Nature \\ \hline
+
 \ce{BC3}
 & 5.169 & - & 1.421 & 1.563
-& 0.634
-\newline (0.62--0.66)
-\newline\cite{behzad2017mechanical,zhang2018theoretical,zhang2018strain}
-& 1.822 \newline(1.83)\cite{zhang2018theoretical}
-& indirect \\
+& \begin{tabular}[c]{@{}c@{}}
+0.634 (0.62--0.66)\\
+\cite{behzad2017mechanical,zhang2018theoretical,zhang2018strain}
+\end{tabular}
+& 1.822 (1.83)\cite{zhang2018theoretical} & indirect \\
 
 Borophene
 & 5.051
-& 1.689 ($l_1$) \newline
-1.672 ($l_2$) \newline
+& \begin{tabular}[c]{@{}c@{}}
+1.689 ($l_1$)\\
+1.672 ($l_2$)\\
 1.707 ($l_3$)
-& - & - & - & -
-& metallic \\
+\end{tabular}
+& - & - & - & - & metallic \\
 
 \ce{B4C3}
 & 4.690 & 1.689 ($l_4$) & -
-& 1.592 ($l_5$) \newline
-1.517 ($l_6$) \newline
+& \begin{tabular}[c]{@{}c@{}}
+1.592 ($l_5$)\\
+1.517 ($l_6$)\\
 1.548 ($l_7$)
-& 1.647 & 2.381 \newline(2.39)\cite{chang2019b4c3}
-& indirect \\
+\end{tabular}
+& 1.647 & 2.381 (2.39)\cite{chang2019b4c3} & indirect \\
 
 Graphene
 & 2.467 & - & 1.424 & - & - & - & semimetal \\
@@ -279,7 +282,8 @@ The orange parallelogram indicates the unit cell.}
 \centering
 \rowcolors{2}{gray!15}{white}
 \begin{adjustbox}{max width=1.0\linewidth}
-\begin{tabular}{ccm{72px}m{64px}m{88px}m{72px}c}
+% \begin{tabular}{ccm{0.2\linewidth}m{0.18\linewidth}m{0.18\linewidth}m{0.18\linewidth}c}
+\begin{tabular}{ccccccc}
 \hline
 \rowcolor{gray!25}
 system
@@ -722,7 +726,7 @@ suggesting that it could exhibit optically active, possibly chiral, effects.
 \clearpage
 \section{Data availability statement}
 
-The original data presented in this chapter are openly available from the GitHub repository:
+The original data presented in this chapter are openly available from the \texttt{GitHub} repository:
 \href{https://github.com/Photonico/Graphene-BC_20230622}{\texttt{Photonico/Graphene-BC\_20230622}}.
 
 \section{Supplementary information}
@@ -883,7 +887,7 @@ In each figure, the equilibrium geometry is indicated by the ``Extrema of fitted
 \begin{table}[!htbp]
 \centering
 \begin{adjustbox}{max width=1.0\linewidth}
-\begin{tabular}{cm{60px}m{110px}m{120px}m{90px}m{100px}}
+\begin{tabular}{cccccc}
 \hline
 \rowcolor{gray!25}
 system
