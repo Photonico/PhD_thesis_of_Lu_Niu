@@ -252,7 +252,7 @@ consistent with the typical semi-empirical range of $0.10$--$0.16$ used in Migda
 and with the value adopted in the literature for boron-based two-dimensional superconductors~\cite{zhao2019two}.
 With this choice,
 the calculated electron-phonon coupling strengths, $\lambda$, and $T_c$ indicate clear dimensionality effects,
-as discussed in Section~\ref{2_superconducting_properties}.
+as discussed in Section~\ref{2_superconducting}.
 
 For the calculation of the optical properties within VASP,
 in particular the frequency-dependent dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$,
@@ -303,20 +303,18 @@ and hence to finite plasmon lifetimes in the presence of interband transitions~\
 \section{Results and discussion}
 \label{2_results}
 
-% Original paper Fig. 1, redrawn for this thesis.
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=0.8\linewidth]{figures_proj2/fig2.1/fig2.1_6k.png}
 \caption{Atomic structure of o-\ce{B14}.
 Panels~(a) and~(b) show two side views of the bulk structure,
-and panel~(c) shows the corresponding top view;
+and panel~(c) shows the corresponding top view.
 The boron atoms are grouped into G2 (circled in blue),
 G3 (circled in orange), and G7 (circled in purple),
-as indicated by the coloured circles in panel~(c) and sketched in panel~(f);
+as indicated by the coloured circles in panel~(c) and sketched in panel~(f).
 These groups correspond to the two-atom, three-atom, and seven-atom groups used in the bonding analysis, respectively.
-Panels~(d) and~(e) show two side views of the bilayer structure;
-Panels~(g) and~(h) show two side views of the monolayer structure;
-The crystallographic directions are indicated by the axis triad.}
+Panels~(d) and~(e) show two side views of the bilayer structure.
+Panels~(g) and~(h) show two side views of the monolayer structure.}
 \label{fig:ob14_atomic_structure}
 \end{figure}
 
@@ -363,15 +361,15 @@ $\alpha=\beta=\gamma$ & $90^\circ$
 
 \begin{figure}[!htbp]
 \centering
-\makebox[0.90\linewidth][c]{%
-    \adjustbox{valign=c}{\includegraphics[width=0.55\linewidth]{figures_proj2/fig2.2/fig2.2a1s.pdf}}%
-    \hfill\adjustbox{valign=c}{\includegraphics[width=0.35\linewidth]{figures_proj2/fig2.2/fig2.2a2t.pdf}}%
+\makebox[1.0\linewidth][c]{%
+    \adjustbox{valign=c}{\includegraphics[width=0.6\linewidth]{figures_proj2/fig2.2/fig2.2a1s.pdf}}%
+    \hfill\adjustbox{valign=c}{\includegraphics[width=0.4\linewidth]{figures_proj2/fig2.2/fig2.2a2t.pdf}}%
     }\par\nointerlineskip
-\includegraphics[width=0.90\linewidth]{figures_proj2/fig2.2/fig2.2b.pdf}
+\includegraphics[width=0.80\linewidth]{figures_proj2/fig2.2/fig2.2b.pdf}
 \caption{Electronic structure of bulk o-\ce{B14}.
-The upper-left panel presents the calculated band structure along the selected high-symmetry k-path;
-The upper-right panel gives the Brillouin zone together with the corresponding high-symmetry k-path used for the band-structure calculation;
-And the lower panel reports the projected density of states of bulk o-\ce{B14},
+The upper-left panel shows the calculated band structure along the selected high-symmetry k-path.
+The upper-right panel gives the Brillouin zone together with the corresponding high-symmetry k-path used for the band-structure calculation.
+The lower panel shows the projected density of states of bulk o-\ce{B14},
 resolved into boron $s$ and $p$ orbital contributions for the atom groups defined in panel~(f) of figure~\ref{fig:ob14_atomic_structure}.}
 \label{fig:bulk_ob14_band_dos}
 \end{figure}
@@ -416,10 +414,9 @@ and \qty{2.61}{\electronvolt} per hydrogen atom for the bilayer.
 \centering
     \includegraphics[width=0.80\linewidth]{figures_proj2/fig2.3/fig2.3_4k.png}
 \caption{Atomic structure of the hydrogen-terminated bilayer o-\ce{B14}.
-Panel~(a) shows a perspective view of the $3\times3$ supercell.
+Panel~(a) shows the $3\times3$ supercell.
 Panels~(b) and~(d) show two side views,
-and panel~(c) shows the top view.
-The blue dashed box marks the unit cell.}
+and panel~(c) shows the top view.}
 \label{fig:h_ob14_bilayer_structure}
 \end{figure}
 
@@ -447,8 +444,8 @@ which is slightly stronger than that on the monolayer, \qty{-1.450}{\electronvol
 \hline
 \rowcolor{gray!25}
 system
-& $a$ (eV)
-& $b$ (eV)
+& $a$
+& $b$
 & \begin{tabular}[c]{@{}c@{}}
 interlayer\\B-B (Å)
 \end{tabular}
@@ -457,54 +454,24 @@ interlayer\\B-B (Å)
 & electronic nature \\ \hline
 
 monolayer
-& 5.700
-& 6.314
-& --
-& -6.12
-& --
+& 5.700 & 6.314 & - & $-6.12$ & -
 &\begin{tabular}[c]{@{}c@{}}
 antiferromagnetic\\semiconductor
 \end{tabular}\\
 
-hydrogen-terminated monolayer
-& 5.694
-& 6.134
-& --
-& --
-& -1.450
-& metallic \\
+H-terminated monolayer
+& 5.694 & 6.134 & - & - & $-1.450$ & metallic \\
 
 bilayer
-& 5.719
-& 6.349
-& 1.693
-& -6.35
-& --
-& semiconductor \\
+& 5.719 & 6.349 & 1.693 & $-6.35$ & - & semiconductor \\
 
-hydrogen-terminated bilayer
-& 5.680
-& 6.147
-& 1.645
-& --
-& -1.525
-& metallic \\
+H-terminated bilayer
+& 5.680 & 6.147 & 1.645 & - & $-1.525$ & metallic \\
 
-bulk
-& 5.697
-& 6.204
-& 1.686
-& -6.16
-& --
-& metallic \\
+bulk & 5.697 & 6.204 & 1.686 & $-6.16$ & - & metallic \\
 
-$\alpha'$-monolayer
-& --
-& --
-& --
-& -6.00
-& --
-& metallic \\
+$\alpha'$-monolayer~\cite{niu2024electronic}
+& - & - & - & $-6.00$ & - & metallic \\
 
 \hline
 \end{tabular}
@@ -519,7 +486,7 @@ while the cohesive and adsorption energies are given in \si{\electronvolt}.}
 \label{tab:xene_ob14_structure}
 \end{table}
 
-\subsubsection{Dynamical stability: phonon dispersion}
+\subsubsection{Dynamic stability: phonon dispersion}
 \label{xene_ob14_phonon_dispersion}
 
 To investigate whether the monolayer and bilayer structures,
@@ -543,7 +510,6 @@ Using \textit{ab initio} molecular dynamics calculations at a temperature of \qt
 we also verified that the hydrogen-terminated bilayer is thermodynamically stable,
 as shown in figure~\ref{S2.10}.
 
-% Original paper Fig. 4.
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=0.6\linewidth]{figures_proj2/fig2.5.pdf}
@@ -561,16 +527,15 @@ and an increase both in the interlayer B-B bonds and in the $p_z$ orbital of the
 The latter is directed toward the hydrogen atom and is partially hidden within the large depletion region.
 The increase in electron density between the interlayer B-B bond is consistent with the slightly smaller distance compared with the bilayer without hydrogen adsorption.
 
-% Original paper Fig. 3(b), split into a separate thesis figure.
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=0.82\linewidth]{figures_proj2/fig2.4/fig2.4_6k.png}
+    \includegraphics[width=0.8\linewidth]{figures_proj2/fig2.4/fig2.4_6k.png}
 \caption{Charge density difference, $\Delta \rho(\vec{r}\,)$,
 for hydrogen adsorption on the bilayer o-\ce{B14} surface.
 The charge density difference is calculated using equation~\eqref{charge_density_difference_hydrogen_adsorption}
 for a $2\times2$ supercell.
 Regions of charge accumulation are shown in yellow,
-and regions of charge depletion are shown in cyan.
+and regions of charge depletion are shown in blue.
 The isosurface level is $1.5\times10^{-4}~e\,a_0^{-3}$.}
 \label{fig:h_ob14_charge_density_difference}
 \end{figure}
@@ -597,7 +562,6 @@ The density of states of the ferromagnetic structure clearly shows significant s
 as shown in the upper panel of figure~\ref{S2.16}.
 The density of states for the antiferromagnetic ordering is shown in the lower panel of figure~\ref{S2.16}.
 
-% Original paper Fig. 5, split into three side-by-side panels.
 \begin{figure}[!htbp]
 \centering
     \adjustbox{valign=c}{\includegraphics[width=0.333\linewidth]{figures_proj2/fig2.6a.pdf}}%
@@ -605,10 +569,8 @@ The density of states for the antiferromagnetic ordering is shown in the lower p
     \adjustbox{valign=c}{\includegraphics[width=0.333\linewidth]{figures_proj2/fig2.6c.pdf}}%
 \caption{Band structures of monolayer and bilayer o-\ce{B14} calculated using the HSE06 functional.
 The left and middle panels show the spin-polarized ferromagnetic and antiferromagnetic configurations of the monolayer,
-respectively;
-The right panel shows the band structure of bilayer o-\ce{B14};
-For the semiconducting systems,
-the energy zero is located in the middle of the band gap.}
+respectively.
+The right panel shows the band structure of bilayer o-\ce{B14}.}
 \label{fig:monolayer_bilayer_band_structure}
 \end{figure}
 
@@ -625,7 +587,6 @@ leading to a greater kinetic-energy lowering.
 In contrast, ferromagnetic alignment restricts such virtual hopping processes and reduces the associated kinetic-energy gain.
 Therefore, the antiferromagnetic state is energetically more favourable.
 
-% Original paper Fig. 6.
 \begin{figure}[!htbp]
 \centering
     \includegraphics[width=0.6\linewidth]{figures_proj2/fig2.7/fig2.7_from2.6.pdf}
@@ -647,18 +608,18 @@ the band structure changes dramatically.
 As shown in figure~\ref{fig:h_bilayer_band_dos},
 the hydrogen-terminated bilayer becomes metallic and bears some resemblance to the bulk band structure.
 
-% Original paper Fig. 7.
 \begin{figure}[!htbp]
 \centering
-    \includegraphics[width=0.82\linewidth]{figures_proj2/fig2.8.pdf}
+    \includegraphics[width=0.8\linewidth]{figures_proj2/fig2.8.pdf}
 \caption{Band structure and total density of states of the hydrogen-terminated bilayer o-\ce{B14}.}
 \label{fig:h_bilayer_band_dos}
 \end{figure}
 
 \subsection{Superconducting properties}
-\label{2_superconducting_properties}
+\label{2_superconducting}
 
 \subsection{Optical properties}
+\label{2_optical}
 
 \section{Conclusions}
 \label{2_conclusions}
@@ -681,7 +642,7 @@ and for the number of unoccupied bands included in the calculation, the paramete
 The definition of $d_{\mathrm{2D}}$ used in the dielectric-function renormalization is displayed in figure~\ref{S2.6}.
 The renormalization procedure is given in Section~\ref{2_methods},
 and the general optical-property definitions are introduced in Chapter~\ref{cha:fundamentals_b}.
-Figure~\ref{S2.7} shows the hollow-bridge site that was also considered for H adsorption on the monolayer and bilayer structures.
+Figure~\ref{S2.7} shows the hollow-bridge site that was also considered for hydrogen adsorption on the monolayer and bilayer structures.
 
 The calculated phonon dispersion curves for the two-dimensional systems,
 as obtained using $(2 \times 2)$ and $(3 \times 3)$ supercells, are shown in figures~\ref{S2.8} and~\ref{S2.9}.
