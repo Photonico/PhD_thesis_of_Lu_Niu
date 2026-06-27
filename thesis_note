@@ -32,7 +32,7 @@
 * 严禁重复的表达和重复的公式, 尽量避免啰嗦的表达;
 * 每小节结尾既总结本节, 也自然过渡到下一节;
 * 每一个 subsection 的结论处尽量用 we arrive at 这类收束句式;
-* 在公式中, 当一个矢量含有 prime 的时候, 要写成 $\vec{r}\,'$ 而不是 $\vec{r}'$;
+* \vec{r} 后面有括号或者 prime 的时候, 我会写成 \vec{r}\, 不然的话箭头就会和右括号或者 prime 贴在一起, 形成难以辨别的符号;
 * 行间公式前用冒号, 行间公式末尾不加标点;
 * 公式尽量命名, 并使用 descriptive labels;
 * 喜欢的动词: demonstrate, determine, describe, represent, characterize...
