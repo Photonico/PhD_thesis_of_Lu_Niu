@@ -6,3 +6,231 @@ The original data presented in this chapter are openly available from the \textt
 
 \section{Supplementary information}
 \label{3_supplementary}
+
+Convergence tests for the cohesive energy and total energy are shown in figures~\ref{fig:proj3_cohesive_energy_convergence}
+and~\ref{fig:proj3_total_energy_convergence},
+respectively,
+as functions of the k-point set for the beryllium structures.
+Convergence tests for the calculation of the dielectric function are shown in figures~\ref{fig:proj3_hcp_dielectric_nbands_convergence}--\ref{fig:proj3_cubic_dielectric_kpoint_convergence},
+including tests for both the k-point set and the number of unoccupied bands included through the parameter NBANDS.
+
+\begin{figure}[!htbp]
+\centering
+\begin{tabular}{@{}cc@{}}
+    \includegraphics[width=0.49\linewidth]{figures_proj3/S3.1a_conv_hcp.pdf}&
+    \includegraphics[width=0.49\linewidth]{figures_proj3/S3.1b_conv_alpha.pdf}\\
+    \includegraphics[width=0.49\linewidth]{figures_proj3/S3.1c_conv_bcc.pdf}&
+    \includegraphics[width=0.49\linewidth]{figures_proj3/S3.1d_conv_cubic.pdf}
+\end{tabular}
+\caption{Cohesive energy as a function of k-point set for bulk hcp beryllium, $\alpha$-Beryllene, bulk bcc beryllium, and cubic trilayer beryllene.}
+\label{fig:proj3_cohesive_energy_convergence}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\begin{tabular}{@{}cc@{}}
+    \includegraphics[width=0.49\linewidth]{figures_proj3/S3.2a_conv_hcp.pdf}&
+    \includegraphics[width=0.49\linewidth]{figures_proj3/S3.2b_conv_alpha.pdf}\\
+    \includegraphics[width=0.49\linewidth]{figures_proj3/S3.2c_conv_bcc.pdf}&
+    \includegraphics[width=0.49\linewidth]{figures_proj3/S3.2d_conv_cubic.pdf}
+\end{tabular}
+\caption{Total energy as a function of k-point set for bulk hcp beryllium, $\alpha$-Beryllene, bulk bcc beryllium, and cubic trilayer beryllene.}
+\label{fig:proj3_total_energy_convergence}
+\end{figure}
+
+\subsection*{Optical-property definitions}
+
+The optical observables used in this chapter are obtained from the frequency-dependent dielectric function.
+The general route from the dielectric function to the absorption coefficient,
+refractive index,
+extinction coefficient,
+reflectivity,
+and energy-loss spectrum is introduced in chapter~\ref{cha:fundamentals_b},
+especially section~\ref{sec:from_dielectric_function_to_optical_properties}.
+Therefore,
+we do not repeat these formula definitions here.
+
+The values of the thickness $d_{\mathrm{2D}}$ used in the dielectric-function renormalization for the two-dimensional structures are as follows:
+\qty{3.96}{\angstrom} for $\alpha$-Beryllene,
+\qty{5.85}{\angstrom} for $\beta$-Beryllene,
+\qty{6.97}{\angstrom} for cubic trilayer beryllene,
+\qty{3.14}{\angstrom} for double-sided hydrogen-terminated $\alpha$-Beryllene,
+\qty{5.52}{\angstrom} for single-sided hydrogen-terminated $\beta$-Beryllene,
+and \qty{5.192}{\angstrom} for double-sided hydrogen-terminated $\beta$-Beryllene.
+The number of unoccupied bands included in the calculation of the dielectric function is 140 for the hydrogen-terminated two-dimensional systems,
+133 for the two-dimensional structures without hydrogen termination,
+70 for bulk bcc beryllium,
+and 66 for bulk hcp beryllium.
+
+\subsection*{Dielectric-function convergence}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\linewidth]{figures_proj3/S3.3_dielec_hcp.pdf}
+\caption{Real and imaginary parts of the dielectric function for bulk hcp beryllium,
+calculated with different numbers of unoccupied bands included in the calculation.}
+\label{fig:proj3_hcp_dielectric_nbands_convergence}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\linewidth]{figures_proj3/S3.4_dielec_hcp.pdf}
+\caption{Real and imaginary parts of the dielectric function for bulk hcp beryllium,
+calculated with different k-point sets.}
+\label{fig:proj3_hcp_dielectric_kpoint_convergence}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\linewidth]{figures_proj3/S3.5_dielec_alpha.pdf}
+\caption{Real and imaginary parts of the dielectric function for $\alpha$-Beryllene,
+calculated with different numbers of unoccupied bands included in the calculation.}
+\label{fig:proj3_alpha_dielectric_nbands_convergence}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\linewidth]{figures_proj3/S3.6_dielec_alpha.pdf}
+\caption{Real and imaginary parts of the dielectric function for $\alpha$-Beryllene,
+calculated with different k-point sets.}
+\label{fig:proj3_alpha_dielectric_kpoint_convergence}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\linewidth]{figures_proj3/S3.7_dielec_beta.pdf}
+\caption{Real and imaginary parts of the dielectric function for $\beta$-Beryllene,
+calculated with different numbers of unoccupied bands included in the calculation.}
+\label{fig:proj3_beta_dielectric_nbands_convergence}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\linewidth]{figures_proj3/S3.8_dielec_beta.pdf}
+\caption{Real and imaginary parts of the dielectric function for $\beta$-Beryllene,
+calculated with different k-point sets.}
+\label{fig:proj3_beta_dielectric_kpoint_convergence}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\linewidth]{figures_proj3/S3.9_dielec_bcc.pdf}
+\caption{Real and imaginary parts of the dielectric function for bulk bcc beryllium,
+calculated with different numbers of unoccupied bands included in the calculation.}
+\label{fig:proj3_bcc_dielectric_nbands_convergence}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\linewidth]{figures_proj3/S3.10_dielec_bcc.pdf}
+\caption{Real and imaginary parts of the dielectric function for bulk bcc beryllium,
+calculated with different k-point sets.}
+\label{fig:proj3_bcc_dielectric_kpoint_convergence}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\linewidth]{figures_proj3/S3.11_dielec_cubic.pdf}
+\caption{Real and imaginary parts of the dielectric function for cubic trilayer beryllene,
+calculated with different numbers of unoccupied bands included in the calculation.}
+\label{fig:proj3_cubic_dielectric_nbands_convergence}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\linewidth]{figures_proj3/S3.12_dielec_cubic.pdf}
+\caption{Real and imaginary parts of the dielectric function for cubic trilayer beryllene,
+calculated with different k-point sets.}
+\label{fig:proj3_cubic_dielectric_kpoint_convergence}
+\end{figure}
+
+\subsection*{Phonon dispersions, Brillouin zones, and band structures}
+
+The calculated phonon dispersion curves and band structures for the $\alpha$ and $\beta$ structures,
+as well as the bulk hcp and bulk bcc structures,
+are shown in figures~\ref{fig:proj3_phonon_dispersion} and~\ref{fig:proj3_band_structures}.
+The Brillouin zones used for the hexagonal and distorted hexagonal cells are shown in figure~\ref{fig:proj3_brillouin_zones}.
+
+\begin{figure}[!htbp]
+\centering
+\begin{tabular}{@{}cc@{}}
+    \includegraphics[width=0.49\linewidth]{figures_proj3/S3.13a_phonon_hcp.pdf}&
+    \includegraphics[width=0.49\linewidth]{figures_proj3/S3.13b_phonon_alpha.pdf}\\
+    \includegraphics[width=0.49\linewidth]{figures_proj3/S3.13c_phonon_bcc.pdf}&
+    \includegraphics[width=0.49\linewidth]{figures_proj3/S3.13d_phonon_beta.pdf}
+\end{tabular}
+\caption{Phonon dispersion curves for bulk hcp beryllium, $\alpha$-Beryllene, bulk bcc beryllium, and $\beta$-Beryllene.}
+\label{fig:proj3_phonon_dispersion}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.95\linewidth]{figures_proj3/S3.14/S3.14.png}
+\caption{Brillouin zones used for the beryllium structures.
+Left: Brillouin zone for the hexagonal unit cells of the $\alpha$-, $\beta$-, and 2H-$\alpha$ structures;
+Right: Brillouin zone for the distorted hexagonal cells of the hydrogen-terminated $\beta$-Beryllene structures.}
+\label{fig:proj3_brillouin_zones}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\begin{tabular}{@{}cc@{}}
+    \includegraphics[width=0.49\linewidth]{figures_proj3/S3.15a_bs_hcp.pdf}&
+    \includegraphics[width=0.49\linewidth]{figures_proj3/S3.15b_bs_alpha.pdf}\\
+    \includegraphics[width=0.49\linewidth]{figures_proj3/S3.15c_bs_bcc.pdf}&
+    \includegraphics[width=0.49\linewidth]{figures_proj3/S3.15d_bs_beta.pdf}
+\end{tabular}
+\caption{Band structures of bulk hcp beryllium, $\alpha$-Beryllene, bulk bcc beryllium, and $\beta$-Beryllene.}
+\label{fig:proj3_band_structures}
+\end{figure}
+
+\subsection*{Additional optical spectra}
+
+Additional optical spectra are shown in figures~\ref{fig:proj3_reflectivity_alpha_beta}--\ref{fig:proj3_optical_hydrogenated}.
+Figures~\ref{fig:proj3_reflectivity_alpha_beta} and~\ref{fig:proj3_energy_loss_alpha_beta} show the reflectivity and energy-loss spectrum for $\alpha$-Beryllene and $\beta$-Beryllene.
+Figure~\ref{fig:proj3_optical_clean} compares the clean bulk and two-dimensional beryllium structures,
+whereas figure~\ref{fig:proj3_optical_hydrogenated} compares the corresponding hydrogen-functionalized structures.
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.85\linewidth]{figures_proj3/S3.16_reflectivity.pdf}
+\caption{Reflectivity for the in-plane and out-of-plane directions as functions of photon energy for $\alpha$-Beryllene and $\beta$-Beryllene.}
+\label{fig:proj3_reflectivity_alpha_beta}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.85\linewidth]{figures_proj3/S3.17_energy-loss.pdf}
+\caption{Energy-loss spectrum for the in-plane and out-of-plane directions as functions of photon energy for $\alpha$-Beryllene and $\beta$-Beryllene.}
+\label{fig:proj3_energy_loss_alpha_beta}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \adjustbox{valign=c}{\includegraphics[width=1.0\linewidth]{figures_proj3/S3.18a_refractive.pdf}}%
+    \par\nointerlineskip
+    \adjustbox{valign=c}{\includegraphics[width=1.0\linewidth]{figures_proj3/S3.18b_reflectivity.pdf}}%
+    \par\nointerlineskip
+    \adjustbox{valign=c}{\includegraphics[width=1.0\linewidth]{figures_proj3/S3.18c_extinction.pdf}}%
+\caption{Additional optical spectra for the clean structures.
+Upper: refractive index; Middle: reflectivity; Lower: extinction coefficient.
+The spectra include bulk hcp beryllium,
+$\alpha$-Beryllene,
+$\beta$-Beryllene,
+bulk bcc beryllium,
+and cubic trilayer beryllene.}
+\label{fig:proj3_optical_clean}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+    \adjustbox{valign=c}{\includegraphics[width=1.0\linewidth]{figures_proj3/S3.19a_refractive_H.pdf}}%
+    \par\nointerlineskip
+    \adjustbox{valign=c}{\includegraphics[width=1.0\linewidth]{figures_proj3/S3.19b_reflectivity_H.pdf}}%
+    \par\nointerlineskip
+    \adjustbox{valign=c}{\includegraphics[width=1.0\linewidth]{figures_proj3/S3.19c_extinction_H.pdf}}%
+\caption{Additional optical spectra for the hydrogen-functionalized structures.
+Upper: refractive index; Middle: reflectivity; Lower: extinction coefficient.
+The spectra compare the $\alpha$ and $\beta$ structures with and without hydrogen adsorption.}
+\label{fig:proj3_optical_hydrogenated}
+\end{figure}
