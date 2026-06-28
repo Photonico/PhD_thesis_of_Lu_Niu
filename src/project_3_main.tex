@@ -4,11 +4,212 @@
 \section{Abstract}
 \label{3_abstract}
 
+Two-dimensional elemental materials provide a direct platform for exploring electronic,
+optical,
+and topological phenomena arising from reduced dimensionality and modified bonding environments.
+In this chapter,
+we use density functional theory calculations to investigate the structural stability,
+electronic structure,
+optical response,
+and topological characteristics of pristine and hydrogen-functionalized beryllene systems.
+The structures considered include monolayer $\alpha$-Beryllene,
+bilayer $\beta$-Beryllene,
+bulk-derived reference phases,
+and a newly identified cubic trilayer beryllene structure.
+In addition to confirming the stability of previously proposed $\alpha$- and $\beta$-Beryllene phases,
+we predict a dynamically stable cubic trilayer beryllene phase with distinct electronic and optical characteristics.
+Hydrogen termination substantially modifies the structural and electronic properties.
+It yields stable hydrogen-passivated configurations and drives $\alpha$-Beryllene into a wide-gap semiconducting state,
+while preserving metallic behaviour in hydrogenated $\beta$-based structures.
+The calculated dielectric response reveals strong anisotropy and low-dimensional optical effects,
+including visible-to-ultraviolet absorption,
+modified plasmonic behaviour,
+and direction-dependent dielectric response associated with collective electronic excitations.
+Furthermore,
+parity analysis of the spin-orbit-coupled electronic states demonstrates that,
+beyond the previously reported $\alpha$-Beryllene,
+the cubic trilayer phase also exhibits a non-trivial $Z_{2}$ topological invariant.
+This result indicates the emergence of topologically protected electronic states in a light-element system.
+These results identify beryllene as an elemental two-dimensional platform that combines metallicity,
+tunable optical properties,
+and non-trivial topology.
+
 \section{Introduction}
 \label{3_introduction}
 
+Two-dimensional materials have reshaped modern materials science by enabling access to electronic,
+thermal,
+and mechanical properties that differ substantially from those of their bulk counterparts.
+Since the isolation of graphene,
+reduced dimensionality has been shown to give rise to Dirac fermions,
+enhanced carrier mobility,
+strong many-body interactions,
+tuneable band structures,
+and anomalous phonon transport~\cite{novoselov2004electric,geim2007rise}.
+These effects support rapid progress in nanoelectronics,
+optoelectronics,
+sensing,
+thermal management,
+and quantum technologies.
+
+Beyond graphene,
+the discovery and prediction of atomically thin materials has expanded to include transition-metal dichalcogenides,
+hexagonal boron nitride,
+black phosphorus,
+and elemental two-dimensional materials,
+commonly referred to as Xenes~\cite{butler2013progress,molle2018silicene}.
+Elemental two-dimensional materials are particularly attractive because their chemically simple nature allows intrinsic structure-property relationships to be studied without the complexity introduced by multicomponent bonding.
+However,
+most experimentally realized Xenes are composed of relatively heavy elements,
+where strong spin-orbit coupling,
+substrate effects,
+or structural buckling dominate the physics and may obscure low-energy electronic behaviour.
+
+In contrast,
+beryllium represents an extreme and largely unexplored limit within the family of elemental two-dimensional materials.
+As the lightest alkaline-earth metal,
+bulk beryllium exhibits a unique combination of low density,
+high elastic modulus,
+high thermal conductivity,
+and transparency to X-rays and neutrons.
+These properties have led to its use in aerospace,
+nuclear,
+and optical applications~\cite{zheng2020beryllium}.
+Extending elemental beryllium into the two-dimensional limit raises the prospect of ultralight metallic layers with unconventional electronic and thermal properties governed by reduced dimensionality and strong confinement.
+
+First-principles studies predicted that atomically thin beryllium could exist in metastable hexagonal or stable two-layer hexagonal lattice configurations~\cite{ono2020dynamical,hess2022periodicity}.
+However,
+for many years,
+two-dimensional beryllium remained a theoretical construct due to experimental challenges associated with synthesis and handling.
+This situation changed recently with the experimental realization of two-dimensional beryllium,
+termed beryllene.
+Chahal \textit{et al.} reported the first experimental synthesis and characterization of beryllene using a sonochemical exfoliation approach starting from elemental beryllium powder~\cite{chahal2023beryllene}.
+High-resolution transmission electron microscopy revealed atomically thin sheets with multiple structural motifs,
+including hexagonal and square-like lattice geometries.
+Raman spectroscopy and electron diffraction confirmed crystallinity,
+while electrical measurements demonstrated intrinsic metallic conductivity.
+
+Subsequent theoretical investigations have uncovered striking thermal transport behaviour in hexagonal monolayer beryllene.
+Using first-principles phonon calculations combined with the Boltzmann transport equation,
+Chowdhury and Mogurampelly predicted an exceptionally high in-plane lattice thermal conductivity of approximately \qty{270}{\watt\per\metre\per\kelvin} at room temperature,
+which exceeds that of bulk beryllium~\cite{chowdhury2024unusual}.
+This enhancement was attributed to suppressed phonon-phonon scattering and the dominant contribution of long-wavelength flexural phonons,
+a feature rarely observed in atomically thin metallic systems.
+These results suggest that two-dimensional beryllium could serve as an efficient heat-spreading material in nanoscale electronic architectures.
+
+Beyond thermal properties,
+the electronic structure of beryllene has been predicted to host nontrivial quantum features.
+Several density functional theory studies have identified Dirac-like band crossings near the Fermi level in hexagonal monolayer and bilayer beryllene,
+usually denoted as $\alpha$- and $\beta$-Beryllene,
+arising from symmetry-protected $s$-$p$ orbital hybridization~\cite{li2023coexistence}.
+Electron-phonon coupling calculations further suggest that these phases may support phonon-mediated superconductivity with critical temperatures on the order of \qty{10}{K}.
+The coexistence of Dirac fermions and superconductivity in an ultralight elemental monolayer distinguishes beryllene from both graphene and heavier Xenes,
+and highlights its potential as a platform for low-dimensional quantum phenomena.
+
+The possibility of topological behaviour in two-dimensional beryllium has also been explored from a more fundamental perspective.
+Derriche \textit{et al.} demonstrated that light-element lattices dominated by charge-based interactions can host topologically protected electronic states even in the absence of strong spin-orbit coupling~\cite{derriche2024light}.
+These findings suggest that beryllene may realize topological phases driven mainly by lattice symmetry and orbital physics,
+offering an alternative route to low-dissipation electronic states without relying on heavy elements.
+While experimental studies of beryllene remain limited,
+earlier work on ultrathin beryllium films and nanostructures has revealed unconventional quantum transport behaviour,
+including strong disorder effects and superconducting correlations at low temperatures~\cite{xiong2009spin}.
+
+Two-dimensional topological materials are considered promising for quantum and electronic technologies because their non-trivial band topology gives rise to robust,
+symmetry-protected edge states that resist disorder and backscattering~\cite{weber2024roadmap}.
+Recent density functional theory studies have shown that simple elemental two-dimensional systems can host switchable or adsorbate-induced topological behaviour.
+For example,
+interlayer sliding in bilayer elemental bismuth was predicted to switch the system between topologically trivial and non-trivial phases~\cite{qian2025switchable}.
+Similarly,
+hydrogenation and strain can tune monolayer arsenene into a quantum spin Hall state with a sizable band gap~\cite{zhang2016controllable}.
+These studies indicate that structural control and surface functionalization can provide practical routes to topological phases in elemental two-dimensional materials.
+
+Although two-dimensional elemental beryllium has recently been realized experimentally and shown to exhibit unusual electronic and thermal properties,
+its interaction with hydrogen has received much less attention.
+First-principles investigations of hydrogen adsorption on low-index hexagonal close-packed beryllium surfaces,
+particularly Be(0001),
+show that hydrogen binds preferentially to high-symmetry adsorption sites with moderate binding energies and induces appreciable local lattice relaxation~\cite{bachurin2015ab}.
+These results indicate that beryllium-hydrogen interactions occupy an intermediate regime between weak physisorption and strong ionic hydride formation.
+In the two-dimensional limit,
+reduced coordination and enhanced lattice flexibility are expected to modify this balance,
+potentially stabilizing adsorption geometries or electronic reconstructions that are inaccessible on bulk surfaces.
+Using global structure search and density functional theory calculations,
+two stable beryllium hydride monolayers were predicted with multicentre beryllium-hydrogen bonding motifs and wide band gaps~\cite{li2018global}.
+Although such systems correspond to compound formation rather than surface termination,
+they demonstrate that hydrogen can strongly reshape bonding and electronic behaviour in low-dimensional beryllium-based systems.
+
+In this chapter,
+we use density functional theory calculations to investigate the atomic,
+electronic,
+optical,
+and topological properties of pristine and hydrogen-functionalized beryllene systems.
+The results identify stable hydrogen-passivated structures and a cubic trilayer geometry with non-trivial $Z_{2}$ topology.
+The optical properties demonstrate direction-dependent and dimensionality-dependent response,
+together with plasmon-related features and visible-to-ultraviolet absorption.
+
 \section{Computation methods}
-\label{3_calculation_methods}
+\label{3_methods}
+
+The density functional theory calculations are performed using the Vienna Ab initio Simulation Package,
+VASP~\cite{kresse1993ab,kresse1994ab,kresse1996efficiency,kresse1996efficient}.
+The projector augmented wave method is used to describe the electron-ion interactions~\cite{kresse1999ultrasoft}.
+The generalized gradient approximation of Perdew--Burke--Ernzerhof is employed for the exchange-correlation functional~\cite{perdew1996generalized},
+along with the D3 dispersion correction with Becke--Johnson damping to account for long-range van der Waals interactions~\cite{becke2005density,grimme2010consistent,grimme2011effect}.
+
+For bulk hexagonal close-packed beryllium and bulk body-centred cubic beryllium,
+a $\Gamma$-centered k-point mesh of $27 \times 27 \times 27$ is used for the total energy and structural relaxation calculations.
+A $105 \times 105 \times 105$ mesh is used for the calculation of the complex dielectric function.
+A plane-wave energy cutoff of \qty{600}{\electronvolt} is used for all calculations.
+The electronic convergence criterion is set to \qty{1e-6}{\electronvolt},
+and the structures are relaxed until all forces on each atom are below \qty{0.01}{\electronvolt\per\angstrom}.
+For the two-dimensional systems,
+a vacuum region of \qty{40}{\angstrom} is included.
+A k-point mesh of $27 \times 27 \times 1$ is used for the hexagonal structures,
+whereas a $25 \times 25 \times 1$ mesh is used for the cubic structures.
+For all two-dimensional systems,
+a $105 \times 105 \times 1$ mesh is used for the calculation of the complex dielectric function.
+Convergence tests show that these settings yield accurate results for the cohesive and total energies,
+as shown in figures~\ref{fig:proj3_cohesive_energy_convergence} and~\ref{fig:proj3_total_energy_convergence}.
+The convergence of the dielectric function with respect to the k-point set and the number of unoccupied bands is shown in figures~\ref{fig:proj3_hcp_dielectric_nbands_convergence}--\ref{fig:proj3_cubic_dielectric_kpoint_convergence}.
+
+The adsorption energy per atom, $E_{\mathrm{ad}}$, of hydrogen atoms on the surface is calculated as:
+
+\begin{equation}
+    E_{\mathrm{ad}} =
+    \frac{E_{\mathrm{H/Be}} - E_{\mathrm{Be}} - E_{\mathrm{H}}}{n_{\mathrm{H}}}
+\label{hydrogen_adsorption_energy_beryllene}
+\end{equation}
+
+here,
+$E_{\mathrm{H/Be}}$ is the total energy of the adsorption system,
+$E_{\mathrm{Be}}$ represents the total energy of the pristine two-dimensional beryllium structure,
+$E_{\mathrm{H}}$ denotes the total energy of a hydrogen atom in the \ce{H2} molecule,
+and $n_{\mathrm{H}}$ denotes the number of hydrogen atoms in the unit cell.
+
+The cohesive energy per atom, $E_{\mathrm{c}}$, of the beryllium systems is calculated as:
+
+\begin{equation}
+    E_{\mathrm{c}} =
+    \frac{E_{\mathrm{Be\text{-}struc}} - n_{\mathrm{Be}}E_{\mathrm{Be\text{-}atom}}}{n_{\mathrm{Be}}}
+\label{cohesive_energy_per_atom_beryllene}
+\end{equation}
+
+here,
+$E_{\mathrm{Be\text{-}struc}}$ represents the total energy of the beryllium structure of interest,
+$E_{\mathrm{Be\text{-}atom}}$ is the total energy of a free beryllium atom calculated in a large supercell,
+and $n_{\mathrm{Be}}$ denotes the number of beryllium atoms in the unit cell of the structure.
+
+For the optical calculations,
+we calculate the frequency-dependent dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$ within VASP.
+The microscopic expression for the dielectric response,
+the Kramers--Kronig relation,
+and the derived optical quantities are introduced in chapter~\ref{cha:fundamentals_b},
+especially sections~\ref{sec:from_electronic_response_to_dielectric_function} and~\ref{sec:from_dielectric_function_to_optical_properties}.
+Therefore, we do not repeat these formula definitions here.
+For the two-dimensional systems,
+the calculated dielectric tensor contains the combined dielectric response of the material and the vacuum region.
+We therefore renormalize the calculated dielectric functions to obtain the intrinsic dielectric response of the two-dimensional structures,
+using the two-dimensional dielectric-function renormalization method~\cite{yang2021method}.
+The thickness values used for this correction are given in section~\ref{3_supplementary}.
 
 \section{Results and discussion}
 \label{3_results}
