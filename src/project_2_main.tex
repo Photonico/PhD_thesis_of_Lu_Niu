@@ -252,7 +252,7 @@ consistent with the typical semi-empirical range of $0.10$--$0.16$ used in Migda
 and with the value adopted in the literature for boron-based two-dimensional superconductors~\cite{zhao2019two}.
 With this choice,
 the calculated electron-phonon coupling strengths, $\lambda$, and $T_c$ indicate clear dimensionality effects,
-as discussed in Section~\ref{2_superconducting}.
+as discussed in section~\ref{2_superconducting}.
 
 For the calculation of the optical properties within VASP,
 in particular the frequency-dependent dielectric tensor $\varepsilon_{\alpha\beta}(\omega)$,
@@ -264,8 +264,8 @@ The result shows that $128$ bands yield well-converged results,
 and this value is used for all systems.
 The microscopic expression for the dielectric response,
 the Kramers--Kronig relation,
-and the derived optical quantities are introduced in Chapter~\ref{cha:fundamentals_b},
-especially Sections~\ref{sec:from_electronic_response_to_dielectric_function} and~\ref{sec:from_dielectric_function_to_optical_properties}.
+and the derived optical quantities are introduced in chapter~\ref{cha:fundamentals_b},
+especially sections~\ref{sec:from_electronic_response_to_dielectric_function} and~\ref{sec:from_dielectric_function_to_optical_properties}.
 
 The dielectric tensor contains the combined dielectric response of the two-dimensional material and the vacuum,
 so the magnitude of $\varepsilon_{1}(\omega)$ and $\varepsilon_{2}(\omega)$ depends linearly on the vacuum thickness~\cite{weng2018honeycomb,laturia2018dielectric}.
@@ -660,8 +660,162 @@ whereas the bulk and hydrogen-terminated bilayer possess phonon-mediated superco
 \subsection{Optical properties}
 \label{2_optical}
 
-The optical properties are now considered.
+We now use the calculated dielectric tensor to examine the optical response of bulk o-\ce{B14},
+monolayer o-\ce{B14}, bilayer o-\ce{B14}, and the hydrogen-terminated bilayer.
+In particular, we analyse the real part $\varepsilon_{1}(\omega)$ and imaginary part $\varepsilon_{2}(\omega)$ of the dielectric function.
+We then derive the corresponding optical properties from these two components.
 
+The definitions of the dielectric function and the derived optical quantities are introduced in chapter~\ref{cha:fundamentals_b},
+especially section~\ref{sec:from_dielectric_function_to_optical_properties}.
+The imaginary part $\varepsilon_{2}(\omega)$ describes light absorption as a consequence of neutral and plasmonic charge excitations,
+whereas the real part $\varepsilon_{1}(\omega)$ describes the strength of the dynamical screening effects arising from charge excitations.
+Metallic character is indicated by a negative value of $\varepsilon_{1}(\omega)$ over the corresponding energy range.
+For a plasmon resonance,
+$\varepsilon_{1}(\omega)$ typically crosses from a negative value to a positive value with increasing energy.
+This behaviour indicates that the restoring force becomes insufficient to fully screen the external field,
+and plasma oscillations can be excited.
+A plasmon resonance is reached when $\varepsilon_{1}(\omega)=0$ and $\varepsilon_{2}(\omega)$ is close to zero,
+indicating the onset of collective charge oscillations.
+
+% Original paper figure 9.
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\linewidth]{figures_proj2/fig2.10.pdf}
+\caption{Real and imaginary parts of the dielectric function for the bulk and two-dimensional o-\ce{B14} structures for the two in-plane components $xx$ and $yy$, and the out-of-plane component $zz$.}
+\label{fig:ob14_dielectric_function}
+\end{figure}
+
+
+Figure~\ref{fig:ob14_dielectric_function} shows the real and imaginary parts of the dielectric function
+for all the structures considered, including the two in-plane components $xx$ and $yy$, and the out-of-plane component $zz$.
+Each component of the dielectric function is different, indicating that the response of the structures to light depends strongly on the polarization direction of the incoming light.
+Therefore, the systems exhibit anisotropy, which leads to polarization-dependent optical properties and directionally selective light-matter interactions.
+
+For photon energies below around \qty{2.0}{\electronvolt},
+the in-plane $xx$ and $yy$ components differ for the bulk and hydrogen-terminated bilayer.
+For these systems, $\varepsilon_{1}(\omega)$ for the $xx$ component is negative in part of this region,
+whereas the $yy$ component is not.
+It can also be seen that, over certain energy ranges,
+the monolayer, hydrogen-terminated bilayer, and bulk systems behave as indefinite media,
+where the in-plane and out-of-plane components of $\varepsilon_{1}(\omega)$ have opposite signs.
+This occurs below \qty{2.0}{\electronvolt} for the monolayer and hydrogen-terminated bilayer,
+and between \qty{6.0}{\electronvolt} and \qty{10.0}{\electronvolt} for the bulk,
+signalling directional plasmonic modes.
+
+For the $xx$ component,
+the real part of the dielectric function shows a plasmon for the bulk,
+monolayer, and hydrogen-terminated bilayer in the region between \qty{0.5}{\electronvolt} and \qty{1.5}{\electronvolt},
+where the imaginary part is correspondingly very low.
+For the monolayer, this plasmon persists in the $yy$ direction and is even more pronounced,
+whereas for the bulk and hydrogen-terminated bilayer it is not present in this direction.
+In the out-of-plane $zz$ direction, the presence of plasmons,
+as indicated by negative values of $\varepsilon_{1}(\omega)$, is seen for the hydrogen-terminated bilayer, monolayer,
+and bilayer at around \qty{1.5}{\electronvolt}, \qty{3.6}{\electronvolt} and \qty{6.0}{\electronvolt}, and \qty{5.0}{\electronvolt}, respectively.
+These energies correspond to the significant peaks in the energy-loss spectrum shown in figure~\ref{fig:ob14_absorption_loss}.
+
+Peaks in the imaginary part of the dielectric function signal strong absorption due to electronic transitions,
+typically interband excitations. Their energy, width, and intensity reflect the band structure and optical activity.
+Except for the bilayer, the structures show characteristic metallic behaviour,
+namely a large value at low energies due to intraband absorption from free electrons.
+The bilayer, on the other hand,
+has a small $\varepsilon_{2}(\omega)$ until interband transitions begin,
+consistent with its semiconducting nature.
+The dielectric tensor characterizes how the polarization of the material changes in response to an applied electric field.
+For an incident photon,
+the tensor components represent the material response to the electric-field component of the photon along different directions.
+For all systems studied here,
+the off-diagonal components of the dielectric tensor are zero.
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\linewidth]{figures_proj2/fig2.11a.pdf}
+    \par\nointerlineskip
+    \includegraphics[width=1.0\linewidth]{figures_proj2/fig2.11b.pdf}
+\caption{Absorption coefficient and energy-loss spectrum for the bulk and two-dimensional o-\ce{B14} structures
+for the in-plane $xx$ and $yy$ directions,
+and the out-of-plane $zz$ direction.}
+\label{fig:ob14_absorption_loss}
+\end{figure}
+
+In order to further explore the optical properties of the o-\ce{B14}-based structures,
+the absorption coefficient, energy-loss spectrum, reflectivity, refractive index,
+and extinction coefficient are calculated.
+Figure~\ref{fig:ob14_absorption_loss} shows the absorption coefficient and energy-loss spectrum for the various structures.
+The absorption coefficient is directly proportional to the imaginary part of the dielectric function,
+where the absorption threshold corresponds to the first peak of $\varepsilon_{2}(\omega)$.
+For all structures except bilayer o-\ce{B14}, the threshold is close to zero, corresponding to their metallic nature.
+
+In the visible region of the spectrum, from \qty{1.7}{\electronvolt} to \qty{3.3}{\electronvolt},
+the bilayer, hydrogen-terminated bilayer, and bulk systems have the largest absorption coefficients for the $xx$,
+$yy$, and $zz$ components, respectively.
+The monolayer, on the other hand, exhibits strong absorption in the near-infrared and ultraviolet regions.
+The value of around \qty{0.005}{\per\angstrom} is similar to that calculated for bulk silicon,
+and notably larger than that reported for bilayer silicon using the same approach~\cite{saunders2024structural}.
+
+The energy-loss spectrum in figure~\ref{fig:ob14_absorption_loss} exhibits several sharp peaks.
+For the $xx$ component, plasmon excitations are seen below \qty{2.0}{\electronvolt} for the bulk,
+hydrogen-terminated bilayer, and monolayer.
+For the $yy$ component, only the monolayer shows a strong excitation in this energy range.
+In the out-of-plane direction, there is a strong peak for the hydrogen-terminated bilayer below \qty{2.0}{\electronvolt},
+while the monolayer exhibits two strong features at around \qty{4.0}{\electronvolt} and \qty{6.0}{\electronvolt},
+corresponding to the plasmons discussed above.
+The bilayer also has a strong feature at about \qty{5.0}{\electronvolt}.
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=1.0\linewidth]{figures_proj2/fig2.12a.pdf}
+    \par\nointerlineskip
+    \includegraphics[width=1.0\linewidth]{figures_proj2/fig2.12b.pdf}
+\caption{Reflectivity and refractive index as functions of photon energy for the bulk and two-dimensional o-\ce{B14} structures
+for the in-plane $xx$ and $yy$ directions,
+and the out-of-plane $zz$ direction.}
+\label{fig:ob14_reflectivity_refractive_index}
+\end{figure}
+
+Figure~\ref{fig:ob14_reflectivity_refractive_index} shows the reflectivity and refractive index.
+The reflectivity features directly reflect the electronic structure,
+where the drops in reflectivity correlate with the edges of the plasmonic features discussed above.
+The trends in refractive index are similar to those of $\varepsilon_{1}(\omega)$,
+which indicates that the real part of the dielectric function plays the leading role in the refractive-index response.
+
+For visible light, most transparent materials have refractive indices between one and two.
+Near a plasmon resonance in two-dimensional materials,
+the refractive index can drop below one due to the strong interaction between light and plasmonic oscillations.
+Metals can have a high refractive index at low photon energies due to strong absorption.
+As the photon energy increases, the refractive index decreases to values between one and two,
+particularly near or beyond interband transitions and the plasma edge.
+
+For in-plane polarization, the refractive index of the monolayer is close to,
+and smaller than, one in the energy range from around \qty{0.5}{\electronvolt} to \qty{1.5}{\electronvolt}.
+For out-of-plane polarization, this occurs at around \qty{1.5}{\electronvolt} for the hydrogen-terminated bilayer,
+\qty{3.6}{\electronvolt} and \qty{6.0}{\electronvolt} for the monolayer,
+and around \qty{4.8}{\electronvolt} for the bilayer.
+These energy ranges are close to the plasmonic features discussed above.
+
+The extinction coefficient shown in figure~\ref{S2.18} provides information on how strongly a material absorbs light at different photon energies.
+It is noticeable that the extinction coefficient exhibits sharp dips near the plasmon resonances discussed above.
+Near a plasmon resonance,
+the dielectric function changes rapidly in both its real and imaginary parts,
+which affects the extinction coefficient and produces sharp features,
+including dips, near resonances.
+These dips may indicate an energy where the response is dominated by resonant energy transfer to the plasmon rather than ordinary absorption.
+
+Specifically, these dips occur around \qty{0.5}{\electronvolt} and \qty{1.3}{\electronvolt} for the $xx$ component,
+\qty{1.0}{\electronvolt} and \qty{6.0}{\electronvolt} for the $yy$ component,
+and \qty{3.5}{\electronvolt} and \qty{6.0}{\electronvolt} for the $zz$ component of the monolayer.
+For the bilayer, they occur around \qty{2.0}{\electronvolt} for the $yy$ component,
+and \qty{4.5}{\electronvolt} and \qty{9.0}{\electronvolt} for the $zz$ component.
+For the hydrogen-terminated bilayer, they occur around \qty{0.5}{\electronvolt} for the $xx$ component,
+\qty{2.0}{\electronvolt} and \qty{6.0}{\electronvolt} for the $yy$ component,
+and \qty{1.5}{\electronvolt} for the $zz$ component.
+For the bulk, they occur around \qty{0.5}{\electronvolt} and \qty{8.8}{\electronvolt} for the $xx$ component,
+\qty{0.2}{\electronvolt} and \qty{10.0}{\electronvolt} for the $yy$ component,
+and \qty{0.5}{\electronvolt}, \qty{2.0}{\electronvolt},
+and in the range from \qty{6.3}{\electronvolt} to \qty{8.3}{\electronvolt} for the $zz$ component.
+
+Overall, the plasmonic and optical properties of the o-\ce{B14} structures display anisotropic effects,
+which may offer opportunities for optoelectronic,
+plasmonic, and quantum devices.
 
 \section{Conclusions}
 \label{2_conclusions}
