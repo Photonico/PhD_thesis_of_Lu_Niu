@@ -667,15 +667,8 @@ We then derive the corresponding optical properties from these two components.
 
 The definitions of the dielectric function and the derived optical quantities are introduced in chapter~\ref{cha:fundamentals_b},
 especially section~\ref{sec:from_dielectric_function_to_optical_properties}.
-The imaginary part $\varepsilon_{2}(\omega)$ describes light absorption as a consequence of neutral and plasmonic charge excitations,
-whereas the real part $\varepsilon_{1}(\omega)$ describes the strength of the dynamical screening effects arising from charge excitations.
-Metallic character is indicated by a negative value of $\varepsilon_{1}(\omega)$ over the corresponding energy range.
-For a plasmon resonance,
-$\varepsilon_{1}(\omega)$ typically crosses from a negative value to a positive value with increasing energy.
-This behaviour indicates that the restoring force becomes insufficient to fully screen the external field,
-and plasma oscillations can be excited.
-A plasmon resonance is reached when $\varepsilon_{1}(\omega)=0$ and $\varepsilon_{2}(\omega)$ is close to zero,
-indicating the onset of collective charge oscillations.
+Here, we use $\varepsilon_{1}(\omega)$ to identify the screening response and possible plasmonic regions,
+while $\varepsilon_{2}(\omega)$ provides the absorptive part of the optical response.
 
 % Original paper figure 9.
 \begin{figure}[!htbp]
@@ -685,11 +678,9 @@ indicating the onset of collective charge oscillations.
 \label{fig:ob14_dielectric_function}
 \end{figure}
 
-
 Figure~\ref{fig:ob14_dielectric_function} shows the real and imaginary parts of the dielectric function
 for all the structures considered, including the two in-plane components $xx$ and $yy$, and the out-of-plane component $zz$.
-Each component of the dielectric function is different, indicating that the response of the structures to light depends strongly on the polarization direction of the incoming light.
-Therefore, the systems exhibit anisotropy, which leads to polarization-dependent optical properties and directionally selective light-matter interactions.
+The difference between the two in-plane components $xx$ and $yy$ and the out-of-plane component $zz$ demonstrates the optical anisotropy of these structures.
 
 For photon energies below around \qty{2.0}{\electronvolt},
 the in-plane $xx$ and $yy$ components differ for the bulk and hydrogen-terminated bilayer.
@@ -737,9 +728,8 @@ and the out-of-plane $zz$ direction.}
 \label{fig:ob14_absorption_loss}
 \end{figure}
 
-In order to further explore the optical properties of the o-\ce{B14}-based structures,
-the absorption coefficient, energy-loss spectrum, reflectivity, refractive index,
-and extinction coefficient are calculated.
+We then calculate the absorption coefficient, energy-loss spectrum, reflectivity, refractive index,
+and extinction coefficient from the dielectric function.
 Figure~\ref{fig:ob14_absorption_loss} shows the absorption coefficient and energy-loss spectrum for the various structures.
 The absorption coefficient is directly proportional to the imaginary part of the dielectric function,
 where the absorption threshold corresponds to the first peak of $\varepsilon_{2}(\omega)$.
