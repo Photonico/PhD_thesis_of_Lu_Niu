@@ -16,32 +16,7 @@
 
 ## More information
 
-正文宽度: 37em
-
-## 我的风格
-
-* 叙事推进优先, 有讲故事感, 始终使用 we-style;
-* 多用具体动词和主动语态, 少用空泛 be 动词;
-* 不过多用 we 作为主语, 主语大部分也是具体的名词;
-* 被动语态和 be 动词并不是禁忌;
-* 尽量用肯定句, 并且避免用 why, how 从句;
-* 从物理问题出发, 再引概念, 再落到公式;
-* 先给一般形式, 再收束到本文采用的近似;
-* 新概念, 新物理量, 新公式至少给出名字;
-* 重要物理量在正文中出现时, 名称和符号同时给出;
-* 解释公式时优先讲物理动作, 因果关系和作用路径;
-* 正文中的标点尽量只使用逗号和句号;
-* 严禁重复的表达和重复的公式, 尽量避免啰嗦的表达;
-* 每小节结尾既总结本节, 也自然过渡到下一节;
-* 每一个 subsection 的结论处尽量用 we arrive at 这类收束句式;
-* \vec{r} 后面有括号或者 prime 的时候, 我会写成 \vec{r}\, 不然的话箭头就会和右括号或者 prime 贴在一起, 形成难以辨别的符号;
-* 行间公式前用冒号, 行间公式末尾不加标点;
-* 公式尽量命名, 并使用 descriptive labels;
-* 喜欢的动词: demonstrate, determine, describe, represent, characterize...
-* 喜欢的名词: medium,...
-* 喜欢的副词: as, meanwhile, therefore, whereas...
-* 在正文中用 k-point 而不是 $k$-point;
-* 对于具体的高对称点, 用 $\mathrm{M}$ point 而不是 M point;
+main width: 37em
 
 ## Horizontal spacing
 
@@ -53,21 +28,3 @@
 * \enspace  1/2 em
 * \quad     1 em
 * \qquad    2 em
-
-## Question
-
-This expression separates phase evolution from amplitude attenuation.
-
-## Other
-
-We start from the absorption coefficient $\alpha(\omega)$,
-which characterizes the attenuation of incident light in the
-medium.
-We then turn to the refractive index $n(\omega)$ and extinction
-coefficient $k(\omega)$, which describe phase propagation and
-amplitude decay.
-Next, we determine the reflectivity $R(\omega)$, which
-represents the reflected portion of the electromagnetic wave at
-the interface.
-Finally, we examine the energy-loss spectrum $L(\omega)$,
-which characterizes the dominant energy dissipation channels.
