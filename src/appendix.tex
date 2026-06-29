@@ -1,3 +1,24 @@
 \chapter*{Appendix}
+\phantomsection
+\addcontentsline{toc}{chapter}{Appendix}
 
-Something
+\noindent\textbf{Computational code.}
+The author provides the Python code developed for the post-processing, analysis, derived-property calculations, data fitting, and figure generation in this thesis through the following GitHub repositories:
+
+\begin{quote}
+\href{https://github.com/Photonico/Graphene-BC_20230622}{\texttt{https://github.com/Photonico/Graphene-BC\_20230622}}
+
+\href{https://github.com/Photonico/o-B14_20241024}{\texttt{https://github.com/Photonico/o-B14\_20241024}}
+
+\href{https://github.com/Photonico/G-Beryllene_20250718}{\texttt{https://github.com/Photonico/G-Beryllene\_20250718}}
+
+\href{https://github.com/Photonico/PhD_thesis_of_Lu_Niu}{\texttt{https://github.com/Photonico/PhD\_thesis\_of\_Lu\_Niu}}
+\end{quote}
+
+Each project repository contains the scripts for the corresponding chapter,
+together with a local version of the author's \texttt{vmatplot} code.
+These local versions are closely related but not necessarily identical,
+because the author developed the code progressively during the thesis.
+Later repositories therefore contain more recent versions with additional functionality and refinements.
+
+The author developed and used \texttt{vmatplot} to process first-principles calculation outputs, analyze band structures, total and projected densities of states, dielectric functions, phonon dispersions, AIMD trajectories, and convergence tests, fit numerical data, calculate derived optical properties, and generate figures for the electronic, optical, superconducting, and topological analyses in this thesis. The code parses and processes output files such as \texttt{vasprun.xml}, \texttt{vaspout.h5}, \texttt{DOSCAR}, \texttt{OUTCAR}, \texttt{KPOINTS}, \texttt{QPOINTS}, and \texttt{OSZICAR}. It also calculates absorption coefficients, refractive indices, extinction coefficients, reflectivities, and energy-loss spectra from the real and imaginary parts of the dielectric function.
