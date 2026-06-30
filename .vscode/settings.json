@@ -23,20 +23,20 @@
   //       "PATH": "/Library/TeX/texbin:/usr/bin:/bin:/usr/sbin:/sbin" 
   //     }
   //   }
-  "latex-workshop.latex.tools": [
-  {
-    "name": "latexmk-pdflatex",
-    "command": "latexmk",
-    "args": [
-      "-synctex=1",
-      "-interaction=nonstopmode",
-      "-file-line-error",
-      "-pdf",
-      "-outdir=%OUTDIR%",
-      "%DOC%"
-    ]
-  }
-]
+  // ],
+  "latex-workshop.latex.tools": [ // windows
+    {
+      "name": "latexmk-pdflatex",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ]
+    }
   ],
   "latex-workshop.view.pdf.viewer": "tab",
   "latex-workshop.latex.clean.fileTypes": [
