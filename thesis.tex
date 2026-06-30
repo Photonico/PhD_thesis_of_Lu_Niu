@@ -12,7 +12,7 @@
 \def\mydegrees{Doctor of Philosophy}
 % \def\sid{480446912}   % Lu Niu
 \def\supervisor{Catherine Stampfl}
-\def\assocsupervisora{Oliver James Conquest}
+% \def\assocsupervisora{Oliver James Conquest}
 \def\assocsupervisorb{Carla Verdi}
 \documentclass[12pt,logo]{style/usydthesis}
 
@@ -388,10 +388,15 @@
 % \input{src/outlook.tex}
 
 %% Bibliography
-% \bibliographystyle{style/mybibstyle}
-% \bibliography{thesis}
-% \renewcommand{\chaptername}{}
-\printbibliography
+% % \bibliographystyle{style/mybibstyle}
+% % \bibliography{thesis}
+% % \renewcommand{\chaptername}{}
+% \printbibliography
+%% Bibliography
+\cleardoublepage
+\phantomsection
+\setrunheadboth{References}
+\printbibliography[heading=bibintoc,title={References}]
 
 %% Appendices
 % \appendix
