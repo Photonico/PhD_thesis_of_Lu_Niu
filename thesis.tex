@@ -192,11 +192,15 @@
 \newcommand{\runhead}[1]{
   \parbox[t]{0.95\textwidth}{\centering\scriptsize\scshape #1}
 }
-\renewcommand{\chaptermark}[1]{
-  \InsertMark{2e-left}{\runhead{#1}}
+\newcommand{\setrunheadboth}[1]{%
+  \InsertMark{2e-left}{\runhead{#1}}%
+  \InsertMark{2e-right}{\runhead{#1}}%
 }
-\renewcommand{\sectionmark}[1]{
-  \InsertMark{2e-right}{\runhead{\thesection~#1}}
+\renewcommand{\chaptermark}[1]{%
+  \setrunheadboth{#1}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \InsertMark{2e-right}{\runhead{\thesection~#1}}%
 }
 \def\ps@headings{
   \let\@oddfoot\@empty
@@ -293,6 +297,7 @@
     \renewcommand{\chaptername}{}%
     \renewcommand{\thechapter}{}%
     \thesis@schapter{#1}%
+    \setrunheadboth{#1}%
   \endgroup
 }
 \makeatother
@@ -387,11 +392,6 @@
 % \cleardoublepage
 % \input{src/outlook.tex}
 
-%% Bibliography
-% % \bibliographystyle{style/mybibstyle}
-% % \bibliography{thesis}
-% % \renewcommand{\chaptername}{}
-% \printbibliography
 %% Bibliography
 \cleardoublepage
 \phantomsection
